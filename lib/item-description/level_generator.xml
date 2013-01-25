@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::level_generator" category="rolling_painting" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/level_generator" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+  </inherit>
+  <description>The class describing a target.</description>
+  <fields>
+   <field type="item_reference" name="level_generator.slopes"
+           list="true" required="true">
+      <description>A list of slope to build level.</description>
+      <set>
+        <element value="bear::slope"/>
+      </set>
+      <default_value>none</default_value>
+    </field>
+    <field type="item_reference" name="level_generator.straight_slopes"
+           list="true" required="true">
+      <description>A list of straight_slope to build level.</description>
+      <set>
+        <element value="bear::straight_slope"/>
+      </set>
+    </field>
+    <field type="item_reference" name="level_generator.right_hole" required="true">
+      <description>A straight_slope for right hole.</description>
+      <set>
+        <element value="bear::straight_slope"/>
+      </set>
+    </field>
+    <field type="item_reference" name="level_generator.left_hole" required="true">
+      <description>A straight_slope for left hole.</description>
+      <set>
+        <element value="bear::straight_slope"/>
+      </set>
+    </field>
+    <field type="item_reference" name="level_generator.obstacles"
+           list="true" required="true">
+      <description>A list of obstacles to build level.</description>
+      <set>
+        <element value="rp::obstacle"/>
+      </set>
+    </field>	
+  </fields>
+</item>

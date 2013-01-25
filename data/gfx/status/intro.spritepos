@@ -1,0 +1,4 @@
+# The format of the lines is
+# picture: x y width height
+
+panel: 0 0 503 256

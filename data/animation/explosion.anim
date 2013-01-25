@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='1' first_index='0' last_index='11' loop_back='false' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='0' y='0' clip_width='127' clip_height='127' spritepos='pre explosion 0' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='128' y='0' clip_width='127' clip_height='127' spritepos='pre explosion 1' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='256' y='0' clip_width='127' clip_height='127' spritepos='pre explosion 2' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='384' y='0' clip_width='127' clip_height='127' spritepos='explosion 0' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='0' y='128' clip_width='127' clip_height='127' spritepos='explosion 1' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='128' y='128' clip_width='127' clip_height='127' spritepos='explosion 2' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='256' y='128' clip_width='127' clip_height='127' spritepos='explosion 3' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion.png' x='384' y='128' clip_width='127' clip_height='127' spritepos='explosion 4' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion-1.png' x='0' y='0' clip_width='127' clip_height='127' spritepos='explosion 5' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion-1.png' x='128' y='0' clip_width='127' clip_height='127' spritepos='explosion 6' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion-1.png' x='256' y='0' clip_width='127' clip_height='127' spritepos='explosion 7' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/explosion/explosion-1.png' x='384' y='0' clip_width='127' clip_height='127' spritepos='explosion 8' auto_size='true' width='127' height='127' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

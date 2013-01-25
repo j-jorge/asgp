@@ -1,0 +1,84 @@
+/*----------------------------------------------------------------------------*/
+sprite_sheet "letters-1" 1024 x 1024 margin 1 order "height"
+
+logo "logo.xcf.bz2"
+
+"andy's" "andy color" * 0.25 with logo
+  glob "andy *"
+;
+
+"wave" autosize * 0.3 with logo
+  "wave"
+  "wave border"
+;
+
+"par_K_" "par_K_" * 0.3 with logo
+  glob "letters*"
+  mask "par_K_"
+;
+
+"pa_R_k" "pa_R_k" * 0.3 with logo
+  glob "letters*"
+  mask "pa_R_k"
+;
+
+"p_A_rk" "p_A_rk" * 0.3 with logo
+  glob "letters*"
+  mask "p_A_rk"
+;
+
+"_P_ark" "_P_ark" * 0.3 with logo
+  glob "letters*"
+  mask "_P_ark"
+;
+
+"grea_T_" "grea_T_" * 0.3 with logo
+  glob "letters*"
+  mask "grea_T_"
+;
+
+"gre_A_t" "gre_A_t" * 0.3 with logo
+  glob "letters*"
+  mask "gre_A_t"
+;
+
+"gr_E_at" "gr_E_at" * 0.3 with logo
+  glob "letters*"
+  mask "gr_E_at"
+;
+
+"g_R_eat" "g_R_eat" * 0.3 with logo
+  glob "letters*"
+  mask "g_R_eat"
+;
+
+"_G_reat" "_G_reat" * 0.3 with logo
+  glob "letters*"
+  mask "_G_reat"
+;
+
+"supe_R_" "supe_R_" * 0.3 with logo
+  glob "letters*"
+  mask "supe_R_"
+;
+
+"sep_E_r" "sep_E_r" * 0.3 with logo
+  glob "letters*"
+  mask "sep_E_r"
+;
+
+"su_P_er" "su_P_er" * 0.3 with logo
+  glob "letters*"
+  mask "su_P_er"
+;
+
+"s_U_per" "s_U_per" * 0.3 with logo
+  glob "letters*"
+  mask "s_U_per"
+;
+
+"_S_uper" "_S_uper" * 0.3 with logo
+  glob "letters*"
+  mask "_S_uper"
+;
+

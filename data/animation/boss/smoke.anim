@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='1' first_index='0' last_index='10' loop_back='false' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='0' y='0' clip_width='142' clip_height='98' spritepos='1' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='143' y='0' clip_width='142' clip_height='98' spritepos='2' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='286' y='0' clip_width='142' clip_height='98' spritepos='3' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='0' y='99' clip_width='142' clip_height='98' spritepos='4' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='143' y='99' clip_width='142' clip_height='98' spritepos='5' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='286' y='99' clip_width='142' clip_height='98' spritepos='6' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='0' y='198' clip_width='142' clip_height='98' spritepos='7' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='143' y='198' clip_width='142' clip_height='98' spritepos='8' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='286' y='198' clip_width='142' clip_height='98' spritepos='9' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='0' y='297' clip_width='142' clip_height='98' spritepos='10' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/boss/smoke.png' x='143' y='297' clip_width='142' clip_height='98' spritepos='11' auto_size='true' width='142' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

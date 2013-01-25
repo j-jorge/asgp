@@ -1,0 +1,11 @@
+# The format of the lines is
+# picture: x y width height
+
+propeller 1: 0 0 511 61
+propeller 2: 0 62 511 61
+propeller 3: 0 124 511 61
+propeller 4: 0 186 511 61
+propeller 5: 0 248 511 61
+propeller 6: 0 310 511 61
+propeller 7: 0 372 511 61
+propeller 8: 0 434 511 61

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='10' loop_back='false' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='0' y='76' clip_width='81' clip_height='75' spritepos='lady plunger down' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='410' y='0' clip_width='81' clip_height='75' spritepos='lady plunger middle' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='328' y='0' clip_width='81' clip_height='75' spritepos='lady plunger up' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='164' y='76' clip_width='81' clip_height='75' spritepos='lady plunger middle straight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='246' y='76' clip_width='81' clip_height='75' spritepos='lady plunger down straight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='164' y='76' clip_width='81' clip_height='75' spritepos='lady plunger middle straight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='328' y='0' clip_width='81' clip_height='75' spritepos='lady plunger up' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='410' y='0' clip_width='81' clip_height='75' spritepos='lady plunger middle' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='0' y='76' clip_width='81' clip_height='75' spritepos='lady plunger down' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='164' y='76' clip_width='81' clip_height='75' spritepos='lady plunger middle straight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='82' y='76' clip_width='81' clip_height='75' spritepos='lady plunger up staight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.06'>
+    <sprite image='gfx/boss/lady.png' x='164' y='76' clip_width='81' clip_height='75' spritepos='lady plunger middle straight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

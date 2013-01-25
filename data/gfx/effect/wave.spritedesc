@@ -1,0 +1,56 @@
+sprite_sheet "wave" 512 x 512 margin 1
+
+img "wave.xcf.bz2"
+
+"wave 1" autosize * 0.5 with img
+  "0"
+  ;
+
+"wave 2" autosize * 0.5 with img
+  "1"
+  ;
+
+"wave 3" autosize * 0.5 with img
+  "2"
+  ;
+
+"wave 4" autosize * 0.5 with img
+  "3"
+  ;
+
+"wave 5" autosize * 0.5 with img
+  "4"
+  ;
+
+"wave 6" autosize * 0.5 with img
+  "5"
+  ;
+
+"wave 7" autosize * 0.5 with img
+  "6"
+  ;
+
+"double wave 3" autosize * 0.5 with img
+  "2"
+  "0"
+  ;
+
+"double wave 4" autosize * 0.5 with img
+  "3"
+  "1"
+  ;
+
+"double wave 5" autosize * 0.5 with img
+  "4"
+  "2"
+  ;
+
+"double wave 6" autosize * 0.5 with img
+  "5"
+  "3"
+  ;
+
+"double wave 7" autosize * 0.5 with img
+  "6"
+  "4"
+  ;

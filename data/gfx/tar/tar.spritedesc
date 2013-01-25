@@ -1,0 +1,50 @@
+/* The size of the resulting image. */
+sprite_sheet "tar" 512 x 256
+
+/* the source images and their ratio in the result */
+img "tar.xcf.bz2"
+
+"pending" autosize * 0.75 with img
+  "bag"
+  "tar"
+  ;
+
+"falling tar 1" autosize * 0.75 with img
+  "falling tar 1"
+  ;
+
+"falling tar 2" autosize * 0.75 with img
+  "falling tar 2"
+  ;
+
+"falling tar 3" autosize * 0.75 with img
+  "falling tar 3"
+  ;
+
+"falling tar 4" autosize * 0.75 with img
+  "falling tar 4"
+  ;
+
+"puddle" autosize * 0.75 with img
+  "puddle"
+  ;
+
+"splash 1" autosize * 0.75 with img
+  "splash 1"
+  ;
+
+"splash 2" autosize * 0.75 with img
+  "splash 2"
+  ;
+
+"splash 3" autosize * 0.75 with img
+  "splash 3"
+  ;
+
+"splash 4" autosize * 0.75 with img
+  "splash 4"
+  ;
+
+"splash 5" autosize * 0.75 with img
+  "splash 5"
+  ;

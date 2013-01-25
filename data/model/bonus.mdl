@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model>
+<action name="plunger" duration="1" auto_next="plunger">
+<marks>
+<mark label="body" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/bonus.png' x='0' y='0' clip_width='48' clip_height='48' spritepos='plunger' auto_size='true' width='48' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="halo" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation_file path='animation/bonus/bowl.canim' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='0.75' red_intensity='0.9' green_intensity='1' blue_intensity='0.95'/>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="48" height="48" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="halo" function="" x="24" y="24" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="24" y="24" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="expo:in_out"/>
+</mark_placements>
+</snapshot><snapshot date="0.3" width="48" height="48" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="halo" function="" x="24" y="24" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="24" y="24" width="0" height="0" z="0" angle="0.3" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="expo:in_out"/>
+</mark_placements>
+</snapshot><snapshot date="0.6" width="48" height="48" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="halo" function="" x="24" y="24" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="24" y="24" width="0" height="0" z="0" angle="-0.3" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="expo:in_out"/>
+</mark_placements>
+</snapshot><snapshot date="0.9" width="48" height="48" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="halo" function="" x="24" y="24" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="24" y="24" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="expo:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="cart_element" duration="0.8" auto_next="cart_element">
+<marks>
+<mark label="middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/cart-theme/aquatic.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/cart-theme/aquatic.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/cart-theme/aquatic.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="halo" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation_file path='animation/bonus/bowl.canim' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.94' green_intensity='0.9' blue_intensity='1'/>
+</mark>
+<mark label="hearth" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='31' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/status.png' x='203' y='120' clip_width='31' clip_height='27' spritepos='hearth' auto_size='true' width='31' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="78" height="35" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="hearth" function="" x="39" y="52" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="back:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="halo" function="" x="39" y="28" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="front" function="" x="79" y="22" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:out" width_easing="circ:out" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="back" function="" x="-5" y="22" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:out" y_easing="circ:out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="middle" function="" x="38" y="22" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot><snapshot date="0.2" width="78" height="35" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="hearth" function="" x="39" y="30" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="back:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="halo" function="" x="39" y="28" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="front" function="" x="79" y="12" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in_out" width_easing="circ:out" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="back" function="" x="-5" y="32" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="middle" function="" x="38" y="22" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot><snapshot date="0.6" width="78" height="35" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="hearth" function="" x="39" y="52" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="halo" function="" x="39" y="28" width="0" height="0" z="1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="front" function="" x="79" y="32" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in" width_easing="circ:out" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="back" function="" x="-5" y="12" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="middle" function="" x="38" y="22" width="0" height="0" z="0" angle="0" visible="1" x_easing="circ:in_out" y_easing="circ:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+</model>
+

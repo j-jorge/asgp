@@ -1,0 +1,79 @@
+/* The size of the resulting image. */
+sprite_sheet "tar" 512 x 512
+
+/* the source images and their ratio in the result */
+img "andy.xcf.bz2"
+
+"tar 1" autosize * 0.25 with img
+  "tar 1"
+  ;
+
+"tar 2" autosize * 0.25 with img
+  "tar 1"
+  "tar 4"
+  ;
+
+"tar 3" autosize * 0.25 with img
+  "tar 2"
+  ;
+
+"tar 4" autosize * 0.25 with img
+  "tar 3"
+  ;
+
+"tar 5" autosize * 0.25 with img
+  "tar 4"
+  ;
+
+"tar 6" autosize * 0.25 with img
+  "tar 4"
+  "tar 5"
+  ;
+
+"tar 7" autosize * 0.25 with img
+  "tar 5"
+  "tar 6"
+  ;
+
+"tar 8" autosize * 0.25 with img
+  "tar 6"
+  "tar 7"
+  ;
+
+"tar 9" autosize * 0.25 with img
+  "tar 7"
+  "tar 8"
+  ;
+
+"tar 10" autosize * 0.25 with img
+  "tar 8"
+  "tar 9"
+  ;
+
+"tar 11" autosize * 0.25 with img
+  "tar 9"
+  ;
+
+"spatter 1" autosize * 0.25 with img
+  "spatter 1"
+  ;
+
+"spatter 2" autosize * 0.25 with img
+  "spatter 2"
+  ;
+
+"spatter 3" autosize * 0.25 with img
+  "spatter 3"
+  ;
+
+"spatter 4" autosize * 0.25 with img
+  "spatter 4"
+  ;
+
+"spatter 5" autosize * 0.25 with img
+  "spatter 5"
+  ;
+
+"spatter 6" autosize * 0.25 with img
+  "spatter 6"
+  ;

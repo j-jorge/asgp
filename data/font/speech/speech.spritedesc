@@ -1,0 +1,383 @@
+sprite_sheet "speech-1" 512 x 512
+
+img "speech.xcf.bz2"
+"Ñ" autosize * 0.5 with img
+  "Ñ"
+  ;
+
+"»" autosize * 0.5 with img
+  "»"
+  ;
+
+"«" autosize * 0.5 with img
+  "«"
+  ;
+
+"Ó" autosize * 0.5 with img
+  "Ó"
+  ;
+
+"Ò" autosize * 0.5 with img
+  "Ò"
+  ;
+
+"Å" autosize * 0.5 with img
+  "Å"
+  ;
+
+"Ø" autosize * 0.5 with img
+  "Ø"
+  ;
+
+"Â" autosize * 0.5 with img
+  "Â"
+  ;
+
+"Ä" autosize * 0.5 with img
+  "Ä"
+  ;
+
+"Á" autosize * 0.5 with img
+  "Á"
+  ;
+
+"À" autosize * 0.5 with img
+  "À"
+  ;
+
+"Æ" autosize * 0.5 with img
+  "Æ"
+  ;
+
+"Ê" autosize * 0.5 with img
+  "Ê"
+  ;
+
+"Ë" autosize * 0.5 with img
+  "Ë"
+  ;
+
+"É" autosize * 0.5 with img
+  "É"
+  ;
+
+"È" autosize * 0.5 with img
+  "È"
+  ;
+
+"Í" autosize * 0.5 with img
+  "Í"
+  ;
+
+"Î" autosize * 0.5 with img
+  "Î"
+  ;
+
+"Ï" autosize * 0.5 with img
+  "Ï"
+  ;
+
+"Ô" autosize * 0.5 with img
+  "Ô"
+  ;
+
+"Ö" autosize * 0.5 with img
+  "Ö"
+  ;
+
+"Û" autosize * 0.5 with img
+  "Û"
+  ;
+
+"Ü" autosize * 0.5 with img
+  "Ü"
+  ;
+
+"Ú" autosize * 0.5 with img
+  "Ú"
+  ;
+
+"Ù" autosize * 0.5 with img
+  "Ù"
+  ;
+
+"Ç" autosize * 0.5 with img
+  "Ç"
+  ;
+
+"~" autosize * 0.5 with img
+  "~"
+  ;
+
+"}" autosize * 0.5 with img
+  "}"
+  ;
+
+"|" autosize * 0.5 with img
+  "|"
+  ;
+
+"{" autosize * 0.5 with img
+  "{"
+  ;
+
+"`" autosize * 0.5 with img
+  "`"
+  ;
+
+"_" autosize * 0.5 with img
+  "_"
+  ;
+
+"^" autosize * 0.5 with img
+  "^"
+  ;
+
+"]" autosize * 0.5 with img
+  "]"
+  ;
+
+"[" autosize * 0.5 with img
+  "["
+  ;
+
+"@" autosize * 0.5 with img
+  "@"
+  ;
+
+"¿" autosize * 0.5 with img
+  "¿"
+  ;
+
+"?" autosize * 0.5 with img
+  "?"
+  ;
+
+">" autosize * 0.5 with img
+  ">"
+  ;
+
+"=" autosize * 0.5 with img
+  "="
+  ;
+
+"<" autosize * 0.5 with img
+  "<"
+  ;
+
+";" autosize * 0.5 with img
+  ";"
+  ;
+
+":" autosize * 0.5 with img
+  ":"
+  ;
+
+"/" autosize * 0.5 with img
+  "/"
+  ;
+
+"." autosize * 0.5 with img
+  "."
+  ;
+
+"-" autosize * 0.5 with img
+  "-"
+  ;
+
+"," autosize * 0.5 with img
+  ","
+  ;
+
+"+" autosize * 0.5 with img
+  "+"
+  ;
+
+"*" autosize * 0.5 with img
+  "*"
+  ;
+
+")" autosize * 0.5 with img
+  ")"
+  ;
+
+"(" autosize * 0.5 with img
+  "("
+  ;
+
+"'" autosize * 0.5 with img
+  "'"
+  ;
+
+"&" autosize * 0.5 with img
+  "&"
+  ;
+
+"%" autosize * 0.5 with img
+  "%"
+  ;
+
+"$" autosize * 0.5 with img
+  "$"
+  ;
+
+"#" autosize * 0.5 with img
+  "#"
+  ;
+
+"\"" autosize * 0.5 with img
+  "\""
+  ;
+
+"¡" autosize * 0.5 with img
+  "¡"
+  ;
+
+"!" autosize * 0.5 with img
+  "!"
+  ;
+
+"9" autosize * 0.5 with img
+  "9"
+  ;
+
+"8" autosize * 0.5 with img
+  "8"
+  ;
+
+"7" autosize * 0.5 with img
+  "7"
+  ;
+
+"6" autosize * 0.5 with img
+  "6"
+  ;
+
+"5" autosize * 0.5 with img
+  "5"
+  ;
+
+"4" autosize * 0.5 with img
+  "4"
+  ;
+
+"3" autosize * 0.5 with img
+  "3"
+  ;
+
+"2" autosize * 0.5 with img
+  "2"
+  ;
+
+"1" autosize * 0.5 with img
+  "1"
+  ;
+
+"0" autosize * 0.5 with img
+  "0"
+  ;
+
+"Z" autosize * 0.5 with img
+  "Z"
+  ;
+
+"Y" autosize * 0.5 with img
+  "Y"
+  ;
+
+"X" autosize * 0.5 with img
+  "X"
+  ;
+
+"W" autosize * 0.5 with img
+  "W"
+  ;
+
+"V" autosize * 0.5 with img
+  "V"
+  ;
+
+"U" autosize * 0.5 with img
+  "U"
+  ;
+
+"T" autosize * 0.5 with img
+  "T"
+  ;
+
+"S" autosize * 0.5 with img
+  "S"
+  ;
+
+"R" autosize * 0.5 with img
+  "R"
+  ;
+
+"Q" autosize * 0.5 with img
+  "Q"
+  ;
+
+"P" autosize * 0.5 with img
+  "P"
+  ;
+
+"O" autosize * 0.5 with img
+  "O"
+  ;
+
+"N" autosize * 0.5 with img
+  "N"
+  ;
+
+"M" autosize * 0.5 with img
+  "M"
+  ;
+
+"L" autosize * 0.5 with img
+  "L"
+  ;
+
+"K" autosize * 0.5 with img
+  "K"
+  ;
+
+"J" autosize * 0.5 with img
+  "J"
+  ;
+
+"I" autosize * 0.5 with img
+  "I"
+  ;
+
+"H" autosize * 0.5 with img
+  "H"
+  ;
+
+"G" autosize * 0.5 with img
+  "G"
+  ;
+
+"F" autosize * 0.5 with img
+  "F"
+  ;
+
+"E" autosize * 0.5 with img
+  "E"
+  ;
+
+"D" autosize * 0.5 with img
+  "D"
+  ;
+
+"C" autosize * 0.5 with img
+  "C"
+  ;
+
+"B" autosize * 0.5 with img
+  "B"
+  ;
+
+"A" autosize * 0.5 with img
+  "A"
+  ;
+

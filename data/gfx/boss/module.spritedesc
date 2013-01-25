@@ -1,0 +1,59 @@
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "module-1" 512 x 512
+
+/* the source images and their ratio in the result */
+img "module.xcf.bz2"
+
+"module" autosize * 0.5 with img
+  glob "common *"
+  glob "* 1"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "module-2" 512 x 512
+
+/* the source images and their ratio in the result */
+img "module.xcf.bz2"
+
+"module" autosize * 0.5 with img
+  glob "common *"
+  glob "* 2"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "module-3" 512 x 512
+
+/* the source images and their ratio in the result */
+img "module.xcf.bz2"
+
+"module" autosize * 0.5 with img
+  glob "common *"
+  glob "* 3"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "module-4" 512 x 512
+
+/* the source images and their ratio in the result */
+img "module.xcf.bz2"
+
+"module" autosize * 0.5 with img
+  glob "common *"
+  glob "* 4"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "module-5" 512 x 512
+
+/* the source images and their ratio in the result */
+img "module.xcf.bz2"
+
+"module" autosize * 0.5 with img
+  glob "common *"
+  glob "* 5"
+  ;

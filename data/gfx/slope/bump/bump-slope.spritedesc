@@ -1,0 +1,80 @@
+/*  */
+sprite_sheet "bump-slope-1" 256 x 128 margin 0
+
+img "bump-slope.xcf.bz2"
+
+"slope" "1" * 0.5 with img
+  "1"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+/*  */
+sprite_sheet "bump-slope-2" 256 x 256 margin 0
+
+img "bump-slope.xcf.bz2"
+
+"slope" "2" * 0.5 with img
+  "2"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+/*  */
+sprite_sheet "bump-slope-3" 256 x 128 margin 0
+
+img "bump-slope.xcf.bz2"
+
+"slope" "3" * 0.5 with img
+  "3"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+/*  */
+sprite_sheet "bump-slope-4" 256 x 128 margin 0
+
+img "bump-slope.xcf.bz2"
+
+"slope" "4" * 0.5 with img
+  "4"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+/*  */
+sprite_sheet "bump-slope-5" 256 x 256 margin 0
+
+img "bump-slope.xcf.bz2"
+
+"slope" "5" * 0.5 with img
+  "5"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+

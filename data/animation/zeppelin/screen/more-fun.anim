@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='6' loop_back='false' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='0' clip_width='73' clip_height='15' spritepos='FUN' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='16' clip_width='73' clip_height='15' spritepos='PARK' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='32' clip_width='73' clip_height='15' spritepos='IS' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='48' clip_width='73' clip_height='15' spritepos='A' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='64' clip_width='73' clip_height='15' spritepos='BETTER' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='88' clip_width='73' clip_height='15' spritepos='NAME' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/zeppelin/zeppelin.png' x='173' y='104' clip_width='73' clip_height='15' spritepos='blank screen' auto_size='true' width='73' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

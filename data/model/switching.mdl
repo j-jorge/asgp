@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model>
+<action name="up" duration="1" auto_next="">
+<marks>
+<mark label="sign" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='0' y='16' clip_width='34' clip_height='43' spritepos='light up' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='0' y='0' clip_width='221' clip_height='15' spritepos='rail' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail end" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='140' y='16' clip_width='42' clip_height='15' spritepos='end' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="axis" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='105' y='16' clip_width='34' clip_height='43' spritepos='axis' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='28' y='107' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" function="on_up" width="204" height="152" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="post" function="" x="-5" y="90" width="0" height="0" z="-20" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="axis" function="" x="12" y="68" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail end" function="" x="0" y="68" width="0" height="0" z="2" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail" function="" x="112" y="108" width="0" height="0" z="-1" angle="0.374" visible="1" x_easing="quad:in_out" y_easing="quad:in_out" width_easing="none:in" height_easing="none:in" angle_easing="quad:in_out"/>
+<mark_placement label="sign" function="on_switch_down" x="-5" y="130" width="34" height="44" z="-3" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="down" duration="1" auto_next="">
+<marks>
+<mark label="sign" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='35' y='16' clip_width='34' clip_height='43' spritepos='light down' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='0' y='0' clip_width='221' clip_height='15' spritepos='rail' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail end" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='140' y='16' clip_width='42' clip_height='15' spritepos='end' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='28' y='107' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="axis" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='105' y='16' clip_width='34' clip_height='43' spritepos='axis' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" function="on_down" width="204" height="152" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="axis" function="" x="12" y="68" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="post" function="" x="-5" y="90" width="0" height="0" z="-20" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail end" function="" x="0" y="68" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail" function="" x="112" y="30" width="0" height="0" z="-1" angle="-0.354" visible="1" x_easing="quad:in_out" y_easing="quad:in_out" width_easing="none:in" height_easing="none:in" angle_easing="quad:in_out"/>
+<mark_placement label="sign" function="on_switch_up" x="-5" y="130" width="34" height="44" z="-3" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="move up" duration="0.5" auto_next="up">
+<marks>
+<mark label="sign" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='70' y='16' clip_width='34' clip_height='43' spritepos='lights red' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='0' y='0' clip_width='221' clip_height='15' spritepos='rail' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail end" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='140' y='16' clip_width='42' clip_height='15' spritepos='end' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='28' y='107' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="axis" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='105' y='16' clip_width='34' clip_height='43' spritepos='axis' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="warning" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation_file path='animation/switching-warning.canim' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" function="on_move_up" width="204" height="152" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="warning" function="" x="5" y="98" width="0" height="0" z="-2" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="axis" function="" x="12" y="68" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="post" function="" x="-5" y="90" width="0" height="0" z="-20" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail end" function="" x="0" y="68" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail" function="" x="112" y="30" width="0" height="0" z="-1" angle="-0.354" visible="1" x_easing="quad:in_out" y_easing="quad:in_out" width_easing="none:in" height_easing="none:in" angle_easing="quad:in_out"/>
+<mark_placement label="sign" function="" x="-5" y="130" width="34" height="44" z="-3" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot><snapshot date="0.45" width="204" height="152" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="warning" function="" x="5" y="98" width="0" height="0" z="-2" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="axis" function="" x="12" y="68" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="post" function="" x="-5" y="90" width="0" height="0" z="-20" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail end" function="" x="0" y="68" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail" function="" x="112" y="108" width="0" height="0" z="-1" angle="0.374" visible="1" x_easing="quad:in_out" y_easing="quad:in_out" width_easing="none:in" height_easing="none:in" angle_easing="quad:in_out"/>
+<mark_placement label="sign" function="" x="-5" y="130" width="34" height="44" z="-3" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="move down" duration="0.5" auto_next="down">
+<marks>
+<mark label="sign" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='70' y='16' clip_width='34' clip_height='43' spritepos='lights red' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='0' y='0' clip_width='221' clip_height='15' spritepos='rail' auto_size='true' width='221' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="rail end" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='140' y='16' clip_width='42' clip_height='15' spritepos='end' auto_size='true' width='42' height='15' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='28' y='107' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="axis" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/switching/switching.png' x='105' y='16' clip_width='34' clip_height='43' spritepos='axis' auto_size='true' width='34' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="warning" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation_file path='animation/switching-warning.canim' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" function="on_move_down" width="204" height="152" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="warning" function="" x="5" y="98" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="axis" function="" x="12" y="68" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="post" function="" x="-5" y="90" width="0" height="0" z="-20" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail end" function="" x="0" y="68" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail" function="" x="112" y="108" width="0" height="0" z="-1" angle="0.374" visible="1" x_easing="quad:in_out" y_easing="quad:in_out" width_easing="none:in" height_easing="none:in" angle_easing="quad:in_out"/>
+<mark_placement label="sign" function="" x="-5" y="130" width="34" height="44" z="-3" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot><snapshot date="0.45" width="204" height="152" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="warning" function="" x="5" y="98" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="axis" function="" x="12" y="68" width="0" height="0" z="-10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="post" function="" x="-5" y="90" width="0" height="0" z="-20" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail end" function="" x="0" y="68" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="rail" function="" x="112" y="30" width="0" height="0" z="-1" angle="-0.354" visible="1" x_easing="quad:in_out" y_easing="quad:in_out" width_easing="none:in" height_easing="none:in" angle_easing="quad:in_out"/>
+<mark_placement label="sign" function="" x="-5" y="130" width="34" height="44" z="-3" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+</model>
+

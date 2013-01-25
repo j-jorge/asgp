@@ -1,0 +1,15 @@
++3 {
+  boss.speak( "|You won't go any further, Andy!" );
+}
+
++3 {
+  andy.speak( "|Come on Brian.|Stop this and come playing!" );
+}
+
++6 {
+  boss.speak( "|Only if you change the name of the park!" );
+}
+
++5 {
+  script.end();
+}

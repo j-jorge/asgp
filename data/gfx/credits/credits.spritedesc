@@ -1,0 +1,16 @@
+/* The size of the resulting image. */
+sprite_sheet "credits-1" 512 x 512
+
+/* the source images */
+board "board.xcf.bz2"
+small_board "small-board.xcf.bz2"
+
+"board" autosize * 0.5 with board
+  glob "*"
+  ;
+
+"small board" autosize * 0.25 with small_board
+  "frame"
+  "shadow"
+  "background"
+  ;

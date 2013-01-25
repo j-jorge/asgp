@@ -1,0 +1,28 @@
+/*  */
+sprite_sheet "switching-fill" 256 x 256 margin 0
+
+img "switching-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+  glob "*plank*"
+  glob "common*"
+  ;
+
+sprite_sheet "switching-background" 512 x 256 margin 1
+
+img "switching-background.xcf.bz2"
+
+"down" "down mask" * 0.5 with img
+  "down planks"
+  glob "down border*"
+  mask
+  "down mask"
+  ;
+
+"up" "up mask" * 0.5 with img
+  "up planks"
+  glob "up border*"
+  mask
+  "up mask"
+  ;
+

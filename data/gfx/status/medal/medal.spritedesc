@@ -1,0 +1,73 @@
+/* The size of the resulting image. */
+sprite_sheet "medal" 512 x 512
+
+/* */
+large "large.xcf.bz2"
+small "small.xcf.bz2"
+
+"gold" autosize * 0.46 with large
+  "scratches"
+  "laurel"
+  "1"
+  "border"
+  "gold"
+  "red"
+  "collar"
+  "strip"
+  ;
+
+"silver" autosize * 0.46 with large
+  "scratches"
+  "large laurel"
+  "2"
+  "circle"
+  "border"
+  "silver"
+  "magenta"
+  "strip"
+  ;
+
+"bronze" autosize * 0.46 with large
+  "scratches"
+  "no laurel"
+  "3"
+  "circle"
+  "border"
+  "bronze"
+  "green"
+  "collar"
+  ;
+
+"gold small" autosize * 0.46 with small
+  "scratches"
+  "laurel"
+  "1"
+  "border"
+  "gold"
+  "red"
+  "collar"
+  "strip"
+  ;
+
+"silver small" autosize * 0.46 with small
+  "scratches"
+  "large laurel"
+  "2"
+  "circle"
+  "border"
+  "silver"
+  "magenta"
+  "strip"
+  ;
+
+"bronze small" autosize * 0.46 with small
+  "scratches"
+  "no laurel"
+  "3"
+  "circle"
+  "border"
+  "bronze"
+  "green"
+  "collar"
+  ;
+

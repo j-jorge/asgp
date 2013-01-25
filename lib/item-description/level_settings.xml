@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::level_settings" category="settings" fixable="false" box_color="#D48E82" url="http://www.gamned.org/wiki/index.php/level_settings">
+  <inherit>
+    <class>bear::level_settings</class>
+  </inherit>
+
+  <description>An item to set parameters of level.</description>
+
+  <fields>
+
+    <field type="real" name="level_settings.level_duration">
+      <description>The time under which we win points.</description>
+      <after field="level_settings.cart"/>
+      <after field="level_settings.add_ingame_layers"/>
+      <default_value>0</default_value>
+    </field>    
+
+    <field type="item_reference" name="level_settings.cart">
+      <description>The cart of the level.</description>
+      <set>
+	<element value="rp::cart"/>
+      </set>
+    </field>
+
+    <field type="item_reference" name="level_settings.add_ingame_layers">
+      <description>The add_ingame_layers of the level.</description>
+      <set>
+	<element value="rp::add_ingame_layers"/>
+      </set>
+    </field>
+
+    <field type="boolean" name="level_settings.is_boss_level">
+      <description>Indicates that the level is a boss level.</description>
+      <default_value>false</default_value>
+    </field>
+
+    <field type="boolean" name="level_settings.is_boss_transition">
+      <description>Indicates that the level is a boss transition level.</description>
+      <default_value>false</default_value>
+    </field>
+
+    <field type="string" name="level_settings.level_info">
+      <description>An optionnal indication for the level.</description>
+    </field>
+
+    <field type="string" name="level_settings.level_theme">
+      <description>The theme of the level.</description>
+      <set>
+	<element value="western"/>
+	<element value="aquatic"/>
+	<element value="cake"/>
+	<element value="death"/>
+	<element value="space"/>
+      </set>
+      <default_value>western</default_value>
+    </field>
+
+  </fields>
+</item>

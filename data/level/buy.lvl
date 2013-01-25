@@ -1,0 +1,3906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level name='' width='2560' height='2440' music='music/credits.ogg'>
+  <layer class_name='decoration_layer' name='fond' width='2560' height='1536' fit_level='0'>
+
+<items>
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_08.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='512'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_04.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1024'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_00.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.left'>
+<real value='512'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_09.png' x='0' y='0' clip_width='1024' clip_height='512' spritepos='' auto_size='true' width='1024' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='512'/>
+</field>
+<field name='base_item.position.left'>
+<real value='512'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_05.png' x='0' y='0' clip_width='1024' clip_height='512' spritepos='' auto_size='true' width='1024' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1024'/>
+</field>
+<field name='base_item.position.left'>
+<real value='512'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_01.png' x='0' y='0' clip_width='1024' clip_height='512' spritepos='' auto_size='true' width='1024' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.left'>
+<real value='1536'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_10.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='512'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1536'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_06.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1024'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1536'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_02.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.left'>
+<real value='2048'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_11.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='512'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2048'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_07.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1024'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2048'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/background/far-background/bk_03.png' x='0' y='0' clip_width='512' clip_height='512' spritepos='' auto_size='true' width='512' height='512' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+</items>
+
+<priority>
+</priority>
+
+  </layer><!-- decoration_layer -->
+
+  <layer class_name='action_layer' name='' width='2560' height='2440' fit_level='1'>
+
+<items>
+    <item class_name='rp::add_ingame_layers' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='129'/>
+</field>
+<field name='base_item.position.left'>
+<real value='184'/>
+</field>
+<field name='add_ingame_layers.show_introduction'>
+<bool value='0'/>
+</field>
+<field name='add_ingame_layers.status_layer'>
+<bool value='0'/>
+</field>
+</fields>
+    </item><!-- rp::add_ingame_layers -->
+
+    <item class_name='bear::cursor' fixed='false' id='cursor'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='103'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='30000'/>
+</field>
+<field name='base_item.position.left'>
+<real value='293'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/cursor.png' x='0' y='0' clip_width='48' clip_height='48' spritepos='default' auto_size='true' width='48' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+<field name='cursor.visible_duration'>
+<real value='2'/>
+</field>
+</fields>
+    </item><!-- bear::cursor -->
+
+    <item class_name='bear::camera_on_object' fixed='false' id='camera'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='444'/>
+</field>
+<field name='base_item.position.left'>
+<real value='357'/>
+</field>
+<field name='base_item.size.height'>
+<real value='720'/>
+</field>
+<field name='base_item.size.width'>
+<real value='1280'/>
+</field>
+<field name='camera.active'>
+<bool value='1'/>
+</field>
+<field name='camera.max_zoom_length'>
+<real value='500'/>
+</field>
+<field name='camera.size.min_height'>
+<real value='720'/>
+</field>
+<field name='camera.size.min_width'>
+<real value='1280'/>
+</field>
+<field name='camera.valid_max.x'>
+<real value='24900'/>
+</field>
+<field name='camera.valid_max.y'>
+<real value='4900'/>
+</field>
+<field name='camera.valid_min.x'>
+<real value='100'/>
+</field>
+<field name='camera.valid_min.y'>
+<real value='100'/>
+</field>
+<field name='camera_on_object.items'>
+<item_reference value='camera'/>
+</field>
+</fields>
+    </item><!-- bear::camera_on_object -->
+
+    <item class_name='bear::mouse_detector' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='367'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='navigateur_launcher'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_detector -->
+
+    <item class_name='bear::decorative_item' fixed='true' id='buy'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='367'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/buttons-2.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='buy' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::navigator_launcher_toggle' fixed='true' id='navigateur_launcher'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='526'/>
+</field>
+<field name='base_item.position.left'>
+<real value='432'/>
+</field>
+<field name='navigator_launcher_toggle.url'>
+<string value='http://www.stuff-o-matic.com/asgp/purchase/purchase.php'/>
+</field>
+</fields>
+    </item><!-- bear::navigator_launcher_toggle -->
+
+    <item class_name='bear::mouse_over_manager' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='457'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='9'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1011'/>
+</field>
+<field name='mouse_over_manager.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='141' y='396' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.items'>
+<item_reference value='resume'/>
+<item_reference value='buy'/>
+</field>
+<field name='mouse_over_manager.sample'>
+<sample path='sound/tick.ogg' loops='1' volume='1'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_over_manager -->
+
+    <item class_name='bear::mouse_detector' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1487'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='popper'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_detector -->
+
+    <item class_name='bear::decorative_item' fixed='true' id='resume'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1487'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/buttons.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='resume' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::level_popper_toggle' fixed='false' id='popper'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='526'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1598'/>
+</field>
+<field name='level_popper_toggle.transition_layer_name'>
+<string value='transition_effect_layer'/>
+</field>
+</fields>
+    </item><!-- bear::level_popper_toggle -->
+
+</items>
+
+<priority>
+</priority>
+
+  </layer><!-- action_layer -->
+
+  <layer class_name='action_layer' name='deco' width='2560' height='2440' fit_level='1'>
+
+<items>
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1230'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='26'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='andy&apos;s link anchor left'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-35'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='balloon-29'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1285'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='27'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='andy&apos;s link anchor left'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-35'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='balloon-28'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='rp::balloon' fixed='false' id='balloon-29'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1206'/>
+</field>
+<field name='base_item.position.left'>
+<real value='68'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::balloon -->
+
+    <item class_name='rp::balloon' fixed='false' id='balloon-28'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1261'/>
+</field>
+<field name='base_item.position.left'>
+<real value='69'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::balloon -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1218'/>
+</field>
+<field name='base_item.position.left'>
+<real value='211'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='balloon-29'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-balloon-29'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1273'/>
+</field>
+<field name='base_item.position.left'>
+<real value='212'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='balloon-28'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-balloon-28'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-balloon-29'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1220'/>
+</field>
+<field name='base_item.position.left'>
+<real value='284'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s balloon-2'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='6'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-balloon-28'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1275'/>
+</field>
+<field name='base_item.position.left'>
+<real value='285'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s balloon-3'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-balloon-27'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1337'/>
+</field>
+<field name='base_item.position.left'>
+<real value='412'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s balloon-4'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='andy'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='869'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='50'/>
+</field>
+<field name='base_item.position.left'>
+<real value='445'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='0' y='187' clip_width='268' clip_height='168' spritepos='andy&apos;s' auto_size='true' width='268' height='168' mirror='boolean_false' flip='boolean_false' angle='0.3' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s balloon-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1076'/>
+</field>
+<field name='base_item.position.left'>
+<real value='461'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='andy&apos;s link anchor left'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='972'/>
+</field>
+<field name='base_item.position.left'>
+<real value='485'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='S'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='81'/>
+</field>
+<field name='base_item.position.left'>
+<real value='490'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='341' y='356' clip_width='102' clip_height='120' spritepos='_S_uper' auto_size='true' width='102' height='120' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='493'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - S'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='S'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1331'/>
+</field>
+<field name='base_item.position.left'>
+<real value='494'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='balloon-27'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-balloon-27'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s balloon-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1084'/>
+</field>
+<field name='base_item.position.left'>
+<real value='499'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::decorative_item' fixed='true' id='wave'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='655'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='50'/>
+</field>
+<field name='base_item.position.left'>
+<real value='500'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='0' y='0' clip_width='1002' clip_height='186' spritepos='wave' auto_size='true' width='1002' height='186' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='371'/>
+</field>
+<field name='base_item.position.left'>
+<real value='514'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - S'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-0.1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - S'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='514'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='515'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - S'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-2'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='263'/>
+</field>
+<field name='base_item.position.left'>
+<real value='517'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='S'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-2'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='316'/>
+</field>
+<field name='base_item.position.left'>
+<real value='517'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-2'/>
+<item_reference value='rot - U-2'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='564'/>
+</field>
+<field name='base_item.position.left'>
+<real value='518'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - S'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-10'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='rp::balloon' fixed='false' id='balloon-27'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1316'/>
+</field>
+<field name='base_item.position.left'>
+<real value='552'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::balloon -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - S'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='554'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - S'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='769'/>
+</field>
+<field name='base_item.position.left'>
+<real value='554'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='338'/>
+</field>
+<field name='base_item.position.left'>
+<real value='557'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - S'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='570.7'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - U'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-50'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='U'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s center'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='953'/>
+</field>
+<field name='base_item.position.left'>
+<real value='579'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='367'/>
+</field>
+<field name='base_item.position.left'>
+<real value='604'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - U'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-0.3'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='604'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='605'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - U'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='259'/>
+</field>
+<field name='base_item.position.left'>
+<real value='607'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='U'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='312'/>
+</field>
+<field name='base_item.position.left'>
+<real value='607'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U'/>
+<item_reference value='rot - U'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='589'/>
+</field>
+<field name='base_item.position.left'>
+<real value='608'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - U'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='105'/>
+</field>
+<field name='base_item.position.left'>
+<real value='609'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='138' y='356' clip_width='103' clip_height='123' spritepos='s_U_per' auto_size='true' width='103' height='123' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s balloon-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1111'/>
+</field>
+<field name='base_item.position.left'>
+<real value='616'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='andy&apos;s link anchor apostrophe'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1027'/>
+</field>
+<field name='base_item.position.left'>
+<real value='619'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1330'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='632'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='andy&apos;s link anchor apostrophe'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-35'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='balloon-27'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='332'/>
+</field>
+<field name='base_item.position.left'>
+<real value='648'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - U'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='648.4'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - P (super)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='P (super)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='673.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - U'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='794.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='673.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='362'/>
+</field>
+<field name='base_item.position.left'>
+<real value='691'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - P (super)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-0.5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - P (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='691'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='692'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - P (super)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-1'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='612'/>
+</field>
+<field name='base_item.position.left'>
+<real value='692'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - P (super)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='254'/>
+</field>
+<field name='base_item.position.left'>
+<real value='694'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='P (super)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-1'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='307'/>
+</field>
+<field name='base_item.position.left'>
+<real value='694'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-1'/>
+<item_reference value='rot - U-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s balloon-7'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1087'/>
+</field>
+<field name='base_item.position.left'>
+<real value='699'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='P (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='142'/>
+</field>
+<field name='base_item.position.left'>
+<real value='703'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='665' y='187' clip_width='90' clip_height='132' spritepos='su_P_er' auto_size='true' width='90' height='132' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='andy&apos;s link anchor right'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='968'/>
+</field>
+<field name='base_item.position.left'>
+<real value='703'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s balloon-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1109'/>
+</field>
+<field name='base_item.position.left'>
+<real value='716'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='726.1'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - E (super)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='E (super)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='332'/>
+</field>
+<field name='base_item.position.left'>
+<real value='729'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - P (super)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='anchor - andy&apos;s balloon-8'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1082'/>
+</field>
+<field name='base_item.position.left'>
+<real value='746'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - P (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='761'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - P (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='836'/>
+</field>
+<field name='base_item.position.left'>
+<real value='761'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='364'/>
+</field>
+<field name='base_item.position.left'>
+<real value='765'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - E (super)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-0.9'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - E (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='765'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='766'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - E (super)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-3'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='256'/>
+</field>
+<field name='base_item.position.left'>
+<real value='768'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='E (super)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-3'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='309'/>
+</field>
+<field name='base_item.position.left'>
+<real value='768'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-3'/>
+<item_reference value='rot - U-3'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='564'/>
+</field>
+<field name='base_item.position.left'>
+<real value='769'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - E (super)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='P (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='-12'/>
+</field>
+<field name='base_item.position.left'>
+<real value='771'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='869' y='187' clip_width='91' clip_height='128' spritepos='_P_ark' auto_size='true' width='91' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='E (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='216'/>
+</field>
+<field name='base_item.position.left'>
+<real value='783'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='403' y='187' clip_width='137' clip_height='135' spritepos='sep_E_r' auto_size='true' width='137' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='329'/>
+</field>
+<field name='base_item.position.left'>
+<real value='793'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - E (super)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-balloon-26'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1174'/>
+</field>
+<field name='base_item.position.left'>
+<real value='801'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s balloon-6'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='6'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-balloon-24'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1274'/>
+</field>
+<field name='base_item.position.left'>
+<real value='802'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s balloon-7'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-balloon-23'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1329'/>
+</field>
+<field name='base_item.position.left'>
+<real value='803'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s balloon-8'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='6'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='803.8'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - R (super)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='R (super)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='361'/>
+</field>
+<field name='base_item.position.left'>
+<real value='823'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - R (super)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-1.1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - R (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='823'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='824'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - R (super)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-4'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='253'/>
+</field>
+<field name='base_item.position.left'>
+<real value='826'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='R (super)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-4'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='306'/>
+</field>
+<field name='base_item.position.left'>
+<real value='826'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-4'/>
+<item_reference value='rot - U-4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='589'/>
+</field>
+<field name='base_item.position.left'>
+<real value='827'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - R (super)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - P (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='392'/>
+</field>
+<field name='base_item.position.left'>
+<real value='829.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - P (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='680'/>
+</field>
+<field name='base_item.position.left'>
+<real value='829.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='R (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='320'/>
+</field>
+<field name='base_item.position.left'>
+<real value='845'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='778' y='356' clip_width='127' clip_height='105' spritepos='supe_R_' auto_size='true' width='127' height='105' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='328'/>
+</field>
+<field name='base_item.position.left'>
+<real value='860'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - R (super)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - E (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='864.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - E (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='911.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='864.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='971'/>
+</field>
+<field name='base_item.position.left'>
+<real value='868'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='andy'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-andy&apos;s'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='A (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='33'/>
+</field>
+<field name='base_item.position.left'>
+<real value='877'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='242' y='356' clip_width='98' clip_height='122' spritepos='p_A_rk' auto_size='true' width='98' height='122' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='881.5'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - P (park)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='P (park)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1168'/>
+</field>
+<field name='base_item.position.left'>
+<real value='883'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='balloon-24'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-balloon-26'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1268'/>
+</field>
+<field name='base_item.position.left'>
+<real value='884'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='balloon-23'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-balloon-24'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='885'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='balloon-25'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='rot-balloon-23'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='360'/>
+</field>
+<field name='base_item.position.left'>
+<real value='893'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - P (park)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-0.7'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - P (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='893'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='894'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - P (park)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-5'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='610'/>
+</field>
+<field name='base_item.position.left'>
+<real value='894'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - P (park)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='252'/>
+</field>
+<field name='base_item.position.left'>
+<real value='896'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='P (park)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-5'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='305'/>
+</field>
+<field name='base_item.position.left'>
+<real value='896'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-5'/>
+<item_reference value='rot - U-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='325'/>
+</field>
+<field name='base_item.position.left'>
+<real value='921'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - P (park)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - R (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='921.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - R (super)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1000.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='921.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot-andy&apos;s'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='884'/>
+</field>
+<field name='base_item.position.left'>
+<real value='930'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - andy&apos;s center'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0.2'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.loop_back'>
+<bool value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='3'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - A (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='392'/>
+</field>
+<field name='base_item.position.left'>
+<real value='939'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - A (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='722'/>
+</field>
+<field name='base_item.position.left'>
+<real value='939'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='rp::balloon' fixed='false' id='balloon-24'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1153'/>
+</field>
+<field name='base_item.position.left'>
+<real value='941'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::balloon -->
+
+    <item class_name='rp::balloon' fixed='false' id='balloon-23'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1253'/>
+</field>
+<field name='base_item.position.left'>
+<real value='942'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::balloon -->
+
+    <item class_name='rp::balloon' fixed='false' id='balloon-25'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1308'/>
+</field>
+<field name='base_item.position.left'>
+<real value='943'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::balloon -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='360'/>
+</field>
+<field name='base_item.position.left'>
+<real value='956'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - A (park)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='-0.3'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - A (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='956'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='957'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - A (park)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-6'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='252'/>
+</field>
+<field name='base_item.position.left'>
+<real value='959'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='A (park)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-6'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='305'/>
+</field>
+<field name='base_item.position.left'>
+<real value='959'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-6'/>
+<item_reference value='rot - U-6'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='959.2'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - A (park)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='A (park)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='589'/>
+</field>
+<field name='base_item.position.left'>
+<real value='960'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - A (park)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='327'/>
+</field>
+<field name='base_item.position.left'>
+<real value='993'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - A (park)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='R (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='26'/>
+</field>
+<field name='base_item.position.left'>
+<real value='998'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='756' y='187' clip_width='112' clip_height='129' spritepos='pa_R_k' auto_size='true' width='112' height='129' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - wave'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='748'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1001'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='G'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='318'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1002'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='0' y='356' clip_width='137' clip_height='126' spritepos='_G_reat' auto_size='true' width='137' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-8'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='354'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1013'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - R (park)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0.5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - R (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1013'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1014'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - R (park)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-8'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-8'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='604'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1014'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - R (park)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='246'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1016'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='R (park)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-8'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-8'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='299'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1016'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-8'/>
+<item_reference value='rot - U-8'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1167'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1021'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='andy&apos;s link anchor right'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-35'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='balloon-24'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1267'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1022'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='andy&apos;s link anchor right'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-35'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='balloon-23'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1322'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1023'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='andy&apos;s link anchor right'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-35'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='balloon-25'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1036.8'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - R (park)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='R (park)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-8'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='321'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1050'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - R (park)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='R (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='214'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1056'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='269' y='187' clip_width='133' clip_height='135' spritepos='g_R_eat' auto_size='true' width='133' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - R (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='392'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1067'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - R (park)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='718.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1067'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-9'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='352'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1077'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - K'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0.6'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - K'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1077'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1078'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - K'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-9'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='244'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1080'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='K'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-9'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-9'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='297'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1080'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-9'/>
+<item_reference value='rot - U-9'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-9'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='564'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1081'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - K'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - G (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1083.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - G'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1009'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1083.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='K'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='-14'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1106'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='444' y='356' clip_width='120' clip_height='118' spritepos='par_K_' auto_size='true' width='120' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-9'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='319'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1114'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - K'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1114.5'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - K'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='K'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - R (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1135.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - R (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='909.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1135.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-7'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='355'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1140'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - G'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='1.1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - G'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1140'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1141'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - G'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-7'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='247'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1143'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='G'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-7'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-7'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='300'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1143'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-7'/>
+<item_reference value='rot - U-7'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-7'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='589'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1144'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - G'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='E (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='147'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1156'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='541' y='187' clip_width='123' clip_height='133' spritepos='gr_E_at' auto_size='true' width='123' height='133' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-7'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='322'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1177'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - G'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - K'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='392'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1179'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - K'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='673'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1179'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1192.2'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - G (great)'/>
+</field>
+<field name='base_link_visual.start_delta.y'>
+<real value='-30'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='G'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-10'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='356'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1200'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - R (great)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0.9'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - R (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1200'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1201'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - R (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-10'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-10'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='606'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1201'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - R (great)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='248'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1203'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='R (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-10'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-10'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='301'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1203'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-10'/>
+<item_reference value='rot - U-10'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - E (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1230.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - E (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='841.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1230.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-10'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1237'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - R (great)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='A (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='99'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1257'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='679' y='356' clip_width='98' clip_height='115' spritepos='gre_A_t' auto_size='true' width='98' height='115' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-11'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='356'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1260'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - E (great)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0.5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - E (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1260'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1261'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - E (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-11'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='248'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1263'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='E (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-11'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-11'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='301'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1263'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-11'/>
+<item_reference value='rot - U-11'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-11'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='564'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1264'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - E (great)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1269.9'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - R (great)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='R (great)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-11'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1297'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - E (great)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - A (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1319'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - A (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='784.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1319'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-12'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='357'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1320'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - A (great)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - A (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1320'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1321'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - A (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-12'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-12'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='607'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1321'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - A (great)'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='249'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1323'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='A (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-12'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-12'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='302'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1323'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-12'/>
+<item_reference value='rot - U-12'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1347.6'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - E (great)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='E (great)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-12'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='324'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1357'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - A (great)'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-3.1415'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='3.1415'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='T'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='80'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1378'/>
+</field>
+<field name='basic_renderable_item.use_system_angle_as_visual_angle'>
+<bool value='1'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/title/letters-1.png' x='565' y='356' clip_width='113' clip_height='116' spritepos='grea_T_' auto_size='true' width='113' height='116' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot up - U-13'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='357'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1378'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='origin - T (great)'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0.1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::reference_item' fixed='false' id='origin - T (great)'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='486'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1378'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='532'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1379'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='origin - T (great)'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join - U-13'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='249'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1381'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='T'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt - U-13'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt - U-13'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='302'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1381'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='rot up - U-13'/>
+<item_reference value='rot - U-13'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join - U-13'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='589'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1382'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - T'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='rot - U-13'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='324'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1415'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='anchor - T'/>
+</field>
+<field name='forced_rotation_creator.acceleration_time'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='4'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1425.3'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - A (great)'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='A (great)'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+    <item class_name='bear::reference_item' fixed='true' id='link anchor - T'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='439'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1447.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='true' id='anchor - T'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='766'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1447.5'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::continuous_link_visual' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='645'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1503'/>
+</field>
+<field name='base_link_visual.end_item'>
+<item_reference value='link anchor - T'/>
+</field>
+<field name='base_link_visual.start_item'>
+<item_reference value='T'/>
+</field>
+<field name='basic_renderable_item.color'>
+<color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+</field>
+</fields>
+    </item><!-- bear::continuous_link_visual -->
+
+</items>
+
+<priority>
+</priority>
+
+  </layer><!-- action_layer -->
+
+</level>

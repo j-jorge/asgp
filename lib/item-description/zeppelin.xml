@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::zeppelin" category="rolling_painting" box_color="#22AA77" url="http://www.gamned.org/wiki/index.php/zeppelin" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::model</class>
+    <class>rp::entity</class>
+    <class>bear::item_with_toggle</class>
+  </inherit>
+  <fields>
+    <field type="item_reference" name="zeppelin.item">
+      <description>
+        The item to be copied.
+      </description>
+    </field>
+  </fields>
+  <description>The class describing a hot air balloon.</description>
+  <new_default_value name="base_item.size.width">154</new_default_value>
+  <new_default_value name="base_item.size.height">37</new_default_value>
+</item>

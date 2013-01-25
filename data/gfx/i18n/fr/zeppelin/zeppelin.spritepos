@@ -1,0 +1,10 @@
+# The format of the lines is
+# picture: x y width height
+
+FUN: 0 0 73 15
+PARK: 74 0 73 15
+EST: 148 0 73 15
+UN: 0 16 73 15
+SUPER: 74 16 73 15
+NOM: 148 16 73 15
+blank screen: 0 32 73 15

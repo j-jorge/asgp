@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::boss_controller" category="rolling_painting" box_color="#22AA77" url="http://www.gamned.org/wiki/index.php/boss_controller" fixable="true">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::model</class>
+  </inherit>
+  <fields>
+    <field type="item_reference" name="boss_controller.zeppelin_item">
+      <description>
+        The item under the zeppelin.
+      </description>
+      <default_value>none</default_value>
+    </field>
+    <field type="u_integer" name="boss_controller.hit_bound">
+      <description>The bound of hits under which we don't create the drop item.</description>
+      <default_value>0</default_value>
+    </field>
+    <field type="item_reference" name="boss_controller.item">
+      <default_value>nothing</default_value>
+	<description>
+        The item that is created by boss.
+      </description> 
+      <set>
+        <element value="rp::entity"/>
+      </set>
+    </field>    
+    <field type="item_reference" name="boss_controller.y_reference_item">
+      <default_value>the cart</default_value>
+      <description>
+        The item that is used for y reference.
+      </description>
+    </field>
+    <field type="boolean" name="boss_controller.right_side">
+      <description>Indicates that the controller checks on the right side.</description>
+      <default_value>false</default_value>
+    </field>
+  </fields>
+  <description>The class gives parameters at the boss.</description>
+  <new_default_value name="base_item.size.width">50</new_default_value>
+  <new_default_value name="base_item.size.height">1000</new_default_value>
+</item>

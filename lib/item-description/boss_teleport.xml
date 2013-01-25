@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::boss_teleport" category="rolling_painting" box_color="#22AA77" url="http://www.gamned.org/wiki/index.php/boss_teleport" fixable="true">
+  <inherit>
+    <class>bear::teleport_item</class>
+  </inherit>
+  <fields>
+     <field type="item_reference" name="boss_teleport.y_reference_item">
+      <default_value>the cart</default_value>
+      <description>
+        The item that is used for y reference.
+      </description>
+    </field>
+    <field type="item_reference" name="boss_teleport.boss">
+      <default_value>the boss</default_value>
+      <description>
+        The boss of the level.
+      </description>
+	<set>
+        <element value="rp::boss"/>
+      </set>
+    </field>
+  </fields>
+  <description>The class gives parameters at the boss and teleport objects.</description>
+  <new_default_value name="base_item.size.width">50</new_default_value>
+  <new_default_value name="base_item.size.height">1000</new_default_value>
+</item>

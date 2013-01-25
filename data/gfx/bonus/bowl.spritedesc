@@ -1,0 +1,100 @@
+sprite_sheet "bowl" 512 x 512 margin 0
+
+img "bowl.xcf.bz2"
+
+"-165" "mask" * 0.1 with img
+  "-165"
+  ;
+
+"-150" "mask" * 0.1 with img
+  "-150"
+  ;
+
+"-135" "mask" * 0.1 with img
+  "-135"
+  ;
+
+"-120" "mask" * 0.1 with img
+  "-120"
+  ;
+
+"-105" "mask" * 0.1 with img
+  "-105"
+  ;
+
+"-90" "mask" * 0.1 with img
+  "-90"
+  ;
+
+"-75" "mask" * 0.1 with img
+  "-75"
+  ;
+
+"-60" "mask" * 0.1 with img
+  "-60"
+  ;
+
+"-45" "mask" * 0.1 with img
+  "-45"
+  ;
+
+"-30" "mask" * 0.1 with img
+  "-30"
+  ;
+
+"-15" "mask" * 0.1 with img
+  "-15"
+  ;
+
+"0" "mask" * 0.1 with img
+  "0"
+  ;
+
+"15" "mask" * 0.1 with img
+  "15"
+  ;
+
+"30" "mask" * 0.1 with img
+  "30"
+  ;
+
+"45" "mask" * 0.1 with img
+  "45"
+  ;
+
+"60" "mask" * 0.1 with img
+  "60"
+  ;
+
+"75" "mask" * 0.1 with img
+  "75"
+  ;
+
+"90" "mask" * 0.1 with img
+  "90"
+  ;
+
+"105" "mask" * 0.1 with img
+  "105"
+  ;
+
+"120" "mask" * 0.1 with img
+  "120"
+  ;
+
+"135" "mask" * 0.1 with img
+  "135"
+  ;
+
+"150" "mask" * 0.1 with img
+  "150"
+  ;
+
+"165" "mask" * 0.1 with img
+  "165"
+  ;
+
+"180" "mask" * 0.1 with img
+  "180"
+  ;
+

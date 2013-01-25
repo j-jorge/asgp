@@ -1,0 +1,12 @@
+# The format of the lines is
+# picture: x y width height
+
+chocolate: 0 0 255 478
+barley-sugar: 256 0 121 332
+ice cream, apricot: 256 333 136 131
+lollipop, orange: 393 333 60 56
+lollipop, cola: 393 390 60 56
+lollipop, blackberry: 378 0 60 56
+lollipop, strawberry: 439 0 60 56
+lollipop stick: 378 57 7 114
+lollipop horizontal stick: 393 447 114 7

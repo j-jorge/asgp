@@ -1,0 +1,32 @@
+2013-01-01 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.4
+
+	* Bug fix: the textures were invalidated when switching the
+	windowed/fullscreen mode.
+
+2012-12-17 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.3
+
+	* Packaging for Ubuntu
+
+2012-12-15 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.2
+
+	* Makes the translations to work.
+	* Adds the translation in french.
+	* Allows to run the game from any directory.
+
+2012-12-11 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.1
+
+	* Fixes some texture bugs on Windows when resizing the window. It
+	may still occurs in rare occurences when toggling the full screen
+	mode.
+
+2012-12-04 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Initial release

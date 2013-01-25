@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" category="rolling_painting" class="rp::help_button" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/help_button" fixable="false">
+  <inherit>
+    <class>bear::mouse_detector</class>
+    <class>bear::basic_renderable_item</class>
+  </inherit>
+  <description>The class describing a button to see help.</description>
+</item>

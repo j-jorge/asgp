@@ -1,0 +1,14 @@
+# The format of the lines is
+# picture: x y width height
+
+new record: 0 0 210 126
+plunger: 0 127 48 48
+balloons: 49 127 48 48
+time: 98 127 48 48
+health: 147 127 48 48
+level: 196 127 48 48
+bonus: 0 176 48 48
+explosed balloons: 49 176 48 48
+missed plungers: 98 176 48 48
+missed cannonballs: 147 176 48 48
+penalty: 196 176 48 48

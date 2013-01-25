@@ -1,0 +1,99 @@
+/* The size of the resulting image. */
+sprite_sheet "explosion" 512 x 256
+
+/* the source images and their ratio in the result */
+img "explosion.xcf.bz2"
+
+"pre explosion 0" image_size * 0.5 with img
+  "pre light 0"
+  ;
+
+"pre explosion 1" image_size * 0.5 with img
+  "pre light 1"
+  "light glow 0"
+  ;
+
+"pre explosion 2" image_size * 0.5 with img
+  "pre light 1"
+  "light glow 1"
+  ;
+
+"explosion 0" image_size * 0.5 with img
+  "light 0"
+  "fire 0"
+  "fire 0 glow"
+  "cloud 0"
+  "light glow 1"
+  ;
+
+"explosion 1" image_size * 0.5 with img
+  "light 1"
+  "fire 1"
+  "fire 1 glow"
+  "cloud 1"
+  "light glow 2"
+  ;
+
+"explosion 2" image_size * 0.5 with img
+  "light 2"
+  "fire 2"
+  "fire 2 glow"
+  "cloud 2"
+  "light glow 2"
+  ;
+
+"explosion 3" image_size * 0.5 with img
+  "light 3"
+  "fire 3"
+  "fire 3 glow"
+  "cloud 3"
+  "light glow 2"
+  ;
+
+"explosion 4" image_size * 0.5 with img
+  "light 4"
+  "fire 4"
+  "fire 4 glow"
+  "cloud 4"
+  "smoke 4"
+  "fire 3 glow"
+  ;
+
+/* The size of the resulting image. */
+sprite_sheet "explosion-1" 512 x 128
+
+/* the source images and their ratio in the result */
+img "explosion.xcf.bz2"
+
+"explosion 5" image_size * 0.5 with img
+  "light 5"
+  "fire 5"
+  "fire 5 glow"
+  "cloud 5"
+  "smoke 5"
+  "fire 4 glow"
+  ;
+
+"explosion 6" image_size * 0.5 with img
+  "light 6"
+  "fire 6"
+  "fire 6 glow"
+  "cloud 6"
+  "smoke 6"
+  "fire 5 glow"
+  ;
+
+"explosion 7" image_size * 0.5 with img
+  "light 7"
+  "fire 7"
+  "fire 7 glow"
+  "cloud 7"
+  "smoke 7"
+  "fire 6 glow"
+  ;
+
+"explosion 8" image_size * 0.5 with img
+  "smoke 8"
+  "fire 7 glow"
+  ;
+

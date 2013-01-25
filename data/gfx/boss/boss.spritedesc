@@ -1,0 +1,120 @@
+/* The size of the resulting image. */
+sprite_sheet "boss" 512 x 512
+
+/* the source images and their ratio in the result */
+body_img "body.xcf.bz2"
+emergency_img "emergency.xcf.bz2"
+
+"body" autosize * 0.5 with body_img
+  glob "*"
+  exclude glob "-*"
+  ;
+
+"emergency box" image_size * 0.5 with emergency_img
+  glob "common *"
+  ;
+
+"emergency box 1" image_size * 0.5 with emergency_img
+  "halo 1"
+  glob "common *"
+  ;
+
+"emergency box 2" image_size * 0.5 with emergency_img
+  "halo 2"
+  glob "common *"
+  ;
+
+"emergency box 3" image_size * 0.5 with emergency_img
+  "halo 3"
+  glob "common *"
+  ;
+
+"emergency box 4" image_size * 0.5 with emergency_img
+  "halo 4"
+  glob "common *"
+  ;
+
+"emergency box 5" image_size * 0.5 with emergency_img
+  "halo 5"
+  glob "common *"
+  ;
+
+"emergency box 6" image_size * 0.5 with emergency_img
+  "halo 6"
+  glob "common *"
+  ;
+
+"emergency box 7" image_size * 0.5 with emergency_img
+  "halo 7"
+  glob "common *"
+  ;
+
+"emergency box 8" image_size * 0.5 with emergency_img
+  "halo 8"
+  glob "common *"
+  ;
+
+"emergency box 9" image_size * 0.5 with emergency_img
+  "halo 9"
+  glob "common *"
+  ;
+
+"emergency box 10" image_size * 0.5 with emergency_img
+  "halo 10"
+  glob "common *"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "propeller" 512 x 512
+
+/* the source images and their ratio in the result */
+img "propeller.xcf.bz2"
+
+"propeller 1" image_size * 0.5 with img
+  "propeller 1"
+  "axis light 1"
+  "axis"
+  ;
+
+"propeller 2" image_size * 0.5 with img
+  "propeller 2"
+  "axis light 2"
+  "axis"
+  ;
+
+"propeller 3" image_size * 0.5 with img
+  "propeller 3"
+  "axis light 1"
+  "axis"
+  ;
+
+"propeller 4" image_size * 0.5 with img
+  "propeller 4"
+  "axis light 2"
+  "axis"
+  ;
+
+"propeller 5" image_size * 0.5 with img
+  "propeller 5"
+  "axis light 1"
+  "axis"
+  ;
+
+"propeller 6" image_size * 0.5 with img
+  "propeller 6"
+  "axis light 2"
+  "axis"
+  ;
+
+"propeller 7" image_size * 0.5 with img
+  "propeller 7"
+  "axis light 1"
+  "axis"
+  ;
+
+"propeller 8" image_size * 0.5 with img
+  "propeller 8"
+  "axis light 2"
+  "axis"
+  ;

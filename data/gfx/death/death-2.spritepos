@@ -1,0 +1,8 @@
+# The format of the lines is
+# picture: x y width height
+
+dead tree: 0 0 340 280
+reaper: 341 0 168 278
+ghost 1: 0 281 143 227
+ghost 2: 144 281 119 227
+witch: 264 281 139 188

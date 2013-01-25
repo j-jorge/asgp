@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::cart" category="rolling_painting" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/cart" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::model</class>
+    <class>bear::item_with_toggle</class>
+    <class>bear::item_that_speaks</class>
+  </inherit>
+
+  <description>The class describing a cart.</description>
+
+  <fields>
+    <field type="item_reference" name="cart.spot_item" required="true">
+      <description>The cart's hot spot.</description>
+    </field>
+
+    <field type="u_integer" name="cart.id">
+      <description>The identifier of the cart.</description>
+      <default_value>1</default_value>
+    </field>
+    
+    <field type="boolean" name="cart.bad_plunger_zone_rendering">
+      <description>Indicates if the bad plunger zone is rendered.</description>
+      <default_value>true</default_value>
+    </field>
+
+    <field type="item_reference" name="cart.cursor">
+      <description>The cart's cursor to aim at things.</description>
+      <set>
+        <element value="rp::cursor"/>
+      </set>
+      
+    </field>
+  </fields>
+
+  <new_default_value name="basic_renderable_item.use_system_angle_as_visual_angle">true</new_default_value>
+  <new_default_value name="base_item.mass">20</new_default_value>
+
+</item>

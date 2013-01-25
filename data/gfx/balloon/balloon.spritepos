@@ -1,0 +1,27 @@
+# The format of the lines is
+# picture: x y width height
+
+balloon 0: 0 0 43 85
+balloon 0 - 1: 44 0 43 85
+balloon 0 - 2: 88 0 43 85
+balloon 0 - 3: 132 0 43 85
+balloon 0 - 4: 176 0 43 85
+balloon 0 - 5: 220 0 43 85
+balloon 0 - 6: 264 0 43 85
+balloon 0 - 7: 308 0 43 85
+balloon 0 - 8: 352 0 43 85
+balloon 0 - 9: 396 0 43 85
+balloon 0 - 10: 440 0 43 85
+balloon 0 - 11: 0 86 43 85
+balloon 0 - 12: 44 86 43 85
+balloon 0 - 13: 88 86 43 85
+balloon 0 - 14: 132 86 43 85
+balloon 0 - 15: 176 86 43 85
+balloon 1: 220 86 43 85
+balloon 2: 264 86 43 85
+balloon piece 3: 484 0 18 22
+balloon piece 1: 484 23 17 15
+balloon piece 6: 484 39 15 12
+balloon piece 5: 484 52 13 13
+balloon piece 4: 503 0 7 18
+balloon piece 2: 500 39 7 12

@@ -1,0 +1,8 @@
+# The format of the lines is
+# picture: x y width height
+
+stagecoach red: 0 0 196 135
+stagecoach black: 197 0 196 135
+stagecoach blue: 0 136 196 135
+rodeo blue black bull: 197 136 119 125
+splint: 0 272 235 47

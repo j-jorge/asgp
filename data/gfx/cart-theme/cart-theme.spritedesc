@@ -1,0 +1,104 @@
+/* The size of the resulting image. */
+sprite_sheet "aquatic" 128 x 64
+
+/* the source images and their ratio in the result */
+img "cart-theme.xcf.bz2"
+
+"front" "front mask" * 0.5 with img
+  "aquatic"
+  "screws"
+;
+
+"middle" "middle mask" * 0.5 with img
+  "aquatic"
+  "screws"
+;
+
+"back" "back mask" * 0.5 with img
+  "aquatic"
+  "screws"
+;
+
+/* The size of the resulting image. */
+sprite_sheet "cake" 128 x 64
+
+/* the source images and their ratio in the result */
+img "cart-theme.xcf.bz2"
+
+"front" "front mask" * 0.5 with img
+  "cake"
+  "screws"
+;
+
+"middle" "middle mask" * 0.5 with img
+  "cake"
+  "screws"
+;
+
+"back" "back mask" * 0.5 with img
+  "cake"
+  "screws"
+;
+
+/* The size of the resulting image. */
+sprite_sheet "death" 128 x 64
+
+/* the source images and their ratio in the result */
+img "cart-theme.xcf.bz2"
+
+"front" "front mask" * 0.5 with img
+  glob "skeleton*"
+  "screws"
+;
+
+"middle" "middle mask" * 0.5 with img
+  glob "skeleton*"
+  "screws"
+;
+
+"back" "back mask" * 0.5 with img
+  glob "skeleton*"
+  "screws"
+;
+
+/* The size of the resulting image. */
+sprite_sheet "space" 128 x 64
+
+/* the source images and their ratio in the result */
+img "cart-theme.xcf.bz2"
+
+"front" "front mask" * 0.5 with img
+  glob "space*"
+  "screws"
+;
+
+"middle" "middle mask" * 0.5 with img
+  glob "space*"
+  "screws"
+;
+
+"back" "back mask" * 0.5 with img
+  glob "space*"
+  "screws"
+;
+
+/* The size of the resulting image. */
+sprite_sheet "western" 128 x 64
+
+/* the source images and their ratio in the result */
+img "cart-theme.xcf.bz2"
+
+"front" "front mask" * 0.5 with img
+  "western"
+  "screws"
+;
+
+"middle" "middle mask" * 0.5 with img
+  "western"
+  "screws"
+;
+
+"back" "back mask" * 0.5 with img
+  "western"
+  "screws"
+;

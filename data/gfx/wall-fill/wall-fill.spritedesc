@@ -1,0 +1,427 @@
+/*  */
+sprite_sheet "wall-fill-1" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5"
+  "h plank 1 lights 1"
+  "h plank 1 left 1"
+
+  "h plank 2 lights 1"
+  "h plank 2 right 1"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-2" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5"
+  "h plank 1 lights 1"
+  "h plank 1 left 1"
+
+  "h plank 2 lights 2"
+  "h plank 2 right 2"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-3" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5"
+  "h plank 1 lights 2"
+  "h plank 1 left 2"
+
+  "h plank 2 lights 1"
+  "h plank 2 right 1"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-4" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5"
+  "h plank 1 lights 2"
+  "h plank 1 left 2"
+
+  "h plank 2 lights 2"
+  "h plank 2 right 2"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-5" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5"
+  "h plank 1 lights 3"
+  "h plank 1 left 3"
+
+  "h plank 2 lights 1"
+  "h plank 2 right 1"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-6" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5"
+  "h plank 1 lights 3"
+  "h plank 1 left 3"
+
+  "h plank 2 lights 2"
+  "h plank 2 right 2"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-7" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5.1"
+  "h plank 1 lights 1"
+  "h plank 1 left 1"
+
+  "h plank 2 lights 1"
+  "h plank 2 right 1"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-8" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5.1"
+  "h plank 1 lights 1"
+  "h plank 1 left 1"
+
+  "h plank 2 lights 2"
+  "h plank 2 right 2"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-9" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5.1"
+  "h plank 1 lights 2"
+  "h plank 1 left 2"
+
+  "h plank 2 lights 1"
+  "h plank 2 right 1"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-10" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5.1"
+  "h plank 1 lights 2"
+  "h plank 1 left 2"
+
+  "h plank 2 lights 2"
+  "h plank 2 right 2"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-11" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5.1"
+  "h plank 1 lights 3"
+  "h plank 1 left 3"
+
+  "h plank 2 lights 1"
+  "h plank 2 right 1"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-12" 256 x 256 margin 0
+
+img "wall-fill.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+
+  glob "plank 1*"
+  glob "plank 2*"
+  glob "plank 3*"
+  glob "plank 4*"
+  "h plank 1 right"
+  "h plank 2 left"
+
+  "plank 5 lights"
+  "plank 5.1"
+  "h plank 1 lights 3"
+  "h plank 1 left 3"
+
+  "h plank 2 lights 2"
+  "h plank 2 right 2"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-13" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 1"
+  "T 1"
+  
+  exclude glob "*h plank down 2*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-14" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 2"
+  "T 2"
+  
+  exclude glob "*h plank down 2*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-15" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 3"
+  "T 3"
+  
+  exclude glob "*h plank down 2*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-16" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 4"
+  "T 4"
+  
+  exclude glob "*h plank down 2*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-17" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 1"
+  "T 1"
+  
+  exclude glob "*h plank down 1*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-18" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 2"
+  "T 2"
+  
+  exclude glob "*h plank down 1*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-19" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 3"
+  "T 3"
+  
+  exclude glob "*h plank down 1*"
+  ;
+
+/*  */
+sprite_sheet "wall-fill-20" 256 x 256 margin 0
+
+img "structure.xcf.bz2"
+
+"wall-fill" image_size * 0.5 with img
+
+  glob "common *"
+  glob "*plank*"
+
+  "structure 4"
+  "T 4"
+  
+  exclude glob "*h plank down 1*"
+  ;

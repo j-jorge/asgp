@@ -1,0 +1,61 @@
+/* The size of the resulting image. */
+sprite_sheet "smoke" 512 x 512
+
+/* the source images and their ratio in the result */
+img "smoke.xcf.bz2"
+
+"1" autosize * 0.5 with img
+  "1"
+  mask "mask"
+  ;
+
+"2" autosize * 0.5 with img
+  "2"
+  mask "mask"
+  ;
+
+"3" autosize * 0.5 with img
+  "3"
+  mask "mask"
+  ;
+
+"4" autosize * 0.5 with img
+  "4"
+  mask "mask"
+  ;
+
+"5" autosize * 0.5 with img
+  "5"
+  mask "mask"
+  ;
+
+"6" autosize * 0.5 with img
+  "6"
+  mask "mask"
+  ;
+
+"7" autosize * 0.5 with img
+  "7"
+  mask "mask"
+  ;
+
+"8" autosize * 0.5 with img
+  "8"
+  mask "mask"
+  ;
+
+"9" autosize * 0.5 with img
+  "9"
+  mask "mask"
+  ;
+
+"10" autosize * 0.5 with img
+  "10"
+  mask "mask"
+  ;
+
+"11" autosize * 0.5 with img
+  "11"
+  mask "mask"
+  ;
+

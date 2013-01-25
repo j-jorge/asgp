@@ -1,0 +1,20 @@
+/* The size of the resulting image. */
+sprite_sheet "stand" 128 x 256
+
+/* the source images */
+img "stand.xcf.bz2"
+
+"bottom" autosize * 0.25 with img
+  "bottom"
+  ;
+
+"middle" autosize * 0.25 with img
+  "middle"
+  ;
+
+"top" autosize * 0.25 with img
+  "top"
+  "light effect"
+  "lamp on"
+  ;
+

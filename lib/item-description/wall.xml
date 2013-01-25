@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::wall" category="rolling_painting" box_color="#E0E0E0" url="http://www.gamned.org/wiki/index.php/wall" fixable="false">
+  <inherit>
+    <class>bear::model</class>
+    <class>bear::base_item</class>
+    <class>rp::entity</class>
+  </inherit>
+  <description>The class describing a wall.</description>
+  <new_default_value name="base_item.size.width">64</new_default_value>
+  <new_default_value name="base_item.size.height">123</new_default_value>
+</item>

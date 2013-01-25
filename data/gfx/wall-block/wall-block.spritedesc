@@ -1,0 +1,72 @@
+/* The size of the resulting image. */
+sprite_sheet "wall-block" 256 x 128
+
+/* the source images and their ratio in the result */
+img "wall-block.xcf.bz2"
+
+"splinter 4" "splinter 4" * 0.5 with img
+  glob "effect *"
+  "splinter 4"
+  ;
+
+"splinter 3" "splinter 3" * 0.5 with img
+  glob "effect *"
+  "splinter 3"
+  ;
+
+"splinter 2" "splinter 2" * 0.5 with img
+  glob "effect *"
+  "splinter 2"
+  ;
+
+"splinter 1" "splinter 1" * 0.5 with img
+  glob "effect *"
+  "splinter 1"
+  ;
+
+"broken top 2" "broken top 2" * 0.5 with img
+  glob "effect *"
+  "broken top 2"
+  ;
+
+"broken top 1" "broken top 1" * 0.5 with img
+  glob "effect *"
+  "broken top 1"
+  ;
+
+"broken top 0" "broken top 0" * 0.5 with img
+  glob "effect *"
+  "broken top 0"
+  ;
+
+"broken middle 2" "broken middle 2" * 0.5 with img
+  glob "effect *"
+  "broken middle 2"
+  ;
+
+"broken middle 1" "broken middle 1" * 0.5 with img
+  glob "effect *"
+  "broken middle 1"
+  ;
+
+"broken middle 0" "broken middle 0" * 0.5 with img
+  glob "effect *"
+  "broken middle 0"
+  ;
+
+"broken bottom 2" "broken bottom 2" * 0.5 with img
+  glob "effect *"
+  "broken bottom 2"
+  ;
+
+"broken bottom 1" "broken bottom 1" * 0.5 with img
+  glob "effect *"
+  "broken bottom 1"
+  ;
+
+"broken bottom 0" "broken bottom 0" * 0.5 with img
+  glob "effect *"
+  "broken bottom 0"
+  ;
+
+

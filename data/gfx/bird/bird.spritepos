@@ -1,0 +1,22 @@
+# The format of the lines is
+# picture: x y width height
+
+afraid: 0 0 94 69
+fly 1: 0 70 75 84
+fly 2: 76 70 75 84
+fly 3: 152 70 75 84
+fly 4: 228 70 75 84
+fly 5: 304 70 75 84
+fly 6: 380 70 75 84
+fly 7: 0 155 75 84
+fly 8: 76 155 75 84
+idle 1: 95 0 66 57
+idle 2: 162 0 66 57
+idle 3: 229 0 66 57
+idle 4: 296 0 66 57
+idle 5: 363 0 66 57
+idle 6: 430 0 66 57
+idle 7: 152 155 66 57
+dead: 456 70 25 55
+feather, brown: 456 126 24 7
+feather, white: 481 126 24 7

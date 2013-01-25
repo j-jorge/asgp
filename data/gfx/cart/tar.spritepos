@@ -1,0 +1,20 @@
+# The format of the lines is
+# picture: x y width height
+
+tar 1: 0 0 138 88
+tar 2: 139 0 138 88
+tar 3: 278 0 138 88
+tar 4: 0 89 138 88
+tar 5: 139 89 138 88
+tar 6: 278 89 138 88
+tar 7: 0 178 138 88
+tar 8: 139 178 138 88
+tar 9: 278 178 138 88
+tar 10: 0 267 138 88
+tar 11: 139 267 138 88
+spatter 1: 278 267 106 60
+spatter 2: 385 267 106 60
+spatter 3: 0 356 106 60
+spatter 4: 107 356 106 60
+spatter 5: 214 356 106 60
+spatter 6: 321 356 106 60

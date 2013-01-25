@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::obstacle" category="-abstract-" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/obstacle" fixable="false">
+  <inherit>
+    <class>bear::base_train</class>
+    <class>bear::model</class>
+    <class>bear::base_item</class>
+    <class>rp::entity</class>
+  </inherit>
+  <fields>
+    <field type="boolean" name="obstacle.random_explosion">
+      <description>Indicates if the explosion has random parameters.</description>
+      <default_value>false</default_value>
+    </field>
+   </fields>
+  <description>The class describing an obstacle.</description>
+  <new_default_value name="base_item.global">true</new_default_value>
+</item>

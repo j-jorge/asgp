@@ -1,0 +1,15 @@
+# The format of the lines is
+# picture: x y width height
+
+lady middle: 0 0 65 60
+lady backward: 66 0 65 60
+lady forward: 132 0 65 60
+lady forward backward: 198 0 65 60
+lady plunger up: 264 0 65 60
+lady plunger middle: 330 0 65 60
+lady plunger down: 396 0 65 60
+lady plunger up staight: 0 61 65 60
+lady plunger middle straight: 66 61 65 60
+lady plunger down straight: 132 61 65 60
+lady smoke up: 198 61 65 60
+lady smoke up straight: 264 61 65 60

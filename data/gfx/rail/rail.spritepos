@@ -1,0 +1,7 @@
+# The format of the lines is
+# picture: x y width height
+
+rail: 0 0 256 51
+rail with support: 0 51 256 51
+rail with 2 supports 1: 0 102 256 51
+rail with 2 supports 2: 0 153 256 51

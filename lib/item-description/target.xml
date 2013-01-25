@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::target" category="rolling_painting" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/target" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::model</class>
+  </inherit>
+  <description>The class describing a target.</description>
+  <fields>
+    <field type="string" name="target.color">
+      <description>The color of the target.</description>
+      <set>
+        <element value="red"/>
+        <element value="yellow"/>
+      </set>
+      <default_value>red</default_value>
+    </field>
+    <field type="string" name="target.note">
+      <description>The note of the target.</description>
+      <set>
+        <element value="A"/>
+        <element value="B"/>
+	<element value="C"/>
+        <element value="D"/>
+	<element value="E"/>
+        <element value="F"/>
+	<element value="G"/>
+      </set>
+      <default_value>random</default_value>
+    </field>
+  </fields>
+  <new_default_value name="base_item.size.width">38</new_default_value>
+  <new_default_value name="base_item.size.height">54</new_default_value>
+</item>

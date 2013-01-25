@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='5' loop_back='false' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.09'>
+    <sprite image='gfx/effect/speed.png' x='0' y='0' clip_width='111' clip_height='60' spritepos='speed 0' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.09'>
+    <sprite image='gfx/effect/speed.png' x='112' y='0' clip_width='111' clip_height='60' spritepos='speed 1' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.09'>
+    <sprite image='gfx/effect/speed.png' x='224' y='0' clip_width='111' clip_height='60' spritepos='speed 2' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.09'>
+    <sprite image='gfx/effect/speed.png' x='336' y='0' clip_width='111' clip_height='60' spritepos='speed 3' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.09'>
+    <sprite image='gfx/effect/speed.png' x='0' y='61' clip_width='111' clip_height='60' spritepos='speed 4' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.09'>
+    <sprite image='gfx/effect/speed.png' x='112' y='61' clip_width='111' clip_height='60' spritepos='speed 5' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

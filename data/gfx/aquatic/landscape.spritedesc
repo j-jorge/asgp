@@ -1,0 +1,40 @@
+/*  */
+sprite_sheet "landscape-1" 512 x 512 margin 1
+
+img "landscape.xcf.bz2"
+
+"1" "1" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "1"
+  ;
+
+"2" "2" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "2"
+  ;
+
+"3" "3" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "3"
+  ;
+
+"4" "4" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "4"
+  ;
+
+"5" "5" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "5"
+  ;
+

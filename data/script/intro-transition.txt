@@ -1,0 +1,25 @@
+0 {
+  brian.set_passive();  
+  brian.remove_elements();
+}
+
++3 {
+  brian.speak( "|Damn Andy! He never likes my ideas!" );
+}
+
++3.5 {
+  brian.apply_crouch();
+}
+
++4 {
+  boss.create_transition_second_movement();
+}
+
++3.5 {
+  boss.speak( "|My zeppelins are better than his stupid balloons.");
+  boss.speak( "|I will show him! ");
+}
+
++5 {
+  script.end();
+}

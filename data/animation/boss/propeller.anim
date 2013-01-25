@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='7' loop_back='false' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='0' clip_width='511' clip_height='61' spritepos='propeller 1' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='62' clip_width='511' clip_height='61' spritepos='propeller 2' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='124' clip_width='511' clip_height='61' spritepos='propeller 3' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='186' clip_width='511' clip_height='61' spritepos='propeller 4' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='248' clip_width='511' clip_height='61' spritepos='propeller 5' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='310' clip_width='511' clip_height='61' spritepos='propeller 6' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='372' clip_width='511' clip_height='61' spritepos='propeller 7' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/propeller.png' x='0' y='434' clip_width='511' clip_height='61' spritepos='propeller 8' auto_size='true' width='511' height='61' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model>
+<action name="idle" duration="1.8" auto_next="idle">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation_file path='animation/bird/idle.canim' auto_size='false' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</mark>
+<mark label="beak" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="23" height="49" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="beak" function="on_beak_collision" x="19.5" y="43.5" width="9" height="13" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="17" y="25" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="fly" duration="0.96" auto_next="fly">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation_file path='animation/bird/fly.canim' auto_size='true' width='75' height='84' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</mark>
+<mark label="beak" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" function="start_fly" width="58" height="17" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="beak" function="on_beak_collision" x="57" y="9" width="10" height="22" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="28" y="12" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot><snapshot date="0.3" width="58" height="17" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<sound global="0">
+<file path="sound/bird/wing-flap.ogg"/>
+</sound>
+<mark_placements>
+<mark_placement label="beak" function="on_beak_collision" x="57" y="9" width="10" height="22" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="28" y="12" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="dead" duration="0.6" auto_next="dead">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='25' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.12'>
+    <sprite image='gfx/bird/bird.png' x='456' y='70' clip_width='25' clip_height='55' spritepos='dead' auto_size='true' width='25' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="16" height="36" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="body" function="" x="8" y="18" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="afraid" duration="0.4" auto_next="fly">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='94' height='69' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.12'>
+    <sprite image='gfx/bird/bird.png' x='0' y='0' clip_width='94' clip_height='69' spritepos='afraid' auto_size='true' width='94' height='69' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="42" height="46" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<sound global="0">
+<file path="sound/bird/afraid-2.ogg"/>
+</sound>
+<mark_placements>
+<mark_placement label="body" function="" x="17" y="26" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="hit" duration="0.1" auto_next="dead">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='94' height='69' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/bird/bird.png' x='0' y='0' clip_width='94' clip_height='69' spritepos='afraid' auto_size='true' width='94' height='69' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" function="start_hit" width="31" height="48" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<sound global="0">
+<file path="sound/bird/afraid-1.ogg"/>
+</sound>
+<mark_placements>
+<mark_placement label="body" function="" x="10" y="27" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+</model>
+

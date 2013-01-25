@@ -1,0 +1,2696 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-12-11 11:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../data/level/level_selection.lvl
+msgid "1"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "2"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "3"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "4"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "5"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "A Field of Lollipops"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "AGFX"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Alain Puget"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Aquatic Ballet"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Art"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "BONUS"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:669
+msgid "Balloons"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_starting_effect.cpp:350
+msgid ""
+"Balloons\n"
+"to go!"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Benboncan"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Big Blue"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Black Gold"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:933
+msgid "Bonus"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:689
+msgid "Burst balloons"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "CGEffex"
+msgstr ""
+
+#: ../../../data/level/2/level-5.lvl
+msgid "CROUCH!"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Cactus Mountains"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Character"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Cheyenne Mountains"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Choose Your Destiny"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Christophe Houlier"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Dad and Mum"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Delights in Paris"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Design"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Eclipse Day"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "FatLane"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Fighting in the Void"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Florian Massuyeau"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "FreqMan"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Friends"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Frightening Sharks"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Game concept"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl
+msgid "Get ready to jump!"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Good Luck!"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Guillaume Martin"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Hang on Though"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "HerbertBoland"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Hervé Guérin"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Hungry Sharks"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Ice Cream Wheel"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Julien Jorge"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Julien Lasalle"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Laélien"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Level Design"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:650
+msgid "Level score"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Like a Wild Horse"
+msgstr ""
+
+#: ../../../data/level/start.lvl
+msgid "Loading..."
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Luftrum"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Marbles and Candies"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Marine"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Mart1001"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:733
+msgid "Missed cannonballs"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:711
+msgid "Missed plungers"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Morbid Journey"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Music"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "NoiseCollector"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "One Last Dance"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Only Five Balloons"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:954
+msgid "Penalties"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Production"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Programming"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Pullover"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Put Into Orbit"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Raphaël Sautron"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Sandrine"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Scuba Fighting"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Sea of Tranquility"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Shooting Stars"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Sound"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "SoundCollectah"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Space Walk"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Sparrer"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Special Thanks"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Story Line"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Surfers Rule"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Sweet Brawl"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Sébastien Angibaud"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Tangled Tantacles"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Thank you for playing"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Thanks to freesound.org users"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Appache Village"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Curse"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Dancing Palms"
+msgstr ""
+
+#: ../../../data/level/5/level-8-transition.lvl
+msgid "The End"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Funerail"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Launch Base"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Lollipops Garden"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Monsters Cemetery"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Path of the Ice"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Path of the Masters"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Real Cowboy"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Rhythm of the Scythes"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "The Stagecoach is on Time"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Thibault Jaouen"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Through the Starfield"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:782
+msgid "Time bonus"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Tomlija"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:340
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:443
+msgid "Total score "
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Ultimate Fight"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "Vincent Baillet"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "WIM"
+msgstr ""
+
+#: ../../../data/level/credits.lvl
+msgid "William David"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "Witch Hunt"
+msgstr ""
+
+#: ../../../data/model/balloon.mdl
+msgid "animation/balloon-blast.canim"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/model/balloon.mdl
+msgid "animation/balloon.canim"
+msgstr ""
+
+#: ../../../data/model/bird.mdl
+msgid "animation/bird/fly.canim"
+msgstr ""
+
+#: ../../../data/model/bird.mdl
+msgid "animation/bird/idle.canim"
+msgstr ""
+
+#: ../../../data/model/bonus.mdl
+msgid "animation/bonus/bowl.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/emergency-on.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/engine.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/lady-smoke.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/lady.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/pipe-1.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/pipe-3.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/pipe-4.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/propeller.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/smoke.canim"
+msgstr ""
+
+#: ../../../data/model/boss.mdl
+msgid "animation/boss/trap-door-closing.canim"
+msgstr ""
+
+#: ../../../data/model/tar.mdl
+msgid "animation/cart/spatter.canim"
+msgstr ""
+
+#: ../../../data/model/cart.mdl ../../../data/model/cart-brian.mdl
+msgid "animation/cart/speed.canim"
+msgstr ""
+
+#: ../../../data/model/cart.mdl ../../../data/model/cart-brian.mdl
+msgid "animation/cart/tar.canim"
+msgstr ""
+
+#: ../../../data/model/switching.mdl
+msgid "animation/switching-warning.canim"
+msgstr ""
+
+#: ../../../data/model/tar.mdl
+msgid "animation/tar/falling.canim"
+msgstr ""
+
+#: ../../../data/model/tar.mdl
+msgid "animation/tar/on_rail.canim"
+msgstr ""
+
+#: ../../../data/model/tar.mdl
+msgid "animation/tar/splash.canim"
+msgstr ""
+
+#: ../../../data/model/zeppelin/zeppelin-mirror.mdl
+#: ../../../data/model/zeppelin/zeppelin.mdl
+msgid "animation/zeppelin/screen/more-fun.canim"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/aquatic/aquatic-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/aquatic/aquatic-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/2/level-4.lvl
+msgid "gfx/aquatic/aquatic-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/aquatic/aquatic-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+msgid "gfx/aquatic/aquatic-5.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/aquatic/landscape-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_00.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_01.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_02.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_03.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_04.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_05.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_06.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_07.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_08.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_09.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_10.png"
+msgstr ""
+
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+msgid "gfx/background/aquatic/far/bk_11.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_00.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_01.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_02.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_03.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_04.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_05.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_06.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_07.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_08.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_09.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_10.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/background/cake/far/bk_11.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_00.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_01.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_02.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_03.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_04.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_05.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_06.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_07.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_08.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_09.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_10.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/background/death/far/bk_11.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_00.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_01.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_02.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_03.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_04.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_05.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_06.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_07.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_08.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_09.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_10.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/background/far-background/bk_11.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_00.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_01.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_02.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_03.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_04.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_05.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_06.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_07.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_08.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_09.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_10.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/background/space/far/bk_11.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_00.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_01.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_02.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_03.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_04.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_05.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_06.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_07.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_08.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_09.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_10.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/background/western/far/bk_11.png"
+msgstr ""
+
+#: ../../../data/animation/balloon.anim
+#: ../../../data/animation/balloon-blast.anim
+#: ../../../data/animation/balloon-slow.anim
+msgid "gfx/balloon/balloon.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/model/bird.mdl
+#: ../../../data/animation/bird/fly.anim
+#: ../../../data/animation/bird/idle.anim
+msgid "gfx/bird/bird.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl ../../../data/level/intro-transition.lvl
+msgid "gfx/bird/stand.png"
+msgstr ""
+
+#: ../../../data/model/bomb.mdl
+msgid "gfx/bomb/bomb.png"
+msgstr ""
+
+#: ../../../data/animation/bonus/bowl.anim
+msgid "gfx/bonus/bowl.png"
+msgstr ""
+
+#: ../../../data/model/boss.mdl ../../../data/animation/boss/emergency-on.anim
+msgid "gfx/boss/boss.png"
+msgstr ""
+
+#: ../../../data/animation/boss/lady.anim
+#: ../../../data/animation/boss/lady-plunger.anim
+#: ../../../data/animation/boss/lady-smoke.anim
+msgid "gfx/boss/lady.png"
+msgstr ""
+
+#: ../../../data/model/module.mdl ../../../data/model/boss.mdl
+msgid "gfx/boss/module-1.png"
+msgstr ""
+
+#: ../../../data/model/module.mdl
+msgid "gfx/boss/module-2.png"
+msgstr ""
+
+#: ../../../data/model/module.mdl
+msgid "gfx/boss/module-3.png"
+msgstr ""
+
+#: ../../../data/model/module.mdl
+msgid "gfx/boss/module-4.png"
+msgstr ""
+
+#: ../../../data/model/module.mdl
+msgid "gfx/boss/module-5.png"
+msgstr ""
+
+#: ../../../data/model/module.mdl
+#: ../../../data/animation/boss/trap-door-closing.anim
+#: ../../../data/animation/boss/engine.anim
+#: ../../../data/animation/boss/pipe-4.anim
+#: ../../../data/animation/boss/pipe-3.anim
+#: ../../../data/animation/boss/trap-door.anim
+#: ../../../data/animation/boss/pipe-1.anim
+msgid "gfx/boss/more-pipe.png"
+msgstr ""
+
+#: ../../../data/animation/boss/propeller.anim
+msgid "gfx/boss/propeller.png"
+msgstr ""
+
+#: ../../../data/animation/boss/smoke.anim
+msgid "gfx/boss/smoke.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/cake/cake-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/cake/cake-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/cake/cake-3.png"
+msgstr ""
+
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/cake/cake-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/cake/landscape-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/6/level-2.lvl
+msgid "gfx/cake/landscape-2.png"
+msgstr ""
+
+#: ../../../data/model/bonus.mdl
+msgid "gfx/cart-theme/aquatic.png"
+msgstr ""
+
+#: ../../../data/model/cart.mdl ../../../data/model/cart-brian.mdl
+msgid "gfx/cart-theme/western.png"
+msgstr ""
+
+#: ../../../data/model/cart-brian.mdl
+msgid "gfx/cart/brian.png"
+msgstr ""
+
+#: ../../../data/model/plunger.mdl ../../../data/model/cart.mdl
+#: ../../../data/model/cannonball.mdl ../../../data/animation/fire.anim
+msgid "gfx/cart/cart.png"
+msgstr ""
+
+#: ../../../data/animation/cart/spatter.anim
+#: ../../../data/animation/cart/tar.anim
+msgid "gfx/cart/tar.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/credits.lvl
+msgid "gfx/credits/credits-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/death/death-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/death/death-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/death/death-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/death/landscape-1.png"
+msgstr ""
+
+#: ../../../data/animation/cart/speed.anim
+msgid "gfx/effect/speed.png"
+msgstr ""
+
+#: ../../../data/animation/effect/wave.anim
+#: ../../../data/animation/effect/double-wave.anim
+msgid "gfx/effect/wave.png"
+msgstr ""
+
+#: ../../../data/animation/explosion.anim
+msgid "gfx/explosion/explosion-1.png"
+msgstr ""
+
+#: ../../../data/animation/explosion.anim
+msgid "gfx/explosion/explosion.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-8.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+msgid "gfx/misc/misc.png"
+msgstr ""
+
+#: ../../../data/level/5/level-4.lvl ../../../data/model/tnt.mdl
+#: ../../../data/model/cable.mdl ../../../data/model/crate.mdl
+msgid "gfx/obstacle/obstacle.png"
+msgstr ""
+
+#: ../../../data/animation/paint.anim
+msgid "gfx/paint.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/rail/broken-rail.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl ../../../data/level/intro-transition.lvl
+msgid "gfx/rail/rail-end.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl ../../../data/level/intro-transition.lvl
+msgid "gfx/rail/rail.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/bump/bump-slope-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-5.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/bump/bump-slope-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/bump/bump-slope-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/bump/bump-slope-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/bump/bump-slope-5.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-3*.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-5*.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-6.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-7.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/gentle-slope/gentle-slope-8.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-1.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-2.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-4*.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-6.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-7.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-3.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-1.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/sin-slope/sin-slope-8.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-1.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-2.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-3.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-4*.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-5*.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-7.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-8.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-7.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-5.lvl
+#: ../../../data/level/2/level-1.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-9.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-2.lvl
+#: ../../../data/level/4/level-3.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-3.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+msgid "gfx/slope/steep-slope/steep-slope-fill-4-to-5.png"
+msgstr ""
+
+#: ../../../data/animation/effect/steam.anim
+msgid "gfx/smoke/steam.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/space/landscape-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl
+msgid "gfx/space/landscape-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/space/space-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/space/space-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/space/space-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/space/space-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/1/level-4.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-1.lvl
+msgid "gfx/space/space-5.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/3/level-3.lvl
+msgid "gfx/space/space-6.png"
+msgstr ""
+
+#: ../../../data/model/bonus.mdl
+msgid "gfx/status/bonus.png"
+msgstr ""
+
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:289
+#: ../../../data/level/level_selection.lvl ../../../data/level/buy.lvl
+msgid "gfx/status/buttons-2.png"
+msgstr ""
+
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:177
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:182
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:260
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:262
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:307
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:309
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:336
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:338
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/status/buttons.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/status/cursor.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+msgid "gfx/status/level/frame-2.png"
+msgstr ""
+
+#: ../../../data/model/floating_score.mdl
+msgid "gfx/status/score.png"
+msgstr ""
+
+#: ../../../data/model/bonus.mdl
+msgid "gfx/status/status.png"
+msgstr ""
+
+#: ../../../data/level/start.lvl ../../../data/level/credits.lvl
+msgid "gfx/stuffomatic/stuffomatic.png"
+msgstr ""
+
+#: ../../../data/model/switching.mdl
+#: ../../../data/animation/switching-warning.anim
+msgid "gfx/switching/switching.png"
+msgstr ""
+
+#: ../../../data/model/tar.mdl ../../../data/animation/tar/on_rail.anim
+#: ../../../data/animation/tar/splash.anim
+#: ../../../data/animation/tar/falling.anim
+msgid "gfx/tar/tar.png"
+msgstr ""
+
+#: ../../../data/animation/target-red.anim
+#: ../../../data/animation/target-yellow.anim
+msgid "gfx/target.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/buy.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl
+msgid "gfx/title/letters-1.png"
+msgstr ""
+
+#: ../../../data/model/wall.mdl
+msgid "gfx/wall-block/wall-block.png"
+msgstr ""
+
+#: ../../../data/level/4/level-7.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-3.lvl
+msgid "gfx/wall-fill/broken-wall-1.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/title.lvl ../../../data/level/intro-transition.lvl
+msgid "gfx/wall-fill/broken-wall-2.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-8.lvl
+#: ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-8.lvl
+#: ../../../data/level/5/level-6.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/5/level-3.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/2/level-6.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/wall-fill/broken-wall-3.png"
+msgstr ""
+
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-2.lvl
+#: ../../../data/level/5/level-7.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/6/level-3.lvl
+msgid "gfx/wall-fill/broken-wall-4.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/title.lvl
+msgid "gfx/wall-fill/switching/switching-background.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/title.lvl
+msgid "gfx/wall-fill/switching/switching-fill.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-4.lvl ../../../data/level/1/level-6.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/1/level-3.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-7.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/3/level-3.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-6.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl ../../../data/level/6/level-2.lvl
+#: ../../../data/level/6/level-3.lvl ../../../data/level/credits.lvl
+#: ../../../data/level/title.lvl ../../../data/level/intro-transition.lvl
+msgid "gfx/wall-fill/wall-fill-*.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-6.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/5/level-6.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-1.lvl
+#: ../../../data/level/5/level-2.lvl ../../../data/level/5/level-7.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/5/level-3.lvl
+#: ../../../data/level/3/level-4.lvl ../../../data/level/3/level-6.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-7.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/2/level-5.lvl ../../../data/level/2/level-1.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/6/level-1.lvl
+#: ../../../data/level/6/level-2.lvl ../../../data/level/6/level-3.lvl
+#: ../../../data/level/credits.lvl ../../../data/level/title.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/wall-fill/wall-fill-1.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/4/level-8.lvl
+#: ../../../data/level/5/level-5.lvl ../../../data/level/5/level-8.lvl
+msgid "gfx/wall-fill/wall-fill-10.png"
+msgstr ""
+
+#: ../../../data/level/level_selection.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/6/level-2.lvl
+msgid "gfx/wall-fill/wall-fill-11.png"
+msgstr ""
+
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/wall-fill/wall-fill-12.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl
+#: ../../../data/level/4/level-8-transition.lvl
+#: ../../../data/level/1/level-8-transition.lvl
+#: ../../../data/level/5/level-8-transition.lvl
+#: ../../../data/level/3/level-8-transition.lvl
+#: ../../../data/level/2/level-8-transition.lvl
+#: ../../../data/level/intro-transition.lvl
+msgid "gfx/wall-fill/wall-fill-13.png"
+msgstr ""
+
+#: ../../../data/level/4/level-4.lvl
+msgid "gfx/wall-fill/wall-fill-16.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/5/level-8.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/6/level-1.lvl
+msgid "gfx/wall-fill/wall-fill-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-2.lvl ../../../data/level/3/level-8.lvl
+#: ../../../data/level/intro.lvl ../../../data/level/2/level-4.lvl
+#: ../../../data/level/2/level-2.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/6/level-1.lvl
+msgid "gfx/wall-fill/wall-fill-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl
+msgid "gfx/wall-fill/wall-fill-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-6.lvl ../../../data/level/3/level-1.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-7.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/6/level-1.lvl
+msgid "gfx/wall-fill/wall-fill-5.png"
+msgstr ""
+
+#: ../../../data/level/4/level-6.lvl ../../../data/level/4/level-5.lvl
+#: ../../../data/level/4/level-1.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/4/level-8.lvl ../../../data/level/4/level-3.lvl
+#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-7.lvl
+#: ../../../data/level/1/level-8.lvl ../../../data/level/5/level-5.lvl
+#: ../../../data/level/5/level-8.lvl ../../../data/level/3/level-4.lvl
+#: ../../../data/level/3/level-1.lvl ../../../data/level/3/level-2.lvl
+#: ../../../data/level/3/level-8.lvl ../../../data/level/intro.lvl
+#: ../../../data/level/2/level-4.lvl ../../../data/level/2/level-2.lvl
+#: ../../../data/level/2/level-7.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/wall-fill/wall-fill-6.png"
+msgstr ""
+
+#: ../../../data/level/5/level-5.lvl ../../../data/level/6/level-1.lvl
+msgid "gfx/wall-fill/wall-fill-8.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/western/landscape-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/western/western-1.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/western/western-2.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/1/level-1.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
+#: ../../../data/level/6/level-1.lvl
+msgid "gfx/western/western-3.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/1/level-6.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/level/3/level-5.lvl ../../../data/level/2/level-8.lvl
+#: ../../../data/level/2/level-3.lvl ../../../data/level/6/level-1.lvl
+msgid "gfx/western/western-4.png"
+msgstr ""
+
+#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
+#: ../../../data/level/5/level-4.lvl ../../../data/level/3/level-5.lvl
+#: ../../../data/level/2/level-8.lvl ../../../data/level/6/level-1.lvl
+msgid "gfx/western/western-5.png"
+msgstr ""
+
+#: ../../../data/model/zeppelin/zeppelin-mirror.mdl
+#: ../../../data/model/zeppelin/zeppelin.mdl
+#: ../../../data/animation/zeppelin/screen/more-fun.anim
+msgid "gfx/zeppelin/zeppelin.png"
+msgstr ""
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:757
+msgid "health bonus"
+msgstr ""
+
+#: ../../../lib/src/rp/layer/status/code/time_component.cpp:92
+msgid "s"
+msgstr ""
+
+msgid "|?"
+msgstr ""
+
+msgid "|Bwa! Ha! Ha! Ha!"
+msgstr ""
+
+msgid "|Come on Brian.|Stop this and come playing!"
+msgstr ""
+
+msgid "|Cool!"
+msgstr ""
+
+msgid "|Damn Andy! He never likes my ideas!"
+msgstr ""
+
+msgid "|Damn Andy!|You never like my ideas."
+msgstr ""
+
+msgid "|Dumb name huh?"
+msgstr ""
+
+msgid "|Far better than this one!"
+msgstr ""
+
+msgid "|Ha! Ha! Ha!"
+msgstr ""
+
+msgid "|Ha! Ha! Who's dumb now?"
+msgstr ""
+
+msgid "|Hey Andy!|Say the name is Fun Park!"
+msgstr ""
+
+msgid "|Hey Brian! Our amusement park is really awesome!"
+msgstr ""
+
+msgid "|I will show him! "
+msgstr ""
+
+msgid "|In your dreams!"
+msgstr ""
+
+msgid "|It is because your ideas are stupid!"
+msgstr ""
+
+msgid "|It is too late, Brian!"
+msgstr ""
+
+msgid "|Let's call the park \\\"Fun Park\\\"."
+msgstr ""
+
+msgid "|My balloons! It will take days to get them back!"
+msgstr ""
+
+msgid "|My zeppelins are better than his stupid balloons."
+msgstr ""
+
+msgid "|Oh yeah? Try to pass this!"
+msgstr ""
+
+msgid "|Only if you change the name of the park!"
+msgstr ""
+
+msgid "|Pfff."
+msgstr ""
+
+msgid "|See?"
+msgstr ""
+
+msgid "|The name is \\\"Super Great Park\\\"."
+msgstr ""
+
+msgid "|Well, I give up.|I'm going to build my own park!"
+msgstr ""
+
+msgid "|What?"
+msgstr ""
+
+msgid "|Will you stop this?"
+msgstr ""
+
+msgid "|Yeah! Shoot the bird Andy!"
+msgstr ""
+
+msgid "|Yeeheeeee!"
+msgstr ""
+
+msgid "|You are ridiculous!"
+msgstr ""
+
+msgid "|You won't go any further, Andy!"
+msgstr ""
+
+msgid "|You're so stupid..."
+msgstr ""
+
+msgid "|\\\"Fun Park\\\" was a better name!"
+msgstr ""
+
+msgid "|\\\"Fun Park\\\"? What a dumb name!"
+msgstr ""

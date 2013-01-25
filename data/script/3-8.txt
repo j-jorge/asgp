@@ -1,0 +1,15 @@
++3 {
+  andy.speak( "|You are ridiculous!" );
+}
+
++3 {
+  boss.speak( "|Oh yeah? Try to pass this!" );
+}
+
++3 {
+  andy.speak( "|Pfff." );
+}
+
++5 {
+  script.end();
+}

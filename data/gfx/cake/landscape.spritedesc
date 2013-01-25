@@ -1,0 +1,54 @@
+/*  */
+sprite_sheet "landscape-1" 512 x 512 margin 1
+
+img "landscape.xcf.bz2"
+
+"1" autosize * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "dispenser"
+  "background"
+  "1"
+  ;
+
+"2" autosize * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "dispenser"
+  "background"
+  "2"
+  ;
+
+"3" autosize * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "dispenser"
+  "background"
+  "3"
+  ;
+
+"4" autosize * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "dispenser"
+  "background"
+  "4"
+  ;
+
+sprite_sheet "landscape-2" 512 x 512 margin 1
+
+img "landscape.xcf.bz2"
+
+"5" autosize * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "dispenser"
+  "background"
+  "5"
+  ;
+

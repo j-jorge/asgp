@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::level_selector" category="interface" fixable="true" box_color="#D48E82" url="http://www.gamned.org/wiki/index.php/level_settings">
+  <inherit>
+    <class>bear::base_item</class>
+  </inherit>
+  <description>An item to select a level.</description>
+  <fields>
+    <field type="string" name="level_selector.theme">
+      <description>The theme of the level.</description>
+      <default_value>western</default_value>
+      <set>
+	<element value="western"/>
+	<element value="aquatic"/>
+	<element value="cake"/>
+	<element value="death"/>
+	<element value="space"/>
+	<element value="boss"/>
+      </set>
+    </field>
+    <field type="string" name="level_selector.level_name">
+      <description>The name of the level.</description>
+      <default_value>none</default_value>
+     </field>
+    <field type="u_integer" name="level_selector.required_balloons">
+      <description>Indicates number of required balloons.</description>
+      <default_value>0</default_value>
+    </field>
+    <field type="u_integer" name="level_selector.serial_number" required="true">
+      <description>The number of the level serial.</description>
+    </field>
+    <field type="u_integer" name="level_selector.level_number" required="true">
+      <description>The number of the level.</description>
+    </field>
+    <field type="u_integer" name="level_selector.required_medal">
+      <description>Indicates the required medal to active the level (1 for no medal, 2 for bronze, 3 for silver, 4 for gold).</description>
+      <default_value>1</default_value>
+    </field>
+    <field type="u_integer" name="level_selector.threshold.bronze">
+      <description>The threshold to give the bronze medal.</description>
+      <default_value>0</default_value>
+    </field>    
+    <field type="u_integer" name="level_selector.threshold.silver">
+      <description>The threshold to give the silver medal.</description>
+      <default_value>0</default_value>
+    </field>    
+    <field type="u_integer" name="level_selector.threshold.gold">
+      <description>The threshold to give the gold medal.</description>
+      <default_value>0</default_value>
+    </field>    
+    <field type="item_reference" name="level_selector.precedence" list="true">
+      <description>The list of level selectors that preceeds the current level selector.</description>
+      <set>
+	<element value="rp::level_selector"/>
+      </set>
+    </field>
+    <field type="item_reference" name="level_selector.cursor">
+      <description>The cursor of the level.</description>
+      <set>
+	<element value="bear::cursor"/>
+      </set>
+    </field>
+  </fields>  
+  <new_default_value name="base_item.size.width">63</new_default_value>
+  <new_default_value name="base_item.size.height">63</new_default_value>
+</item>

@@ -1,0 +1,273 @@
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "more-pipe" 512 x 512
+
+/* the source images and their ratio in the result */
+trap_door "trap-door.xcf.bz2"
+pipe_img_1 "pipe-1.xcf.bz2"
+pipe_img_4 "pipe-4.xcf.bz2"
+engine_img "engine.xcf.bz2"
+pipe_img_3 "pipe-3.xcf.bz2"
+
+"pipe 1 1" autosize * 0.5 with pipe_img_1
+  glob "*"
+  exclude "bubble 1"
+  exclude "bubble 2"
+  exclude "bubble 3"
+  exclude "bubble 4"
+  ;
+
+"pipe 1 2" autosize * 0.5 with pipe_img_1
+  glob "*"
+  exclude "bubble 2"
+  exclude "bubble 3"
+  exclude "bubble 4"
+  ;
+
+"pipe 1 3" autosize * 0.5 with pipe_img_1
+  glob "*"
+  exclude "bubble 1"
+  exclude "bubble 3"
+  exclude "bubble 4"
+  ;
+
+"pipe 1 4" autosize * 0.5 with pipe_img_1
+  glob "*"
+  exclude "bubble 1"
+  exclude "bubble 2"
+  exclude "bubble 4"
+  ;
+
+"pipe 1 5" autosize * 0.5 with pipe_img_1
+  glob "*"
+  exclude "bubble 1"
+  exclude "bubble 2"
+  exclude "bubble 3"
+  ;
+
+"pipe 4 1" autosize * 0.5 with pipe_img_4
+  "dot 0"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"pipe 4 2" autosize * 0.5 with pipe_img_4
+  "dot 1"
+  "bubble 1"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"pipe 4 3" autosize * 0.5 with pipe_img_4
+  "dot 2"
+  "bubble 2"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"pipe 4 4" autosize * 0.5 with pipe_img_4
+  "dot 3"
+  "bubble 3"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"pipe 4 5" autosize * 0.5 with pipe_img_4
+  "dot 4"
+  "bubble 4"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"pipe 4 6" autosize * 0.5 with pipe_img_4
+  "dot 5"
+  "bubble 5"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"pipe 4 7" autosize * 0.5 with pipe_img_4
+  "dot 6"
+  "bubble 6"
+  "symbol"
+  "box"
+  "ends"
+  "color"
+  "main"
+  ;
+
+"trap door 1" autosize * 0.5 with trap_door
+  glob "*lights"
+  glob "* 1"
+  ;
+
+"trap door 2" autosize * 0.5 with trap_door
+  glob "*lights"
+  glob "* 2"
+  ;
+
+"trap door 3" autosize * 0.5 with trap_door
+  glob "*lights"
+  glob "* 3"
+  ;
+
+"trap door 4" autosize * 0.5 with trap_door
+  glob "*lights"
+  glob "* 4"
+  ;
+
+"engine 0" autosize * 0.5 with engine_img
+  glob "p*"
+  ;
+
+"engine 1" autosize * 0.5 with engine_img
+  "halo 1"
+  glob "p*"
+  ;
+
+"engine 2" autosize * 0.5 with engine_img
+  "halo 2"
+  glob "p*"
+  ;
+
+"engine 3" autosize * 0.5 with engine_img
+  "halo 3"
+  glob "p*"
+  ;
+
+"engine 4" autosize * 0.5 with engine_img
+  "halo 4"
+  glob "p*"
+  ;
+
+"engine 5" autosize * 0.5 with engine_img
+  "halo 5"
+  glob "p*"
+  ;
+
+"engine 6" autosize * 0.5 with engine_img
+  "halo 6"
+  glob "p*"
+  ;
+
+"engine 7" autosize * 0.5 with engine_img
+  "halo 7"
+  glob "p*"
+  ;
+
+"engine 8" autosize * 0.5 with engine_img
+  "halo 8"
+  glob "p*"
+  ;
+
+"engine 9" autosize * 0.5 with engine_img
+  "halo 9"
+  glob "p*"
+  ;
+
+"engine 10" autosize * 0.5 with engine_img
+  "halo 10"
+  glob "p*"
+  ;
+
+"pipe 3 1" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 1"
+  ;
+
+"pipe 3 2" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 2"
+  ;
+
+"pipe 3 3" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 3"
+  ;
+
+"pipe 3 4" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 4"
+  ;
+
+"pipe 3 5" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 5"
+  ;
+
+"pipe 3 6" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 6"
+  ;
+
+"pipe 3 7" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 7"
+  ;
+
+"pipe 3 8" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 8"
+  ;
+
+"pipe 3 9" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 9"
+  ;
+
+"pipe 3 10" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 10"
+  ;
+
+"pipe 3 11" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 11"
+  ;
+
+"pipe 3 12" autosize * 0.5 with pipe_img_3
+  "main"
+  "color"
+  "ends"
+  "bubble 12"
+  ;

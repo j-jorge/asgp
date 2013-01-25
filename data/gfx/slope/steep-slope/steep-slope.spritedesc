@@ -1,0 +1,195 @@
+/*  */
+sprite_sheet "steep-slope-1" 256 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "1" * 0.5 with img
+  "1"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-2" 256 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "2" * 0.5 with img
+  "2"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-3" 256 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "3" * 0.5 with img
+  "3"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-4" 128 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "4" * 0.5 with img
+  "4"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-4-alt" 128 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "4" * 0.5 with img
+  "4"
+
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-fill-4-to-5" 128 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"wall-fill" "4 to 5" * 0.5 with img
+  "4 to 5"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-5" 128 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope 5" "5" * 0.5 with img
+  "5"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-5-alt" 128 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope 5" "5" * 0.5 with img
+  "5"
+
+  "ends"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+/*
+sprite_sheet "steep-slope-6" 256 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "6" * 0.5 with img
+  "line"
+  "6"
+  ;
+*/
+
+/*  */
+sprite_sheet "steep-slope-7" 256 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "7" * 0.5 with img
+  "7"
+
+  "ends"
+  "rail"
+  "support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-8" 256 x 64 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "8" * 0.5 with img
+  "8"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;
+
+/*  */
+sprite_sheet "steep-slope-9" 256 x 256 margin 0
+
+img "steep-slope.xcf.bz2"
+
+"slope" "9" * 0.5 with img
+  "9"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "shadow"
+  ;

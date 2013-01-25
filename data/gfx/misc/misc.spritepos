@@ -1,0 +1,5 @@
+# The format of the lines is
+# picture: x y width height
+
+plee: 0 0 85 154
+danger: 86 0 64 120

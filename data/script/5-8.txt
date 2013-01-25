@@ -1,0 +1,11 @@
++3 {
+  boss.speak( "|Damn Andy!|You never like my ideas." );
+}
+
++6 {
+  andy.speak( "|It is because your ideas are stupid!" );
+}
+
++5 {
+  script.end();
+}

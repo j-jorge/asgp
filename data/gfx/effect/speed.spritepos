@@ -1,0 +1,9 @@
+# The format of the lines is
+# picture: x y width height
+
+speed 0: 0 0 111 60
+speed 1: 112 0 111 60
+speed 2: 224 0 111 60
+speed 3: 336 0 111 60
+speed 4: 0 61 111 60
+speed 5: 112 61 111 60

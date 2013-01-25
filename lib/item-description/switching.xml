@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::switching" category="rolling_painting" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/chariot" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::model</class>
+    <class>bear::item_with_toggle</class>
+    <class>rp::entity</class>
+  </inherit>
+  <description>The class describing a switching.</description>
+
+  <fields>
+    <field type="string" name="switching.initial_state">
+      <description>The initial state of the switching.</description>
+      <default_value>up</default_value>
+      <set>
+        <element value="up"/>
+        <element value="down"/>
+      </set>
+    </field>
+  </fields>
+
+  <fields>
+    <field type="integer" name="switching.up.z">
+      <description>The z position of the path going upward.</description>
+      <default_value>0</default_value>
+    </field>
+  </fields>
+
+  <fields>
+    <field type="real" name="switching.up.steepness">
+      <description>The steepness of the upward path.</description>
+      <default_value>64</default_value>
+    </field>
+  </fields>
+
+  <fields>
+    <field type="integer" name="switching.down.z">
+      <description>The z position of the path going downward.</description>
+      <default_value>1000</default_value>
+    </field>
+  </fields>
+
+  <fields>
+    <field type="real" name="switching.down.steepness">
+      <description>The steepness of the downward path.</description>
+      <default_value>-50</default_value>
+    </field>
+  </fields>
+
+  <new_default_value name="base_item.size.width">204</new_default_value>
+  <new_default_value name="base_item.size.height">152</new_default_value>
+
+</item>

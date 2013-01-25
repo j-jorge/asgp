@@ -1,0 +1,12 @@
+# The format of the lines is
+# picture: x y width height
+
+cart: 0 0 87 60
+arm: 88 0 148 27
+mega arm: 88 28 148 27
+cannon: 0 61 93 22
+guy: 0 84 41 42
+plunger: 94 61 36 22
+cannon base: 42 84 26 26
+fire effect: 69 84 27 25
+cannonball: 237 0 17 17

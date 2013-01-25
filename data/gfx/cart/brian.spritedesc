@@ -1,0 +1,46 @@
+/* The size of the resulting image. */
+sprite_sheet "brian" 256 x 256
+
+/* the source images and their ratio in the result */
+img "brian.xcf.bz2"
+
+"fire effect" autosize * 0.25 with img
+  "fire effect"
+  ;
+
+"cannonball" autosize * 0.33 with img
+  "cannonball"
+  ;
+
+"arm" "arm box" * 0.25 with img
+  "arm"
+  "weapon"
+  ;
+
+"mega arm" "arm box" * 0.25 with img
+  "arm"
+  "MEGA weapon"
+  "leds"
+  ;
+
+"cannon base" autosize * 0.25 with img
+  "cannon base"
+  ;
+
+"cart" autosize * 0.25 with img
+  "cart"
+  "logo"
+  "wheels"
+  ;
+
+"plunger" autosize * 0.25 with img
+  "plunger"
+  ;
+
+"cannon" autosize * 0.25 with img
+  "cannon"
+  ;
+
+"guy" autosize * 0.25 with img
+  "guy"
+  ;

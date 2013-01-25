@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='6' loop_back='false' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='0' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 1' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='36' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 2' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='72' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 3' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='108' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 4' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='144' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 5' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='180' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 6' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/boss/more-pipe.png' x='216' y='75' clip_width='35' clip_height='91' spritepos='pipe 4 7' auto_size='true' width='35' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

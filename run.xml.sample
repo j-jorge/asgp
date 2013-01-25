@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration program_path="path/to/game/roller-painting/super-great-park">
+  <arguments>
+    <argument>--log-level=error</argument>
+  </arguments>
+
+  <items>
+    <item class_name='bear::forced_join_creator' fixed='false' id='run-mvt'>
+      <fields>
+        <field name='forced_movement_creator_with_reference.target'>
+          <item_reference value='run-center'/>
+        </field>
+      </fields>
+    </item><!-- bear::forced_join_creator -->
+    
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+      <fields>
+        <field name='forced_movement_applicator.auto_remove'>
+          <boolean value='1'/>
+        </field>
+        <field name='forced_movement_applicator.actor'>
+          <item_reference value='cart'/>
+        </field>
+        <field name='forced_movement_applicator.movement'>
+          <item_reference value='run-mvt'/>
+        </field>
+      </fields>
+    </item><!-- bear::applied_forced_movement -->
+    
+    <item class_name='bear::reference_item' fixed='true' id='run-center'/>
+
+  </items>
+</configuration>

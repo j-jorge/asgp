@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='23' loop_back='false' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='97' y='178' clip_width='97' clip_height='89' spritepos='0' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='194' y='178' clip_width='97' clip_height='89' spritepos='15' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='291' y='178' clip_width='97' clip_height='89' spritepos='30' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='388' y='178' clip_width='97' clip_height='89' spritepos='45' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='0' y='267' clip_width='97' clip_height='89' spritepos='60' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='97' y='267' clip_width='97' clip_height='89' spritepos='75' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='194' y='267' clip_width='97' clip_height='89' spritepos='90' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='291' y='267' clip_width='97' clip_height='89' spritepos='105' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='388' y='267' clip_width='97' clip_height='89' spritepos='120' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='0' y='356' clip_width='97' clip_height='89' spritepos='135' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='97' y='356' clip_width='97' clip_height='89' spritepos='150' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='194' y='356' clip_width='97' clip_height='89' spritepos='165' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='291' y='356' clip_width='97' clip_height='89' spritepos='180' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='0' y='0' clip_width='97' clip_height='89' spritepos='-165' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='97' y='0' clip_width='97' clip_height='89' spritepos='-150' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='194' y='0' clip_width='97' clip_height='89' spritepos='-135' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='291' y='0' clip_width='97' clip_height='89' spritepos='-120' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='388' y='0' clip_width='97' clip_height='89' spritepos='-105' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='0' y='89' clip_width='97' clip_height='89' spritepos='-90' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='97' y='89' clip_width='97' clip_height='89' spritepos='-75' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='194' y='89' clip_width='97' clip_height='89' spritepos='-60' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='291' y='89' clip_width='97' clip_height='89' spritepos='-45' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='388' y='89' clip_width='97' clip_height='89' spritepos='-30' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.13'>
+    <sprite image='gfx/bonus/bowl.png' x='0' y='178' clip_width='97' clip_height='89' spritepos='-15' auto_size='true' width='97' height='89' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

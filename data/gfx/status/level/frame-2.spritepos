@@ -1,0 +1,10 @@
+# The format of the lines is
+# picture: x y width height
+
+main: 0 0 338 337
+empty: 339 0 151 171
+star: 339 172 108 104
+free star: 0 338 100 104
+arrow off: 448 172 59 59
+arrow on: 339 277 59 59
+arrow: 448 232 48 36

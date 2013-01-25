@@ -1,0 +1,15 @@
+# The format of the lines is
+# picture: x y width height
+
+body: 0 0 457 286
+emergency box: 0 287 125 51
+emergency box 1: 126 287 125 51
+emergency box 2: 252 287 125 51
+emergency box 3: 378 287 125 51
+emergency box 4: 0 339 125 51
+emergency box 5: 126 339 125 51
+emergency box 6: 252 339 125 51
+emergency box 7: 378 339 125 51
+emergency box 8: 0 391 125 51
+emergency box 9: 126 391 125 51
+emergency box 10: 252 391 125 51

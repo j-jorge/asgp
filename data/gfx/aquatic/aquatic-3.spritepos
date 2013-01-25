@@ -1,0 +1,8 @@
+# The format of the lines is
+# picture: x y width height
+
+octopus: 0 0 511 244
+board: 0 245 310 247
+killer-whale: 311 245 148 137
+killer-whale alone: 311 383 176 95
+rod: 311 479 66 5

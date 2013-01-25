@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='2' last_index='3' loop_back='false' auto_size='true' width='39' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.1'>
+    <sprite image='gfx/tar/tar.png' x='425' y='0' clip_width='39' clip_height='43' spritepos='falling tar 1' auto_size='true' width='39' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/tar/tar.png' x='465' y='0' clip_width='39' clip_height='43' spritepos='falling tar 2' auto_size='true' width='39' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/tar/tar.png' x='46' y='70' clip_width='39' clip_height='43' spritepos='falling tar 3' auto_size='true' width='39' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/tar/tar.png' x='86' y='70' clip_width='39' clip_height='43' spritepos='falling tar 4' auto_size='true' width='39' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

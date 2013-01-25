@@ -1,0 +1,39 @@
+sprite_sheet "speed" 512 x 512 margin 1
+
+img "speed.xcf.bz2"
+
+"speed 0" autosize * 0.25 with img
+  "speed 0"
+  "speed 1"
+  "front 1"
+  ;
+
+"speed 1" autosize * 0.25 with img
+  "speed 1"
+  "speed 2"
+  "front 2"
+  ;
+
+"speed 2" autosize * 0.25 with img
+  "speed 2"
+  "speed 3"
+  "front 3"
+  ;
+
+"speed 3" autosize * 0.25 with img
+  "speed 3"
+  "speed 4"
+  "front 1"
+  ;
+
+"speed 4" autosize * 0.25 with img
+  "speed 4"
+  "speed 5"
+  "front 2"
+  ;
+
+"speed 5" autosize * 0.25 with img
+  "speed 5"
+  "speed 0"
+  "front 3"
+  ;

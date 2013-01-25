@@ -1,0 +1,38 @@
+/*  */
+sprite_sheet "rail" 256 x 256 margin 0
+
+img "rail.xcf.bz2"
+
+"rail" image_size * 0.5 with img
+  "rail"
+  ;
+
+"rail with support" image_size * 0.5 with img
+  "rail"
+  "support middle"
+  ;
+
+"rail with 2 supports 1" image_size * 0.5 with img
+  "rail"
+  "2 supports 1"
+  ;
+
+"rail with 2 supports 2" image_size * 0.5 with img
+  "rail"
+  "2 supports 2"
+  ;
+
+sprite_sheet "rail-end" 256 x 128 margin 0
+
+img "rail.xcf.bz2"
+
+"rail end 1" image_size * 0.5 with img
+  "rail ends"
+  "2 supports 1"
+  ;
+
+"rail end 2" image_size * 0.5 with img
+  "rail ends"
+  "2 supports 2"
+  ;
+

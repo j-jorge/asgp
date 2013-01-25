@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::cart_controller" category="rolling_painting" box_color="#98F74E" url="http://www.gamned.org/wiki/index.php/cart_controller" fixable="true">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::item_with_restricted_z_collision</class>
+    <class>bear::item_with_activable_sides</class>
+  </inherit>
+  <description>The class describing an item that controls carts.</description>
+  <fields>
+    <field type="real" name="cart_controller.z_position">
+      <description>Z value applied to a colliding cart.</description>
+      <default_value>unmodified</default_value>
+    </field>
+    <field type="real" name="cart_controller.force_factor">
+      <description>Force factor to give at collinding cart.</description>
+      <default_value>unmodified</default_value>
+    </field>	
+    <field type="boolean" name="cart_controller.right_orientation">
+      <description>Orientation to give at colliding cart (right orientation if true).</description>
+      <default_value>unmodified</default_value>
+    </field>
+    <field type="boolean" name="cart_controller.can_jump">
+      <description>Indicates if cart can jump.</description>
+      <default_value>unmodified</default_value>
+    </field>
+    <field type="boolean" name="cart_controller.checkpoint">
+      <description>Indicates if controller is a checkpoint.</description>
+      <default_value>false</default_value>
+    </field>	
+    <field type="boolean" name="cart_controller.looping">
+      <description>Indicates if cart is in a top looping.</description>
+      <default_value>unmodified</default_value>
+    </field>	
+  </fields>
+</item>

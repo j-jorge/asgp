@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='1' first_index='0' last_index='11' loop_back='false' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.5'>
+    <sprite image='gfx/bird/bird.png' x='95' y='0' clip_width='66' clip_height='57' spritepos='idle 1' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/bird/bird.png' x='162' y='0' clip_width='66' clip_height='57' spritepos='idle 2' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='229' y='0' clip_width='66' clip_height='57' spritepos='idle 3' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='296' y='0' clip_width='66' clip_height='57' spritepos='idle 4' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='229' y='0' clip_width='66' clip_height='57' spritepos='idle 3' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='162' y='0' clip_width='66' clip_height='57' spritepos='idle 2' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.3'>
+    <sprite image='gfx/bird/bird.png' x='95' y='0' clip_width='66' clip_height='57' spritepos='idle 1' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='363' y='0' clip_width='66' clip_height='57' spritepos='idle 5' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='430' y='0' clip_width='66' clip_height='57' spritepos='idle 6' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='152' y='155' clip_width='66' clip_height='57' spritepos='idle 7' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='430' y='0' clip_width='66' clip_height='57' spritepos='idle 6' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.1'>
+    <sprite image='gfx/bird/bird.png' x='363' y='0' clip_width='66' clip_height='57' spritepos='idle 5' auto_size='true' width='66' height='57' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

@@ -1,0 +1,15 @@
+# The format of the lines is
+# picture: x y width height
+
+wave 1: 0 0 96 96
+wave 2: 97 0 96 96
+wave 3: 194 0 96 96
+wave 4: 291 0 96 96
+wave 5: 388 0 96 96
+wave 6: 0 97 96 96
+wave 7: 97 97 96 96
+double wave 3: 194 97 96 96
+double wave 4: 291 97 96 96
+double wave 5: 388 97 96 96
+double wave 6: 0 194 96 96
+double wave 7: 97 194 96 96

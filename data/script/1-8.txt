@@ -1,0 +1,11 @@
++3 {
+  boss.speak( "|Hey Andy!|Say the name is Fun Park!" );
+}
+
++5 {
+  andy.speak( "|It is too late, Brian!" );
+}
+
++5 {
+  script.end();
+}

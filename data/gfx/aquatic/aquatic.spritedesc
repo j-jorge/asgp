@@ -1,0 +1,107 @@
+/*  */
+sprite_sheet "aquatic-1" 512 x 512 margin 1
+
+archipelago "archipelago.xcf.bz2"
+surfer "surfer.xcf.bz2"
+
+"archipelago" autosize * 0.5 with archipelago
+  glob "*"
+  ;
+
+"surfer" autosize * 0.5 with surfer
+  glob "*"
+  ;
+
+sprite_sheet "aquatic-2" 512 x 512 margin 1
+
+boat "boat.xcf.bz2"
+
+"boat" autosize * 0.5 with boat
+  glob "*"
+  ;
+
+sprite_sheet "aquatic-3" 512 x 512 margin 1
+
+board "board.xcf.bz2"
+killer_whale "killer-whale.xcf.bz2"
+octopus "octopus.xcf.bz2"
+
+"octopus" autosize * 0.5 with octopus
+  glob "*"
+  ;
+
+"board" autosize * 0.5 with board
+  glob "*"
+  ;
+
+"killer-whale" autosize * 0.5 with killer_whale
+  "killer whale"
+  "rod"
+  ;
+
+"killer-whale alone" autosize * 0.5 with killer_whale
+  "horizontal killer whale"
+  ;
+
+"rod" autosize * 0.5 with killer_whale
+  "horizontal rod"
+  ;
+
+sprite_sheet "aquatic-4" 512 x 512 margin 1
+
+dolphin "dolphin.xcf.bz2"
+shark "shark.xcf.bz2"
+whale "whale.xcf.bz2"
+
+"whale body" "body" * 0.5 with whale
+  "body"
+  "light"
+  ;
+
+"whale tail" "tail" * 0.5 with whale
+  "tail"
+  "light"
+  ;
+
+"whale water" "water" * 0.5 with whale
+  "water"
+  "light"
+  ;
+
+"shark" autosize * 0.5 with shark
+  glob "*"
+  ;
+
+"dolphin" autosize * 0.5 with dolphin
+  glob "*"
+  ;
+
+"dolphin alone" autosize * 0.5 with dolphin
+  "dolphin"
+  ;
+
+sprite_sheet "aquatic-5" 512 x 512 margin 1
+
+surfer "surfer.xcf.bz2"
+archipelago "archipelago.xcf.bz2"
+
+"wave" autosize * 0.5 with surfer
+  "foam"
+  "wave"
+  ;
+
+"surfer" autosize * 0.5 with surfer
+  "surfer"
+  ;
+
+"little palm" "left palm" * 0.5 with archipelago
+  "global light"
+  "shadows"
+  "left palm"
+  ;
+
+"tall palm" "right palm" * 0.5 with archipelago
+  "global light"
+  "shadows"
+  "right palm"
+  ;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='10' loop_back='true' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='0' y='287' clip_width='125' clip_height='51' spritepos='emergency box' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='126' y='287' clip_width='125' clip_height='51' spritepos='emergency box 1' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='252' y='287' clip_width='125' clip_height='51' spritepos='emergency box 2' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='378' y='287' clip_width='125' clip_height='51' spritepos='emergency box 3' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='0' y='339' clip_width='125' clip_height='51' spritepos='emergency box 4' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='126' y='339' clip_width='125' clip_height='51' spritepos='emergency box 5' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='252' y='339' clip_width='125' clip_height='51' spritepos='emergency box 6' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='378' y='339' clip_width='125' clip_height='51' spritepos='emergency box 7' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='0' y='391' clip_width='125' clip_height='51' spritepos='emergency box 8' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='126' y='391' clip_width='125' clip_height='51' spritepos='emergency box 9' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.03'>
+    <sprite image='gfx/boss/boss.png' x='252' y='391' clip_width='125' clip_height='51' spritepos='emergency box 10' auto_size='true' width='125' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>

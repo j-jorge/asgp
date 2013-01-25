@@ -1,0 +1,68 @@
+/* The size of the resulting image. */
+sprite_sheet "score" 512 x 256
+
+/* the source images and their ratio in the result */
+img "score.xcf.bz2"
+
+"combo 1" autosize * 0.25 with img
+  "score color"
+  "light"
+  "light edge"
+  "score shadow"
+  ;
+
+"combo 2" autosize * 0.25 with img
+  "x"
+  "score color"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 3" autosize * 0.25 with img
+  "x"
+  "score color"
+  "green"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 4" autosize * 0.25 with img
+  "x"
+  "score color"
+  "yellow"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 5" autosize * 0.25 with img
+  "x"
+  "score color"
+  "pink"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 6" autosize * 0.25 with img
+  "x"
+  "score color"
+  "purple"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+

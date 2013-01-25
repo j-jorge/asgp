@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<model>
+<action name="idle" duration="0.6" auto_next="idle">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='46' height='54' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.1'>
+    <sprite image='gfx/bomb/bomb.png' x='0' y='0' clip_width='46' clip_height='54' spritepos='bomb 1' auto_size='true' width='46' height='54' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</mark>
+<mark label="hook" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="42" height="44" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="hook" function="" x="21" y="44" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="21" y="26" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+<action name="explose" duration="1" auto_next="">
+<marks>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+</mark>
+</marks>
+<snapshots>
+<snapshot date="0" width="16" height="16" x_alignment="align_center" y_alignment="align_center" x_alignment_value="0" y_alignment_value="0">
+<sound global="0">
+<file path="sound/explosion/explosion-1.ogg"/>
+<file path="sound/explosion/explosion-2.ogg"/>
+<file path="sound/explosion/explosion-3.ogg"/>
+<file path="sound/explosion/explosion-4.ogg"/>
+<file path="sound/explosion/explosion-5.ogg"/>
+</sound>
+<mark_placements>
+<mark_placement label="body" function="" x="12" y="9" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot><snapshot date="0.88" function="finish_explose" width="16" height="16" x_alignment="align_center" y_alignment="align_center" x_alignment_value="0" y_alignment_value="0">
+<mark_placements>
+<mark_placement label="body" function="" x="16" y="14" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+</mark_placements>
+</snapshot></snapshots>
+</action>
+</model>
+

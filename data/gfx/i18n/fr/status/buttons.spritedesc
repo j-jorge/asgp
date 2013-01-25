@@ -1,0 +1,98 @@
+/*----------------------------------------------------------------------------*/
+sprite_sheet "buttons" 512 x 512 margin 1
+
+/* */
+buttons_img "buttons.xcf.bz2"
+
+"quit" image_size * 0.5 with buttons_img
+  glob "quit*"
+  "green box"
+  ;
+
+"resume" image_size * 0.5 with buttons_img
+  glob "resume*"
+  "green box"
+  ;
+
+"back" image_size * 0.5 with buttons_img
+  glob "back*"
+  "green box"
+  exclude glob "background*"
+  ;
+
+"go" image_size * 0.5 with buttons_img
+  glob "go*"
+  "green box"
+  ;
+
+"continue" image_size * 0.5 with buttons_img
+  glob "continue*"
+  "green box"
+  ;
+
+"skip" image_size * 0.5 with buttons_img
+  glob "skip*"
+  "green box"
+  ;
+
+"settings" image_size * 0.5 with buttons_img
+  glob "settings*"
+  "green box"
+  ;
+
+"fullscreen" image_size * 0.5 with buttons_img
+  glob "fullscreen*"
+  "green box"
+  ;
+
+"windowed" image_size * 0.5 with buttons_img
+  glob "windowed*"
+  "red box"
+  ;
+
+"sound on" image_size * 0.5 with buttons_img
+  glob "sound*"
+  "green box"
+  ;
+
+"sound off" image_size * 0.5 with buttons_img
+  glob "no sound*"
+  "red box"
+  ;
+
+"music on" image_size * 0.5 with buttons_img
+  glob "music*"
+  "green box"
+  ;
+
+"music off" image_size * 0.5 with buttons_img
+  glob "no music*"
+  glob "silence*"
+  "red box"
+  ;
+
+"background on" image_size * 0.5 with buttons_img
+  "background border"
+  "background on"
+  ;
+
+"background off" image_size * 0.5 with buttons_img
+  "background border"
+  "background off"
+  ;
+
+/*----------------------------------------------------------------------------*/
+sprite_sheet "buttons-2" 512 x 512 margin 1
+
+/* */
+buttons_img "buttons.xcf.bz2"
+
+"controllers" image_size * 0.5 with buttons_img
+  glob "controllers*"
+  "green box"
+  ;
+
+"buy" image_size * 0.5 with buttons_img
+  glob "buy now*"
+  "green box"
+  ;

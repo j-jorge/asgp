@@ -1,0 +1,127 @@
+0 {
+  button_camera_1_mvt_trigger.activate();
+  andy.set_passive();
+  brian.set_passive();  
+  brian.remove_elements();
+
+  andy.speak( "|Yeeheeeee!" );
+  andy.apply_crouch();
+}
+
++2.5 {
+  andy.jump();
+}
+
++1 {
+  andy.apply_stop_crouch();
+  brian.speak( "|Cool!" );
+}
+
++2 {
+  andy.speak( "|Hey Brian! Our amusement park is really awesome!" );
+}
+
++3.5 {
+  brian.speak( "|Yeah! Shoot the bird Andy!" );
+}
+
++2.0 {
+  traveling_camera_mvt_trigger.activate();
+  traveling_camera.activate();
+  button_traveling_camera_mvt_trigger.activate();
+}
+
++1.0 {
+  andy_cursor_trigger.activate();
+}
+
++1.0 {
+  andy.throw_plunger();
+}
+
++0.5 {
+  andy.speak( "|Ha! Ha! Ha!" );
+}
+
++1.5 {
+  brian_cursor_trigger.activate();
+}
+
++1 {
+  brian.throw_cannonball();
+  andy.speak( "|?" );
+  brian.speak( "|Bwa! Ha! Ha! Ha!" );
+}
+
++3 {
+  brian.speak( "|Let's call the park \"Fun Park\"." );
+}
+
++2 {
+  andy.speak( "|\"Fun Park\"? What a dumb name!" );
+}
+
++2.5 {
+  brian.speak( "|What?" );
+}
+
++1 {
+  andy.speak( "|The name is \"Super Great Park\"." );
+}
+
++4 {
+  brian.speak( "|Dumb name huh?" );
+  brian_cursor_on_andy_trigger.activate();
+}
+
++2 {
+  brian.throw_cannonball();
+}
+
++0.2 {
+  andy.speak( "|My balloons! It will take days to get them back!" );
+}
+
++4 {
+  brian.apply_crouch();
+  brian.speak( "|Ha! Ha! Who's dumb now?" );
+}
+
++3 {
+  brian.apply_stop_crouch();
+  andy_cursor_trigger_end.activate();
+}
+
++0.5 {
+  andy.throw_plunger();
+}
+
++0.5 {
+  andy.throw_plunger();
+}
+
++0.5 {
+  andy.throw_plunger();
+}
+
++1.5 {
+  andy.speak( "|You're so stupid..." );
+}
+
++3 {
+  andy.speak( "|See?" );
+}
+
++3.3 {
+  button_title_camera_mvt_trigger.activate();
+  title_camera.smooth_activate( 1 );
+}
+
++1 {
+  brian.speak( "|\"Fun Park\" was a better name!" );
+}
+
++3 {
+  level_loader_trigger.activate();
+  script.end();
+}

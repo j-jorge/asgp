@@ -1,0 +1,29 @@
+/* The size of the resulting image. */
+sprite_sheet "cursor" 256 x 256
+
+/* the source images and their ratio in the result */
+img "cursor.xcf.bz2"
+
+
+"default" "mask" * 0.25 with img
+  glob "*"
+  exclude "mask"
+  exclude glob "color *"
+  mask "mask"
+  ;
+
+"blue" "mask" * 0.25 with img
+  glob "*"
+  exclude "mask"
+  exclude "color"
+  exclude "color red"
+  mask "mask"
+  ;
+
+"red" "mask" * 0.25 with img
+  glob "*"
+  exclude "mask"
+  exclude "color"
+  exclude "color blue"
+  mask "mask"
+  ;

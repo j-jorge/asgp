@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::boss" category="rolling_painting" box_color="#23F71E" url="http://www.gamned.org/wiki/index.php/boss" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::model</class>
+  </inherit>
+  <fields>
+    <field type="item_reference" name="boss.cart" required="true">
+      <description>
+        The cart.
+      </description>
+      <set>
+        <element value="rp::cart"/>
+      </set>
+    </field>
+
+    <field type="u_integer" name="cart.module_serial">
+      <description>The module serial to put in transition level.</description>
+      <default_value>1</default_value>
+    </field>
+    
+    <field type="item_reference" name="boss.module">
+      <description>
+        The decorative module to put in transition level.
+      </description>
+    </field>
+  </fields>
+  <description>The class describing a boss.</description>
+  <new_default_value name="base_item.size.width">400</new_default_value>
+  <new_default_value name="base_item.size.height">300</new_default_value>
+</item>

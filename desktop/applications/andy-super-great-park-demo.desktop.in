@@ -1,0 +1,20 @@
+[Desktop Entry]
+Version=1.0
+
+Name=Andy's Super Great Park Demo
+
+Comment=Grabbing balloons with a plunger gun, shooting birds with a cannon and exploding everything else, all while riding a roller coaster.
+Comment[en]=Grabbing balloons with a plunger gun, shooting birds with a cannon and exploding everything else, all while riding a roller coaster.
+
+TryExec=@CMAKE_INSTALL_PREFIX@/@BEAR_ENGINE_INSTALL_EXECUTABLE_DIR@/andy-super-great-park-demo
+Exec=@CMAKE_INSTALL_PREFIX@/@BEAR_ENGINE_INSTALL_EXECUTABLE_DIR@/andy-super-great-park-demo
+Terminal=false
+Icon=asgp
+
+StartupNotify=true
+Type=Application
+Categories=Game;ArcadeGame;
+
+GenericName=A 2D shooter on rails
+GenericName[en]=A 2D shooter on rails
+

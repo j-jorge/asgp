@@ -1,0 +1,8 @@
++1.5 {
+  boss.speak( "|Well, I give up.|I'm going to build my own park!" );
+  boss.speak( "|Far better than this one!" );
+}
+
++5 {
+  script.end();
+}

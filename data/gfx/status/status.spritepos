@@ -1,0 +1,12 @@
+# The format of the lines is
+# picture: x y width height
+
+score background: 0 0 166 159
+plungers background ok: 167 0 301 59
+plungers background out: 167 60 301 59
+score: 0 160 193 44
+cannon background ok: 0 205 69 74
+cannon background out: 70 205 69 74
+cannon: 140 205 48 48
+plunger: 189 205 47 48
+hearth: 469 0 31 27

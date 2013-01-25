@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='2' first_index='0' last_index='5' loop_back='false' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='0' y='0' clip_width='138' clip_height='88' spritepos='tar 1' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='139' y='0' clip_width='138' clip_height='88' spritepos='tar 2' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='278' y='0' clip_width='138' clip_height='88' spritepos='tar 3' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='0' y='89' clip_width='138' clip_height='88' spritepos='tar 4' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='139' y='89' clip_width='138' clip_height='88' spritepos='tar 5' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='278' y='89' clip_width='138' clip_height='88' spritepos='tar 6' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='0' y='178' clip_width='138' clip_height='88' spritepos='tar 7' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='139' y='178' clip_width='138' clip_height='88' spritepos='tar 8' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='278' y='178' clip_width='138' clip_height='88' spritepos='tar 9' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='0' y='267' clip_width='138' clip_height='88' spritepos='tar 10' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.08'>
+    <sprite image='gfx/cart/tar.png' x='139' y='267' clip_width='138' clip_height='88' spritepos='tar 11' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
