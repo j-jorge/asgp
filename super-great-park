@@ -5,7 +5,7 @@ RUNNING_BEAR=./bin/andy-super-great-park
 MODE="$1"
 ARGS="--log-level=verbose --log-file=log.txt"
 
-export LD_LIBRARY_PATH="./bin:../bear-engine/bin:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="./bin:../bear/bear-engine/bin:$LD_LIBRARY_PATH"
 
 rm -f *.timelog
 
