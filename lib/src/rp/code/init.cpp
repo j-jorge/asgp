@@ -17,8 +17,6 @@
 #include "engine/i18n/gettext_translator.hpp"
 #include "engine/i18n/translator.hpp"
 
-#include <boost/preprocessor/stringize.hpp>
-
 #include <cstdlib>
 #include <ctime>
 
