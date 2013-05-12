@@ -194,10 +194,9 @@ void rp::switching::init_slope( bear::slope*& slope, double s, int z )
         get_rendering_attributes().is_mirrored() ? -s : s;
 
       slope->set_bottom_left( get_bottom_left() );
-      slope->set_real_field( "slope.steepness", effective_steepness );
-      slope->set_real_field( "item_with_friction.top_friction", 0.95 );
-      slope->set_integer_field
-        ("item_with_restricted_z_collision.max_z_for_collision",z+100);
+      slope->set_steepness( effective_steepness );
+      slope->set_top_friction( 0.95 );
+      slope->set_max_z_for_collision( z + 100 );
       slope->set_z_position(z);
       slope->set_z_shift(100);
       slope->set_force_z_position(true);
