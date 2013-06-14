@@ -12653,7 +12653,7 @@
 <item_reference value='cursor'/>
 </field>
 <field name='level_selector.level_name'>
-<string value='The Appache Village'/>
+<string value='The Apache Village'/>
 </field>
 <field name='level_selector.level_number'>
 <u_integer value='1'/>

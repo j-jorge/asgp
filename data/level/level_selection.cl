@@ -15164,7 +15164,7 @@ level_selector.cursor
 1
 44
 level_selector.level_name
-The Appache Village
+The Apache Village
 41
 level_selector.level_number
 1
