@@ -36,6 +36,8 @@ namespace rp
     static void load_game_variables();
     static void save_game_variables();
 
+    static void check_if_demo_version();
+
     static void create_hit_star
     ( bear::engine::base_item& ref, bear::visual::color_type border_color,
       bear::visual::color_type fill_color,

@@ -36,4 +36,5 @@ void init_super_great_park()
   std::srand(time(NULL));
   rp::util::load_game_variables();
   rp::util::send_version();
+  rp::util::check_if_demo_version();
 } // init_super_great_park()

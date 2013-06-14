@@ -32,4 +32,7 @@
 /** \brief The filename for player save. */
 #define RP_SAVE_FILENAME "game-variables.sav"
 
+/** \brief The name of the file containing the key of the game. */
+#define RP_KEY_FILE_NAME "key.txt"
+
 #endif // __RP_DEFINES_HPP__
