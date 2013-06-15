@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='' width='18000' height='5000' music='music/music.ogg'>
-  <layer class_name='decoration_layer' name='fond' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='fond' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animated_decoration' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='animated_decoration' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::continuous_link_visual' fixed='false'>
@@ -5913,7 +5913,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='decoration' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decoration' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -5957,7 +5957,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='structure' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='structure' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -10487,7 +10487,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-5'>
@@ -11088,6 +11088,80 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
+    <item class_name='bear::logical_not_creator' fixed='false' id='not_is_demo_version'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2480'/>
+</field>
+<field name='base_item.position.left'>
+<real value='615'/>
+</field>
+<field name='logical_not_creator.operand'>
+<item_reference value='is_demo_version'/>
+</field>
+</fields>
+    </item><!-- bear::logical_not_creator -->
+
+    <item class_name='bear::bool_game_variable_getter_creator' fixed='false' id='is_demo_version'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2526'/>
+</field>
+<field name='base_item.position.left'>
+<real value='615'/>
+</field>
+<field name='bool_game_variable_getter_creator.name'>
+<string value='demo_version'/>
+</field>
+</fields>
+    </item><!-- bear::bool_game_variable_getter_creator -->
+
+    <item class_name='bear::trigger' fixed='true' id='trigger-loader'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2388'/>
+</field>
+<field name='base_item.position.left'>
+<real value='617'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='kill-loader'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2432'/>
+</field>
+<field name='base_item.position.left'>
+<real value='618'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='not_is_demo_version'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='trigger-loader'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::killer' fixed='true' id='kill-loader'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2344'/>
+</field>
+<field name='base_item.position.left'>
+<real value='619'/>
+</field>
+<field name='killer.items'>
+<item_reference value='buy'/>
+<item_reference value='trigger_buy'/>
+</field>
+</fields>
+    </item><!-- bear::killer -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='outside-track-back-mvt-1'>
 <fields>
 <field name='base_item.global'>
@@ -11119,6 +11193,55 @@
 </field>
 </fields>
     </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='track-buy-camera'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2589'/>
+</field>
+<field name='base_item.position.left'>
+<real value='670'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-80'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='-59'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='1'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::navigator_launcher_toggle' fixed='false' id='navigateur_launcher'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2483'/>
+</field>
+<field name='base_item.position.left'>
+<real value='674'/>
+</field>
+<field name='navigator_launcher_toggle.url'>
+<string value='http://www.stuff-o-matic.com/asgp/buy.php'/>
+</field>
+</fields>
+    </item><!-- bear::navigator_launcher_toggle -->
 
     <item class_name='bear::camera_on_object' fixed='false' id='camera-7'>
 <fields>
@@ -11263,13 +11386,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='2354'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
 </field>
 <field name='base_item.position.left'>
-<real value='688'/>
+<real value='691'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -11289,13 +11412,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='2354'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
 </field>
 <field name='base_item.position.left'>
-<real value='688'/>
+<real value='691'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -11315,96 +11438,23 @@
 </fields>
     </item><!-- bear::mouse_detector -->
 
-    <item class_name='bear::navigator_launcher_toggle' fixed='false' id='navigateur_launcher'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1817'/>
-</field>
-<field name='base_item.position.left'>
-<real value='743'/>
-</field>
-<field name='navigator_launcher_toggle.url'>
-<string value='http://www.stuff-o-matic.com/asgp/purchase/purchase.php'/>
-</field>
-</fields>
-    </item><!-- bear::navigator_launcher_toggle -->
-
-    <item class_name='bear::logical_not_creator' fixed='false' id='not_is_demo_version'>
+    <item class_name='bear::applied_forced_movement' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1846'/>
+<real value='2514'/>
 </field>
 <field name='base_item.position.left'>
-<real value='879'/>
+<real value='697'/>
 </field>
-<field name='logical_not_creator.operand'>
-<item_reference value='is_demo_version'/>
-</field>
-</fields>
-    </item><!-- bear::logical_not_creator -->
-
-    <item class_name='bear::bool_game_variable_getter_creator' fixed='false' id='is_demo_version'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='1892'/>
-</field>
-<field name='base_item.position.left'>
-<real value='879'/>
-</field>
-<field name='bool_game_variable_getter_creator.name'>
-<string value='demo_version'/>
-</field>
-</fields>
-    </item><!-- bear::bool_game_variable_getter_creator -->
-
-    <item class_name='bear::trigger' fixed='true' id='trigger-loader'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='1754'/>
-</field>
-<field name='base_item.position.left'>
-<real value='881'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='kill-loader'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='1798'/>
-</field>
-<field name='base_item.position.left'>
-<real value='882'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='not_is_demo_version'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='trigger-loader'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
-
-    <item class_name='bear::killer' fixed='true' id='kill-loader'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='1710'/>
-</field>
-<field name='base_item.position.left'>
-<real value='883'/>
-</field>
-<field name='killer.items'>
+<field name='forced_movement_applicator.actor'>
 <item_reference value='buy'/>
 <item_reference value='trigger_buy'/>
 </field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='track-buy-camera'/>
+</field>
 </fields>
-    </item><!-- bear::killer -->
+    </item><!-- bear::applied_forced_movement -->
 
     <item class_name='rp::serial_switcher' fixed='false' id='place-4'>
 <fields>
