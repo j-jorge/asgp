@@ -11226,7 +11226,7 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
-    <item class_name='bear::navigator_launcher_toggle' fixed='false' id='navigateur_launcher'>
+    <item class_name='bear::browser_launcher_toggle' fixed='false' id='navigateur_launcher'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
@@ -11237,11 +11237,11 @@
 <field name='base_item.position.left'>
 <real value='674'/>
 </field>
-<field name='navigator_launcher_toggle.url'>
+<field name='browser_launcher_toggle.url'>
 <string value='http://www.stuff-o-matic.com/asgp/buy.php'/>
 </field>
 </fields>
-    </item><!-- bear::navigator_launcher_toggle -->
+    </item><!-- bear::browser_launcher_toggle -->
 
     <item class_name='bear::camera_on_object' fixed='false' id='camera-7'>
 <fields>

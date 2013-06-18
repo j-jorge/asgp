@@ -293,7 +293,7 @@
 </fields>
     </item><!-- bear::decorative_item -->
 
-    <item class_name='bear::navigator_launcher_toggle' fixed='true' id='navigateur_launcher'>
+    <item class_name='bear::browser_launcher_toggle' fixed='true' id='navigateur_launcher'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='526'/>
@@ -301,11 +301,11 @@
 <field name='base_item.position.left'>
 <real value='432'/>
 </field>
-<field name='navigator_launcher_toggle.url'>
+<field name='browser_launcher_toggle.url'>
 <string value='http://www.stuff-o-matic.com/asgp/purchase/purchase.php'/>
 </field>
 </fields>
-    </item><!-- bear::navigator_launcher_toggle -->
+    </item><!-- bear::browser_launcher_toggle -->
 
     <item class_name='bear::mouse_over_manager' fixed='false'>
 <fields>

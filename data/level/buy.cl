@@ -347,7 +347,7 @@ action_layer
 bear::decorative_item
 bear::camera_on_object
 bear::cursor
-bear::navigator_launcher_toggle
+bear::browser_launcher_toggle
 bear::level_popper_toggle
 bear::decorative_item
 31
@@ -473,7 +473,7 @@ base_item.position.bottom
 base_item.position.left
 432
 44
-navigator_launcher_toggle.url
+browser_launcher_toggle.url
 http://www.stuff-o-matic.com/asgp/purchase/purchase.php
 31
 0

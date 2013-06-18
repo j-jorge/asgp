@@ -14935,7 +14935,7 @@ bear::get_toggle_status_creator
 bear::get_toggle_status_creator
 bear::get_toggle_status_creator
 bear::bool_game_variable_getter_creator
-bear::navigator_launcher_toggle
+bear::browser_launcher_toggle
 bear::mouse_detector
 bear::killer
 bear::bool_game_variable_getter_creator
@@ -23864,7 +23864,7 @@ base_item.position.bottom
 base_item.position.left
 674
 44
-navigator_launcher_toggle.url
+browser_launcher_toggle.url
 http://www.stuff-o-matic.com/asgp/buy.php
 31
 0
