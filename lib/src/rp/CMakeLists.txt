@@ -57,6 +57,7 @@ set( RP_SOURCE_FILES
   code/zeppelin.cpp
   
   layer/code/help_layer.cpp
+  layer/code/key_layer.cpp
   layer/code/misc_layer.cpp
   layer/code/pause_layer.cpp
   layer/code/status_layer.cpp

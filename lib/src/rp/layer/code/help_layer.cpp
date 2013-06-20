@@ -22,7 +22,7 @@
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Destructor.
+ * \brief Constructor.
  * \param name The name of the layer.
  */
 rp::help_layer::help_layer( const std::string& name )
@@ -53,11 +53,11 @@ bool rp::help_layer::key_pressed( const bear::input::key_info& key )
 {
   bool result = false;
 
- if ( m_active )
-   {
-     set_help( false );
-     result = true;
-   }
+  if ( m_active )
+    {
+      set_help( false );
+      result = true;
+    }
 
   return result;
 } // help_layer::key_pressed()
@@ -93,22 +93,6 @@ bool rp::help_layer::mouse_move
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Creates the component that display the "Help" picture.
- */
-void rp::help_layer::create_component()
-{
-  bear::gui::picture* help =
-    new bear::gui::picture
-    ( get_level_globals().auto_sprite( "gfx/help/help-1.png", "help" ) );
-
-  help->set_left( ( m_root_window.width() - help->width() ) / 2 );
-  help->set_bottom( ( m_root_window.height() - help->height() ) / 2  );
-
-  m_root_window.insert( help );
-} // help_layer::create_component()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Start to display the help.
  */
 void rp::help_layer::start()
@@ -140,3 +124,19 @@ void rp::help_layer::set_help( bool help_on )
 
   m_active = help_on;
 } // help_layer::set_help()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the component that display the "Help" picture.
+ */
+void rp::help_layer::create_component()
+{
+  bear::gui::picture* help =
+    new bear::gui::picture
+    ( get_level_globals().auto_sprite( "gfx/help/help-1.png", "help" ) );
+
+  help->set_left( ( m_root_window.width() - help->width() ) / 2 );
+  help->set_bottom( ( m_root_window.height() - help->height() ) / 2  );
+
+  m_root_window.insert( help );
+} // help_layer::create_component()
