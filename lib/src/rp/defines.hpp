@@ -26,6 +26,9 @@
 /** \brief The name of the layer displaying the help. */
 #define RP_HELP_LAYER_DEFAULT_TARGET_NAME "help_layer"
 
+/** \brief The name of the layer displaying the key of the user. */
+#define RP_KEY_LAYER_DEFAULT_TARGET_NAME "key_layer"
+
 /** \brief The default orange color, used in gui layers. */
 #define RP_ORANGE_PIXEL bear::visual::color_type(254, 160, 0, 255)
 

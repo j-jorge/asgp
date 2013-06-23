@@ -10,9 +10,12 @@
  */
 #include "rp/layer/key_layer.hpp"
 
+#include "rp/game_key.hpp"
+
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
 #include "gui/button.hpp"
+#include "gui/callback_function.hpp"
 #include "input/keyboard.hpp"
 
 #include <boost/bind.hpp>
@@ -96,12 +99,55 @@ void rp::key_layer::hide()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Creates the component in which the user can enter his code.
+ * \brief Creates the dialog in which the user can enter his code.
  */
 void rp::key_layer::create_components()
 {
-  //m_root_window.insert();
-} // key_layer::create_component()
+  create_key_text();
+  create_validate_button();
+  create_cancel_button();
+} // key_layer::create_components()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the text area where the user can enter his code. 
+ */
+void rp::key_layer::create_key_text()
+{
+  const claw::graphic::rgba_pixel color( "#a0a0a0");
+
+  m_key_text =
+    new bear::gui::text_input
+    ( get_level_globals().get_font( "font/fontopo/fontopo-small.fnt", 20 ),
+      color );
+
+  m_key_text->set_border_color( color );
+  m_key_text->set_width( 200 );
+
+  m_key_text->add_enter_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &key_layer::validate, this ) ) );
+
+  m_root_window.insert( m_key_text );
+} // key_layer::create_key_text()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the button to click to validate the key.
+ */
+void rp::key_layer::create_validate_button()
+{
+
+} // key_layer::create_validate_button()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the button to click to cancel.
+ */
+void rp::key_layer::create_cancel_button()
+{
+
+} // key_layer::create_cancel_button()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -109,8 +155,9 @@ void rp::key_layer::create_components()
  */
 void rp::key_layer::validate()
 {
-#if 0
-  if ( game_key::is_valid_key( m_key_text->get_value() ) )
-    game_key::save( m_key_text->get_value() );
-#endif
+  if ( game_key::is_valid_key( m_key_text->get_text() ) )
+    {
+      game_key::save( m_key_text->get_text() );
+      hide();
+    }
 } //  key_layer::hide()

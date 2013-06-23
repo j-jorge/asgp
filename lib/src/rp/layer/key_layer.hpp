@@ -13,7 +13,8 @@
 
 #include "communication/messageable.hpp"
 #include "engine/layer/gui_layer.hpp"
-#include "gui/visual_component.hpp"
+
+#include "gui/text_input.hpp"
 
 namespace rp
 {
@@ -35,17 +36,21 @@ namespace rp
     void build();
 
     bool key_pressed( const bear::input::key_info& key );
-    bool mouse_pressed
+    /*bool mouse_pressed
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
     bool mouse_move
       ( const claw::math::coordinate_2d<unsigned int>& pos );
-
+    */
     void show();
     void hide();
 
   private:
     void create_components();
+
+    void create_key_text();
+    void create_validate_button();
+    void create_cancel_button();
 
     void validate();
 
@@ -55,6 +60,9 @@ namespace rp
 
     /** \brief Indicates if the layer is visible. */
     bool m_visible;
+
+    /** \brief The component in which the user can enter his key. */
+    bear::gui::text_input* m_key_text;
 
   }; // class key_layer
 } // namespace rp

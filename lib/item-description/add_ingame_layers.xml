@@ -3,16 +3,26 @@
   <inherit>
     <class>bear::base_item</class>
   </inherit>
+
   <description>This class adds the layers for the graphical user interface in the current level.</description>
+
   <fields>
+
     <field type="boolean" name="add_ingame_layers.status_layer">
       <description>Tell if we must add the status layer.</description>
       <default_value>true</default_value>
     </field>
+
+    <field type="boolean" name="add_ingame_layers.key_layer">
+      <description>Tell if we must add the key layer.</description>
+      <default_value>false</default_value>
+    </field>
+
     <field type="boolean" name="add_ingame_layers.show_introduction">
       <description>Tell if we must show the introduction of the level (with the
                    level name and the act number).</description>
       <default_value>true</default_value>
     </field>
+
   </fields>
 </item>

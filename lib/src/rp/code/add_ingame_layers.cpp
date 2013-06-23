@@ -23,6 +23,7 @@
 #include "engine/world.hpp"
 
 #include "rp/layer/help_layer.hpp"
+#include "rp/layer/key_layer.hpp"
 #include "rp/layer/status_layer.hpp"
 #include "rp/layer/misc_layer.hpp"
 #include "rp/layer/pause_layer.hpp"
@@ -42,7 +43,7 @@ BASE_ITEM_EXPORT( add_ingame_layers, rp )
  * \brief Constructor.
  */
 rp::add_ingame_layers::add_ingame_layers()
-: m_add_starting_effect(true), m_add_status_layer(true),
+: m_add_starting_effect(true), m_add_status_layer(true), m_add_key_layer(false),
   m_level_timer(NULL)
 {
 
@@ -68,6 +69,8 @@ void rp::add_ingame_layers::pre_cache()
   get_level_globals().load_sound( "sound/medal/bronze.ogg" );
   get_level_globals().load_sound( "sound/medal/silver.ogg" );
   get_level_globals().load_sound( "sound/medal/gold.ogg" );
+
+  get_level_globals().load_font( "font/fontopo/fontopo-small.fnt" );
 } // add_ingame_layers::pre_cache()
 
 /*----------------------------------------------------------------------------*/
@@ -93,6 +96,9 @@ void rp::add_ingame_layers::build()
       get_level().push_layer( status );
       get_level().push_layer( new pause_layer() );
     }
+    
+  if ( m_add_key_layer )
+    get_level().push_layer( new key_layer( RP_KEY_LAYER_DEFAULT_TARGET_NAME ) );
     
   get_level().push_layer
     ( new help_layer(RP_HELP_LAYER_DEFAULT_TARGET_NAME) );
@@ -132,6 +138,8 @@ rp::add_ingame_layers::set_bool_field( const std::string& name, bool value )
     m_add_starting_effect = value;
   else if ( name == "add_ingame_layers.status_layer" )
     m_add_status_layer = value;
+  else if ( name == "add_ingame_layers.key_layer" )
+    m_add_key_layer = value;
   else
     result = super::set_bool_field(name, value);
 

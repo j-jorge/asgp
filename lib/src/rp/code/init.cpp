@@ -11,6 +11,7 @@
 #include "rp/init.hpp"
 
 #include "rp/config_file.hpp"
+#include "rp/game_key.hpp"
 #include "rp/util.hpp"
 
 #include "engine/game.hpp"
@@ -36,5 +37,5 @@ void init_super_great_park()
   std::srand(time(NULL));
   rp::util::load_game_variables();
   rp::util::send_version();
-  rp::util::check_if_demo_version();
+  rp::game_key::check_if_demo_version();
 } // init_super_great_park()

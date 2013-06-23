@@ -48,14 +48,18 @@ namespace rp
     void set_level_timer(const bear::timer* level_timer);
 
   private:
-    /** \brief Tell if we must show the introduction of the level. */
+    /** \brief Tells if we must show the introduction of the level. */
     bool m_add_starting_effect;
 
-    /** \brief Tell if we must add status layer. */
+    /** \brief Tells if we must add status layer. */
     bool m_add_status_layer;
+
+    /** \brief Tells if we must add key layer. */
+    bool m_add_key_layer;
 
     /** \brief A pointer on status layer. */
     const bear::timer* m_level_timer;
+
   }; // class add_ingame_layers
 } // namespace rp
 

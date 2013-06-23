@@ -191,33 +191,6 @@ void rp::util::save_game_variables()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Check if the game has been bought or not and update the game variable
- *        "demo_version" accordingly.
- */
-void rp::util::check_if_demo_version()
-{
-  const bear::engine::game& g( bear::engine::game::get_instance() );
-
-  const std::string filename
-    ( g.get_game_filesystem().get_custom_config_file_name( RP_KEY_FILE_NAME ) );
- 
-  std::ifstream f( filename.c_str() );
-  std::string key;
-
-  if ( std::getline( f, key ) )
-    {
-      const boost::regex expr
-        ( "[a-z0-9]{8}(-[a-z0-9]{4}){3}-[a-z0-9]{12}",
-          boost::regex::perl | boost::regex::icase );
-
-      game_variables::set_demo_version( !boost::regex_match( key, expr ) );
-    }
-  else
-    game_variables::set_demo_version( true );
-} // util::load_game_variables()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Create a star behing the cart.
  * \param ref The item around which the star is created.
  * \param border_color The color of the border of the star.

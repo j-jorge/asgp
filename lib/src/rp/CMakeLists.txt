@@ -36,6 +36,7 @@ set( RP_SOURCE_FILES
   code/end.cpp
   code/entity.cpp
   code/explosion.cpp
+  code/game_key.cpp
   code/game_variables.cpp
   code/help_button.cpp
   code/hole.cpp

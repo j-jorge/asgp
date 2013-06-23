@@ -6,7 +6,7 @@
 /**
  * \file
  * \brief Utility functions about roller painting.
- * \author Sébastien angibaud
+ * \author SÃ©bastien angibaud
  */
 #ifndef __RP_UTIL_HPP__
 #define __RP_UTIL_HPP__
@@ -15,6 +15,10 @@
 
 namespace rp
 {
+  /**
+   * \brief Utility functions about roller painting.
+   * \author Sébastien angibaud
+   */
   class util
   {
   public:
@@ -35,8 +39,6 @@ namespace rp
       double min_intensity, double max_intensity, int z_shift );
     static void load_game_variables();
     static void save_game_variables();
-
-    static void check_if_demo_version();
 
     static void create_hit_star
     ( bear::engine::base_item& ref, bear::visual::color_type border_color,

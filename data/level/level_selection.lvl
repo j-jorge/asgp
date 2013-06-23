@@ -12264,6 +12264,9 @@
 <field name='base_item.position.left'>
 <real value='2629'/>
 </field>
+<field name='add_ingame_layers.key_layer'>
+<bool value='1'/>
+</field>
 <field name='add_ingame_layers.show_introduction'>
 <bool value='0'/>
 </field>
