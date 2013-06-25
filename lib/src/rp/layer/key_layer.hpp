@@ -36,12 +36,7 @@ namespace rp
     void build();
 
     bool key_pressed( const bear::input::key_info& key );
-    /*bool mouse_pressed
-    ( bear::input::mouse::mouse_code button,
-      const claw::math::coordinate_2d<unsigned int>& pos );
-    bool mouse_move
-      ( const claw::math::coordinate_2d<unsigned int>& pos );
-    */
+
     void show();
     void hide();
 
@@ -49,6 +44,7 @@ namespace rp
     void create_components();
 
     void create_key_text();
+    void create_label();
     void create_validate_button();
     void create_cancel_button();
 

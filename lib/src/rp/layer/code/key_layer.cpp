@@ -15,8 +15,11 @@
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
 #include "gui/button.hpp"
+#include "gui/static_text.hpp"
 #include "gui/callback_function.hpp"
 #include "input/keyboard.hpp"
+
+#include "rp/rp_gettext.hpp"
 
 #include <boost/bind.hpp>
 
@@ -106,6 +109,7 @@ void rp::key_layer::hide()
 void rp::key_layer::create_components()
 {
   create_key_text();
+  create_label();
   create_validate_button();
   create_cancel_button();
 } // key_layer::create_components()
@@ -133,6 +137,25 @@ void rp::key_layer::create_key_text()
 
   m_root_window.insert( m_key_text );
 } // key_layer::create_key_text()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the label that tells to enter the key. 
+ */
+void rp::key_layer::create_label()
+{
+  const bear::visual::font f
+    ( get_level_globals().get_font( "font/fontopo/fontopo-small.fnt", 20 ) );
+
+  bear::gui::static_text* const text( new bear::gui::static_text( f ) );
+  text->set_text( rp_gettext( "Enter your game key" ) );
+  text->set_auto_size( true );
+
+  text->set_bottom( m_key_text->top() + 3 );
+  text->set_left( m_key_text->left() );
+
+  m_root_window.insert( text );
+} // key_layer::create_label()
 
 /*----------------------------------------------------------------------------*/
 /**
