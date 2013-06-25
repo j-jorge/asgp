@@ -46,7 +46,9 @@ void rp::key_layer::build()
 
   create_components();
 
-  m_root_window.fit();
+  m_root_window.fit( 10 );
+  m_root_window.set_left( ( get_size().x - m_root_window.width() ) / 2 );
+  m_root_window.set_bottom( ( get_size().y - m_root_window.height() ) / 2 );
 
   get_level_globals().register_item(*this);
 } // key_layer::build()
