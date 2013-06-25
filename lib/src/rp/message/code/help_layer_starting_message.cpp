@@ -13,16 +13,7 @@
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Constructor.
- */
-rp::help_layer_starting_message::help_layer_starting_message()
-{
-
-} // help_layer_starting_message::help_layer_starting_message()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Apply the message to the balloon layer.
+ * \brief Apply the message to the help layer.
  * \param that The balloon layer to apply the message to.
  */
 bool rp::help_layer_starting_message::apply_to( help_layer& that )

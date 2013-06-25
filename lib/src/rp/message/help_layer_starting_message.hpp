@@ -5,7 +5,7 @@
 */
 /**
  * \file
- * \brief A message that adds a speaker in a balloon layer.
+ * \brief A message that starts the help layer.
  * \author Angibaud Sébastien
  */
 #ifndef __RP_HELP_LAYER_STARTING_MESSAGE_HPP__
@@ -25,8 +25,8 @@ namespace rp
     public bear::communication::typed_message<help_layer>
     {
     public:
-      help_layer_starting_message();
       bool apply_to( help_layer& that );
+
     }; // class help_layer_starting_message
 } // namespace rp
 

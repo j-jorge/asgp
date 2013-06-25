@@ -75,6 +75,7 @@ set( RP_SOURCE_FILES
   layer/status/code/time_component.cpp
   
   message/code/help_layer_starting_message.cpp
+  message/code/key_layer_starting_message.cpp
 
   transition_effect/code/level_ending_effect.cpp
   transition_effect/code/level_starting_effect.cpp
