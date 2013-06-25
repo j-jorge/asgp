@@ -70,7 +70,7 @@ bool rp::key_layer::key_pressed( const bear::input::key_info& key )
   else if ( key.is_enter() )
     validate();
   else
-    result = false;
+    result = super::key_pressed(key);
 
   return result;
 } // key_layer::key_pressed()
