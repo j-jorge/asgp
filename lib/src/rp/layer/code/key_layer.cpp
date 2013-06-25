@@ -116,15 +116,16 @@ void rp::key_layer::create_components()
  */
 void rp::key_layer::create_key_text()
 {
-  const claw::graphic::rgba_pixel color( "#a0a0a0");
+  const bear::visual::font f
+    ( get_level_globals().get_font( "font/fontopo/fontopo-small.fnt", 20 ) );
 
   m_key_text =
     new bear::gui::text_input
-    ( get_level_globals().get_font( "font/fontopo/fontopo-small.fnt", 20 ),
-      color );
+    ( f, claw::graphic::rgba_pixel( "#fafafa" ) );
 
-  m_key_text->set_border_color( color );
-  m_key_text->set_width( 200 );
+  m_key_text->set_border_color( claw::graphic::rgba_pixel( "#a0a0a0") );
+  m_key_text->set_width( f.get_metrics( 'w' ).get_advance().x * 36 );
+  m_key_text->set_margin( 3, 3 );
 
   m_key_text->add_enter_callback
     ( bear::gui::callback_function_maker
