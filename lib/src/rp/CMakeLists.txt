@@ -50,6 +50,7 @@ set( RP_SOURCE_FILES
   code/plank.cpp
   code/plunger.cpp
   code/serial_switcher.cpp
+  code/show_key_layer.cpp
   code/switching.cpp
   code/tar.cpp
   code/tnt.cpp
