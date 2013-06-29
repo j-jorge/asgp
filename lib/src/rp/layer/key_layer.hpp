@@ -52,6 +52,7 @@ namespace rp
     void create_validate_button();
     void create_cancel_button();
 
+    void update_validate_button();
     void validate();
 
   private:

@@ -131,12 +131,15 @@ void rp::key_layer::create_key_text()
     ( f, claw::graphic::rgba_pixel( "#fafafa" ) );
 
   m_key_text->set_border_color( claw::graphic::rgba_pixel( "#a0a0a0") );
-  m_key_text->set_width( f.get_metrics( 'w' ).get_advance().x * 36 );
+  m_key_text->set_width( f.get_metrics( 'w' ).get_advance().x * 37 );
   m_key_text->set_margin( 3, 3 );
 
   m_key_text->add_enter_callback
     ( bear::gui::callback_function_maker
       ( boost::bind( &key_layer::validate, this ) ) );
+  m_key_text->add_changed_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &key_layer::update_validate_button, this ) ) );
 
   m_root_window.insert( m_key_text );
 } // key_layer::create_key_text()
@@ -205,6 +208,24 @@ void rp::key_layer::create_cancel_button()
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Enables the OK button if and only if the key is valid.
+ */
+void rp::key_layer::update_validate_button()
+{
+  if ( game_key::is_valid_key( m_key_text->get_text() ) )
+    {
+      m_ok_button->enable();
+      m_ok_button->get_rendering_attributes().set_opacity( 1 );
+    }
+  else
+    {
+      m_ok_button->disable();
+      m_ok_button->get_rendering_attributes().set_opacity( 0.5 );
+    }
+} //  key_layer::update_validate_button()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Validates the code and hide the frame if it is valid.
  */
 void rp::key_layer::validate()
@@ -212,6 +233,7 @@ void rp::key_layer::validate()
   if ( game_key::is_valid_key( m_key_text->get_text() ) )
     {
       game_key::save( m_key_text->get_text() );
+      game_key::check_if_demo_version();
       hide();
     }
-} //  key_layer::hide()
+} //  key_layer::validate()

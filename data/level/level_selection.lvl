@@ -11135,6 +11135,9 @@
 
     <item class_name='bear::trigger' fixed='true' id='trigger-loader'>
 <fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='2388'/>
 </field>
@@ -12913,38 +12916,6 @@
 </fields>
     </item><!-- rp::level_selector -->
 
-    <item class_name='bear::mouse_detector' fixed='false' id='trigger_configure_off'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='88'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='110'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3158'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='mouse_detector.middle_button'>
-<bool value='1'/>
-</field>
-<field name='mouse_detector.right_button'>
-<bool value='1'/>
-</field>
-<field name='mouse_detector.toggle'>
-<item_reference value='apply_mvt_configure_on-1'/>
-</field>
-</fields>
-    </item><!-- bear::mouse_detector -->
-
     <item class_name='bear::mouse_detector' fixed='false' id='trigger_configure_on'>
 <fields>
 <field name='base_item.global'>
@@ -12973,6 +12944,38 @@
 </field>
 <field name='mouse_detector.toggle'>
 <item_reference value='apply_mvt_configure_on'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_detector -->
+
+    <item class_name='bear::mouse_detector' fixed='false' id='trigger_configure_off'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='88'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='110'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3158'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='apply_mvt_configure_on-1'/>
 </field>
 </fields>
     </item><!-- bear::mouse_detector -->
