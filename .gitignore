@@ -17,6 +17,7 @@ bin
 # Temporary files
 *~
 log.txt
+prof.log
 
 # Translations
 *.gmo
