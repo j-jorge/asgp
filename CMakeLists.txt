@@ -13,15 +13,6 @@ if( NOT DEFINED BEAR_ROOT_DIRECTORY )
     )
 endif()
 
-if( NOT DEFINED BEAR_ENGINE_LIBRARY_DIRECTORY )
-
-  #The path to the directory containing the libraries of the Bear engine.
-  set(
-    BEAR_ENGINE_LIBRARY_DIRECTORY
-    "${BEAR_ROOT_DIRECTORY}/bear-engine/bin"
-    )
-endif()
-
 set( CMAKE_MODULE_PATH "${BEAR_ROOT_DIRECTORY}/cmake-helper" )
 
 include( bear-config )
