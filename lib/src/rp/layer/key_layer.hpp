@@ -17,6 +17,7 @@
 #include "communication/messageable.hpp"
 #include "engine/layer/gui_layer.hpp"
 
+#include "gui/button.hpp"
 #include "gui/text_input.hpp"
 
 namespace rp
@@ -62,6 +63,9 @@ namespace rp
 
     /** \brief The component in which the user can enter his key. */
     bear::gui::text_input* m_key_text;
+
+    /** \brief The button to click to validate the key.. */
+    bear::gui::button* m_ok_button;
 
   }; // class key_layer
 } // namespace rp

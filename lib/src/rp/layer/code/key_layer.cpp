@@ -162,11 +162,25 @@ void rp::key_layer::create_label()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Creates the button to click to validate the key.
+ * \brief Creates the buttons to click to validate the key.
  */
 void rp::key_layer::create_validate_button()
 {
+  m_ok_button =
+    new bear::gui::button
+    ( get_level_globals().auto_sprite
+      ( "gfx/status/buttons-2.png", "check" ) );
 
+  m_ok_button->disable();
+  m_ok_button->get_rendering_attributes().set_opacity( 0.5 );
+  m_ok_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &key_layer::validate, this ) ) );
+
+  m_ok_button->set_margin(2);
+  m_ok_button->set_bottom_left
+    ( m_key_text->right() + 10, m_key_text->bottom() );
+  m_root_window.insert( m_ok_button );
 } // key_layer::create_validate_button()
 
 /*----------------------------------------------------------------------------*/
@@ -175,7 +189,18 @@ void rp::key_layer::create_validate_button()
  */
 void rp::key_layer::create_cancel_button()
 {
+  bear::gui::button* const button
+    ( new bear::gui::button
+      ( get_level_globals().auto_sprite
+        ( "gfx/status/buttons-2.png", "cross" ) ) );
 
+  button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &key_layer::hide, this ) ) );
+
+  button->set_margin(2);
+  button->set_bottom_left( m_ok_button->right() + 10, m_ok_button->bottom() );
+  m_root_window.insert( button );
 } // key_layer::create_cancel_button()
 
 /*----------------------------------------------------------------------------*/

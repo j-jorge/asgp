@@ -106,3 +106,11 @@ buttons_img "buttons.xcf.bz2"
   glob "buy now*"
   "green box"
   ;
+
+"check" autosize * 0.5 with buttons_img
+  "check"
+  ;
+
+"cross" autosize * 0.5 with buttons_img
+  "cross"
+  ;
