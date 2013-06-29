@@ -3,18 +3,33 @@ project(roller-painting)
 
 set( GAME_ROOT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}" )
 
-get_directory_property(
-  BEAR_ENGINE_INSTALL_EXECUTABLE_DIR DIRECTORY
-  ${BEAR_ROOT_DIRECTORY}/bear-engine
-  DEFINITION BEAR_ENGINE_INSTALL_EXECUTABLE_DIR
-  )
+#-------------------------------------------------------------------------------
+if( NOT DEFINED BEAR_ROOT_DIRECTORY )
 
-get_directory_property(
-  BEAR_ENGINE_INSTALL_LIBRARY_DIR DIRECTORY
-  ${BEAR_ROOT_DIRECTORY}/bear-engine
-  DEFINITION BEAR_ENGINE_INSTALL_LIBRARY_DIR
-  )
+  #The path to the directory containing the source code of the Bear engine.
+  set(
+    BEAR_ROOT_DIRECTORY
+    "${CMAKE_CURRENT_SOURCE_DIR}/../bear/"
+    )
+endif()
 
+if( NOT DEFINED BEAR_ENGINE_LIBRARY_DIRECTORY )
+
+  #The path to the directory containing the libraries of the Bear engine.
+  set(
+    BEAR_ENGINE_LIBRARY_DIRECTORY
+    "${BEAR_ROOT_DIRECTORY}/bear-engine/bin"
+    )
+endif()
+
+set( CMAKE_MODULE_PATH "${BEAR_ROOT_DIRECTORY}/cmake-helper" )
+
+include( bear-config )
+include( gettext )
+include( compiler-defaults )
+include( docbook-to-man )
+
+#-------------------------------------------------------------------------------
 # where the game resources are installed
 if( NOT RP_INSTALL_DATA_DIR )
   set( RP_INSTALL_DATA_DIR share/super-great-park )
@@ -44,6 +59,7 @@ set( RP_LIBRARY_OUTPUT_PATH "${RP_EXECUTABLE_OUTPUT_PATH}" )
 set( EXECUTABLE_OUTPUT_PATH "${RP_EXECUTABLE_OUTPUT_PATH}" )
 set( LIBRARY_OUTPUT_PATH "${RP_LIBRARY_OUTPUT_PATH}" )
 
+#-------------------------------------------------------------------------------
 # common flags
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}" )
 
@@ -80,7 +96,7 @@ endif( NOT SDLMIXER_FOUND )
 
 #-------------------------------------------------------------------------------
 # Claw
-FIND_SVN_CLAW()
+find_package( libclaw 1.7.4 )
 
 #-------------------------------------------------------------------------------
 # Include directories for Claw
@@ -127,17 +143,13 @@ link_directories(
   )
 
 #-------------------------------------------------------------------------------
-if( BEAR_ENGINE_INCLUDE_DIRECTORY )
-  include_directories( "${BEAR_ENGINE_INCLUDE_DIRECTORY}" )
-else( BEAR_ENGINE_INCLUDE_DIRECTORY )
-  include_directories( ${BEAR_ROOT_DIRECTORY}/bear-engine/core/src )
-endif( BEAR_ENGINE_INCLUDE_DIRECTORY )
+include_directories( "${BEAR_ENGINE_INCLUDE_DIRECTORY}" )
+include_directories( "${BEAR_ITEMS_INCLUDE_DIRECTORY}" )
 
-if( BEAR_ITEMS_INCLUDE_DIRECTORY )
-  include_directories( "${BEAR_ITEMS_INCLUDE_DIRECTORY}" )
-else( BEAR_ITEMS_INCLUDE_DIRECTORY )
-  include_directories( ${BEAR_ROOT_DIRECTORY}/bear-engine/lib/src )
-endif( BEAR_ITEMS_INCLUDE_DIRECTORY )
+# Link directories for the Bear engine
+link_directories(
+  ${BEAR_ENGINE_LIBRARY_DIRECTORY}
+  )
 
 #-------------------------------------------------------------------------------
 if( RP_PRESS )
@@ -166,15 +178,5 @@ install(
   DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE
   GROUP_READ GROUP_EXECUTE
   WORLD_READ WORLD_EXECUTE
-  PATTERN ".svn" EXCLUDE
   PATTERN "*~" EXCLUDE
 )
-
-if(UNIX)
-
-  IF(APPLE)
-    SET(DYLIB_EXTENSION "dylib")
-  ELSE(APPLE)
-    SET(DYLIB_EXTENSION "so")
-  ENDIF(APPLE)
-endif(UNIX)
