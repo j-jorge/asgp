@@ -33,10 +33,12 @@
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Destructor.
+ * \brief Constructor.
+ * \param name The layer will receive the messages targeted to this name.
  */
-rp::pause_layer::pause_layer()
-  : m_margin( 50 ), m_active_component( NULL )
+rp::pause_layer::pause_layer( const std::string& name )
+  : bear::communication::messageable( name ), m_margin( 50 ),
+    m_active_component( NULL )
 {
 
 } // pause_layer::pause_layer()
@@ -54,7 +56,31 @@ void rp::pause_layer::build()
   add_title_component();
   add_quit_resume_components();
   add_system_buttons();
+
+  get_level_globals().register_item(*this);
 } // pause_layer::build()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sets or unsets the pause of the level.
+ * \param pause_on Tells if the level becomes paused.
+ */
+void rp::pause_layer::set_pause( bool pause_on )
+{
+  if ( get_level().is_paused() == pause_on )
+    return;
+
+  if ( pause_on )
+    {
+      set_root_component( &m_root_window );
+      get_level().set_pause();
+    }
+  else
+    {
+      set_root_component( NULL );
+      get_level().unset_pause();
+    }
+} // pause_layer::set_pause()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -374,28 +400,6 @@ bear::visual::sprite rp::pause_layer::get_focus_off_background() const
   return get_level_globals().auto_sprite
     ( "gfx/status/buttons.png", "background off" );
 } // pause_layer::get_focus_off_background()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Sets or unsets the pause of the level.
- * \param pause_on Tells if the level becomes paused.
- */
-void rp::pause_layer::set_pause( bool pause_on )
-{
-  if ( get_level().is_paused() == pause_on )
-    return;
-
-  if ( pause_on )
-    {
-      set_root_component( &m_root_window );
-      get_level().set_pause();
-    }
-  else
-    {
-      set_root_component( NULL );
-      get_level().unset_pause();
-    }
-} // pause_layer::set_pause()
 
 /*----------------------------------------------------------------------------*/
 /**

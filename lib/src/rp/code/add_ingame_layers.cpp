@@ -97,7 +97,7 @@ void rp::add_ingame_layers::build()
   if ( m_add_status_layer )
     {
       get_level().push_layer( status );
-      get_level().push_layer( new pause_layer() );
+      get_level().push_layer( new pause_layer( RP_PAUSE_LAYER_DEFAULT_TARGET_NAME ) );
     }
     
   if ( m_add_key_layer )

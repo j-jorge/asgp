@@ -8,42 +8,42 @@
 */
 /**
  * \file
- * \brief Implementation of the show_key_layer class.
+ * \brief Implementation of the pause_game class.
  * \author Sebastien Angibaud
  */
-#include "rp/show_key_layer.hpp"
+#include "rp/pause_game.hpp"
 
 #include "rp/defines.hpp"
 
-#include "rp/message/key_layer_starting_message.hpp"
+#include "rp/message/pause_message.hpp"
 
 #include "engine/level_globals.hpp"
 
-BASE_ITEM_EXPORT( show_key_layer, rp )
+BASE_ITEM_EXPORT( pause_game, rp )
 
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Constructor.
  */
-rp::show_key_layer::show_key_layer()
-: m_layer_name( RP_KEY_LAYER_DEFAULT_TARGET_NAME )
+rp::pause_game::pause_game()
+: m_layer_name( RP_PAUSE_LAYER_DEFAULT_TARGET_NAME )
 {
   set_phantom( true );
   set_can_move_items( false );
   set_artificial( true );
-} // rp::show_key_layer::show_key_layer()
+} // rp::pause_game::pause_game()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief The toggle is activated, show the key dialog.
+ * \brief The toggle is activated, pause the gamex.
  * \param activator The item who activated this toggle.
  */
-void rp::show_key_layer::on_toggle_on
+void rp::pause_game::on_toggle_on
 ( bear::engine::base_item* activator )
 {
   super::on_toggle_on(activator);
 
-  key_layer_starting_message msg;
+  pause_message msg;
       
   get_level_globals().send_message( m_layer_name, msg );
-} // show_key_layer::on_toggle_on()
+} // pause_game::on_toggle_on()

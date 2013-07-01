@@ -26,6 +26,9 @@
 /** \brief The name of the layer displaying the balloons the speakers. */
 #define RP_BALLOON_LAYER_DEFAULT_TARGET_NAME "balloon_layer"
 
+/** \brief The name of the layer displayed when the game is paused. */
+#define RP_PAUSE_LAYER_DEFAULT_TARGET_NAME "pause_layer"
+
 /** \brief The name of the layer displaying the help. */
 #define RP_HELP_LAYER_DEFAULT_TARGET_NAME "help_layer"
 

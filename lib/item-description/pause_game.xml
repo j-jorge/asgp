@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::pause_game" category="rolling_painting" box_color="#22AA77" url="http://www.gamned.org/wiki/index.php/pause_game" fixable="true">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::item_with_toggle</class>
+  </inherit>
+
+  <description>This toggle pauses the game when turned on.</description>
+</item>

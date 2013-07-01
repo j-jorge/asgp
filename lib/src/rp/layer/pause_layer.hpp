@@ -14,6 +14,7 @@
 #ifndef __RP_PAUSE_LAYER_HPP__
 #define __RP_PAUSE_LAYER_HPP__
 
+#include "communication/messageable.hpp"
 #include "engine/layer/gui_layer.hpp"
 
 #include "gui/visual_component.hpp"
@@ -29,6 +30,7 @@ namespace rp
    * \author Julien Jorge
    */
   class pause_layer:
+    public bear::communication::messageable,
     public bear::engine::gui_layer
   {
   private:
@@ -39,9 +41,11 @@ namespace rp
     typedef std::vector<bear::gui::visual_component*> control_list;
 
   public:
-    pause_layer();
+    pause_layer( const std::string& name );
 
     void build();
+
+    void set_pause( bool pause_on );
 
     bool key_pressed( const bear::input::key_info& key );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
@@ -61,8 +65,6 @@ namespace rp
 
     bear::visual::sprite get_focus_on_background() const;
     bear::visual::sprite get_focus_off_background() const;
-
-    void set_pause( bool pause_on );
 
     void add_component( bear::gui::visual_component* c );
 
