@@ -157,264 +157,6 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='2560' height='2440' fit_level='1' tag=''>
-
-<items>
-    <item class_name='rp::add_ingame_layers' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='129'/>
-</field>
-<field name='base_item.position.left'>
-<real value='184'/>
-</field>
-<field name='add_ingame_layers.show_introduction'>
-<bool value='0'/>
-</field>
-<field name='add_ingame_layers.status_layer'>
-<bool value='0'/>
-</field>
-</fields>
-    </item><!-- rp::add_ingame_layers -->
-
-    <item class_name='bear::cursor' fixed='false' id='cursor'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='103'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='30000'/>
-</field>
-<field name='base_item.position.left'>
-<real value='293'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/cursor.png' x='0' y='0' clip_width='48' clip_height='48' spritepos='default' auto_size='true' width='48' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-<field name='cursor.visible_duration'>
-<real value='2'/>
-</field>
-</fields>
-    </item><!-- bear::cursor -->
-
-    <item class_name='bear::camera_on_object' fixed='false' id='camera'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='444'/>
-</field>
-<field name='base_item.position.left'>
-<real value='357'/>
-</field>
-<field name='base_item.size.height'>
-<real value='720'/>
-</field>
-<field name='base_item.size.width'>
-<real value='1280'/>
-</field>
-<field name='camera.active'>
-<bool value='1'/>
-</field>
-<field name='camera.max_zoom_length'>
-<real value='500'/>
-</field>
-<field name='camera.size.min_height'>
-<real value='720'/>
-</field>
-<field name='camera.size.min_width'>
-<real value='1280'/>
-</field>
-<field name='camera.valid_max.x'>
-<real value='24900'/>
-</field>
-<field name='camera.valid_max.y'>
-<real value='4900'/>
-</field>
-<field name='camera.valid_min.x'>
-<real value='100'/>
-</field>
-<field name='camera.valid_min.y'>
-<real value='100'/>
-</field>
-<field name='camera_on_object.items'>
-<item_reference value='camera'/>
-</field>
-</fields>
-    </item><!-- bear::camera_on_object -->
-
-    <item class_name='bear::mouse_detector' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='454'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='367'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='mouse_detector.middle_button'>
-<bool value='1'/>
-</field>
-<field name='mouse_detector.right_button'>
-<bool value='1'/>
-</field>
-<field name='mouse_detector.toggle'>
-<item_reference value='navigateur_launcher'/>
-</field>
-</fields>
-    </item><!-- bear::mouse_detector -->
-
-    <item class_name='bear::decorative_item' fixed='true' id='buy'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='454'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='367'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons-2.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='buy' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::browser_launcher_toggle' fixed='true' id='navigateur_launcher'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='526'/>
-</field>
-<field name='base_item.position.left'>
-<real value='432'/>
-</field>
-<field name='browser_launcher_toggle.url'>
-<string value='http://www.stuff-o-matic.com/asgp/buy.php'/>
-</field>
-</fields>
-    </item><!-- bear::browser_launcher_toggle -->
-
-    <item class_name='bear::mouse_over_manager' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='457'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='9'/>
-</field>
-<field name='base_item.position.left'>
-<real value='1011'/>
-</field>
-<field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</field>
-<field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='141' y='396' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</field>
-<field name='mouse_over_manager.items'>
-<item_reference value='resume'/>
-<item_reference value='buy'/>
-</field>
-<field name='mouse_over_manager.sample'>
-<sample path='sound/tick.ogg' loops='1' volume='1'/>
-</field>
-</fields>
-    </item><!-- bear::mouse_over_manager -->
-
-    <item class_name='bear::mouse_detector' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='454'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='1487'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='mouse_detector.middle_button'>
-<bool value='1'/>
-</field>
-<field name='mouse_detector.right_button'>
-<bool value='1'/>
-</field>
-<field name='mouse_detector.toggle'>
-<item_reference value='popper'/>
-</field>
-</fields>
-    </item><!-- bear::mouse_detector -->
-
-    <item class_name='bear::decorative_item' fixed='true' id='resume'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='454'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='1487'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='resume' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::level_popper_toggle' fixed='false' id='popper'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='526'/>
-</field>
-<field name='base_item.position.left'>
-<real value='1598'/>
-</field>
-<field name='level_popper_toggle.transition_layer_name'>
-<string value='transition_effect_layer'/>
-</field>
-</fields>
-    </item><!-- bear::level_popper_toggle -->
-
-</items>
-
-<priority>
-</priority>
-
-  </layer><!-- action_layer -->
-
   <layer class_name='action_layer' name='deco' width='2560' height='2440' fit_level='1' tag=''>
 
 <items>
@@ -3895,6 +3637,514 @@
 </field>
 </fields>
     </item><!-- bear::continuous_link_visual -->
+
+</items>
+
+<priority>
+</priority>
+
+  </layer><!-- action_layer -->
+
+  <layer class_name='action_layer' name='' width='2560' height='2440' fit_level='1' tag=''>
+
+<items>
+    <item class_name='rp::add_ingame_layers' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='129'/>
+</field>
+<field name='base_item.position.left'>
+<real value='184'/>
+</field>
+<field name='add_ingame_layers.show_introduction'>
+<bool value='0'/>
+</field>
+<field name='add_ingame_layers.status_layer'>
+<bool value='0'/>
+</field>
+</fields>
+    </item><!-- rp::add_ingame_layers -->
+
+    <item class_name='bear::cursor' fixed='false' id='cursor'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='103'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='30000'/>
+</field>
+<field name='base_item.position.left'>
+<real value='293'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/cursor.png' x='0' y='0' clip_width='48' clip_height='48' spritepos='default' auto_size='true' width='48' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+<field name='cursor.visible_duration'>
+<real value='2'/>
+</field>
+</fields>
+    </item><!-- bear::cursor -->
+
+    <item class_name='bear::camera_on_object' fixed='false' id='camera'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='444'/>
+</field>
+<field name='base_item.position.left'>
+<real value='357'/>
+</field>
+<field name='base_item.size.height'>
+<real value='720'/>
+</field>
+<field name='base_item.size.width'>
+<real value='1280'/>
+</field>
+<field name='camera.active'>
+<bool value='1'/>
+</field>
+<field name='camera.max_zoom_length'>
+<real value='500'/>
+</field>
+<field name='camera.size.min_height'>
+<real value='720'/>
+</field>
+<field name='camera.size.min_width'>
+<real value='1280'/>
+</field>
+<field name='camera.valid_max.x'>
+<real value='24900'/>
+</field>
+<field name='camera.valid_max.y'>
+<real value='4900'/>
+</field>
+<field name='camera.valid_min.x'>
+<real value='100'/>
+</field>
+<field name='camera.valid_min.y'>
+<real value='100'/>
+</field>
+<field name='camera_on_object.items'>
+<item_reference value='camera'/>
+</field>
+</fields>
+    </item><!-- bear::camera_on_object -->
+
+    <item class_name='bear::mouse_detector' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='367'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='navigateur_launcher'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_detector -->
+
+    <item class_name='bear::decorative_item' fixed='true' id='buy'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='367'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/buttons-2.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='buy' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::browser_launcher_toggle' fixed='true' id='navigateur_launcher'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='526'/>
+</field>
+<field name='base_item.position.left'>
+<real value='432'/>
+</field>
+<field name='browser_launcher_toggle.url'>
+<string value='http://www.stuff-o-matic.com/asgp/buy.php'/>
+</field>
+</fields>
+    </item><!-- bear::browser_launcher_toggle -->
+
+    <item class_name='bear::mouse_over_manager' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='457'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='9'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1011'/>
+</field>
+<field name='mouse_over_manager.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='141' y='396' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.items'>
+<item_reference value='resume'/>
+<item_reference value='buy'/>
+</field>
+<field name='mouse_over_manager.sample'>
+<sample path='sound/tick.ogg' loops='1' volume='1'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_over_manager -->
+
+    <item class_name='bear::mouse_detector' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1487'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='popper'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_detector -->
+
+    <item class_name='bear::decorative_item' fixed='true' id='resume'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='454'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1487'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/buttons.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='resume' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join-camera-right'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1582'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='256'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='40'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::level_popper_toggle' fixed='false' id='popper'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='526'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1598'/>
+</field>
+<field name='level_popper_toggle.transition_layer_name'>
+<string value='transition_effect_layer'/>
+</field>
+</fields>
+    </item><!-- bear::level_popper_toggle -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='message-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='588.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1637'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/buy/buy-message-3.png' x='0' y='0' clip_width='512' clip_height='511' spritepos='frame' auto_size='true' width='512' height='511' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='message-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='588.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1637'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/buy/buy-message-2.png' x='0' y='0' clip_width='512' clip_height='511' spritepos='frame' auto_size='true' width='512' height='511' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='message-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='588.5'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1637'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/buy/buy-message-1.png' x='0' y='0' clip_width='512' clip_height='511' spritepos='frame' auto_size='true' width='512' height='511' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join-camera-center'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1688'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='44'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='40'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1147'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1741'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='message-1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt-message-1'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt-message-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1203'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1749'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='join-camera-center'/>
+<item_reference value='pause'/>
+<item_reference value='join-camera-left'/>
+<item_reference value='join-camera-right'/>
+<item_reference value='long-pause'/>
+<item_reference value='long-pause'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='join-camera-left'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1794'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-256'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='40'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1143'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1842'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='message-2'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt-message-2'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt-message-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1203'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1856'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='long-pause'/>
+<item_reference value='join-camera-center'/>
+<item_reference value='pause'/>
+<item_reference value='join-camera-left'/>
+<item_reference value='join-camera-right'/>
+<item_reference value='long-pause'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_translation_creator' fixed='false' id='pause'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1900'/>
+</field>
+<field name='forced_translation_creator.duration'>
+<real value='4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_translation_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1147'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1948'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='message-3'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='mvt-message-3'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt-message-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1203'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1963'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='long-pause'/>
+<item_reference value='long-pause'/>
+<item_reference value='join-camera-center'/>
+<item_reference value='pause'/>
+<item_reference value='join-camera-left'/>
+<item_reference value='join-camera-right'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_translation_creator' fixed='false' id='long-pause'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1323'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2006'/>
+</field>
+<field name='forced_translation_creator.duration'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_translation_creator -->
 
 </items>
 

@@ -1,0 +1,40 @@
+/* The size of the resulting image. */
+sprite_sheet "buy-message-1" 512 x 512 margin 0
+
+/* */
+img "frames.xcf.bz2"
+
+"frame" "mask" * 1 with img
+  glob "Beat *"
+  "frame common"
+  "unlock"
+  mask "mask"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "buy-message-2" 512 x 512 margin 0
+
+/* */
+img "frames.xcf.bz2"
+
+"frame" "mask" * 1 with img
+  glob "Experiment *"
+  "frame common"
+  "challenges"
+  mask "mask"
+  ;
+
+/*----------------------------------------------------------------------------*/
+/* The size of the resulting image. */
+sprite_sheet "buy-message-3" 512 x 512 margin 0
+
+/* */
+img "frames.xcf.bz2"
+
+"frame" "mask" * 1 with img
+  glob "Pay *"
+  "frame common"
+  "open source"
+  mask "mask"
+  ;
