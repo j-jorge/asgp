@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='' width='18000' height='5000' music='music/western.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -1121,7 +1121,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='false' id='rodeo-1'>
@@ -1285,7 +1285,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='wall fill far' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall fill far' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -1465,7 +1465,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -5513,7 +5513,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::straight_slope' fixed='true'>
@@ -5736,9 +5736,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='43'/>
 </field>
@@ -5776,9 +5773,6 @@
 <field name='base_item.position.left'>
 <real value='510'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -5793,9 +5787,6 @@
 <field name='base_item.position.left'>
 <real value='512'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -5809,9 +5800,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='512'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::cable -->
@@ -6243,9 +6231,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='1965'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
@@ -7129,9 +7114,6 @@
 <field name='base_item.position.left'>
 <real value='4428'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -7229,9 +7211,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='4762'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -7583,9 +7562,6 @@
 <field name='base_item.position.left'>
 <real value='5687'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -7600,9 +7576,6 @@
 <field name='base_item.position.left'>
 <real value='5687'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -7616,9 +7589,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='5687'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -7995,9 +7965,6 @@
 <field name='base_item.position.left'>
 <real value='7413'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::cable -->
 
@@ -8011,9 +7978,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='7597'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
@@ -8029,9 +7993,6 @@
 <field name='base_item.position.left'>
 <real value='7597'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -8045,9 +8006,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='7597'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -8199,9 +8157,6 @@
 <field name='base_item.position.left'>
 <real value='8304'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::cable -->
 
@@ -8277,9 +8232,6 @@
 <field name='base_item.position.left'>
 <real value='8846'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -8320,9 +8272,6 @@
 <field name='base_item.position.left'>
 <real value='9101'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -8336,9 +8285,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='9101'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -8385,9 +8331,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='9218'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::cable -->
@@ -8596,9 +8539,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2764'/>
 </field>
@@ -8662,9 +8602,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2764'/>
 </field>
@@ -8783,9 +8720,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2908'/>
 </field>
@@ -8993,9 +8927,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2764'/>
 </field>
@@ -9036,9 +8967,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2764'/>
 </field>
@@ -9079,9 +9007,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2764'/>
 </field>
@@ -9263,9 +9188,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2956'/>
 </field>
@@ -9381,9 +9303,6 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
-<field name='base_item.fixed.x'>
-<bool value='1'/>
-</field>
 <field name='base_item.position.bottom'>
 <real value='2764'/>
 </field>
@@ -9493,9 +9412,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='13004'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
@@ -9712,9 +9628,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='14458'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -10028,9 +9941,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='15820'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::cable -->
