@@ -1,5 +1,5 @@
 0
-8
+9
 0
 
 2560
@@ -11,6 +11,7 @@ music/credits.ogg
 decoration_layer
 2560
 1536
+
 32
 bear::decorative_item
 1
@@ -342,6 +343,7 @@ gfx/background/far-background/bk_08.png
 action_layer
 2560
 2440
+
 30
 6
 bear::decorative_item
@@ -474,7 +476,7 @@ base_item.position.left
 432
 44
 browser_launcher_toggle.url
-http://www.stuff-o-matic.com/asgp/purchase/purchase.php
+http://www.stuff-o-matic.com/asgp/buy.php
 31
 0
 42
@@ -691,6 +693,7 @@ base_item.position.left
 action_layer
 2560
 2440
+
 30
 138
 bear::decorative_item

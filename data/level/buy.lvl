@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='' width='2560' height='2440' music='music/credits.ogg'>
-  <layer class_name='decoration_layer' name='fond' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='fond' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='2560' height='2440' fit_level='1'>
+  <layer class_name='action_layer' name='' width='2560' height='2440' fit_level='1' tag=''>
 
 <items>
     <item class_name='rp::add_ingame_layers' fixed='false'>
@@ -302,7 +302,7 @@
 <real value='432'/>
 </field>
 <field name='browser_launcher_toggle.url'>
-<string value='http://www.stuff-o-matic.com/asgp/purchase/purchase.php'/>
+<string value='http://www.stuff-o-matic.com/asgp/buy.php'/>
 </field>
 </fields>
     </item><!-- bear::browser_launcher_toggle -->
@@ -415,7 +415,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='action_layer' name='deco' width='2560' height='2440' fit_level='1'>
+  <layer class_name='action_layer' name='deco' width='2560' height='2440' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::continuous_link_visual' fixed='false'>
