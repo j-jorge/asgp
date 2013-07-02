@@ -1,29 +1,61 @@
 #!/bin/sh
 
+# This is the directory containing this script
 SOURCE_ROOT=$(echo $PWD/$0 | sed 's:\(.\+/\)[^/]\+:\1:')../
 
 INITIAL_DIRECTORY=$PWD
+
+# The Git repositories from which we take the sources.
 ASGP_GIT_PATH=$SOURCE_ROOT/
 BEAR_GIT_PATH=$SOURCE_ROOT/../bear/
 
+# Finds the version of Andy's Super Great Park
 . $SOURCE_ROOT/build-scripts/version.sh
 
+# This directory will receive the source tree
 WORKING_DIRECTORY=$(mktemp --directory)
 
+# Now we start the real work
 cd "$WORKING_DIRECTORY"
 
-ASGP_ARCHIVE_NAME=andy-super-great-park_$ASGP_VERSION
+# This directory is the root of the source tree
+RESULT_DIRECTORY_NAME=andy-super-great-park-$ASGP_VERSION
 
-SOURCE_DIRECTORY=$ASGP_ARCHIVE_NAME
+# The full path to the source root
+SOURCE_DIRECTORY=$WORKING_DIRECTORY/$RESULT_DIRECTORY_NAME
 mkdir $SOURCE_DIRECTORY
 
+# Takes the source from the repositories.
+# git archive only works from inside a local repository.
+cd $ASGP_GIT_PATH
+git archive master --prefix=asgp/ | tar -x -C $SOURCE_DIRECTORY
+
+cd $BEAR_GIT_PATH
+git archive master --prefix=bear/ | tar -x -C $SOURCE_DIRECTORY
+
+# Cleans up the source
 cd $SOURCE_DIRECTORY
 
-git archive master $ASGP_GIT_PATH | tar -x
-git archive master $BEAR_GIT_PATH | tar -x
+find . -name ".gitignore" -exec rm {} +
 
-cd ..
+# We must create a CMakeLists.txt file to build the engine and the game, and to
+# add an uninstall rule.
 
-tar cfz $INITIAL_DIRECTORY/$ASGP_ARCHIVE_NAME.tar.gz $ASGP_ARCHIVE_NAME
+cat > CMakeLists.txt <<EOF
+cmake_minimum_required( VERSION 2.8 )
 
+add_subdirectory( bear )
+add_subdirectory( asgp )
+
+set( BEAR_ROOT_DIRECTORY "\${CMAKE_CURRENT_SOURCE_DIR}/bear" )
+set( CMAKE_MODULE_PATH "\${BEAR_ROOT_DIRECTORY}/cmake-helper" )
+include( uninstall )
+EOF
+
+# Creates the final archive in the directory from which the script was started.
+cd $WORKING_DIRECTORY/
+tar cfz $INITIAL_DIRECTORY/andy-super-great-park_$ASGP_VERSION.tar.gz \
+    $RESULT_DIRECTORY_NAME
+
+# And clean up the temporary files before leaving.
 rm -fr "$WORKING_DIRECTORY"
