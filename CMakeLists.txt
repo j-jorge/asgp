@@ -143,10 +143,6 @@ link_directories(
   )
 
 #-------------------------------------------------------------------------------
-if( RP_PRESS )
-  add_definitions( "-DRP_PRESS" )
-endif()
-
 if( RP_TAG )
   add_definitions( "-DRP_TAG=${RP_TAG}" )
 endif()

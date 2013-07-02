@@ -14,23 +14,12 @@ configure_file(
   IMMEDIATE @ONLY)
 
 configure_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/applications/andy-super-great-park-demo.desktop.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/applications/andy-super-great-park-demo.desktop"
-  IMMEDIATE @ONLY)
-
-configure_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/menu/andy-super-great-park.in"
   "${CMAKE_CURRENT_BINARY_DIR}/menu/andy-super-great-park"
   IMMEDIATE @ONLY)
 
-configure_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/menu/andy-super-great-park-demo.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/menu/andy-super-great-park-demo"
-  IMMEDIATE @ONLY)
-
 install(
   FILES "${CMAKE_CURRENT_BINARY_DIR}/applications/andy-super-great-park.desktop"
-  "${CMAKE_CURRENT_BINARY_DIR}/applications/andy-super-great-park-demo.desktop"
   DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications/"
   PERMISSIONS
   OWNER_READ OWNER_WRITE

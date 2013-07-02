@@ -1,5 +1,0 @@
-?package(andy-super-great-park-demo):needs="X11" section="Games/Action" \
-  title="Andy's Super Great Park (Demo)" \
-  command="@CMAKE_INSTALL_PREFIX@/@BEAR_ENGINE_INSTALL_EXECUTABLE_DIR@/andy-super-great-park-demo" \
-  hints="Grab balloons with a plunger gun, shoot birds with a cannon and explode everything else, all while riding a roller coaster." \
-  icon="@CMAKE_INSTALL_PREFIX@/share/pixmaps/asgp.xpm"

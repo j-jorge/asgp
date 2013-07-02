@@ -134,12 +134,7 @@ void rp::launcher::create_game( int& argc, char** &argv )
       "--screen-height=720",
       "--active-area=250",
 
-#ifdef RP_PRESS
-      "--tag=press",
-#elif defined RP_DEMO
-      "--tag=demo",
-      "--set-game-var-bool=demo_version=1",
-#elif defined RP_TAG
+#if defined RP_TAG
       "--tag=" STRINGIZE( RP_TAG ),
 #endif
 

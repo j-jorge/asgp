@@ -2,7 +2,6 @@ cmake_minimum_required(VERSION 2.6)
 project(rp-launcher)
 
 set( RP_LAUNCHER_TARGET_NAME andy-super-great-park )
-set( RP_DEMO_LAUNCHER_TARGET_NAME andy-super-great-park-demo )
 
 include_directories( . ${BEAR_ENGINE_INCLUDE_DIRECTORY} )
 
@@ -13,16 +12,9 @@ set( RP_LAUNCHER_SOURCE_FILES
   )
 
 add_executable( ${RP_LAUNCHER_TARGET_NAME} ${RP_LAUNCHER_SOURCE_FILES} )
-add_executable( ${RP_DEMO_LAUNCHER_TARGET_NAME} ${RP_LAUNCHER_SOURCE_FILES} )
 
 set_target_properties(
   ${RP_LAUNCHER_TARGET_NAME}
-  PROPERTIES
-  INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${RP_INSTALL_CUSTOM_LIBRARY_DIR}"
-  )
-
-set_target_properties(
-  ${RP_DEMO_LAUNCHER_TARGET_NAME}
   PROPERTIES
   INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${RP_INSTALL_CUSTOM_LIBRARY_DIR}"
   )
@@ -92,19 +84,6 @@ else()
     )
 endif()
 
-set(
-  RP_DEMO_COMPILE_DEFINITIONS
-  ${RP_COMPILE_DEFINITIONS}
-  RP_DEMO
-)
-
-set_target_properties(
-  ${RP_DEMO_LAUNCHER_TARGET_NAME}
-  PROPERTIES
-  COMPILE_DEFINITIONS
-  "${RP_DEMO_COMPILE_DEFINITIONS}"
-  )
-
 set_target_properties(
   ${RP_LAUNCHER_TARGET_NAME}
   PROPERTIES
@@ -114,7 +93,7 @@ set_target_properties(
 
 #-------------------------------------------------------------------------------
 install(
-  TARGETS ${RP_LAUNCHER_TARGET_NAME} ${RP_DEMO_LAUNCHER_TARGET_NAME}
+  TARGETS ${RP_LAUNCHER_TARGET_NAME}
   DESTINATION ${BEAR_ENGINE_INSTALL_EXECUTABLE_DIR}
   )
 
@@ -144,10 +123,5 @@ endif(APPLE)
 
 target_link_libraries(
   ${RP_LAUNCHER_TARGET_NAME}
-  ${RP_LAUNCHER_LINK_LIBRARIES}
-  )
-
-target_link_libraries(
-  ${RP_DEMO_LAUNCHER_TARGET_NAME}
   ${RP_LAUNCHER_LINK_LIBRARIES}
   )
