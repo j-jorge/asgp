@@ -9,7 +9,7 @@ if( NOT DEFINED BEAR_ROOT_DIRECTORY )
   #The path to the directory containing the source code of the Bear engine.
   set(
     BEAR_ROOT_DIRECTORY
-    "${CMAKE_CURRENT_SOURCE_DIR}/../bear/"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../bear"
     )
 endif()
 
