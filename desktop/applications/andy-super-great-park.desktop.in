@@ -6,8 +6,8 @@ Name=Andy's Super Great Park
 Comment=Grabbing balloons with a plunger gun, shooting birds with a cannon and exploding everything else, all while riding a roller coaster.
 Comment[en]=Grabbing balloons with a plunger gun, shooting birds with a cannon and exploding everything else, all while riding a roller coaster.
 
-TryExec=@CMAKE_INSTALL_PREFIX@/@BEAR_ENGINE_INSTALL_EXECUTABLE_DIR@/andy-super-great-park
-Exec=@CMAKE_INSTALL_PREFIX@/@BEAR_ENGINE_INSTALL_EXECUTABLE_DIR@/andy-super-great-park
+TryExec=@CMAKE_INSTALL_PREFIX@/@RP_INSTALL_EXECUTABLE_DIR@/andy-super-great-park
+Exec=@CMAKE_INSTALL_PREFIX@/@RP_INSTALL_EXECUTABLE_DIR@/andy-super-great-park
 Terminal=false
 Icon=asgp
 

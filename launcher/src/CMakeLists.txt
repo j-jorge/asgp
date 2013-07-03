@@ -94,7 +94,7 @@ set_target_properties(
 #-------------------------------------------------------------------------------
 install(
   TARGETS ${RP_LAUNCHER_TARGET_NAME}
-  DESTINATION ${BEAR_ENGINE_INSTALL_EXECUTABLE_DIR}
+  DESTINATION ${RP_INSTALL_EXECUTABLE_DIR}
   )
 
 set(
