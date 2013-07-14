@@ -52,6 +52,8 @@ set( CMAKE_MODULE_PATH "\${BEAR_ROOT_DIRECTORY}/cmake-helper" )
 include( uninstall )
 EOF
 
+mv asgp/build-scripts/wine-make.sh .
+
 # Creates the final archive in the directory from which the script was started.
 cd $WORKING_DIRECTORY/
 tar cfz $INITIAL_DIRECTORY/andy-super-great-park_$ASGP_VERSION.tar.gz \

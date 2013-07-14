@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ASGP_VERSION_FILE=./lib/src/rp/version.hpp
+ASGP_VERSION_FILE=./asgp/lib/src/rp/version.hpp
 ASGP_VERSION_MAJOR=$(grep '#define RP_MAJOR_VERSION' "$ASGP_VERSION_FILE" \
     | cut -d' ' -f3)
 ASGP_VERSION_MINOR=$(grep '#define RP_MINOR_VERSION' "$ASGP_VERSION_FILE" \
