@@ -27,12 +27,9 @@ BASE_ITEM_EXPORT( cursor, rp )
  */
 rp::cursor::cursor()
 {
-  /*
-    A mettre après la correction des courbes de bezier
   set_phantom(true);
   set_can_move_items(false);
   set_artificial(false);
-  */
 } // rp::cursor::cursor()
 
 /*----------------------------------------------------------------------------*/
@@ -49,6 +46,8 @@ void rp::cursor::on_enters_layer()
         get_level_globals().auto_sprite( "gfx/status/cursor.png", "default" );
       set_size( m_sprite.get_size() );
     }
+
+  m_target_position = get_center_of_mass();
 } // cursor::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
@@ -63,23 +62,12 @@ void rp::cursor::progress( bear::universe::time_type elapsed_time )
   m_target_position = get_center_of_mass();
 
   bool b = 
-#if 0
-    // TOP LEFT
     ( get_level().get_camera_focus().left() + 
-      get_level().get_camera_size().x / 4 < 
-      get_horizontal_middle() ) || 
-    ( get_level().get_camera_focus().top() - 
-      get_level().get_camera_size().y / 4 > 
-      get_vertical_middle() );
-#else
-  // BOTTOM RIGHT
-  ( get_level().get_camera_focus().left() + 
       3 * get_level().get_camera_size().x / 4 > 
       get_horizontal_middle() ) || 
     ( get_level().get_camera_focus().bottom() + 
       get_level().get_camera_size().y / 4 < 
       get_vertical_middle() );
-#endif
 
   if ( b != game_variables::get_status_visibility() )
     game_variables::set_status_visibility(b);
