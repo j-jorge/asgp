@@ -1,3 +1,11 @@
+2013-08-14 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.7
+
+	* Restore keyboard handling in the game key field on Windows.
+
+	* Fix various invalid memory accesses.
+
 2013-07-14 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.6
