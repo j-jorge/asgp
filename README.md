@@ -22,7 +22,9 @@ a workspace as follows:
     git clone https://github.com/j-jorge/bear.git
     git clone https://github.com/j-jorge/asgp.git
 
-Then create a file name `CMakeLists.txt` with the following content:
+You should now have two subdirectories named `bear` and` asgp` in the
+current directory. Create a file name `CMakeLists.txt` beside them,
+with the following content:
 
     cmake_minimum_required(VERSION 2.6)
     
