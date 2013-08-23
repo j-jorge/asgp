@@ -113,7 +113,6 @@ if( NOT Boost_FOUND )
   message( FATAL_ERROR 
     "You must have boost::filesystem and boost::thread libraries installed (at least 1.35)" )
 endif( NOT Boost_FOUND )
-add_definitions(-D BOOST_FILESYSTEM_VERSION=2)
 
 #-------------------------------------------------------------------------------
 # Include directories for Boost
