@@ -6,7 +6,7 @@ BINARY_ROOT=static-build-tree
 . $SOURCE_ROOT/build-scripts/version.sh
 
 sh $SOURCE_ROOT/build-scripts/build-static.sh
-make -f Makefile.static
+make -j 4 -f Makefile.static
 
 cp $SOURCE_ROOT/release/ReadMe.txt \
     $SOURCE_ROOT/release/ChangeLog \
@@ -19,7 +19,7 @@ cd asgp/data
 make install > /dev/null
 cd - > /dev/null
 
-cd bear-engine/desktop/locale/bear-engine/
+cd bear/bear-engine/desktop/locale/bear-engine/
 make install > /dev/null
 cd - > /dev/null
 

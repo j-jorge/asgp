@@ -2,10 +2,10 @@
 
 # ln -s /lib64/ld-linux-x86-64.so.2 /lib/ld64.so.1
 
-SOURCE_ROOT=$(echo $PWD/$0 | sed 's:\(.\+/\)[^/]\+:\1:')../../
+SOURCE_ROOT=$(echo $0 | sed 's:\(.\+/\)[^/]\+:\1:')../../
 BINARY_ROOT=static-build-tree
 
-CXX_FLAGS="-O3 -DNDEBUG -DRP_STATIC"
+CXX_FLAGS="-O3 -DNDEBUG -DRP_STATIC -I/usr/include/freetype2"
 
 mkdir -p $BINARY_ROOT
 
@@ -32,6 +32,7 @@ BOOST_LIBRARIES="$(get_all_static_libraries boost)"
 SDL_LIBRARIES="png jpeg z SDL_mixer SDL mikmod \
   vorbisfile vorbis ogg FLAC mad X11 Xext caca ncurses tinfo GLU SM ICE \
   slang gpm z xcb m"
+FREETYPE_LIBRARIES="freetype"
 SHARED_LIBRARIES="-Wl,-Bdynamic \
   -lGL \
   -lpulse \
@@ -67,7 +68,7 @@ link_arguments() {
 }
 
 module_directory() {
-    echo $SOURCE_ROOT/bear-engine/core/src/$1
+    echo $SOURCE_ROOT/bear/bear-engine/core/src/$1
 }
 
 get_defines() {
@@ -195,6 +196,7 @@ build_exe() {
         $(link_arguments $CLAW_LIBRARIES) \
         $(link_arguments $BOOST_LIBRARIES) \
         $(link_arguments $SDL_LIBRARIES) \
+        $(link_arguments $FREETYPE_LIBRARIES) \
         $SHARED_LIBRARIES
     echo
 
@@ -221,7 +223,7 @@ TARGET_MAKEFILE=Makefile.static
     build_module $(module_directory communication)
     build_module $(module_directory debug)
     build_module $(module_directory engine) \
-        $SOURCE_ROOT/bear-engine/common/include
+        $SOURCE_ROOT/bear/bear-engine/common/include
     build_module $(module_directory expr)
     build_module $(module_directory gui)
     build_module $(module_directory input)
@@ -231,15 +233,15 @@ TARGET_MAKEFILE=Makefile.static
     build_module $(module_directory universe)
     build_module $(module_directory visual)
 
-    build_module $SOURCE_ROOT/bear-engine/lib/src/generic_items \
+    build_module $SOURCE_ROOT/bear/bear-engine/lib/src/generic_items \
         universe
 
     build_module $SOURCE_ROOT/asgp/lib/src/rp engine \
-        $SOURCE_ROOT/bear-engine/lib/src
+        $SOURCE_ROOT/bear/bear-engine/lib/src
 
     build_exe andy-super-great-park \
         $SOURCE_ROOT/asgp/launcher/src \
-        $SOURCE_ROOT/bear-engine/core/src
+        $SOURCE_ROOT/bear/bear-engine/core/src
 
     echo andy-super-great-park.depends: audio communication \
         debug engine expr gui input net text_interface time universe \
