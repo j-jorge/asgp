@@ -31,7 +31,7 @@ CLAW_LIBRARIES="$(get_all_static_libraries claw)"
 BOOST_LIBRARIES="$(get_all_static_libraries boost)"
 SDL_LIBRARIES="png jpeg z SDL_mixer SDL mikmod \
   vorbisfile vorbis ogg FLAC mad X11 Xext caca ncurses tinfo GLU SM ICE \
-  slang gpm z xcb m"
+  slang gpm z xcb m Xau Xdmcp"
 FREETYPE_LIBRARIES="freetype"
 SHARED_LIBRARIES="-Wl,-Bdynamic \
   -lGL \
