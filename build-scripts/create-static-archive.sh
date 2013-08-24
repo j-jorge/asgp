@@ -41,6 +41,12 @@ do
     cp $LIBRARY_PATH $RUNTIME_LIB_DIRECTORY/$LIBRARY_NAME
 done
 
+# Some libraries must not be included
+rm $RUNTIME_LIB_DIRECTORY/libc.so*
+rm $RUNTIME_LIB_DIRECTORY/libdl.so*
+rm $RUNTIME_LIB_DIRECTORY/libdrm.so*
+rm $RUNTIME_LIB_DIRECTORY/libstdc++.so*
+
 make_tar() {
 
     EXE_NAME="$1"
