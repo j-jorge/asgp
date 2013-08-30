@@ -13,7 +13,10 @@
  */
 #include "game.hpp"
 
+#include "engine/resource_pool.hpp"
+
 #include "android_logger.hpp"
+#include "android_resource_pool.hpp"
 
 #include <claw/logger.hpp>
 #include <claw/log_stream_uniq.hpp>
@@ -99,7 +102,6 @@ void rp::game::init_game()
       "--fullscreen",
       "--active-area=250",
       "--tag=android",
-      "--data-path=assets/",
       "--auto-load-symbols",
       "--stats-destination=http://www.stuff-o-matic.com/asgp/stats/save.php",
       "--start-level=level/start.cl",
@@ -115,6 +117,9 @@ void rp::game::init_game()
     {
       char** engine_args = const_cast<char**>(default_args);
       m_game = new bear::engine::game( default_argc, engine_args );
+
+      bear::engine::resource_pool::get_instance().add_pool
+        ( new android_resource_pool );                     
     }
   catch( std::exception& e )
     {
