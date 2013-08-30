@@ -151,7 +151,7 @@ if( BUILD_PLATFORM STREQUAL "android" )
   subdirs(
     lib
     data
-    #android-launcher
+    android
     )
 else()
   subdirs(
