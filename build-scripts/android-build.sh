@@ -137,7 +137,7 @@ cmake . \
     -DRP_INSTALL_ANDROID_LAUNCHER_DIR="libs/armeabi-v7a" \
     $CMAKE_ARGS
 
-[ $? -eq 0 ] || exit
+[ $? -eq 0 ] || exit 1
 
 make install || exit 1
 

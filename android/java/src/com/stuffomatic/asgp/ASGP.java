@@ -1,9 +1,9 @@
 package com.stuffomatic.asgp;
 
-import android.app.Activity;
+import org.libsdl.app.SDLActivity;
 import android.os.Bundle;
 
-public class ASGP extends Activity
+public class ASGP extends SDLActivity
 {
     static {
         System.loadLibrary( "gnustl_shared" );
@@ -18,7 +18,6 @@ public class ASGP extends Activity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
         init();
     }
 }

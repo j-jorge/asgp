@@ -10,6 +10,8 @@ set( RP_ANDROID_LAUNCHER_SOURCE_FILES
   code/android_logger.cpp
   code/game.cpp
   code/java_interface.cpp
+
+  code/SDL_android_main.cpp
   )
 
 add_library(
