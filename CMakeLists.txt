@@ -163,14 +163,23 @@ else()
     )
 endif()
 
-install(
-  DIRECTORY "lib/item-description"
-  DESTINATION "share/bear-factory/super-great-park"
-  FILE_PERMISSIONS OWNER_READ OWNER_WRITE
-  GROUP_READ
-  WORLD_READ
-  DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE
-  GROUP_READ GROUP_EXECUTE
-  WORLD_READ WORLD_EXECUTE
-  PATTERN "*~" EXCLUDE
-)
+option(
+  RP_BEAR_FACTORY_ENABLED
+  "Tells to install the files of Andy's Super Great Park for the Bear Factory"
+  FALSE
+  )
+
+if ( RP_BEAR_FACTORY_ENABLED )
+  install(
+    DIRECTORY "lib/item-description"
+    DESTINATION "share/bear-factory/super-great-park"
+    FILE_PERMISSIONS OWNER_READ OWNER_WRITE
+    GROUP_READ
+    WORLD_READ
+    DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE
+    GROUP_READ GROUP_EXECUTE
+    WORLD_READ WORLD_EXECUTE
+    PATTERN "*~" EXCLUDE
+  )
+endif()
+
