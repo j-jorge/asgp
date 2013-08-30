@@ -39,7 +39,26 @@ rp::game::~game()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Initialize the game.
+ * \brief Runs the game.
+ */
+void rp::game::run()
+{
+  init();
+
+  try
+    {
+      m_game->run();
+    }
+  catch( std::exception& e )
+    {
+      claw::logger << claw::log_error << "Exit on exception: " << e.what()
+                   << std::endl;
+    }
+} // game::run()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Initializes the game.
  */
 void rp::game::init()
 {
@@ -77,6 +96,7 @@ void rp::game::init_game()
       "--game-name=Super Great Park",
       "--screen-width=1280",
       "--screen-height=720",
+      "--fullscreen",
       "--active-area=250",
       "--tag=android",
       "--data-path=assets/",

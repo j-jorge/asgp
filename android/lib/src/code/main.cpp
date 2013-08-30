@@ -11,21 +11,24 @@
  * \brief Implementation of the C++ methods exposed to the Java part.
  * \author Julien Jorge
  */
-#include "java_interface.hpp"
+#include "main.hpp"
 
 #include "game.hpp"
 
-/*----------------------------------------------------------------------------*/
-/** \brief The game we are running. */
-static rp::game g_game;
+#include <SDL/SDL_main.h>
+
+#include <android/log.h>
 
 /*----------------------------------------------------------------------------*/
-/**
- * \brief Initializes the game.
- * \param env The environment running the game.
- */
-JNIEXPORT void JNICALL
-Java_com_stuffomatic_asgp_ASGP_init( JNIEnv* env )
+int main( int argc, char* argv[] )
 {
-  g_game.init();
-} // Java_com_stuffomatic_asgp_ASGP_init()
+  for ( int i(0); i != argc; ++i )
+    __android_log_print
+      ( ANDROID_LOG_INFO, "ASGP Pre", "arg #%d: %s", i, argv[i] );
+
+  rp::game g;
+
+  g.run();
+
+  return 0;
+} // main()

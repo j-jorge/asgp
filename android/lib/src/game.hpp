@@ -25,9 +25,11 @@ namespace rp
     game();
     ~game();
 
-    void init();
+    void run();
 
   private:
+    void init();
+
     void init_logger();
     void init_game();
     

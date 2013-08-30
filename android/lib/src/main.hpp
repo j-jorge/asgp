@@ -11,15 +11,12 @@
  * \brief The C++ methods exposed to the Java part.
  * \author Julien Jorge
  */
-#ifndef __RP_JAVA_INTERFACE_HPP__
-#define __RP_JAVA_INTERFACE_HPP__
-
-#include <jni.h>
+#ifndef __RP_MAIN_HPP__
+#define __RP_MAIN_HPP__
 
 extern "C"
 {
-  JNIEXPORT void JNICALL Java_com_stuffomatic_asgp_ASGP_init( JNIEnv* env );
-
+  int main( int argc, char* argv[] );
 } // extern "C"
 
-#endif // __RP_JAVA_INTERFACE_HPP__
+#endif // __RP_MAIN_HPP__
