@@ -1,3 +1,21 @@
+2013-08-27 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.8
+
+	* Fix the computation of the window's size. The game had no
+	  graphics if the window was larger than the screen. Now the
+	  window fits the screen and displays the graphics.
+
+	* Fix syntax errors in .desktop files.
+
+	* Fix various compilation issues:
+	  - running-bear is optional.
+	  - Port engine to Boost.FileSystem v3.
+	  - Fix various compilation warnings.
+
+	* Restore and update the scripts used to build the generic Linux
+	  version.
+
 2013-08-14 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.7
