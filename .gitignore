@@ -29,4 +29,4 @@ prof.log
 # Android
 android/java/libs/
 android/java/assets/
-
+android/java/gen/

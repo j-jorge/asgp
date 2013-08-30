@@ -152,3 +152,6 @@ cd asgp/android/java
 rm bin -fr
 ant debug
 
+DEVICE_ID=$(adb devices | grep 'device$' | cut -f1)
+echo "Installing on device $DEVICE_ID."
+adb -s $DEVICE_ID install -r bin/ASGP-debug.apk

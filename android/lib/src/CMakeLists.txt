@@ -7,7 +7,9 @@ include_directories( . ${BEAR_ENGINE_INCLUDE_DIRECTORY} )
 
 #-------------------------------------------------------------------------------
 set( RP_ANDROID_LAUNCHER_SOURCE_FILES
-  code/launcher.cpp
+  code/android_logger.cpp
+  code/game.cpp
+  code/java_interface.cpp
   )
 
 add_library(
