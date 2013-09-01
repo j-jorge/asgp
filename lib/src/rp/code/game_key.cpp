@@ -20,6 +20,7 @@
 #include "engine/system/game_filesystem.hpp"
 #include "universe/forced_movement/forced_rotation.hpp"
 
+#include <claw/logger.hpp>
 #include <fstream>
 
 #include <boost/regex.hpp>
@@ -57,6 +58,9 @@ void rp::game_key::check_if_demo_version()
     game_variables::set_demo_version( !is_valid_key( key ) );
   else
     game_variables::set_demo_version( true );
+
+  claw::logger << claw::log_verbose << "Demo mode is "
+               << game_variables::is_demo_version() << std::endl;
 } // game_key::check_if_demo_version()
 
 /*----------------------------------------------------------------------------*/

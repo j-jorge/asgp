@@ -17,6 +17,9 @@
 
 #include "android_logger.hpp"
 #include "android_resource_pool.hpp"
+#include "android_game_filesystem.hpp"
+
+#include "engine/system/game_filesystem.hpp"
 
 #include <claw/logger.hpp>
 #include <claw/log_stream_uniq.hpp>
@@ -101,6 +104,7 @@ void rp::game::init_game()
       "--screen-height=720",
       "--fullscreen",
       "--active-area=250",
+      "--set-game-var-bool=demo_version=0",
       "--tag=android",
       "--auto-load-symbols",
       "--stats-destination=http://www.stuff-o-matic.com/asgp/stats/save.php",
@@ -117,6 +121,8 @@ void rp::game::init_game()
     {
       char** engine_args = const_cast<char**>(default_args);
       m_game = new bear::engine::game( default_argc, engine_args );
+      m_game->set_game_filesystem
+        ( android_game_filesystem("Super Great Park") );
 
       bear::engine::resource_pool::get_instance().add_pool
         ( new android_resource_pool );                     
