@@ -66,7 +66,7 @@ rp::misc_layer::misc_layer()
 #ifdef RP_TRACE_FPS
     m_show_fps(true),
 #else
-    m_show_fps(false),
+    m_show_fps(true),
 #endif
     m_cursor_position(-1, -1), m_first_screenshot(0),
     m_fps_key(bear::input::keyboard::kc_F2),
