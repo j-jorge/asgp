@@ -222,7 +222,11 @@ void rp::game_variables::set_level_theme( const std::string& t )
  */
 bool rp::game_variables::is_demo_version()
 {
+#ifdef __ANDROID__
+  return false;
+#else
   return rp_game_variables_get_value( "demo_version", false );
+#endif
 } // game_variables::is_demo_version()
 
 /*----------------------------------------------------------------------------*/
