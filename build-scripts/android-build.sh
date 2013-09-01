@@ -141,6 +141,12 @@ cmake . \
 
 make install || exit 1
 
+cd asgp/android/lib/src
+echo "Building library with custom script."
+sh ./make.sh || exit 1
+
+cd -
+
 cp $ANDROID_TOOLCHAIN_ROOT/arm-linux-androideabi/lib/libgnustl_shared.so \
     $PWD/asgp/android/java/libs/armeabi-v7a
 
