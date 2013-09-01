@@ -339,6 +339,49 @@ void rp::level_selector::get_visual
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Executes the action associated with the selector.
+ */
+void rp::level_selector::activate()
+{
+  if ( m_level_state > 0 )
+    {
+      if ( ! s_selection && 
+           std::abs(m_level_factor - m_init_level_factor) <= 0.1 &&
+           ! game_variables::get_movement_order_status() )
+        select_level();
+      else if ( is_selected_level() )
+        {
+          if ( m_level_factor > 0.99 )
+            game_variables::set_go_order_status(true);
+          check_go_order();
+        }
+    }
+} // level_selector::activate()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Processes a finger event. If the finger is released on the button, the
+ *        button is activated.
+ * \param event The event to process
+ */
+bool rp::level_selector::finger_action
+( const bear::input::finger_event& event )
+{
+  bool result = false;
+
+  if ( ( event.get_type() == bear::input::finger_event::finger_event_released )
+       && ( get_bounding_box().includes
+            ( get_level().screen_to_level( event.get_position() ) ) ) )
+    {
+      result = true;
+      activate();
+    }
+
+  return result;
+} // level_selector::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Tell the player to stop the action associated with a mouse button.
  * \param button The code of the button.
  * \param pos The position of the cursor on the screen.
@@ -368,19 +411,7 @@ bool rp::level_selector::mouse_released
       if ( get_bounding_box().includes( get_level().screen_to_level(pos) ) )
         {
           result = true;
-          if ( m_level_state > 0 )
-            {
-              if ( ! s_selection && 
-                   std::abs(m_level_factor - m_init_level_factor) <= 0.1 &&
-                   ! game_variables::get_movement_order_status() )
-                select_level();
-              else if ( is_selected_level() )
-                {
-                  if ( m_level_factor > 0.99 )
-                    game_variables::set_go_order_status(true);
-                  check_go_order();
-                }
-            }
+          activate();
         }
     }
 
