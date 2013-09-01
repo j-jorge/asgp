@@ -1996,53 +1996,133 @@ bool rp::cart::mouse_released
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
+  if ( !game_variables::level_has_started() )
+    return false;
+
   bool result = true;
 
-  if ( button == bear::input::mouse::mc_right_button && 
-       game_variables::level_has_started())
+  switch( button )
     {
-      if ( get_current_action_name() == "crouch" )
-        apply_stop_crouch();
-      else if ( can_throw_cannonball() )
-        throw_cannonball();
-      else
-        {
-          const bear::audio::sound_effect e(get_center_of_mass());;
-          get_level_globals().play_sound("sound/cart/empty-cannon.ogg", e);
-        }
+    case  bear::input::mouse::mc_right_button:
+      input_handle_cannonball();
+      break;
+    case  bear::input::mouse::mc_left_button:
+      input_handle_plunger();
+      break;
+    case  bear::input::mouse::mc_wheel_up:
+      input_handle_jump();
+      break;
+    case  bear::input::mouse::mc_wheel_down:
+      input_handle_crouch();
+      break;
+    default:
+      result = false;
     }
-  else if ( button == bear::input::mouse::mc_left_button && 
-            game_variables::level_has_started())
-    {
-      if ( get_current_action_name() == "crouch" )
-        apply_stop_crouch();
-      else if ( can_throw_plunger() )
-        throw_plunger();
-      else 
-        {
-          const bear::audio::sound_effect e(get_center_of_mass());;
-          get_level_globals().play_sound("sound/empty.ogg", e);
-        }
-    }
-  else if ( button == bear::input::mouse::mc_wheel_up && 
-            game_variables::level_has_started() )
-    {
-      if ( get_current_action_name() == "crouch" )
-        apply_stop_crouch();
-      else if ( game_variables::level_has_started()  &&
-                ! game_variables::is_level_ending() && m_can_jump && 
-                ( ( get_current_action_name() == "move" ) ||
-                  ( get_current_action_name() == "crouch" ) ) )
-        apply_impulse_jump();
-    }
-  else if ( game_variables::level_has_started() && 
-            ( button == bear::input::mouse::mc_wheel_down ) )
-    apply_crouch();
-  else
-    result = false;
 
   return result;
 } // cart::mouse_released()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Processes an input coming from a finger.
+ * \param event The event to process.
+ */
+bool rp::cart::finger_action( const bear::input::finger_event& event )
+{
+  if ( !game_variables::level_has_started() )
+    return false;
+
+  if ( event.get_type() == bear::input::finger_event::finger_event_pressed )
+    {
+      m_finger_down_position = event.get_position();
+      return true;
+    }
+
+  if ( event.get_type() != bear::input::finger_event::finger_event_released )
+    return false;
+
+  const bear::universe::position_type delta
+    ( event.get_position() - m_finger_down_position );
+  const bear::universe::size_type length
+    ( delta.distance( bear::universe::position_type(0, 0) ) );
+
+  if ( length < 100 )
+    {
+      input_handle_plunger();
+      return true;
+    }
+
+  // if cosinus of the direction of the movement is lower than 4 pi / 9
+  if ( std::abs( std::cos( delta.y / length ) ) < 0.17 )
+    {
+      if ( delta.y < 0 )
+        input_handle_crouch();
+      else
+        input_handle_jump();
+    }
+
+  mouse_move( event.get_position() );
+  input_handle_cannonball();
+
+  return true;
+} // cart::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by throwing a cannonball.
+ */
+void rp::cart::input_handle_cannonball()
+{
+  if ( get_current_action_name() == "crouch" )
+    apply_stop_crouch();
+  else if ( can_throw_cannonball() )
+    throw_cannonball();
+  else
+    {
+      const bear::audio::sound_effect e(get_center_of_mass());;
+      get_level_globals().play_sound("sound/cart/empty-cannon.ogg", e);
+    }
+} // cart::input_handle_cannonball()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by throwing a plunger.
+ */
+void rp::cart::input_handle_plunger()
+{
+  if ( get_current_action_name() == "crouch" )
+    apply_stop_crouch();
+  else if ( can_throw_plunger() )
+    throw_plunger();
+  else 
+    {
+      const bear::audio::sound_effect e(get_center_of_mass());;
+      get_level_globals().play_sound("sound/empty.ogg", e);
+    }
+} // cart::input_handle_plunger()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by jumping.
+ */
+void rp::cart::input_handle_jump()
+{
+  if ( get_current_action_name() == "crouch" )
+    apply_stop_crouch();
+  else if ( !game_variables::is_level_ending() && m_can_jump && 
+            ( ( get_current_action_name() == "move" ) ||
+              ( get_current_action_name() == "crouch" ) ) )
+    apply_impulse_jump();
+} // cart::input_handle_jump()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by crouching.
+ */
+void rp::cart::input_handle_crouch()
+{
+  apply_crouch();
+} // cart::input_handle_crouch()
 
 /*----------------------------------------------------------------------------*/
 /**

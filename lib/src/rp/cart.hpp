@@ -202,8 +202,14 @@ namespace rp
     bool mouse_released( bear::input::mouse::mouse_code button,
 			 const claw::math::coordinate_2d<unsigned int>& pos );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
+    bool finger_action( const bear::input::finger_event& event );
     
-    // evenement
+    void input_handle_cannonball();
+    void input_handle_plunger();
+    void input_handle_jump();
+    void input_handle_crouch();
+
+    // events
     void on_toggle_on( bear::engine::base_item* activator );
     void on_painter_collision
     ( bear::engine::base_item& mark, bear::engine::base_item& that,
@@ -288,6 +294,9 @@ namespace rp
     
     /** \brief The mouse position. */
     bear::universe::position_type m_gap_mouse;
+
+    /** \brief The position where the finger has been pressed. */
+    bear::universe::position_type m_finger_down_position;
 
     /** \brief The factor applied on force in move state. */
     bear::universe::coordinate_type m_force_factor;
