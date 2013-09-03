@@ -68,5 +68,6 @@ $CXX $CXX_FLAGS $DEFINES \
     -lGLESv2 \
     -lGLESv1_CM \
     -llog \
-    -ldl
+    -ldl \
+    -landroid
 
