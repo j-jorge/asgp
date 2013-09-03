@@ -560,21 +560,45 @@ bool rp::level_ending_effect::mouse_released
 {
   if ( m_button->get_rectangle().includes(pos) && 
        ! game_variables::is_boss_level() )
-    {
-      if ( m_finished )
-        {
-          if ( ! m_in_fade_out )
-            {
-              create_fade_out_tweener();
-              m_in_fade_out = true;
-            }
-        }
-      else
-        skip();
-    }
+    pass_scores();
 
   return false;
 } // level_ending_effect::mouse_released()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Process an event triggered by a finger.
+ * \param event The event to process.
+ */
+bool rp::level_ending_effect::finger_action
+( const bear::input::finger_event& event )
+{
+  if ( (event.get_type() == bear::input::finger_event::finger_event_pressed)
+       && m_button->get_rectangle().includes(event.get_position())
+       && !game_variables::is_boss_level() )
+    pass_scores();
+
+  return false;
+} // level_ending_effect::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Passes the scores. If the count is over, we close the level. Otherwise
+ *        we just call skip().
+ */
+void rp::level_ending_effect::pass_scores()
+{
+  if ( m_finished )
+    {
+      if ( !m_in_fade_out )
+        {
+          create_fade_out_tweener();
+          m_in_fade_out = true;
+        }
+    }
+  else
+    skip();
+} // level_ending_effect::pass_scores()
 
 /*----------------------------------------------------------------------------*/
 /**

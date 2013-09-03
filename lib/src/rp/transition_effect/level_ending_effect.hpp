@@ -146,9 +146,12 @@ namespace rp
     bool mouse_released
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
+    bool finger_action( const bear::input::finger_event& event );
 
     void skip();
     void fill_points();
+
+    void pass_scores();
 
     void give_level_points( const bear::visual::font& f );
     void give_balloon_points(const bear::visual::font& f);

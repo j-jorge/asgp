@@ -2046,23 +2046,25 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
   const bear::universe::size_type length
     ( delta.distance( bear::universe::position_type(0, 0) ) );
 
-  if ( length < 100 )
+  if ( length < 80 )
     {
       input_handle_plunger();
       return true;
     }
 
   // if cosinus of the direction of the movement is lower than 4 pi / 9
-  if ( std::abs( std::cos( delta.y / length ) ) < 0.17 )
+  if ( std::abs( delta.x / length ) < 0.17 )
     {
       if ( delta.y < 0 )
         input_handle_crouch();
       else
         input_handle_jump();
     }
-
-  mouse_move( event.get_position() );
-  input_handle_cannonball();
+  else
+    {
+      mouse_move( m_finger_down_position );
+      input_handle_cannonball();
+    }
 
   return true;
 } // cart::finger_action()
