@@ -32,6 +32,7 @@ BASE_ITEM_EXPORT( serial_switcher, rp )
 rp::serial_switcher::serial_switcher()
 : m_serial(1), m_next_serial(1), m_mouse_in(false), m_angle(0)
 {
+
 } // rp::serial_switcher::rp::serial_switcher()
 
 /*----------------------------------------------------------------------------*/
@@ -160,22 +161,13 @@ bool rp::serial_switcher::mouse_released
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  bool result = false;
+  bool result = is_visible() && super::mouse_released(button, pos);
 
-  if ( is_visible() )
-    {
-      result = super::mouse_released(button, pos);
+  if ( !result )
+    return false;
 
-      if ( result && m_serial != 6 && m_serial != 0 )
-        game_variables::set_last_serial( m_serial );
-         
-      if ( result )
-        game_variables::set_selected_serial( m_next_serial );
-    }
-  else
-    result = false;
-
-  return result;
+  update_serials();
+  return true;
 } // serial_switcher::mouse_released
 
 /*----------------------------------------------------------------------------*/
@@ -187,18 +179,29 @@ bool rp::serial_switcher::mouse_released
 bool rp::serial_switcher::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  bool result= false;
+  check_mouse_inside( pos );
 
-  bool last_mouse_in = m_mouse_in; 
-
-  m_mouse_in =
-    get_bounding_box().includes( get_level().screen_to_level(pos) );
-
-  if ( m_mouse_in && ! last_mouse_in )
-    create_angle_tweener();
-
-  return result;
+  return false;
 } // serial_switcher::mouse_move()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an event dispatched by the finger.
+ * \param event The event.
+ */
+bool
+rp::serial_switcher::finger_action( const bear::input::finger_event& event )
+{
+  if ( !is_visible() || !super::finger_action( event ) )
+    return false;
+
+  check_mouse_inside( event.get_position() );
+
+  if ( event.get_type() == bear::input::finger_event::finger_event_released )
+    update_serials();
+
+  return true;
+} // serial_switcher::finger_action()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -256,3 +259,32 @@ bool rp::serial_switcher::is_visible() const
       ( m_serial != 0 || 
         game_variables::get_selected_serial() == m_next_serial );
 } // serial_switcher::is_visible()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Assigns the last and selected serials game variables.
+ */
+void rp::serial_switcher::update_serials() const
+{
+  if ( m_serial != 6 && m_serial != 0 )
+    game_variables::set_last_serial( m_serial );
+         
+  game_variables::set_selected_serial( m_next_serial );
+} // serial_switcher::update_serials()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Applies the animation of the button if the mouse is inside it.
+ * \param pos The position of the mouse on the screen.
+ */
+void rp::serial_switcher::check_mouse_inside
+( const claw::math::coordinate_2d<unsigned int>& pos )
+{
+  bool last_mouse_in = m_mouse_in; 
+
+  m_mouse_in =
+    get_bounding_box().includes( get_level().screen_to_level(pos) );
+
+  if ( m_mouse_in && ! last_mouse_in )
+    create_angle_tweener();
+} // serial_switcher::check_mouse_inside()

@@ -50,10 +50,15 @@ namespace rp
     bool mouse_released
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
-    
+
+    bool finger_action( const bear::input::finger_event& event );
+
+    void show_help() const;
+
   private:
     /** \brief The sprite of the item. */
-    bear::visual::sprite m_sprite;  
+    bear::visual::sprite m_sprite;
+
   }; // class help_button
 } // namespace rp
 

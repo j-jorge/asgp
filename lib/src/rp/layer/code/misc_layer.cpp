@@ -111,7 +111,7 @@ void rp::misc_layer::build()
   m_fps_text->set_auto_size(true);
   m_fps_text->set_text("0");
   m_fps_text->set_position( m_fps_text->height(), m_fps_text->height() );
-  m_fps_text->get_rendering_attributes().set_intensity( 0, 0, 0 );
+  m_fps_text->get_rendering_attributes().set_intensity( 1, 1, 1 );
 
   m_last_fps_check = bear::systime::get_date_ms();
 

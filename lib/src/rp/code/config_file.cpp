@@ -25,11 +25,7 @@
  */
 rp::config_file::config_file()
   : m_fullscreen(false),
-#ifdef __ANDROID__
-    m_dumb_rendering(false),
-#else
     m_dumb_rendering(true),
-#endif
     m_sound_on(true),
     m_sound_volume(1), m_music_on(true), m_music_volume(0.7),
     m_config_name("config")
@@ -45,7 +41,7 @@ rp::config_file::config_file()
       claw::configuration_file config(f);
 
       str_to_bool( m_fullscreen, config("Video", "fullscreen") );
-      str_to_bool( m_dumb_rendering, config("Video", "dumb_rendering") );
+      //str_to_bool( m_dumb_rendering, config("Video", "dumb_rendering") );
       str_to_bool( m_sound_on, config("Audio", "sound_on") );
       str_to_bool( m_music_on, config("Audio", "music_on") );
 
