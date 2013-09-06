@@ -290,12 +290,12 @@ rp::boss::handle_type rp::boss::set_drop_item
  * \param d (out) A list to which are added such items.
  */
 void rp::boss::get_dependent_items
-( std::list<physical_item*>& d ) const
+( bear::universe::physical_item::item_list& d ) const
 {
   super::get_dependent_items(d);
 
   if ( m_cart != NULL )
-    d.push_front( m_cart );
+    d.push_back( m_cart );
 } // boss::get_dependent_items()
 
 /*----------------------------------------------------------------------------*/
@@ -1715,7 +1715,7 @@ void rp::boss::create_interactive_item()
   new_item(*m_interactive_item);
   m_interactive_item->set_size(100, 100);
   m_interactive_item->set_center_of_mass(get_mark_world_position("button"));
-  entity::create_interactive_item( *m_interactive_item, 1, 0, true );
+  entity::create_interactive_item( *m_interactive_item, 1, 0 );
 } // boss::create_interactive_item()
 
 /*----------------------------------------------------------------------------*/

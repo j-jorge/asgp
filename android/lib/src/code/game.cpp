@@ -24,6 +24,8 @@
 #include <claw/logger.hpp>
 #include <claw/log_stream_uniq.hpp>
 
+#include <SDL/SDL.h>
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Constructs un empty game.
@@ -60,6 +62,8 @@ void rp::game::run()
       claw::logger << claw::log_error << "Exit on exception: " << e.what()
                    << std::endl;
     }
+
+  SDL_Quit();
 } // game::run()
 
 /*----------------------------------------------------------------------------*/

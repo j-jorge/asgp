@@ -33,7 +33,6 @@ $CXX $CXX_FLAGS $DEFINES \
     -lbear_engine \
     -lbear_audio \
     -lbear_communication \
-    -lbear_debug \
     -lbear_expr \
     -lbear_gui \
     -lbear_input \
@@ -42,6 +41,7 @@ $CXX $CXX_FLAGS $DEFINES \
     -lbear_time \
     -lbear_universe \
     -lbear_visual \
+    -lbear_debug \
     -Wl,-Bstatic \
     -lclaw_tween \
     -lclaw_graphic \

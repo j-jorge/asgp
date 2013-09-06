@@ -44,7 +44,8 @@ namespace rp
 
     bool set_item_field
     ( const std::string& name, bear::engine::base_item* value);
-    void get_dependent_items( std::list<physical_item*>& d ) const;
+    void get_dependent_items
+    ( bear::universe::physical_item::item_list& d ) const;
     
   protected:
     void on_toggle_on( bear::engine::base_item* activator );

@@ -71,7 +71,7 @@ namespace rp
     // interactive item
     void create_interactive_item
     ( bear::engine::base_item& item, double factor_sprite = 1, 
-      double area_factor = 0.5, bool display_star = true,
+      double area_factor = 0.5,
       bear::universe::position_type gap_x = 
       bear::universe::position_type( 0, 0 ) );
     interactive_item* get_interactive_item();

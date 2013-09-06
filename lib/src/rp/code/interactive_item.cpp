@@ -25,6 +25,8 @@
 #include "visual/scene_sprite.hpp"
 #include "visual/scene_writing.hpp"
 
+#include "engine/world.hpp"
+
 #include <boost/bind.hpp>
 #include <claw/tween/tweener_sequence.hpp>
 #include <claw/tween/single_tweener.hpp>
@@ -37,11 +39,11 @@ BASE_ITEM_EXPORT( interactive_item, rp )
  * \brief Contructor.
  */
 rp::interactive_item::interactive_item()
-: m_item(NULL), m_sprite_factor(1), m_area_factor(0.5), 
-  m_display_star(true)
+: m_item(NULL), m_sprite_factor(1), m_area_factor(0.5)
 {
-  set_artificial(false);
+  set_artificial(true);
   set_phantom(true);
+  set_can_move_items( false );
 } // interactive_item::interactive_item()
 
 /*----------------------------------------------------------------------------*/
@@ -50,18 +52,18 @@ rp::interactive_item::interactive_item()
  * \param item The item to follow.
  * \param sprite_factor The factor of sprites.
  * \param area_factor The factor of required area for activation.
- * \param display_star Indicates that we display always the star.
  * \param gap The gap according to the center of mass. 
  */
 rp::interactive_item::interactive_item
 (bear::engine::base_item* item, double sprite_factor, double area_factor,
- bool display_star, bear::universe::position_type gap)
+ bear::universe::position_type gap)
   : m_item( item ), m_sprite_factor(sprite_factor), m_area_factor(area_factor),
-    m_display_star(display_star), m_gap(gap)
+    m_gap(gap)
 {
-  set_artificial(false);
-  set_phantom(true);
-  set_system_angle_as_visual_angle(true);
+  set_artificial( true );
+  set_phantom( true );
+  set_system_angle_as_visual_angle( true );
+  set_can_move_items( false );
 } // interactive_item::interactive_item()
 
 /*----------------------------------------------------------------------------*/
@@ -83,8 +85,6 @@ void rp::interactive_item::on_enters_layer()
 {
   super::on_enters_layer();
 
-  m_cursor_in_collision = false;
-  
   m_cannonball_sprite =
     get_level_globals().auto_sprite
     ( "gfx/effect/rounded-star-bright.png", "star" );
@@ -111,6 +111,8 @@ void rp::interactive_item::on_enters_layer()
       m.set_distance(m_gap); 
       set_forced_movement(m);
     }
+
+  find_cursor();
 } // interactive_item::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
@@ -121,6 +123,7 @@ void rp::interactive_item::on_enters_layer()
 void rp::interactive_item::progress( bear::universe::time_type elapsed_time )
 {
   super::progress( elapsed_time );
+
   m_tweeners.update(elapsed_time);  
 
   if ( m_item != handle_type(NULL) )
@@ -128,11 +131,14 @@ void rp::interactive_item::progress( bear::universe::time_type elapsed_time )
       m_cannonball_sprite.set_opacity(0);
       m_plunger_sprite.set_opacity(0);
 
-      if ( m_cursor_in_collision && ! m_activated )
+      find_cursor();
+      const bool cursor_in_collision( is_colliding_with_cursor() );
+
+      if ( cursor_in_collision && ! m_activated )
         activate();
-      else if ( ! m_cursor_in_collision && m_activated )
+      else if ( ! cursor_in_collision && m_activated )
         deactivate();      
-      
+
       bool visible = true;
       if ( m_activated )
         {
@@ -158,12 +164,11 @@ void rp::interactive_item::progress( bear::universe::time_type elapsed_time )
 
       set_system_angle( get_system_angle() + m_angular_speed * elapsed_time );
       m_plunger_sprite.set_angle( get_system_angle() );
-      update_item();
+      
+      set_center_of_mass( m_item->get_center_of_mass() + m_gap );
     }
   else
     kill();
-
-  m_cursor_in_collision = false;
 } // interactive_item::progress()
 
 /*----------------------------------------------------------------------------*/
@@ -206,30 +211,6 @@ void rp::interactive_item::get_visual
       visuals.push_back( s1 );  
     }
 } // interactive_item::get_visuals();
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Process a collision with an other item.
- * \param that The other item of the collision.
- * \param info Some informations about the collision.
- */
-void rp::interactive_item::collision
-( bear::engine::base_item& that, bear::universe::collision_info& info )
-{
-  super::collision(that, info);
-  
-  cursor* c = dynamic_cast<cursor*>(&that);
-  
-  if ( c != NULL ) 
-    {
-      bear::universe::coordinate_type min_area =
-        std::min(c->get_bounding_box().area(), get_bounding_box().area());
-
-      m_cursor_in_collision = 
-        c->get_bounding_box().intersection(get_bounding_box()).area() > 
-        min_area * m_area_factor;
-    }
-} // interactive_item::collision()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -316,10 +297,57 @@ void rp::interactive_item::update_item()
   else
     size *= 2;
 
-  m_plunger_sprite.set_size(size,size);
-  set_size(m_item->get_size());
-  get_animation().set_size(size,size);
+  m_plunger_sprite.set_size( size, size );
+  set_size( m_item->get_size() );
+  get_animation().set_size( size, size );
   set_gap_x( (get_width() - size) / 2);
   set_gap_y( (get_height() - size) / 2);
-  set_center_of_mass(m_item->get_center_of_mass() + m_gap);
 } // interactive_item::update_item()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Finds the cursor.
+ */
+void rp::interactive_item::find_cursor()
+{
+  if ( ( m_cursor != handle_type(NULL) ) || !has_world() )
+    return;
+  
+  bear::universe::item_picking_filter filter;
+  filter.set_artificial_value( false );
+  filter.set_phantom_value( true );
+  filter.set_can_move_items_value( false );
+  filter.set_fixed_value( false );
+
+  typedef bear::universe::world::item_list item_list;
+  item_list items;
+
+  get_world().pick_items_in_rectangle
+    ( items, get_level().get_camera_focus(), filter );
+
+  for ( item_list::const_iterator it( items.begin() );
+        ( it != items.end() ) && ( m_cursor == handle_type(NULL) );
+        ++it )
+        m_cursor = dynamic_cast<cursor*>(*it);
+} // interactive_item::find_cursor()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tells if the decorative item is colliding the cursor.
+ */
+bool rp::interactive_item::is_colliding_with_cursor() const
+{
+  if ( m_cursor == handle_type(NULL) )
+    return false;
+
+  if ( !m_cursor->get_bounding_box().intersects( get_bounding_box() ) )
+    return false;
+
+  const bear::universe::coordinate_type min_area =
+    std::min
+    ( m_cursor->get_bounding_box().area(), get_bounding_box().area() );
+
+  return
+    m_cursor->get_bounding_box().intersection( get_bounding_box() ).area()
+    >  min_area * m_area_factor;
+} // interactive_item::is_colliding_with_cursor()

@@ -112,16 +112,15 @@ bear::universe::position_type rp::entity::get_attack_point() const
  * \param item The item that creates the interactive item.
  * \param sprite_factor The factor of sprites.
  * \param area_factor The factor of required area for activation.
- * \param display_star Indicates that we display always the star.
  * \param gap The gap according to the center of mass. 
  */
 void rp::entity::create_interactive_item
 ( bear::engine::base_item& item, double factor_sprite, double area_factor,
-  bool display_star, bear::universe::position_type gap )
+  bear::universe::position_type gap )
 {
   m_interactive_item = 
     new interactive_item
-    (&item, factor_sprite, area_factor, display_star, gap);
+    (&item, factor_sprite, area_factor, gap);
   
   m_interactive_item->set_z_position( item.get_z_position() - 10 );
   m_interactive_item->set_size( item.get_size() );

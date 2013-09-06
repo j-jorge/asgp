@@ -64,12 +64,12 @@ bool rp::boss_teleport::set_item_field
  * \param d (out) A list to which are added such items.
  */
 void rp::boss_teleport::get_dependent_items
-( std::list<physical_item*>& d ) const
+( bear::universe::physical_item::item_list& d ) const
 {
   super::get_dependent_items(d);
 
   if ( m_boss != NULL )
-    d.push_front( m_boss );
+    d.push_back( m_boss );
 } // boss_teleport::get_dependent_items()
 
 /*----------------------------------------------------------------------------*/

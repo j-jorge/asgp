@@ -74,7 +74,8 @@ namespace rp
     void set_y_reference(bear::universe::coordinate_type pos_y);
     void set_teleportation_gap(const bear::universe::position_type& gap);
     handle_type set_drop_item(base_item* item, base_item* zeppelin_item);
-    void get_dependent_items( std::list<physical_item*>& d ) const;
+    void get_dependent_items
+    ( bear::universe::physical_item::item_list& d ) const;
 
   private:
     void remove_drop_items();

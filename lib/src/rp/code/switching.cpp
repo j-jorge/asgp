@@ -79,7 +79,7 @@ void rp::switching::on_enters_layer()
 
   if ( get_mark_placement("sign", mark) )
     create_interactive_item
-        (*this, 0.25, 0, true, mark.get_position() - get_center_of_mass() );
+        (*this, 0.25, 0, mark.get_position() - get_center_of_mass() );
 } // rp::switching::on_enters_layer()
 
 /*----------------------------------------------------------------------------*/

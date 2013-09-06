@@ -239,7 +239,7 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
     progress_spot( elapsed_time );
 
   super::progress( elapsed_time );
-  
+
   if ( !m_passive )
     m_cursor->set_center_of_mass
     ( bear::universe::position_type
@@ -248,9 +248,8 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
         get_level().get_camera_focus().bottom() + 
         m_gap_mouse.y * get_level().get_camera_focus().height() ) );
 
-  if ( game_variables::level_has_started() && 
-       ( ! game_variables::is_boss_transition() || 
-         ( game_variables::is_boss_transition() && m_passive ) ) )
+  if ( game_variables::level_has_started()
+       && ( !game_variables::is_boss_transition() || m_passive ) )
     { 
       progress_tweeners( elapsed_time );
       progress_injured_state( elapsed_time );
@@ -266,10 +265,10 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
           set_mark_position_in_action("gun", compute_gun_position());
         }
     }
- 
+
   if ( !m_passive )
     progress_input_reader(elapsed_time);      
-  
+
   if ( game_variables::level_has_started() )
     { 
       m_can_jump = true;
@@ -278,11 +277,11 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
       update_status_informations();
       update_bottom_contact();
     }
- 
+
   if ( has_bottom_contact() && get_bottom_contact().get_max() < 1.0 &&
        game_variables::is_level_ending() && game_variables::is_boss_level() )
     apply_impulse_jump();
-  
+
   if ( !can_finish() )
     create_smoke( elapsed_time );
 } // cart::progress()
@@ -730,16 +729,17 @@ const bear::timer* rp::cart::get_level_timer() const
  * \brief Get the items concerned by a progress/move of this one.
  * \param d (out) A list to which are added such items.
  */
-void rp::cart::get_dependent_items( std::list<physical_item*>& d ) const
+void rp::cart::get_dependent_items
+( bear::universe::physical_item::item_list& d ) const
 {
   super::get_dependent_items(d);
   
   plungers_set::iterator it;
   
   for ( it = m_plungers.begin(); it != m_plungers.end() ; ++it)
-    d.push_front( *it );
+    d.push_back( *it );
 
-  d.push_front( m_cursor );
+  d.push_back( m_cursor );
 } // cart::get_dependent_items()
 
 /*---------------------------------------------------------------------------*/
@@ -1597,10 +1597,17 @@ void rp::cart::progress_cannon()
           m_good_fire = ( m_fire_duration >= s_fire_duration );
         }
 
+#ifdef __ANDROID__
+      m_tweener_fire_angle = claw::tween::single_tweener
+	( m.get_angle() - get_system_angle(), angle, 0,
+          boost::bind( &rp::cart::on_fire_angle_change, this, _1 ), 
+          &claw::tween::easing_cubic::ease_out );
+#else
       m_tweener_fire_angle = claw::tween::single_tweener
 	( m.get_angle() - get_system_angle(), angle, 0.2,
-          boost::bind( &rp::cart::on_fire_angle_change,this, _1 ), 
+          boost::bind( &rp::cart::on_fire_angle_change, this, _1 ), 
           &claw::tween::easing_cubic::ease_out );
+#endif
     }
 } // cart::progress_cannon()
 

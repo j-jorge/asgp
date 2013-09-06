@@ -119,7 +119,8 @@ namespace rp
     void create_level_ending_effect();
 
   private:
-    void get_dependent_items( std::list<physical_item*>& d ) const;
+    void get_dependent_items
+    ( bear::universe::physical_item::item_list& d ) const;
     void add_balloon(attractable_item* attracted_item);
     bool check_death();
     void lose_elements();

@@ -62,7 +62,7 @@ namespace rp
 
   private:
     void get_dependent_items
-    ( std::list<bear::universe::physical_item*>& d ) const;
+    ( bear::universe::physical_item::item_list& d ) const;
     bool collision_with_cart
     (bear::engine::base_item& that, bear::universe::collision_info& info);
     bool collision_with_cannonball(bear::engine::base_item& that);

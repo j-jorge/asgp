@@ -63,7 +63,7 @@ namespace rp
     void create_random_planks(const std::string& mark_name);
     void create_fixed_planks(const std::string& mark_name);
     void get_dependent_items
-    ( std::list<bear::universe::physical_item*>& d ) const;
+    ( bear::universe::physical_item::item_list& d ) const;
     bool collision_with_tar( bear::engine::base_item& that );
     void make_dirty();
     void create_plank
