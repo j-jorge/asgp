@@ -12,6 +12,7 @@
  * \author Sebastien Angibaud
  */
 #include "rp/cart.hpp"
+
 #include "rp/attractable_item.hpp"
 #include "rp/balloon.hpp"
 #include "rp/decorative_balloon.hpp"
@@ -1283,9 +1284,19 @@ bool rp::cart::can_throw_plunger()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Throw a cannonball.
+ * \brief Throws a cannonball toward the cursor.
  */
 void rp::cart::throw_cannonball()
+{
+  throw_cannonball( m_cursor->get_center_of_mass() );
+} // cart::throw_cannonball()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Throws a cannonball toward a given direction
+ * \param target The position to reach with the cannonball.
+ */
+void rp::cart::throw_cannonball( const bear::universe::position_type& target )
 {
   bear::engine::model_mark_placement mark_fire;
 
@@ -1313,8 +1324,7 @@ void rp::cart::throw_cannonball()
       new_item( *item );
       item->set_center_of_mass(pos);
       item->set_cart(this);
-      item->create_movement
-        (v, get_speed(), m_cursor->get_center_of_mass(), m_good_fire);
+      item->create_movement( v, get_speed(), target, m_good_fire );
       
       bear::audio::sound_effect e(get_center_of_mass());
       get_level_globals().play_sound("sound/cart/cannon.ogg", e);
@@ -1598,10 +1608,7 @@ void rp::cart::progress_cannon()
         }
 
 #ifdef __ANDROID__
-      m_tweener_fire_angle = claw::tween::single_tweener
-	( m.get_angle() - get_system_angle(), angle, 0,
-          boost::bind( &rp::cart::on_fire_angle_change, this, _1 ), 
-          &claw::tween::easing_cubic::ease_out );
+      on_fire_angle_change( angle );
 #else
       m_tweener_fire_angle = claw::tween::single_tweener
 	( m.get_angle() - get_system_angle(), angle, 0.2,
@@ -1623,7 +1630,7 @@ void rp::cart::progress_fire()
   if ( get_current_local_mark_placement("fire", fire_mark) && 
        get_current_local_mark_placement("cannon", cannon_mark) )
     {
-      set_mark_position_in_action("fire",compute_fire_position());
+      set_mark_position_in_action("fire", compute_fire_position());
       set_mark_angle_in_action("fire", cannon_mark.get_angle());
     }
 } // cart::progress_fire()
@@ -2039,6 +2046,8 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
   if ( !game_variables::level_has_started() )
     return false;
 
+  mouse_move( event.get_position() );
+
   if ( event.get_type() == bear::input::finger_event::finger_event_pressed )
     {
       m_finger_down_position = event.get_position();
@@ -2068,10 +2077,7 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
         input_handle_jump();
     }
   else
-    {
-      mouse_move( m_finger_down_position );
-      input_handle_cannonball();
-    }
+    input_handle_cannonball();
 
   return true;
 } // cart::finger_action()
@@ -2085,7 +2091,7 @@ void rp::cart::input_handle_cannonball()
   if ( get_current_action_name() == "crouch" )
     apply_stop_crouch();
   else if ( can_throw_cannonball() )
-    throw_cannonball();
+    throw_cannonball( m_finger_down_position );
   else
     {
       const bear::audio::sound_effect e(get_center_of_mass());;

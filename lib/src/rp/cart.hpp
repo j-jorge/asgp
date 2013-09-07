@@ -154,6 +154,7 @@ namespace rp
     bool can_throw_cannonball();
     bool can_throw_plunger();
     void throw_cannonball();
+    void throw_cannonball( const bear::universe::position_type& target );
     void throw_plunger();
     void init_elements();
     void init_element(const std::string& name);
