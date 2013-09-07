@@ -2010,10 +2010,17 @@ bool rp::cart::mouse_released
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
+#ifdef __ANDROID__
+  // The android build handles the input in finger_action().
+  return false;
+#endif
+
   if ( !game_variables::level_has_started() )
     return false;
 
   bool result = true;
+
+  m_finger_down_position = pos;
 
   switch( button )
     {
@@ -2046,13 +2053,14 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
   if ( !game_variables::level_has_started() )
     return false;
 
-  mouse_move( event.get_position() );
-
   if ( event.get_type() == bear::input::finger_event::finger_event_pressed )
     {
       m_finger_down_position = event.get_position();
+      mouse_move( m_finger_down_position );
       return true;
     }
+
+  mouse_move( m_finger_down_position );
 
   if ( event.get_type() != bear::input::finger_event::finger_event_released )
     return false;
