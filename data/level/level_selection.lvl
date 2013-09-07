@@ -6055,6 +6055,9 @@
 <field name='base_item.position.bottom'>
 <real value='1676'/>
 </field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
+</field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/wall-fill/wall-fill-*.png' x='0' y='0' clip_width='256' clip_height='256' spritepos='wall-fill' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
@@ -6110,6 +6113,9 @@
 <fields>
 <field name='base_item.position.bottom'>
 <real value='1676'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
 </field>
 <field name='base_item.position.left'>
 <real value='256'/>
@@ -6237,6 +6243,9 @@
 <fields>
 <field name='base_item.position.bottom'>
 <real value='1676'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
 </field>
 <field name='base_item.position.left'>
 <real value='768'/>
@@ -6300,6 +6309,9 @@
 <field name='base_item.position.bottom'>
 <real value='1676'/>
 </field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
+</field>
 <field name='base_item.position.left'>
 <real value='1024'/>
 </field>
@@ -6361,6 +6373,9 @@
 <fields>
 <field name='base_item.position.bottom'>
 <real value='1676'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
 </field>
 <field name='base_item.position.left'>
 <real value='1280'/>
@@ -6554,6 +6569,9 @@
 <field name='base_item.position.bottom'>
 <real value='1676'/>
 </field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
+</field>
 <field name='base_item.position.left'>
 <real value='2048'/>
 </field>
@@ -6616,6 +6634,9 @@
 <field name='base_item.position.bottom'>
 <real value='1676'/>
 </field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
+</field>
 <field name='base_item.position.left'>
 <real value='2304'/>
 </field>
@@ -6677,6 +6698,9 @@
 <fields>
 <field name='base_item.position.bottom'>
 <real value='1676'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1'/>
 </field>
 <field name='base_item.position.left'>
 <real value='2560'/>
