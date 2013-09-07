@@ -231,6 +231,7 @@ bool rp::level_selector::set_item_list_field
 
   return ok;
 } // level_selector::set_item_list_field()
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Set a field of type item.

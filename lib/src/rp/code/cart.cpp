@@ -1288,16 +1288,6 @@ bool rp::cart::can_throw_plunger()
  */
 void rp::cart::throw_cannonball()
 {
-  throw_cannonball( m_cursor->get_center_of_mass() );
-} // cart::throw_cannonball()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Throws a cannonball toward a given direction
- * \param target The position to reach with the cannonball.
- */
-void rp::cart::throw_cannonball( const bear::universe::position_type& target )
-{
   bear::engine::model_mark_placement mark_fire;
 
   if ( get_current_local_mark_placement("fire", mark_fire) )
@@ -1322,9 +1312,9 @@ void rp::cart::throw_cannonball( const bear::universe::position_type& target )
 
       item->set_center_of_mass(pos);
       new_item( *item );
-      item->set_center_of_mass(pos);
       item->set_cart(this);
-      item->create_movement( v, get_speed(), target, m_good_fire );
+      item->create_movement
+        ( v, get_speed(), m_cursor->get_center_of_mass(), m_good_fire );
       
       bear::audio::sound_effect e(get_center_of_mass());
       get_level_globals().play_sound("sound/cart/cannon.ogg", e);
@@ -2020,8 +2010,6 @@ bool rp::cart::mouse_released
 
   bool result = true;
 
-  m_cursor_position = pos;
-
   switch( button )
     {
     case  bear::input::mouse::mc_right_button:
@@ -2056,8 +2044,7 @@ bool rp::cart::mouse_move
   return false;
 #endif
 
-  m_cursor_position = pos;
-  update_cursor_position();
+  update_cursor_position( pos );
 
   return true;
 } // cart::mouse_move()
@@ -2074,18 +2061,19 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
 
   if ( event.get_type() == bear::input::finger_event::finger_event_pressed )
     {
-      m_cursor_position = event.get_position();
-      update_cursor_position();
+      m_cursor_down = true;
+      m_cursor_down_screen_position = event.get_position();
+      update_cursor_position( m_cursor_down_screen_position );
       return true;
     }
-
-  update_cursor_position();
 
   if ( event.get_type() != bear::input::finger_event::finger_event_released )
     return false;
 
+  m_cursor_down = false;
+
   const bear::universe::position_type delta
-    ( event.get_position() - m_cursor_position );
+    ( event.get_position() - m_cursor_down_screen_position );
   const bear::universe::size_type length
     ( delta.distance( bear::universe::position_type(0, 0) ) );
 
@@ -2118,7 +2106,7 @@ void rp::cart::input_handle_cannonball()
   if ( get_current_action_name() == "crouch" )
     apply_stop_crouch();
   else if ( can_throw_cannonball() )
-    throw_cannonball( m_cursor_position );
+    throw_cannonball();
   else
     {
       const bear::audio::sound_effect e(get_center_of_mass());;
@@ -2168,16 +2156,19 @@ void rp::cart::input_handle_crouch()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Places the cursor at m_cursor_position.
+ * \brief Places the cursor at such that it appears at a given position on the
+ *        screen.
+ * \param screen_position The position on the screen.
  */
-void rp::cart::update_cursor_position()
+void rp::cart::update_cursor_position
+( const bear::universe::position_type& screen_position )
 {
   m_gap_mouse.x = 
-    m_cursor_position.x
+    screen_position.x
     / bear::engine::game::get_instance().get_window_size().x;
   m_gap_mouse.y = 
-    m_cursor_position.y
-    /  bear::engine::game::get_instance().get_window_size().y;
+    screen_position.y
+    / bear::engine::game::get_instance().get_window_size().y;
 
   m_cursor->set_center_of_mass
     ( bear::universe::position_type

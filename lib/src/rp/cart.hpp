@@ -154,7 +154,6 @@ namespace rp
     bool can_throw_cannonball();
     bool can_throw_plunger();
     void throw_cannonball();
-    void throw_cannonball( const bear::universe::position_type& target );
     void throw_plunger();
     void init_elements();
     void init_element(const std::string& name);
@@ -211,7 +210,8 @@ namespace rp
     void input_handle_jump();
     void input_handle_crouch();
 
-    void update_cursor_position();
+    void update_cursor_position
+    ( const bear::universe::position_type& screen_position );
 
     // events
     void on_toggle_on( bear::engine::base_item* activator );
@@ -299,8 +299,12 @@ namespace rp
     /** \brief The mouse position. */
     bear::universe::position_type m_gap_mouse;
 
-    /** \brief The position of the target of the next shot. */
-    bear::universe::position_type m_cursor_position;
+    /** \brief The position of the cursor, on the screen, the last time the
+        player has pressed a button. */
+    bear::universe::position_type m_cursor_down_screen_position;
+
+    /** \brief Tells if the player is pressing a button. */
+    bool m_cursor_down;
 
     /** \brief The factor applied on force in move state. */
     bear::universe::coordinate_type m_force_factor;
