@@ -2020,7 +2020,7 @@ bool rp::cart::mouse_released
 
   bool result = true;
 
-  m_finger_down_position = pos;
+  m_cursor_position = pos;
 
   switch( button )
     {
@@ -2045,6 +2045,25 @@ bool rp::cart::mouse_released
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Method called when the position of the mouse changes.
+ * \param pos The new position of the cursor.
+ * \return true if the event has been processed.
+ */
+bool rp::cart::mouse_move
+( const claw::math::coordinate_2d<unsigned int>& pos )
+{
+#ifdef __ANDROID__
+  return false;
+#endif
+
+  m_cursor_position = pos;
+  update_cursor_position();
+
+  return true;
+} // cart::mouse_move()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Processes an input coming from a finger.
  * \param event The event to process.
  */
@@ -2055,18 +2074,18 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
 
   if ( event.get_type() == bear::input::finger_event::finger_event_pressed )
     {
-      m_finger_down_position = event.get_position();
-      mouse_move( m_finger_down_position );
+      m_cursor_position = event.get_position();
+      update_cursor_position();
       return true;
     }
 
-  mouse_move( m_finger_down_position );
+  update_cursor_position();
 
   if ( event.get_type() != bear::input::finger_event::finger_event_released )
     return false;
 
   const bear::universe::position_type delta
-    ( event.get_position() - m_finger_down_position );
+    ( event.get_position() - m_cursor_position );
   const bear::universe::size_type length
     ( delta.distance( bear::universe::position_type(0, 0) ) );
 
@@ -2099,7 +2118,7 @@ void rp::cart::input_handle_cannonball()
   if ( get_current_action_name() == "crouch" )
     apply_stop_crouch();
   else if ( can_throw_cannonball() )
-    throw_cannonball( m_finger_down_position );
+    throw_cannonball( m_cursor_position );
   else
     {
       const bear::audio::sound_effect e(get_center_of_mass());;
@@ -2149,17 +2168,16 @@ void rp::cart::input_handle_crouch()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Method called when the position of the mouse changes.
- * \param pos The new position of the cursor.
- * \return true if the event has been processed.
+ * \brief Places the cursor at m_cursor_position.
  */
-bool rp::cart::mouse_move
-( const claw::math::coordinate_2d<unsigned int>& pos )
+void rp::cart::update_cursor_position()
 {
   m_gap_mouse.x = 
-    (double)pos.x / bear::engine::game::get_instance().get_window_size().x;
+    m_cursor_position.x
+    / bear::engine::game::get_instance().get_window_size().x;
   m_gap_mouse.y = 
-    (double)pos.y /  bear::engine::game::get_instance().get_window_size().y;
+    m_cursor_position.y
+    /  bear::engine::game::get_instance().get_window_size().y;
 
   m_cursor->set_center_of_mass
     ( bear::universe::position_type
@@ -2167,9 +2185,7 @@ bool rp::cart::mouse_move
         m_gap_mouse.x * get_level().get_camera_focus().width(),
         get_level().get_camera_focus().bottom() + 
         m_gap_mouse.y * get_level().get_camera_focus().height() ) );
-
-  return true;
-} // cart::mouse_move()
+} // cart::update_cursor_position()
 
 /*----------------------------------------------------------------------------*/
 /**

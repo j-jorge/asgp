@@ -211,6 +211,8 @@ namespace rp
     void input_handle_jump();
     void input_handle_crouch();
 
+    void update_cursor_position();
+
     // events
     void on_toggle_on( bear::engine::base_item* activator );
     void on_painter_collision
@@ -297,8 +299,8 @@ namespace rp
     /** \brief The mouse position. */
     bear::universe::position_type m_gap_mouse;
 
-    /** \brief The position where the finger has been pressed. */
-    bear::universe::position_type m_finger_down_position;
+    /** \brief The position of the target of the next shot. */
+    bear::universe::position_type m_cursor_position;
 
     /** \brief The factor applied on force in move state. */
     bear::universe::coordinate_type m_force_factor;
