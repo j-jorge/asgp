@@ -166,6 +166,7 @@ void rp::interactive_item::progress( bear::universe::time_type elapsed_time )
       m_plunger_sprite.set_angle( get_system_angle() );
       
       set_center_of_mass( m_item->get_center_of_mass() + m_gap );
+      set_z_position( m_item->get_z_position() - 1 );
     }
   else
     kill();
