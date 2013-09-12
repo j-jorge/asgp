@@ -21,5 +21,25 @@
  */
 void rp::android_logger::write( const std::string& str )
 {
-  __android_log_print( ANDROID_LOG_INFO, "ASGP", "%s", str.c_str() );
+  m_output += str;
+
+  const std::string::size_type pos( m_output.find_last_of( '\n' ) );
+
+  if ( pos != std::string::npos )
+    {
+      std::string log_string( m_output.substr( 0, pos ) );
+      m_output = m_output.substr( pos + 1 );
+
+      __android_log_print( ANDROID_LOG_INFO, "ASGP", "%s", log_string.c_str() );
+    }
+} // android_logger::write()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Prints the buffered logs.
+ */
+void rp::android_logger::flush()
+{
+  __android_log_print( ANDROID_LOG_INFO, "ASGP", "%s", m_output.c_str() );
+  m_output.clear();
 } // android_logger::write()

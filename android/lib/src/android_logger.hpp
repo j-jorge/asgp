@@ -29,6 +29,12 @@ namespace rp
   {
   public:
     virtual void write( const std::string& str );
+    virtual void flush();
+
+  private:
+    /** \brief The strings writen in the log and not yet followed by a new
+        line. */
+    std::string m_output;
 
   }; // class file_logger
 } // namespace rp
