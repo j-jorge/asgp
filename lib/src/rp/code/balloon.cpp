@@ -37,6 +37,7 @@ rp::balloon::balloon()
 : m_hit(false), m_fly(false), m_cart(NULL)
 {
   set_phantom(true);
+  set_can_move_items(false);
   set_mass(0.1);
   set_density(0.001);
 } // rp::balloon::balloon()

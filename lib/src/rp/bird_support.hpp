@@ -44,6 +44,10 @@ namespace rp
   private:
     bool collision_with_cart
     (bear::engine::base_item& that, bear::universe::collision_info& info);
+
+    bool do_interesting_collision
+    ( const bear::universe::physical_item& that ) const;
+
   }; // class bird_support
 } // namespace rp
 
