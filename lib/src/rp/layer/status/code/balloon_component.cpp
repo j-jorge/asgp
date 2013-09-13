@@ -68,7 +68,7 @@ void rp::balloon_component::build()
   m_required_balloon->set_intensity(0, 1, 0);
   
   m_balloon_sprite =
-    get_level_globals().auto_sprite( "gfx/balloon/balloon.png", "balloon 0" );
+    get_level_globals().auto_sprite( "gfx/common.png", "balloon 0" );
   m_balloon_sprite.set_intensity(1, 0, 0);
   const double r = m_balloon_sprite.width() / m_balloon_sprite.height();
   m_balloon_sprite.set_height( 44 );

@@ -345,6 +345,8 @@ void rp::misc_layer::render_fps( scene_element_list& e ) const
           g_fps.push_back(m_fps_count);
 #endif
 
+          claw::logger << claw::log_verbose
+                       << "FPS:" << m_fps_count << std::endl;
           m_fps_text->set_text( oss.str() );
           m_fps_count = 0;
           m_its_count = 0;

@@ -113,6 +113,7 @@ void rp::game::init_game()
       "--auto-load-symbols",
       "--stats-destination=http://www.stuff-o-matic.com/asgp/stats/save.php",
       "--start-level=level/start.cl",
+            "--start-level=level/1/level-1.cl",
       NULL
     };
 

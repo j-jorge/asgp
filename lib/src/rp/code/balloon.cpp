@@ -441,7 +441,7 @@ void rp::balloon::create_tar_balloon()
 
   item->set_animation
     ( get_level_globals().auto_sprite
-      ("gfx/balloon/balloon.png", "balloon 0") );
+      ("gfx/common.png", "balloon 0") );
   item->auto_size();
   item->get_rendering_attributes().set_intensity(0,0,0);
   item->set_z_position(get_z_position());
@@ -471,7 +471,7 @@ void rp::balloon::create_decorative_blast
 
   item->set_animation
     ( get_level_globals().auto_sprite
-      ("gfx/balloon/balloon.png", sprite_name) );
+      ("gfx/common.png", sprite_name) );
   item->get_rendering_attributes().combine(this->get_rendering_attributes());
   item->set_z_position(get_z_position() - 1);
   item->set_speed(speed);
