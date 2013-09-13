@@ -174,9 +174,7 @@ void rp::cart::pre_cache()
   get_level_globals().load_image("gfx/status/status.png");
   get_level_globals().load_image("gfx/status/score.png");
   get_level_globals().load_image("gfx/balloon/balloon.png");
-  get_level_globals().load_image("gfx/effect/light-star-dark.png");
-  get_level_globals().load_image("gfx/effect/light-star.png");
-  get_level_globals().load_image("gfx/effect/rounded-star-bright.png");
+  get_level_globals().load_image("gfx/common.png");
   get_level_globals().load_image( get_theme_image_name() );
 
   get_level_globals().load_animation("animation/balloon-slow.canim");

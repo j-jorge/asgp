@@ -86,17 +86,15 @@ void rp::interactive_item::on_enters_layer()
   super::on_enters_layer();
 
   m_cannonball_sprite =
-    get_level_globals().auto_sprite
-    ( "gfx/effect/rounded-star-bright.png", "star" );
+    get_level_globals().auto_sprite( "gfx/common.png", "rounded star bright" );
   m_cannonball_sprite.colorize( bear::visual::color( "#ffff27" ) );
 
   m_plunger_sprite =
-    get_level_globals().auto_sprite
-    ( "gfx/effect/light-star-dark.png", "star" );
+    get_level_globals().auto_sprite( "gfx/common.png", "light star dark" );
   m_plunger_sprite.colorize( bear::visual::color( "#77d623" ) );
 
   bear::visual::sprite spr
-    ( get_level_globals().auto_sprite( "gfx/effect/light-star.png", "star" ) );
+    ( get_level_globals().auto_sprite( "gfx/common.png", "light star" ) );
   spr.colorize( bear::visual::color( "#fffbda" ) );
   set_sprite( spr );
 

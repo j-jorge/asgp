@@ -1,12 +1,17 @@
-# The format of the lines is
-# picture: x y width height
-
 board: 0 0 310 258
-horse: 311 0 184 205
-black horse: 0 259 251 126
-brown horse: 252 259 251 126
-rodeo: 0 386 119 125
-rodeo blue: 120 386 119 125
-rodeo black bull: 240 386 119 125
-stagecoach wheel: 360 386 91 91
-thief: 452 386 42 83
+red tipi: 311 0 228 251
+white tipi: 540 0 228 251
+blue tipi: 769 0 228 251
+horse: 0 259 184 205
+stagecoach red: 185 259 450 159
+stagecoach blue: 0 465 450 159
+stagecoach black: 451 465 450 159
+indian: 902 465 96 147
+cactus: 636 259 90 144
+black horse: 727 259 251 126
+brown horse: 0 625 251 126
+rodeo: 252 625 119 125
+rodeo blue: 372 625 119 125
+rodeo black bull: 492 625 119 125
+stagecoach wheel: 612 625 91 91
+thief: 979 259 42 83

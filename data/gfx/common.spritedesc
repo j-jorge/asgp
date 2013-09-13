@@ -1,0 +1,21 @@
+sprite_sheet "common" 512 x 512 margin 1
+
+light_star "effect/light-star.xcf.bz2"
+rounded_star "effect/rounded-star.xcf.bz2"
+
+"light star" autosize * 0.125 with light_star
+  "gradient"
+  "disc"
+  "circle"
+  "circle fill"
+  ;
+
+"light star dark" autosize * 0.125 with light_star
+  "dark"
+  "inside"
+  ;
+
+"rounded star bright" autosize * 0.125 with rounded_star
+  "bright border"
+  "inside"
+  ;
