@@ -192,7 +192,14 @@ bool rp::misc_layer::key_pressed( const bear::input::key_info& key )
 bool rp::misc_layer::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  m_cursor_position = pos;
+  m_cursor_position.x =
+    get_size().x
+    * pos.x
+    / bear::engine::game::get_instance().get_window_size().x;
+  m_cursor_position.y =
+    get_size().y
+    * pos.y
+    / bear::engine::game::get_instance().get_window_size().y;
 
   // let the sub components know the movement
   return false;
