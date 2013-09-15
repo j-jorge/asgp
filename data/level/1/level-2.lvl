@@ -866,6 +866,9 @@
 <field name='base_item.position.bottom'>
 <real value='1920'/>
 </field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
 <field name='base_item.position.left'>
 <real value='16291'/>
 </field>
