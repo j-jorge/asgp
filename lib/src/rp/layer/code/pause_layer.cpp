@@ -237,26 +237,35 @@ void rp::pause_layer::add_system_buttons()
   bear::gui::visual_component* help = create_help_component();
   bear::gui::visual_component* sound = create_sound_component();
   bear::gui::visual_component* music = create_music_component();
+
+#if !defined( __ANDROID__ )
   bear::gui::visual_component* fullscreen = create_fullscreen_component();
+  const bear::gui::size_type fullscreen_width( fullscreen-»width() );
+#else
+  const bear::gui::size_type fullscreen_width(0);
+#endif
 
   const bear::gui::size_type horizontal_margin =
     ( m_root_window.width() - help->width() - sound->width() - music->width()
-      - fullscreen->width() ) / 6;
+      - fullscreen_width ) / 6;
 
   help->set_left( horizontal_margin );
-  sound->set_left( help->right() + 2 * horizontal_margin );
-  music->set_left( sound->right() + horizontal_margin );
-  fullscreen->set_left( music->right() + horizontal_margin );
-
   help->set_bottom( m_margin );
-  sound->set_bottom( m_margin );
-  music->set_bottom( m_margin );
-  fullscreen->set_bottom( m_margin );
-
   add_component( help );
+
+  sound->set_left( help->right() + 2 * horizontal_margin );
+  sound->set_bottom( m_margin );
   add_component( sound );
+
+  music->set_left( sound->right() + horizontal_margin );
+  music->set_bottom( m_margin );
   add_component( music );
+
+#if !defined( __ANDROID__ )
+  fullscreen->set_left( music->right() + horizontal_margin );
+  fullscreen->set_bottom( m_margin );
   add_component( fullscreen );
+#endif
 } // add_system_buttons()
 
 /*----------------------------------------------------------------------------*/
