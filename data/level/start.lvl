@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='' width='1280' height='768' music=''>
-  <layer class_name='action_layer' name='' width='1280' height='768' fit_level='1'>
+  <layer class_name='action_layer' name='' width='1280' height='768' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::camera' fixed='false'>
@@ -69,7 +69,7 @@
 <real value='225'/>
 </field>
 <field name='delayed_level_loading.delay'>
-<real value='4.5'/>
+<real value='0'/>
 </field>
 <field name='delayed_level_loading.fade_duration'>
 <real value='0'/>
@@ -79,28 +79,6 @@
 </field>
 </fields>
     </item><!-- bear::delayed_level_loading -->
-
-    <item class_name='bear::crossfade_sequence' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='380'/>
-</field>
-<field name='base_item.position.left'>
-<real value='292'/>
-</field>
-<field name='crossfade_sequence.duration_sequence'>
-<real value='2.5'/>
-<real value='1'/>
-</field>
-<field name='crossfade_sequence.fadeout_for_last_item'>
-<bool value='0'/>
-</field>
-<field name='crossfade_sequence.item_sequence'>
-<item_reference value='logo'/>
-<item_reference value='loading'/>
-</field>
-</fields>
-    </item><!-- bear::crossfade_sequence -->
 
     <item class_name='bear::decorative_item' fixed='true' id='logo'>
 <fields>
