@@ -91,7 +91,7 @@ bool rp::pause_layer::key_pressed( const bear::input::key_info& key )
 {
   bool result = false;
 
- if ( key.is_escape() )
+  if ( key.is_escape() || key.is_back() )
    {
      set_pause( !get_level().is_paused() );
 
