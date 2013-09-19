@@ -13841,7 +13841,7 @@
 <real value='69'/>
 </field>
 <field name='base_item.size.width'>
-<real value='334'/>
+<real value='545'/>
 </field>
 </fields>
     </item><!-- rp::hole -->
@@ -15912,7 +15912,7 @@
 <real value='69'/>
 </field>
 <field name='base_item.size.width'>
-<real value='334'/>
+<real value='541'/>
 </field>
 </fields>
     </item><!-- rp::hole -->
