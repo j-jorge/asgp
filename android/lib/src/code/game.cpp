@@ -15,12 +15,12 @@
 
 #include "engine/resource_pool.hpp"
 
-#include "android_logger.hpp"
 #include "android_resource_pool.hpp"
 #include "android_game_filesystem.hpp"
 
 #include "engine/system/game_filesystem.hpp"
 
+#include <claw/android_logger.hpp>
 #include <claw/logger.hpp>
 #include <claw/log_stream_uniq.hpp>
 
@@ -89,7 +89,7 @@ void rp::game::init()
 void rp::game::init_logger()
 {
   claw::log_stream* const logger
-    ( new claw::log_stream_uniq( new android_logger ) );
+    ( new claw::log_stream_uniq( new claw::android_logger ) );
   
   claw::logger.set( logger );
   claw::logger.set_level( claw::log_verbose );
@@ -113,7 +113,6 @@ void rp::game::init_game()
       "--auto-load-symbols",
       "--stats-destination=http://www.stuff-o-matic.com/asgp/stats/save.php",
       "--start-level=level/start.cl",
-            "--start-level=level/1/level-1.cl",
       NULL
     };
 
