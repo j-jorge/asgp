@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='Ultimate Fight' width='27000' height='7500' music='music/boss.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='last_animation' width='27000' height='7500' fit_level='1'>
+  <layer class_name='action_layer' name='last_animation' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -601,7 +601,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='planches du fond' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='planches du fond' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -6659,7 +6659,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decoration' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='decoration' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -8373,7 +8373,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animation' width='27000' height='7500' fit_level='1'>
+  <layer class_name='action_layer' name='animation' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_effect' fixed='false' id='effect-1-monter-1'>
@@ -9586,7 +9586,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='wall-fill' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall-fill' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -14964,7 +14964,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='intermediate_decoration' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='intermediate_decoration' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -16110,7 +16110,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='intermediate animation' width='27000' height='7500' fit_level='1'>
+  <layer class_name='action_layer' name='intermediate animation' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_effect' fixed='false' id='effect-1-monter-3'>
@@ -16700,7 +16700,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='action_layer' name='' width='27000' height='7500' fit_level='1'>
+  <layer class_name='action_layer' name='' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::straight_slope' fixed='true'>
@@ -16828,9 +16828,6 @@
 </field>
 <field name='add_ingame_layers.show_introduction'>
 <bool value='0'/>
-</field>
-<field name='add_ingame_layers.status_layer'>
-<bool value='1'/>
 </field>
 </fields>
     </item><!-- rp::add_ingame_layers -->
@@ -20318,7 +20315,7 @@
 <real value='69'/>
 </field>
 <field name='base_item.size.width'>
-<real value='334'/>
+<real value='652'/>
 </field>
 </fields>
     </item><!-- rp::hole -->
@@ -21029,7 +21026,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
 </items>
