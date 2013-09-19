@@ -23,14 +23,6 @@ BASE_ITEM_EXPORT( help_button, rp )
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Constructor.
- */
-rp::help_button::help_button()
-{
-} // rp::help_button::rp::help_button()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Load the media required by this class.
  */
 void rp::help_button::pre_cache()
@@ -55,18 +47,6 @@ void rp::help_button::on_enters_layer()
     get_level_globals().auto_sprite
     ( rp_gettext("gfx/status/buttons-2.png"),"controllers");
 } // help_button::on_enters_layer()
-
-/*---------------------------------------------------------------------------*/
-/**
- * \brief Do one iteration in the progression of the item.
- * \param elapsed_time Elapsed time since the last call.
- */
-void rp::help_button::progress( bear::universe::time_type elapsed_time )
-{
-  super::progress( elapsed_time );
-
-  progress_input_reader(elapsed_time);
-} // help_button::progress()
 
 /*----------------------------------------------------------------------------*/
 /**

@@ -39,11 +39,8 @@ namespace rp
     typedef bear::engine::basic_renderable_item< bear::mouse_detector > super;
 
   public:
-    help_button();
-    
     void pre_cache();
     void on_enters_layer();
-    void progress( bear::universe::time_type elapsed_time );
     void get_visual
     ( std::list<bear::engine::scene_visual>& visuals ) const;
 

@@ -55,7 +55,6 @@ void rp::serial_switcher::progress( bear::universe::time_type elapsed_time )
 {
   super::progress( elapsed_time );
 
-  progress_input_reader(elapsed_time);
   m_angle_tweener.update( elapsed_time );
 
   m_animation_on.next(elapsed_time);
