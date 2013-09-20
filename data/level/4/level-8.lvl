@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='Scuba Fighting' width='27000' height='7500' music='music/boss.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='planches du fond' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='planches du fond' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -5703,7 +5703,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animation' width='27000' height='7500' fit_level='1'>
+  <layer class_name='action_layer' name='animation' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -6170,7 +6170,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='decoration' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='decoration' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -7791,7 +7791,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='wall-fill' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall-fill' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -12331,7 +12331,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='intermediate decoration' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='intermediate decoration' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -12460,7 +12460,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='27000' height='7500' fit_level='1'>
+  <layer class_name='action_layer' name='' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::world_parameters' fixed='false'>
@@ -12565,9 +12565,6 @@
 </field>
 <field name='add_ingame_layers.show_introduction'>
 <bool value='0'/>
-</field>
-<field name='add_ingame_layers.status_layer'>
-<bool value='1'/>
 </field>
 </fields>
     </item><!-- rp::add_ingame_layers -->
@@ -16188,10 +16185,19 @@
 </fields>
     </item><!-- bear::applied_boolean_expression -->
 
-    <item class_name='bear::trigger' fixed='true' id='trigger_teleport'>
+    <item class_name='bear::trigger' fixed='false' id='trigger_teleport'>
 <fields>
 <field name='item_with_trigger.check_on_collision'>
 <bool value='1'/>
+</field>
+<field name='base_item.fixed.x'>
+<bool value='1'/>
+</field>
+<field name='base_item.fixed.y'>
+<bool value='1'/>
+</field>
+<field name='base_item.mass'>
+<real value='10000'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1413'/>
@@ -16648,7 +16654,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='' width='27000' height='7500' fit_level='1'>
+  <layer class_name='decoration_layer' name='' width='27000' height='7500' fit_level='1' tag=''>
 
 <items>
 </items>
