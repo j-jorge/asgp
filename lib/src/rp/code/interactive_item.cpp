@@ -272,11 +272,16 @@ void rp::interactive_item::on_cannonball_factor_change( double factor )
 bear::universe::coordinate_type rp::interactive_item::compute_size() const
 {  
   if ( m_item != handle_type(NULL) )
-    return 
-      std::max
-      ( 58.0, 
-        std::min( m_item->get_size().x, m_item->get_size().y ) * 
-        m_sprite_factor );
+    {
+      const bear::universe::coordinate_type boss_factor
+        ( game_variables::is_boss_level() ? 1.5 : 1 );
+
+      return 
+        std::max
+        ( 58.0, 
+          std::min( m_item->get_size().x, m_item->get_size().y ) 
+          * m_sprite_factor * boss_factor );
+    }
   else
     return 0;
 } // interactive_item::compute_size()
