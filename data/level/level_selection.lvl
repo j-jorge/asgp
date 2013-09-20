@@ -10833,6 +10833,7 @@
 <item_reference value='button_background-3'/>
 <item_reference value='button_background-4'/>
 <item_reference value='button_background-5'/>
+<item_reference value='button_background-6'/>
 </field>
 <field name='forced_movement_applicator.movement'>
 <item_reference value='track-hot_spot'/>
@@ -11005,6 +11006,20 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='bear::check_system_name_creator' fixed='false' id='system-android'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2179'/>
+</field>
+<field name='base_item.position.left'>
+<real value='482'/>
+</field>
+<field name='check_system_name_creator.system_name'>
+<string value='android'/>
+</field>
+</fields>
+    </item><!-- bear::check_system_name_creator -->
+
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -11031,12 +11046,7 @@
 </animation>
 </field>
 <field name='mouse_over_manager.items'>
-<item_reference value='back_deco'/>
-<item_reference value='go_deco'/>
 <item_reference value='windowed'/>
-<item_reference value='quit'/>
-<item_reference value='place-1'/>
-<item_reference value='buy'/>
 </field>
 <field name='mouse_over_manager.sample'>
 <sample path='sound/tick.ogg' loops='1' volume='1'/>
@@ -11086,6 +11096,24 @@
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
+    <item class_name='bear::killer' fixed='false' id='kill-windowed-toggle'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2099'/>
+</field>
+<field name='base_item.position.left'>
+<real value='524'/>
+</field>
+<field name='killer.items'>
+<item_reference value='button_background'/>
+<item_reference value='windowed'/>
+</field>
+<field name='killer.kill_activator'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- bear::killer -->
+
     <item class_name='bear::forced_join_creator' fixed='false' id='inside-join-back-mvt'>
 <fields>
 <field name='base_item.global'>
@@ -11112,6 +11140,61 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2179'/>
+</field>
+<field name='base_item.position.left'>
+<real value='547'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='system-android'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='kill-windowed-trigger'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1907'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='50'/>
+</field>
+<field name='base_item.position.left'>
+<real value='554'/>
+</field>
+<field name='mouse_over_manager.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='141' y='396' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.items'>
+<item_reference value='back_deco'/>
+<item_reference value='go_deco'/>
+<item_reference value='quit'/>
+<item_reference value='place-1'/>
+<item_reference value='buy'/>
+</field>
+<field name='mouse_over_manager.sample'>
+<sample path='sound/tick.ogg' loops='1' volume='1'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_over_manager -->
+
     <item class_name='bear::browser_launcher_toggle' fixed='false' id='navigator_launcher'>
 <fields>
 <field name='base_item.global'>
@@ -11128,6 +11211,23 @@
 </field>
 </fields>
     </item><!-- bear::browser_launcher_toggle -->
+
+    <item class_name='bear::trigger' fixed='false' id='kill-windowed-trigger'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2119'/>
+</field>
+<field name='base_item.position.left'>
+<real value='603'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='kill-windowed-toggle'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
 
     <item class_name='bear::logical_not_creator' fixed='false' id='not_is_demo_version'>
 <fields>
@@ -11960,6 +12060,9 @@
 
     <item class_name='bear::forced_movement_toggle' fixed='false' id='remove_go'>
 <fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='1614'/>
 </field>
