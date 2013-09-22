@@ -4,6 +4,10 @@ cannon "help-cannon.xcf.bz2"
 plunger "help-plunger.xcf.bz2"
 
 
+"cannon 0" image_size * 0.5 with cannon
+  "1"
+;
+
 "cannon 1" image_size * 0.5 with cannon
   "1"
   "touch 1"

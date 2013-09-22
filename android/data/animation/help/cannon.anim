@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation loops='0' first_index='0' last_index='11' loop_back='false' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='0.5'>
+    <sprite image='gfx/help/finger.png' x='176' y='0' clip_width='288' clip_height='147' spritepos='cannon 0' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/help/finger.png' x='465' y='0' clip_width='288' clip_height='147' spritepos='cannon 1' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='0' y='152' clip_width='288' clip_height='147' spritepos='cannon 2' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='289' y='152' clip_width='288' clip_height='147' spritepos='cannon 3' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='578' y='152' clip_width='288' clip_height='147' spritepos='cannon 4' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='0' y='300' clip_width='288' clip_height='147' spritepos='cannon 5' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='289' y='300' clip_width='288' clip_height='147' spritepos='cannon 6' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='578' y='300' clip_width='288' clip_height='147' spritepos='cannon 7' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='0' y='448' clip_width='288' clip_height='147' spritepos='cannon 8' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='289' y='448' clip_width='288' clip_height='147' spritepos='cannon 9' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.05'>
+    <sprite image='gfx/help/finger.png' x='578' y='448' clip_width='288' clip_height='147' spritepos='cannon 10' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.5'>
+    <sprite image='gfx/help/finger.png' x='0' y='596' clip_width='288' clip_height='147' spritepos='cannon 11' auto_size='true' width='288' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
