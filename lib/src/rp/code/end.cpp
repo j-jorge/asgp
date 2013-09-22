@@ -14,7 +14,10 @@
 
 #include "rp/config_file.hpp"
 #include "rp/util.hpp"
-#include "engine/game.hpp"
+
+#include "engine/game_initializer.hpp"
+
+BEAR_ENGINE_GAME_END_FUNCTION( end_super_great_park )
 
 void end_super_great_park()
 {

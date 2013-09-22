@@ -46,6 +46,12 @@ bool rp::game_key::is_valid_key( std::string key )
  */
 void rp::game_key::check_if_demo_version()
 {
+#if defined( __ANDROID__ )
+
+  game_variables::set_demo_version( false );
+
+#else
+
   const bear::engine::game& g( bear::engine::game::get_instance() );
 
   const std::string filename
@@ -58,6 +64,8 @@ void rp::game_key::check_if_demo_version()
     game_variables::set_demo_version( !is_valid_key( key ) );
   else
     game_variables::set_demo_version( true );
+
+#endif // __ANDROID__
 
   claw::logger << claw::log_verbose << "Demo mode is "
                << game_variables::is_demo_version() << std::endl;

@@ -18,11 +18,14 @@
 #include "rp/util.hpp"
 
 #include "engine/game.hpp"
+#include "engine/game_initializer.hpp"
 #include "engine/i18n/gettext_translator.hpp"
 #include "engine/i18n/translator.hpp"
 
 #include <cstdlib>
 #include <ctime>
+
+BEAR_ENGINE_GAME_INIT_FUNCTION( init_super_great_park )
 
 /*----------------------------------------------------------------------------*/
 /**
