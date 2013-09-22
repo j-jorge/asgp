@@ -1,0 +1,8 @@
+/*  */
+sprite_sheet "help-1" 1024 x 512 margin 0
+
+help "help.xcf.bz2"
+
+"help" autosize * 0.5 with help
+  glob "*"
+  ;
