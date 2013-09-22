@@ -12,8 +12,12 @@
  * \author Sebastien Angibaud
  */
 #include "rp/entity.hpp"
+
 #include "rp/game_variables.hpp"
 #include "rp/interactive_item.hpp"
+
+#include "universe/forced_movement/forced_tracking.hpp"
+#include "universe/forced_movement/ratio_reference_point.hpp"
 
 unsigned int rp::entity::s_combo_note = 0;
 
@@ -51,6 +55,26 @@ bool rp::entity::loader::set_field( const std::string& name, bool value )
 
   if (name == "passive")
     m_item.set_passive( value );
+  else
+    result = false;
+
+  return result;
+} // entity::loader::set_field()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sets a field of type \c animtation.
+ * \param name The name of the field.
+ * \param value The new value of the field.
+ * \return false if the field "name" is unknow, true otherwise.
+ */
+bool rp::entity::loader::set_field
+( const std::string& name, const bear::visual::animation& value )
+{
+  bool result = true;
+
+  if (name == "help")
+    m_item.set_help_animation( value );
   else
     result = false;
 
@@ -120,7 +144,7 @@ void rp::entity::create_interactive_item
 {
   m_interactive_item = 
     new interactive_item
-    (&item, factor_sprite, area_factor, gap);
+    ( &item, factor_sprite, area_factor, gap );
   
   m_interactive_item->set_z_position( item.get_z_position() - 10 );
   m_interactive_item->set_size( item.get_size() );
@@ -128,6 +152,25 @@ void rp::entity::create_interactive_item
   m_interactive_item->set_global( item.is_global() );
   
   item.new_item(*m_interactive_item);
+
+  if ( !m_help.is_valid() )
+    return;
+
+  bear::decorative_item* const help = new bear::decorative_item();
+  help->set_animation( m_help );
+  help->set_size( m_help.get_max_size() );
+  help->set_z_position( item.get_z_position() + 100 );
+
+  item.new_item( *help );
+  item.kill_when_dying( *help );
+
+  bear::universe::forced_tracking mvt( bear::universe::position_type(0, 0) );
+  mvt.set_reference_point
+    ( bear::universe::ratio_reference_point
+      ( item, bear::universe::position_type( 0, 0.5 ) ) );
+  mvt.set_moving_item_ratio( bear::universe::position_type(0, 1) );
+
+  help->set_forced_movement( mvt );
 } // entity::create_interactive_item()
 
 /*----------------------------------------------------------------------------*/
@@ -235,6 +278,16 @@ std::string rp::entity::give_note()
 
   return note;
 } // rp::entity::get_combo_value()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sets the animation showing hot to shoot the entity.
+ * \param anim The animation.
+ */
+void rp::entity::set_help_animation( const bear::visual::animation& anim )
+{
+  m_help = anim;
+} // entity::set_help_animation()
 
 /*----------------------------------------------------------------------------*/
 /**

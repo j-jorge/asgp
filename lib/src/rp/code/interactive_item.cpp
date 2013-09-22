@@ -55,8 +55,8 @@ rp::interactive_item::interactive_item()
  * \param gap The gap according to the center of mass. 
  */
 rp::interactive_item::interactive_item
-(bear::engine::base_item* item, double sprite_factor, double area_factor,
- bear::universe::position_type gap)
+( bear::engine::base_item* item, double sprite_factor, double area_factor,
+  bear::universe::position_type gap, const bear::visual::animation& help )
   : m_item( item ), m_sprite_factor(sprite_factor), m_area_factor(area_factor),
     m_gap(gap)
 {
@@ -178,7 +178,7 @@ void rp::interactive_item::progress( bear::universe::time_type elapsed_time )
 void rp::interactive_item::get_visual
 ( std::list<bear::engine::scene_visual>& visuals ) const
 {
-  bool visible(true);
+  bool visible(false);
 
   if ( m_item != handle_type(NULL) )
     {
@@ -207,7 +207,7 @@ void rp::interactive_item::get_visual
           m_cannonball_factor / 2.0 );
       bear::visual::scene_sprite s1( pos1.x, pos1.y, m_cannonball_sprite);
       s1.set_scale_factor(m_cannonball_factor,m_cannonball_factor);
-      visuals.push_back( s1 );  
+      visuals.push_back( s1 );
     }
 } // interactive_item::get_visuals();
 

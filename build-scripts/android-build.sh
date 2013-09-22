@@ -98,6 +98,8 @@ ANDROID_LIB="$ANDROID_SYSROOT/usr/lib"
 [ -z "$BEAR_BUILD_TAG" ] && BEAR_BUILD_TAG="$(date --rfc-2822)"
 
 # Compilation
+INSTALL_PREFIX="$PWD/asgp/android/java/"
+DATA_DIR="assets"
 
 cmake . \
     -DCMAKE_BUILD_TYPE="$BUILD_TYPE" \
@@ -131,15 +133,22 @@ cmake . \
     -DRP_NO_MANPAGES=1 \
     -DBEAR_ENGINE_CORE_LINK_TYPE=STATIC \
     -DBUILD_PLATFORM="android" \
-    -DCMAKE_INSTALL_PREFIX="$PWD/asgp/android/java/" \
+    -DCMAKE_INSTALL_PREFIX="$INSTALL_PREFIX" \
     -DRP_ANDROID_LAUNCHER_LINK_DIRECTORIES="$ANDROID_TOOLCHAIN_ROOT/arm-linux-androideabi/lib/" \
-    -DRP_INSTALL_DATA_DIR="assets" \
+    -DRP_INSTALL_DATA_DIR="$DATA_DIR" \
     -DRP_INSTALL_ANDROID_LAUNCHER_DIR="libs/armeabi-v7a" \
     $CMAKE_ARGS
 
 [ $? -eq 0 ] || exit 1
 
 make install || exit 1
+
+cd asgp/android/data
+cp --parents $( find . -name "*.png" \
+    -o -name "*.canim" \
+    -o -name "*.spritepos" ) \
+    $INSTALL_PREFIX/$DATA_DIR
+cd -
 
 cd asgp/android/lib/src
 echo "Building library with custom script."

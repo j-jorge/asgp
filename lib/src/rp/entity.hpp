@@ -50,6 +50,8 @@ namespace rp
       loader* clone() const;
 
       bool set_field( const std::string& name, bool value );
+      bool set_field
+      ( const std::string& name, const bear::visual::animation& value );
 
     private:
       /** \brief The instance loaded by this loader. */
@@ -87,6 +89,8 @@ namespace rp
     bool get_passive() const;
     void set_passive( bool value );
 
+    void set_help_animation( const bear::visual::animation& anim );
+
   protected:
     void populate_loader_map( bear::engine::item_loader_map& m );
 
@@ -102,6 +106,9 @@ namespace rp
 
     /** Indicates that the entity is passive. */
     bool m_passive;
+
+    /** \brief The animation showing the player how to shoot the item. */
+    bear::visual::animation m_help;
 
     /* \brief The index in melody. */
     static unsigned int s_combo_note;

@@ -42,8 +42,9 @@ namespace rp
   public:
     interactive_item();
     interactive_item
-    (bear::engine::base_item* item, double sprite_factor, double area_factor,
-     bear::universe::position_type gap);
+    ( bear::engine::base_item* item, double sprite_factor, double area_factor,
+      bear::universe::position_type gap,
+      const bear::visual::animation& help = bear::visual::animation() );
 
     void pre_cache();
 
@@ -99,6 +100,7 @@ namespace rp
 
     /** \brief The gap with the center of mass of the item. */
     bear::universe::position_type m_gap;
+
   }; // class interactive_item
 } // namespace rp
 
