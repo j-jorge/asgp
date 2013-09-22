@@ -66,7 +66,12 @@ BASE_ITEM_EXPORT( cart, rp )
 
 const bear::universe::time_type rp::cart::s_injured_duration = 1;
 const bear::universe::time_type rp::cart::s_fire_duration = 0.5;
+#if defined( __ANDROID__ )
+const bear::universe::time_type rp::cart::s_smoke_delay = 0.60;
+#else
 const bear::universe::time_type rp::cart::s_smoke_delay = 0.15;
+#endif
+
 unsigned int rp::cart::s_score = 0;
 const double rp::cart::s_min_cannon_angle = -0.25;
 const double rp::cart::s_max_cannon_angle = 1.7;
@@ -2632,7 +2637,11 @@ void rp::cart::create_rocket() const
   bear::rocket* main_rocket = new bear::rocket();
 
   main_rocket->set_size( 10, 10 );
+#if defined( __ANDROID__ )
+  main_rocket->set_explosion_rocket_count( 5, 10 );
+#else
   main_rocket->set_explosion_rocket_count( 10, 20 );
+#endif
   main_rocket->set_trace( 0.25, get_random_rocket_color(), 1 );
   main_rocket->set_explosion_date( 0.5, 0.75 );
   main_rocket->set_kill_when_leaving( true );
@@ -2672,7 +2681,12 @@ bear::rocket* rp::cart::create_small_rocket() const
 
   r->set_size( 5, 5 );
   r->set_trace( 0.2, get_random_rocket_color(), 1 );
+
+#if defined( __ANDROID__ )
+  r->set_explosion_date( 0.9, 1 );
+#else
   r->set_explosion_date( 0.9, 1.5 );
+#endif
 
   return r;
 } // cart::create_small_rocket()
