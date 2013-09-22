@@ -1,2 +1,4 @@
 controllers: 0 0 140 98
 buy: 141 0 140 98
+check: 282 0 21 21
+cross: 304 0 21 21
