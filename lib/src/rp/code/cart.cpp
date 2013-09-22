@@ -2081,8 +2081,10 @@ bool rp::cart::finger_action( const bear::input::finger_event& event )
       return true;
     }
 
-  // if cosinus of the direction of the movement is lower than 4 pi / 9
-  if ( std::abs( delta.x / length ) < 0.17 )
+  const double jump_min_cos_angle
+    ( std::cos( boost::math::constants::pi<double>() / 3 ) );
+
+  if ( std::abs( delta.x / length ) < jump_min_cos_angle )
     {
       if ( delta.y < 0 )
         input_handle_crouch();
