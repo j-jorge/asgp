@@ -385,7 +385,12 @@ void rp::util::apply_random_smoke_effect( bear::engine::base_item& item )
   init_color.set(1,1,1,0.8 + 0.2 * rand() / RAND_MAX);
   end_color.set(1,1,1,0.8 * rand() / RAND_MAX);
   effect->set_color( init_color, end_color );
+
+#if defined( __ANDROID__ )
+  effect->set_duration( 1 );
+#else
   effect->set_duration( 2 );
+#endif
 
   effect->set_item( &item, true );
 
