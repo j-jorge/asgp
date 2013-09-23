@@ -12,6 +12,7 @@
  * \author Sebastien Angibaud
  */
 #include "rp/cart.hpp"
+
 #include "rp/attractable_item.hpp"
 #include "rp/balloon.hpp"
 #include "rp/decorative_balloon.hpp"
@@ -1410,7 +1411,8 @@ void rp::cart::clear_balloons()
 void rp::cart::give_force_movement()
 { 
   // give internal force
-  bear::universe::force_type force(m_ground_force);
+  bear::universe::force_type force
+    ( m_ground_force * (1 + 2 * std::sin( get_system_angle() ) ) );
 
   if ( get_current_action_name() == "crouch" )
     force *= 2;
@@ -1421,7 +1423,8 @@ void rp::cart::give_force_movement()
     add_internal_force(force*m_force_factor);
   
   // check minimal speed 
-  bear::universe::coordinate_type min_length(s_min_speed_length);
+  bear::universe::coordinate_type min_length( s_min_speed_length );
+  
   if ( get_current_action_name() == "crouch" )
     min_length *= 2;
 
