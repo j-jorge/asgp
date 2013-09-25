@@ -110,7 +110,12 @@ void rp::explosion::progress( bear::universe::time_type elapsed_time )
     for ( unsigned int i = 0; i != nb_new_explosions; ++i ) 
       {
         create_explosion();
-        create_smoke();
+#ifdef __ANDROID__
+        if ( i % 2 == 0 )
+          create_smoke();
+#else
+          create_smoke();
+#endif
       }
 } // explosion::progress()
 
