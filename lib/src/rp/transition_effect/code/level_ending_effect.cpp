@@ -1658,6 +1658,6 @@ void rp::level_ending_effect::set_best_score( unsigned int score )
   oss << rp_gettext("World record: ") << score;
 
   m_world_record.create
-    ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt"),
+    ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt", 20),
       oss.str() );
 } // level_ending_effect::get_best_score()
