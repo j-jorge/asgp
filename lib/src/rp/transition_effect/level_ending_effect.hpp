@@ -27,6 +27,8 @@
 
 #include <claw/tween/single_tweener.hpp>
 
+#include <boost/thread/mutex.hpp>
+
 namespace rp
 {
   class cart;
@@ -43,6 +45,52 @@ namespace rp
     typedef std::list<bear::visual::scene_element> scene_element_list;
 
   private:
+    /**
+     * \brief The score_request class is passed to the thread that send
+     *        requests to the score server in order to asynchronously retrieve
+     *        the scores.
+     *
+     * If the owner of the score_request does not need the score, it can call
+     * the disable() method to cancel the request. All copies of the instances
+     * will then be disabled.
+     *
+     * \author Julien Jorge
+     */
+    class score_request
+    {
+    public:
+      /** \brief The type of the function to call when the score is ready. */
+      typedef boost::function<void (unsigned int)> callback_type;
+
+    public:
+      score_request();
+      score_request( callback_type c, std::string level_name );
+      score_request( const score_request& that );
+
+      std::string get_level_name() const;
+      void disable();
+
+      void operator()();
+      score_request& operator=( score_request that );
+
+    private:
+      void call_callback( unsigned int c );
+
+    private:
+      /** \brief The function to call when the score is set. */
+      callback_type m_callback;
+
+      /** \brief The file name of the level for which we want the score. */
+      std::string m_level_name;
+
+      /** \brief Tells if the score must be passed to the callback. */
+      boost::shared_ptr<bool> m_is_active;
+
+      /** \brief The mutex used to restrict the access to m_is_active. */
+      boost::shared_ptr<boost::mutex> m_shared_mutex;
+
+    }; // class score_request
+
     /** \brief A line of points displayed on the screen. */
     class score_line
     {
@@ -205,6 +253,9 @@ namespace rp
     void pop_level();
     void add_button_component();
 
+    void get_best_score();
+    void set_best_score( unsigned int );
+
     // not implemented
     level_ending_effect& operator=( const level_ending_effect& that );
 
@@ -220,6 +271,9 @@ namespace rp
 
     /** \brief The points, as a text. */
     bear::visual::writing m_points_text;
+
+    /** \brief The best score for the level, worldwide. */
+    bear::visual::writing m_world_record;
 
     /** \brief The sprite of the medal picture. */
     bear::visual::sprite m_medal_sprite;
@@ -302,6 +356,10 @@ namespace rp
 
     /** \brief The delay to wait before merging the lines. */
     bear::universe::time_type m_merge_delay;
+
+    /** \brief The function object that request the best score of the current
+        level to our stats server. */
+    score_request m_score_request;
 
     /** \brief How many points are given per second. */
     static const unsigned int s_points_per_second;

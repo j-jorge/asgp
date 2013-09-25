@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Andy's Super Great Park\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-06-14 23:36+0200\n"
-"PO-Revision-Date: 2013-06-14 23:40+0100\n"
+"POT-Creation-Date: 2013-01-14 10:33+0100\n"
+"PO-Revision-Date: 2013-01-13 09:59+0100\n"
 "Last-Translator: Julien Jorge <julien.jorge@gamned.org>\n"
 "Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
 
 #: ../../../data/level/level_selection.lvl
 msgid "1"
@@ -60,7 +60,7 @@ msgstr "Graphismes"
 msgid "BONUS"
 msgstr "BONUS"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:651
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:808
 msgid "Balloons"
 msgstr "Ballons"
 
@@ -84,11 +84,11 @@ msgstr "La grande bleue "
 msgid "Black Gold"
 msgstr "L'or noir"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:915
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1072
 msgid "Bonus"
 msgstr "Bonus"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:671
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:828
 msgid "Burst balloons"
 msgstr "Ballons éclatés"
 
@@ -180,6 +180,10 @@ msgstr "Guillaume Martin"
 msgid "Hang on Though"
 msgstr "Accroche-toi"
 
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:896
+msgid "Health bonus"
+msgstr "Bonus de vie"
+
 #: ../../../data/level/credits.lvl
 msgid "HerbertBoland"
 msgstr "HerbertBoland"
@@ -214,7 +218,7 @@ msgstr ""
 "Conception\n"
 "des niveaux"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:632
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:789
 msgid "Level score"
 msgstr "Score du niveau"
 
@@ -242,11 +246,11 @@ msgstr "Marine"
 msgid "Mart1001"
 msgstr "Mart1001"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:715
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:872
 msgid "Missed cannonballs"
 msgstr "Boulets perdus"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:693
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:850
 msgid "Missed plungers"
 msgstr "Ventouses perdues"
 
@@ -270,7 +274,7 @@ msgstr "Une dernière danse"
 msgid "Only Five Balloons"
 msgstr "Seulement cinq ballons"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:936
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1093
 msgid "Penalties"
 msgstr "Pénalités"
 
@@ -359,9 +363,8 @@ msgid "Thanks to freesound.org users"
 msgstr "Contributeurs de freesound.org"
 
 #: ../../../data/level/level_selection.lvl
-#| msgid "The Appache Village"
-msgid "The Apache Village"
-msgstr "Le village apache"
+msgid "The Appache Village"
+msgstr "Le village appache"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Curse"
@@ -419,7 +422,7 @@ msgstr "Thibault Jaouen"
 msgid "Through the Starfield"
 msgstr "À travers les étoiles"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:764
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:921
 msgid "Time bonus"
 msgstr "Bonus de temps"
 
@@ -427,8 +430,8 @@ msgstr "Bonus de temps"
 msgid "Tomlija"
 msgstr "Tomlija"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:322
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:425
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:477
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:582
 msgid "Total score "
 msgstr "Score total "
 
@@ -451,6 +454,10 @@ msgstr "William David"
 #: ../../../data/level/level_selection.lvl
 msgid "Witch Hunt"
 msgstr "Chasse aux sorcières"
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1649
+msgid "World record: "
+msgstr "Record mondial : "
 
 #: ../../../data/model/balloon.mdl
 msgid "animation/balloon-blast.canim"
@@ -1393,6 +1400,10 @@ msgstr ""
 msgid "gfx/explosion/explosion.png"
 msgstr ""
 
+#: ../../../data/animation/i18n/es/zeppelin/screen/more-fun.anim
+msgid "gfx/i18n/es/zeppelin/zeppelin.png"
+msgstr ""
+
 #: ../../../data/animation/i18n/fr/zeppelin/screen/more-fun.anim
 msgid "gfx/i18n/fr/zeppelin/zeppelin.png"
 msgstr ""
@@ -2221,7 +2232,7 @@ msgid "gfx/space/space-6.png"
 msgstr ""
 
 #: ../../../lib/src/rp/code/add_ingame_layers.cpp:63
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:347
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:502
 #: ../../../data/model/bonus.mdl
 msgid "gfx/status/bonus.png"
 msgstr "gfx/i18n/fr/status/bonus.png"
@@ -2589,10 +2600,6 @@ msgstr ""
 #: ../../../data/animation/zeppelin/screen/more-fun.anim
 msgid "gfx/zeppelin/zeppelin.png"
 msgstr ""
-
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:739
-msgid "health bonus"
-msgstr "Bonus de vie"
 
 #: ../../../lib/src/rp/layer/status/code/time_component.cpp:74
 msgid "s"
