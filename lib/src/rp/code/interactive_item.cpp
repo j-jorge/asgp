@@ -178,13 +178,13 @@ void rp::interactive_item::progress( bear::universe::time_type elapsed_time )
 void rp::interactive_item::get_visual
 ( std::list<bear::engine::scene_visual>& visuals ) const
 {
-  bool visible(false);
+  bool visible(true);
 
   if ( m_item != handle_type(NULL) )
     {
       entity* e = dynamic_cast<entity*>( m_item.get() );
       if ( e != NULL )
-        visible = ! e->get_passive();
+        visible = !e->get_passive();
     }
 
   if ( visible )
