@@ -18,6 +18,7 @@
 #include "rp/rp_gettext.hpp"
 #include "rp/cart.hpp"
 #include "rp/util.hpp"
+#include "rp/version.hpp"
 
 #include "engine/game.hpp"
 #include "engine/level.hpp"
@@ -32,9 +33,160 @@
 #include "universe/forced_movement/forced_goto.hpp"
 
 #include <boost/bind.hpp>
+#include <boost/thread/thread.hpp>
+
+#include <claw/socket_stream.hpp>
+#include <claw/string_algorithm.hpp>
 #include <claw/tween/easing/easing_linear.hpp>
 
 #include <sstream>
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Constructs a new instance that won't do anything.
+ */
+rp::level_ending_effect::score_request::score_request()
+  : m_is_active( new bool(true) ), m_shared_mutex( new boost::mutex )
+{
+
+} // level_ending_effect::score_request::score_request()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Constructs a new instance with a given callback function.
+ * \param c The function to call when the score is ready.
+ * \param level_name The file name of the level for which we want the score.
+ */
+rp::level_ending_effect::score_request::score_request
+( callback_type c, std::string level_name )
+  : m_callback( c ), m_level_name( level_name ),
+    m_is_active( new bool(true) ), m_shared_mutex( new boost::mutex )
+{
+
+} // level_ending_effect::score_request::score_request()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Constructs a new instance by copying another instance.
+ * \param that The instance to copy.
+ */
+rp::level_ending_effect::score_request::score_request
+( const score_request& that )
+  : m_callback( that.m_callback ), m_level_name( that.m_level_name ),
+    m_is_active( that.m_is_active ), m_shared_mutex( that.m_shared_mutex )
+{
+
+} // level_ending_effect::score_request::score_request()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Returns the name of the level for which we request the score.
+ */
+std::string rp::level_ending_effect::score_request::get_level_name() const
+{
+  return m_level_name;
+} // level_ending_effect::score_request::get_level_name()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tells to not call the callback when the score is ready.
+ */
+void rp::level_ending_effect::score_request::disable()
+{
+  boost::mutex::scoped_lock lock(*m_shared_mutex);
+
+  *m_is_active = false;
+} // level_ending_effect::score_request::disable()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Retrieves the score from the server and call the callback.
+ */
+void rp::level_ending_effect::score_request::operator()()
+{
+  const std::string server( "www.stuff-o-matic.com" );
+  const int port( 80 );
+
+  claw::net::socket_stream server_connection( "www.stuff-o-matic.com", port );
+
+  if ( !server_connection )
+    {
+#ifdef _DEBUG
+      claw::logger << claw::log_verbose << "Cannot connect to " << server
+                   << " on port " << port << "." << std::endl;
+#endif
+      return;
+    }
+
+  const std::string page( "/asgp/stats/best_score.php?level=" + m_level_name );
+
+  std::ostringstream request;
+  request << "GET " << page << " HTTP/1.1\n"
+          << "Host: www.stuff-o-matic.com\n"
+          << "User-Agent: " << RP_VERSION_STRING << "\n"
+          << "Connection: Close\n"
+          << '\n';
+
+  server_connection << request.str() << std::flush;
+
+  std::string protocol;
+  int code;
+  std::string line;
+
+  if ( server_connection >> protocol >> code )
+    if ( claw::text::getline( server_connection, line ) )
+      {
+#ifdef _DEBUG
+        claw::logger << claw::log_verbose <<  "Stats server response: " << code
+                     << ' ' << line << std::endl;
+#endif
+        if ( code == 200 /* OK */ )
+          {
+            // Find the first empty line that separate the header and the body.
+            while ( !line.empty() )
+              claw::text::getline( server_connection, line );
+
+            // The body is the score alone
+            unsigned int score;
+            if ( server_connection >> score )
+              call_callback( score );
+          }
+      }
+} // level_ending_effect::score_request::operator()()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Calls the callback with a given value.
+ * \param s The value to pass to the callback.
+ */
+void rp::level_ending_effect::score_request::call_callback( unsigned int c )
+{
+  boost::mutex::scoped_lock lock(*m_shared_mutex);
+
+  if ( *m_is_active )
+    m_callback( c );
+} // level_ending_effect::score_request::call_callback()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Assigns another score request to this one.
+ * \param that The instance to copy.
+ */
+rp::level_ending_effect::score_request&
+rp::level_ending_effect::score_request::operator=( score_request that )
+{
+  boost::mutex::scoped_lock lock(*m_shared_mutex);
+
+  m_callback = that.m_callback;
+  m_level_name = that.m_level_name;
+  m_is_active = that.m_is_active;
+  m_shared_mutex = that.m_shared_mutex;
+
+  return *this;
+} // level_ending_effect::score_request::operator=()
+
+
+
 
 /*----------------------------------------------------------------------------*/
 const bear::visual::coordinate_type
@@ -279,7 +431,8 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
     m_finished(false), m_medal(0), m_rectangle_opacity(0), 
     m_decorative_medal(NULL), m_pop_level(false), m_active_component(false),
     m_in_fade_out(false), m_applause_sample(NULL), m_update_function(NULL),
-    m_flash_opacity(0), m_play_tick(false)
+    m_flash_opacity(0), m_play_tick(false),
+    m_score_request( that.m_score_request )
 {
 
 } // level_ending_effect::level_ending_effect()
@@ -290,6 +443,8 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
  */
 rp::level_ending_effect::~level_ending_effect()
 {
+  m_score_request.disable();
+
   delete m_applause_sample;
 } // level_ending_effect::~level_ending_effect()
  
@@ -324,10 +479,10 @@ void rp::level_ending_effect::build()
   std::ostringstream oss;
   oss << rp_gettext("Total score ") << game_variables::get_score();
   m_points_text.create
-    (get_level_globals().get_font("font/fontopo/fontopo.fnt",50), oss.str());
+    (get_level_globals().get_font("font/fontopo/fontopo.fnt", 50), oss.str());
 
   const bear::visual::font level_name_font
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt",50) );
+    ( get_level_globals().get_font("font/fontopo/fontopo.fnt", 50) );
 
   m_level_name.create
     ( level_name_font, util::get_level_name(),
@@ -368,6 +523,8 @@ void rp::level_ending_effect::build()
 
   m_play_tick = true;
   m_update_function = &level_ending_effect::update_positive_lines;
+
+  get_best_score();
 } // level_ending_effect::build()
 
 /*----------------------------------------------------------------------------*/
@@ -427,7 +584,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
   std::ostringstream oss;
   oss << rp_gettext("Total score ") << game_variables::get_score();
   m_points_text.create
-    (get_level_globals().get_font("font/fontopo/fontopo.fnt",50), oss.str());
+    (get_level_globals().get_font("font/fontopo/fontopo.fnt", 50), oss.str());
 
   if ( ! game_variables::is_boss_level() )
     update_medal();
@@ -628,7 +785,7 @@ void rp::level_ending_effect::fill_points()
     return;
 
   const bear::visual::font f
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt",50) );
+    ( get_level_globals().get_font("font/fontopo/fontopo.fnt", 50) );
 
   give_level_points(f);
 
@@ -763,7 +920,7 @@ void rp::level_ending_effect::give_cart_elements_points
 
   m_positive_points.push_back
     ( score_line
-      ( f, rp_gettext("health bonus"), points,
+      ( f, rp_gettext("Health bonus"), points,
         get_level_globals().auto_sprite( "gfx/status/bonus.png", "health" ) ) );
 } // level_ending_effect::give_cart_elements_points()
 
@@ -1082,7 +1239,7 @@ void rp::level_ending_effect::create_persistent_line
     points += it->get_total_points();
 
   score_line result
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt",50),
+    ( get_level_globals().get_font("font/fontopo/fontopo.fnt", 50),
       label, points,
       get_level_globals().auto_sprite( "gfx/status/bonus.png", icon_name ) );
 
@@ -1245,10 +1402,16 @@ void rp::level_ending_effect::render_score( scene_element_list& e) const
     ( bear::universe::position_type(0, 0), get_layer().get_size() );
   const bear::universe::position_type pos = util::get_medal_position( rect );
 
+  double factor = 1;
+  if ( m_points_text.get_width() > get_layer().get_size().x / 2 )
+    factor = get_layer().get_size().x / 2.0 / m_points_text.get_width();
+
   bear::visual::scene_writing points
-    ( ( get_layer().get_size().x - m_points_text.get_width() ) / 2, 
-      pos.y - m_points_text.get_height() / 2, m_points_text );
+    ( ( get_layer().get_size().x - factor * m_points_text.get_width() ) / 2, 
+      pos.y - factor * m_points_text.get_height() / 2, m_points_text );
+  
   points.set_shadow( 5, -5 );
+  points.set_scale_factor(factor, factor);
 
   const bear::visual::scene_sprite sp
     ( points.get_position().x + points.get_bounding_box().width()
@@ -1260,6 +1423,15 @@ void rp::level_ending_effect::render_score( scene_element_list& e) const
 
   e.push_back( sp );
   e.push_back( points );
+
+  bear::visual::scene_writing world_record
+    ( points.get_position().x + m_points_text.get_width() * factor
+      - m_world_record.get_width(),
+      points.get_position().y - m_world_record.get_height() - 5,
+      m_world_record );
+  world_record.set_shadow( 3, -3 );
+
+  e.push_back( world_record );
 } // level_ending_effect::render_score()
 
 /*----------------------------------------------------------------------------*/
@@ -1484,3 +1656,32 @@ void rp::level_ending_effect::add_button_component()
   if ( game_variables::is_boss_level() )
     m_button->set_visible(false);
 } // level_ending_effect::add_button_component()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Retrieve the best score of the level from our stats server.
+ */
+void rp::level_ending_effect::get_best_score()
+{
+  m_score_request =
+    score_request
+    ( boost::bind( &level_ending_effect::set_best_score, this, _1 ),
+      get_level().get_filename() );
+
+  boost::thread t( m_score_request );
+} // level_ending_effect::get_best_score()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sets the best score of the current level.
+ * \param score The best score.
+ */
+void rp::level_ending_effect::set_best_score( unsigned int score )
+{
+  std::ostringstream oss;
+  oss << rp_gettext("World record: ") << score;
+
+  m_world_record.create
+    ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt", 20),
+      oss.str() );
+} // level_ending_effect::get_best_score()

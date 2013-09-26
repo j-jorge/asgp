@@ -34,6 +34,15 @@
 	  game is unlocked by entering a valid key in the form of the level
 	  selection screen.
 
+2013-01-14 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.5
+
+	* Adds the Spanish and Portuguese translations.
+	* The world record of each level is displayed at the end of the
+	level.
+	* The extra levels are displayed by default.
+
 2013-01-01 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.4

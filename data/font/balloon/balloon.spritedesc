@@ -1,6 +1,10 @@
 sprite_sheet "balloon-1" 512 x 512
 
 img "balloon.xcf.bz2"
+"V" autosize * 0.25 with img
+  "V"
+  ;
+
 "U" autosize * 0.25 with img
   "U"
   ;
@@ -23,6 +27,14 @@ img "balloon.xcf.bz2"
 
 "P" autosize * 0.25 with img
   "P"
+  ;
+
+"๕" autosize * 0.25 with img
+  "รต"
+  ;
+
+"ี" autosize * 0.25 with img
+  "ร•"
   ;
 
 "O" autosize * 0.25 with img
@@ -53,6 +65,14 @@ img "balloon.xcf.bz2"
   "B"
   ;
 
+"แ" autosize * 0.25 with img
+  "รก"
+  ;
+
+"ม" autosize * 0.25 with img
+  "ร"
+  ;
+
 "A" autosize * 0.25 with img
   "A"
   ;
@@ -77,6 +97,9 @@ img "balloon.xcf.bz2"
   "5"
   ;
 
+sprite_sheet "balloon-2" 512 x 512
+
+img "balloon.xcf.bz2"
 "4" autosize * 0.25 with img
   "4"
   ;
@@ -97,11 +120,12 @@ img "balloon.xcf.bz2"
   "0"
   ;
 
-sprite_sheet "balloon-2" 512 x 512
-
-img "balloon.xcf.bz2"
 "/" autosize * 0.25 with img
   "/"
+  ;
+
+"ก" autosize * 0.25 with img
+  "ยก"
   ;
 
 "!" autosize * 0.25 with img

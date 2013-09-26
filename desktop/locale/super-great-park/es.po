@@ -1,17 +1,11 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-01-14 10:33+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Julien Jorge <julien.jorge@gamned.org>\n"
+"Language-Team: \n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +33,7 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "A Field of Lollipops"
-msgstr ""
+msgstr "Un campo de piruletas"
 
 #: ../../../data/level/credits.lvl
 msgid "AGFX"
@@ -51,25 +45,27 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Aquatic Ballet"
-msgstr ""
+msgstr "Ballet acuático"
 
 #: ../../../data/level/credits.lvl
 msgid "Art"
-msgstr ""
+msgstr "Arte"
 
 #: ../../../data/level/level_selection.lvl
 msgid "BONUS"
-msgstr ""
+msgstr "EXTRA"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:808
 msgid "Balloons"
-msgstr ""
+msgstr "Globos"
 
 #: ../../../lib/src/rp/transition_effect/code/level_starting_effect.cpp:332
 msgid ""
 "Balloons\n"
 "to go!"
 msgstr ""
+"¡Globos\n"
+"para ir!"
 
 #: ../../../data/level/credits.lvl
 msgid "Benboncan"
@@ -77,19 +73,19 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Big Blue"
-msgstr ""
+msgstr "Gran azul"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Black Gold"
-msgstr ""
+msgstr "Oro negro"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1072
 msgid "Bonus"
-msgstr ""
+msgstr "Bonus"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:828
 msgid "Burst balloons"
-msgstr ""
+msgstr "Globos explotados"
 
 #: ../../../data/level/credits.lvl
 msgid "CGEffex"
@@ -101,19 +97,19 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Cactus Mountains"
-msgstr ""
+msgstr "Montañas Cactus"
 
 #: ../../../data/level/credits.lvl
 msgid "Character"
-msgstr ""
+msgstr "Personajes"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Cheyenne Mountains"
-msgstr ""
+msgstr "Montañas Cheyenne"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Choose Your Destiny"
-msgstr ""
+msgstr "Elige tu destino"
 
 #: ../../../data/level/credits.lvl
 msgid "Christophe Houlier"
@@ -121,19 +117,19 @@ msgstr ""
 
 #: ../../../data/level/credits.lvl
 msgid "Dad and Mum"
-msgstr ""
+msgstr "Papá y mamá"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Delights in Paris"
-msgstr ""
+msgstr "Delicias en París"
 
 #: ../../../data/level/credits.lvl
 msgid "Design"
-msgstr ""
+msgstr "Diseño"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Eclipse Day"
-msgstr ""
+msgstr "Día de eclipse"
 
 #: ../../../data/level/credits.lvl
 msgid "FatLane"
@@ -141,7 +137,7 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Fighting in the Void"
-msgstr ""
+msgstr "Batalla en el vacío"
 
 #: ../../../data/level/credits.lvl
 msgid "Florian Massuyeau"
@@ -153,23 +149,23 @@ msgstr ""
 
 #: ../../../data/level/credits.lvl
 msgid "Friends"
-msgstr ""
+msgstr "Amigos"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Frightening Sharks"
-msgstr ""
+msgstr "Tiburones terroríficos"
 
 #: ../../../data/level/credits.lvl
 msgid "Game concept"
-msgstr ""
+msgstr "Concepto de juego"
 
 #: ../../../data/level/4/level-5.lvl
 msgid "Get ready to jump!"
-msgstr ""
+msgstr "¡Prepárate para saltar!"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Good Luck!"
-msgstr ""
+msgstr "¡Buena suerte!"
 
 #: ../../../data/level/credits.lvl
 msgid "Guillaume Martin"
@@ -177,11 +173,11 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Hang on Though"
-msgstr ""
+msgstr "¡Resiste!"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:896
 msgid "Health bonus"
-msgstr ""
+msgstr "Salud extra"
 
 #: ../../../data/level/credits.lvl
 msgid "HerbertBoland"
@@ -193,11 +189,11 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Hungry Sharks"
-msgstr ""
+msgstr "Tiburones hambrientos"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Ice Cream Wheel"
-msgstr ""
+msgstr "Rueda de helado"
 
 #: ../../../data/level/credits.lvl
 msgid "Julien Jorge"
@@ -213,19 +209,19 @@ msgstr ""
 
 #: ../../../data/level/credits.lvl
 msgid "Level Design"
-msgstr ""
+msgstr "Diseño de niveles"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:789
 msgid "Level score"
-msgstr ""
+msgstr "Puntuación"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Like a Wild Horse"
-msgstr ""
+msgstr "Como un caballo salvaje"
 
 #: ../../../data/level/start.lvl
 msgid "Loading..."
-msgstr ""
+msgstr "Cargando..."
 
 #: ../../../data/level/credits.lvl
 msgid "Luftrum"
@@ -233,7 +229,7 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Marbles and Candies"
-msgstr ""
+msgstr "Canicas y caramelos"
 
 #: ../../../data/level/credits.lvl
 msgid "Marine"
@@ -245,19 +241,19 @@ msgstr ""
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:872
 msgid "Missed cannonballs"
-msgstr ""
+msgstr "Balas de cañón perdidas"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:850
 msgid "Missed plungers"
-msgstr ""
+msgstr "Desatascadores perdidos"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Morbid Journey"
-msgstr ""
+msgstr "Viaje macabro"
 
 #: ../../../data/level/credits.lvl
 msgid "Music"
-msgstr ""
+msgstr "Música"
 
 #: ../../../data/level/credits.lvl
 msgid "NoiseCollector"
@@ -265,23 +261,23 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "One Last Dance"
-msgstr ""
+msgstr "Un último baile"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Only Five Balloons"
-msgstr ""
+msgstr "Solo cinco globos"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1093
 msgid "Penalties"
-msgstr ""
+msgstr "Penalizaciones"
 
 #: ../../../data/level/credits.lvl
 msgid "Production"
-msgstr ""
+msgstr "Producción"
 
 #: ../../../data/level/credits.lvl
 msgid "Programming"
-msgstr ""
+msgstr "Programación"
 
 #: ../../../data/level/credits.lvl
 msgid "Pullover"
@@ -289,7 +285,7 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Put Into Orbit"
-msgstr ""
+msgstr "Puesta en órbita"
 
 #: ../../../data/level/credits.lvl
 msgid "Raphaël Sautron"
@@ -301,19 +297,19 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Scuba Fighting"
-msgstr ""
+msgstr "Pelea acuática"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Sea of Tranquility"
-msgstr ""
+msgstr "Mar de tranquilidad"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Shooting Stars"
-msgstr ""
+msgstr "Estrellas fugaces"
 
 #: ../../../data/level/credits.lvl
 msgid "Sound"
-msgstr ""
+msgstr "Sonido"
 
 #: ../../../data/level/credits.lvl
 msgid "SoundCollectah"
@@ -321,7 +317,7 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Space Walk"
-msgstr ""
+msgstr "Camino espacial"
 
 #: ../../../data/level/credits.lvl
 msgid "Sparrer"
@@ -329,19 +325,19 @@ msgstr ""
 
 #: ../../../data/level/credits.lvl
 msgid "Special Thanks"
-msgstr ""
+msgstr "Agradecimientos"
 
 #: ../../../data/level/credits.lvl
 msgid "Story Line"
-msgstr ""
+msgstr "Historia"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Surfers Rule"
-msgstr ""
+msgstr "Gobierno de surferos"
 
 #: ../../../data/level/level_selection.lvl
 msgid "Sweet Brawl"
-msgstr ""
+msgstr "Pelea dulce"
 
 #: ../../../data/level/credits.lvl
 msgid "Sébastien Angibaud"
@@ -349,67 +345,67 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Tangled Tantacles"
-msgstr ""
+msgstr "Tentáculos enredados"
 
 #: ../../../data/level/credits.lvl
 msgid "Thank you for playing"
-msgstr ""
+msgstr "Gracias por jugar"
 
 #: ../../../data/level/credits.lvl
 msgid "Thanks to freesound.org users"
-msgstr ""
+msgstr "Gracias a freesound.org"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Appache Village"
-msgstr ""
+msgstr "La villa apache"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Curse"
-msgstr ""
+msgstr "La maldición"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Dancing Palms"
-msgstr ""
+msgstr "Las palmeras bailarinas"
 
 #: ../../../data/level/5/level-8-transition.lvl
 msgid "The End"
-msgstr ""
+msgstr "Fin"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Funerail"
-msgstr ""
+msgstr "El funerraíl"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Launch Base"
-msgstr ""
+msgstr "La base de lanzamiento"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Lollipops Garden"
-msgstr ""
+msgstr "El jardín de las piruletas"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Monsters Cemetery"
-msgstr ""
+msgstr "El cementerio de los monstruos"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Path of the Ice"
-msgstr ""
+msgstr "El camino del hielo"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Path of the Masters"
-msgstr ""
+msgstr "El camino de los maestros"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Real Cowboy"
-msgstr ""
+msgstr "El vaquero verdadero"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Rhythm of the Scythes"
-msgstr ""
+msgstr "El ritmo de las guadañas"
 
 #: ../../../data/level/level_selection.lvl
 msgid "The Stagecoach is on Time"
-msgstr ""
+msgstr "La diligencia en hora"
 
 #: ../../../data/level/credits.lvl
 msgid "Thibault Jaouen"
@@ -417,11 +413,11 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Through the Starfield"
-msgstr ""
+msgstr "Por la vía láctea"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:921
 msgid "Time bonus"
-msgstr ""
+msgstr "Tiempo extra"
 
 #: ../../../data/level/credits.lvl
 msgid "Tomlija"
@@ -430,15 +426,15 @@ msgstr ""
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:477
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:582
 msgid "Total score "
-msgstr ""
+msgstr "Puntuación total "
 
 #: ../../../data/level/level_selection.lvl
 msgid "Ultimate Fight"
-msgstr ""
+msgstr "Batalla final"
 
 #: ../../../data/level/credits.lvl
 msgid "Vincent Baillet"
-msgstr ""
+msgstr "Vincent Baillet"
 
 #: ../../../data/level/credits.lvl
 msgid "WIM"
@@ -450,11 +446,11 @@ msgstr ""
 
 #: ../../../data/level/level_selection.lvl
 msgid "Witch Hunt"
-msgstr ""
+msgstr "Caza de brujas"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1649
 msgid "World record: "
-msgstr ""
+msgstr "Récord mundial : "
 
 #: ../../../data/model/balloon.mdl
 msgid "animation/balloon-blast.canim"
@@ -547,7 +543,7 @@ msgstr ""
 #: ../../../data/model/zeppelin/zeppelin-mirror.mdl
 #: ../../../data/model/zeppelin/zeppelin.mdl
 msgid "animation/zeppelin/screen/more-fun.canim"
-msgstr ""
+msgstr "animation/i18n/es/zeppelin/screen/more-fun.canim"
 
 #: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
 #: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
@@ -2232,14 +2228,14 @@ msgstr ""
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:502
 #: ../../../data/model/bonus.mdl
 msgid "gfx/status/bonus.png"
-msgstr ""
+msgstr "gfx/i18n/es/status/bonus.png"
 
 #: ../../../lib/src/rp/layer/code/pause_layer.cpp:271
 #: ../../../lib/src/rp/code/help_button.cpp:40
 #: ../../../lib/src/rp/code/help_button.cpp:53
 #: ../../../data/level/level_selection.lvl ../../../data/level/buy.lvl
 msgid "gfx/status/buttons-2.png"
-msgstr ""
+msgstr "gfx/i18n/es/status/buttons-2.png"
 
 #: ../../../lib/src/rp/layer/code/pause_layer.cpp:159
 #: ../../../lib/src/rp/layer/code/pause_layer.cpp:164
@@ -2260,7 +2256,7 @@ msgstr ""
 #: ../../../data/level/4/level-8-transition.lvl
 #: ../../../data/level/1/level-8-transition.lvl
 msgid "gfx/status/buttons.png"
-msgstr ""
+msgstr "gfx/i18n/es/status/buttons.png"
 
 #: ../../../data/level/level_selection.lvl
 #: ../../../data/level/5/level-8-transition.lvl
@@ -2603,103 +2599,151 @@ msgid "s"
 msgstr ""
 
 msgid "|?"
-msgstr ""
+msgstr "|¿?"
 
 msgid "|Bwa! Ha! Ha! Ha!"
-msgstr ""
+msgstr "|¡Bua! ¡Ja! ¡Ja! ¡Ja!"
 
 msgid "|Come on Brian.|Stop this and come playing!"
-msgstr ""
+msgstr "|Vamos, Brian.|¡Déjalo y ven a jugar!"
 
 msgid "|Cool!"
-msgstr ""
+msgstr "|¡Guay!"
 
 msgid "|Damn Andy! He never likes my ideas!"
-msgstr ""
+msgstr "|¡Maldito Andy! ¡Nunca le gustan mis ideas!"
 
 msgid "|Damn Andy!|You never like my ideas."
-msgstr ""
+msgstr "|¡Maldición, Andy!|Nunca te gustan mis ideas."
 
 msgid "|Dumb name huh?"
-msgstr ""
+msgstr "|Qué nombre más tonto, ¿no?"
 
 msgid "|Far better than this one!"
-msgstr ""
+msgstr "|¡Mucho mejor que este!"
 
 msgid "|Ha! Ha! Ha!"
-msgstr ""
+msgstr "|¡Ja! ¡Ja! ¡Ja!"
 
 msgid "|Ha! Ha! Who's dumb now?"
-msgstr ""
+msgstr "|¡Ja! ¡Ja! ¿Quién es el tonto ahora?"
 
 msgid "|Hey Andy!|Say the name is Fun Park!"
-msgstr ""
+msgstr "|¡Oye, Andy!|¡Di que el nombre es Fun Park!"
 
 msgid "|Hey Brian! Our amusement park is really awesome!"
-msgstr ""
+msgstr "|¡Oye, Brian! ¡Nuestro parque de atracciones es genial!"
 
 msgid "|I will show him! "
-msgstr ""
+msgstr "|¡Se lo demostraré!"
 
 msgid "|In your dreams!"
-msgstr ""
+msgstr "|¡Ni en sueños!"
 
 msgid "|It is because your ideas are stupid!"
-msgstr ""
+msgstr "|¡Es porque tus ideas son muy tontas!"
 
 msgid "|It is too late, Brian!"
-msgstr ""
+msgstr "|¡Demasiado tarde, Brian!"
 
 msgid "|Let's call the park \\\"Fun Park\\\"."
-msgstr ""
+msgstr "|Llamemos al parque \"Fun Park\"."
 
 msgid "|My balloons! It will take days to get them back!"
-msgstr ""
+msgstr "|¡Mis globos! ¡Tardaré días en recuperarlos!"
 
 msgid "|My zeppelins are better than his stupid balloons."
-msgstr ""
+msgstr "|Mis zepelines son mejores que sus globos tontos."
 
 msgid "|Oh yeah? Try to pass this!"
-msgstr ""
+msgstr "|¿Ah, sí? ¡Prueba con esto!"
 
 msgid "|Only if you change the name of the park!"
-msgstr ""
+msgstr "|¡Solo si cambias el nombre del parque!"
 
 msgid "|Pfff."
-msgstr ""
+msgstr "|Pfff."
 
 msgid "|See?"
-msgstr ""
+msgstr "|¿Lo ves?"
 
 msgid "|The name is \\\"Super Great Park\\\"."
-msgstr ""
+msgstr "|El nombre es \"Super Great Park\"."
 
 msgid "|Well, I give up.|I'm going to build my own park!"
-msgstr ""
+msgstr "|Bueno, me rindo.|¡Construiré mi propio parque!"
 
 msgid "|What?"
-msgstr ""
+msgstr "|¿Qué?"
 
 msgid "|Will you stop this?"
-msgstr ""
+msgstr "|¿Vas a parar esto?"
 
 msgid "|Yeah! Shoot the bird Andy!"
-msgstr ""
+msgstr "|¡Sí! ¡Dale al pájaro, Andy!"
 
 msgid "|Yeeheeeee!"
-msgstr ""
+msgstr "|Yujuuuuuuu!"
 
 msgid "|You are ridiculous!"
-msgstr ""
+msgstr "|¡Eres ridículo!"
 
 msgid "|You won't go any further, Andy!"
-msgstr ""
+msgstr "|¡No vas a llegar más lejos, Andy!"
 
 msgid "|You're so stupid..."
-msgstr ""
+msgstr "|Eres tan tonto..."
 
 msgid "|\\\"Fun Park\\\" was a better name!"
-msgstr ""
+msgstr "|¡\"Fun Park\" era un nombre mejor!"
 
 msgid "|\\\"Fun Park\\\"? What a dumb name!"
-msgstr ""
+msgstr "|¿\"Fun Park\"? ¡Qué nombre tan insulso!"
+
+#~ msgid "back"
+#~ msgstr "volver"
+
+#~ msgid "buy now!"
+#~ msgstr "¡Comprar ahora!"
+
+#~ msgid "continue"
+#~ msgstr "continuar"
+
+#~ msgid "controllers"
+#~ msgstr "controles"
+
+#~ msgid "fullscreen"
+#~ msgstr "pantalla completa"
+
+#~ msgid "go"
+#~ msgstr "¡vamos!"
+
+#~ msgid "music"
+#~ msgstr "música"
+
+#~ msgid "new record"
+#~ msgstr "nuevo récord"
+
+#~ msgid "no sound"
+#~ msgstr "sin sonido"
+
+#~ msgid "quit"
+#~ msgstr "salir"
+
+#~ msgid "resume"
+#~ msgstr "continuar"
+
+#~ msgid "settings"
+#~ msgstr "ajustes"
+
+#~ msgid "silence"
+#~ msgstr "silencio"
+
+#~ msgid "skip"
+#~ msgstr "saltar"
+
+#~ msgid "sound"
+#~ msgstr "sonido"
+
+#~ msgid "windowed"
+#~ msgstr "en ventana"

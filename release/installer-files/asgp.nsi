@@ -27,6 +27,17 @@ RequestExecutionLevel user
 
 !define MUI_WELCOMEFINISHPAGE_BITMAP "welcome.bmp" 
 
+;Show all languages, despite user's codepage
+!define MUI_LANGDLL_ALLLANGUAGES
+
+;--------------------------------
+;Language Selection Dialog Settings
+
+;Remember the installer language
+!define MUI_LANGDLL_REGISTRY_ROOT "HKCU" 
+!define MUI_LANGDLL_REGISTRY_KEY "Software\Andy's Super Great Park" 
+!define MUI_LANGDLL_REGISTRY_VALUENAME "Installer Language"
+
 ;--------------------------------
 
 Var StartMenuFolder
@@ -48,10 +59,16 @@ Var StartMenuFolder
 
 !define MUI_FINISHPAGE_SHOWREADME "$INSTDIR\Readme.txt"
 !define MUI_FINISHPAGE_RUN "$INSTDIR\bin\andy-super-great-park.exe"
-!define MUI_FINISHPAGE_RUN_TEXT "Launch the game."
 !insertmacro MUI_PAGE_FINISH
 
+;--------------------------------
+; Languages
 !insertmacro MUI_LANGUAGE "English"
+!insertmacro MUI_LANGUAGE "French"
+!insertmacro MUI_LANGUAGE "Spanish"
+!insertmacro MUI_LANGUAGE "Portuguese"
+
+!insertmacro MUI_RESERVEFILE_LANGDLL
 
 ;--------------------------------
 Section "Install"
@@ -97,6 +114,15 @@ Section "Install"
 SectionEnd ; end of "Install"
 
 ;--------------------------------
+;Installer Functions
+
+Function .onInit
+
+  !insertmacro MUI_LANGDLL_DISPLAY
+
+FunctionEnd
+
+;--------------------------------
 Section -PostInstall
 
   WriteRegStr HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\asgp" "DisplayName" "Andy's Super Great Park (uninstall)"
@@ -107,11 +133,13 @@ Section -PostInstall
 
 SectionEnd
 
-UninstallText "Ready to uninstall Andy's Super Great Park."
+;UninstallText "Ready to uninstall Andy's Super Great Park."
 
 ;--------------------------------
 Section "Uninstall"
   DeleteRegKey HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\asgp"
+  DeleteRegKey /ifempty HKCU "Software\Andy's Super Great Park"
+
   Delete "$INSTDIR\uninst-asgp.exe"
   Delete "$INSTDIR\asgp.ico"
   Delete "$INSTDIR\ReadMe.txt"
@@ -129,3 +157,12 @@ Section "Uninstall"
   RMDir /r "$INSTDIR\bin"
 
 SectionEnd
+
+;--------------------------------
+;Uninstaller Functions
+
+Function un.onInit
+
+  !insertmacro MUI_UNGETLANGUAGE
+  
+FunctionEnd
