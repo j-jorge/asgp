@@ -11047,6 +11047,7 @@
 </field>
 <field name='mouse_over_manager.items'>
 <item_reference value='windowed'/>
+<item_reference value='quit'/>
 </field>
 <field name='mouse_over_manager.sample'>
 <sample path='sound/tick.ogg' loops='1' volume='1'/>
@@ -11096,7 +11097,7 @@
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
-    <item class_name='bear::killer' fixed='false' id='kill-windowed-toggle'>
+    <item class_name='bear::killer' fixed='false' id='kill-android-toggle'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='2099'/>
@@ -11107,6 +11108,8 @@
 <field name='killer.items'>
 <item_reference value='button_background'/>
 <item_reference value='windowed'/>
+<item_reference value='quit'/>
+<item_reference value='trigger_quit'/>
 </field>
 <field name='killer.kill_activator'>
 <bool value='1'/>
@@ -11152,7 +11155,7 @@
 <item_reference value='system-android'/>
 </field>
 <field name='applied_expression.receiver'>
-<item_reference value='kill-windowed-trigger'/>
+<item_reference value='kill-android-trigger'/>
 </field>
 </fields>
     </item><!-- bear::applied_boolean_expression -->
@@ -11185,7 +11188,6 @@
 <field name='mouse_over_manager.items'>
 <item_reference value='back_deco'/>
 <item_reference value='go_deco'/>
-<item_reference value='quit'/>
 <item_reference value='place-1'/>
 <item_reference value='buy'/>
 </field>
@@ -11212,7 +11214,7 @@
 </fields>
     </item><!-- bear::browser_launcher_toggle -->
 
-    <item class_name='bear::trigger' fixed='false' id='kill-windowed-trigger'>
+    <item class_name='bear::trigger' fixed='false' id='kill-android-trigger'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
@@ -11224,7 +11226,7 @@
 <real value='603'/>
 </field>
 <field name='trigger.toggle'>
-<item_reference value='kill-windowed-toggle'/>
+<item_reference value='kill-android-toggle'/>
 </field>
 </fields>
     </item><!-- bear::trigger -->

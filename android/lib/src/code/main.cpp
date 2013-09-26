@@ -17,18 +17,14 @@
 
 #include <SDL/SDL_main.h>
 
-#include <android/log.h>
-
 /*----------------------------------------------------------------------------*/
 int main( int argc, char* argv[] )
 {
-  for ( int i(0); i != argc; ++i )
-    __android_log_print
-      ( ANDROID_LOG_INFO, "ASGP Pre", "arg #%d: %s", i, argv[i] );
-
   rp::game g;
 
   g.run();
+
+  exit(0);
 
   return 0;
 } // main()
