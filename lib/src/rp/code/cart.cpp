@@ -1097,8 +1097,8 @@ void rp::cart::progress_spot( bear::universe::time_type elapsed_time )
       const double a =
         ( get_system_angle() < 0 ? -1.0 : 1.0 )
         * std::min( range, std::abs(get_system_angle() ) );
-      const double x_bound(500);
-      const double y_bound(200);
+      const double x_bound( game_variables::is_boss_level() ? 600 : 500 );
+      const double y_bound( game_variables::is_boss_level() ? 250 : 200 );
 
       if ( a == 0 )
         set_spot_target_position( x_bound, y_bound );

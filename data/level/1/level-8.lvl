@@ -12950,10 +12950,10 @@
 <real value='200'/>
 </field>
 <field name='camera.size.max_height'>
-<real value='1080'/>
+<real value='900'/>
 </field>
 <field name='camera.size.max_width'>
-<real value='1920'/>
+<real value='1600'/>
 </field>
 <field name='camera.size.min_height'>
 <real value='720'/>
