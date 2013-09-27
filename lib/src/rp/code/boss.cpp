@@ -252,7 +252,7 @@ rp::boss::handle_type rp::boss::set_drop_item
          game_variables::is_boss_transition() ) )
     {
       base_item* const c_item = item->clone();
-      c_item->set_z_position(get_z_position() - 1);
+      c_item->set_z_position(get_z_position() - 5);
       
       zeppelin* z = dynamic_cast<zeppelin*>(c_item);
       if ( z != NULL && zeppelin_item != NULL )
