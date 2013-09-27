@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='Surfers Rule' width='18000' height='5000' music='music/aquatic.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -776,7 +776,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -1068,6 +1068,9 @@
 </field>
 <field name='base_item.position.bottom'>
 <real value='2056'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7391'/>
@@ -2053,7 +2056,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -6223,7 +6226,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::straight_slope' fixed='true'>
@@ -7170,9 +7173,6 @@
 <field name='base_item.position.left'>
 <real value='4067'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::cable -->
 
@@ -7256,9 +7256,6 @@
 <field name='base_item.position.left'>
 <real value='4352'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::cable -->
 
@@ -7273,9 +7270,6 @@
 <field name='base_item.position.left'>
 <real value='4472'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -7289,9 +7283,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='4537'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -7568,9 +7559,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='5661'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -7999,9 +7987,6 @@
 <field name='base_item.position.left'>
 <real value='8166'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::cable -->
 
@@ -8053,9 +8038,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='8299'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::cable -->
