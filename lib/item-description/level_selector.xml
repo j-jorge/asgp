@@ -62,4 +62,7 @@
   </fields>  
   <new_default_value name="base_item.size.width">63</new_default_value>
   <new_default_value name="base_item.size.height">63</new_default_value>
+  <new_default_value name="base_item.size.can_move_items">false</new_default_value>
+  <new_default_value name="base_item.size.artificial">true</new_default_value>
+  <new_default_value name="base_item.size.phantom">true</new_default_value>
 </item>

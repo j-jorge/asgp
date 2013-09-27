@@ -58,6 +58,9 @@ rp::level_selector::level_selector()
   m_decorative_level_name(NULL), m_load(false), m_rectangle_opacity(0),
   m_medal_movement(1), m_cursor(NULL)
 {
+  set_artificial( true );
+  set_phantom( true );
+  set_can_move_items( false );
 } // rp::level_selector::level_selector()
 
 
