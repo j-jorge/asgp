@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='' width='18000' height='5000' music='music/music.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
 </items>
@@ -167,7 +167,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::continuous_link_visual' fixed='false'>
@@ -3011,7 +3011,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
 </items>
@@ -3021,7 +3021,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -4044,6 +4044,41 @@
 </fields>
     </item><!-- bear::slope -->
 
+    <item class_name='rp::cart' fixed='false' id='andy'>
+<fields>
+<field name='base_item.elasticity'>
+<real value='0.3'/>
+</field>
+<field name='base_item.mass'>
+<real value='100'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='4231'/>
+</field>
+<field name='base_item.position.left'>
+<real value='768'/>
+</field>
+<field name='base_item.size.height'>
+<real value='33'/>
+</field>
+<field name='base_item.size.width'>
+<real value='67'/>
+</field>
+<field name='item_with_toggle.initial_state'>
+<bool value='1'/>
+</field>
+<field name='item_that_speaks.persistent_balloon'>
+<bool value='1'/>
+</field>
+<field name='cart.cursor'>
+<item_reference value='andy&apos;s cursor'/>
+</field>
+<field name='cart.spot_item'>
+<item_reference value='hot_spot - andy'/>
+</field>
+</fields>
+    </item><!-- rp::cart -->
+
     <item class_name='bear::mouse_over_manager' fixed='false' id='mouse over manager'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -4331,41 +4366,6 @@
 </fields>
     </item><!-- bear::slope -->
 
-    <item class_name='rp::cart' fixed='false' id='andy'>
-<fields>
-<field name='base_item.elasticity'>
-<real value='0.3'/>
-</field>
-<field name='base_item.mass'>
-<real value='100'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='3722'/>
-</field>
-<field name='base_item.position.left'>
-<real value='1026'/>
-</field>
-<field name='base_item.size.height'>
-<real value='33'/>
-</field>
-<field name='base_item.size.width'>
-<real value='67'/>
-</field>
-<field name='item_with_toggle.initial_state'>
-<bool value='1'/>
-</field>
-<field name='item_that_speaks.persistent_balloon'>
-<bool value='1'/>
-</field>
-<field name='cart.cursor'>
-<item_reference value='andy&apos;s cursor'/>
-</field>
-<field name='cart.spot_item'>
-<item_reference value='hot_spot - andy'/>
-</field>
-</fields>
-    </item><!-- rp::cart -->
-
     <item class_name='bear::trigger' fixed='true' id='button on camera 1 trigger'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -4411,6 +4411,44 @@
 </field>
 </fields>
     </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='rp::cart' fixed='false' id='brian'>
+<fields>
+<field name='base_item.elasticity'>
+<real value='0.3'/>
+</field>
+<field name='base_item.mass'>
+<real value='100'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1693'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='5000'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1117'/>
+</field>
+<field name='base_item.size.height'>
+<real value='33'/>
+</field>
+<field name='base_item.size.width'>
+<real value='67'/>
+</field>
+<field name='item_with_toggle.initial_state'>
+<bool value='1'/>
+</field>
+<field name='cart.cursor'>
+<item_reference value='brian&apos;s cursor'/>
+</field>
+<field name='cart.id'>
+<u_integer value='2'/>
+</field>
+<field name='cart.spot_item'>
+<item_reference value='hot_spot - brian'/>
+</field>
+</fields>
+    </item><!-- rp::cart -->
 
     <item class_name='bear::decorative_item' fixed='false' id='skip'>
 <fields>
@@ -4792,44 +4830,6 @@
 </field>
 </fields>
     </item><!-- bear::level_loader_toggle -->
-
-    <item class_name='rp::cart' fixed='false' id='brian'>
-<fields>
-<field name='base_item.elasticity'>
-<real value='0.3'/>
-</field>
-<field name='base_item.mass'>
-<real value='100'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1684'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='5000'/>
-</field>
-<field name='base_item.position.left'>
-<real value='1364'/>
-</field>
-<field name='base_item.size.height'>
-<real value='33'/>
-</field>
-<field name='base_item.size.width'>
-<real value='67'/>
-</field>
-<field name='item_with_toggle.initial_state'>
-<bool value='1'/>
-</field>
-<field name='cart.cursor'>
-<item_reference value='brian&apos;s cursor'/>
-</field>
-<field name='cart.id'>
-<u_integer value='2'/>
-</field>
-<field name='cart.spot_item'>
-<item_reference value='hot_spot - brian'/>
-</field>
-</fields>
-    </item><!-- rp::cart -->
 
     <item class_name='bear::add_script_actor' fixed='true' id='actor - button title camera trigger'>
 <fields>

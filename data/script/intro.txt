@@ -8,16 +8,20 @@
   andy.apply_crouch();
 }
 
-+2.5 {
++3 {
   andy.jump();
 }
 
-+1 {
-  andy.apply_stop_crouch();
++0.5 {
   brian.speak( "|Cool!" );
 }
 
-+2 {
++1 {
+  andy.apply_crouch();
+}
+
++0.7 {
+  andy.apply_stop_crouch();
   andy.speak( "|Hey Brian! Our amusement park is really awesome!" );
 }
 
@@ -87,7 +91,7 @@
   brian.speak( "|Ha! Ha! Who's dumb now?" );
 }
 
-+3 {
++2.5 {
   brian.apply_stop_crouch();
   andy_cursor_trigger_end.activate();
 }
