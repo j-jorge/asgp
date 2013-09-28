@@ -2,86 +2,86 @@
 <model>
 <action name="move" duration="2" auto_next="move">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
 </marks>
 <snapshots>
@@ -152,86 +152,86 @@
 </action>
 <action name="idle" duration="0.1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
 </marks>
 <snapshots>
@@ -260,86 +260,86 @@
 </action>
 <action name="jump" duration="0.15" auto_next="jump">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
 </marks>
 <snapshots>
@@ -368,86 +368,86 @@
 </action>
 <action name="fall" duration="0.1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
 </marks>
 <snapshots>
@@ -476,106 +476,106 @@
 </action>
 <action name="dead" duration="1.5" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
-<mark label="ending_balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_6" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_6" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_7" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_7" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_8" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_8" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_9" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_9" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_10" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_10" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 </marks>
 <snapshots>
@@ -645,88 +645,88 @@
 </action>
 <action name="crouch" duration="0.1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
-<mark label="speed" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="speed" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation_file path='animation/cart/speed.canim' auto_size='true' width='111' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
 </marks>
@@ -757,87 +757,87 @@
 </action>
 <action name="with_tar" duration="1.36" auto_next="move">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation_file path='animation/cart/tar.canim' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
 </marks>
 <snapshots>
@@ -866,106 +866,106 @@
 </action>
 <action name="takeoff" duration="10" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='0' y='0' clip_width='87' clip_height='60' spritepos='cart' auto_size='true' width='87' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="painter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='84' clip_width='41' clip_height='42' spritepos='guy' auto_size='true' width='41' height='42' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="arm" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart/brian.png' x='88' y='0' clip_width='148' clip_height='27' spritepos='arm' auto_size='true' width='148' height='27' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme front" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='88' y='0' clip_width='25' clip_height='44' spritepos='front' auto_size='true' width='25' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme middle" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='0' y='0' clip_width='57' clip_height='44' spritepos='middle' auto_size='true' width='57' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="theme back" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/cart-theme/western.png' x='58' y='0' clip_width='29' clip_height='44' spritepos='back' auto_size='true' width='29' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='94' y='61' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='70' y='61' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='42' y='84' clip_width='26' clip_height='26' spritepos='cannon base' auto_size='true' width='26' height='26' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/brian.png' x='88' y='28' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/brian.png' x='0' y='61' clip_width='93' clip_height='22' spritepos='cannon' auto_size='true' width='93' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
-<mark label="ending_balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_6" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_6" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_7" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_7" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_8" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_8" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_9" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_9" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="ending_balloon_anchor_10" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="ending_balloon_anchor_10" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 </marks>
 <snapshots>

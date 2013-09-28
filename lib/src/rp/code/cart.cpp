@@ -378,7 +378,7 @@ void rp::cart::create_hit_star( bear::engine::base_item& ref ) const
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Create a explosion on the cannon.
+ * \brief Creates an explosion on the cannon.
  */
 void rp::cart::create_cannon_fire()
 {
@@ -386,9 +386,9 @@ void rp::cart::create_cannon_fire()
   
   if ( get_mark_placement("fire", mark_fire) )
     set_global_substitute
-      ("fire", new bear::visual::animation
-       (get_level_globals().get_animation
-        ("animation/fire.canim") ) );
+      ( "fire",
+        new bear::visual::animation
+        ( get_level_globals().get_animation("animation/fire.canim") ) );
 } // cart::create_cannon_fire()
 
 /*----------------------------------------------------------------------------*/
