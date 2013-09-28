@@ -380,7 +380,7 @@ void rp::cart::create_hit_star( bear::engine::base_item& ref ) const
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Create a explosion on the cannon.
+ * \brief Creates an explosion on the cannon.
  */
 void rp::cart::create_cannon_fire()
 {
@@ -388,9 +388,9 @@ void rp::cart::create_cannon_fire()
   
   if ( get_mark_placement("fire", mark_fire) )
     set_global_substitute
-      ("fire", new bear::visual::animation
-       (get_level_globals().get_animation
-        ("animation/fire.canim") ) );
+      ( "fire",
+        new bear::visual::animation
+        ( get_level_globals().get_animation("animation/fire.canim") ) );
 } // cart::create_cannon_fire()
 
 /*----------------------------------------------------------------------------*/
@@ -1412,12 +1412,34 @@ void rp::cart::clear_balloons()
  */
 void rp::cart::give_force_movement()
 { 
+  // Due to the changes on the behavior of the slopes in the engine, we have to
+  // adjust the force en order to maintain the original behavior of the cart.
+  // The coefficients are carefully chosen in order to provide a similar
+  // feedback to the player.
+
+  const double angle( get_system_angle() );
+  double force_factor( 0 );
+
+  if ( angle < 0 )
+    force_factor = 0.875;
+  else if ( angle > 0 )
+    force_factor = 2.8;
+
   // give internal force
   bear::universe::force_type force
-    ( m_ground_force * (1 + 2 * std::sin( get_system_angle() ) ) );
+    ( m_ground_force * (1 + force_factor * std::sin(angle)) );
 
   if ( get_current_action_name() == "crouch" )
-    force *= 2;
+    {
+      double crouch_factor( 1 );
+
+      if ( angle < 0 )
+        crouch_factor = 1 + std::sin(angle) / 1.5;
+      else if ( angle > 0 )
+        crouch_factor = 1 - std::sin(angle);
+
+      force *= 2 * crouch_factor;
+    }
  
   if ( get_speed().x < 0 )
     add_internal_force(8*force*m_force_factor);
