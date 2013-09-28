@@ -1410,9 +1410,22 @@ void rp::cart::clear_balloons()
  */
 void rp::cart::give_force_movement()
 { 
+  // Due to the changes on the behavior of the slopes in the engine, we have to
+  // adjust the force en order to maintain the original behavior of the cart.
+  // The coefficients are carefully chosen in order to provide a similar
+  // feedback to the player.
+
+  const double angle( get_system_angle() );
+  double force_factor( 0 );
+
+  if ( angle < 0 )
+    force_factor = 0.875;
+  else if ( angle > 0 )
+    force_factor = 2.8;
+
   // give internal force
   bear::universe::force_type force
-    ( m_ground_force * (1 + 2 * std::sin( get_system_angle() ) ) );
+    ( m_ground_force * (1 + force_factor * std::sin(angle) );
 
   if ( get_current_action_name() == "crouch" )
     force *= 2;
