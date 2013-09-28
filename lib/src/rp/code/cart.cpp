@@ -1425,10 +1425,19 @@ void rp::cart::give_force_movement()
 
   // give internal force
   bear::universe::force_type force
-    ( m_ground_force * (1 + force_factor * std::sin(angle) );
+    ( m_ground_force * (1 + force_factor * std::sin(angle)) );
 
   if ( get_current_action_name() == "crouch" )
-    force *= 2;
+    {
+      double crouch_factor( 1 );
+
+      if ( angle < 0 )
+        crouch_factor = 1 + std::sin(angle) / 1.5;
+      else if ( angle > 0 )
+        crouch_factor = 1 - std::sin(angle);
+
+      force *= 2 * crouch_factor;
+    }
  
   if ( get_speed().x < 0 )
     add_internal_force(8*force*m_force_factor);
