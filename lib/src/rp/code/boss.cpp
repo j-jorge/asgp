@@ -126,9 +126,6 @@ void rp::boss::on_enters_layer()
   m_move_on_cart = true;
   m_teleportation_gap = bear::universe::position_type(0,0);
   m_interactive_item = NULL;
-  set_global_substitute
-    ("emergency", new bear::visual::animation
-     (get_level_globals().auto_sprite("gfx/boss/boss.png", "emergency box") ) );
 } // rp::boss::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
@@ -496,13 +493,8 @@ void rp::boss::update_interactive_item()
       if ( angle <= 0.2 )
         {
           if ( m_interactive_item == NULL )
-            {
-              create_interactive_item();
-              set_global_substitute
-                ("emergency", new bear::visual::animation
-                 (get_level_globals().get_animation
-                  ("animation/boss/emergency-on.canim") ) );
-            }
+            create_interactive_item();
+
           m_interactive_item->set_center_of_mass
             (get_mark_world_position("button"));
         }
@@ -510,10 +502,6 @@ void rp::boss::update_interactive_item()
         {
           m_interactive_item->kill();
           m_interactive_item = NULL;
-          set_global_substitute
-            ("emergency", new bear::visual::animation
-             ( get_level_globals().auto_sprite
-               ( "gfx/boss/boss.png", "emergency box" ) ) );
         }
     }
 } // boss::update_interactive_item()
@@ -938,6 +926,11 @@ void rp::boss::close_trap_door()
     ("trap door", new bear::visual::animation
      (get_level_globals().get_animation
       ("animation/boss/trap-door-closing.canim") ) );
+
+  set_global_substitute
+    ("emergency", new bear::visual::animation
+     (get_level_globals().get_animation
+      ("animation/boss/emergency-on.canim") ) );
 
   get_level_globals().play_sound
     ( "sound/boss/trap-door-closing.ogg",
