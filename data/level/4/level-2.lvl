@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='Cactus Mountains' width='18000' height='5000' music='music/western.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -172,7 +172,7 @@
 <real value='134'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='311' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -192,7 +192,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='259' clip_width='251' clip_height='126' spritepos='black horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='727' y='259' clip_width='251' clip_height='126' spritepos='black horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -221,7 +221,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='229' y='252' clip_width='96' clip_height='147' spritepos='indian' auto_size='true' width='96' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='902' y='465' clip_width='96' clip_height='147' spritepos='indian' auto_size='true' width='96' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -241,7 +241,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='252' y='259' clip_width='251' clip_height='126' spritepos='brown horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='0' y='625' clip_width='251' clip_height='126' spritepos='brown horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -270,7 +270,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='229' y='252' clip_width='96' clip_height='147' spritepos='indian' auto_size='true' width='96' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='902' y='465' clip_width='96' clip_height='147' spritepos='indian' auto_size='true' width='96' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -301,7 +301,7 @@
 <real value='1703'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='452' y='386' clip_width='42' clip_height='83' spritepos='thief' auto_size='true' width='42' height='83' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='979' y='259' clip_width='42' clip_height='83' spritepos='thief' auto_size='true' width='42' height='83' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -318,7 +318,21 @@
 <real value='1866'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='452' y='386' clip_width='42' clip_height='83' spritepos='thief' auto_size='true' width='42' height='83' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='979' y='259' clip_width='42' clip_height='83' spritepos='thief' auto_size='true' width='42' height='83' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2943'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3445'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/western/western-1.png' x='0' y='625' clip_width='251' clip_height='126' spritepos='brown horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -332,10 +346,27 @@
 <integer value='10'/>
 </field>
 <field name='base_item.position.left'>
-<real value='3681'/>
+<real value='3455'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='136' clip_width='166' clip_height='135' spritepos='' auto_size='true' width='166' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='0' y='465' clip_width='291' clip_height='159' spritepos='' auto_size='true' width='291' height='159' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2971'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='8'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3682'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/western/western-2.png' x='512' y='344' clip_width='140' clip_height='135' spritepos='' auto_size='true' width='140' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -352,7 +383,7 @@
 <real value='3815'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -360,33 +391,16 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2970'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='11'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3816'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='86' y='136' clip_width='50' clip_height='135' spritepos='' auto_size='true' width='50' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::decorative_item' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2970'/>
+<real value='2971'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='10'/>
 </field>
 <field name='base_item.position.left'>
-<real value='3866'/>
+<real value='3820'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='86' y='136' clip_width='50' clip_height='135' spritepos='' auto_size='true' width='50' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='600' y='344' clip_width='47' clip_height='135' spritepos='' auto_size='true' width='47' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.996078' blue_intensity='0'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -394,16 +408,16 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2970'/>
+<real value='2971'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='10'/>
 </field>
 <field name='base_item.position.left'>
-<real value='3916'/>
+<real value='3867'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='86' y='136' clip_width='50' clip_height='135' spritepos='' auto_size='true' width='50' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='792' y='207' clip_width='47' clip_height='135' spritepos='' auto_size='true' width='47' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -411,16 +425,16 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2970'/>
+<real value='2971'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='10'/>
 </field>
 <field name='base_item.position.left'>
-<real value='3966'/>
+<real value='3914'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='86' y='136' clip_width='50' clip_height='135' spritepos='' auto_size='true' width='50' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='594' y='207' clip_width='47' clip_height='135' spritepos='' auto_size='true' width='47' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -428,16 +442,33 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2970'/>
+<real value='2971'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='10'/>
 </field>
 <field name='base_item.position.left'>
-<real value='4016'/>
+<real value='3961'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='86' y='136' clip_width='110' clip_height='135' spritepos='' auto_size='true' width='110' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='792' y='207' clip_width='47' clip_height='135' spritepos='' auto_size='true' width='47' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2971'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4008'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/western/western-2.png' x='600' y='344' clip_width='47' clip_height='135' spritepos='' auto_size='true' width='47' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.996078' blue_intensity='0'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -451,10 +482,27 @@
 <integer value='-5'/>
 </field>
 <field name='base_item.position.left'>
-<real value='4023'/>
+<real value='4009'/>
 </field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/misc/misc.png' x='0' y='0' clip_width='85' clip_height='154' spritepos='plee' auto_size='false' width='42' height='77' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='0.81' green_intensity='0.81' blue_intensity='0.81'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2970'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4054'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/western/western-2.png' x='596' y='344' clip_width='113' clip_height='135' spritepos='' auto_size='true' width='113' height='135' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -471,7 +519,7 @@
 <real value='4861'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='207' clip_width='255' clip_height='199' spritepos='2' auto_size='true' width='255' height='199' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='0' y='344' clip_width='255' clip_height='199' spritepos='2' auto_size='true' width='255' height='199' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -488,7 +536,7 @@
 <real value='5115'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -505,7 +553,7 @@
 <real value='5370'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='256' y='207' clip_width='255' clip_height='190' spritepos='3' auto_size='true' width='255' height='190' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='256' y='344' clip_width='255' clip_height='190' spritepos='3' auto_size='true' width='255' height='190' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -522,7 +570,7 @@
 <real value='6096'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='452' y='386' clip_width='42' clip_height='83' spritepos='thief' auto_size='true' width='42' height='83' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='979' y='259' clip_width='42' clip_height='83' spritepos='thief' auto_size='true' width='42' height='83' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -539,7 +587,7 @@
 <real value='7515'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -556,7 +604,7 @@
 <real value='7649'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -573,7 +621,7 @@
 <real value='8345'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -590,7 +638,7 @@
 <real value='8803'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -607,7 +655,7 @@
 <real value='8966'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -624,7 +672,7 @@
 <real value='11310'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='252' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='769' y='0' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -641,7 +689,7 @@
 <real value='11514'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='false' width='178' height='200' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='311' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='false' width='178' height='200' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -658,7 +706,7 @@
 <real value='11560'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='252' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='769' y='0' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -675,7 +723,7 @@
 <real value='11649'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='229' y='0' clip_width='228' clip_height='251' spritepos='white tipi' auto_size='false' width='178' height='200' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='540' y='0' clip_width='228' clip_height='251' spritepos='white tipi' auto_size='false' width='178' height='200' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -692,7 +740,7 @@
 <real value='11805'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='311' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -709,7 +757,7 @@
 <real value='12916'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -726,7 +774,7 @@
 <real value='13023'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -743,7 +791,7 @@
 <real value='13117'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -760,7 +808,7 @@
 <real value='13235'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='229' y='0' clip_width='228' clip_height='251' spritepos='white tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='540' y='0' clip_width='228' clip_height='251' spritepos='white tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -777,7 +825,7 @@
 <real value='13360'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -794,7 +842,7 @@
 <real value='13468'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -811,7 +859,7 @@
 <real value='13615'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -828,7 +876,7 @@
 <real value='13676'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -845,7 +893,7 @@
 <real value='13990'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -862,7 +910,7 @@
 <real value='-0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='252' y='259' clip_width='251' clip_height='126' spritepos='brown horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='0' y='625' clip_width='251' clip_height='126' spritepos='brown horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -882,7 +930,7 @@
 <real value='-0.75'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='0' clip_width='450' clip_height='159' spritepos='stagecoach red' auto_size='true' width='450' height='159' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='185' y='259' clip_width='450' clip_height='159' spritepos='stagecoach red' auto_size='true' width='450' height='159' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -899,7 +947,7 @@
 <real value='15346'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -916,7 +964,7 @@
 <real value='15513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -933,7 +981,7 @@
 <real value='15645'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -947,7 +995,7 @@
 <real value='15689'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -964,7 +1012,7 @@
 <real value='15839'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -981,7 +1029,7 @@
 <real value='15886'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -998,7 +1046,7 @@
 <real value='15920'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1012,7 +1060,7 @@
 <real value='15944'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1029,7 +1077,7 @@
 <real value='15981'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1046,7 +1094,7 @@
 <real value='15994'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1063,7 +1111,7 @@
 <real value='16037'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1080,7 +1128,7 @@
 <real value='16092'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1097,7 +1145,7 @@
 <real value='16094'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1114,7 +1162,7 @@
 <real value='16104'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1131,7 +1179,7 @@
 <real value='16126'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1148,7 +1196,7 @@
 <real value='16158'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1165,7 +1213,7 @@
 <real value='16160'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1182,7 +1230,7 @@
 <real value='16191'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1196,7 +1244,7 @@
 <real value='16199'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1213,7 +1261,7 @@
 <real value='16219'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1230,7 +1278,7 @@
 <real value='16233'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.5' green_intensity='0.5' blue_intensity='0.5'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.5' green_intensity='0.5' blue_intensity='0.5'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1247,7 +1295,7 @@
 <real value='16236'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1264,7 +1312,7 @@
 <real value='16253'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1281,7 +1329,7 @@
 <real value='16270'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1298,7 +1346,7 @@
 <real value='16298'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1315,7 +1363,7 @@
 <real value='16307'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1332,7 +1380,7 @@
 <real value='16338'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1349,7 +1397,7 @@
 <real value='16340'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1366,7 +1414,7 @@
 <real value='16346'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1383,7 +1431,7 @@
 <real value='16349'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1400,7 +1448,7 @@
 <real value='16359'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1417,7 +1465,7 @@
 <real value='16364'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1434,7 +1482,7 @@
 <real value='16374'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1451,7 +1499,7 @@
 <real value='16420'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1465,7 +1513,7 @@
 <real value='16454'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1482,7 +1530,7 @@
 <real value='16454'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1499,7 +1547,7 @@
 <real value='16477'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1516,7 +1564,7 @@
 <real value='16491'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1533,7 +1581,7 @@
 <real value='16515'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1550,7 +1598,7 @@
 <real value='16537'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1567,7 +1615,7 @@
 <real value='16557'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1584,7 +1632,7 @@
 <real value='16604'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1601,7 +1649,7 @@
 <real value='16616'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1618,7 +1666,7 @@
 <real value='16680'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1635,7 +1683,7 @@
 <real value='16709'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1649,7 +1697,7 @@
 <real value='16709'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1666,7 +1714,7 @@
 <real value='16754'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1683,7 +1731,7 @@
 <real value='16874'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1695,7 +1743,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::applied_forced_movement' fixed='false'>
@@ -1727,7 +1775,7 @@
 <real value='1111'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1776,7 +1824,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='386' clip_width='119' clip_height='125' spritepos='rodeo' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='252' y='625' clip_width='119' clip_height='125' spritepos='rodeo' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1804,7 +1852,7 @@
 <real value='1476'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1821,7 +1869,7 @@
 <real value='1968'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1838,7 +1886,7 @@
 <real value='2058'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1855,7 +1903,7 @@
 <real value='2680'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1872,7 +1920,7 @@
 <real value='2927'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1889,7 +1937,7 @@
 <real value='3139'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1903,7 +1951,7 @@
 <real value='3235'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='259' clip_width='251' clip_height='126' spritepos='black horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0.3' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='727' y='259' clip_width='251' clip_height='126' spritepos='black horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0.3' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1917,38 +1965,7 @@
 <real value='3281'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='272' clip_width='235' clip_height='47' spritepos='splint' auto_size='true' width='235' height='47' mirror='boolean_false' flip='boolean_false' angle='0.3' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::decorative_item' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2943'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3445'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='252' y='259' clip_width='251' clip_height='126' spritepos='brown horse' auto_size='true' width='251' height='126' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::decorative_item' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2970'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3455'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='320' clip_width='280' clip_height='159' spritepos='' auto_size='true' width='280' height='159' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='512' y='480' clip_width='235' clip_height='47' spritepos='splint' auto_size='true' width='235' height='47' mirror='boolean_false' flip='boolean_false' angle='0.3' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1968,7 +1985,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2031,7 +2048,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2091,7 +2108,7 @@
 <real value='4608'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2108,7 +2125,7 @@
 <real value='4827'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2125,7 +2142,7 @@
 <real value='5058'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2142,7 +2159,7 @@
 <real value='5567'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2159,7 +2176,7 @@
 <real value='6322'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2176,7 +2193,7 @@
 <real value='6500'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2193,7 +2210,7 @@
 <real value='9529'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.65' green_intensity='1' blue_intensity='0.66'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2210,7 +2227,7 @@
 <real value='9734'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.62' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2227,7 +2244,7 @@
 <real value='9846'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='0.33'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2293,7 +2310,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='240' y='386' clip_width='119' clip_height='125' spritepos='rodeo black bull' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='492' y='625' clip_width='119' clip_height='125' spritepos='rodeo black bull' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2321,7 +2338,7 @@
 <real value='10288'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='true' width='90' height='144' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.83' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2355,7 +2372,7 @@
 <real value='10565'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.79' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2404,7 +2421,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='120' y='386' clip_width='119' clip_height='125' spritepos='rodeo blue' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='372' y='625' clip_width='119' clip_height='125' spritepos='rodeo blue' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2449,7 +2466,7 @@
 <real value='10885'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='0.58' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2498,7 +2515,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='240' y='386' clip_width='119' clip_height='125' spritepos='rodeo black bull' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='492' y='625' clip_width='119' clip_height='125' spritepos='rodeo black bull' auto_size='true' width='119' height='125' mirror='boolean_false' flip='boolean_false' angle='-0.39' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2526,7 +2543,7 @@
 <real value='11151'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='326' y='252' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='636' y='259' clip_width='90' clip_height='144' spritepos='cactus' auto_size='false' width='60' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.43' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2563,7 +2580,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2609,7 +2626,7 @@
 <bool value='1'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2664,7 +2681,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -4072,7 +4089,7 @@
 <real value='6554'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -6915,7 +6932,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decoration' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decoration' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -6930,7 +6947,7 @@
 <real value='6618'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -6947,7 +6964,7 @@
 <real value='6872'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='0' y='407' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='709' y='344' clip_width='255' clip_height='99' spritepos='5' auto_size='true' width='255' height='99' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -6964,7 +6981,7 @@
 <real value='7127'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-2.png' x='256' y='207' clip_width='255' clip_height='190' spritepos='3' auto_size='true' width='255' height='190' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-2.png' x='256' y='344' clip_width='255' clip_height='190' spritepos='3' auto_size='true' width='255' height='190' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -6981,7 +6998,7 @@
 <real value='7514'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='311' y='0' clip_width='228' clip_height='251' spritepos='red tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -6995,7 +7012,7 @@
 <real value='7642'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='229' y='0' clip_width='228' clip_height='251' spritepos='white tipi' auto_size='false' width='268' height='271' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='540' y='0' clip_width='228' clip_height='251' spritepos='white tipi' auto_size='false' width='268' height='271' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7012,7 +7029,7 @@
 <real value='7827'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='252' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='769' y='0' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7029,7 +7046,7 @@
 <real value='8078'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='0' y='252' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='769' y='0' clip_width='228' clip_height='251' spritepos='blue tipi' auto_size='true' width='228' height='251' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7046,7 +7063,7 @@
 <real value='8287'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='311' y='0' clip_width='184' clip_height='205' spritepos='horse' auto_size='true' width='184' height='205' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='0' y='259' clip_width='184' clip_height='205' spritepos='horse' auto_size='true' width='184' height='205' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7080,7 +7097,7 @@
 <real value='8870'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7097,7 +7114,7 @@
 <real value='8914'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7114,7 +7131,7 @@
 <real value='8961'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7131,7 +7148,7 @@
 <real value='9051'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7148,7 +7165,7 @@
 <real value='9094'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7165,7 +7182,7 @@
 <real value='9138'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/western/western-1.png' x='360' y='386' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/western/western-1.png' x='612' y='625' clip_width='91' clip_height='91' spritepos='stagecoach wheel' auto_size='true' width='91' height='91' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7211,7 +7228,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::straight_slope' fixed='true'>
@@ -7483,9 +7500,6 @@
 <field name='base_item.position.left'>
 <real value='510'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -7499,9 +7513,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='512'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
@@ -7926,9 +7937,6 @@
 <field name='base_item.position.left'>
 <real value='2239'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -8330,9 +8338,6 @@
 <field name='base_item.position.left'>
 <real value='4164'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -8448,9 +8453,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='4522'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -9142,9 +9144,6 @@
 <field name='base_item.position.left'>
 <real value='7314'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -9297,9 +9296,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='7731'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
@@ -9474,9 +9470,6 @@
 <field name='base_item.position.left'>
 <real value='8046'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -9490,9 +9483,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='8046'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
@@ -10736,9 +10726,6 @@
 <field name='base_item.position.left'>
 <real value='11787'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -10753,9 +10740,6 @@
 <field name='base_item.position.left'>
 <real value='11838'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -10769,9 +10753,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='11838'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -10787,9 +10768,6 @@
 <field name='base_item.position.left'>
 <real value='11889'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::tnt -->
 
@@ -10803,9 +10781,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='11889'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -10821,9 +10796,6 @@
 <field name='base_item.position.left'>
 <real value='11889'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -10837,9 +10809,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='11940'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -10855,9 +10824,6 @@
 <field name='base_item.position.left'>
 <real value='11940'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -10872,9 +10838,6 @@
 <field name='base_item.position.left'>
 <real value='11991'/>
 </field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
-</field>
 </fields>
     </item><!-- rp::crate -->
 
@@ -10888,9 +10851,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='11991'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::crate -->
@@ -11334,9 +11294,6 @@
 </field>
 <field name='base_item.position.left'>
 <real value='14372'/>
-</field>
-<field name='obstacle.random_explosion'>
-<bool value='0'/>
 </field>
 </fields>
     </item><!-- rp::tnt -->
