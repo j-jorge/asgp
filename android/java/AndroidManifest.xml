@@ -11,6 +11,7 @@
               android:label="@string/app_name"
               android:screenOrientation="landscape"
               android:launchMode="singleInstance"
+               android:keepScreenOn="true"
               >
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
