@@ -15,8 +15,7 @@
 
 #include "engine/resource_pool.hpp"
 
-#include "android_resource_pool.hpp"
-#include "android_game_filesystem.hpp"
+#include "engine/resource_pool/android_resource_pool.hpp"
 
 #include "engine/system/game_filesystem.hpp"
 
@@ -125,11 +124,9 @@ void rp::game::init_game()
     {
       char** engine_args = const_cast<char**>(default_args);
       m_game = new bear::engine::game( default_argc, engine_args );
-      m_game->set_game_filesystem
-        ( android_game_filesystem("Super Great Park") );
 
       bear::engine::resource_pool::get_instance().add_pool
-        ( new android_resource_pool );                     
+        ( new bear::engine::android_resource_pool );                     
     }
   catch( std::exception& e )
     {
