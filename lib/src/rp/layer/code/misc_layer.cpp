@@ -66,7 +66,7 @@ rp::misc_layer::misc_layer()
 #ifdef RP_TRACE_FPS
     m_show_fps(true),
 #else
-    m_show_fps(true),
+    m_show_fps(false),
 #endif
     m_cursor_position(-1, -1), m_first_screenshot(0),
     m_fps_key(bear::input::keyboard::kc_F2),
@@ -352,8 +352,6 @@ void rp::misc_layer::render_fps( scene_element_list& e ) const
           g_fps.push_back(m_fps_count);
 #endif
 
-          claw::logger << claw::log_verbose
-                       << "FPS:" << m_fps_count << std::endl;
           m_fps_text->set_text( oss.str() );
           m_fps_count = 0;
           m_its_count = 0;
