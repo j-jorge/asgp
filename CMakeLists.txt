@@ -152,6 +152,7 @@ if( BUILD_PLATFORM STREQUAL "android" )
     lib
     data
     android
+    desktop
     )
 else()
   subdirs(

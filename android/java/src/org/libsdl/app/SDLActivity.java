@@ -262,6 +262,10 @@ public class SDLActivity extends Activity {
         return mSingleton;
     }
 
+    public static String getLocale() {
+        return getContext().getResources().getConfiguration().locale.toString();
+    }
+
     static class ShowTextInputTask implements Runnable {
         /*
          * This is used to regulate the pan&scan method to have some offset from

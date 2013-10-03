@@ -150,6 +150,8 @@ cp --parents $( find . -name "*.png" \
     $INSTALL_PREFIX/$DATA_DIR
 cd -
 
+cp -r $INSTALL_PREFIX/share $INSTALL_PREFIX/$DATA_DIR/
+
 cd asgp/android/lib/src
 echo "Building library with custom script."
 sh ./make.sh || exit 1

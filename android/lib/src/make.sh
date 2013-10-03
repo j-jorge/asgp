@@ -62,6 +62,7 @@ $CXX $CXX_FLAGS $DEFINES \
     -lSDL2_mixer \
     -lSDL2 \
     -lsupc++ \
+    -lstdioext \
     -Wl,-Bdynamic \
     -lgnustl_shared \
     -lz \

@@ -27,4 +27,8 @@ install(
   WORLD_READ 
   )
 
-subdirs(locale man)
+if( BUILD_PLATFORM STREQUAL "android" )
+  subdirs(locale)
+else()
+  subdirs(locale man)
+endif()

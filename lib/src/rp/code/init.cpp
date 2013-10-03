@@ -20,6 +20,7 @@
 #include "engine/game.hpp"
 #include "engine/game_initializer.hpp"
 #include "engine/i18n/gettext_translator.hpp"
+#include "engine/i18n/android_gettext_translator.hpp"
 #include "engine/i18n/translator.hpp"
 
 #include <cstdlib>
@@ -37,8 +38,15 @@ void init_super_great_park()
   config.apply();
   config.save();
 
+  const std::string translation_domain_name( "super-great-park" );
+
+#ifdef __ANDROID__
   bear::engine::game::get_instance().set_translator
-    ( bear::engine::gettext_translator( "super-great-park" ) );
+    ( bear::engine::android_gettext_translator( translation_domain_name ) );
+#else
+  bear::engine::game::get_instance().set_translator
+    ( bear::engine::gettext_translator( translation_domain_name ) );
+#endif
 
   std::srand(time(NULL));
   rp::util::load_game_variables();
