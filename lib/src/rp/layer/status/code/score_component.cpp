@@ -104,7 +104,7 @@ void rp::score_component::progress
 
   std::ostringstream oss;
   oss << game_variables::get_score();
-  //m_score.create(m_font, oss.str());
+  m_score.create(m_font, oss.str());
   m_score->set_intensity(0, 0, 0);
 } // score_component::progress()
 
