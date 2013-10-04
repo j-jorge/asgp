@@ -61,16 +61,26 @@ void rp::cursor::progress( bear::universe::time_type elapsed_time )
 
   m_target_position = get_center_of_mass();
 
-  bool b = 
-    ( get_level().get_camera_focus().left() + 
-      3 * get_level().get_camera_size().x / 4 > 
-      get_horizontal_middle() ) || 
-    ( get_level().get_camera_focus().bottom() + 
-      get_level().get_camera_size().y / 4 < 
-      get_vertical_middle() );
+#ifdef __ANDROID__
+  const bool visible = 
+    ( get_level().get_camera_focus().left()
+      + get_level().get_camera_size().x / 4
+      < get_horizontal_middle() )
+    || ( get_level().get_camera_focus().bottom() + 
+         3 * get_level().get_camera_size().y / 4
+         > get_vertical_middle() );
+#else
+  const bool visible =
+    ( get_level().get_camera_focus().left()
+      + 3 * get_level().get_camera_size().x / 4
+      > get_horizontal_middle() )
+    || ( get_level().get_camera_focus().bottom()
+         + get_level().get_camera_size().y / 4
+         < get_vertical_middle() );
+#endif
 
-  if ( b != game_variables::get_status_visibility() )
-    game_variables::set_status_visibility(b);
+  if ( visible != game_variables::get_status_visibility() )
+    game_variables::set_status_visibility(visible);
 } // cursor::progress()
 
 /*----------------------------------------------------------------------------*/
