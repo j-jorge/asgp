@@ -135,11 +135,11 @@ void rp::status_layer::create_components()
     }
 #endif
   
-#if 0
+#ifdef __ANDROID__
   // ############## TOP LEFT #########################
-  bear::visual::position_type pos_top( 0, get_size().y);
+  bear::visual::position_type pos_top( 0, get_size().y );
   if ( game_variables::is_boss_level() )
-    pos_bottom.y += 34 + s_margin; // + score_size - s_margin
+    pos_top.y += 34 + s_margin; // + score_size - s_margin
 
   // background
   background_component * ba = new background_component
@@ -151,7 +151,7 @@ void rp::status_layer::create_components()
   m_components.push_back(ba);  
 
   if ( game_variables::is_boss_level() )
-    pos_bottom.y -= 34 + s_margin; // - score_size - s_margin
+    pos_top.y -= 34 + s_margin; // - score_size - s_margin
 
   // score
   if ( ! game_variables::is_boss_level() )
@@ -204,7 +204,8 @@ void rp::status_layer::create_components()
      - m_score_background.get_size().y, true); 
   l->build();
   m_components.push_back(l);
-#endif
+
+#else
 
   // ############## BOTTOM RIGHT #########################
   bear::visual::position_type pos_bottom
@@ -280,6 +281,7 @@ void rp::status_layer::create_components()
      m_score_background.get_size().y, false); 
   l->build();
   m_components.push_back(l);
+#endif
 
 #if 0
   // plunger

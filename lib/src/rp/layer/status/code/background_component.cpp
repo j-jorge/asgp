@@ -62,7 +62,10 @@ void rp::background_component::build()
     get_level_globals().auto_sprite
     ( "gfx/status/status.png", "score background" );
   m_background_sprite.flip(is_flipped());
-  //  m_background_sprite.mirror(is_flipped());
+
+#ifdef __ANDROID__
+  m_background_sprite.mirror( true );
+#endif
 
   super::build();
 } // background_component::build()
