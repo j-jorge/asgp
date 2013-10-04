@@ -141,6 +141,28 @@ cmake . \
 
 [ $? -eq 0 ] || exit 1
 
+TMP_FILE=$(mktemp)
+
+cd asgp
+
+# Converts the gettext files into the ISO-8859-15 encoding
+# since libintl-lite does not convert the string encoding.
+find . -name "*.po" \
+    | while read f
+do
+    echo "Converting encoding of $f"
+    
+    git checkout HEAD "$f"
+
+    iconv $f --to-code ISO-8859-15 \
+        | sed 's:charset=UTF-8:charset=ISO-8859-15:' \
+        > $TMP_FILE
+    cp $TMP_FILE $f
+done
+
+rm $TMP_FILE
+cd ..
+
 make install || exit 1
 
 cd asgp/android/data
@@ -150,7 +172,8 @@ cp --parents $( find . -name "*.png" \
     $INSTALL_PREFIX/$DATA_DIR
 cd -
 
-cp -r $INSTALL_PREFIX/share $INSTALL_PREFIX/$DATA_DIR/
+rm --force --recursive $INSTALL_PREFIX/$DATA_DIR/share
+mv $INSTALL_PREFIX/share $INSTALL_PREFIX/$DATA_DIR/
 
 cd asgp/android/lib/src
 echo "Building library with custom script."
