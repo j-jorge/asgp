@@ -16,7 +16,7 @@ else
     CXX_COMPILER="$ANDROID_CXX"
 fi
 
-export CXX="$CXX_COMPILER --Wall --pedantic"
+export CXX="$CXX_COMPILER --pedantic"
 
 C_COMPILER=
 
