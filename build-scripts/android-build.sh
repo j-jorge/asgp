@@ -93,13 +93,14 @@ ANDROID_LIB="$ANDROID_SYSROOT/usr/lib"
 # Compilation flags
 [ -z "$BUILD_TYPE" ] && BUILD_TYPE=release
 
-[ -z "$INSTALL_PREFIX" ] && INSTALL_PREFIX=/tmp/install/android
+[ -z "$INSTALL_PREFIX" ] && INSTALL_PREFIX="$PWD/asgp/android/java/"
 
 [ -z "$BEAR_BUILD_TAG" ] && BEAR_BUILD_TAG="$(date --rfc-2822)"
 
 # Compilation
-INSTALL_PREFIX="$PWD/asgp/android/java/"
 DATA_DIR="assets"
+
+rm -fr $INSTALL_PREFIX/$DATA_DIR/*
 
 cmake . \
     -DCMAKE_BUILD_TYPE="$BUILD_TYPE" \
