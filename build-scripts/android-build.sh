@@ -152,8 +152,6 @@ find . -name "*.po" \
 do
     echo "Converting encoding of $f"
     
-    git checkout HEAD "$f"
-
     iconv $f --to-code ISO-8859-15 \
         | sed 's:charset=UTF-8:charset=ISO-8859-15:' \
         > $TMP_FILE
@@ -164,6 +162,18 @@ rm $TMP_FILE
 cd ..
 
 make install || exit 1
+
+cd asgp
+
+# Now we can restore the encoding to avoid commiting by mistake.
+find . -name "*.po" \
+    | while read f
+do
+    echo "Restoring encoding of $f"
+    git checkout HEAD "$f"
+done
+
+cd ..
 
 cd asgp/android/data
 cp --parents $( find . -name "*.png" \
