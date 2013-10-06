@@ -207,6 +207,14 @@ cd asgp/android/java
 rm bin -fr
 ant debug
 
+APK_SIZE=$(wc -c bin/ASGP-debug.apk | cut -f1 -d' ')
+APK_MAX_SIZE=$((50 * 1024 * 1024))
+
+if [ $APK_SIZE -gt $APK_MAX_SIZE ]
+then
+    echo "/!\ APK too large by $(($APK_SIZE - $APK_MAX_SIZE)) bytes /!\"
+fi
+
 DEVICE_ID=$(adb devices | grep 'device$' | cut -f1)
 echo "Installing on device $DEVICE_ID."
 adb -s $DEVICE_ID install -r bin/ASGP-debug.apk
