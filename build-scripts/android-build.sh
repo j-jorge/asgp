@@ -195,6 +195,10 @@ cd -
 cp $ANDROID_TOOLCHAIN_ROOT/arm-linux-androideabi/lib/libgnustl_shared.so \
     $PWD/asgp/android/java/libs/armeabi-v7a
 
+$ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-strip --strip-all \
+    $PWD/asgp/android/java/libs/armeabi-v7a/libandy-super-great-park.so \
+    || exit 1
+
 # Remove the static libraries, installed by default
 rm $(grep '\.a$' < install_manifest.txt)
 
