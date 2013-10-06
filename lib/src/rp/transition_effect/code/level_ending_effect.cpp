@@ -142,7 +142,7 @@ void rp::level_ending_effect::score_request::operator()()
 #endif
         if ( code == 200 /* OK */ )
           {
-            // Find the first empty line that separate the header and the body.
+            // Find the first empty line that separates the header and the body.
             while ( !line.empty() )
               claw::text::getline( server_connection, line );
 
@@ -715,7 +715,9 @@ bool rp::level_ending_effect::mouse_released
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  if ( m_button->get_rectangle().includes(pos) && 
+  const bear::visual::position_type event_position( get_event_position( pos ) );
+
+  if ( m_button->get_rectangle().includes( event_position ) && 
        ! game_variables::is_boss_level() )
     pass_scores();
 
@@ -730,13 +732,33 @@ bool rp::level_ending_effect::mouse_released
 bool rp::level_ending_effect::finger_action
 ( const bear::input::finger_event& event )
 {
+  const bear::visual::position_type event_position
+    ( get_event_position( event.get_position() ) );
+
   if ( (event.get_type() == bear::input::finger_event::finger_event_pressed)
-       && m_button->get_rectangle().includes(event.get_position())
+       && m_button->get_rectangle().includes(event_position)
        && !game_variables::is_boss_level() )
     pass_scores();
 
   return false;
 } // level_ending_effect::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Gets the position of an event relatively to the logical screen.
+ * \param pos The position of the event on the physical screen.
+ */
+bear::visual::position_type rp::level_ending_effect::get_event_position
+( const claw::math::coordinate_2d<unsigned int>& pos ) const
+{
+  return bear::visual::position_type
+    ( get_layer().get_size().x
+      * pos.x
+      / bear::engine::game::get_instance().get_window_size().x,
+      get_layer().get_size().y
+      * pos.y
+      / bear::engine::game::get_instance().get_window_size().y );
+} // level_ending_effect::get_event_position()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -763,16 +785,16 @@ void rp::level_ending_effect::pass_scores()
  */
 void rp::level_ending_effect::skip()
 {
-   if ( ! m_finished )
-     {
-       // We update the lines 100 seconds at once. 
-       // This is an arbitrary value but
-       // using too large values may produce overflows.
-       while ( !update_lines( 100 ) );
+  if ( ! m_finished )
+    {
+      // We update the lines 100 seconds at once. 
+      // This is an arbitrary value but
+      // using too large values may produce overflows.
+      while ( !update_lines( 100 ) );
 
-       if ( ! game_variables::is_boss_level() )
-         update_medal();
-     }
+      if ( ! game_variables::is_boss_level() )
+        update_medal();
+    }
 } // level_ending_effect::skip()
 
 /*----------------------------------------------------------------------------*/

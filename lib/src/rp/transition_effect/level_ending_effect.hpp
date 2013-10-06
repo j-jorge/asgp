@@ -196,6 +196,9 @@ namespace rp
       const claw::math::coordinate_2d<unsigned int>& pos );
     bool finger_action( const bear::input::finger_event& event );
 
+    bear::visual::position_type get_event_position
+    ( const claw::math::coordinate_2d<unsigned int>& pos ) const;
+
     void skip();
     void fill_points();
 
