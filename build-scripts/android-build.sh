@@ -153,6 +153,8 @@ find . -name "*.po" \
 do
     echo "Converting encoding of $f"
     
+    git checkout HEAD "$f"
+
     iconv $f --to-code ISO-8859-15 \
         | sed 's:charset=UTF-8:charset=ISO-8859-15:' \
         > $TMP_FILE
