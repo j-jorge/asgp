@@ -196,7 +196,7 @@ cp $ANDROID_TOOLCHAIN_ROOT/arm-linux-androideabi/lib/libgnustl_shared.so \
     $PWD/asgp/android/java/libs/armeabi-v7a
 
 $ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-strip --strip-all \
-    $PWD/asgp/android/java/libs/armeabi-v7a/libandy-super-great-park.so \
+    $PWD/asgp/android/java/libs/armeabi-v7a/lib*.so \
     || exit 1
 
 # Remove the static libraries, installed by default
@@ -205,9 +205,28 @@ rm $(grep '\.a$' < install_manifest.txt)
 cd asgp/android/java
 
 rm bin -fr
-ant debug
 
-APK_SIZE=$(wc -c bin/ASGP-debug.apk | cut -f1 -d' ')
+APK_BUILD_TYPE=debug
+TARGET_APK=
+
+if [ APK_BUILD_TYPE = "release" ]
+then
+    ant release
+
+    ORIGINAL_APK=bin/ASGP-release-unsigned.apk
+    TARGET_APK=bin/ASGP.apk
+
+    jarsigner -sigalg SHA1withRSA -digestalg SHA1 \
+        -keystore ~/.keytool/stuffomatic.keystore \
+        $ORIGINAL_APK gplays
+
+    zipalign 4 $ORIGINAL_APK $TARGET_APK
+else
+    ant debug
+    TARGET_APK=bin/ASGP-debug.apk
+fi
+
+APK_SIZE=$(wc -c $TARGET_APK | cut -f1 -d' ')
 APK_MAX_SIZE=$((50 * 1024 * 1024))
 
 if [ $APK_SIZE -gt $APK_MAX_SIZE ]
@@ -217,4 +236,4 @@ fi
 
 DEVICE_ID=$(adb devices | grep 'device$' | cut -f1)
 echo "Installing on device $DEVICE_ID."
-adb -s $DEVICE_ID install -r bin/ASGP-debug.apk
+adb -s $DEVICE_ID install -r $TARGET_APK
