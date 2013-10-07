@@ -404,7 +404,7 @@ void rp::util::apply_random_smoke_effect( bear::engine::base_item& item )
  */
 void rp::util::save_config()
 {
-  rp::config_file config;
+  config_file config;
   config.update();
   config.save();
 } // util::save_config()

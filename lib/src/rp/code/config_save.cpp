@@ -26,3 +26,13 @@ void rp::config_save::on_toggle_on( bear::engine::base_item* activator )
 {
   util::save_config();
 } // config_save::on_toggle_on()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Saves the config.
+ * \param activator The item which deactivated the toggle.
+ */
+void rp::config_save::on_toggle_off( bear::engine::base_item* activator )
+{
+  util::save_config();
+} // config_save::on_toggle_off()

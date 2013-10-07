@@ -35,8 +35,9 @@ namespace rp
     /** \brief The type of the parent class. */
     typedef bear::engine::item_with_toggle<bear::engine::base_item> super;
 
-  public:
+  protected:
     void on_toggle_on( bear::engine::base_item* activator );
+    void on_toggle_off( bear::engine::base_item* activator );
 
   }; // class config_save
 } // namespace rp

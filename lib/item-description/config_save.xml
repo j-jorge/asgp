@@ -2,7 +2,7 @@
 <item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::config_save" category="interface" fixable="false" box_color="#788A22" url="http://www.gamned.org/wiki/index.php/config_save">
   <inherit>
     <class>bear::base_item</class>
-    <class>bear::with_toggle</class>
+    <class>bear::item_with_toggle</class>
   </inherit>
 
   <description>This toggle saves the configuration when activated.</description>
