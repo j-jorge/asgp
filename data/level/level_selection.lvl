@@ -13699,6 +13699,9 @@
 <field name='base_item.size.width'>
 <real value='140'/>
 </field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='config-save'/>
+</field>
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -13833,6 +13836,20 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
+    <item class_name='rp::config_save' fixed='false' id='config-save'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='249'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3641'/>
+</field>
+</fields>
+    </item><!-- rp::config_save -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_silence'>
 <fields>
 <field name='base_item.global'>
@@ -13879,6 +13896,9 @@
 <field name='base_item.size.width'>
 <real value='140'/>
 </field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='config-save-1'/>
+</field>
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -13895,6 +13915,20 @@
 </field>
 </fields>
     </item><!-- bear::system_music_toggle -->
+
+    <item class_name='rp::config_save' fixed='false' id='config-save-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='256'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3733'/>
+</field>
+</fields>
+    </item><!-- rp::config_save -->
 
     <item class_name='rp::bird_support' fixed='true'>
 <fields>
