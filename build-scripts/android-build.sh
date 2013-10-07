@@ -209,7 +209,7 @@ rm bin -fr
 APK_BUILD_TYPE=debug
 TARGET_APK=
 
-if [ APK_BUILD_TYPE = "release" ]
+if [ $APK_BUILD_TYPE = "release" ]
 then
     ant release
 
