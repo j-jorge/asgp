@@ -212,7 +212,7 @@ APK_MAX_SIZE=$((50 * 1024 * 1024))
 
 if [ $APK_SIZE -gt $APK_MAX_SIZE ]
 then
-    echo "/!\ APK too large by $(($APK_SIZE - $APK_MAX_SIZE)) bytes /!\"
+    echo "/!\\ APK too large by $(($APK_SIZE - $APK_MAX_SIZE)) bytes /!\\"
 fi
 
 DEVICE_ID=$(adb devices | grep 'device$' | cut -f1)
