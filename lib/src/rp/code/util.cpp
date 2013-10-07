@@ -13,6 +13,7 @@
  */
 #include "rp/util.hpp"
 
+#include "rp/config_file.hpp"
 #include "rp/defines.hpp"
 #include "rp/game_variables.hpp"
 #include "rp/interactive_item.hpp"
@@ -396,3 +397,14 @@ void rp::util::apply_random_smoke_effect( bear::engine::base_item& item )
 
   item.new_item( *effect );
 } // util::apply_random_smoke_effect()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Saves the current configuration.
+ */
+void rp::util::save_config()
+{
+  rp::config_file config;
+  config.update();
+  config.save();
+} // util::save_config()

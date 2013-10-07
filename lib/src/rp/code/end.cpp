@@ -12,7 +12,6 @@
  */
 #include "rp/end.hpp"
 
-#include "rp/config_file.hpp"
 #include "rp/util.hpp"
 
 #include "engine/game_initializer.hpp"
@@ -21,9 +20,6 @@ BEAR_ENGINE_GAME_END_FUNCTION( end_super_great_park )
 
 void end_super_great_park()
 {
-  rp::config_file config;
-  config.update();
-  config.save();
-
+  rp::util::save_config();
   rp::util::save_game_variables();
 } // end_super_great_park()
