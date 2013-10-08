@@ -94,9 +94,7 @@ void rp::score_component::progress
 	  on_score_added
             (it->get_combo_value(), it->get_points_value());
 
-          floating_score_list::iterator tmp(it);
-          ++it;
-          m_floating_score.erase(tmp);
+          it = m_floating_score.erase(it);
 	}
       else
         ++it;
