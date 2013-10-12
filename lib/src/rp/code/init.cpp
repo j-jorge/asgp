@@ -52,4 +52,8 @@ void init_super_great_park()
   rp::util::load_game_variables();
   rp::util::send_version();
   rp::game_key::check_if_demo_version();
+
+  claw::logger << claw::log_verbose << "Dumb rendering is "
+               << bear::engine::game::get_instance().get_dumb_rendering()
+               << std::endl;
 } // init_super_great_park()

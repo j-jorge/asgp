@@ -41,7 +41,7 @@ rp::config_file::config_file()
       claw::configuration_file config(f);
 
       str_to_bool( m_fullscreen, config("Video", "fullscreen") );
-      //str_to_bool( m_dumb_rendering, config("Video", "dumb_rendering") );
+      str_to_bool( m_dumb_rendering, config("Video", "dumb_rendering") );
       str_to_bool( m_sound_on, config("Audio", "sound_on") );
       str_to_bool( m_music_on, config("Audio", "music_on") );
 
