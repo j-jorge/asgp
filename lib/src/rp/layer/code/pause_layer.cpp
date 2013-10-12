@@ -112,10 +112,13 @@ bool rp::pause_layer::mouse_move
   if ( !get_level().is_paused() )
     return false;
 
+  const claw::math::coordinate_2d<unsigned int> scaled_pos
+    ( adjust_screen_position( pos ) );
+
   bool stop(false);
 
   for ( std::size_t i=0; !stop && (i!=m_controls.size()); ++i )
-    if ( m_controls[i]->get_rectangle().includes(pos) )
+    if ( m_controls[i]->get_rectangle().includes(scaled_pos) )
       {
         stop = true;
         highlight_component( m_controls[i] );
