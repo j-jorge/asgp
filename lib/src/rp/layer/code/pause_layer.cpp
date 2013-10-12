@@ -388,7 +388,7 @@ void rp::pause_layer::create_focus_background_component
 bear::visual::sprite rp::pause_layer::get_focus_on_background() const
 {
   return get_level_globals().auto_sprite
-    ( "gfx/status/buttons.png", "background on" );
+    ( rp_gettext("gfx/status/buttons.png"), "background on" );
 } // pause_layer::get_focus_off_background()
 
 /*----------------------------------------------------------------------------*/
@@ -398,7 +398,7 @@ bear::visual::sprite rp::pause_layer::get_focus_on_background() const
 bear::visual::sprite rp::pause_layer::get_focus_off_background() const
 {
   return get_level_globals().auto_sprite
-    ( "gfx/status/buttons.png", "background off" );
+    ( rp_gettext("gfx/status/buttons.png"), "background off" );
 } // pause_layer::get_focus_off_background()
 
 /*----------------------------------------------------------------------------*/
