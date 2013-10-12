@@ -514,10 +514,10 @@ void rp::level_ending_effect::build()
   add_button_component();
   m_background_on_sprite =
     get_level_globals().auto_sprite
-    ( "gfx/status/buttons.png", "background on" ); 
+    ( rp_gettext("gfx/status/buttons.png"), "background on" ); 
   m_background_off_sprite =
     get_level_globals().auto_sprite
-    ( "gfx/status/buttons.png", "background off" );
+    ( rp_gettext("gfx/status/buttons.png"), "background off" );
 
   game_variables::set_ending_effect(true);
 
@@ -573,7 +573,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 
       m_button->set_icon
         ( get_level_globals().auto_sprite
-          ( "gfx/status/buttons.png", "continue" ) );
+          ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
 
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
@@ -1668,7 +1668,8 @@ void rp::level_ending_effect::add_button_component()
 {
   m_button =
     new bear::gui::button
-    ( get_level_globals().auto_sprite( "gfx/status/buttons.png", "skip" ) );
+    ( get_level_globals().auto_sprite
+      ( rp_gettext("gfx/status/buttons.png"), "skip" ) );
 
   m_button->set_right( m_root_window.right() - 100 );
   m_button->set_bottom( 80 );
