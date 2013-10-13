@@ -214,6 +214,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-29'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='2993'/>
 </field>
@@ -231,6 +240,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-28'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3048'/>
 </field>
@@ -1970,6 +1988,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-24'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='2940'/>
 </field>
@@ -1987,6 +2014,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-23'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3040'/>
 </field>
@@ -2004,6 +2040,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-25'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3095'/>
 </field>
@@ -3972,6 +4017,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-22'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3632'/>
 </field>
@@ -3989,6 +4043,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-21'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3686'/>
 </field>
@@ -4006,6 +4069,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-17'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3737'/>
 </field>
@@ -4023,6 +4095,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-16'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3789'/>
 </field>
@@ -4040,6 +4121,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-12'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3839'/>
 </field>
@@ -4057,6 +4147,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-13'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3891'/>
 </field>
@@ -4074,6 +4173,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-19'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3947'/>
 </field>
@@ -4091,6 +4199,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-14'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3998'/>
 </field>
@@ -4108,6 +4225,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-15'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4048'/>
 </field>
@@ -4125,6 +4251,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-18'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4098'/>
 </field>
@@ -4142,6 +4277,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-20'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4153'/>
 </field>
@@ -5435,6 +5579,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-1'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3744'/>
 </field>
@@ -5452,6 +5605,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-2'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3798'/>
 </field>
@@ -5469,6 +5631,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-3'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3849'/>
 </field>
@@ -5486,6 +5657,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-4'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3901'/>
 </field>
@@ -5503,6 +5683,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-5'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3951'/>
 </field>
@@ -5520,6 +5709,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-6'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4003'/>
 </field>
@@ -5537,6 +5735,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-7'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4059'/>
 </field>
@@ -5554,6 +5761,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-8'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4110'/>
 </field>
@@ -5571,6 +5787,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-9'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4160'/>
 </field>
@@ -5588,6 +5813,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-10'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4210'/>
 </field>
@@ -5605,6 +5839,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-11'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4265'/>
 </field>
