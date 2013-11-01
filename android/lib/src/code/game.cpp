@@ -23,7 +23,7 @@
 #include <claw/logger.hpp>
 #include <claw/log_stream_uniq.hpp>
 
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 
 /*----------------------------------------------------------------------------*/
 /**
