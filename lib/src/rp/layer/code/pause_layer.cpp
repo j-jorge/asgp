@@ -243,7 +243,7 @@ void rp::pause_layer::add_system_buttons()
 
 #if !defined( __ANDROID__ )
   bear::gui::visual_component* fullscreen = create_fullscreen_component();
-  const bear::gui::size_type fullscreen_width( fullscreen-»width() );
+  const bear::gui::size_type fullscreen_width( fullscreen->width() );
 #else
   const bear::gui::size_type fullscreen_width(0);
 #endif
