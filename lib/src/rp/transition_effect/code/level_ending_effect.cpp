@@ -32,12 +32,15 @@
 
 #include "universe/forced_movement/forced_goto.hpp"
 
+#include "gui/callback_function.hpp"
+
 #include <boost/bind.hpp>
 #include <boost/thread/thread.hpp>
 
 #include <claw/socket_stream.hpp>
 #include <claw/string_algorithm.hpp>
 #include <claw/tween/easing/easing_linear.hpp>
+#include <claw/tween/easing/easing_elastic.hpp>
 
 #include <sstream>
 
@@ -414,6 +417,7 @@ const double rp::level_ending_effect::s_score_line_speed(150);
  */
 rp::level_ending_effect::level_ending_effect()
   : m_speed_factor(1), m_next_tick(0.1), m_world(NULL), m_cart(NULL), 
+    m_skip_button(NULL), m_facebook_button(NULL),
     m_applause_sample(NULL), m_update_function(NULL), m_flash_opacity(0),
     m_play_tick(false)
 {
@@ -430,6 +434,7 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
     m_next_tick(that.m_next_tick), m_world(that.m_world), m_cart(that.m_cart),
     m_finished(false), m_medal(0), m_rectangle_opacity(0), 
     m_decorative_medal(NULL), m_pop_level(false), m_active_component(false),
+    m_skip_button(NULL), m_facebook_button(NULL),
     m_in_fade_out(false), m_applause_sample(NULL), m_update_function(NULL),
     m_flash_opacity(0), m_play_tick(false),
     m_score_request( that.m_score_request )
@@ -512,6 +517,7 @@ void rp::level_ending_effect::build()
 
   m_root_window.set_size( get_level().get_camera_focus().size() );
   add_button_component();
+
   m_background_on_sprite =
     get_level_globals().auto_sprite
     ( rp_gettext("gfx/status/buttons.png"), "background on" ); 
@@ -571,12 +577,14 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
       game_variables::set_last_medal( m_medal );
       util::save_game_variables(); 
 
-      m_button->set_icon
+      m_skip_button->set_icon
         ( get_level_globals().auto_sprite
           ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
 
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
+
+      add_facebook_button();
     }
 
   m_speed_factor = 1;
@@ -588,8 +596,9 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 
   if ( ! game_variables::is_boss_level() )
     update_medal();
-    
+
   m_tweener_fade_out.update(elapsed_time);
+  m_tweener_facebook.update(elapsed_time);
 
   return 0;
 } // level_ending_effect::progress()
@@ -602,7 +611,6 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 void rp::level_ending_effect::render( scene_element_list& e ) const
 {
   render_background(e);
-  m_root_window.render( e );
 
   if ( ! game_variables::is_boss_level() )
     {
@@ -619,6 +627,8 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
 
   if ( ! game_variables::is_boss_level() )
     render_medal(e);
+
+  m_root_window.render( e );
 } // level_ending_effect::render()
 
 /*----------------------------------------------------------------------------*/
@@ -694,7 +704,7 @@ bool rp::level_ending_effect::button_maintained
 bool rp::level_ending_effect::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  if ( m_button->get_rectangle().includes(pos) )
+  if ( m_skip_button->get_rectangle().includes(pos) )
     {
       if ( ! m_active_component )
         get_level_globals().play_sound( "sound/tick.ogg" );
@@ -717,7 +727,7 @@ bool rp::level_ending_effect::mouse_released
 {
   const bear::visual::position_type event_position( get_event_position( pos ) );
 
-  if ( m_button->get_rectangle().includes( event_position ) && 
+  if ( m_skip_button->get_rectangle().includes( event_position ) && 
        ! game_variables::is_boss_level() )
     pass_scores();
 
@@ -736,7 +746,7 @@ bool rp::level_ending_effect::finger_action
     ( get_event_position( event.get_position() ) );
 
   if ( (event.get_type() == bear::input::finger_event::finger_event_pressed)
-       && m_button->get_rectangle().includes(event_position)
+       && m_skip_button->get_rectangle().includes(event_position)
        && !game_variables::is_boss_level() )
     pass_scores();
 
@@ -1601,7 +1611,7 @@ void rp::level_ending_effect::render_medal( scene_element_list& e) const
  */
 void rp::level_ending_effect::render_background( scene_element_list& e ) const
 {
-  if ( m_button->get_visible() )
+  if ( m_skip_button->get_visible() )
     {
       if ( m_active_component )
         {
@@ -1666,19 +1676,56 @@ void rp::level_ending_effect::pop_level()
  */
 void rp::level_ending_effect::add_button_component()
 {
-  m_button =
+  m_skip_button =
     new bear::gui::button
     ( get_level_globals().auto_sprite
       ( rp_gettext("gfx/status/buttons.png"), "skip" ) );
 
-  m_button->set_right( m_root_window.right() - 100 );
-  m_button->set_bottom( 80 );
+  m_skip_button->set_right( m_root_window.right() - 100 );
+  m_skip_button->set_bottom( 80 );
 
-  m_root_window.insert( m_button );
+  m_root_window.insert( m_skip_button );
 
   if ( game_variables::is_boss_level() )
-    m_button->set_visible(false);
+    m_skip_button->set_visible(false);
 } // level_ending_effect::add_button_component()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the facebook button.
+ */
+void rp::level_ending_effect::add_facebook_button()
+{
+  if ( game_variables::is_boss_level() )
+    return;
+
+  m_facebook_button =
+    new bear::gui::button
+    ( get_level_globals().auto_sprite
+      ( rp_gettext("gfx/status/status.png"), "facebook" ) );
+
+  m_facebook_button->set_left
+    ( ( m_root_window.width() - m_facebook_button->width() ) / 2 );
+  m_facebook_button->set_bottom( m_root_window.height() );
+
+  m_root_window.insert( m_facebook_button );
+
+  create_facebook_tweener();
+} // level_ending_effect::add_facebook_button()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the tweener for the facebook button.
+ */
+void rp::level_ending_effect::create_facebook_tweener()
+{
+  claw::tween::single_tweener going_down
+    ( m_root_window.height(), m_root_window.height() / 4, 1,
+      boost::bind( &bear::gui::button::set_bottom, m_facebook_button, _1 ),
+      &claw::tween::easing_elastic::ease_out );
+
+  m_tweener_facebook = going_down;
+} // level_ending_effect::create_facebook_tweener()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1693,6 +1740,16 @@ void rp::level_ending_effect::get_best_score()
 
   boost::thread t( m_score_request );
 } // level_ending_effect::get_best_score()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Send the score to the user's facebook page.
+ */
+void rp::level_ending_effect::on_facebook_click()
+{
+  std::cout << "xxx points in level x-y- of Andy's Super Great Park!"
+            << std::endl;
+} // level_ending_effect::on_facebook_click()
 
 /*----------------------------------------------------------------------------*/
 /**

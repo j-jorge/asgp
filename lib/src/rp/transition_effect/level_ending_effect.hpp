@@ -258,9 +258,14 @@ namespace rp
     void create_fade_out_tweener();
     void pop_level();
     void add_button_component();
+    void add_facebook_button();
+
+    void create_facebook_tweener();
 
     void get_best_score();
     void set_best_score( unsigned int );
+
+    void on_facebook_click();
 
     // not implemented
     level_ending_effect& operator=( const level_ending_effect& that );
@@ -320,6 +325,9 @@ namespace rp
     /** \brief The tweener for fade_out opacity. */
     claw::tween::single_tweener m_tweener_fade_out;
 
+    /** \brief The tweener for the facebook button. */
+    claw::tween::single_tweener m_tweener_facebook;
+
     /** \brief The current decorative medal. */
     bear::decorative_item* m_decorative_medal;
 
@@ -333,7 +341,10 @@ namespace rp
     bool m_active_component;
 
     /** \brief The button. */ 
-    bear::gui::button* m_button;
+    bear::gui::button* m_skip_button;
+
+    /** \brief The facebook button. */
+    bear::gui::button* m_facebook_button;
 
     /** \brief The sprite of background when the mouse is on the button. */
     bear::visual::sprite m_background_on_sprite;  

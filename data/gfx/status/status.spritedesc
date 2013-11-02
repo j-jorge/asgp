@@ -3,7 +3,7 @@ sprite_sheet "status" 512 x 512
 
 /* the source images and their ratio in the result */
 status_img "status.xcf.bz2"
-cannon_img "cannon.xcf.bz2"
+facebook_img "social/facebook.xcf.bz2"
 score_img "score.xcf.bz2"
 
 "score" "score mask" * 0.5 with score_img
@@ -13,34 +13,14 @@ score_img "score.xcf.bz2"
   "score shadow"
   ;
 
-"plunger" autosize * 0.5 with status_img
-  "plunger"
+"facebook" autosize * 0.15 with facebook_img
+  glob "*"
   ;
 
 "hearth" autosize * 0.5 with status_img
   "hearth"
   ;
 
-"cannon background ok" autosize * 0.5 with status_img
-  "cannon background ok"
-  ;
-
-"cannon background out" autosize * 0.5 with status_img
-  "cannon background out"
-  ;
-
-"plungers background ok" autosize * 0.5 with status_img
-  "plungers background ok"
-  ;
-
-"plungers background out" autosize * 0.5 with status_img
-  "plungers background out"
-  ;
-
 "score background" autosize * 0.5 with status_img
   "score background"
-  ;
-
-"cannon" autosize * 0.5 with cannon_img
-  glob "*"
   ;
