@@ -43,6 +43,7 @@ namespace rp
 
   public:
     boss_controller();
+    ~boss_controller();
 
     bool set_item_field
     ( const std::string& name, bear::engine::base_item* value);
@@ -71,6 +72,7 @@ namespace rp
 
     /** \brief The required zone for collision. */
     bear::universe::zone::position m_required_zone;
+
   }; // class boss_controller
 } // namespace rp
 

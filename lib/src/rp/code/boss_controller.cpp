@@ -30,7 +30,17 @@ rp::boss_controller::boss_controller()
   m_required_zone( bear::universe::zone::middle_left_zone )
 {
   set_size(50,1000);
-} // rp::boss_controller::rp::boss_controller()
+} // boss_controller::boss_controller()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Destructor.
+ */
+rp::boss_controller::~boss_controller()
+{
+  delete m_item;
+  delete m_zeppelin_item;
+} // boss_controller::~boss_controller()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -51,7 +61,10 @@ bool rp::boss_controller::set_item_field
       value->kill();
     }
   else if ( name == "boss_controller.zeppelin_item" )
-    m_zeppelin_item = value;
+    {
+      m_zeppelin_item = value->clone();
+      value->kill();
+    }
   else
     result = super::set_item_field(name, value);
 
@@ -115,7 +128,7 @@ void rp::boss_controller::collision
       if ( ( info.get_collision_side() == m_required_zone ) && 
            ( m_item != NULL ) && ( m_current_item == boss::handle_type(NULL)) &&
            ( game_variables::get_boss_hits() >= m_hit_bound ) )
-        m_current_item = b->set_drop_item(m_item,m_zeppelin_item);
+        m_current_item = b->set_drop_item(m_item, m_zeppelin_item);
     }
 } // boss_controller::collision()
 

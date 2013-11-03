@@ -45,6 +45,31 @@ rp::zeppelin::zeppelin()
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Copy constructor.
+ * \param that The instance to copy from.
+ */
+rp::zeppelin::zeppelin( const zeppelin& that )
+  : super(that), m_hit(false),
+    m_item( that.m_item == NULL ? NULL : that.m_item->clone() )
+{
+  set_mass(100);
+  set_density(0.001);
+  set_system_angle_as_visual_angle(true);
+  set_phantom(true);
+  set_artificial(false);
+} // rp::zeppelin::zeppelin()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Destructor.
+ */
+rp::zeppelin::~zeppelin()
+{
+  delete m_item;
+} // rp::zeppelin::~zeppelin()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Load the media required by this class.
  */
 void rp::zeppelin::pre_cache()
@@ -107,7 +132,10 @@ bool rp::zeppelin::set_item_field
   bool result(true);
 
   if ( name == "zeppelin.item" )
-    m_item = value;
+    {
+      m_item = value->clone();
+      value->kill();
+    }
   else
     result = super::set_item_field(name, value);
 
@@ -121,8 +149,13 @@ bool rp::zeppelin::set_item_field
  */
 void rp::zeppelin::set_drop_item( bear::engine::base_item* drop_item)
 {
-  m_item = drop_item;
-} // zeppelin::set_drop_field()
+  delete m_item;
+
+  if ( drop_item == NULL )
+    m_item = NULL;
+  else
+    m_item = drop_item->clone();
+} // zeppelin::set_drop_item()
 
 /*----------------------------------------------------------------------------*/
 /**

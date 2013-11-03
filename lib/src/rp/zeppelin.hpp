@@ -55,7 +55,9 @@ namespace rp
   
   public:
     zeppelin();
-    
+    zeppelin( const zeppelin& that );
+    ~zeppelin();
+
     void pre_cache();
     void on_enters_layer();
     void progress( bear::universe::time_type elapsed_time );
