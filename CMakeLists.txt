@@ -32,7 +32,6 @@ if( NOT RP_INSTALL_EXECUTABLE_DIR )
 endif( NOT RP_INSTALL_EXECUTABLE_DIR )
 
 # where the game libraries (the items) are installed
-# where the engine libraries are installed
 if( NOT RP_INSTALL_CUSTOM_LIBRARY_DIR )
   if( WIN32 )
     set( RP_INSTALL_CUSTOM_LIBRARY_DIR
@@ -111,7 +110,7 @@ find_package( Boost 1.35 REQUIRED COMPONENTS signals)
 
 if( NOT Boost_FOUND )
   message( FATAL_ERROR 
-    "You must have boost::filesystem and boost::thread libraries installed (at least 1.35)" )
+    "You must have boost::signals library installed (at least 1.35)" )
 endif( NOT Boost_FOUND )
 
 #-------------------------------------------------------------------------------
