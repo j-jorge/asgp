@@ -23,6 +23,7 @@
 #include "engine/game.hpp"
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
+#include "engine/system/system_api.hpp"
 
 #include "visual/scene_element_sequence.hpp"
 #include "visual/scene_line.hpp"
@@ -1763,10 +1764,13 @@ void rp::level_ending_effect::on_pass_scores()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Send the score to the user's facebook page.
+ * \brief Sends the score to the user's facebook page.
  */
 void rp::level_ending_effect::on_facebook_click()
 {
-  std::cout << "xxx points in level x-y- of Andy's Super Great Park!"
-            << std::endl;
+  const std::string url
+    ( "https://www.facebook.com/sharer/sharer.php?u="
+      "http://www.stuff-o-matic.com/asgp/" );
+
+  bear::engine::system_api::open( url );
 } // level_ending_effect::on_facebook_click()
