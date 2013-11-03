@@ -19,12 +19,10 @@
 #include "rp/cart.hpp"
 #include "rp/util.hpp"
 #include "rp/version.hpp"
-#include "rp/android/java_activity.hpp"
 
 #include "engine/game.hpp"
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
-#include "engine/system/system_api.hpp"
 
 #include "visual/scene_element_sequence.hpp"
 #include "visual/scene_line.hpp"
@@ -37,6 +35,7 @@
 #include "gui/callback_function.hpp"
 
 #include <boost/bind.hpp>
+#include <boost/format.hpp>
 #include <boost/thread/thread.hpp>
 
 #include <claw/socket_stream.hpp>
@@ -586,7 +585,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
 
-      add_facebook_button();
+      add_social_buttons();
     }
 
   m_speed_factor = 1;
@@ -600,7 +599,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
     update_medal();
 
   m_tweener_fade_out.update(elapsed_time);
-  m_tweener_facebook.update(elapsed_time);
+  m_social_tweener.update(elapsed_time);
 
   return 0;
 } // level_ending_effect::progress()
@@ -625,12 +624,12 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
     render_opaque_rectangle(e);
 
   if ( ! game_variables::is_boss_level() )
-    render_level_name(e);
+    {
+      render_level_name(e);
+      render_medal(e);
 
-  if ( ! game_variables::is_boss_level() )
-    render_medal(e);
-
-  m_root_window.render( e );
+      m_root_window.render( e );
+    }
 } // level_ending_effect::render()
 
 /*----------------------------------------------------------------------------*/
@@ -1676,20 +1675,29 @@ void rp::level_ending_effect::add_button_component()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Creates the facebook button.
+ * \brief Creates the social buttons.
  */
-void rp::level_ending_effect::add_facebook_button()
+void rp::level_ending_effect::add_social_buttons()
 {
   if ( game_variables::is_boss_level() )
     return;
 
+  add_facebook_button();
+  add_twitter_button();
+} // level_ending_effect::add_social_buttons()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the Facebook button.
+ */
+void rp::level_ending_effect::add_facebook_button()
+{
   m_facebook_button =
     new bear::gui::button
     ( get_level_globals().auto_sprite
       ( rp_gettext("gfx/status/status.png"), "facebook" ) );
 
-  m_facebook_button->set_left
-    ( ( m_root_window.width() - m_facebook_button->width() ) / 2 );
+  m_facebook_button->set_right( m_root_window.width() / 2 - s_margin );
   m_facebook_button->set_top( m_root_window.height() );
 
   m_facebook_button->add_callback
@@ -1712,8 +1720,45 @@ void rp::level_ending_effect::create_facebook_tweener()
       boost::bind( &bear::gui::button::set_bottom, m_facebook_button, _1 ),
       &claw::tween::easing_elastic::ease_out );
 
-  m_tweener_facebook = going_down;
+  m_social_tweener.insert( going_down );
 } // level_ending_effect::create_facebook_tweener()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the Twitter button.
+ */
+void rp::level_ending_effect::add_twitter_button()
+{
+  m_twitter_button =
+    new bear::gui::button
+    ( get_level_globals().auto_sprite
+      ( rp_gettext("gfx/status/status.png"), "twitter" ) );
+
+  m_twitter_button->set_left( m_root_window.width() / 2 + s_margin );
+  m_twitter_button->set_top( m_root_window.height() );
+
+  m_twitter_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_twitter_click, this ) ) );
+
+  m_root_window.insert( m_twitter_button );
+
+  create_twitter_tweener();
+} // level_ending_effect::add_twitter_button()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the tweener for the twitter button.
+ */
+void rp::level_ending_effect::create_twitter_tweener()
+{
+  claw::tween::single_tweener going_down
+    ( m_root_window.height(), m_root_window.height() / 4, 1.2,
+      boost::bind( &bear::gui::button::set_bottom, m_twitter_button, _1 ),
+      &claw::tween::easing_elastic::ease_out );
+
+  m_social_tweener.insert( going_down );
+} // level_ending_effect::create_twitter_tweener()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1765,7 +1810,7 @@ void rp::level_ending_effect::on_pass_scores()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Sends the score to the user's facebook page.
+ * \brief Sends the score to the user's Facebook page.
  */
 void rp::level_ending_effect::on_facebook_click()
 {
@@ -1773,14 +1818,22 @@ void rp::level_ending_effect::on_facebook_click()
     ( "https://www.facebook.com/sharer/sharer.php?u="
       "http://www.stuff-o-matic.com/asgp/" );
 
-#ifdef __ANDROID__
-
-  java_activity activity;
-  activity.open_url( url );
-
-#else
-
-  bear::engine::system_api::open( url );
-
-#endif
+  util::open_url( url );
 } // level_ending_effect::on_facebook_click()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sends the score to the user's Twitter page.
+ */
+void rp::level_ending_effect::on_twitter_click()
+{
+  const boost::format tweet
+    ( boost::format
+      ( gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
+      % game_variables::get_score() % util::get_level_name() );
+  const std::string url
+    ( "https://twitter.com/intent/tweet?url=http://www.stuff-o-matic.com/asgp/"
+      "&text=" + tweet.str() );
+
+  util::open_url( url );
+} // level_ending_effect::on_twitter_click()

@@ -19,11 +19,13 @@
 #include "rp/interactive_item.hpp"
 #include "rp/entity.hpp"
 #include "rp/version.hpp"
+#include "rp/android/java_activity.hpp"
 
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
 #include "engine/game.hpp"
 #include "engine/system/game_filesystem.hpp"
+#include "engine/system/system_api.hpp"
 #include "engine/variable/variable.hpp"
 #include "engine/variable/variable_list_reader.hpp"
 #include "engine/variable/var_map.hpp"
@@ -328,6 +330,36 @@ void rp::util::send_version()
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Saves the current configuration.
+ */
+void rp::util::save_config()
+{
+  config_file config;
+  config.update();
+  config.save();
+} // util::save_config()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Opens a given URL with the default program.
+ * \param url The url to open.
+ */
+void rp::util::open_url( const std::string& url )
+{
+#ifdef __ANDROID__
+
+  java_activity activity;
+  activity.open_url( url );
+
+#else
+
+  bear::engine::system_api::open( url );
+
+#endif
+} // util::open_url()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Create some smoke.
  * \param ref The item on which the smoke is created.
  * \param min_intensity The minimum intensity of the clouds.
@@ -397,14 +429,3 @@ void rp::util::apply_random_smoke_effect( bear::engine::base_item& item )
 
   item.new_item( *effect );
 } // util::apply_random_smoke_effect()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Saves the current configuration.
- */
-void rp::util::save_config()
-{
-  config_file config;
-  config.update();
-  config.save();
-} // util::save_config()

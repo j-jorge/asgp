@@ -26,6 +26,7 @@
 #include "visual/writing.hpp"
 
 #include <claw/tween/single_tweener.hpp>
+#include <claw/tween/tweener_group.hpp>
 
 #include <boost/thread/mutex.hpp>
 
@@ -256,15 +257,21 @@ namespace rp
     void create_fade_out_tweener();
     void pop_level();
     void add_button_component();
-    void add_facebook_button();
 
+    void add_social_buttons();
+
+    void add_facebook_button();
     void create_facebook_tweener();
+
+    void add_twitter_button();
+    void create_twitter_tweener();
 
     void get_best_score();
     void set_best_score( unsigned int );
 
     void on_pass_scores();
     void on_facebook_click();
+    void on_twitter_click();
 
     // not implemented
     level_ending_effect& operator=( const level_ending_effect& that );
@@ -324,8 +331,8 @@ namespace rp
     /** \brief The tweener for fade_out opacity. */
     claw::tween::single_tweener m_tweener_fade_out;
 
-    /** \brief The tweener for the facebook button. */
-    claw::tween::single_tweener m_tweener_facebook;
+    /** \brief The tweener for the social buttons. */
+    claw::tween::tweener_group m_social_tweener;
 
     /** \brief The current decorative medal. */
     bear::decorative_item* m_decorative_medal;
@@ -342,8 +349,11 @@ namespace rp
     /** \brief The button. */ 
     bear::gui::button* m_skip_button;
 
-    /** \brief The facebook button. */
+    /** \brief The Facebook button. */
     bear::gui::button* m_facebook_button;
+
+    /** \brief The Twitter button. */
+    bear::gui::button* m_twitter_button;
 
     /** \brief The sprite of background when the mouse is on the button. */
     bear::visual::sprite m_background_on_sprite;  

@@ -56,6 +56,8 @@ namespace rp
 
     static void save_config();
     
+    static void open_url( const std::string& url );
+
   private:
     static void create_smoke
     ( const bear::engine::base_item& ref, double min_intensity,
