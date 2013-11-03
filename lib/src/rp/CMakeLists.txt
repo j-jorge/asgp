@@ -59,7 +59,9 @@ set( RP_SOURCE_FILES
   code/util.cpp
   code/wall.cpp
   code/zeppelin.cpp
-  
+
+  android/code/java_activity.cpp
+
   layer/code/help_layer.cpp
   layer/code/key_layer.cpp
   layer/code/misc_layer.cpp

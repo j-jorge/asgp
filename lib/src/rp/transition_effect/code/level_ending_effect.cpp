@@ -19,6 +19,7 @@
 #include "rp/cart.hpp"
 #include "rp/util.hpp"
 #include "rp/version.hpp"
+#include "rp/android/java_activity.hpp"
 
 #include "engine/game.hpp"
 #include "engine/level.hpp"
@@ -1772,5 +1773,14 @@ void rp::level_ending_effect::on_facebook_click()
     ( "https://www.facebook.com/sharer/sharer.php?u="
       "http://www.stuff-o-matic.com/asgp/" );
 
+#ifdef __ANDROID__
+
+  java_activity activity;
+  activity.open_url( url );
+
+#else
+
   bear::engine::system_api::open( url );
+
+#endif
 } // level_ending_effect::on_facebook_click()

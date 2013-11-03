@@ -9,9 +9,11 @@
 package com.stuffomatic.asgp;
 
 import org.libsdl.app.SDLActivity;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
-import android.os.Bundle;
 
 public class ASGP extends SDLActivity
 {
@@ -28,4 +30,15 @@ public class ASGP extends SDLActivity
         getWindow().getDecorView().setSystemUiVisibility
             ( View.SYSTEM_UI_FLAG_LOW_PROFILE );
     }
+
+    /**
+     * Tells the system to open a given URL.
+     * @param url The URL to open.
+     */
+    public void openUrl( String url ) {
+
+        final Intent browserIntent =
+            new Intent( Intent.ACTION_VIEW, Uri.parse(url) );
+        startActivity(browserIntent);
+    } // openUrl()
 }
