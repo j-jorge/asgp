@@ -718,21 +718,20 @@ bool rp::level_ending_effect::mouse_move
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Inform the layer that the mouse had been moved.
+ * \brief Inform the layer that the mouse had been pressed.
  * \param pos The new position of the mouse.
  */
-bool rp::level_ending_effect::mouse_released
+bool rp::level_ending_effect::mouse_pressed
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
+  if ( game_variables::is_boss_level() )
+    return false;
+
   const bear::visual::position_type event_position( get_event_position( pos ) );
 
-  if ( m_skip_button->get_rectangle().includes( event_position ) && 
-       ! game_variables::is_boss_level() )
-    pass_scores();
-
-  return false;
-} // level_ending_effect::mouse_released()
+  return m_root_window.mouse_pressed( button, event_position );
+} // level_ending_effect::mouse_pressed()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -742,15 +741,13 @@ bool rp::level_ending_effect::mouse_released
 bool rp::level_ending_effect::finger_action
 ( const bear::input::finger_event& event )
 {
+  if ( game_variables::is_boss_level() )
+    return false;
+
   const bear::visual::position_type event_position
     ( get_event_position( event.get_position() ) );
 
-  if ( (event.get_type() == bear::input::finger_event::finger_event_pressed)
-       && m_skip_button->get_rectangle().includes(event_position)
-       && !game_variables::is_boss_level() )
-    pass_scores();
-
-  return false;
+  return m_root_window.finger_action( event.at_position( event_position ) );
 } // level_ending_effect::finger_action()
 
 /*----------------------------------------------------------------------------*/
@@ -769,25 +766,6 @@ bear::visual::position_type rp::level_ending_effect::get_event_position
       * pos.y
       / bear::engine::game::get_instance().get_window_size().y );
 } // level_ending_effect::get_event_position()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Passes the scores. If the count is over, we close the level. Otherwise
- *        we just call skip().
- */
-void rp::level_ending_effect::pass_scores()
-{
-  if ( m_finished )
-    {
-      if ( !m_in_fade_out )
-        {
-          create_fade_out_tweener();
-          m_in_fade_out = true;
-        }
-    }
-  else
-    skip();
-} // level_ending_effect::pass_scores()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1684,6 +1662,10 @@ void rp::level_ending_effect::add_button_component()
   m_skip_button->set_right( m_root_window.right() - 100 );
   m_skip_button->set_bottom( 80 );
 
+  m_skip_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_pass_scores, this ) ) );
+
   m_root_window.insert( m_skip_button );
 
   if ( game_variables::is_boss_level() )
@@ -1706,7 +1688,11 @@ void rp::level_ending_effect::add_facebook_button()
 
   m_facebook_button->set_left
     ( ( m_root_window.width() - m_facebook_button->width() ) / 2 );
-  m_facebook_button->set_bottom( m_root_window.height() );
+  m_facebook_button->set_top( m_root_window.height() );
+
+  m_facebook_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_facebook_click, this ) ) );
 
   m_root_window.insert( m_facebook_button );
 
@@ -1743,16 +1729,6 @@ void rp::level_ending_effect::get_best_score()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Send the score to the user's facebook page.
- */
-void rp::level_ending_effect::on_facebook_click()
-{
-  std::cout << "xxx points in level x-y- of Andy's Super Great Park!"
-            << std::endl;
-} // level_ending_effect::on_facebook_click()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Sets the best score of the current level.
  * \param score The best score.
  */
@@ -1765,3 +1741,32 @@ void rp::level_ending_effect::set_best_score( unsigned int score )
     ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt", 20),
       oss.str() );
 } // level_ending_effect::get_best_score()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Passes the scores. If the count is over, we close the level. Otherwise
+ *        we just call skip().
+ */
+void rp::level_ending_effect::on_pass_scores()
+{
+  if ( m_finished )
+    {
+      if ( !m_in_fade_out )
+        {
+          create_fade_out_tweener();
+          m_in_fade_out = true;
+        }
+    }
+  else
+    skip();
+} // level_ending_effect::on_pass_scores()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Send the score to the user's facebook page.
+ */
+void rp::level_ending_effect::on_facebook_click()
+{
+  std::cout << "xxx points in level x-y- of Andy's Super Great Park!"
+            << std::endl;
+} // level_ending_effect::on_facebook_click()

@@ -191,7 +191,7 @@ namespace rp
     bool button_maintained
     ( bear::input::joystick::joy_code button, unsigned int joy_index );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
-    bool mouse_released
+    bool mouse_pressed
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
     bool finger_action( const bear::input::finger_event& event );
@@ -201,8 +201,6 @@ namespace rp
 
     void skip();
     void fill_points();
-
-    void pass_scores();
 
     void give_level_points( const bear::visual::font& f );
     void give_balloon_points(const bear::visual::font& f);
@@ -265,6 +263,7 @@ namespace rp
     void get_best_score();
     void set_best_score( unsigned int );
 
+    void on_pass_scores();
     void on_facebook_click();
 
     // not implemented
