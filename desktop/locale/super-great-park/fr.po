@@ -7,14 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Andy's Super Great Park\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-13 21:34+0200\n"
-"PO-Revision-Date: 2013-10-13 21:41+0100\n"
+"POT-Creation-Date: 2013-11-04 18:30+0100\n"
+"PO-Revision-Date: 2013-11-04 18:37+0100\n"
 "Last-Translator: Julien Jorge <julien.jorge@stuff-o-matic.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.4\n"
+
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1831
+msgid "%1% points in level \"%2%\" of Andy's Super Great Park!"
+msgstr "%1% points au niveau « %2% » dans Andy's Super Great Park!"
 
 #: ../../../data/level/level_selection.lvl
 msgid "1"
@@ -60,7 +64,7 @@ msgstr "Graphismes"
 msgid "BONUS"
 msgstr "BONUS"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:811
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:846
 msgid "Balloons"
 msgstr "Ballons"
 
@@ -84,11 +88,11 @@ msgstr "La grande bleue "
 msgid "Black Gold"
 msgstr "L'or noir"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1075
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1110
 msgid "Bonus"
 msgstr "Bonus"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:831
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:866
 msgid "Burst balloons"
 msgstr "Ballons éclatés"
 
@@ -184,7 +188,7 @@ msgstr "Guillaume Martin"
 msgid "Hang on Though"
 msgstr "Accroche-toi"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:899
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:934
 msgid "Health bonus"
 msgstr "Bonus de vie"
 
@@ -222,7 +226,7 @@ msgstr ""
 "Conception\n"
 "des niveaux"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:792
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:827
 msgid "Level score"
 msgstr "Score du niveau"
 
@@ -250,11 +254,11 @@ msgstr "Marine"
 msgid "Mart1001"
 msgstr "Mart1001"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:875
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:910
 msgid "Missed cannonballs"
 msgstr "Boulets perdus"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:853
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:888
 msgid "Missed plungers"
 msgstr "Ventouses perdues"
 
@@ -278,7 +282,7 @@ msgstr "Une dernière danse"
 msgid "Only Five Balloons"
 msgstr "Seulement cinq ballons"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1096
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1131
 msgid "Penalties"
 msgstr "Pénalités"
 
@@ -367,7 +371,6 @@ msgid "Thanks to freesound.org users"
 msgstr "Contributeurs de freesound.org"
 
 #: ../../../data/level/level_selection.lvl
-#| msgid "The Appache Village"
 msgid "The Apache Village"
 msgstr "Le village apache"
 
@@ -427,7 +430,7 @@ msgstr "Thibault Jaouen"
 msgid "Through the Starfield"
 msgstr "À travers les étoiles"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:924
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:959
 msgid "Time bonus"
 msgstr "Bonus de temps"
 
@@ -435,8 +438,8 @@ msgstr "Bonus de temps"
 msgid "Tomlija"
 msgstr "Tomlija"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:480
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:585
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:486
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:594
 msgid "Total score "
 msgstr "Score total "
 
@@ -460,7 +463,7 @@ msgstr "William David"
 msgid "Witch Hunt"
 msgstr "Chasse aux sorcières"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1659
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1785
 msgid "World record: "
 msgstr "Record mondial : "
 
@@ -534,6 +537,21 @@ msgstr ""
 
 #: ../../../data/model/cart-brian.mdl ../../../data/model/cart.mdl
 msgid "animation/cart/tar.canim"
+msgstr ""
+
+#: ../../../data/level/1/level-1.lvl
+#| msgid "animation/zeppelin/screen/more-fun.canim"
+msgid "animation/help/cannon.canim"
+msgstr ""
+
+#: ../../../data/level/1/level-2.lvl
+#| msgid "animation/zeppelin/screen/more-fun.canim"
+msgid "animation/help/jump.canim"
+msgstr ""
+
+#: ../../../data/level/1/level-1.lvl
+#| msgid "animation/zeppelin/screen/more-fun.canim"
+msgid "animation/help/plunger.canim"
 msgstr ""
 
 #: ../../../data/model/switching.mdl
@@ -1174,12 +1192,6 @@ msgstr ""
 msgid "gfx/background/western/far/bk_11.png"
 msgstr ""
 
-#: ../../../data/animation/balloon.anim
-#: ../../../data/animation/balloon-blast.anim
-#: ../../../data/animation/balloon-slow.anim
-msgid "gfx/balloon/balloon.png"
-msgstr ""
-
 #: ../../../data/level/level_selection.lvl ../../../data/model/bird.mdl
 #: ../../../data/animation/bird/idle.anim
 #: ../../../data/animation/bird/fly.anim
@@ -1233,7 +1245,6 @@ msgid "gfx/boss/boss.png"
 msgstr ""
 
 #: ../../../data/animation/boss/lady.anim
-#: ../../../data/animation/boss/lady-plunger.anim
 #: ../../../data/animation/boss/lady-smoke.anim
 msgid "gfx/boss/lady.png"
 msgstr ""
@@ -1280,7 +1291,6 @@ msgid "gfx/buy/buy-message-1.png"
 msgstr ""
 
 #: ../../../data/level/buy.lvl
-#| msgid "gfx/status/buttons-2.png"
 msgid "gfx/buy/buy-message-2.png"
 msgstr ""
 
@@ -1351,6 +1361,12 @@ msgstr ""
 #: ../../../data/animation/cart/tar.anim
 #: ../../../data/animation/cart/spatter.anim
 msgid "gfx/cart/tar.png"
+msgstr ""
+
+#: ../../../data/animation/balloon.anim
+#: ../../../data/animation/balloon-blast.anim
+#: ../../../data/animation/balloon-slow.anim
+msgid "gfx/common.png"
 msgstr ""
 
 #: ../../../data/level/level_selection.lvl
@@ -1435,13 +1451,10 @@ msgstr ""
 msgid "gfx/misc/misc.png"
 msgstr ""
 
-#: ../../../data/level/5/level-4.lvl ../../../data/model/cable.mdl
-#: ../../../data/model/tnt.mdl ../../../data/model/crate.mdl
+#: ../../../data/level/level_selection.lvl ../../../data/level/5/level-4.lvl
+#: ../../../data/model/cable.mdl ../../../data/model/tnt.mdl
+#: ../../../data/model/crate.mdl
 msgid "gfx/obstacle/obstacle.png"
-msgstr ""
-
-#: ../../../data/animation/paint.anim
-msgid "gfx/paint.png"
 msgstr ""
 
 #: ../../../data/level/4/level-5.lvl ../../../data/level/4/level-1.lvl
@@ -2248,15 +2261,15 @@ msgstr ""
 msgid "gfx/space/space-6.png"
 msgstr ""
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:505
-#: ../../../lib/src/rp/code/add_ingame_layers.cpp:67
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:511
+#: ../../../lib/src/rp/code/add_ingame_layers.cpp:66
 #: ../../../data/model/bonus.mdl
 msgid "gfx/status/bonus.png"
 msgstr "gfx/i18n/fr/status/bonus.png"
 
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:300
-#: ../../../lib/src/rp/code/help_button.cpp:43
-#: ../../../lib/src/rp/code/help_button.cpp:56 ../../../data/level/buy.lvl
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:312
+#: ../../../lib/src/rp/code/help_button.cpp:35
+#: ../../../lib/src/rp/code/help_button.cpp:48 ../../../data/level/buy.lvl
 #: ../../../data/level/1/level-5.lvl ../../../data/level/1/level-1.lvl
 #: ../../../data/level/1/level-2.lvl ../../../data/level/1/level-4.lvl
 #: ../../../data/level/1/level-7.lvl ../../../data/level/1/level-6.lvl
@@ -2265,23 +2278,23 @@ msgstr "gfx/i18n/fr/status/bonus.png"
 msgid "gfx/status/buttons-2.png"
 msgstr "gfx/i18n/fr/status/buttons-2.png"
 
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:517
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:520
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:576
-#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1626
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:188
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:193
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:271
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:273
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:318
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:320
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:347
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:349
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:391
-#: ../../../lib/src/rp/layer/code/pause_layer.cpp:401
-#: ../../../lib/src/rp/code/help_button.cpp:41
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:524
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:527
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:583
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1661
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:191
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:196
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:283
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:285
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:330
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:332
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:359
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:361
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:403
+#: ../../../lib/src/rp/layer/code/pause_layer.cpp:413
+#: ../../../lib/src/rp/code/help_button.cpp:33
+#: ../../../lib/src/rp/code/add_ingame_layers.cpp:64
 #: ../../../lib/src/rp/code/add_ingame_layers.cpp:65
-#: ../../../lib/src/rp/code/add_ingame_layers.cpp:66
 #: ../../../data/level/4/level-8-transition.lvl
 #: ../../../data/level/2/level-8-transition.lvl ../../../data/level/buy.lvl
 #: ../../../data/level/intro.lvl ../../../data/level/1/level-5.lvl
@@ -2310,10 +2323,8 @@ msgstr ""
 msgid "gfx/status/level/frame-2.png"
 msgstr ""
 
-#: ../../../data/model/floating_score.mdl
-msgid "gfx/status/score.png"
-msgstr ""
-
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1698
+#: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1735
 #: ../../../data/model/bonus.mdl
 msgid "gfx/status/status.png"
 msgstr ""
@@ -2331,11 +2342,6 @@ msgstr ""
 #: ../../../data/animation/tar/splash.anim
 #: ../../../data/animation/tar/falling.anim
 msgid "gfx/tar/tar.png"
-msgstr ""
-
-#: ../../../data/animation/target-red.anim
-#: ../../../data/animation/target-yellow.anim
-msgid "gfx/target.png"
 msgstr ""
 
 #: ../../../data/level/buy.lvl ../../../data/level/intro.lvl
@@ -2593,14 +2599,6 @@ msgstr ""
 #: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-6.lvl
 #: ../../../data/level/5/level-4.lvl ../../../data/level/6/level-1.lvl
 #: ../../../data/level/3/level-5.lvl
-msgid "gfx/western/landscape-1.png"
-msgstr ""
-
-#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
-#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
-#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-6.lvl
-#: ../../../data/level/5/level-4.lvl ../../../data/level/6/level-1.lvl
-#: ../../../data/level/3/level-5.lvl
 msgid "gfx/western/western-1.png"
 msgstr ""
 
@@ -2610,27 +2608,6 @@ msgstr ""
 #: ../../../data/level/5/level-4.lvl ../../../data/level/6/level-1.lvl
 #: ../../../data/level/3/level-5.lvl
 msgid "gfx/western/western-2.png"
-msgstr ""
-
-#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
-#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
-#: ../../../data/level/1/level-1.lvl ../../../data/level/1/level-6.lvl
-#: ../../../data/level/5/level-4.lvl ../../../data/level/6/level-1.lvl
-#: ../../../data/level/3/level-5.lvl
-msgid "gfx/western/western-3.png"
-msgstr ""
-
-#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
-#: ../../../data/level/2/level-8.lvl ../../../data/level/2/level-3.lvl
-#: ../../../data/level/1/level-6.lvl ../../../data/level/5/level-4.lvl
-#: ../../../data/level/6/level-1.lvl ../../../data/level/3/level-5.lvl
-msgid "gfx/western/western-4.png"
-msgstr ""
-
-#: ../../../data/level/4/level-2.lvl ../../../data/level/4/level-7.lvl
-#: ../../../data/level/2/level-8.lvl ../../../data/level/5/level-4.lvl
-#: ../../../data/level/6/level-1.lvl ../../../data/level/3/level-5.lvl
-msgid "gfx/western/western-5.png"
 msgstr ""
 
 #: ../../../data/model/zeppelin/zeppelin.mdl
