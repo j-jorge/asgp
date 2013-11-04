@@ -1815,7 +1815,8 @@ void rp::level_ending_effect::on_pass_scores()
 void rp::level_ending_effect::on_facebook_click()
 {
   const std::string url
-    ( "http://www.stuff-o-matic.com/asgp/share.php?platform=facebook" );
+    ( "https://www.facebook.com/sharer/sharer.php?u="
+      "http://www.stuff-o-matic.com/asgp/" );
 
   util::open_url( url );
 } // level_ending_effect::on_facebook_click()
@@ -1831,8 +1832,8 @@ void rp::level_ending_effect::on_twitter_click()
       ( gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
       % game_variables::get_score() % util::get_level_name() );
   const std::string url
-    ( "http://www.stuff-o-matic.com/asgp/share.php?platform=twitter&message="
-      + tweet.str() );
+    ( "https://twitter.com/intent/tweet?url=http://www.stuff-o-matic.com/asgp/"
+      "&text=" + tweet.str() );
 
   util::open_url( url );
 } // level_ending_effect::on_twitter_click()
