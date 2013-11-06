@@ -72,7 +72,7 @@ void rp::http_request::get_page() const
 void rp::http_request::send_request( std::ostream& server_connection ) const
 {
   server_connection
-    << "GET " << m_page << " HTTP/1.1\n"
+    << "GET " << get_encoded_url() << " HTTP/1.1\n"
     << "Host: www.stuff-o-matic.com\n"
     << "User-Agent: " << "ASGP," << util::get_system_name() << ','
     << RP_VERSION_STRING << "\n"
@@ -114,6 +114,25 @@ void rp::http_request::parse_result( std::istream& server_connection ) const
           }
       }
 } // http_request::parse_result()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Encode the url to be sent to the server.
+ */
+std::string rp::http_request::get_encoded_url() const
+{
+  std::ostringstream result;
+  const std::string to_encode( " \"%-.<>\\^_`{|}~" );
+
+  for ( std::string::const_iterator it( m_page.begin() );
+        it != m_page.end(); ++it )
+    if ( to_encode.find_first_of(*it) == std::string::npos )
+      result << *it;
+    else
+      result << '%' << std::hex << (unsigned int)*it;
+
+  return result.str();
+} // http_request::get_encoded_url()
 
 /*----------------------------------------------------------------------------*/
 /**

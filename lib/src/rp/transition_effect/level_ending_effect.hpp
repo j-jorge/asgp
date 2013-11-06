@@ -214,10 +214,10 @@ namespace rp
 
     void add_social_buttons();
 
-    void add_facebook_button( std::string url );
+    void add_facebook_button();
     void create_facebook_tweener();
 
-    void add_twitter_button( std::string url );
+    void add_twitter_button();
     void create_twitter_tweener();
 
     void get_best_score();
@@ -310,18 +310,12 @@ namespace rp
         server. */
     http_request::result_connection m_facebook_request;
 
-    /** \brief The url to request on a click on the Facebook button. */
-    std::string m_facebook_url;
-
     /** \brief The Twitter button. */
     bear::gui::button* m_twitter_button;
 
     /** \brief The connection to the request of the Twitter url to our
         server. */
     http_request::result_connection m_twitter_request;
-
-    /** \brief The url to request on a click on the Twitter button. */
-    std::string m_twitter_url;
 
     /** \brief The sprite of background when the mouse is on the button. */
     bear::visual::sprite m_background_on_sprite;  

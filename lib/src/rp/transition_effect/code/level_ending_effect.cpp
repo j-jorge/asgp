@@ -1533,31 +1533,16 @@ void rp::level_ending_effect::add_social_buttons()
   if ( game_variables::is_boss_level() )
     return;
 
-  m_twitter_request =
-    http_request::request
-    ( "/asgp/share.php?to_stdout=1&platform=facebook",
-      boost::bind( &level_ending_effect::add_facebook_button, this, _1 ) );
-
-  const boost::format tweet
-    ( boost::format
-      ( gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
-      % game_variables::get_score() % util::get_level_name() );
-
-  m_facebook_request =
-    http_request::request
-    ( "/asgp/share.php?to_stdout=1&platform=twitter&message=" + tweet.str(),
-      boost::bind( &level_ending_effect::add_twitter_button, this, _1 ) );
+  add_facebook_button();
+  add_twitter_button();
 } // level_ending_effect::add_social_buttons()
 
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Creates the Facebook button.
- * \param url The url to call when the user clicks the button.
  */
-void rp::level_ending_effect::add_facebook_button( std::string url )
+void rp::level_ending_effect::add_facebook_button()
 {
-  m_facebook_url = url;
-
   m_facebook_button =
     new bear::gui::button
     ( get_level_globals().auto_sprite
@@ -1592,12 +1577,9 @@ void rp::level_ending_effect::create_facebook_tweener()
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Creates the Twitter button.
- * \param url The url to call when the user clicks the button.
  */
-void rp::level_ending_effect::add_twitter_button( std::string url )
+void rp::level_ending_effect::add_twitter_button()
 {
-  m_twitter_url = url;
-
   m_twitter_button =
     new bear::gui::button
     ( get_level_globals().auto_sprite
@@ -1677,7 +1659,10 @@ void rp::level_ending_effect::on_pass_scores()
  */
 void rp::level_ending_effect::on_facebook_click()
 {
-  util::open_url( m_facebook_url );
+  m_facebook_request =
+    http_request::request
+    ( "/asgp/share.php?to_stdout=1&platform=facebook",
+      boost::bind( &util::open_url, _1 ) );
 } // level_ending_effect::on_facebook_click()
 
 /*----------------------------------------------------------------------------*/
@@ -1686,5 +1671,13 @@ void rp::level_ending_effect::on_facebook_click()
  */
 void rp::level_ending_effect::on_twitter_click()
 {
-  util::open_url( m_twitter_url );
+  const boost::format tweet
+    ( boost::format
+      ( gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
+      % game_variables::get_score() % util::get_level_name() );
+
+  m_twitter_request =
+    http_request::request
+    ( "/asgp/share.php?to_stdout=1&platform=twitter&message=" + tweet.str(),
+      boost::bind( &util::open_url, _1 ) );
 } // level_ending_effect::on_twitter_click()

@@ -41,6 +41,8 @@ namespace rp
     void send_request( std::ostream& server_connection ) const;
     void parse_result( std::istream& server_connection ) const;
 
+    std::string get_encoded_url() const;
+
     explicit http_request( const std::string& page );
 
     // not implemented
