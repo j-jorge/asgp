@@ -214,10 +214,10 @@ namespace rp
 
     void add_social_buttons();
 
-    void add_facebook_button();
+    void add_facebook_button( std::string url );
     void create_facebook_tweener();
 
-    void add_twitter_button();
+    void add_twitter_button( std::string url );
     void create_twitter_tweener();
 
     void get_best_score();
@@ -306,8 +306,22 @@ namespace rp
     /** \brief The Facebook button. */
     bear::gui::button* m_facebook_button;
 
+    /** \brief The connection to the request of the Facebook url to our
+        server. */
+    http_request::result_connection m_facebook_request;
+
+    /** \brief The url to request on a click on the Facebook button. */
+    std::string m_facebook_url;
+
     /** \brief The Twitter button. */
     bear::gui::button* m_twitter_button;
+
+    /** \brief The connection to the request of the Twitter url to our
+        server. */
+    http_request::result_connection m_twitter_request;
+
+    /** \brief The url to request on a click on the Twitter button. */
+    std::string m_twitter_url;
 
     /** \brief The sprite of background when the mouse is on the button. */
     bear::visual::sprite m_background_on_sprite;  
@@ -337,7 +351,7 @@ namespace rp
     /** \brief The delay to wait before merging the lines. */
     bear::universe::time_type m_merge_delay;
 
-    /** \brief The function object that request the best score of the current
+    /** \brief The connection to the request of the best score of the current
         level to our stats server. */
     http_request::result_connection m_score_request;
 
