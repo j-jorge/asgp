@@ -360,6 +360,22 @@ void rp::util::open_url( const std::string& url )
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Gets the name of the system for which the game was compiled (either
+ *        windows, android or unix).
+ */
+std::string rp::util::get_system_name()
+{
+#if defined( _WIN32 )
+  return "windows";
+#elif defined( __ANDROID__ )
+  return "android";
+#else
+  return "unix";
+#endif
+} // util::get_system_name()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Create some smoke.
  * \param ref The item on which the smoke is created.
  * \param min_intensity The minimum intensity of the clouds.

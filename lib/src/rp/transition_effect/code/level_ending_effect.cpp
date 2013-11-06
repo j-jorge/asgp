@@ -36,161 +36,11 @@
 
 #include <boost/bind.hpp>
 #include <boost/format.hpp>
-#include <boost/thread/thread.hpp>
 
-#include <claw/socket_stream.hpp>
-#include <claw/string_algorithm.hpp>
 #include <claw/tween/easing/easing_linear.hpp>
 #include <claw/tween/easing/easing_elastic.hpp>
 
 #include <sstream>
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Constructs a new instance that won't do anything.
- */
-rp::level_ending_effect::score_request::score_request()
-  : m_is_active( new bool(true) ), m_shared_mutex( new boost::mutex )
-{
-
-} // level_ending_effect::score_request::score_request()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Constructs a new instance with a given callback function.
- * \param c The function to call when the score is ready.
- * \param level_name The file name of the level for which we want the score.
- */
-rp::level_ending_effect::score_request::score_request
-( callback_type c, std::string level_name )
-  : m_callback( c ), m_level_name( level_name ),
-    m_is_active( new bool(true) ), m_shared_mutex( new boost::mutex )
-{
-
-} // level_ending_effect::score_request::score_request()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Constructs a new instance by copying another instance.
- * \param that The instance to copy.
- */
-rp::level_ending_effect::score_request::score_request
-( const score_request& that )
-  : m_callback( that.m_callback ), m_level_name( that.m_level_name ),
-    m_is_active( that.m_is_active ), m_shared_mutex( that.m_shared_mutex )
-{
-
-} // level_ending_effect::score_request::score_request()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Returns the name of the level for which we request the score.
- */
-std::string rp::level_ending_effect::score_request::get_level_name() const
-{
-  return m_level_name;
-} // level_ending_effect::score_request::get_level_name()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Tells to not call the callback when the score is ready.
- */
-void rp::level_ending_effect::score_request::disable()
-{
-  boost::mutex::scoped_lock lock(*m_shared_mutex);
-
-  *m_is_active = false;
-} // level_ending_effect::score_request::disable()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Retrieves the score from the server and call the callback.
- */
-void rp::level_ending_effect::score_request::operator()()
-{
-  const std::string server( "www.stuff-o-matic.com" );
-  const int port( 80 );
-
-  claw::net::socket_stream server_connection( "www.stuff-o-matic.com", port );
-
-  if ( !server_connection )
-    {
-#ifdef _DEBUG
-      claw::logger << claw::log_verbose << "Cannot connect to " << server
-                   << " on port " << port << "." << std::endl;
-#endif
-      return;
-    }
-
-  const std::string page( "/asgp/stats/best_score.php?level=" + m_level_name );
-
-  std::ostringstream request;
-  request << "GET " << page << " HTTP/1.1\n"
-          << "Host: www.stuff-o-matic.com\n"
-          << "User-Agent: " << RP_VERSION_STRING << "\n"
-          << "Connection: Close\n"
-          << '\n';
-
-  server_connection << request.str() << std::flush;
-
-  std::string protocol;
-  int code;
-  std::string line;
-
-  if ( server_connection >> protocol >> code )
-    if ( claw::text::getline( server_connection, line ) )
-      {
-#ifdef _DEBUG
-        claw::logger << claw::log_verbose <<  "Stats server response: " << code
-                     << ' ' << line << std::endl;
-#endif
-        if ( code == 200 /* OK */ )
-          {
-            // Find the first empty line that separates the header and the body.
-            while ( !line.empty() )
-              claw::text::getline( server_connection, line );
-
-            // The body is the score alone
-            unsigned int score;
-            if ( server_connection >> score )
-              call_callback( score );
-          }
-      }
-} // level_ending_effect::score_request::operator()()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Calls the callback with a given value.
- * \param s The value to pass to the callback.
- */
-void rp::level_ending_effect::score_request::call_callback( unsigned int c )
-{
-  boost::mutex::scoped_lock lock(*m_shared_mutex);
-
-  if ( *m_is_active )
-    m_callback( c );
-} // level_ending_effect::score_request::call_callback()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Assigns another score request to this one.
- * \param that The instance to copy.
- */
-rp::level_ending_effect::score_request&
-rp::level_ending_effect::score_request::operator=( score_request that )
-{
-  boost::mutex::scoped_lock lock(*m_shared_mutex);
-
-  m_callback = that.m_callback;
-  m_level_name = that.m_level_name;
-  m_is_active = that.m_is_active;
-  m_shared_mutex = that.m_shared_mutex;
-
-  return *this;
-} // level_ending_effect::score_request::operator=()
-
-
-
 
 /*----------------------------------------------------------------------------*/
 const bear::visual::coordinate_type
@@ -437,8 +287,7 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
     m_decorative_medal(NULL), m_pop_level(false), m_active_component(false),
     m_skip_button(NULL), m_facebook_button(NULL),
     m_in_fade_out(false), m_applause_sample(NULL), m_update_function(NULL),
-    m_flash_opacity(0), m_play_tick(false),
-    m_score_request( that.m_score_request )
+    m_flash_opacity(0), m_play_tick(false)
 {
 
 } // level_ending_effect::level_ending_effect()
@@ -449,7 +298,7 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
  */
 rp::level_ending_effect::~level_ending_effect()
 {
-  m_score_request.disable();
+  m_score_request.disconnect();
 
   delete m_applause_sample;
 } // level_ending_effect::~level_ending_effect()
@@ -1766,12 +1615,9 @@ void rp::level_ending_effect::create_twitter_tweener()
  */
 void rp::level_ending_effect::get_best_score()
 {
-  m_score_request =
-    score_request
-    ( boost::bind( &level_ending_effect::set_best_score, this, _1 ),
-      get_level().get_filename() );
-
-  boost::thread t( m_score_request );
+  m_score_request = http_request::request
+    ( "/asgp/stats/best_score.php?level=" + get_level().get_filename(),
+      boost::bind( &level_ending_effect::set_best_score, this, _1 ) );
 } // level_ending_effect::get_best_score()
 
 /*----------------------------------------------------------------------------*/
@@ -1779,15 +1625,12 @@ void rp::level_ending_effect::get_best_score()
  * \brief Sets the best score of the current level.
  * \param score The best score.
  */
-void rp::level_ending_effect::set_best_score( unsigned int score )
+void rp::level_ending_effect::set_best_score( std::string score )
 {
-  std::ostringstream oss;
-  oss << rp_gettext("World record: ") << score;
-
   m_world_record.create
     ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt", 20),
-      oss.str() );
-} // level_ending_effect::get_best_score()
+      rp_gettext("World record: ") + score );
+} // level_ending_effect::set_best_score()
 
 /*----------------------------------------------------------------------------*/
 /**

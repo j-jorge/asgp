@@ -58,6 +58,8 @@ namespace rp
     
     static void open_url( const std::string& url );
 
+    static std::string get_system_name();
+
   private:
     static void create_smoke
     ( const bear::engine::base_item& ref, double min_intensity,

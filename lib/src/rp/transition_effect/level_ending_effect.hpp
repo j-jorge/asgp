@@ -14,6 +14,8 @@
 #ifndef __RP_LEVEL_ENDING_EFFECT_HPP__
 #define __RP_LEVEL_ENDING_EFFECT_HPP__
 
+#include "rp/http_request.hpp"
+
 #include "audio/sound_manager.hpp"
 
 #include "engine/transition_effect/transition_effect.hpp"
@@ -27,8 +29,6 @@
 
 #include <claw/tween/single_tweener.hpp>
 #include <claw/tween/tweener_group.hpp>
-
-#include <boost/thread/mutex.hpp>
 
 namespace rp
 {
@@ -46,52 +46,6 @@ namespace rp
     typedef std::list<bear::visual::scene_element> scene_element_list;
 
   private:
-    /**
-     * \brief The score_request class is passed to the thread that send
-     *        requests to the score server in order to asynchronously retrieve
-     *        the scores.
-     *
-     * If the owner of the score_request does not need the score, it can call
-     * the disable() method to cancel the request. All copies of the instances
-     * will then be disabled.
-     *
-     * \author Julien Jorge
-     */
-    class score_request
-    {
-    public:
-      /** \brief The type of the function to call when the score is ready. */
-      typedef boost::function<void (unsigned int)> callback_type;
-
-    public:
-      score_request();
-      score_request( callback_type c, std::string level_name );
-      score_request( const score_request& that );
-
-      std::string get_level_name() const;
-      void disable();
-
-      void operator()();
-      score_request& operator=( score_request that );
-
-    private:
-      void call_callback( unsigned int c );
-
-    private:
-      /** \brief The function to call when the score is set. */
-      callback_type m_callback;
-
-      /** \brief The file name of the level for which we want the score. */
-      std::string m_level_name;
-
-      /** \brief Tells if the score must be passed to the callback. */
-      boost::shared_ptr<bool> m_is_active;
-
-      /** \brief The mutex used to restrict the access to m_is_active. */
-      boost::shared_ptr<boost::mutex> m_shared_mutex;
-
-    }; // class score_request
-
     /** \brief A line of points displayed on the screen. */
     class score_line
     {
@@ -267,7 +221,7 @@ namespace rp
     void create_twitter_tweener();
 
     void get_best_score();
-    void set_best_score( unsigned int );
+    void set_best_score( std::string score );
 
     void on_pass_scores();
     void on_facebook_click();
@@ -385,7 +339,7 @@ namespace rp
 
     /** \brief The function object that request the best score of the current
         level to our stats server. */
-    score_request m_score_request;
+    http_request::result_connection m_score_request;
 
     /** \brief How many points are given per second. */
     static const unsigned int s_points_per_second;

@@ -12,6 +12,7 @@
  */
 #include "rp/http_request.hpp"
 
+#include "rp/util.hpp"
 #include "rp/version.hpp"
 
 #include <claw/socket_stream.hpp>
@@ -21,22 +22,27 @@
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief 
+ * \brief Requests a page from the server.
+ * \param page The path to the page, without the server's name
+ *        (e.g. "/path/to/file.php?param=0&value=1").
+ * \param on_result The function called with the result sent by the server. The
+ *        result contains the content of the page only.
+ * \return The connection to which on_result is linked. Call disconnect() on the
+ *         result if you do not need to be notified about the result.
  */
-boost::signals::connection
-rp::http_request::prepare_request
-( const std::string& page, result_function on_result )
+boost::signals2::connection
+rp::http_request::request( const std::string& page, result_function on_result )
 {
   boost::shared_ptr<http_request> request( new http_request(page) );
-  boost::signals::connection result( request->m_on_result.connect(on_result) );
+  boost::signals2::connection result( request->m_on_result.connect(on_result) );
   boost::thread t( boost::bind( &http_request::get_page, request ) );
 
   return result;
-} // http_request::prepare_request()
+} // http_request::request()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief 
+ * \brief Executes the request to the server.
  */
 void rp::http_request::get_page() const
 {
@@ -54,14 +60,34 @@ void rp::http_request::get_page() const
       return;
     }
 
+  send_request( server_connection );
+  parse_result( server_connection );
+} // http_request::get_page()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sends the request to the server.
+ * \param server_connection The stream in which we write the request.
+ */
+void rp::http_request::send_request( std::ostream& server_connection ) const
+{
   server_connection
     << "GET " << m_page << " HTTP/1.1\n"
     << "Host: www.stuff-o-matic.com\n"
-    << "User-Agent: " << "ASGP," /*<< util::get_system_name() << ',' */<< RP_VERSION_STRING << "\n"
+    << "User-Agent: " << "ASGP," << util::get_system_name() << ','
+    << RP_VERSION_STRING << "\n"
     << "Connection: Close\n"
     << '\n'
     << std::flush;
+} // http_request::send_request()
 
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Parses the result sent by the server.
+ * \param server_connection The stream from which we read the result.
+ */
+void rp::http_request::parse_result( std::istream& server_connection ) const
+{
   std::string protocol;
   int code;
   std::string line;
@@ -87,11 +113,12 @@ void rp::http_request::get_page() const
             m_on_result( result );
           }
       }
-} // http_request::request()
+} // http_request::parse_result()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief 
+ * \brief Constructs the request for a given page.
+ * \param page The page to request to the server.
  */
 rp::http_request::http_request( const std::string& page )
   : m_page( page )

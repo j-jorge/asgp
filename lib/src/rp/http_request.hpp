@@ -14,7 +14,7 @@
 #ifndef __RP_HTTP_REQUEST_HPP__
 #define __RP_HTTP_REQUEST_HPP__
 
-#include <boost/signals.hpp>
+#include <boost/signals2.hpp>
 #include <boost/function.hpp>
 
 namespace rp
@@ -29,12 +29,17 @@ namespace rp
     /** \brief The type of the function to call when the page is ready. */
     typedef boost::function<void (std::string)> result_function;
 
+    typedef boost::signals2::connection result_connection;
+
   public:
-    static boost::signals::connection prepare_request
+    static result_connection request
     ( const std::string& page, result_function on_result );
 
   private:
     void get_page() const;
+
+    void send_request( std::ostream& server_connection ) const;
+    void parse_result( std::istream& server_connection ) const;
 
     explicit http_request( const std::string& page );
 
@@ -47,7 +52,7 @@ namespace rp
     const std::string m_page;
 
     /** \brief The signal triggered when the result is ready. */
-    boost::signal<void (std::string)> m_on_result;
+    boost::signals2::signal<void (std::string)> m_on_result;
 
   }; // class http_request
 
