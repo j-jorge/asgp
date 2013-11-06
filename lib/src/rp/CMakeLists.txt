@@ -41,6 +41,7 @@ set( RP_SOURCE_FILES
   code/game_variables.cpp
   code/help_button.cpp
   code/hole.cpp
+  code/http_request.cpp
   code/init.cpp
   code/interactive_item.cpp
   code/level_exit.cpp
