@@ -1708,7 +1708,7 @@ void rp::level_ending_effect::on_twitter_click()
 {
   const boost::format tweet
     ( boost::format
-      ( gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
+      ( rp_gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
       % game_variables::get_score() % util::get_level_name() );
 
   m_twitter_request =
