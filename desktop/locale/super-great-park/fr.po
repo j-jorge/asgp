@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Andy's Super Great Park\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-04 18:30+0100\n"
-"PO-Revision-Date: 2013-11-04 18:37+0100\n"
+"PO-Revision-Date: 2013-11-07 21:53+0100\n"
 "Last-Translator: Julien Jorge <julien.jorge@stuff-o-matic.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1831
 msgid "%1% points in level \"%2%\" of Andy's Super Great Park!"
-msgstr "%1% points au niveau « %2% » dans Andy's Super Great Park!"
+msgstr "%1% points au niveau « %2% » dans Andy's Super Great Park !"
 
 #: ../../../data/level/level_selection.lvl
 msgid "1"
