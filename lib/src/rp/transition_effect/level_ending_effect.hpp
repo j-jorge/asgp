@@ -223,6 +223,9 @@ namespace rp
     void get_best_score();
     void set_best_score( std::string score );
 
+    void set_url( std::string url );
+    void open_url();
+
     void on_pass_scores();
     void on_facebook_click();
     void on_twitter_click();
@@ -341,6 +344,12 @@ namespace rp
 
     /** \brief Tells if the tick sound must be played. */
     bool m_play_tick;
+
+    /** \brief The url to open, in the next iteration. */
+    std::string m_url;
+
+    /** \brief This mutex is used to lock the changes of m_url. */
+    boost::mutex m_url_mutex;
 
     /** \brief The delay to wait before merging the lines. */
     bear::universe::time_type m_merge_delay;

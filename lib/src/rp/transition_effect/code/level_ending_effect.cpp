@@ -452,6 +452,13 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
   m_tweener_fade_out.update(elapsed_time);
   m_social_tweener.update(elapsed_time);
 
+  // Opening the URL immediately will crash on Android. The cause seems to be
+  // that the app goes in background (due to the display of Chrome) while the
+  // main thread is not active. Indeed, the activte thread is the one receiving
+  // the URL from our server and calling the signal. The opening of the URL is
+  // thus postponed there, to be sure it is done in the main thread.
+  open_url();
+
   return 0;
 } // level_ending_effect::progress()
 
@@ -1636,6 +1643,34 @@ void rp::level_ending_effect::set_best_score( std::string score )
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Sets the url to open as soon as we can.
+ * \param url The url to open. If there is already a stored url, it will be
+ *        overwritten.
+ */
+void rp::level_ending_effect::set_url( std::string url )
+{
+  boost::mutex::scoped_lock lock( m_url_mutex );
+
+  m_url = url;
+} // level_ending_effect::set_url()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Opens the last url given to set_url.
+ */
+void rp::level_ending_effect::open_url()
+{
+  boost::mutex::scoped_lock lock( m_url_mutex );
+
+  if ( !m_url.empty() )
+    {
+      util::open_url( m_url );
+      m_url.clear();
+    }
+} // level_ending_effect::open_url()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Passes the scores. If the count is over, we close the level. Otherwise
  *        we just call skip().
  */
@@ -1662,7 +1697,7 @@ void rp::level_ending_effect::on_facebook_click()
   m_facebook_request =
     http_request::request
     ( "/asgp/share.php?to_stdout=1&platform=facebook",
-      boost::bind( &util::open_url, _1 ) );
+      boost::bind( &level_ending_effect::set_url, this, _1 ) );
 } // level_ending_effect::on_facebook_click()
 
 /*----------------------------------------------------------------------------*/
@@ -1679,5 +1714,5 @@ void rp::level_ending_effect::on_twitter_click()
   m_twitter_request =
     http_request::request
     ( "/asgp/share.php?to_stdout=1&platform=twitter&message=" + tweet.str(),
-      boost::bind( &util::open_url, _1 ) );
+      boost::bind( &level_ending_effect::set_url, this, _1 ) );
 } // level_ending_effect::on_twitter_click()
