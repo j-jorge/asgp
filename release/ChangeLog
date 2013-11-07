@@ -1,3 +1,24 @@
+2013-11-07 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.10
+
+	* Add Facebook and Tweeter buttons at the end of the levels.
+
+	* Fix various memory leaks.
+	
+2013-09-25 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.9
+
+	* Adds changes lost when migrating to GitHub:
+	- The world record is shown at the end of the levels.
+	- The size of the score line at the end of the levels is constrained.
+	- Adds Spanish and Portuguese translations.
+	- Adds missing accents in Fontopo.
+	- Windows' installer is available in French, Spanish and Portuguese.
+
+	* Port the game to Android.
+
 2013-08-27 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.8
