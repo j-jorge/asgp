@@ -61,6 +61,7 @@ set( RP_SOURCE_FILES
   code/wall.cpp
   code/zeppelin.cpp
 
+  android/code/back_button_home_item.cpp
   android/code/java_activity.cpp
 
   layer/code/help_layer.cpp

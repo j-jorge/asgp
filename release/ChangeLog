@@ -5,7 +5,10 @@
 	* Add Facebook and Tweeter buttons at the end of the levels.
 
 	* Fix various memory leaks.
-	
+
+	* The back button reacts as the home button in the level selection
+	  on Android.
+
 2013-09-25 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.9

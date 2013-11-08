@@ -152,7 +152,7 @@ find . -name "*.po" \
     | while read f
 do
     echo "Converting encoding of $f"
-    
+
     git checkout HEAD "$f"
 
     iconv $f --to-code ISO-8859-15 \

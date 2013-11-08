@@ -10989,6 +10989,29 @@
 </fields>
     </item><!-- bear::decorative_item -->
 
+    <item class_name='rp::back_button_home_item' fixed='false' id='back_button_shows_home'>
+<fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2110'/>
+</field>
+<field name='base_item.position.left'>
+<real value='269'/>
+</field>
+</fields>
+    </item><!-- rp::back_button_home_item -->
+
     <item class_name='bear::forced_join_creator' fixed='false' id='outside-join-back-mvt'>
 <fields>
 <field name='base_item.global'>

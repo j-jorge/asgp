@@ -26,6 +26,7 @@ namespace rp
   {
   public:
     void open_url( const std::string& url ) const;
+    void show_home() const;
 
   }; // class java_activity
 

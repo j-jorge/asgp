@@ -41,4 +41,14 @@ public class ASGP extends SDLActivity
             new Intent( Intent.ACTION_VIEW, Uri.parse(url) );
         startActivity(browserIntent);
     } // openUrl()
+
+    /**
+     * Tells the system to show the home screen.
+     */
+    public void showHome() {
+
+        final Intent homeIntent = new Intent( Intent.ACTION_MAIN );
+        homeIntent.addCategory( Intent.CATEGORY_HOME );
+        startActivity(homeIntent);
+    } // showHome()
 }

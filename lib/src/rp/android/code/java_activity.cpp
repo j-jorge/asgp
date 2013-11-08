@@ -39,4 +39,22 @@ void rp::java_activity::open_url( const std::string& url ) const
   env->DeleteLocalRef(activity);
 } // java_activity::open_url()
 
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tells the system to show the home screen.
+ */
+void rp::java_activity::show_home() const
+{
+  JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
+
+  jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
+  jclass clazz( env->GetObjectClass(activity) );
+
+  const jmethodID method_id( env->GetMethodID( clazz, "showHome", "()V" ) );
+
+  env->CallVoidMethod( activity, method_id );
+    
+  env->DeleteLocalRef(activity);
+} // java_activity::show_home()
+
 #endif // __ANDROID__
