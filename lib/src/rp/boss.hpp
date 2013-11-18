@@ -20,6 +20,7 @@
 #include "engine/model.hpp"
 #include "engine/base_item.hpp"
 #include "generic_items/reference_item.hpp"
+#include "generic_items/decorative_item.hpp"
 #include "universe/derived_item_handle.hpp"
 
 #include <claw/tween/tweener_sequence.hpp>
@@ -167,7 +168,11 @@ namespace rp
     void choose_module( unsigned int serial );
     void hit();
     void throw_element(const std::string& mark_name);
+
     void create_interactive_item();
+    void destroy_interactive_item();
+    void create_help_item( const bear::visual::animation& animation );
+
     void create_hit_star();
     void init_transition_mode();
     void restore_module();
@@ -235,6 +240,9 @@ namespace rp
 
     /** \brief The item for interactive item. */
     bear::reference_item* m_interactive_item;
+
+    /** \brief The item for the help. */
+    bear::decorative_item* m_help_item;
 
     /** \brief The decorative module to put in transition_level. */
     bear::engine::base_item* m_module;  

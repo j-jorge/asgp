@@ -76,6 +76,8 @@ void rp::boss::pre_cache()
   get_level_globals().load_model("model/boss.cm");
   get_level_globals().load_animation("animation/boss/trap-door-closing.canim");
   get_level_globals().load_animation("animation/boss/trap-door.canim");
+  get_level_globals().load_animation("animation/help/cannon.canim");
+  get_level_globals().load_animation("animation/help/plunger.canim");
   get_level_globals().load_sound("sound/boss/dropping.ogg");
   get_level_globals().load_sound("sound/boss/trap-door-closing.ogg");
   get_level_globals().load_sound("sound/boss/trap-door-opening.ogg");
@@ -126,6 +128,7 @@ void rp::boss::on_enters_layer()
   m_move_on_cart = true;
   m_teleportation_gap = bear::universe::position_type(0,0);
   m_interactive_item = NULL;
+  m_help_item = NULL;
 } // rp::boss::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
@@ -477,8 +480,9 @@ void rp::boss::update_interactive_item()
 {
   if ( m_open )
     {
-      if ( m_interactive_item == NULL )
-        create_interactive_item();
+      create_interactive_item();
+      create_help_item
+        ( get_level_globals().get_animation( "animation/help/cannon.canim" ) );
 
       m_interactive_item->set_center_of_mass
         ( get_mark_world_position("trap corner") );
@@ -492,18 +496,20 @@ void rp::boss::update_interactive_item()
 
       if ( angle <= 0.2 )
         {
-          if ( m_interactive_item == NULL )
-            create_interactive_item();
+          create_interactive_item();
+          create_help_item
+            ( get_level_globals().get_animation
+              ( "animation/help/plunger.canim" ) );
 
           m_interactive_item->set_center_of_mass
             (get_mark_world_position("button"));
         }
-      else if ( m_interactive_item != NULL )
-        {
-          m_interactive_item->kill();
-          m_interactive_item = NULL;
-        }
+      else
+        destroy_interactive_item();
     }
+
+  if ( m_help_item != NULL )
+    m_help_item->set_z_position( get_z_position() + 10 );
 } // boss::update_interactive_item()
  
 /*----------------------------------------------------------------------------*/
@@ -947,7 +953,9 @@ void rp::boss::open_trap_door()
 { 
   if ( ! m_open )
     {
+      destroy_interactive_item();
       m_open = true;
+
       set_global_substitute
         ("trap door", new bear::visual::animation
          (get_level_globals().get_animation
@@ -1700,16 +1708,69 @@ void rp::boss::throw_element(const std::string& mark_name)
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Create the interactive_item.
+ * \brief Creates the interactive_item.
  */
 void rp::boss::create_interactive_item()
 { 
+  if ( m_interactive_item != NULL )
+    return;
+
   m_interactive_item = new bear::reference_item();
+
   new_item(*m_interactive_item);
   m_interactive_item->set_size(100, 100);
   m_interactive_item->set_center_of_mass(get_mark_world_position("button"));
   entity::create_interactive_item( *m_interactive_item, 1, 0 );
 } // boss::create_interactive_item()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Destroys the interactive item and the help item.
+ */
+void rp::boss::destroy_interactive_item()
+{
+  if ( m_interactive_item != NULL )
+    {
+      m_interactive_item->kill();
+      m_interactive_item = NULL;
+    }
+
+  if ( m_help_item != NULL )
+    {
+      m_help_item->kill();
+      m_help_item = NULL;
+    }
+} // boss::destroy_interactive_item()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the help decoration to display over the interactive item.
+ * \param animation The animation displayed by the help item.
+ */
+void rp::boss::create_help_item( const bear::visual::animation& animation )
+{ 
+  if ( m_interactive_item == NULL )
+    return;
+
+  if ( ( game_variables::get_serial_number() != 1 )
+       || ( game_variables::get_boss_hits() != 0 ) )
+    return;
+
+  if ( m_help_item != NULL )
+    return;
+
+  m_help_item = new bear::decorative_item;
+  m_help_item->set_animation( animation );
+  m_help_item->set_z_position( get_z_position() + 10 );
+
+  new_item(*m_help_item);
+
+  bear::universe::forced_tracking mvt( bear::universe::position_type(0, 0) );
+  mvt.set_reference_point_on_center(*m_interactive_item);
+  mvt.set_moving_item_ratio( bear::universe::position_type(0, 1) );
+
+  m_help_item->set_forced_movement(mvt);
+} // boss::create__item()
 
 /*----------------------------------------------------------------------------*/
 /**
