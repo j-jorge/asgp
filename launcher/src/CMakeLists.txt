@@ -107,7 +107,7 @@ if(WIN32)
   set(
     RP_LAUNCHER_LINK_LIBRARIES
     ${RP_LAUNCHER_LINK_LIBRARIES}
-    ${SDL_LIBRARY}
+    ${SDL2_LIBRARY}
     intl )
 endif(WIN32)
 
@@ -116,8 +116,8 @@ if(APPLE)
   set(
     RP_LAUNCHER_LINK_LIBRARIES
     ${RP_LAUNCHER_LINK_LIBRARIES}
-    ${SDL_LIBRARY}
-    SDLmain
+    ${SDL2_LIBRARY}
+    SDL2main
     intl )
 endif(APPLE)
 
