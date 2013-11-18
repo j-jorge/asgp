@@ -13680,8 +13680,11 @@
 </fields>
     </item><!-- bear::reference_item -->
 
-    <item class_name='bear::decorative_item' fixed='true'>
+    <item class_name='bear::decorative_item' fixed='true' id='help-jump'>
 <fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='2952'/>
 </field>
@@ -15745,6 +15748,23 @@
 </fields>
     </item><!-- rp::boss_teleport -->
 
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2184'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1000'/>
+</field>
+<field name='base_item.position.left'>
+<real value='13377.5'/>
+</field>
+<field name='item_with_decoration.item_to_mimic'>
+<item_reference value='help-jump'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_friction.top_friction'>
@@ -15777,7 +15797,7 @@
 <real value='2237'/>
 </field>
 <field name='base_item.position.left'>
-<real value='13544.5'/>
+<real value='13544'/>
 </field>
 <field name='base_item.size.height'>
 <real value='26'/>
