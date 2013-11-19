@@ -87,7 +87,6 @@ buttons_img "buttons.xcf.bz2"
   ;
 
 "background off" image_size * 0.5 with buttons_img
-  glob "background off*"
   glob "background common*"
   ;
 
