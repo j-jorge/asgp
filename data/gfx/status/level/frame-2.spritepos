@@ -1,6 +1,3 @@
-# The format of the lines is
-# picture: x y width height
-
 main: 0 0 338 337
 empty: 339 0 151 171
 star: 339 172 108 104
