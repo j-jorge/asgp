@@ -10763,7 +10763,7 @@
 <real value='1880'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='48'/>
@@ -10797,7 +10797,7 @@
 <real value='1774'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='49'/>
@@ -10918,7 +10918,7 @@
 <real value='1774'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='196'/>
@@ -11113,7 +11113,7 @@
 <real value='1776'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='342'/>
@@ -11292,7 +11292,7 @@
 <real value='1775'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='487'/>
@@ -11432,7 +11432,7 @@
 <real value='1907'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='554'/>
