@@ -40,7 +40,7 @@ rp::balloon::balloon()
   set_can_move_items(false);
   set_mass(0.1);
   set_density(0.001);
-} // rp::balloon::balloon()
+} // balloon::balloon()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -51,8 +51,16 @@ void rp::balloon::pre_cache()
   super::pre_cache();
   
   get_level_globals().load_model("model/balloon.cm");
-  get_level_globals().load_animation( "animation/balloon.canim" );
-} // rp::balloon::pre_cache()
+  get_level_globals().load_animation( "animation/balloon/balloon-blue.canim" );
+  get_level_globals().load_animation( "animation/balloon/balloon-green.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-orange.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-purple.canim" );
+  get_level_globals().load_animation( "animation/balloon/balloon-red.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-yellow.canim" );
+} // balloon::pre_cache()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -65,7 +73,7 @@ void rp::balloon::on_enters_layer()
   set_model_actor( get_level_globals().get_model("model/balloon.cm") );
   start_model_action("idle");
 
-  choose_color();
+  const std::string color( choose_color() );
   create_interactive_item(*this, 1, 0);
   
   bear::engine::model_mark_placement mark;
@@ -85,12 +93,13 @@ void rp::balloon::on_enters_layer()
         {
           bear::visual::animation* anim = 
             new bear::visual::animation
-            ( get_level_globals().get_animation( "animation/balloon.canim" ) );
+            ( get_level_globals().get_animation
+              ( "animation/balloon-" + color + ".canim" ) );
           anim->set_time_factor( (double)rand() / RAND_MAX / 2.0 + 1.0 );
           set_global_substitute( "body", anim);
         }
     }
-} // rp::balloon::on_enters_layer()
+} // balloon::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
 /**
@@ -103,7 +112,7 @@ void rp::balloon::progress( bear::universe::time_type elapsed_time )
 
   if ( m_fly )
     m_tweener_y_position.update(elapsed_time);
-} // rp::balloon::progress()
+} // balloon::progress()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -214,7 +223,7 @@ void rp::balloon::fly(cart* c)
 bool rp::balloon::has_attack_point() const
 {
   return ! has_forced_movement();
-} // rp::balloon::has_attack_point()
+} // balloon::has_attack_point()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -223,7 +232,7 @@ bool rp::balloon::has_attack_point() const
 bear::universe::position_type rp::balloon::get_attack_point() const
 {
   return get_center_of_mass();
-} // rp::balloon::get_attack_point()
+} // balloon::get_attack_point()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -443,7 +452,7 @@ void rp::balloon::create_tar_balloon()
     ( get_level_globals().auto_sprite
       ("gfx/common.png", "balloon 0") );
   item->auto_size();
-  item->get_rendering_attributes().set_intensity(0,0,0);
+  item->get_rendering_attributes().set_intensity(0, 0, 0);
   item->set_z_position(get_z_position());
   item->set_mass(0.1);
   item->set_density(0.002);
@@ -490,36 +499,24 @@ void rp::balloon::create_decorative_blast
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Choose a random color.
+ * \brief Chooses a random color for the balloon
  */
-void rp::balloon::choose_color()
+std::string rp::balloon::choose_color()
 {
-  switch( rand() % 8 )
+  switch( rand() % 6 )
     {
     case 0:
-      get_rendering_attributes().set_intensity(1, 1, 0);
-      break;
+      return "blue";
     case 1:
-      get_rendering_attributes().set_intensity(0.4, 1, 0.13);
-      break;
+      return "green";
     case 2:
-      get_rendering_attributes().set_intensity(0.85, 0.21, 1);
-      break;
+      return "orange";
     case 3:
-      get_rendering_attributes().set_intensity(1, 0.21, 0.42);
-      break;
+      return "purple";
     case 4:
-      get_rendering_attributes().set_intensity(0.95, 0.12, 0.12);
-      break;
+      return "red";
     case 5:
-      get_rendering_attributes().set_intensity(1, 0.78, 0);
-      break;
-    case 6:
-        get_rendering_attributes().set_intensity(0.12, 0.17, 0.95);
-      break;
-    case 7:
-      get_rendering_attributes().set_intensity(0, 0.83, 0.58);
-      break;
+      return "yellow";
     }
 } // balloon::choose_color()
 

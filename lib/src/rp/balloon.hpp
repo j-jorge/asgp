@@ -75,7 +75,7 @@ namespace rp
     void create_decorative_blast
     (const std::string& sprite_name, const bear::universe::speed_type& speed);
     void create_tar_balloon();
-    void choose_color();
+    std::string choose_color();
     void on_y_position_change(const bear::universe::coordinate_type& value);
 
   private:

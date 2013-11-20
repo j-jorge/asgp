@@ -12959,7 +12959,7 @@
 <real value='2816'/>
 </field>
 <field name='item_with_decoration.animation'>
-<animation_file path='animation/balloon.canim' auto_size='true' width='43' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<animation_file path='animation/balloon/balloon-red.canim' auto_size='true' width='43' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->

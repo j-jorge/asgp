@@ -24240,7 +24240,7 @@ base_item.position.left
 46
 item_with_decoration.animation
 content_file
-animation/balloon.canim
+animation/balloon/balloon-red.canim
 43
 85
 0

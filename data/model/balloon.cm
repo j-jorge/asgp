@@ -1,9 +1,9 @@
 0
-7
+10
 0
 2
 content_file
-animation/balloon.canim
+animation/balloon/balloon-red.canim
 43
 85
 0
@@ -34,10 +34,12 @@ idle
 body
 0
 0
+1
 0
 string
 0
 0
+1
 2
 1
 0
@@ -89,7 +91,7 @@ align_bottom
 1
 
 explose
-0.26
+0.17
 
 0
 0
@@ -97,6 +99,7 @@ explose
 broken_body
 0
 0
+1
 1
 2
 0
@@ -132,7 +135,7 @@ sound/balloon/burst-4.ogg
 1
 1
 
-0.252
+0.168
 finish_explose
 34
 36
