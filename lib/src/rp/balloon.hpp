@@ -45,6 +45,10 @@ namespace rp
   public:
     balloon();
     
+    static std::string get_random_color();
+
+    std::string get_color() const;
+
     void pre_cache();
     void on_enters_layer();
     void progress( bear::universe::time_type elapsed_time );
@@ -75,13 +79,16 @@ namespace rp
     void create_decorative_blast
     (const std::string& sprite_name, const bear::universe::speed_type& speed);
     void create_tar_balloon();
-    std::string choose_color();
+    
     void on_y_position_change(const bear::universe::coordinate_type& value);
 
   private:
     static void init_exported_methods();
 
   private:
+    /** \brief The color of this balloon. */
+    std::string m_color;
+
     /** \brief Indicates if the balloon has been hit. */
     bool m_hit;
 

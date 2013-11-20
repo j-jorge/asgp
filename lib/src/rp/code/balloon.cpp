@@ -34,13 +34,47 @@ BASE_ITEM_EXPORT( balloon, rp )
  * \brief Constructor.
  */
 rp::balloon::balloon()
-: m_hit(false), m_fly(false), m_cart(NULL)
+: m_color( get_random_color() ), m_hit(false), m_fly(false), m_cart(NULL)
 {
   set_phantom(true);
   set_can_move_items(false);
   set_mass(0.1);
   set_density(0.001);
 } // balloon::balloon()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Returns a random valid color for a balloon
+ */
+std::string rp::balloon::get_random_color()
+{
+  switch( rand() % 6 )
+    {
+    case 0:
+      return "blue";
+    case 1:
+      return "green";
+    case 2:
+      return "orange";
+    case 3:
+      return "purple";
+    case 4:
+      return "red";
+    case 5:
+      return "yellow";
+    }
+
+  return "red";
+} // balloon::get_random_color()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Returns the color of this balloon.
+ */
+std::string rp::balloon::get_color() const
+{
+  return m_color;
+} // balloon::get_color()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -73,30 +107,30 @@ void rp::balloon::on_enters_layer()
   set_model_actor( get_level_globals().get_model("model/balloon.cm") );
   start_model_action("idle");
 
-  const std::string color( choose_color() );
   create_interactive_item(*this, 1, 0);
   
   bear::engine::model_mark_placement mark;
       
   if ( get_mark_placement( "body", mark ) )
     {
+      const bear::visual::animation ref_anim
+        ( get_level_globals().get_animation
+          ( "animation/balloon/balloon-" + m_color + ".canim" ) );
+
       if ( get_passive() )
         {
-          bear::visual::animation* anim = 
-            new bear::visual::animation
-            ( get_level_globals().get_animation
-              ( "animation/balloon-slow.canim" ) );
+          bear::visual::animation* anim
+            ( new bear::visual::animation( ref_anim.get_sprite() ) );
+
           anim->set_time_factor( (double)rand() / RAND_MAX / 2.0 + 1.0 );
           set_global_substitute( "body", anim);
         }
       else
         {
-          bear::visual::animation* anim = 
-            new bear::visual::animation
-            ( get_level_globals().get_animation
-              ( "animation/balloon-" + color + ".canim" ) );
+          bear::visual::animation* anim
+            ( new bear::visual::animation( ref_anim ) );
           anim->set_time_factor( (double)rand() / RAND_MAX / 2.0 + 1.0 );
-          set_global_substitute( "body", anim);
+          set_global_substitute( "body", anim );
         }
     }
 } // balloon::on_enters_layer()
@@ -496,29 +530,6 @@ void rp::balloon::create_decorative_blast
   CLAW_ASSERT( item->is_valid(),
          "The decoration of balloon isn't correctly initialized" );
 } // balloon::create_decorative_blast()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Chooses a random color for the balloon
- */
-std::string rp::balloon::choose_color()
-{
-  switch( rand() % 6 )
-    {
-    case 0:
-      return "blue";
-    case 1:
-      return "green";
-    case 2:
-      return "orange";
-    case 3:
-      return "purple";
-    case 4:
-      return "red";
-    case 5:
-      return "yellow";
-    }
-} // balloon::choose_color()
 
 /*----------------------------------------------------------------------------*/
 /**
