@@ -5,9 +5,7 @@ sprite_sheet "intro" 512 x 256 margin 0
 img "intro.xcf.bz2"
 
 "panel" autosize * 0.5 with img
-  "balloons"
-  "shadows"
-  "panel"
-  "border"
+  "lens"
+  "frame"
   ;
 

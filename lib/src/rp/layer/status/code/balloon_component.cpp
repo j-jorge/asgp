@@ -60,7 +60,7 @@ void rp::balloon_component::build()
   std::ostringstream os;
   os << "/" << game_variables::get_required_balloons_number();
   m_required_balloon.create(m_font, os.str());
-  m_required_balloon->set_intensity( 0.25, 1, 0.25 );
+  m_required_balloon->set_intensity( 0.15, 1, 0.15 );
 
   on_balloon_changed(0);
   
@@ -155,7 +155,7 @@ void rp::balloon_component::on_balloon_changed(unsigned int number)
   m_balloon.create(m_font, oss.str());
 
   const double required( game_variables::get_required_balloons_number() );
-  const double min_intensity(0.25);
+  const double min_intensity(0.15);
 
   if ( number >= required )
     m_balloon->set_intensity( min_intensity, 1, min_intensity );
