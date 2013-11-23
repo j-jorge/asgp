@@ -57,9 +57,6 @@ namespace rp
     /** \brief Position of the floating corrupting bonus. */
     bear::visual::position_type m_position;
 
-    /** \brief The font for text. */
-    bear::visual::font m_font;
-    
     /** \brief The points text. */
     bear::visual::writing m_points;
 

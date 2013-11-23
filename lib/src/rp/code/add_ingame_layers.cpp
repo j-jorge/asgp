@@ -58,7 +58,8 @@ rp::add_ingame_layers::add_ingame_layers()
  */
 void rp::add_ingame_layers::pre_cache()
 {
-  get_level_globals().load_font("font/balloon/balloon.fnt");
+  get_level_globals().load_font("font/beroga.ttf");
+  get_level_globals().load_font("font/lobster.otf");
   get_level_globals().load_font("font/fixed-10x20.fnt");
 
   get_level_globals().load_image( rp_gettext("gfx/status/buttons.png") );

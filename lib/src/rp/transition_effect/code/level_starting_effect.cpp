@@ -139,9 +139,6 @@ void rp::level_starting_effect::render( scene_element_list& e ) const
         {
           bear::visual::coordinate_type y_panel = render_panel(e,center);
           render_balloon_text(e,center, y_panel);
-#if 0
-          render_level_information(e,center);
-#endif
         }
     }
 
@@ -268,53 +265,6 @@ void rp::level_starting_effect::render_balloon_text
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Render the components of the effect.
- * \param e (out) The scene elements.
- * \param center The center of the layer.
- */
-void rp::level_starting_effect::render_level_information
-( scene_element_list& e, const bear::visual::position_type& center ) const
-{
-  std::string info(game_variables::get_level_info());
-  if ( ! info.empty() )
-    {
-      const bear::visual::position_type pos
-        ( center.x - m_info.get_width()/2, 
-          ( std::min( center.y - m_background.height() / 2,
-                      center.y - m_text.get_height()/2 - 20 ) + 
-            20 - m_info.get_height() ) / 2 + m_panel_gap_y);
-
-      std::vector<bear::universe::position_type> points;
-      points.push_back(bear::universe::position_type(-10, -10));
-      points.push_back
-        (bear::universe::position_type(m_info.get_width()+10, -10));
-      points.push_back
-        (bear::universe::position_type(m_info.get_width()+10,
-                                       m_info.get_height()+10));
-      points.push_back
-        (bear::universe::position_type(-10, m_info.get_height()+10));
-      
-      bear::universe::rectangle_type rect(points[0], points[2]);
-      
-      bear::visual::scene_element e1
-        (bear::visual::scene_rectangle
-         (pos.x, pos.y,
-          claw::graphic::black_pixel, rect, false));
-      
-      bear::visual::scene_element e2
-        ( bear::visual::scene_polygon
-          ( pos.x, pos.y, claw::graphic::black_pixel, points ) );
-      e2.get_rendering_attributes().set_opacity(0.3);
-      
-      e.push_front(e1);
-      e.push_front(e2);
-      
-      e.push_back( bear::visual::scene_writing( pos.x, pos.y, m_info) );
-    }
-} // level_starting_effect::render_level_information()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Create the controls of the interface.
  */
 void rp::level_starting_effect::create_controls()
@@ -334,7 +284,7 @@ void rp::level_starting_effect::create_controls()
       m_text.create
         ( main_font, rp_gettext("Balloons\nto go!"),
           bear::visual::text_align::align_center );
-      
+
       bear::visual::sequence_effect effect;
       effect.set_wave_length( 8 );
       effect.set_wave_height( main_font.get_line_spacing() / 2 );
@@ -353,15 +303,6 @@ void rp::level_starting_effect::create_controls()
 
       m_balloons.create( main_font, "0" );
 
-      std::string info(game_variables::get_level_info());
-      const bear::visual::font hint_font
-        ( get_level_globals().get_font("font/fixed-10x20.fnt",20) );
-      
-      if ( info.empty() )
-        m_info.create( hint_font, "" );
-      else
-        m_info.create( hint_font, rp_gettext(info.c_str()) );
-      
       m_background = 
         bear::visual::sprite
         ( get_level_globals().auto_sprite( "gfx/status/intro.png", "panel" ) );

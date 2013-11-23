@@ -48,7 +48,7 @@ rp::score_component::score_component
   const bear::universe::size_box_type& layer_size,
   const bear::universe::coordinate_type& hide_height, bool flip )
   : super(glob,active_position,side, x_p, y_p, layer_size, hide_height, flip),
-    m_font(glob.get_font("font/balloon/balloon.fnt", 102))
+    m_font(glob.get_font("font/beroga.ttf", 20))
 {
 
 } // score_component::score_component()
@@ -109,14 +109,10 @@ void rp::score_component::render( scene_element_list& e ) const
 {
   if ( ! game_variables::is_level_ending() )
     {
-      const double f( (height() - 2 * s_margin) / m_score.get_height() );
-
       bear::visual::scene_writing s
-        ( get_render_position().x + ( width() - m_score.get_width() * f ) / 2,
-          get_render_position().y + ( height() - m_score.get_height() * f ) / 2,
+        ( get_render_position().x + ( width() - m_score.get_width() ) / 2,
+          get_render_position().y + ( height() - m_score.get_height() ) / 2,
           m_score );
-
-      s.set_scale_factor( f, f );
 
       e.push_back( s );
     }
