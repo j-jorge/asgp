@@ -28,5 +28,5 @@ score_img "score.xcf.bz2"
   ;
 
 "score background" autosize * 0.5 with status_img
-  "score background"
+  "merged"
   ;

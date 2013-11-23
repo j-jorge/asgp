@@ -81,9 +81,6 @@ void rp::add_ingame_layers::pre_cache()
  */
 void rp::add_ingame_layers::build()
 {
-  status_layer* status = new status_layer();
-  status->set_level_timer( m_level_timer );
-
   bear::engine::transition_layer* transition
     ( new bear::engine::transition_layer
       (RP_TRANSITION_EFFECT_DEFAULT_TARGET_NAME) );
@@ -95,8 +92,9 @@ void rp::add_ingame_layers::build()
   
   if ( m_add_status_layer )
     {
-      get_level().push_layer( status );
-      get_level().push_layer( new pause_layer( RP_PAUSE_LAYER_DEFAULT_TARGET_NAME ) );
+      get_level().push_layer( new status_layer() );
+      get_level().push_layer
+        ( new pause_layer( RP_PAUSE_LAYER_DEFAULT_TARGET_NAME ) );
     }
     
   if ( m_add_key_layer )

@@ -58,7 +58,7 @@ namespace rp
       bear::universe::zone::position side,
       x_placement x_p, y_placement y_p, 
       const bear::universe::size_box_type& layer_size,
-      const bear::universe::coordinate_type& hide_height,
+      const bear::universe::coordinate_type& hide_distance,
       bool flip);
     virtual ~status_component();
     
@@ -82,7 +82,7 @@ namespace rp
 
     void update_inactive_position();
     void on_x_position_update(double x);
-    void on_y_position_update(double y);
+    void on_y_position_update(double x);
     void on_visibility_changed(bool visibility);
 
   protected:
@@ -130,13 +130,14 @@ namespace rp
     std::list<boost::signals::connection> m_signals;
 
     /** \brief Height of hide gap. */
-    bear::visual::coordinate_type m_hide_height;
+    bear::visual::coordinate_type m_hide_distance;
 
     /** \brief Indicates if the sprite must be flipped. */
     bool m_flip;
 
     /** \brief Indicates if the component is active. */
     bool m_active;
+
   }; // class status_component
 } // namespace rp
 
