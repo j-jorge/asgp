@@ -483,8 +483,7 @@ void rp::balloon::create_tar_balloon()
   bear::decorative_item* item = new bear::decorative_item;
 
   item->set_animation
-    ( get_level_globals().auto_sprite
-      ("gfx/common.png", "balloon 0") );
+    ( get_level_globals().auto_sprite("gfx/common.png", "red balloon 0") );
   item->auto_size();
   item->get_rendering_attributes().set_intensity(0, 0, 0);
   item->set_z_position(get_z_position());
