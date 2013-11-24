@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='Hungry Sharks' width='18000' height='5000' music='music/aquatic.ogg'>
-  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0'>
+  <layer class_name='decoration_layer' name='' width='2560' height='1536' fit_level='0' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -157,7 +157,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -1064,7 +1064,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='animated_decorations' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::forced_rotation_creator' fixed='false' id='dolphin-rotation'>
@@ -2764,7 +2764,7 @@
 
   </layer><!-- action_layer -->
 
-  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1'>
+  <layer class_name='decoration_layer' name='wall fill' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::decorative_item' fixed='true'>
@@ -6831,7 +6831,7 @@
 
   </layer><!-- decoration_layer -->
 
-  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1'>
+  <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::straight_slope' fixed='true'>
@@ -6997,6 +6997,9 @@
 </field>
 <field name='level_settings.level_duration'>
 <real value='62.52'/>
+</field>
+<field name='level_settings.level_theme'>
+<string value='aquatic'/>
 </field>
 </fields>
     </item><!-- rp::level_settings -->

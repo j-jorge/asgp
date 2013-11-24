@@ -987,6 +987,7 @@ void rp::level_selector::push_level()
 {
   util::save_game_variables();
 
+  game_variables::set_level_theme( m_theme );
   std::ostringstream stream;
   stream << "level/" << m_serial_number << "/level-" << m_level_number << ".cl";
   
