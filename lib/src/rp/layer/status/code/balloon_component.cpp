@@ -160,9 +160,15 @@ void rp::balloon_component::on_balloon_changed(unsigned int number)
   if ( number >= required )
     m_balloon->set_intensity( min_intensity, 1, min_intensity );
   else
-    m_balloon->set_intensity
-      ( 1, min_intensity + ( 1 - min_intensity ) *  number / required,
-      min_intensity );
+    {
+      const double ratio( (double)number / required );
+      const double range( 2.0 - min_intensity );
+
+      m_balloon->set_intensity
+        ( std::min(1.0, min_intensity + range * ( 1 - ratio )),
+          std::min(1.0, min_intensity + range * ratio),
+          min_intensity );
+    }
 
   update_inactive_position();
 } // balloon_component::on_balloon_changed()
