@@ -63,7 +63,7 @@ void rp::add_ingame_layers::pre_cache()
   get_level_globals().load_font("font/fixed-10x20.fnt");
 
   get_level_globals().load_image( rp_gettext("gfx/status/buttons.png") );
-  get_level_globals().load_image( rp_gettext("gfx/status/buttons.png") );
+  get_level_globals().load_image( rp_gettext("gfx/status/buttons-2.png") );
   get_level_globals().load_image( rp_gettext("gfx/status/bonus.png") );
 
   get_level_globals().load_sound( "sound/medal/applause.ogg" );
@@ -74,6 +74,60 @@ void rp::add_ingame_layers::pre_cache()
   get_level_globals().load_sound( "sound/medal/gold.ogg" );
 
   get_level_globals().load_font( "font/fontopo/fontopo-small.fnt" );
+
+  // These may be optional for each level. We still load them everytime in order
+  // for the user to endure the loading time at the beginning of the game.
+  get_level_globals().load_model("model/balloon.cm");
+  get_level_globals().load_model("model/bomb.cm");
+  get_level_globals().load_model("model/tar.cm");
+  get_level_globals().load_model("model/switching.cm");
+  get_level_globals().load_model("model/wall.cm");
+  get_level_globals().load_model("model/tnt.cm");
+  get_level_globals().load_model("model/zeppelin/zeppelin.cm");
+  get_level_globals().load_model("model/zeppelin/zeppelin-mirror.cm");
+
+  get_level_globals().load_image( "gfx/slope/bump/bump-slope-1.png" );
+  get_level_globals().load_image( "gfx/slope/bump/bump-slope-2.png" );
+  get_level_globals().load_image( "gfx/slope/bump/bump-slope-3.png" );
+  get_level_globals().load_image( "gfx/slope/bump/bump-slope-4.png" );
+  get_level_globals().load_image( "gfx/slope/bump/bump-slope-5.png" );
+
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-1.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-2.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-3.png" );
+  get_level_globals().load_image
+    ( "gfx/slope/gentle-slope/gentle-slope-3-alt.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-4.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-5.png" );
+  get_level_globals().load_image
+    ( "gfx/slope/gentle-slope/gentle-slope-5-alt.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-6.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-7.png" );
+  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-8.png" );
+
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-1.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-2.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-3.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-4.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-4-alt.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-6.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-7.png" );
+  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-8.png" );
+
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-1.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-2.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-3.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-4.png" );
+  get_level_globals().load_image
+    ( "gfx/slope/steep-slope/steep-slope-4-alt.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-5.png" );
+  get_level_globals().load_image
+    ( "gfx/slope/steep-slope/steep-slope-5-alt.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-7.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-8.png" );
+  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-9.png" );
+  get_level_globals().load_image
+    ( "gfx/slope/steep-slope/steep-slope-fill-4-to-5.png" );
 } // add_ingame_layers::pre_cache()
 
 /*----------------------------------------------------------------------------*/
