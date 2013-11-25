@@ -1,9 +1,26 @@
 #!/bin/sh
 
+APK_BUILD_TYPE=debug
+
+if [ "$1" = "--release" ]
+then
+    APK_BUILD_TYPE=release
+fi
+
 # This is the directory containing this script
 SOURCE_ROOT=$(echo $PWD/$0 | sed 's:\(.\+/\)[^/]\+:\1:')../../
 
 cd "$SOURCE_ROOT"
+
+. asgp/build-scripts/version.sh
+
+ANDROID_ASGP_VERSION=$(xpath -q -e '/manifest/@android:versionName' asgp/android/java/AndroidManifest.xml \
+    | cut -d'"' -f2)
+
+if [ "$ASGP_VERSION" != "$ANDROID_ASGP_VERSION" ]
+then
+    echo "Version name in Android manifest ($ANDROID_ASGP_VERSION) is not the same than the source version ($ASGP_VERSION)." 1>&2
+fi
 
 # Search the c++ compiler for Android
 CXX_COMPILER=
@@ -189,7 +206,6 @@ cd asgp/android/java
 
 rm bin -fr
 
-APK_BUILD_TYPE=debug
 TARGET_APK=
 
 if [ $APK_BUILD_TYPE = "release" ]
