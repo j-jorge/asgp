@@ -11,6 +11,7 @@ package com.stuffomatic.asgp;
 import org.libsdl.app.SDLActivity;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -51,4 +52,12 @@ public class ASGP extends SDLActivity
         homeIntent.addCategory( Intent.CATEGORY_HOME );
         startActivity(homeIntent);
     } // showHome()
+
+    /**
+     * Returns the name of the device on which the game is running.
+     */
+    public String getDeviceModelName() {
+        
+        return Build.MANUFACTURER + ", " + Build.PRODUCT + ", " + Build.MODEL;
+    } // getDeviceModelName()
 }
