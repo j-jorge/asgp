@@ -2,18 +2,18 @@
 <model>
 <action name="idle" duration="1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
-<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='17' height='17' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
+<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='35' height='35' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='237' y='0' clip_width='17' clip_height='17' spritepos='cannonball' auto_size='true' width='17' height='17' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/cart.png' x='42' y='84' clip_width='35' clip_height='35' spritepos='cannonball' auto_size='true' width='35' height='35' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
 </marks>
 <snapshots>
-<snapshot date="0" width="24" height="24" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
+<snapshot date="0" width="30" height="30" x_alignment="align_left" y_alignment="align_bottom" x_alignment_value="0" y_alignment_value="0">
 <mark_placements>
-<mark_placement label="body" function="" x="12" y="12" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="body" function="" x="15" y="15" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 </mark_placements>
 </snapshot></snapshots>
 </action>
