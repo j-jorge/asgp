@@ -1,3 +1,13 @@
+2013-12-10 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.12
+
+	* Reworking some sprites for better readability: crate, plunger,
+	  cannonball.
+
+	* Automatically switch to the level selector after a short time lapse
+	  on the title screen.
+
 2013-11-25 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.11
