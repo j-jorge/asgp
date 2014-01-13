@@ -46,7 +46,7 @@ rp::balloon_component::balloon_component
   const bear::universe::size_box_type& layer_size,
   const bear::universe::coordinate_type& hide_height, bool flip )
   : super(glob,active_position,side, x_p, y_p, layer_size, hide_height, flip),
-    m_font(glob.get_font("font/balloon/balloon.fnt",102))
+    m_font(glob.get_font("font/lobster.otf", 68))
 {
 
 } // balloon_component::balloon_component()
@@ -57,23 +57,13 @@ rp::balloon_component::balloon_component
  */
 void rp::balloon_component::build()
 {
-  std::ostringstream oss1;
-  oss1 << "0";
-  m_balloon.create(m_font, oss1.str());
-  m_balloon->set_intensity(1, 0, 0);
+  std::ostringstream os;
+  os << "/" << game_variables::get_required_balloons_number();
+  m_required_balloon.create(m_font, os.str());
+  m_required_balloon->set_intensity( 0.15, 1, 0.15 );
 
-  std::ostringstream oss2;
-  oss2 << "/" << game_variables::get_required_balloons_number();
-  m_required_balloon.create(m_font, oss2.str());
-  m_required_balloon->set_intensity(0, 1, 0);
+  on_balloon_changed(0);
   
-  m_balloon_sprite =
-    get_level_globals().auto_sprite( "gfx/common.png", "balloon 0" );
-  m_balloon_sprite.set_intensity(1, 0, 0);
-  const double r = m_balloon_sprite.width() / m_balloon_sprite.height();
-  m_balloon_sprite.set_height( 44 );
-  m_balloon_sprite.set_width( m_balloon_sprite.height() * r );
-
   super::build();
 } // balloon_component::build()
 
@@ -84,33 +74,39 @@ void rp::balloon_component::build()
  */
 void rp::balloon_component::render( scene_element_list& e ) const
 {
-  if ( ! game_variables::is_level_ending() )
-    { 
-      bear::universe::coordinate_type gap_x = ( 159 - width() ) / 2; 
-      bear::visual::scene_sprite s1
-        ( get_render_position().x + gap_x, 
-          get_render_position().y, m_balloon_sprite );
-      
-      const double f
-        ( (m_balloon_sprite.height() - s_margin) / m_balloon.get_height() );
-      bear::visual::scene_writing s2
-        ( get_render_position().x + gap_x + m_balloon_sprite.get_size().x + 
-          s_margin + 5, get_render_position().y + 5
-          + (m_balloon_sprite.height() - m_balloon_sprite.height() ) / 2,
-          m_balloon);
-      s2.set_scale_factor( f, f );
+  if ( game_variables::is_level_ending() )
+    return;
 
-      bear::visual::scene_writing s3
-        ( get_render_position().x + gap_x + m_balloon_sprite.get_size().x + 
-          s_margin + m_balloon.get_width() * f, get_render_position().y
-          + (m_balloon_sprite.height() - m_balloon_sprite.height() ) / 2,
-          m_required_balloon );
-      s3.set_scale_factor( f*0.5, f*0.5 );
+  const double current_scale( height() / m_balloon.get_height() );
+  const double required_scale( current_scale * 0.75 );
 
-      e.push_back( s1 );
-      e.push_back( s2 );
-      e.push_back( s3 );
-    }
+  const double required_left_position
+    ( get_render_position().x + width()
+      - m_required_balloon.get_width() * required_scale );
+
+  bear::visual::scene_writing required
+    ( required_left_position,
+      get_render_position().y - 0 * ( height() * (1 - required_scale) ),
+      m_required_balloon );
+
+  required.set_scale_factor( required_scale, required_scale );
+
+  required.set_shadow( 1, -1 );
+  required.set_shadow_opacity( 0.6 );
+
+  e.push_back( required );
+
+  bear::visual::scene_writing current
+    ( required_left_position - m_balloon.get_width() * current_scale,
+      get_render_position().y,
+      m_balloon );
+
+  current.set_scale_factor( current_scale, current_scale );
+
+  current.set_shadow( 2, -2 );
+  current.set_shadow_opacity( 0.6 );
+
+  e.push_back( current );
 } // balloon_component::render()
 
 /*----------------------------------------------------------------------------*/
@@ -119,10 +115,7 @@ void rp::balloon_component::render( scene_element_list& e ) const
  */
 unsigned int rp::balloon_component::width() const
 {
-  const double f
-    ( (m_balloon_sprite.height() - s_margin) / m_balloon.get_height() );
-  return m_balloon_sprite.width() + s_margin + m_balloon.get_width() * f + 
-    + m_required_balloon.get_width() * f * 0.5;
+  return 112;
 } // balloon_component::width()
 
 /*----------------------------------------------------------------------------*/
@@ -131,7 +124,7 @@ unsigned int rp::balloon_component::width() const
  */
 unsigned int rp::balloon_component::height() const
 {
-  return m_balloon_sprite.height();
+  return 34;
 } // balloon_component::height()
 
 /*----------------------------------------------------------------------------*/
@@ -160,26 +153,23 @@ void rp::balloon_component::on_balloon_changed(unsigned int number)
   std::ostringstream oss;
   oss << number;
   m_balloon.create(m_font, oss.str());
-  if ( number >= game_variables::get_required_balloons_number() )
-    {
-      m_balloon_sprite.set_intensity(0, 1, 0);
-      m_balloon->set_intensity(0, 1, 0);
-    }
+
+  const double required( game_variables::get_required_balloons_number() );
+  const double min_intensity(0.15);
+
+  if ( number >= required )
+    m_balloon->set_intensity( min_intensity, 1, min_intensity );
   else
     {
-      m_balloon_sprite.set_intensity(1, 0, 0);
-      m_balloon->set_intensity(1, 0, 0);
+      const double ratio( (double)number / required );
+      const double range( 2.0 - min_intensity );
+
+      m_balloon->set_intensity
+        ( std::min(1.0, min_intensity + range * ( 1 - ratio )),
+          std::min(1.0, min_intensity + range * ratio),
+          min_intensity );
     }
 
   update_inactive_position();
-  
-  /*
-  m_balloon_sprite.set_red_intensity
-    ( game_variables::get_balloon_red_intensity());
-  m_balloon_sprite.set_green_intensity
-    ( game_variables::get_balloon_green_intensity());
-  m_balloon_sprite.set_blue_intensity
-    ( game_variables::get_balloon_blue_intensity());
-  */
 } // balloon_component::on_balloon_changed()
 

@@ -62,9 +62,6 @@ namespace rp
      /** \brief The number of required balloon. */
     bear::visual::writing m_required_balloon;
 
-    /** \brief The current animation of balloon. */
-    bear::visual::sprite m_balloon_sprite;
-
   }; // class balloon_component
 } // namespace rp
 

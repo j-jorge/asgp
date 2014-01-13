@@ -33,7 +33,7 @@ const unsigned int rp::status_component::s_margin = 5;
  * \param x_p The placement on x-coordinate.
  * \param y_p The placement on y-coordinate.
  * \param layer_size The size of the layer.
- * \param hide_height The height of hide gap.
+ * \param hide_distance The height of hide gap.
  * \param flip Indicates if picture must be flipped.
  */
 rp::status_component::status_component
@@ -42,11 +42,11 @@ rp::status_component::status_component
   bear::universe::zone::position side,
   x_placement x_p, y_placement y_p,
   const bear::universe::size_box_type& layer_size,
-  const bear::universe::coordinate_type& hide_height, bool flip)
+  const bear::universe::coordinate_type& hide_distance, bool flip)
   : m_level_globals(glob), m_side(side),
     m_x_placement(x_p), m_y_placement(y_p),
     m_layer_size(layer_size), m_active_position(active_position),
-    m_hide_height(hide_height), m_flip(flip), m_active( true )
+    m_hide_distance(hide_distance), m_flip(flip), m_active( true )
 {
   
 } // status_component::status_component()
@@ -205,23 +205,7 @@ bool rp::status_component::is_active() const
 void rp::status_component::update_inactive_position()
 {
   m_inactive_position = m_active_position;
-  m_inactive_position.y -= m_hide_height;
-  /*
-  if ( m_side == bear::universe::zone::middle_left_zone ) 
-    {
-      m_inactive_position.x = 0;
-      m_inactive_position.x -= width();
-    }
-  else if ( m_side == bear::universe::zone::middle_right_zone )
-    m_inactive_position.x = get_layer_size().x + width();
-  else if ( m_side == bear::universe::zone::bottom_zone )
-    {
-      m_inactive_position.y = 0;
-      m_inactive_position.y -= height();
-    }
-  else if ( m_side == bear::universe::zone::top_zone )
-    m_inactive_position.y = get_layer_size().y + height();
-  */
+  m_inactive_position.x += m_hide_distance;
 } // status_component::update_inactive_position()
 
 /*----------------------------------------------------------------------------*/
@@ -232,12 +216,7 @@ void rp::status_component::update_inactive_position()
 void rp::status_component::on_x_position_update(double x)
 {
   m_position.x = x;
-
   m_render_position.x = x;
-  if ( m_x_placement == right_placement )
-    m_render_position.x -= width();
-  else if ( m_x_placement == middle_x_placement )
-    m_render_position.x -= (width() / 2);
 } // status_component::on_x_position_update()
 
 /*----------------------------------------------------------------------------*/
@@ -250,6 +229,7 @@ void rp::status_component::on_y_position_update(double y)
   m_position.y = y;
 
   m_render_position.y = y;
+
   if ( m_y_placement == top_placement )
     m_render_position.y -= height();
   else if ( m_y_placement == middle_y_placement )
@@ -278,43 +258,25 @@ void rp::status_component::init_signals()
 void rp::status_component::on_visibility_changed(bool visibility)
 {
   m_tweeners.clear();
+
   claw::tween::single_tweener tween_x;
   
   if ( visibility )
     tween_x = claw::tween::single_tweener
       ( claw::tween::single_tweener
-        (get_position().y, get_active_position().y, 0.3,
+        (get_position().x, get_active_position().x, 0.3,
          boost::bind
-         ( &rp::status_component::on_y_position_update,
+         ( &rp::status_component::on_x_position_update,
            this, _1 ), &claw::tween::easing_cubic::ease_out ) );
   else
     tween_x = claw::tween::single_tweener
       ( claw::tween::single_tweener
-        (get_position().y, get_inactive_position().y, 0.3,
+        (get_position().x, get_inactive_position().x, 0.3,
          boost::bind
-         ( &rp::status_component::on_y_position_update,
+         ( &rp::status_component::on_x_position_update,
            this, _1 ), &claw::tween::easing_cubic::ease_out ) );
 
   add_tweener( tween_x );
-
-  claw::tween::single_tweener tween_y;
-  
-  if ( visibility )
-    tween_y = claw::tween::single_tweener
-      ( claw::tween::single_tweener
-        (get_position().y, get_active_position().y, 0.3,
-         boost::bind
-         ( &rp::status_component::on_y_position_update,
-           this, _1 ), &claw::tween::easing_cubic::ease_out ) );
-  else
-    tween_y = claw::tween::single_tweener
-      ( claw::tween::single_tweener
-        (get_position().y, get_inactive_position().y, 0.3,
-         boost::bind
-         ( &rp::status_component::on_y_position_update,
-           this, _1 ), &claw::tween::easing_cubic::ease_out ) );
-
-  add_tweener( tween_y );
 
   m_active = visibility;
 } // status_component::on_visibility_changed()

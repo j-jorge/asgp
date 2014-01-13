@@ -10763,7 +10763,7 @@
 <real value='1880'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='48'/>
@@ -10797,7 +10797,7 @@
 <real value='1774'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='49'/>
@@ -10918,7 +10918,7 @@
 <real value='1774'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='196'/>
@@ -11113,7 +11113,7 @@
 <real value='1776'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='342'/>
@@ -11292,7 +11292,7 @@
 <real value='1775'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='487'/>
@@ -11432,7 +11432,7 @@
 <real value='1907'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='554'/>
@@ -11877,13 +11877,110 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='bear::forced_goto_creator' fixed='false' id='go_goto'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1707'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1085'/>
+</field>
+<field name='forced_goto_creator.acceleration_time'>
+<real value='0.1'/>
+</field>
+<field name='forced_goto_creator.length.x'>
+<real value='0'/>
+</field>
+<field name='forced_goto_creator.length.y'>
+<real value='200'/>
+</field>
+</fields>
+    </item><!-- bear::forced_goto_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='go_rotate'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1654'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1111'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='place-1'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0.2'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-0.1'/>
+</field>
+<field name='forced_rotation_creator.loop_back'>
+<bool value='1'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='go_sequence'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1702'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1145'/>
+</field>
+<field name='forced_sequence_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='go_goto'/>
+<item_reference value='go_rotate'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1684'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1199'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='place-1'/>
+<item_reference value='place-2'/>
+<item_reference value='place-3'/>
+<item_reference value='place-4'/>
+<item_reference value='place-5'/>
+</field>
+<field name='forced_movement_applicator.auto_remove'>
+<bool value='1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='go_sequence'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
     <item class_name='rp::serial_switcher' fixed='false' id='place-4'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11935,7 +12032,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11987,7 +12084,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -12039,7 +12136,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -12091,7 +12188,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -12140,7 +12237,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -12959,7 +13056,7 @@
 <real value='2816'/>
 </field>
 <field name='item_with_decoration.animation'>
-<animation_file path='animation/balloon.canim' auto_size='true' width='43' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<animation_file path='animation/balloon/balloon-red.canim' auto_size='true' width='43' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->

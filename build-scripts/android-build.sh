@@ -1,9 +1,26 @@
 #!/bin/sh
 
+APK_BUILD_TYPE=debug
+
+if [ "$1" = "--release" ]
+then
+    APK_BUILD_TYPE=release
+fi
+
 # This is the directory containing this script
 SOURCE_ROOT=$(echo $PWD/$0 | sed 's:\(.\+/\)[^/]\+:\1:')../../
 
 cd "$SOURCE_ROOT"
+
+. asgp/build-scripts/version.sh
+
+ANDROID_ASGP_VERSION=$(xpath -q -e '/manifest/@android:versionName' asgp/android/java/AndroidManifest.xml \
+    | cut -d'"' -f2)
+
+if [ "$ASGP_VERSION" != "$ANDROID_ASGP_VERSION" ]
+then
+    echo "Version name in Android manifest ($ANDROID_ASGP_VERSION) is not the same than the source version ($ASGP_VERSION)." 1>&2
+fi
 
 # Search the c++ compiler for Android
 CXX_COMPILER=
@@ -37,15 +54,6 @@ ANDROID_LIB="$ANDROID_SYSROOT/usr/lib"
 [ -z "$ANDROID_BOOST_DIR" ] \
     && ANDROID_BOOST_DIR="$ANDROID_SYSROOT"
 
-#[ -z "$ANDROID_SDL_DIR" ] \
-#    && ANDROID_SDL_DIR="$ANDROID_SYSROOT"
-
-[ -z "$ANDROID_SDL_INCLUDE_DIR" ] \
-    && ANDROID_SDL_INCLUDE_DIR="$ANDROID_SYSROOT/include"
-
-[ -z "$ANDROID_SDL_MIXER_INCLUDE_DIR" ] \
-    && ANDROID_SDL_MIXER_INCLUDE_DIR="$ANDROID_SDL_INCLUDE_DIR"
-
 # Libraries paths
 [ -z "$ANDROID_LIBCLAW_DIR" ] \
     && ANDROID_LIBCLAW_DIR="$ANDROID_SYSROOT/usr"
@@ -76,12 +84,6 @@ ANDROID_LIB="$ANDROID_SYSROOT/usr/lib"
 
 [ -z "$ANDROID_BOOST_INCLUDE_DIR" ] \
     && ANDROID_BOOST_INCLUDE_DIR="$ANDROID_INCLUDE"
-
-[ -z "$ANDROID_SDL_LIBRARY_PATH" ] \
-    && ANDROID_SDL_LIBRARY_PATH="$ANDROID_LIB/libSDL2.a"
-
-[ -z "$ANDROID_SDL_MIXER_LIBRARY_PATH" ] \
-    && ANDROID_SDL_MIXER_LIBRARY_PATH="$ANDROID_LIB/libSDL2_mixer.a"
 
 # Programs
 [ -z "$GETTEXT_MSGMERGE_PATH" ] \
@@ -120,10 +122,6 @@ cmake . \
     -DZLIB_LIBRARY:FILEPATH="$ANDROID_ZLIB_LIBRARY_PATH" \
     -DBoost_INCLUDE_DIR:PATH="$ANDROID_BOOST_INCLUDE_DIR" \
     -DBoost_USE_STATIC_RUNTIME=ON \
-    -DSDL_INCLUDE_DIR:PATH="$ANDROID_SDL_INCLUDE_DIR" \
-    -DSDL_LIBRARY:FILEPATH="$ANDROID_SDL_LIBRARY_PATH" \
-    -DSDL_MIXER_INCLUDE_DIR:PATH="$ANDROID_SDL_MIXER_INCLUDE_DIR" \
-    -DSDL_MIXER_LIBRARY:FILEPATH="$ANDROID_SDL_MIXER_LIBRARY_PATH" \
     -DGETTEXT_MSGMERGE_EXECUTABLE:FILEPATH="$GETTEXT_MSGMERGE_PATH" \
     -DGETTEXT_MSGFMT_EXECUTABLE:FILEPATH="$GETTEXT_MSGFMT_PATH" \
     -DFREETYPE_LIBRARY:FILEPATH="$ANDROID_FREETYPE_LIBRARY" \
@@ -208,7 +206,6 @@ cd asgp/android/java
 
 rm bin -fr
 
-APK_BUILD_TYPE=debug
 TARGET_APK=
 
 if [ $APK_BUILD_TYPE = "release" ]

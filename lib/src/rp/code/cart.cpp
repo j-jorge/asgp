@@ -182,7 +182,6 @@ void rp::cart::pre_cache()
   get_level_globals().load_image("gfx/common.png");
   get_level_globals().load_image( get_theme_image_name() );
 
-  get_level_globals().load_animation("animation/balloon-slow.canim");
   get_level_globals().load_animation("animation/effect/wave.canim");
   get_level_globals().load_animation("animation/effect/double-wave.canim");
   get_level_globals().load_animation("animation/effect/steam.canim");
@@ -1165,22 +1164,12 @@ void rp::cart::on_fire_angle_change
 rp::decorative_balloon* rp::cart::create_decorative_balloon
 (attractable_item* attracted_item, const std::string& anchor_name)
 {
-  decorative_balloon* item = new decorative_balloon(this,anchor_name);
-  bear::visual::animation anim
-    ( get_level_globals().get_animation("animation/balloon-slow.canim") );
-  item->set_animation(anim);
-  
-  if ( attracted_item != NULL )
-    item->get_rendering_attributes().set_intensity
-      ( attracted_item->get_rendering_attributes().get_red_intensity(),
-        attracted_item->get_rendering_attributes().get_green_intensity(),
-        attracted_item->get_rendering_attributes().get_blue_intensity());
-  else
-    item->choose_balloon_color();
-  
+  decorative_balloon* item = new decorative_balloon(this, anchor_name);
   item->set_z_position(get_z_position()-2);
   
   new_item( *item );
+
+  item->set_balloon( dynamic_cast<balloon*>( attracted_item ) );
 
   bear::engine::model_mark_placement m;
 

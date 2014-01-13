@@ -67,9 +67,6 @@ namespace rp
     /** \brief The score. */
     bear::visual::writing m_score;
 
-    /** \brief The background sprite. */
-    bear::visual::sprite m_background;
-
     /** \brief map of floating score. */
     floating_score_list m_floating_score;
   }; // class score_component

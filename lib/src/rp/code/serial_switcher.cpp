@@ -67,6 +67,11 @@ void rp::serial_switcher::progress( bear::universe::time_type elapsed_time )
     get_rendering_attributes().set_opacity(1);
   else
     get_rendering_attributes().set_opacity(0);
+
+  if ( (get_age() >= 5) && (m_serial == 0) && !has_forced_movement() )
+    mouse_released
+      ( bear::input::mouse::mc_left_button,
+        get_center_of_mass() - get_level().get_camera_focus().bottom_left() );
 } // serial_swticher::progress()
 
 /*----------------------------------------------------------------------------*/
@@ -134,8 +139,12 @@ void rp::serial_switcher::get_visual
               m_animation_on.get_sprite() );
           s.get_rendering_attributes().set_opacity
             ( get_rendering_attributes().get_opacity() );
+
           if ( m_serial != 0 )
             s.get_rendering_attributes().set_angle( m_angle );
+          else
+            s.get_rendering_attributes().set_angle( get_system_angle() );
+
           visuals.push_back( s );
         }
       else
@@ -145,6 +154,10 @@ void rp::serial_switcher::get_visual
               m_animation_off.get_sprite() );
           s.get_rendering_attributes().set_opacity
             ( get_rendering_attributes().get_opacity() );
+
+          if ( m_serial == 0 )
+            s.get_rendering_attributes().set_angle( get_system_angle() );
+
           visuals.push_back( s );
         }
     }
@@ -232,7 +245,7 @@ void rp::serial_switcher::create_angle_tweener()
 /*----------------------------------------------------------------------------*/
 /**
  * \brief The angle changes.
- * \param angle The new angle/
+ * \param angle The new angle.
  */
 void rp::serial_switcher::on_angle_change( double angle )
 {

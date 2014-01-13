@@ -4815,6 +4815,9 @@
 <field name='level_settings.level_duration'>
 <real value='69.05'/>
 </field>
+<field name='level_settings.level_theme'>
+<string value='cake'/>
+</field>
 </fields>
     </item><!-- rp::level_settings -->
 

@@ -52,8 +52,7 @@ namespace rp
     void render_balloon_text
     ( scene_element_list& e, const bear::visual::position_type& center,
       const bear::visual::coordinate_type& y_panel ) const;
-    void render_level_information
-    ( scene_element_list& e, const bear::visual::position_type& center ) const;
+
     void create_controls();
     void update_balloons_number();
     void create_balloons_tweener();
@@ -93,9 +92,6 @@ namespace rp
 
     /** \brief The centered text. */
     bear::visual::writing m_text;
-
-    /** \brief The text containing level info. */
-    bear::visual::writing m_info;
 
     /** \brief The tweener for balloons writing scale. */
     claw::tween::tweener_sequence m_tweener_scale;

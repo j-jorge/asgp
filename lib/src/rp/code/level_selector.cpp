@@ -95,17 +95,15 @@ void rp::level_selector::on_enters_layer()
   m_level_state = 
     game_variables::get_level_state(m_serial_number, m_level_number);
   m_font = get_level_globals().get_font("font/fontopo/fontopo.fnt",50);
-  
+
   choose_level_sprite();
-  
+
   if ( is_boss_level() )
     {
       m_background_sprite =
         get_level_globals().auto_sprite
         ( "gfx/status/level/frame-2.png", "main" );
-      m_hidden_sprite =
-        get_level_globals().auto_sprite
-        ( "gfx/status/level/frame-2.png", "main" );
+      m_hidden_sprite = m_background_sprite;
       m_border_sprite =
         get_level_globals().auto_sprite
         ( "gfx/status/level/frame-4.png", "bright frame" );
@@ -140,7 +138,7 @@ void rp::level_selector::on_enters_layer()
     bear::visual::animation
     ( get_level_globals().auto_sprite
       ( "gfx/status/level/frame-2.png", "star" ) );
-  
+
   game_variables::select_level( false );
   util::load_game_variables(); 
   update_medal(get_state());
@@ -987,6 +985,7 @@ void rp::level_selector::push_level()
 {
   util::save_game_variables();
 
+  game_variables::set_level_theme( m_theme );
   std::ostringstream stream;
   stream << "level/" << m_serial_number << "/level-" << m_level_number << ".cl";
   

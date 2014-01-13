@@ -315,7 +315,7 @@ void rp::util::send_die_level( const std::string& filename )
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Send statistic information baout version.
+ * \brief Sends the version of the game to the stats server.
  */
 void rp::util::send_version()
 {
@@ -326,6 +326,27 @@ void rp::util::send_version()
   vars.push_back( bear::engine::stat_variable( "patch", RP_PATCH_NUMBER ) ); 
 
   bear::engine::game::get_instance().send_data( "version", vars );
+} // util::send_version()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sends the model of the device running the game to the stats server.
+ */
+void rp::util::send_device_info()
+{
+#ifdef __ANDROID__
+  java_activity activity;
+  const std::string name( activity.get_device_model_name() );
+
+  std::list<bear::engine::stat_variable> vars;
+
+  vars.push_back
+    ( bear::engine::stat_variable( "name", name ) );
+
+  claw::logger << claw::log_verbose << "Device name is " << name << std::endl;
+
+  bear::engine::game::get_instance().send_data( "device", vars );
+#endif
 } // util::send_version()
 
 /*----------------------------------------------------------------------------*/
