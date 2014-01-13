@@ -51,7 +51,6 @@ void init_super_great_park()
   std::srand(time(NULL));
   rp::util::load_game_variables();
   rp::util::send_version();
-  rp::util::send_device_info();
   rp::game_key::check_if_demo_version();
 
   claw::logger << claw::log_verbose << "Dumb rendering is "

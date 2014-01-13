@@ -53,7 +53,6 @@ namespace rp
     static void send_fail_level( const std::string& filename );
     static void send_die_level( const std::string& filename );
     static void send_version();
-    static void send_device_info();
 
     static void save_config();
     

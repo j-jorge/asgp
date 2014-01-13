@@ -57,29 +57,4 @@ void rp::java_activity::show_home() const
   env->DeleteLocalRef(activity);
 } // java_activity::show_home()
 
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Returns the model name of the device on which the game runs.
- */
-std::string rp::java_activity::get_device_model_name() const
-{
-  JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
-
-  jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
-  jclass clazz( env->GetObjectClass(activity) );
-
-  const jmethodID method_id
-    ( env->GetMethodID( clazz, "getDeviceModelName", "()Ljava/lang/String;" ) );
-
-  const jstring java_device_name
-    ( (jstring)env->CallObjectMethod(activity, method_id) );
-  const char* device_name( env->GetStringUTFChars( java_device_name, NULL ) );
-  const std::string result(device_name);
-
-  env->ReleaseStringUTFChars(java_device_name, device_name);
-  env->DeleteLocalRef(activity);
-
-  return result;
-} // java_activity::get_device_model_name()
-
 #endif // __ANDROID__

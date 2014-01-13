@@ -28,8 +28,6 @@ namespace rp
     void open_url( const std::string& url ) const;
     void show_home() const;
 
-    std::string get_device_model_name() const;
-
   }; // class java_activity
 
 } // namespace rp
