@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::back_button_home_item" category="rolling_painting/android" box_color="#F8E78E" url="http://www.gamned.org/wiki/index.php/back_button_home_item" fixable="true">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::item_with_input_listener</class>
+  </inherit>
+
+  <description>
+    The back_button_home_item item simulates the home button when the
+    back button is pressed on Android.
+  </description>
+
+</item>

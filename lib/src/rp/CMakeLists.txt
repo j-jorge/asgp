@@ -41,6 +41,7 @@ set( RP_SOURCE_FILES
   code/game_variables.cpp
   code/help_button.cpp
   code/hole.cpp
+  code/http_request.cpp
   code/init.cpp
   code/interactive_item.cpp
   code/level_exit.cpp
@@ -59,7 +60,10 @@ set( RP_SOURCE_FILES
   code/util.cpp
   code/wall.cpp
   code/zeppelin.cpp
-  
+
+  android/code/back_button_home_item.cpp
+  android/code/java_activity.cpp
+
   layer/code/help_layer.cpp
   layer/code/key_layer.cpp
   layer/code/misc_layer.cpp
@@ -85,7 +89,13 @@ set( RP_SOURCE_FILES
   transition_effect/code/level_starting_effect.cpp
   )
 
-add_library( ${RP_TARGET_NAME} SHARED ${RP_SOURCE_FILES} )
+if( BUILD_PLATFORM STREQUAL "android" )
+  set( RP_LINK_TYPE STATIC )
+else()
+  set( RP_LINK_TYPE SHARED )
+endif()
+
+add_library( ${RP_TARGET_NAME} ${RP_LINK_TYPE} ${RP_SOURCE_FILES} )
 
 install(
   TARGETS ${RP_TARGET_NAME}

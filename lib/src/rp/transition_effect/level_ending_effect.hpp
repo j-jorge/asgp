@@ -14,6 +14,8 @@
 #ifndef __RP_LEVEL_ENDING_EFFECT_HPP__
 #define __RP_LEVEL_ENDING_EFFECT_HPP__
 
+#include "rp/http_request.hpp"
+
 #include "audio/sound_manager.hpp"
 
 #include "engine/transition_effect/transition_effect.hpp"
@@ -26,8 +28,7 @@
 #include "visual/writing.hpp"
 
 #include <claw/tween/single_tweener.hpp>
-
-#include <boost/thread/mutex.hpp>
+#include <claw/tween/tweener_group.hpp>
 
 namespace rp
 {
@@ -45,52 +46,6 @@ namespace rp
     typedef std::list<bear::visual::scene_element> scene_element_list;
 
   private:
-    /**
-     * \brief The score_request class is passed to the thread that send
-     *        requests to the score server in order to asynchronously retrieve
-     *        the scores.
-     *
-     * If the owner of the score_request does not need the score, it can call
-     * the disable() method to cancel the request. All copies of the instances
-     * will then be disabled.
-     *
-     * \author Julien Jorge
-     */
-    class score_request
-    {
-    public:
-      /** \brief The type of the function to call when the score is ready. */
-      typedef boost::function<void (unsigned int)> callback_type;
-
-    public:
-      score_request();
-      score_request( callback_type c, std::string level_name );
-      score_request( const score_request& that );
-
-      std::string get_level_name() const;
-      void disable();
-
-      void operator()();
-      score_request& operator=( score_request that );
-
-    private:
-      void call_callback( unsigned int c );
-
-    private:
-      /** \brief The function to call when the score is set. */
-      callback_type m_callback;
-
-      /** \brief The file name of the level for which we want the score. */
-      std::string m_level_name;
-
-      /** \brief Tells if the score must be passed to the callback. */
-      boost::shared_ptr<bool> m_is_active;
-
-      /** \brief The mutex used to restrict the access to m_is_active. */
-      boost::shared_ptr<boost::mutex> m_shared_mutex;
-
-    }; // class score_request
-
     /** \brief A line of points displayed on the screen. */
     class score_line
     {
@@ -191,9 +146,13 @@ namespace rp
     bool button_maintained
     ( bear::input::joystick::joy_code button, unsigned int joy_index );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
-    bool mouse_released
+    bool mouse_pressed
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
+    bool finger_action( const bear::input::finger_event& event );
+
+    bear::visual::position_type get_event_position
+    ( const claw::math::coordinate_2d<unsigned int>& pos ) const;
 
     void skip();
     void fill_points();
@@ -253,8 +212,23 @@ namespace rp
     void pop_level();
     void add_button_component();
 
+    void add_social_buttons();
+
+    void add_facebook_button();
+    void create_facebook_tweener();
+
+    void add_twitter_button();
+    void create_twitter_tweener();
+
     void get_best_score();
-    void set_best_score( unsigned int );
+    void set_best_score( std::string score );
+
+    void set_url( std::string url );
+    void open_url();
+
+    void on_pass_scores();
+    void on_facebook_click();
+    void on_twitter_click();
 
     // not implemented
     level_ending_effect& operator=( const level_ending_effect& that );
@@ -314,6 +288,9 @@ namespace rp
     /** \brief The tweener for fade_out opacity. */
     claw::tween::single_tweener m_tweener_fade_out;
 
+    /** \brief The tweener for the social buttons. */
+    claw::tween::tweener_group m_social_tweener;
+
     /** \brief The current decorative medal. */
     bear::decorative_item* m_decorative_medal;
 
@@ -327,7 +304,21 @@ namespace rp
     bool m_active_component;
 
     /** \brief The button. */ 
-    bear::gui::button* m_button;
+    bear::gui::button* m_skip_button;
+
+    /** \brief The Facebook button. */
+    bear::gui::button* m_facebook_button;
+
+    /** \brief The connection to the request of the Facebook url to our
+        server. */
+    http_request::result_connection m_facebook_request;
+
+    /** \brief The Twitter button. */
+    bear::gui::button* m_twitter_button;
+
+    /** \brief The connection to the request of the Twitter url to our
+        server. */
+    http_request::result_connection m_twitter_request;
 
     /** \brief The sprite of background when the mouse is on the button. */
     bear::visual::sprite m_background_on_sprite;  
@@ -354,12 +345,18 @@ namespace rp
     /** \brief Tells if the tick sound must be played. */
     bool m_play_tick;
 
+    /** \brief The url to open, in the next iteration. */
+    std::string m_url;
+
+    /** \brief This mutex is used to lock the changes of m_url. */
+    boost::mutex m_url_mutex;
+
     /** \brief The delay to wait before merging the lines. */
     bear::universe::time_type m_merge_delay;
 
-    /** \brief The function object that request the best score of the current
+    /** \brief The connection to the request of the best score of the current
         level to our stats server. */
-    score_request m_score_request;
+    http_request::result_connection m_score_request;
 
     /** \brief How many points are given per second. */
     static const unsigned int s_points_per_second;

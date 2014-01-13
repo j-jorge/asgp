@@ -25,3 +25,8 @@ prof.log
 # Man pages
 *.1
 *.6
+
+# Android
+android/java/libs/
+android/java/assets/
+android/java/gen/

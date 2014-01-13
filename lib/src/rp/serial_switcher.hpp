@@ -57,11 +57,18 @@ namespace rp
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
+    bool finger_action( const bear::input::finger_event& event );
+
     void create_angle_tweener();
     void on_angle_change( double angle );
     bool is_visible() const;    
 
-    private:
+  private:
+    void update_serials() const;
+    void check_mouse_inside
+    ( const claw::math::coordinate_2d<unsigned int>& pos );
+
+  private:
     /* \brief The serial of the switcher. */
     unsigned int m_serial;    
 
@@ -82,6 +89,7 @@ namespace rp
  
     /** \brief The tweener for angle. */
     claw::tween::tweener_sequence m_angle_tweener;
+
   }; // class serial_switcher
 } // namespace rp
 

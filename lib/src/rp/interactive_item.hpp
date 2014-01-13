@@ -42,8 +42,9 @@ namespace rp
   public:
     interactive_item();
     interactive_item
-    (bear::engine::base_item* item, double sprite_factor, double area_factor,
-     bool display_star, bear::universe::position_type gap);
+    ( bear::engine::base_item* item, double sprite_factor, double area_factor,
+      bear::universe::position_type gap,
+      const bear::visual::animation& help = bear::visual::animation() );
 
     void pre_cache();
 
@@ -51,8 +52,6 @@ namespace rp
     void progress( bear::universe::time_type elapsed_time );
     void get_visual
     ( std::list<bear::engine::scene_visual>& visuals ) const;
-    void collision
-    ( bear::engine::base_item& that, bear::universe::collision_info& info );
 
     void activate();
     void deactivate();
@@ -62,8 +61,15 @@ namespace rp
     void update_item();
 
   private:
-     /** \brief The item to follow. */
+    void find_cursor();
+    bool is_colliding_with_cursor() const;
+
+  private:
+    /** \brief The item to follow. */
     handle_type m_item;
+
+    /** \brief The cursor that triggers the item. */
+    handle_type m_cursor;
 
     /** \brief The sprite of background star. */
     bear::visual::sprite m_background_sprite;
@@ -76,9 +82,6 @@ namespace rp
 
     /** \brief Indicates if the cursor is in the interactive item. */
     bool m_activated;
-
-    /** \brief Indicates if the cursor collides during the last iteration. */
-    bool m_cursor_in_collision;
 
     /** \brief The factor of cannonball sprite. */
     double m_cannonball_factor;
@@ -95,11 +98,9 @@ namespace rp
     /** \brief The factor of required area for activation. */
     double m_area_factor;
 
-    /** \brief Indicates that we display always the star. */
-    bool m_display_star;
-
     /** \brief The gap with the center of mass of the item. */
     bear::universe::position_type m_gap;
+
   }; // class interactive_item
 } // namespace rp
 

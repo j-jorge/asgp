@@ -7772,6 +7772,9 @@
 <field name='level_settings.level_duration'>
 <real value='80'/>
 </field>
+<field name='level_settings.level_theme'>
+<string value='death'/>
+</field>
 </fields>
     </item><!-- rp::level_settings -->
 

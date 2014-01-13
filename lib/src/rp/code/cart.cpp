@@ -66,7 +66,12 @@ BASE_ITEM_EXPORT( cart, rp )
 
 const bear::universe::time_type rp::cart::s_injured_duration = 1;
 const bear::universe::time_type rp::cart::s_fire_duration = 0.5;
+#if defined( __ANDROID__ )
+const bear::universe::time_type rp::cart::s_smoke_delay = 0.60;
+#else
 const bear::universe::time_type rp::cart::s_smoke_delay = 0.15;
+#endif
+
 unsigned int rp::cart::s_score = 0;
 const double rp::cart::s_min_cannon_angle = -0.25;
 const double rp::cart::s_max_cannon_angle = 1.7;
@@ -173,13 +178,10 @@ void rp::cart::pre_cache()
   get_level_globals().load_image("gfx/status/cursor.png");
   get_level_globals().load_image("gfx/status/status.png");
   get_level_globals().load_image("gfx/status/score.png");
-  get_level_globals().load_image("gfx/balloon/balloon.png");
-  get_level_globals().load_image("gfx/effect/light-star-dark.png");
-  get_level_globals().load_image("gfx/effect/light-star.png");
-  get_level_globals().load_image("gfx/effect/rounded-star-bright.png");
+  get_level_globals().load_image("gfx/common.png");
+  get_level_globals().load_image("gfx/common.png");
   get_level_globals().load_image( get_theme_image_name() );
 
-  get_level_globals().load_animation("animation/balloon-slow.canim");
   get_level_globals().load_animation("animation/effect/wave.canim");
   get_level_globals().load_animation("animation/effect/double-wave.canim");
   get_level_globals().load_animation("animation/effect/steam.canim");
@@ -240,7 +242,7 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
     progress_spot( elapsed_time );
 
   super::progress( elapsed_time );
-  
+
   if ( !m_passive )
     m_cursor->set_center_of_mass
     ( bear::universe::position_type
@@ -249,9 +251,8 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
         get_level().get_camera_focus().bottom() + 
         m_gap_mouse.y * get_level().get_camera_focus().height() ) );
 
-  if ( game_variables::level_has_started() && 
-       ( ! game_variables::is_boss_transition() || 
-         ( game_variables::is_boss_transition() && m_passive ) ) )
+  if ( game_variables::level_has_started()
+       && ( !game_variables::is_boss_transition() || m_passive ) )
     { 
       progress_tweeners( elapsed_time );
       progress_injured_state( elapsed_time );
@@ -267,10 +268,10 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
           set_mark_position_in_action("gun", compute_gun_position());
         }
     }
- 
+
   if ( !m_passive )
     progress_input_reader(elapsed_time);      
-  
+
   if ( game_variables::level_has_started() )
     { 
       m_can_jump = true;
@@ -279,11 +280,11 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
       update_status_informations();
       update_bottom_contact();
     }
- 
+
   if ( has_bottom_contact() && get_bottom_contact().get_max() < 1.0 &&
        game_variables::is_level_ending() && game_variables::is_boss_level() )
     apply_impulse_jump();
-  
+
   if ( !can_finish() )
     create_smoke( elapsed_time );
 } // cart::progress()
@@ -731,16 +732,17 @@ const bear::timer* rp::cart::get_level_timer() const
  * \brief Get the items concerned by a progress/move of this one.
  * \param d (out) A list to which are added such items.
  */
-void rp::cart::get_dependent_items( std::list<physical_item*>& d ) const
+void rp::cart::get_dependent_items
+( bear::universe::physical_item::item_list& d ) const
 {
   super::get_dependent_items(d);
   
   plungers_set::iterator it;
   
   for ( it = m_plungers.begin(); it != m_plungers.end() ; ++it)
-    d.push_front( *it );
+    d.push_back( *it );
 
-  d.push_front( m_cursor );
+  d.push_back( m_cursor );
 } // cart::get_dependent_items()
 
 /*---------------------------------------------------------------------------*/
@@ -1094,8 +1096,8 @@ void rp::cart::progress_spot( bear::universe::time_type elapsed_time )
       const double a =
         ( get_system_angle() < 0 ? -1.0 : 1.0 )
         * std::min( range, std::abs(get_system_angle() ) );
-      const double x_bound(500);
-      const double y_bound(200);
+      const double x_bound( game_variables::is_boss_level() ? 600 : 500 );
+      const double y_bound( game_variables::is_boss_level() ? 250 : 200 );
 
       if ( a == 0 )
         set_spot_target_position( x_bound, y_bound );
@@ -1162,22 +1164,12 @@ void rp::cart::on_fire_angle_change
 rp::decorative_balloon* rp::cart::create_decorative_balloon
 (attractable_item* attracted_item, const std::string& anchor_name)
 {
-  decorative_balloon* item = new decorative_balloon(this,anchor_name);
-  bear::visual::animation anim
-    ( get_level_globals().get_animation("animation/balloon-slow.canim") );
-  item->set_animation(anim);
-  
-  if ( attracted_item != NULL )
-    item->get_rendering_attributes().set_intensity
-      ( attracted_item->get_rendering_attributes().get_red_intensity(),
-        attracted_item->get_rendering_attributes().get_green_intensity(),
-        attracted_item->get_rendering_attributes().get_blue_intensity());
-  else
-    item->choose_balloon_color();
-  
+  decorative_balloon* item = new decorative_balloon(this, anchor_name);
   item->set_z_position(get_z_position()-2);
   
   new_item( *item );
+
+  item->set_balloon( dynamic_cast<balloon*>( attracted_item ) );
 
   bear::engine::model_mark_placement m;
 
@@ -1284,7 +1276,7 @@ bool rp::cart::can_throw_plunger()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Throw a cannonball.
+ * \brief Throws a cannonball toward the cursor.
  */
 void rp::cart::throw_cannonball()
 {
@@ -1312,10 +1304,9 @@ void rp::cart::throw_cannonball()
 
       item->set_center_of_mass(pos);
       new_item( *item );
-      item->set_center_of_mass(pos);
       item->set_cart(this);
       item->create_movement
-        (v, get_speed(), m_cursor->get_center_of_mass(), m_good_fire);
+        ( v, get_speed(), m_cursor->get_center_of_mass(), m_good_fire );
       
       bear::audio::sound_effect e(get_center_of_mass());
       get_level_globals().play_sound("sound/cart/cannon.ogg", e);
@@ -1622,10 +1613,14 @@ void rp::cart::progress_cannon()
           m_good_fire = ( m_fire_duration >= s_fire_duration );
         }
 
+#ifdef __ANDROID__
+      on_fire_angle_change( angle );
+#else
       m_tweener_fire_angle = claw::tween::single_tweener
 	( m.get_angle() - get_system_angle(), angle, 0.2,
-          boost::bind( &rp::cart::on_fire_angle_change,this, _1 ), 
+          boost::bind( &rp::cart::on_fire_angle_change, this, _1 ), 
           &claw::tween::easing_cubic::ease_out );
+#endif
     }
 } // cart::progress_cannon()
 
@@ -1641,7 +1636,7 @@ void rp::cart::progress_fire()
   if ( get_current_local_mark_placement("fire", fire_mark) && 
        get_current_local_mark_placement("cannon", cannon_mark) )
     {
-      set_mark_position_in_action("fire",compute_fire_position());
+      set_mark_position_in_action("fire", compute_fire_position());
       set_mark_angle_in_action("fire", cannon_mark.get_angle());
     }
 } // cart::progress_fire()
@@ -2021,50 +2016,33 @@ bool rp::cart::mouse_released
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
+#ifdef __ANDROID__
+  // The android build handles the input in finger_action().
+  return false;
+#endif
+
+  if ( !game_variables::level_has_started() )
+    return false;
+
   bool result = true;
 
-  if ( button == bear::input::mouse::mc_right_button && 
-       game_variables::level_has_started())
+  switch( button )
     {
-      if ( get_current_action_name() == "crouch" )
-        apply_stop_crouch();
-      else if ( can_throw_cannonball() )
-        throw_cannonball();
-      else
-        {
-          const bear::audio::sound_effect e(get_center_of_mass());;
-          get_level_globals().play_sound("sound/cart/empty-cannon.ogg", e);
-        }
+    case  bear::input::mouse::mc_right_button:
+      input_handle_cannonball();
+      break;
+    case  bear::input::mouse::mc_left_button:
+      input_handle_plunger();
+      break;
+    case  bear::input::mouse::mc_wheel_up:
+      input_handle_jump();
+      break;
+    case  bear::input::mouse::mc_wheel_down:
+      input_handle_crouch();
+      break;
+    default:
+      result = false;
     }
-  else if ( button == bear::input::mouse::mc_left_button && 
-            game_variables::level_has_started())
-    {
-      if ( get_current_action_name() == "crouch" )
-        apply_stop_crouch();
-      else if ( can_throw_plunger() )
-        throw_plunger();
-      else 
-        {
-          const bear::audio::sound_effect e(get_center_of_mass());;
-          get_level_globals().play_sound("sound/empty.ogg", e);
-        }
-    }
-  else if ( button == bear::input::mouse::mc_wheel_up && 
-            game_variables::level_has_started() )
-    {
-      if ( get_current_action_name() == "crouch" )
-        apply_stop_crouch();
-      else if ( game_variables::level_has_started()  &&
-                ! game_variables::is_level_ending() && m_can_jump && 
-                ( ( get_current_action_name() == "move" ) ||
-                  ( get_current_action_name() == "crouch" ) ) )
-        apply_impulse_jump();
-    }
-  else if ( game_variables::level_has_started() && 
-            ( button == bear::input::mouse::mc_wheel_down ) )
-    apply_crouch();
-  else
-    result = false;
 
   return result;
 } // cart::mouse_released()
@@ -2078,10 +2056,137 @@ bool rp::cart::mouse_released
 bool rp::cart::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
+#ifdef __ANDROID__
+  return false;
+#endif
+
+  update_cursor_position( pos );
+
+  return true;
+} // cart::mouse_move()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Processes an input coming from a finger.
+ * \param event The event to process.
+ */
+bool rp::cart::finger_action( const bear::input::finger_event& event )
+{
+  if ( !game_variables::level_has_started() )
+    return false;
+
+  if ( event.get_type() == bear::input::finger_event::finger_event_pressed )
+    {
+      m_cursor_down = true;
+      m_cursor_down_screen_position = event.get_position();
+      update_cursor_position( m_cursor_down_screen_position );
+      return true;
+    }
+
+  if ( event.get_type() != bear::input::finger_event::finger_event_released )
+    return false;
+
+  m_cursor_down = false;
+
+  const bear::universe::position_type delta
+    ( event.get_position() - m_cursor_down_screen_position );
+  const bear::universe::size_type length
+    ( delta.distance( bear::universe::position_type(0, 0) ) );
+
+  if ( length < 80 )
+    {
+      input_handle_plunger();
+      return true;
+    }
+
+  const double jump_min_cos_angle
+    ( std::cos( boost::math::constants::pi<double>() / 3 ) );
+
+  if ( std::abs( delta.x / length ) < jump_min_cos_angle )
+    {
+      if ( delta.y < 0 )
+        input_handle_crouch();
+      else
+        input_handle_jump();
+    }
+  else
+    input_handle_cannonball();
+
+  return true;
+} // cart::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by throwing a cannonball.
+ */
+void rp::cart::input_handle_cannonball()
+{
+  if ( get_current_action_name() == "crouch" )
+    apply_stop_crouch();
+  else if ( can_throw_cannonball() )
+    throw_cannonball();
+  else
+    {
+      const bear::audio::sound_effect e(get_center_of_mass());;
+      get_level_globals().play_sound("sound/cart/empty-cannon.ogg", e);
+    }
+} // cart::input_handle_cannonball()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by throwing a plunger.
+ */
+void rp::cart::input_handle_plunger()
+{
+  if ( get_current_action_name() == "crouch" )
+    apply_stop_crouch();
+  else if ( can_throw_plunger() )
+    throw_plunger();
+  else 
+    {
+      const bear::audio::sound_effect e(get_center_of_mass());;
+      get_level_globals().play_sound("sound/empty.ogg", e);
+    }
+} // cart::input_handle_plunger()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by jumping.
+ */
+void rp::cart::input_handle_jump()
+{
+  if ( get_current_action_name() == "crouch" )
+    apply_stop_crouch();
+  else if ( !game_variables::is_level_ending() && m_can_jump && 
+            ( ( get_current_action_name() == "move" ) ||
+              ( get_current_action_name() == "crouch" ) ) )
+    apply_impulse_jump();
+} // cart::input_handle_jump()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Answers to an input by crouching.
+ */
+void rp::cart::input_handle_crouch()
+{
+  apply_crouch();
+} // cart::input_handle_crouch()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Places the cursor at such that it appears at a given position on the
+ *        screen.
+ * \param screen_position The position on the screen.
+ */
+void rp::cart::update_cursor_position
+( const bear::universe::position_type& screen_position )
+{
   m_gap_mouse.x = 
-    (double)pos.x / bear::engine::game::get_instance().get_window_size().x;
+    screen_position.x
+    / bear::engine::game::get_instance().get_window_size().x;
   m_gap_mouse.y = 
-    (double)pos.y /  bear::engine::game::get_instance().get_window_size().y;
+    screen_position.y
+    / bear::engine::game::get_instance().get_window_size().y;
 
   m_cursor->set_center_of_mass
     ( bear::universe::position_type
@@ -2089,9 +2194,7 @@ bool rp::cart::mouse_move
         m_gap_mouse.x * get_level().get_camera_focus().width(),
         get_level().get_camera_focus().bottom() + 
         m_gap_mouse.y * get_level().get_camera_focus().height() ) );
-
-  return true;
-} // cart::mouse_move()
+} // cart::update_cursor_position()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -2547,7 +2650,11 @@ void rp::cart::create_rocket() const
   bear::rocket* main_rocket = new bear::rocket();
 
   main_rocket->set_size( 10, 10 );
+#if defined( __ANDROID__ )
+  main_rocket->set_explosion_rocket_count( 5, 10 );
+#else
   main_rocket->set_explosion_rocket_count( 10, 20 );
+#endif
   main_rocket->set_trace( 0.25, get_random_rocket_color(), 1 );
   main_rocket->set_explosion_date( 0.5, 0.75 );
   main_rocket->set_kill_when_leaving( true );
@@ -2587,7 +2694,12 @@ bear::rocket* rp::cart::create_small_rocket() const
 
   r->set_size( 5, 5 );
   r->set_trace( 0.2, get_random_rocket_color(), 1 );
+
+#if defined( __ANDROID__ )
+  r->set_explosion_date( 0.9, 1 );
+#else
   r->set_explosion_date( 0.9, 1.5 );
+#endif
 
   return r;
 } // cart::create_small_rocket()

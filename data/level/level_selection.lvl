@@ -214,6 +214,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-29'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='2993'/>
 </field>
@@ -231,6 +240,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-28'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3048'/>
 </field>
@@ -1970,6 +1988,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-24'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='2940'/>
 </field>
@@ -1987,6 +2014,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-23'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3040'/>
 </field>
@@ -2004,6 +2040,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-25'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3095'/>
 </field>
@@ -3972,6 +4017,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-22'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3632'/>
 </field>
@@ -3989,6 +4043,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-21'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3686'/>
 </field>
@@ -4006,6 +4069,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-17'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3737'/>
 </field>
@@ -4023,6 +4095,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-16'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3789'/>
 </field>
@@ -4040,6 +4121,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-12'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3839'/>
 </field>
@@ -4057,6 +4147,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-13'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3891'/>
 </field>
@@ -4074,6 +4173,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-19'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3947'/>
 </field>
@@ -4091,6 +4199,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-14'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3998'/>
 </field>
@@ -4108,6 +4225,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-15'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4048'/>
 </field>
@@ -4125,6 +4251,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-18'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4098'/>
 </field>
@@ -4142,6 +4277,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-20'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4153'/>
 </field>
@@ -5435,6 +5579,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-1'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3744'/>
 </field>
@@ -5452,6 +5605,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-2'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3798'/>
 </field>
@@ -5469,6 +5631,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-3'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3849'/>
 </field>
@@ -5486,6 +5657,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-4'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3901'/>
 </field>
@@ -5503,6 +5683,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-5'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3951'/>
 </field>
@@ -5520,6 +5709,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-6'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4003'/>
 </field>
@@ -5537,6 +5735,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-7'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4059'/>
 </field>
@@ -5554,6 +5761,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-8'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4110'/>
 </field>
@@ -5571,6 +5787,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-9'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4160'/>
 </field>
@@ -5588,6 +5813,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-10'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4210'/>
 </field>
@@ -5605,6 +5839,15 @@
 
     <item class_name='rp::balloon' fixed='false' id='balloon-11'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='4265'/>
 </field>
@@ -10520,7 +10763,7 @@
 <real value='1880'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='48'/>
@@ -10554,7 +10797,7 @@
 <real value='1774'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='49'/>
@@ -10675,7 +10918,7 @@
 <real value='1774'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='196'/>
@@ -10745,6 +10988,29 @@
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
+
+    <item class_name='rp::back_button_home_item' fixed='false' id='back_button_shows_home'>
+<fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.phantom'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2110'/>
+</field>
+<field name='base_item.position.left'>
+<real value='269'/>
+</field>
+</fields>
+    </item><!-- rp::back_button_home_item -->
 
     <item class_name='bear::forced_join_creator' fixed='false' id='outside-join-back-mvt'>
 <fields>
@@ -10833,6 +11099,7 @@
 <item_reference value='button_background-3'/>
 <item_reference value='button_background-4'/>
 <item_reference value='button_background-5'/>
+<item_reference value='button_background-6'/>
 </field>
 <field name='forced_movement_applicator.movement'>
 <item_reference value='track-hot_spot'/>
@@ -10846,7 +11113,7 @@
 <real value='1776'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='342'/>
@@ -11005,13 +11272,27 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='bear::check_system_name_creator' fixed='false' id='system-android'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2179'/>
+</field>
+<field name='base_item.position.left'>
+<real value='482'/>
+</field>
+<field name='check_system_name_creator.system_name'>
+<string value='android'/>
+</field>
+</fields>
+    </item><!-- bear::check_system_name_creator -->
+
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='1775'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='487'/>
@@ -11031,12 +11312,8 @@
 </animation>
 </field>
 <field name='mouse_over_manager.items'>
-<item_reference value='back_deco'/>
-<item_reference value='go_deco'/>
 <item_reference value='windowed'/>
 <item_reference value='quit'/>
-<item_reference value='place-1'/>
-<item_reference value='buy'/>
 </field>
 <field name='mouse_over_manager.sample'>
 <sample path='sound/tick.ogg' loops='1' volume='1'/>
@@ -11086,6 +11363,26 @@
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
+    <item class_name='bear::killer' fixed='false' id='kill-android-toggle'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2099'/>
+</field>
+<field name='base_item.position.left'>
+<real value='524'/>
+</field>
+<field name='killer.items'>
+<item_reference value='button_background'/>
+<item_reference value='windowed'/>
+<item_reference value='quit'/>
+<item_reference value='trigger_quit'/>
+</field>
+<field name='killer.kill_activator'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- bear::killer -->
+
     <item class_name='bear::forced_join_creator' fixed='false' id='inside-join-back-mvt'>
 <fields>
 <field name='base_item.global'>
@@ -11112,6 +11409,60 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2179'/>
+</field>
+<field name='base_item.position.left'>
+<real value='547'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='system-android'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='kill-android-trigger'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1907'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='554'/>
+</field>
+<field name='mouse_over_manager.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='141' y='396' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.items'>
+<item_reference value='back_deco'/>
+<item_reference value='go_deco'/>
+<item_reference value='place-1'/>
+<item_reference value='buy'/>
+</field>
+<field name='mouse_over_manager.sample'>
+<sample path='sound/tick.ogg' loops='1' volume='1'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_over_manager -->
+
     <item class_name='bear::browser_launcher_toggle' fixed='false' id='navigator_launcher'>
 <fields>
 <field name='base_item.global'>
@@ -11128,6 +11479,23 @@
 </field>
 </fields>
     </item><!-- bear::browser_launcher_toggle -->
+
+    <item class_name='bear::trigger' fixed='false' id='kill-android-trigger'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2119'/>
+</field>
+<field name='base_item.position.left'>
+<real value='603'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='kill-android-toggle'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
 
     <item class_name='bear::logical_not_creator' fixed='false' id='not_is_demo_version'>
 <fields>
@@ -11509,13 +11877,110 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='bear::forced_goto_creator' fixed='false' id='go_goto'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1707'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1085'/>
+</field>
+<field name='forced_goto_creator.acceleration_time'>
+<real value='0.1'/>
+</field>
+<field name='forced_goto_creator.length.x'>
+<real value='0'/>
+</field>
+<field name='forced_goto_creator.length.y'>
+<real value='200'/>
+</field>
+</fields>
+    </item><!-- bear::forced_goto_creator -->
+
+    <item class_name='bear::forced_rotation_creator' fixed='false' id='go_rotate'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1654'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1111'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='place-1'/>
+</field>
+<field name='forced_rotation_creator.apply_angle'>
+<string value='force'/>
+</field>
+<field name='forced_rotation_creator.duration'>
+<real value='0.2'/>
+</field>
+<field name='forced_rotation_creator.end_angle'>
+<real value='-0.1'/>
+</field>
+<field name='forced_rotation_creator.loop_back'>
+<bool value='1'/>
+</field>
+<field name='forced_rotation_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_rotation_creator.radius'>
+<real value='0'/>
+</field>
+<field name='forced_rotation_creator.start_angle'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_rotation_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='go_sequence'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1702'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1145'/>
+</field>
+<field name='forced_sequence_creator.loops'>
+<u_integer value='1'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='go_goto'/>
+<item_reference value='go_rotate'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::applied_forced_movement' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1684'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1199'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='place-1'/>
+<item_reference value='place-2'/>
+<item_reference value='place-3'/>
+<item_reference value='place-4'/>
+<item_reference value='place-5'/>
+</field>
+<field name='forced_movement_applicator.auto_remove'>
+<bool value='1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='go_sequence'/>
+</field>
+</fields>
+    </item><!-- bear::applied_forced_movement -->
+
     <item class_name='rp::serial_switcher' fixed='false' id='place-4'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11567,7 +12032,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11619,7 +12084,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11671,7 +12136,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11723,7 +12188,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11772,7 +12237,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1785'/>
+<real value='1585'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
@@ -11960,6 +12425,9 @@
 
     <item class_name='bear::forced_movement_toggle' fixed='false' id='remove_go'>
 <fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='1614'/>
 </field>
@@ -12588,7 +13056,7 @@
 <real value='2816'/>
 </field>
 <field name='item_with_decoration.animation'>
-<animation_file path='animation/balloon.canim' auto_size='true' width='43' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<animation_file path='animation/balloon/balloon-red.canim' auto_size='true' width='43' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -13594,6 +14062,9 @@
 <field name='base_item.size.width'>
 <real value='140'/>
 </field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='config-save'/>
+</field>
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -13728,6 +14199,20 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
+    <item class_name='rp::config_save' fixed='false' id='config-save'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='249'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3641'/>
+</field>
+</fields>
+    </item><!-- rp::config_save -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_silence'>
 <fields>
 <field name='base_item.global'>
@@ -13774,6 +14259,9 @@
 <field name='base_item.size.width'>
 <real value='140'/>
 </field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='config-save-1'/>
+</field>
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -13790,6 +14278,20 @@
 </field>
 </fields>
     </item><!-- bear::system_music_toggle -->
+
+    <item class_name='rp::config_save' fixed='false' id='config-save-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='256'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3733'/>
+</field>
+</fields>
+    </item><!-- rp::config_save -->
 
     <item class_name='rp::bird_support' fixed='true'>
 <fields>
@@ -17626,27 +18128,7 @@
 </fields>
     </item><!-- bear::applied_boolean_expression -->
 
-    <item class_name='bear::block' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='835'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5831'/>
-</field>
-<field name='base_item.size.height'>
-<real value='73'/>
-</field>
-<field name='base_item.size.width'>
-<real value='149'/>
-</field>
-<field name='item_with_activable_sides.top_side_is_active'>
-<bool value='1'/>
-</field>
-</fields>
-    </item><!-- bear::block -->
-
-    <item class_name='rp::crate' fixed='false'>
+    <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='908'/>
@@ -17657,11 +18139,11 @@
 <field name='base_item.position.left'>
 <real value='5862'/>
 </field>
-<field name='entity.passive'>
-<bool value='1'/>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/obstacle/obstacle.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
-    </item><!-- rp::crate -->
+    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::trigger' fixed='true' id='not_movment_trigger'>
 <fields>
@@ -17683,7 +18165,7 @@
 </fields>
     </item><!-- bear::trigger -->
 
-    <item class_name='rp::crate' fixed='false'>
+    <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='957'/>
@@ -17694,13 +18176,13 @@
 <field name='base_item.position.left'>
 <real value='5889'/>
 </field>
-<field name='entity.passive'>
-<bool value='1'/>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/obstacle/obstacle.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
-    </item><!-- rp::crate -->
+    </item><!-- bear::decorative_item -->
 
-    <item class_name='rp::crate' fixed='false'>
+    <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='908'/>
@@ -17711,11 +18193,11 @@
 <field name='base_item.position.left'>
 <real value='5913'/>
 </field>
-<field name='entity.passive'>
-<bool value='1'/>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/obstacle/obstacle.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
-    </item><!-- rp::crate -->
+    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::bool_game_variable_setter_toggle' fixed='false' id='set-movement-order-false'>
 <fields>
@@ -20536,26 +21018,6 @@
 </fields>
     </item><!-- bear::forced_movement_toggle -->
 
-    <item class_name='bear::block' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='1347'/>
-</field>
-<field name='base_item.position.left'>
-<real value='7917'/>
-</field>
-<field name='base_item.size.height'>
-<real value='73'/>
-</field>
-<field name='base_item.size.width'>
-<real value='149'/>
-</field>
-<field name='item_with_activable_sides.top_side_is_active'>
-<bool value='1'/>
-</field>
-</fields>
-    </item><!-- bear::block -->
-
     <item class_name='rp::level_selector' fixed='false' id='3-8'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -20600,7 +21062,7 @@
 </fields>
     </item><!-- rp::level_selector -->
 
-    <item class_name='rp::cable' fixed='false'>
+    <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
 <real value='1421'/>
@@ -20611,11 +21073,11 @@
 <field name='base_item.position.left'>
 <real value='7966'/>
 </field>
-<field name='entity.passive'>
-<bool value='1'/>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/obstacle/obstacle.png' x='52' y='0' clip_width='51' clip_height='49' spritepos='cable' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
-    </item><!-- rp::cable -->
+    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::forced_movement_toggle' fixed='false' id='go_camera-3-4'>
 <fields>
@@ -21048,6 +21510,15 @@
 
     <item class_name='rp::tnt' fixed='false'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
+<field name='base_item.fixed.y'>
+<bool value='1'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='908'/>
 </field>
@@ -21353,7 +21824,16 @@
 
     <item class_name='rp::wall' fixed='false'>
 <fields>
+<field name='base_item.artificial'>
+<bool value='1'/>
+</field>
+<field name='base_item.can_move_items'>
+<bool value='0'/>
+</field>
 <field name='base_item.fixed.x'>
+<bool value='1'/>
+</field>
+<field name='base_item.fixed.y'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>

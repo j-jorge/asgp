@@ -1,11 +1,15 @@
 /*----------------------------------------------------------------------------*/
-sprite_sheet "western-1" 512 x 512 margin 1
+sprite_sheet "western-1" 1024 x 1024 margin 1 order "height"
 
 board "board.xcf.bz2"
 horse "horse.xcf.bz2"
 rodeo "rodeo.xcf.bz2"
 stagecoach "stagecoach.xcf.bz2"
 thief "thief.xcf.bz2"
+cactus "cactus.xcf.bz2"
+indian "indian.xcf.bz2"
+tipi "tipi.xcf.bz2"
+
 
 "board" autosize * 0.5 with board
   glob "*"
@@ -53,11 +57,6 @@ thief "thief.xcf.bz2"
   glob "*"
   ;
 
-/*----------------------------------------------------------------------------*/
-sprite_sheet "western-2" 512 x 512 margin 1
-
-stagecoach "stagecoach.xcf.bz2"
-
 "stagecoach red" "stagecoach base" * 0.66 with stagecoach
   glob "*"
   exclude "stagecoach blue"
@@ -84,13 +83,6 @@ stagecoach "stagecoach.xcf.bz2"
   exclude glob "*wheel"
   exclude glob "*horse"
   ;
-
-/*----------------------------------------------------------------------------*/
-sprite_sheet "western-3" 512 x 512 margin 1
-
-cactus "cactus.xcf.bz2"
-indian "indian.xcf.bz2"
-tipi "tipi.xcf.bz2"
 
 "cactus" autosize * 0.5 with cactus
   glob "*"
@@ -119,19 +111,16 @@ tipi "tipi.xcf.bz2"
   ;
 
 /*----------------------------------------------------------------------------*/
-sprite_sheet "western-4" 512 x 512 margin 1
+sprite_sheet "western-2" 1024 x 1024 margin 1 order "height"
 
 saloon "saloon.xcf.bz2"
+stagecoach "stagecoach.xcf.bz2"
+rodeo "rodeo.xcf.bz2"
+img "landscape.xcf.bz2"
 
 "saloon" autosize * 0.64 with saloon
   glob "*"
   ;
-
-/*----------------------------------------------------------------------------*/
-sprite_sheet "western-5" 512 x 512 margin 1
-
-stagecoach "stagecoach.xcf.bz2"
-rodeo "rodeo.xcf.bz2"
 
 "stagecoach red" "stagecoach alone" * 0.66 with stagecoach
   "global light"
@@ -165,3 +154,39 @@ rodeo "rodeo.xcf.bz2"
   exclude "brown bull"
   exclude glob "-*"
   ;
+
+"1" "1" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "1"
+  ;
+
+"2" "2" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "2"
+  ;
+
+"3" "3" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "3"
+  ;
+
+"4" "4" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "4"
+  ;
+
+"5" "5" * 0.5 with img
+  "noise"
+  "light"
+  "screws"
+  "5"
+  ;
+

@@ -111,7 +111,7 @@ void rp::misc_layer::build()
   m_fps_text->set_auto_size(true);
   m_fps_text->set_text("0");
   m_fps_text->set_position( m_fps_text->height(), m_fps_text->height() );
-  m_fps_text->get_rendering_attributes().set_intensity( 0, 0, 0 );
+  m_fps_text->get_rendering_attributes().set_intensity( 1, 1, 1 );
 
   m_last_fps_check = bear::systime::get_date_ms();
 
@@ -192,7 +192,14 @@ bool rp::misc_layer::key_pressed( const bear::input::key_info& key )
 bool rp::misc_layer::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  m_cursor_position = pos;
+  m_cursor_position.x =
+    get_size().x
+    * pos.x
+    / bear::engine::game::get_instance().get_window_size().x;
+  m_cursor_position.y =
+    get_size().y
+    * pos.y
+    / bear::engine::game::get_instance().get_window_size().y;
 
   // let the sub components know the movement
   return false;

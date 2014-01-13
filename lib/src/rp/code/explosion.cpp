@@ -45,6 +45,10 @@ rp::explosion::explosion
   : m_nb_explosions(nb_explosions), m_radius(radius), m_duration(0),
     m_explosion_duration(duration)
 {
+#if defined(__ANDROID__)
+  m_nb_explosions = std::max( (unsigned)1, m_nb_explosions / 2 );
+#endif
+
   set_artificial(decoration);
 } // rp::explosion::explosion()
 
@@ -106,7 +110,12 @@ void rp::explosion::progress( bear::universe::time_type elapsed_time )
     for ( unsigned int i = 0; i != nb_new_explosions; ++i ) 
       {
         create_explosion();
-        create_smoke();
+#ifdef __ANDROID__
+        if ( i % 2 == 0 )
+          create_smoke();
+#else
+          create_smoke();
+#endif
       }
 } // explosion::progress()
 

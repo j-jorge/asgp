@@ -39,21 +39,23 @@ namespace rp
     typedef bear::engine::basic_renderable_item< bear::mouse_detector > super;
 
   public:
-    help_button();
-    
     void pre_cache();
     void on_enters_layer();
-    void progress( bear::universe::time_type elapsed_time );
     void get_visual
     ( std::list<bear::engine::scene_visual>& visuals ) const;
 
     bool mouse_released
     ( bear::input::mouse::mouse_code button,
       const claw::math::coordinate_2d<unsigned int>& pos );
-    
+
+    bool finger_action( const bear::input::finger_event& event );
+
+    void show_help() const;
+
   private:
     /** \brief The sprite of the item. */
-    bear::visual::sprite m_sprite;  
+    bear::visual::sprite m_sprite;
+
   }; // class help_button
 } // namespace rp
 

@@ -1,8 +1,0 @@
-# The format of the lines is
-# picture: x y width height
-
-4: 0 0 255 206
-1: 256 0 255 201
-2: 0 207 255 199
-3: 256 207 255 190
-5: 0 407 255 99

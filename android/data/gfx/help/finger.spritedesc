@@ -1,0 +1,74 @@
+sprite_sheet "finger" 1024 x 1024 margin 1 order "height"
+
+cannon "help-cannon.xcf.bz2"
+plunger "help-plunger.xcf.bz2"
+
+
+"cannon 0" image_size * 0.5 with cannon
+  "1"
+;
+
+"cannon 1" image_size * 0.5 with cannon
+  "1"
+  "touch 1"
+;
+
+"cannon 2" image_size * 0.5 with cannon
+  glob "*2"
+  "touch 1"
+;
+
+"cannon 3" image_size * 0.5 with cannon
+  glob "*3"
+  "touch 1"
+;
+
+"cannon 4" image_size * 0.5 with cannon
+  glob "*4"
+  "touch 1"
+;
+
+"cannon 5" image_size * 0.5 with cannon
+  glob "*5"
+  "touch 1"
+;
+
+"cannon 6" image_size * 0.5 with cannon
+  glob "*6"
+  "touch 1"
+;
+
+"cannon 7" image_size * 0.5 with cannon
+  glob "*7"
+  "touch 1"
+;
+
+"cannon 8" image_size * 0.5 with cannon
+  glob "*8"
+  "touch 1"
+;
+
+"cannon 9" image_size * 0.5 with cannon
+  glob "*9"
+  "touch 1"
+;
+
+"cannon 10" image_size * 0.5 with cannon
+  glob "*10"
+  "touch 1"
+;
+
+"cannon 11" image_size * 0.5 with cannon
+  glob "*11"
+  "touch 1"
+;
+
+
+/*----------------------------------------------------------------------------*/
+"plunger 1" image_size * 0.5 with plunger
+  "1"
+;
+
+"plunger 2" image_size * 0.5 with plunger
+  "2"
+;

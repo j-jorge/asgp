@@ -45,13 +45,12 @@ arrows "arrows.xcf.bz2"
 ;
 
 "arrow off" autosize * 0.165 with arrows
-  "background off"
-  "background border"
+  "background common"
   ;
 
 "arrow on" autosize * 0.165 with arrows
   "background on"
-  "background border"
+  "background common"
   ;
 
 "arrow" autosize * 0.165 with arrows

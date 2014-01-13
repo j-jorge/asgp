@@ -1,3 +1,53 @@
+2013-12-10 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.12
+
+	* Reworking some sprites for better readability: crate, plunger,
+	  cannonball.
+
+	* Automatically switch to the level selector after a short time lapse
+	  on the title screen.
+
+2013-11-25 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.11
+
+	* Make the first boss easier to fight.
+
+	* New style for the user interface, much clearer.
+
+	* Improve the sprites of the balloons.
+
+	* Update the translations.
+
+	* Reduce loading times.
+
+	* Various bug fixes and performance enhancement.
+
+2013-11-07 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.10
+
+	* Add Facebook and Tweeter buttons at the end of the levels.
+
+	* Fix various memory leaks.
+
+	* The back button reacts as the home button in the level selection
+	  on Android.
+
+2013-09-25 Julien Jorge <julien.jorge@stuff-o-matic.com>
+
+	* Version 1.0.9
+
+	* Adds changes lost when migrating to GitHub:
+	- The world record is shown at the end of the levels.
+	- The size of the score line at the end of the levels is constrained.
+	- Adds Spanish and Portuguese translations.
+	- Adds missing accents in Fontopo.
+	- Windows' installer is available in French, Spanish and Portuguese.
+
+	* Port the game to Android.
+
 2013-08-27 Julien Jorge <julien.jorge@stuff-o-matic.com>
 
 	* Version 1.0.8

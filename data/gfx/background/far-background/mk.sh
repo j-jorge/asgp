@@ -43,6 +43,11 @@ function get_layers() {
         esac
     done
 
+    if [ -z "$GREP_EXCLUDE" ]
+    then
+        GREP_EXCLUDE='^$'
+    fi
+
     xcfinfo "$SOURCE_XCF" | tail -n +2 | cat -b | grep -v "$GREP_EXCLUDE" \
         | while read INDEX REMAINING
     do

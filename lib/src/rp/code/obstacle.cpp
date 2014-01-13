@@ -192,7 +192,7 @@ void rp::obstacle::create_fixed_planks(const std::string& mark_name)
  * \param d (out) A list to which are added such items.
  */
 void rp::obstacle::get_dependent_items
-( std::list<bear::universe::physical_item*>& d ) const
+( bear::universe::physical_item::item_list& d ) const
 {
   super::get_dependent_items(d);
 

@@ -21,6 +21,7 @@
 
 namespace rp
 {
+  class balloon;
   class cart;
 
   /**
@@ -46,7 +47,7 @@ namespace rp
     void on_enters_layer();
     void progress( bear::universe::time_type elapsed_time );
     void get_visual( std::list<bear::engine::scene_visual>& visuals ) const;
-    void choose_balloon_color();
+    void set_balloon( const balloon* b );
     void fly(double waiting, double y_distance, bool new_balloon);
     void free();
     void set_gap_z(int gap_z);

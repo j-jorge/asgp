@@ -1,5 +1,5 @@
 0
-7
+10
 0
 13
 content_animation
@@ -225,90 +225,112 @@ sound/boss/propeller.ogg
 body
 0
 0
+1
 0
 lady
 0
 0
 1
+1
 module
 0
 0
+1
 2
 propeller
 0
 0
+1
 3
 pipe 1
 1
 0
+1
 4
 pipe 2
 1
 0
+1
 4
 pipe 3
 0
 0
+1
 5
 pipe 4
 0
 0
+1
 6
 trap door
 0
 0
+1
 7
 item
 0
 0
+1
 13
 emergency
 0
 0
+1
 8
 cabin 1
 0
 0
+1
 13
 cabin 2
 0
 0
+1
 13
 cabin 3
 0
 0
+1
 13
 cabin 4
 0
 0
+1
 13
 cabin 5
 0
 0
+1
 13
 cabin 6
 0
 0
+1
 13
 cabin 7
 0
 0
+1
 13
 top_item
 0
 0
+1
 13
 trap corner
 0
 0
+1
 9
 button
 0
 0
+1
 13
 button 2
 0
 0
+1
 13
 1
 0
@@ -322,13 +344,13 @@ align_bottom
 0
 0
 21
-145
+135
 8
 1
 292
 8
 1
-60
+80
 8
 1
 60
@@ -749,90 +771,112 @@ sound/boss/propeller.ogg
 body
 0
 0
+1
 0
 lady
 0
 0
+1
 10
 module
 0
 0
+1
 2
 propeller
 0
 0
+1
 3
 pipe 1
 1
 0
+1
 4
 pipe 2
 1
 0
+1
 4
 pipe 3
 0
 0
+1
 5
 pipe 4
 0
 0
+1
 6
 trap door
 0
 0
+1
 7
 item
 0
 0
+1
 13
 emergency
 0
 0
+1
 11
 cabin 1
 0
 0
+1
 13
 cabin 2
 0
 0
+1
 13
 cabin 3
 0
 0
+1
 13
 cabin 4
 0
 0
+1
 13
 cabin 5
 0
 0
+1
 13
 cabin 6
 0
 0
+1
 13
 cabin 7
 0
 0
+1
 13
 top_item
 0
 0
+1
 13
 trap corner
 0
 0
+1
 9
 button
 0
 0
+1
 13
 button 2
 0
 0
+1
 13
 1
 0
@@ -846,13 +890,13 @@ align_bottom
 0
 0
 21
-145
+135
 8
 1
 292
 8
 1
-60
+80
 8
 1
 60
@@ -1273,94 +1317,117 @@ sound/boss/propeller.ogg
 body
 0
 0
+1
 0
 lady
 0
 0
+1
 10
 module
 0
 0
+1
 2
 propeller
 0
 0
+1
 3
 pipe 1
 1
 0
+1
 4
 pipe 2
 1
 0
+1
 4
 pipe 3
 0
 0
+1
 5
 pipe 4
 0
 0
+1
 6
 trap door
 0
 0
+1
 7
 item
 0
 0
+1
 13
 emergency
 0
 0
+1
 11
 cabin 1
 0
 0
+1
 13
 cabin 2
 0
 0
+1
 13
 cabin 3
 0
 0
+1
 13
 cabin 4
 0
 0
+1
 13
 cabin 5
 0
 0
+1
 13
 cabin 6
 0
 0
+1
 13
 cabin 7
 0
 0
+1
 13
 top_item
 0
 0
+1
 13
 trap corner
 0
 0
+1
 9
 smoke
 0
 0
+1
 12
 button
 0
 0
+1
 13
 button 2
 0
 0
+1
 13
 2
 0
@@ -1375,13 +1442,13 @@ align_bottom
 1
 sound/explosion/muffled-explosion.ogg
 22
-145
+135
 8
 1
 292
 8
 1
-60
+80
 8
 1
 60
@@ -2268,90 +2335,112 @@ end
 body
 0
 0
+1
 0
 lady
 0
 0
+1
 10
 module
 0
 0
+1
 2
 propeller
 0
 0
+1
 3
 pipe 1
 1
 0
+1
 4
 pipe 2
 1
 0
+1
 4
 pipe 3
 0
 0
+1
 5
 pipe 4
 0
 0
+1
 6
 trap door
 0
 0
+1
 7
 item
 0
 0
+1
 13
 emergency
 0
 0
+1
 11
 cabin 1
 0
 0
+1
 13
 cabin 2
 0
 0
+1
 13
 cabin 3
 0
 0
+1
 13
 cabin 4
 0
 0
+1
 13
 cabin 5
 0
 0
+1
 13
 cabin 6
 0
 0
+1
 13
 cabin 7
 0
 0
+1
 13
 top_item
 0
 0
+1
 13
 trap corner
 0
 0
+1
 9
 button
 0
 0
+1
 13
 button 2
 0
 0
+1
 13
 1
 0
@@ -2365,13 +2454,13 @@ align_bottom
 0
 0
 21
-145
+135
 8
 1
 292
 8
 1
-60
+80
 8
 1
 60

@@ -58,6 +58,9 @@ rp::level_selector::level_selector()
   m_decorative_level_name(NULL), m_load(false), m_rectangle_opacity(0),
   m_medal_movement(1), m_cursor(NULL)
 {
+  set_artificial( true );
+  set_phantom( true );
+  set_can_move_items( false );
 } // rp::level_selector::level_selector()
 
 
@@ -92,17 +95,15 @@ void rp::level_selector::on_enters_layer()
   m_level_state = 
     game_variables::get_level_state(m_serial_number, m_level_number);
   m_font = get_level_globals().get_font("font/fontopo/fontopo.fnt",50);
-  
+
   choose_level_sprite();
-  
+
   if ( is_boss_level() )
     {
       m_background_sprite =
         get_level_globals().auto_sprite
         ( "gfx/status/level/frame-2.png", "main" );
-      m_hidden_sprite =
-        get_level_globals().auto_sprite
-        ( "gfx/status/level/frame-2.png", "main" );
+      m_hidden_sprite = m_background_sprite;
       m_border_sprite =
         get_level_globals().auto_sprite
         ( "gfx/status/level/frame-4.png", "bright frame" );
@@ -137,7 +138,7 @@ void rp::level_selector::on_enters_layer()
     bear::visual::animation
     ( get_level_globals().auto_sprite
       ( "gfx/status/level/frame-2.png", "star" ) );
-  
+
   game_variables::select_level( false );
   util::load_game_variables(); 
   update_medal(get_state());
@@ -231,6 +232,7 @@ bool rp::level_selector::set_item_list_field
 
   return ok;
 } // level_selector::set_item_list_field()
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Set a field of type item.
@@ -339,6 +341,49 @@ void rp::level_selector::get_visual
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Executes the action associated with the selector.
+ */
+void rp::level_selector::activate()
+{
+  if ( m_level_state > 0 )
+    {
+      if ( ! s_selection && 
+           std::abs(m_level_factor - m_init_level_factor) <= 0.1 &&
+           ! game_variables::get_movement_order_status() )
+        select_level();
+      else if ( is_selected_level() )
+        {
+          if ( m_level_factor > 0.99 )
+            game_variables::set_go_order_status(true);
+          check_go_order();
+        }
+    }
+} // level_selector::activate()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Processes a finger event. If the finger is released on the button, the
+ *        button is activated.
+ * \param event The event to process
+ */
+bool rp::level_selector::finger_action
+( const bear::input::finger_event& event )
+{
+  bool result = false;
+
+  if ( ( event.get_type() == bear::input::finger_event::finger_event_released )
+       && ( get_bounding_box().includes
+            ( get_level().screen_to_level( event.get_position() ) ) ) )
+    {
+      result = true;
+      activate();
+    }
+
+  return result;
+} // level_selector::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Tell the player to stop the action associated with a mouse button.
  * \param button The code of the button.
  * \param pos The position of the cursor on the screen.
@@ -368,19 +413,7 @@ bool rp::level_selector::mouse_released
       if ( get_bounding_box().includes( get_level().screen_to_level(pos) ) )
         {
           result = true;
-          if ( m_level_state > 0 )
-            {
-              if ( ! s_selection && 
-                   std::abs(m_level_factor - m_init_level_factor) <= 0.1 &&
-                   ! game_variables::get_movement_order_status() )
-                select_level();
-              else if ( is_selected_level() )
-                {
-                  if ( m_level_factor > 0.99 )
-                    game_variables::set_go_order_status(true);
-                  check_go_order();
-                }
-            }
+          activate();
         }
     }
 
@@ -952,6 +985,7 @@ void rp::level_selector::push_level()
 {
   util::save_game_variables();
 
+  game_variables::set_level_theme( m_theme );
   std::ostringstream stream;
   stream << "level/" << m_serial_number << "/level-" << m_level_number << ".cl";
   

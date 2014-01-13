@@ -12,6 +12,8 @@
  * \author Sebastien Angibaud
  */
 #include "rp/decorative_balloon.hpp"
+
+#include "rp/balloon.hpp"
 #include "rp/cart.hpp"
 
 #include "engine/scene_visual.hpp"
@@ -139,29 +141,25 @@ void rp::decorative_balloon::get_visual
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Choose a random color.
+ * \brief Sets the animation to match a given balloon.
+ * \param b The balloon from which we take the animation. If b is NULL, then a
+ *        random animation is choosen.
  */
-void rp::decorative_balloon::choose_balloon_color()
+void rp::decorative_balloon::set_balloon( const balloon* b )
 {
-  unsigned int r = rand()%8;
-  
-  if ( r == 0 )
-    get_rendering_attributes().set_intensity(1, 1, 0);
-  else if ( r == 1 )
-    get_rendering_attributes().set_intensity(0.4, 1, 0.13);
-  else if ( r == 2 )
-    get_rendering_attributes().set_intensity(0.85, 0.21, 1);
-  else if ( r == 3 )
-    get_rendering_attributes().set_intensity(1, 0.21, 0.42);
-  else if ( r == 4 )
-    get_rendering_attributes().set_intensity(0.95, 0.12, 0.12);
-  else if ( r == 5 )
-    get_rendering_attributes().set_intensity(1, 0.78, 0);
-  else if ( r == 6 )
-    get_rendering_attributes().set_intensity(0.12, 0.17, 0.95);
+  std::string color;
+
+  if ( b == NULL )
+    color = balloon::get_random_color();
   else
-    get_rendering_attributes().set_intensity(0, 0.53, 0.08);
-} // decorative_balloon::choose_color()
+    color = b->get_color();
+
+  const bear::visual::animation balloon_anim
+    ( get_level_globals().get_animation
+      ( "animation/balloon/balloon-" + color + ".canim" ) );
+
+  set_animation( bear::visual::animation( balloon_anim.get_sprite() ) );
+} // decorative_balloon::set_balloon()
 
 /*----------------------------------------------------------------------------*/
 /**

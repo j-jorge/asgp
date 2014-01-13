@@ -1,0 +1,107 @@
+light star: 0 0 128 128
+light star dark: 129 0 128 128
+rounded star bright: 258 0 128 128
+balloon 1: 387 0 43 85
+balloon 2: 431 0 43 85
+red balloon 0: 475 0 43 85
+red balloon 0 - 1: 519 0 43 85
+red balloon 0 - 2: 563 0 43 85
+red balloon 0 - 3: 607 0 43 85
+red balloon 0 - 4: 651 0 43 85
+red balloon 0 - 5: 695 0 43 85
+red balloon 0 - 6: 739 0 43 85
+red balloon 0 - 7: 783 0 43 85
+red balloon 0 - 8: 827 0 43 85
+red balloon 0 - 9: 871 0 43 85
+red balloon 0 - 10: 915 0 43 85
+red balloon 0 - 11: 959 0 43 85
+red balloon 0 - 12: 0 129 43 85
+red balloon 0 - 13: 44 129 43 85
+red balloon 0 - 14: 88 129 43 85
+red balloon 0 - 15: 132 129 43 85
+blue balloon 0: 176 129 43 85
+blue balloon 0 - 1: 220 129 43 85
+blue balloon 0 - 2: 264 129 43 85
+blue balloon 0 - 3: 308 129 43 85
+blue balloon 0 - 4: 352 129 43 85
+blue balloon 0 - 5: 396 129 43 85
+blue balloon 0 - 6: 440 129 43 85
+blue balloon 0 - 7: 484 129 43 85
+blue balloon 0 - 8: 528 129 43 85
+blue balloon 0 - 9: 572 129 43 85
+blue balloon 0 - 10: 616 129 43 85
+blue balloon 0 - 11: 660 129 43 85
+blue balloon 0 - 12: 704 129 43 85
+blue balloon 0 - 13: 748 129 43 85
+blue balloon 0 - 14: 792 129 43 85
+blue balloon 0 - 15: 836 129 43 85
+purple balloon 0: 880 129 43 85
+purple balloon 0 - 1: 924 129 43 85
+purple balloon 0 - 2: 968 129 43 85
+purple balloon 0 - 3: 0 215 43 85
+purple balloon 0 - 4: 44 215 43 85
+purple balloon 0 - 5: 88 215 43 85
+purple balloon 0 - 6: 132 215 43 85
+purple balloon 0 - 7: 176 215 43 85
+purple balloon 0 - 8: 220 215 43 85
+purple balloon 0 - 9: 264 215 43 85
+purple balloon 0 - 10: 308 215 43 85
+purple balloon 0 - 11: 352 215 43 85
+purple balloon 0 - 12: 396 215 43 85
+purple balloon 0 - 13: 440 215 43 85
+purple balloon 0 - 14: 484 215 43 85
+purple balloon 0 - 15: 528 215 43 85
+yellow balloon 0: 572 215 43 85
+yellow balloon 0 - 1: 616 215 43 85
+yellow balloon 0 - 2: 660 215 43 85
+yellow balloon 0 - 3: 704 215 43 85
+yellow balloon 0 - 4: 748 215 43 85
+yellow balloon 0 - 5: 792 215 43 85
+yellow balloon 0 - 6: 836 215 43 85
+yellow balloon 0 - 7: 880 215 43 85
+yellow balloon 0 - 8: 924 215 43 85
+yellow balloon 0 - 9: 968 215 43 85
+yellow balloon 0 - 10: 0 301 43 85
+yellow balloon 0 - 11: 44 301 43 85
+yellow balloon 0 - 12: 88 301 43 85
+yellow balloon 0 - 13: 132 301 43 85
+yellow balloon 0 - 14: 176 301 43 85
+yellow balloon 0 - 15: 220 301 43 85
+green balloon 0: 264 301 43 85
+green balloon 0 - 1: 308 301 43 85
+green balloon 0 - 2: 352 301 43 85
+green balloon 0 - 3: 396 301 43 85
+green balloon 0 - 4: 440 301 43 85
+green balloon 0 - 5: 484 301 43 85
+green balloon 0 - 6: 528 301 43 85
+green balloon 0 - 7: 572 301 43 85
+green balloon 0 - 8: 616 301 43 85
+green balloon 0 - 9: 660 301 43 85
+green balloon 0 - 10: 704 301 43 85
+green balloon 0 - 11: 748 301 43 85
+green balloon 0 - 12: 792 301 43 85
+green balloon 0 - 13: 836 301 43 85
+green balloon 0 - 14: 880 301 43 85
+green balloon 0 - 15: 924 301 43 85
+orange balloon 0: 968 301 43 85
+orange balloon 0 - 1: 0 387 43 85
+orange balloon 0 - 2: 44 387 43 85
+orange balloon 0 - 3: 88 387 43 85
+orange balloon 0 - 4: 132 387 43 85
+orange balloon 0 - 5: 176 387 43 85
+orange balloon 0 - 6: 220 387 43 85
+orange balloon 0 - 7: 264 387 43 85
+orange balloon 0 - 8: 308 387 43 85
+orange balloon 0 - 9: 352 387 43 85
+orange balloon 0 - 10: 396 387 43 85
+orange balloon 0 - 11: 440 387 43 85
+orange balloon 0 - 12: 484 387 43 85
+orange balloon 0 - 13: 528 387 43 85
+orange balloon 0 - 14: 572 387 43 85
+orange balloon 0 - 15: 616 387 43 85
+balloon piece 3: 1003 0 18 22
+balloon piece 4: 1012 129 7 18
+balloon piece 1: 1003 23 17 15
+balloon piece 5: 1003 39 13 13
+balloon piece 2: 1003 53 7 12
+balloon piece 6: 1003 66 15 12

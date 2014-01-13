@@ -23,14 +23,6 @@ BASE_ITEM_EXPORT( help_button, rp )
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Constructor.
- */
-rp::help_button::help_button()
-{
-} // rp::help_button::rp::help_button()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Load the media required by this class.
  */
 void rp::help_button::pre_cache()
@@ -55,18 +47,6 @@ void rp::help_button::on_enters_layer()
     get_level_globals().auto_sprite
     ( rp_gettext("gfx/status/buttons-2.png"),"controllers");
 } // help_button::on_enters_layer()
-
-/*---------------------------------------------------------------------------*/
-/**
- * \brief Do one iteration in the progression of the item.
- * \param elapsed_time Elapsed time since the last call.
- */
-void rp::help_button::progress( bear::universe::time_type elapsed_time )
-{
-  super::progress( elapsed_time );
-
-  progress_input_reader(elapsed_time);
-} // help_button::progress()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -96,13 +76,39 @@ bool rp::help_button::mouse_released
   bool result = super::mouse_released(button, pos);
   
   if ( result )
-    {
-      help_layer_starting_message msg_help;
-      
-      get_level_globals().send_message
-        ( RP_HELP_LAYER_DEFAULT_TARGET_NAME, msg_help );
-    }
+    show_help();
 
   return result;
-} // help_button::mouse_released
+} // help_button::mouse_released()
 
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Shows the help if a finger has been released on the button.
+ * \param event The event dispatched by the finger.
+ */
+bool rp::help_button::finger_action
+( const bear::input::finger_event& event )
+{
+  bool result = super::finger_action( event );
+  
+  if ( result
+       && ( event.get_type()
+            == bear::input::finger_event::finger_event_released ) )
+    show_help();
+
+  return result;
+} // help_button::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tell the player to stop the action associated with a mouse button.
+ * \param button The code of the button.
+ * \param pos The position of the cursor on the screen.
+ */
+void rp::help_button::show_help() const
+{
+  help_layer_starting_message msg_help;
+      
+  get_level_globals().send_message
+    ( RP_HELP_LAYER_DEFAULT_TARGET_NAME, msg_help );
+} // help_button::show_help()

@@ -67,3 +67,14 @@ bool rp::bird_support::collision_with_cart
   return result;
 } // bird_support::collision_with_cart()
 
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tells if it is interesting to process a collision against a given
+ *        item.
+ * \param that The other item.
+ */
+bool rp::bird_support::do_interesting_collision
+( const bear::universe::physical_item& that ) const
+{
+  return dynamic_cast<const cart*>(&that) != NULL;
+} // bird_support::do_interesting_collision()

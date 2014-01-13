@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation loops='1' first_index='0' last_index='1' loop_back='false' auto_size='true' width='27' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.3'>
-    <sprite image='gfx/cart/cart.png' x='69' y='84' clip_width='27' clip_height='25' spritepos='fire effect' auto_size='true' width='27' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/cart.png' x='105' y='84' clip_width='27' clip_height='25' spritepos='fire effect' auto_size='true' width='27' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.3'>
     <sprite image='gfx/cart/cart.png' x='77' y='0' clip_width='27' clip_height='25' spritepos='' auto_size='true' width='27' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>

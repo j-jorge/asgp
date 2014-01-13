@@ -32,161 +32,15 @@
 
 #include "universe/forced_movement/forced_goto.hpp"
 
-#include <boost/bind.hpp>
-#include <boost/thread/thread.hpp>
+#include "gui/callback_function.hpp"
 
-#include <claw/socket_stream.hpp>
-#include <claw/string_algorithm.hpp>
+#include <boost/bind.hpp>
+#include <boost/format.hpp>
+
 #include <claw/tween/easing/easing_linear.hpp>
+#include <claw/tween/easing/easing_elastic.hpp>
 
 #include <sstream>
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Constructs a new instance that won't do anything.
- */
-rp::level_ending_effect::score_request::score_request()
-  : m_is_active( new bool(true) ), m_shared_mutex( new boost::mutex )
-{
-
-} // level_ending_effect::score_request::score_request()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Constructs a new instance with a given callback function.
- * \param c The function to call when the score is ready.
- * \param level_name The file name of the level for which we want the score.
- */
-rp::level_ending_effect::score_request::score_request
-( callback_type c, std::string level_name )
-  : m_callback( c ), m_level_name( level_name ),
-    m_is_active( new bool(true) ), m_shared_mutex( new boost::mutex )
-{
-
-} // level_ending_effect::score_request::score_request()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Constructs a new instance by copying another instance.
- * \param that The instance to copy.
- */
-rp::level_ending_effect::score_request::score_request
-( const score_request& that )
-  : m_callback( that.m_callback ), m_level_name( that.m_level_name ),
-    m_is_active( that.m_is_active ), m_shared_mutex( that.m_shared_mutex )
-{
-
-} // level_ending_effect::score_request::score_request()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Returns the name of the level for which we request the score.
- */
-std::string rp::level_ending_effect::score_request::get_level_name() const
-{
-  return m_level_name;
-} // level_ending_effect::score_request::get_level_name()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Tells to not call the callback when the score is ready.
- */
-void rp::level_ending_effect::score_request::disable()
-{
-  boost::mutex::scoped_lock lock(*m_shared_mutex);
-
-  *m_is_active = false;
-} // level_ending_effect::score_request::disable()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Retrieves the score from the server and call the callback.
- */
-void rp::level_ending_effect::score_request::operator()()
-{
-  const std::string server( "www.stuff-o-matic.com" );
-  const int port( 80 );
-
-  claw::net::socket_stream server_connection( "www.stuff-o-matic.com", port );
-
-  if ( !server_connection )
-    {
-#ifdef _DEBUG
-      claw::logger << claw::log_verbose << "Cannot connect to " << server
-                   << " on port " << port << "." << std::endl;
-#endif
-      return;
-    }
-
-  const std::string page( "/asgp/stats/best_score.php?level=" + m_level_name );
-
-  std::ostringstream request;
-  request << "GET " << page << " HTTP/1.1\n"
-          << "Host: www.stuff-o-matic.com\n"
-          << "User-Agent: " << RP_VERSION_STRING << "\n"
-          << "Connection: Close\n"
-          << '\n';
-
-  server_connection << request.str() << std::flush;
-
-  std::string protocol;
-  int code;
-  std::string line;
-
-  if ( server_connection >> protocol >> code )
-    if ( claw::text::getline( server_connection, line ) )
-      {
-#ifdef _DEBUG
-        claw::logger << claw::log_verbose <<  "Stats server response: " << code
-                     << ' ' << line << std::endl;
-#endif
-        if ( code == 200 /* OK */ )
-          {
-            // Find the first empty line that separate the header and the body.
-            while ( !line.empty() )
-              claw::text::getline( server_connection, line );
-
-            // The body is the score alone
-            unsigned int score;
-            if ( server_connection >> score )
-              call_callback( score );
-          }
-      }
-} // level_ending_effect::score_request::operator()()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Calls the callback with a given value.
- * \param s The value to pass to the callback.
- */
-void rp::level_ending_effect::score_request::call_callback( unsigned int c )
-{
-  boost::mutex::scoped_lock lock(*m_shared_mutex);
-
-  if ( *m_is_active )
-    m_callback( c );
-} // level_ending_effect::score_request::call_callback()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Assigns another score request to this one.
- * \param that The instance to copy.
- */
-rp::level_ending_effect::score_request&
-rp::level_ending_effect::score_request::operator=( score_request that )
-{
-  boost::mutex::scoped_lock lock(*m_shared_mutex);
-
-  m_callback = that.m_callback;
-  m_level_name = that.m_level_name;
-  m_is_active = that.m_is_active;
-  m_shared_mutex = that.m_shared_mutex;
-
-  return *this;
-} // level_ending_effect::score_request::operator=()
-
-
-
 
 /*----------------------------------------------------------------------------*/
 const bear::visual::coordinate_type
@@ -414,6 +268,7 @@ const double rp::level_ending_effect::s_score_line_speed(150);
  */
 rp::level_ending_effect::level_ending_effect()
   : m_speed_factor(1), m_next_tick(0.1), m_world(NULL), m_cart(NULL), 
+    m_skip_button(NULL), m_facebook_button(NULL),
     m_applause_sample(NULL), m_update_function(NULL), m_flash_opacity(0),
     m_play_tick(false)
 {
@@ -430,9 +285,9 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
     m_next_tick(that.m_next_tick), m_world(that.m_world), m_cart(that.m_cart),
     m_finished(false), m_medal(0), m_rectangle_opacity(0), 
     m_decorative_medal(NULL), m_pop_level(false), m_active_component(false),
+    m_skip_button(NULL), m_facebook_button(NULL),
     m_in_fade_out(false), m_applause_sample(NULL), m_update_function(NULL),
-    m_flash_opacity(0), m_play_tick(false),
-    m_score_request( that.m_score_request )
+    m_flash_opacity(0), m_play_tick(false)
 {
 
 } // level_ending_effect::level_ending_effect()
@@ -443,7 +298,9 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
  */
 rp::level_ending_effect::~level_ending_effect()
 {
-  m_score_request.disable();
+  m_score_request.disconnect();
+  m_facebook_request.disconnect();
+  m_twitter_request.disconnect();
 
   delete m_applause_sample;
 } // level_ending_effect::~level_ending_effect()
@@ -512,6 +369,7 @@ void rp::level_ending_effect::build()
 
   m_root_window.set_size( get_level().get_camera_focus().size() );
   add_button_component();
+
   m_background_on_sprite =
     get_level_globals().auto_sprite
     ( rp_gettext("gfx/status/buttons.png"), "background on" ); 
@@ -571,12 +429,14 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
       game_variables::set_last_medal( m_medal );
       util::save_game_variables(); 
 
-      m_button->set_icon
+      m_skip_button->set_icon
         ( get_level_globals().auto_sprite
           ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
 
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
+
+      add_social_buttons();
     }
 
   m_speed_factor = 1;
@@ -588,8 +448,16 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 
   if ( ! game_variables::is_boss_level() )
     update_medal();
-    
+
   m_tweener_fade_out.update(elapsed_time);
+  m_social_tweener.update(elapsed_time);
+
+  // Opening the URL immediately will crash on Android. The cause seems to be
+  // that the app goes in background (due to the display of Chrome) while the
+  // main thread is not active. Indeed, the activte thread is the one receiving
+  // the URL from our server and calling the signal. The opening of the URL is
+  // thus postponed there, to be sure it is done in the main thread.
+  open_url();
 
   return 0;
 } // level_ending_effect::progress()
@@ -602,7 +470,6 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 void rp::level_ending_effect::render( scene_element_list& e ) const
 {
   render_background(e);
-  m_root_window.render( e );
 
   if ( ! game_variables::is_boss_level() )
     {
@@ -615,10 +482,12 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
     render_opaque_rectangle(e);
 
   if ( ! game_variables::is_boss_level() )
-    render_level_name(e);
+    {
+      render_level_name(e);
+      render_medal(e);
 
-  if ( ! game_variables::is_boss_level() )
-    render_medal(e);
+      m_root_window.render( e );
+    }
 } // level_ending_effect::render()
 
 /*----------------------------------------------------------------------------*/
@@ -694,7 +563,7 @@ bool rp::level_ending_effect::button_maintained
 bool rp::level_ending_effect::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  if ( m_button->get_rectangle().includes(pos) )
+  if ( m_skip_button->get_rectangle().includes(pos) )
     {
       if ( ! m_active_component )
         get_level_globals().play_sound( "sound/tick.ogg" );
@@ -708,30 +577,54 @@ bool rp::level_ending_effect::mouse_move
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Inform the layer that the mouse had been moved.
+ * \brief Inform the layer that the mouse had been pressed.
  * \param pos The new position of the mouse.
  */
-bool rp::level_ending_effect::mouse_released
+bool rp::level_ending_effect::mouse_pressed
 ( bear::input::mouse::mouse_code button,
   const claw::math::coordinate_2d<unsigned int>& pos )
 {
-  if ( m_button->get_rectangle().includes(pos) && 
-       ! game_variables::is_boss_level() )
-    {
-      if ( m_finished )
-        {
-          if ( ! m_in_fade_out )
-            {
-              create_fade_out_tweener();
-              m_in_fade_out = true;
-            }
-        }
-      else
-        skip();
-    }
+  if ( game_variables::is_boss_level() )
+    return false;
 
-  return false;
-} // level_ending_effect::mouse_released()
+  const bear::visual::position_type event_position( get_event_position( pos ) );
+
+  return m_root_window.mouse_pressed( button, event_position );
+} // level_ending_effect::mouse_pressed()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Process an event triggered by a finger.
+ * \param event The event to process.
+ */
+bool rp::level_ending_effect::finger_action
+( const bear::input::finger_event& event )
+{
+  if ( game_variables::is_boss_level() )
+    return false;
+
+  const bear::visual::position_type event_position
+    ( get_event_position( event.get_position() ) );
+
+  return m_root_window.finger_action( event.at_position( event_position ) );
+} // level_ending_effect::finger_action()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Gets the position of an event relatively to the logical screen.
+ * \param pos The position of the event on the physical screen.
+ */
+bear::visual::position_type rp::level_ending_effect::get_event_position
+( const claw::math::coordinate_2d<unsigned int>& pos ) const
+{
+  return bear::visual::position_type
+    ( get_layer().get_size().x
+      * pos.x
+      / bear::engine::game::get_instance().get_window_size().x,
+      get_layer().get_size().y
+      * pos.y
+      / bear::engine::game::get_instance().get_window_size().y );
+} // level_ending_effect::get_event_position()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -739,16 +632,16 @@ bool rp::level_ending_effect::mouse_released
  */
 void rp::level_ending_effect::skip()
 {
-   if ( ! m_finished )
-     {
-       // We update the lines 100 seconds at once. 
-       // This is an arbitrary value but
-       // using too large values may produce overflows.
-       while ( !update_lines( 100 ) );
+  if ( ! m_finished )
+    {
+      // We update the lines 100 seconds at once. 
+      // This is an arbitrary value but
+      // using too large values may produce overflows.
+      while ( !update_lines( 100 ) );
 
-       if ( ! game_variables::is_boss_level() )
-         update_medal();
-     }
+      if ( ! game_variables::is_boss_level() )
+        update_medal();
+    }
 } // level_ending_effect::skip()
 
 /*----------------------------------------------------------------------------*/
@@ -1555,7 +1448,7 @@ void rp::level_ending_effect::render_medal( scene_element_list& e) const
  */
 void rp::level_ending_effect::render_background( scene_element_list& e ) const
 {
-  if ( m_button->get_visible() )
+  if ( m_skip_button->get_visible() )
     {
       if ( m_active_component )
         {
@@ -1620,19 +1513,110 @@ void rp::level_ending_effect::pop_level()
  */
 void rp::level_ending_effect::add_button_component()
 {
-  m_button =
+  m_skip_button =
     new bear::gui::button
     ( get_level_globals().auto_sprite
       ( rp_gettext("gfx/status/buttons.png"), "skip" ) );
 
-  m_button->set_right( m_root_window.right() - 100 );
-  m_button->set_bottom( 80 );
+  m_skip_button->set_right( m_root_window.right() - 100 );
+  m_skip_button->set_bottom( 80 );
 
-  m_root_window.insert( m_button );
+  m_skip_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_pass_scores, this ) ) );
+
+  m_root_window.insert( m_skip_button );
 
   if ( game_variables::is_boss_level() )
-    m_button->set_visible(false);
+    m_skip_button->set_visible(false);
 } // level_ending_effect::add_button_component()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the social buttons.
+ */
+void rp::level_ending_effect::add_social_buttons()
+{
+  if ( game_variables::is_boss_level() )
+    return;
+
+  add_facebook_button();
+  add_twitter_button();
+} // level_ending_effect::add_social_buttons()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the Facebook button.
+ */
+void rp::level_ending_effect::add_facebook_button()
+{
+  m_facebook_button =
+    new bear::gui::button
+    ( get_level_globals().auto_sprite
+      ( rp_gettext("gfx/status/status.png"), "facebook" ) );
+
+  m_facebook_button->set_right( m_root_window.width() / 2 - s_margin );
+  m_facebook_button->set_top( m_root_window.height() );
+
+  m_facebook_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_facebook_click, this ) ) );
+
+  m_root_window.insert( m_facebook_button );
+
+  create_facebook_tweener();
+} // level_ending_effect::add_facebook_button()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the tweener for the facebook button.
+ */
+void rp::level_ending_effect::create_facebook_tweener()
+{
+  claw::tween::single_tweener going_down
+    ( m_root_window.height(), m_root_window.height() / 4, 1,
+      boost::bind( &bear::gui::button::set_bottom, m_facebook_button, _1 ),
+      &claw::tween::easing_elastic::ease_out );
+
+  m_social_tweener.insert( going_down );
+} // level_ending_effect::create_facebook_tweener()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the Twitter button.
+ */
+void rp::level_ending_effect::add_twitter_button()
+{
+  m_twitter_button =
+    new bear::gui::button
+    ( get_level_globals().auto_sprite
+      ( rp_gettext("gfx/status/status.png"), "twitter" ) );
+
+  m_twitter_button->set_left( m_root_window.width() / 2 + s_margin );
+  m_twitter_button->set_top( m_root_window.height() );
+
+  m_twitter_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_twitter_click, this ) ) );
+
+  m_root_window.insert( m_twitter_button );
+
+  create_twitter_tweener();
+} // level_ending_effect::add_twitter_button()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the tweener for the twitter button.
+ */
+void rp::level_ending_effect::create_twitter_tweener()
+{
+  claw::tween::single_tweener going_down
+    ( m_root_window.height(), m_root_window.height() / 4, 1.2,
+      boost::bind( &bear::gui::button::set_bottom, m_twitter_button, _1 ),
+      &claw::tween::easing_elastic::ease_out );
+
+  m_social_tweener.insert( going_down );
+} // level_ending_effect::create_twitter_tweener()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1640,12 +1624,9 @@ void rp::level_ending_effect::add_button_component()
  */
 void rp::level_ending_effect::get_best_score()
 {
-  m_score_request =
-    score_request
-    ( boost::bind( &level_ending_effect::set_best_score, this, _1 ),
-      get_level().get_filename() );
-
-  boost::thread t( m_score_request );
+  m_score_request = http_request::request
+    ( "/asgp/stats/best_score.php?level=" + get_level().get_filename(),
+      boost::bind( &level_ending_effect::set_best_score, this, _1 ) );
 } // level_ending_effect::get_best_score()
 
 /*----------------------------------------------------------------------------*/
@@ -1653,12 +1634,85 @@ void rp::level_ending_effect::get_best_score()
  * \brief Sets the best score of the current level.
  * \param score The best score.
  */
-void rp::level_ending_effect::set_best_score( unsigned int score )
+void rp::level_ending_effect::set_best_score( std::string score )
 {
-  std::ostringstream oss;
-  oss << rp_gettext("World record: ") << score;
-
   m_world_record.create
     ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt", 20),
-      oss.str() );
-} // level_ending_effect::get_best_score()
+      rp_gettext("World record: ") + score );
+} // level_ending_effect::set_best_score()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sets the url to open as soon as we can.
+ * \param url The url to open. If there is already a stored url, it will be
+ *        overwritten.
+ */
+void rp::level_ending_effect::set_url( std::string url )
+{
+  boost::mutex::scoped_lock lock( m_url_mutex );
+
+  m_url = url;
+} // level_ending_effect::set_url()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Opens the last url given to set_url.
+ */
+void rp::level_ending_effect::open_url()
+{
+  boost::mutex::scoped_lock lock( m_url_mutex );
+
+  if ( !m_url.empty() )
+    {
+      util::open_url( m_url );
+      m_url.clear();
+    }
+} // level_ending_effect::open_url()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Passes the scores. If the count is over, we close the level. Otherwise
+ *        we just call skip().
+ */
+void rp::level_ending_effect::on_pass_scores()
+{
+  if ( m_finished )
+    {
+      if ( !m_in_fade_out )
+        {
+          create_fade_out_tweener();
+          m_in_fade_out = true;
+        }
+    }
+  else
+    skip();
+} // level_ending_effect::on_pass_scores()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sends the score to the user's Facebook page.
+ */
+void rp::level_ending_effect::on_facebook_click()
+{
+  m_facebook_request =
+    http_request::request
+    ( "/asgp/share.php?to_stdout=1&platform=facebook",
+      boost::bind( &level_ending_effect::set_url, this, _1 ) );
+} // level_ending_effect::on_facebook_click()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Sends the score to the user's Twitter page.
+ */
+void rp::level_ending_effect::on_twitter_click()
+{
+  const boost::format tweet
+    ( boost::format
+      ( rp_gettext("%1% points in level \"%2%\" of Andy's Super Great Park!") )
+      % game_variables::get_score() % util::get_level_name() );
+
+  m_twitter_request =
+    http_request::request
+    ( "/asgp/share.php?to_stdout=1&platform=twitter&message=" + tweet.str(),
+      boost::bind( &level_ending_effect::set_url, this, _1 ) );
+} // level_ending_effect::on_twitter_click()

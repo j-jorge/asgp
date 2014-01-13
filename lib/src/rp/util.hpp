@@ -53,9 +53,14 @@ namespace rp
     static void send_fail_level( const std::string& filename );
     static void send_die_level( const std::string& filename );
     static void send_version();
+    static void send_device_info();
 
     static void save_config();
     
+    static void open_url( const std::string& url );
+
+    static std::string get_system_name();
+
   private:
     static void create_smoke
     ( const bear::engine::base_item& ref, double min_intensity,

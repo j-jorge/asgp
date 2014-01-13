@@ -54,32 +54,18 @@ set( LIBRARY_OUTPUT_PATH "${RP_LIBRARY_OUTPUT_PATH}" )
 set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}" )
 
 #-------------------------------------------------------------------------------
-# check SDL
-include( FindSDL )
+# check SDL2
+include( FindSDL2 )
 
-if( NOT SDL_FOUND )
-  message( FATAL_ERROR "SDL lbrary must be installed." )
-else( NOT SDL_FOUND )
+if( NOT SDL2_FOUND )
+  message( FATAL_ERROR "SDL2 library must be installed." )
+else( NOT SDL2_FOUND )
   #-----------------------------------------------------------------------------
   # Include directories for SDL
   include_directories(
-    ${SDL_INCLUDE_DIR}
+    ${SDL2_INCLUDE_DIR}
     )
-endif( NOT SDL_FOUND )
-
-#-------------------------------------------------------------------------------
-# check SDL::mixer
-include( FindSDL_mixer )
-
-if( NOT SDLMIXER_FOUND )
-  message( FATAL_ERROR "SDL_mixer lbrary must be installed." )
-else( NOT SDLMIXER_FOUND )
-  #-----------------------------------------------------------------------------
-  # Include directories for all these libraries
-  include_directories(
-    ${SDLMIXER_INCLUDE_DIR}
-    )
-endif( NOT SDLMIXER_FOUND )
+endif( NOT SDL2_FOUND )
 
 #-------------------------------------------------------------------------------
 # various libraries
@@ -146,22 +132,40 @@ if( RP_TAG )
 endif()
 
 #-------------------------------------------------------------------------------
-subdirs(
-  launcher
-  lib
-  data
-  release
-  desktop
+if( BUILD_PLATFORM STREQUAL "android" )
+  subdirs(
+    lib
+    data
+    android
+    desktop
+    )
+else()
+  subdirs(
+    launcher
+    lib
+    data
+    release
+    desktop
+    )
+endif()
+
+option(
+  RP_BEAR_FACTORY_ENABLED
+  "Tells to install the files of Andy's Super Great Park for the Bear Factory"
+  FALSE
   )
 
-install(
-  DIRECTORY "lib/item-description"
-  DESTINATION "share/bear-factory/super-great-park"
-  FILE_PERMISSIONS OWNER_READ OWNER_WRITE
-  GROUP_READ
-  WORLD_READ
-  DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE
-  GROUP_READ GROUP_EXECUTE
-  WORLD_READ WORLD_EXECUTE
-  PATTERN "*~" EXCLUDE
-)
+if ( RP_BEAR_FACTORY_ENABLED )
+  install(
+    DIRECTORY "lib/item-description"
+    DESTINATION "share/bear-factory/super-great-park"
+    FILE_PERMISSIONS OWNER_READ OWNER_WRITE
+    GROUP_READ
+    WORLD_READ
+    DIRECTORY_PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE
+    GROUP_READ GROUP_EXECUTE
+    WORLD_READ WORLD_EXECUTE
+    PATTERN "*~" EXCLUDE
+  )
+endif()
+

@@ -61,8 +61,7 @@ void rp::background_component::build()
   m_background_sprite =
     get_level_globals().auto_sprite
     ( "gfx/status/status.png", "score background" );
-  m_background_sprite.flip(is_flipped());
-  //  m_background_sprite.mirror(is_flipped());
+  m_background_sprite.mirror(is_flipped());
 
   super::build();
 } // background_component::build()

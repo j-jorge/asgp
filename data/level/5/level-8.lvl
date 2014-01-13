@@ -17503,10 +17503,10 @@
 <real value='200'/>
 </field>
 <field name='camera.size.max_height'>
-<real value='1080'/>
+<real value='900'/>
 </field>
 <field name='camera.size.max_width'>
-<real value='1920'/>
+<real value='1600'/>
 </field>
 <field name='camera.size.min_height'>
 <real value='720'/>
@@ -20694,10 +20694,19 @@
 </fields>
     </item><!-- bear::applied_boolean_expression -->
 
-    <item class_name='bear::trigger' fixed='true' id='trigger_teleport'>
+    <item class_name='bear::trigger' fixed='false' id='trigger_teleport'>
 <fields>
 <field name='item_with_trigger.check_on_collision'>
 <bool value='1'/>
+</field>
+<field name='base_item.fixed.x'>
+<bool value='1'/>
+</field>
+<field name='base_item.fixed.y'>
+<bool value='1'/>
+</field>
+<field name='base_item.mass'>
+<real value='10000'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2949'/>

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::entity" category="rolling_painting" box_color="#23F71E" url="http://www.gamned.org/wiki/index.php/entity" fixable="false">
- <fields>
+  <fields>
     <field type="boolean" name="entity.passive">
       <description>Indicates that the entity is passive.</description>
       <default_value>false</default_value>
     </field>
-</fields>
+    
+    <field type="animation" name="entity.help">
+      <description>The animation showing how to shoot the item.</description>
+      <default_value>none</default_value>
+    </field>
+    
+  </fields>
   <description>The class describing an entity.</description>
 </item>

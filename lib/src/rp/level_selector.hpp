@@ -88,9 +88,13 @@ namespace rp
     void get_visual( std::list<bear::engine::scene_visual>& visuals ) const;
 
   private:
+    void activate();
+
+    bool finger_action( const bear::input::finger_event& event );
     bool mouse_released( bear::input::mouse::mouse_code button,
 			 const claw::math::coordinate_2d<unsigned int>& pos );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
+
     void load_level();
     void update_visibility();
     void update_state();

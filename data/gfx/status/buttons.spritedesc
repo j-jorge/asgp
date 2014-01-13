@@ -82,13 +82,12 @@ buttons_img "buttons.xcf.bz2"
   ;
 
 "background on" image_size * 0.5 with buttons_img
-  "background border"
-  "background on"
+  glob "background on*"
+  glob "background common*"
   ;
 
 "background off" image_size * 0.5 with buttons_img
-  "background border"
-  "background off"
+  glob "background common*"
   ;
 
 /*----------------------------------------------------------------------------*/

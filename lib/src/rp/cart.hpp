@@ -119,7 +119,8 @@ namespace rp
     void create_level_ending_effect();
 
   private:
-    void get_dependent_items( std::list<physical_item*>& d ) const;
+    void get_dependent_items
+    ( bear::universe::physical_item::item_list& d ) const;
     void add_balloon(attractable_item* attracted_item);
     bool check_death();
     void lose_elements();
@@ -202,8 +203,17 @@ namespace rp
     bool mouse_released( bear::input::mouse::mouse_code button,
 			 const claw::math::coordinate_2d<unsigned int>& pos );
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
+    bool finger_action( const bear::input::finger_event& event );
     
-    // evenement
+    void input_handle_cannonball();
+    void input_handle_plunger();
+    void input_handle_jump();
+    void input_handle_crouch();
+
+    void update_cursor_position
+    ( const bear::universe::position_type& screen_position );
+
+    // events
     void on_toggle_on( bear::engine::base_item* activator );
     void on_painter_collision
     ( bear::engine::base_item& mark, bear::engine::base_item& that,
@@ -288,6 +298,13 @@ namespace rp
     
     /** \brief The mouse position. */
     bear::universe::position_type m_gap_mouse;
+
+    /** \brief The position of the cursor, on the screen, the last time the
+        player has pressed a button. */
+    bear::universe::position_type m_cursor_down_screen_position;
+
+    /** \brief Tells if the player is pressing a button. */
+    bool m_cursor_down;
 
     /** \brief The factor applied on force in move state. */
     bear::universe::coordinate_type m_force_factor;

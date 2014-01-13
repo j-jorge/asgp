@@ -1,0 +1,63 @@
+sprite_sheet "finger-2" 1024 x 1024 margin 1 order "height"
+
+jump "help-jump.xcf.bz2"
+
+
+"jump 0" image_size * 0.5 with jump
+  "1"
+;
+
+"jump 1" image_size * 0.5 with jump
+  "1"
+  "touch 1"
+;
+
+"jump 2" image_size * 0.5 with jump
+  glob "*2"
+  "touch 1"
+;
+
+"jump 3" image_size * 0.5 with jump
+  glob "*3"
+  "touch 1"
+;
+
+"jump 4" image_size * 0.5 with jump
+  glob "*4"
+  "touch 1"
+;
+
+"jump 5" image_size * 0.5 with jump
+  glob "*5"
+  "touch 1"
+;
+
+"jump 6" image_size * 0.5 with jump
+  glob "*6"
+  "touch 1"
+;
+
+"jump 7" image_size * 0.5 with jump
+  glob "*7"
+  "touch 1"
+;
+
+"jump 8" image_size * 0.5 with jump
+  glob "*8"
+  "touch 1"
+;
+
+"jump 9" image_size * 0.5 with jump
+  glob "*9"
+  "touch 1"
+;
+
+"jump 10" image_size * 0.5 with jump
+  glob "*10"
+  "touch 1"
+;
+
+"jump 11" image_size * 0.5 with jump
+  glob "*11"
+  "touch 1"
+;

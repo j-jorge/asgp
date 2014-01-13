@@ -39,15 +39,6 @@ const unsigned int rp::status_layer::s_margin = 5;
 /**
  * \brief Destructor.
  */
-rp::status_layer::status_layer()
-  : m_timer(NULL)
-{
-} // status_layer::status_layer()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Destructor.
- */
 rp::status_layer::~status_layer()
 {
   component_list::iterator it2;
@@ -106,217 +97,88 @@ void rp::status_layer::render( scene_element_list& e ) const
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Set the timer to use for the time.
- */
-void rp::status_layer::set_level_timer( const time_component::timer_handle& t )
-{
-  m_timer = t; 
-} // status_layer::set_level_timer()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Create  components.
  */
 void rp::status_layer::create_components()
 {
-
-#if 0
-  // time
-  if ( m_timer != time_component::timer_handle(NULL) && 
-       ! game_variables::is_boss_level() )
-    {
-      bear::visual::position_type pos_time( s_margin, s_margin);
-      status_component* time = new time_component
-        (get_level_globals(), pos_time, bear::universe::zone::bottom_zone, 
-         status_component::left_placement,
-         status_component::bottom_placement, get_size(), 0, false, m_timer); 
-      time->build();
-      m_components.push_back(time); 
-    }
-#endif
-  
-#if 0
-  // ############## TOP LEFT #########################
-  bear::visual::position_type pos_top( 0, get_size().y);
   if ( game_variables::is_boss_level() )
-    pos_bottom.y += 34 + s_margin; // + score_size - s_margin
+    return;
 
-  // background
-  background_component * ba = new background_component
-    (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-     status_component::left_placement,
-     status_component::top_placement,get_size(),
-     - m_score_background.get_size().y,true); 
-  ba->build();
-  m_components.push_back(ba);  
-
-  if ( game_variables::is_boss_level() )
-    pos_bottom.y -= 34 + s_margin; // - score_size - s_margin
-
-  // score
-  if ( ! game_variables::is_boss_level() )
-    {
-      pos_top.y = get_size().y - s_margin;
-      score_component* c = new score_component
-        (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-         status_component::left_placement,
-         status_component::top_placement,get_size(),
-         - m_score_background.get_size().y, true); 
-      c->build();
-      m_components.push_back(c);
-      pos_top.y -= c->height() + s_margin;
-    }
-
-  // balloon
-  status_component* b;
-  if ( game_variables::is_boss_level() )
-    b = new boss_component
-      (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-       status_component::left_placement,
-       status_component::top_placement,get_size(),
-       - m_score_background.get_size().y, true); 
-  else
-     b = new balloon_component
-    (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-     status_component::left_placement,
-     status_component::top_placement,get_size(),
-     - m_score_background.get_size().y, true); 
-  b->build();
-  m_components.push_back(b);
-
-  // plunger bonus
-  status_component* bonus = new bonus_component
-    ( get_level_globals(),
-      bear::visual::position_type( pos_top.x + 83, pos_top.y - 101),
-      bear::universe::zone::top_zone, 
-      status_component::left_placement,
-      status_component::bottom_placement, get_size(),
-      - m_score_background.get_size().y, true); 
-  bonus->build();
-  m_components.push_back(bonus); 
-
-  // lives
-  pos_top.y -= b->height() + s_margin;
-  status_component* l = new lives_component
-    (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-     status_component::left_placement,
-     status_component::top_placement,get_size(),
-     - m_score_background.get_size().y, true); 
-  l->build();
-  m_components.push_back(l);
-#endif
-
-  // ############## BOTTOM RIGHT #########################
-  bear::visual::position_type pos_bottom
-    ( get_size().x - m_score_background.get_size().x, 0 );
-
-  if ( game_variables::is_boss_level() )
-    pos_bottom.y -= 34 + s_margin; // + score_size + s_margin
-
-  // background
-  status_component* const ba = new background_component
-    (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-     status_component::left_placement,
-     status_component::bottom_placement,get_size(),
-     m_score_background.get_size().y,false); 
-  ba->build();
-  m_components.push_back(ba);  
-
-  if ( game_variables::is_boss_level() )
-    pos_bottom.y += 34 + s_margin; // + score_size + s_margin
-
-  // score
-  pos_bottom.x += s_margin;
-  pos_bottom.y += s_margin;
-  
-  if ( ! game_variables::is_boss_level() )
-    {
-      score_component* c = new score_component
-        (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-         status_component::left_placement,
-         status_component::bottom_placement,get_size(),
-         m_score_background.get_size().y, false); 
-      c->build();
-      m_components.push_back(c);
-      pos_bottom.y += c->height() + s_margin;
-    }
-
-  // balloon
-  status_component* b;
-  if ( game_variables::is_boss_level() )
-    b = new boss_component
-      (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-       status_component::left_placement,
-       status_component::bottom_placement,get_size(),
-       m_score_background.get_size().y, false); 
-  else
-     b = new balloon_component
-    (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-     status_component::left_placement,
-     status_component::bottom_placement,get_size(),
-     m_score_background.get_size().y, false); 
-  b->build();
-  m_components.push_back(b);
-
-  // plunger bonus
-  pos_bottom.y += b->height() + s_margin;
-  status_component* bonus = new bonus_component
-    ( get_level_globals(),
-      bear::visual::position_type
-      ( pos_bottom.x + 30, pos_bottom.y + s_margin),
-      bear::universe::zone::bottom_zone, 
-      status_component::left_placement,
-      status_component::bottom_placement, get_size(),
-      m_score_background.get_size().y, false); 
-  bonus->build();
-  m_components.push_back(bonus); 
-
-  // lives
-  pos_bottom.x = get_size().x - s_margin;
-  status_component* l = new lives_component
-    (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-     status_component::right_placement,
-     status_component::bottom_placement,get_size(),
-     m_score_background.get_size().y, false); 
-  l->build();
-  m_components.push_back(l);
-
-#if 0
-  // plunger
-  pos_bottom.x = 
-    get_size().x / 2 - 185 + /* a quarter of the cannon's width */ 15;
-  pos_bottom.y = 0;
-  status_component* p = new plunger_component
-    (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-     status_component::left_placement,
-     status_component::bottom_placement, get_size(), 74, false); 
-  p->build();
-  m_components.push_back(p);
-
-  pos_top.x = pos_bottom.x;
-  pos_top.y = get_size().y;
-  p = new plunger_component
-    (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-     status_component::left_placement,
-     status_component::top_placement, get_size(), -74, true); 
-  p->build();
-  m_components.push_back(p);
-
-  // cannonball
-  pos_bottom.x += p->width() - /* half of the cannon's width */ 30;
-  status_component* ca = new cannonball_component
-    (get_level_globals(), pos_bottom, bear::universe::zone::bottom_zone, 
-     status_component::left_placement,
-     status_component::bottom_placement, get_size(), 74, false); 
-  ca->build();
-  m_components.push_back(ca); 
- 
-  pos_top.x = pos_bottom.x;
-  ca = new cannonball_component
-    (get_level_globals(), pos_top, bear::universe::zone::top_zone, 
-     status_component::left_placement,
-     status_component::top_placement,get_size(), -74, true); 
-  ca->build();
-  m_components.push_back(ca); 
+#ifdef __ANDROID__
+  create_components_top_left();
+#else
+  create_components_bottom_right();
 #endif
 } // status_layer::create_components()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the components in the top left corner.
+ */
+void rp::status_layer::create_components_top_left()
+{
+  const bear::visual::position_type pos_top( 0, get_size().y );
+
+  create_status_component<background_component>
+    ( pos_top, bear::universe::zone::middle_left_zone );
+
+  create_status_component<balloon_component>
+    ( pos_top + bear::universe::position_type( 7, -35 ),
+      bear::universe::zone::middle_left_zone );
+
+  create_status_component<score_component>
+    ( pos_top + bear::universe::position_type( 7, -77 ),
+      bear::universe::zone::middle_left_zone );
+} // status_layer::create_components_top_left()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates the components in the bottom right corner.
+ */
+void rp::status_layer::create_components_bottom_right()
+{
+  const bear::visual::position_type pos_top
+    ( get_size().x - m_score_background.width(), m_score_background.height() );
+
+  create_status_component<background_component>
+    ( pos_top, bear::universe::zone::middle_right_zone );
+
+  create_status_component<balloon_component>
+    ( pos_top + bear::universe::position_type( 60, -35 ),
+      bear::universe::zone::middle_right_zone );
+
+  create_status_component<score_component>
+    ( pos_top + bear::universe::position_type( 60, -77 ),
+      bear::universe::zone::middle_right_zone );
+} // status_layer::create_components_bottom_right()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Creates and add a new status component in the layer.
+ * \param T the type of the status component.
+ * \param active_position The position of the component in the layer when it is
+ *        visible.
+ * \param size The size on which the component appears.
+ */
+template<typename T>
+T* rp::status_layer::create_status_component
+( const bear::visual::position_type& active_position,
+  bear::universe::zone::position side )
+{
+  const bool flip( side == bear::universe::zone::middle_right_zone );
+  const double hide_direction( flip ? 1 : -1 );
+  typename status_component::x_placement x_p
+    ( flip ? status_component::right_placement
+      : status_component::left_placement );
+
+  T* const result
+    ( new T
+      ( get_level_globals(), active_position, side,
+        x_p, status_component::top_placement,
+        get_size(), 0.8 * hide_direction * m_score_background.width(), flip ) );
+
+  result->build();
+  m_components.push_back( result );
+
+  return result;
+} // status_layer::create_status_component()

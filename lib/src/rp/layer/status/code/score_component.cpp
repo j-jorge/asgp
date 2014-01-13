@@ -42,13 +42,13 @@
  */
 rp::score_component::score_component
 ( bear::engine::level_globals& glob,
-  const bear::visual::position_type& active_position, 
+  const bear::visual::position_type& active_position,
   bear::universe::zone::position side,
   x_placement x_p, y_placement y_p,
   const bear::universe::size_box_type& layer_size,
   const bear::universe::coordinate_type& hide_height, bool flip )
   : super(glob,active_position,side, x_p, y_p, layer_size, hide_height, flip),
-    m_font(glob.get_font("font/balloon/balloon.fnt",102))
+    m_font(glob.get_font("font/beroga.ttf", 20))
 {
 
 } // score_component::score_component()
@@ -63,12 +63,6 @@ void rp::score_component::build()
   oss << game_variables::get_score();
   m_score.create(m_font, oss.str());
   m_score->set_intensity(0, 0, 0);
-  
-  m_background =
-    get_level_globals().auto_sprite( "gfx/status/status.png", "score" );
-  const double r = m_background.width() / m_background.height();
-  m_background.set_height( 34 );
-  m_background.set_width( m_background.height() * r );
 
   super::build();
 } // score_component::build()
@@ -80,8 +74,8 @@ void rp::score_component::build()
 void rp::score_component::progress
 ( bear::universe::time_type elapsed_time )
 {
-  super::progress(elapsed_time ); 
-  
+  super::progress(elapsed_time );
+
   floating_score_list::iterator it =
     m_floating_score.begin();
 
@@ -94,9 +88,7 @@ void rp::score_component::progress
 	  on_score_added
             (it->get_combo_value(), it->get_points_value());
 
-          floating_score_list::iterator tmp(it);
-          ++it;
-          m_floating_score.erase(tmp);
+          it = m_floating_score.erase(it);
 	}
       else
         ++it;
@@ -104,7 +96,7 @@ void rp::score_component::progress
 
   std::ostringstream oss;
   oss << game_variables::get_score();
-  //m_score.create(m_font, oss.str());
+  m_score.create(m_font, oss.str());
   m_score->set_intensity(0, 0, 0);
 } // score_component::progress()
 
@@ -117,31 +109,18 @@ void rp::score_component::render( scene_element_list& e ) const
 {
   if ( ! game_variables::is_level_ending() )
     {
-      bear::universe::coordinate_type gap_x =
-        ( width() - m_background.width() ) / 2; 
+      bear::visual::scene_writing s
+        ( get_render_position().x + ( width() - m_score.get_width() ) / 2,
+          get_render_position().y + ( height() - m_score.get_height() ) / 2,
+          m_score );
 
-      bear::visual::scene_sprite s1
-        ( get_render_position().x + gap_x, 
-          get_render_position().y, m_background );
-
-      const double f
-        ( (m_background.height() - s_margin) / m_font.get_line_spacing() );
-
-      bear::visual::scene_writing s2
-        ( get_render_position().x + gap_x
-          + ( m_background.width() - m_score.get_width() * f ) / 2,
-          get_render_position().y + s_margin / 2, m_score );
-
-      s2.set_scale_factor( f, f );
-
-      e.push_back( s1 );     
-      e.push_back( s2 );  
+      e.push_back( s );
     }
 
   floating_score_list::const_iterator it;
-  for ( it = m_floating_score.begin(); 
+  for ( it = m_floating_score.begin();
 	it != m_floating_score.end(); ++it )
-    it->render(e); 
+    it->render(e);
 } // score_component::render()
 
 /*----------------------------------------------------------------------------*/
@@ -150,7 +129,7 @@ void rp::score_component::render( scene_element_list& e ) const
  */
 unsigned int rp::score_component::width() const
 {
-  return 159;
+  return 111;
 } // score_component::width()
 
 /*----------------------------------------------------------------------------*/
@@ -159,7 +138,7 @@ unsigned int rp::score_component::width() const
  */
 unsigned int rp::score_component::height() const
 {
-  return m_background.height();
+  return 29;
 } // score_component::height()
 
 /*----------------------------------------------------------------------------*/
@@ -216,7 +195,7 @@ void rp::score_component::create_tweener()
        boost::bind
        ( &rp::status_component::on_x_position_update,
 	 this, _1 ), &claw::tween::easing_linear::ease_out ) );
-  
+
   add_tweener( tween );
 } // score_component::create_tweener()
 
@@ -230,21 +209,21 @@ void rp::score_component::on_new_score(bool value)
   if ( value )
     {
       bear::visual::position_type pos(get_layer_size()/2);
-      pos.x += 
+      pos.x +=
         ( game_variables::get_score_rate_x() * get_layer_size().x);
-      pos.y += 
+      pos.y +=
         ( game_variables::get_score_rate_y() * get_layer_size().y);
 
       bear::visual::position_type end_pos(pos);
       end_pos.y = get_layer_size().y;
 
       floating_score_component f(get_level_globals());
-          
+
       m_floating_score.push_back(f);
       m_floating_score.back().set_position
-        (pos, get_render_position() + 
+        (pos, get_render_position() +
          bear::universe::position_type( width() / 2, 0 ) );
-      
+
       game_variables::set_new_score(false);
     }
 } // score_component::on_new_score()

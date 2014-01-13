@@ -9482,6 +9482,7 @@
 </items>
 
 <priority>
+<ref id="settings"/>
 </priority>
 
   </layer><!-- action_layer -->

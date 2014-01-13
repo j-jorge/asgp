@@ -9,7 +9,7 @@
 /**
  * \file
  * \brief The layer displayed when the game display the help.
- * \author Sébastien Angibaud
+ * \author SÃ©bastien Angibaud
  */
 #ifndef __RP_HELP_LAYER_HPP__
 #define __RP_HELP_LAYER_HPP__
@@ -22,7 +22,7 @@ namespace rp
 {
   /**
    * \brief The layer displayed when the game display the help.
-   * \author Sébastien Angibaud
+   * \author SÃ©bastien Angibaud
    */
   class help_layer:
     public bear::communication::messageable,
@@ -43,6 +43,9 @@ namespace rp
       const claw::math::coordinate_2d<unsigned int>& pos );
     bool mouse_move
       ( const claw::math::coordinate_2d<unsigned int>& pos );
+
+    bool finger_action( const bear::input::finger_event& event );
+
     void start();
 
   private:

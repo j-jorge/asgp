@@ -82,7 +82,7 @@ bool rp::help_layer::mouse_pressed
 
   return true;
 } // help_layer::mouse_pressed()
-  
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Inform the layer that the mouse had been moved.
@@ -93,6 +93,24 @@ bool rp::help_layer::mouse_move
 {
   return m_active;
 } // help_layer::mouse_move()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Informs the layer that the finger has been used.
+ * \param event The event dispatched by the finger.
+ */
+bool rp::help_layer::finger_action
+( const bear::input::finger_event& event )
+{
+  if( m_active
+      && (event.get_type() == bear::input::finger_event::finger_event_pressed) )
+    {
+      set_help( false );
+      return true;
+    }
+
+  return false;
+} // help_layer::finger_action()
 
 /*----------------------------------------------------------------------------*/
 /**

@@ -52,7 +52,6 @@ typedef claw::tween::symmetric_easing<easing_back_large_func> easing_back_large;
  */
 rp::floating_score_component::floating_score_component
 ( bear::engine::level_globals& glob )
-  : m_font(glob.get_font("font/balloon/balloon.fnt",102))
 {
   m_combo_value = game_variables::get_combo();
   m_points_value = game_variables::get_points();
@@ -66,14 +65,17 @@ rp::floating_score_component::floating_score_component
   m_sprite = 
     glob.auto_sprite( "gfx/status/score.png", oss.str() );
   
-  std::ostringstream oss1;
-  oss1 << m_points_value;
-  m_points.create(m_font, oss1.str() );
+  std::ostringstream os;
+  os << m_points_value;
+  m_points.create( glob.get_font("font/beroga.ttf", 14), os.str() );
   
-  std::ostringstream oss2;
+  os.str( std::string() );
+  os.clear();
+  
   if ( m_combo_value > 1 )
-    oss2 << m_combo_value;
-  m_combo.create(m_font, oss2.str() );
+    os << m_combo_value;
+
+  m_combo.create( glob.get_font("font/beroga.ttf", 30), os.str() );
 } //floating_score_component::floating_score_component()
 
 /*----------------------------------------------------------------------------*/
@@ -101,16 +103,16 @@ void rp::floating_score_component::render
   e.push_back( sp );
   
   bear::visual::scene_writing s1
-    ( get_position().x - m_points.get_width()/7 + 10, 
+    ( get_position().x - m_points.get_width() + 10, 
       get_position().y - 5, m_points );
-  s1.set_scale_factor(1.0/7,1.0/7);
+
   s1.get_rendering_attributes().set_intensity(0.0, 0.0, 0.0);
   e.push_back( s1 );
   
   bear::visual::scene_writing s2
     ( get_position().x + 30, 
       get_position().y -15, m_combo );
-  s2.set_scale_factor(0.3,0.3);
+
   s2.get_rendering_attributes().set_intensity(0.0, 0.0, 0.0);
   e.push_back( s2 );
 } // floating_score_component::render()

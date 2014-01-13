@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level name='' width='1280' height='768' music=''>
-  <layer class_name='action_layer' name='' width='1280' height='768' fit_level='1'>
+  <layer class_name='action_layer' name='' width='1280' height='768' fit_level='1' tag=''>
 
 <items>
     <item class_name='bear::camera' fixed='false'>
@@ -17,49 +17,6 @@
 </fields>
     </item><!-- bear::camera -->
 
-    <item class_name='bear::decorative_item' fixed='true' id='loading'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='10'/>
-</field>
-<field name='base_item.size.height'>
-<real value='25'/>
-</field>
-<field name='base_item.size.width'>
-<real value='180'/>
-</field>
-<field name='item_with_text.font'>
-<font path='font/fontopo/fontopo.fnt' size='50'/>
-</field>
-<field name='item_with_text.stretched_text'>
-<bool value='1'/>
-</field>
-<field name='item_with_text.text'>
-<string value='Loading...'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='rp::add_ingame_layers' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='244'/>
-</field>
-<field name='base_item.position.left'>
-<real value='185'/>
-</field>
-<field name='add_ingame_layers.show_introduction'>
-<bool value='0'/>
-</field>
-<field name='add_ingame_layers.status_layer'>
-<bool value='0'/>
-</field>
-</fields>
-    </item><!-- rp::add_ingame_layers -->
-
     <item class_name='bear::delayed_level_loading' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -69,7 +26,7 @@
 <real value='225'/>
 </field>
 <field name='delayed_level_loading.delay'>
-<real value='4.5'/>
+<real value='0'/>
 </field>
 <field name='delayed_level_loading.fade_duration'>
 <real value='0'/>
@@ -80,27 +37,34 @@
 </fields>
     </item><!-- bear::delayed_level_loading -->
 
-    <item class_name='bear::crossfade_sequence' fixed='true'>
+    <item class_name='bear::decorative_item' fixed='true' id='loading'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='380'/>
+<real value='145'/>
 </field>
 <field name='base_item.position.left'>
-<real value='292'/>
+<real value='458'/>
 </field>
-<field name='crossfade_sequence.duration_sequence'>
-<real value='2.5'/>
-<real value='1'/>
+<field name='base_item.size.height'>
+<real value='42'/>
 </field>
-<field name='crossfade_sequence.fadeout_for_last_item'>
-<bool value='0'/>
+<field name='base_item.size.width'>
+<real value='364'/>
 </field>
-<field name='crossfade_sequence.item_sequence'>
-<item_reference value='logo'/>
-<item_reference value='loading'/>
+<field name='item_with_text.font'>
+<font path='font/lobster.otf' size='50'/>
+</field>
+<field name='item_with_text.horizontal_align'>
+<string value='align_center'/>
+</field>
+<field name='item_with_text.stretched_text'>
+<bool value='1'/>
+</field>
+<field name='item_with_text.text'>
+<string value='Loading...'/>
 </field>
 </fields>
-    </item><!-- bear::crossfade_sequence -->
+    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::decorative_item' fixed='true' id='logo'>
 <fields>
