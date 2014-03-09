@@ -166,7 +166,7 @@ void rp::balloon_component::on_balloon_changed(unsigned int number)
 
       m_balloon->set_intensity
         ( std::min(1.0, min_intensity + range * ( 1 - ratio )),
-          std::min(1.0, min_intensity + range * ratio),
+          1,
           min_intensity );
     }
 

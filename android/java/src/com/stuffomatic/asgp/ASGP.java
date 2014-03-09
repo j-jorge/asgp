@@ -40,7 +40,8 @@ public class ASGP extends SDLActivity
         super.onCreate(savedInstanceState);
 
         createAdView();
- 
+        hideAds();
+
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         getWindow().getDecorView().setSystemUiVisibility
             ( View.SYSTEM_UI_FLAG_LOW_PROFILE );
@@ -74,6 +75,22 @@ public class ASGP extends SDLActivity
         
         return Build.MANUFACTURER + ", " + Build.PRODUCT + ", " + Build.MODEL;
     } // getDeviceModelName()
+
+    /**
+     * Makes the ad banner visible.
+     */
+    public void showAds() {
+        
+        mAdView.setVisibility( View.VISIBLE );
+    } // showAds()
+
+    /**
+     * Hides the ad banner.
+     */
+    public void hideAds() {
+        
+        mAdView.setVisibility( View.INVISIBLE );
+    } // hideAds()
 
     @Override
     public void onPause() {
