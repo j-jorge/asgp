@@ -21,7 +21,7 @@
 #include "visual/sprite.hpp"
 #include "visual/writing.hpp"
 
-#include <boost/signals.hpp>
+#include <boost/signals2.hpp>
 #include <claw/tween/tweener_group.hpp>
 
 namespace rp

@@ -32,7 +32,7 @@
 #include "generic_items/timer.hpp"
 
 #include <claw/tween/single_tweener.hpp>
-#include <boost/signal.hpp>
+#include <boost/signals2.hpp>
 #include <set>
 
 namespace rp
@@ -376,7 +376,7 @@ namespace rp
     bool m_bad_plunger_zone_rendering;
 
     /** \brief The connections to various signals. */
-    std::list<boost::signals::connection> m_signals;
+    std::list<boost::signals2::connection> m_signals;
 
     /** \brief The sample of combo. */
     bear::audio::sample* m_combo_sample;
