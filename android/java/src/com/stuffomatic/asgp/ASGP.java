@@ -102,7 +102,7 @@ public class ASGP extends SDLActivity
         mAdView.setAdSize( AdSize.BANNER );
 
         RelativeLayout layout = new RelativeLayout( getContext() );
-        layout.setGravity( Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM );
+        layout.setGravity( Gravity.RIGHT | Gravity.BOTTOM );
 
         layout.setLayoutParams
             ( new RelativeLayout.LayoutParams
