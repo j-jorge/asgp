@@ -44,8 +44,9 @@ public class ASGP extends SDLActivity
         hideAds();
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        getWindow().getDecorView().setSystemUiVisibility
-            ( View.SYSTEM_UI_FLAG_LOW_PROFILE );
+
+        hideActionBars();
+        addVisibilityChangeListener();
     } // onCreate()
 
     /**
@@ -110,6 +111,41 @@ public class ASGP extends SDLActivity
         mAdView.destroy();
         super.onDestroy();
     } // onDestroy()
+
+    /**
+     * Hides the action bar such that the game uses the full screen.
+     */
+    private void hideActionBars() {
+
+        getWindow().getDecorView().setSystemUiVisibility
+            ( View.SYSTEM_UI_FLAG_LOW_PROFILE
+              | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+              | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+              | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+              | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+              | View.SYSTEM_UI_FLAG_FULLSCREEN
+              | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY );
+    } // hideActionBars()
+
+    /**
+     * Adds an event listener of the UI visibility changes, that will hide the
+     * action bars when they have been shown due to an external event.
+     */
+    private void addVisibilityChangeListener() {
+
+        final View decorView = getWindow().getDecorView();
+
+        decorView.setOnSystemUiVisibilityChangeListener
+            ( new View.OnSystemUiVisibilityChangeListener() {
+                @Override
+                public void onSystemUiVisibilityChange( int visibility ) {
+        
+                    if ( (visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0 ) {
+                        hideActionBars();
+                    }
+                }
+            } );
+    } // addVisibilityChangeListener()
 
     /**
      * Creates mAdView and inserts it in the layout.
