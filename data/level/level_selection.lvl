@@ -11892,7 +11892,7 @@
 <real value='0'/>
 </field>
 <field name='forced_goto_creator.length.y'>
-<real value='200'/>
+<real value='300'/>
 </field>
 </fields>
     </item><!-- bear::forced_goto_creator -->
