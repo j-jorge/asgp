@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.WindowManager;
@@ -81,7 +82,7 @@ public class ASGP extends SDLActivity
      */
     public void showAds() {
         
-        mAdView.setVisibility( View.VISIBLE );
+        setAdsVisibility( View.VISIBLE );
     } // showAds()
 
     /**
@@ -89,7 +90,7 @@ public class ASGP extends SDLActivity
      */
     public void hideAds() {
         
-        mAdView.setVisibility( View.INVISIBLE );
+        setAdsVisibility( View.INVISIBLE );
     } // hideAds()
 
     @Override
@@ -144,4 +145,23 @@ public class ASGP extends SDLActivity
         // Load the adView with the ad request.
         mAdView.loadAd(adRequest);
     } // createAdView()
+
+    private void setAdsVisibility( final int visibility ) {
+
+        final AdView view = mAdView;
+
+        runOnUiThread( new Runnable() {
+
+            @Override
+            public void run() {
+
+                try {
+                    mAdView.setVisibility( visibility );
+                } catch ( Throwable e ) {
+                    Log.e( "ASGP-J", e.getMessage() );
+                }
+            }
+        } );
+    } // setAdsVisibility()
+
 }

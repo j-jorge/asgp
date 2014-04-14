@@ -92,6 +92,8 @@ void rp::level_selector::on_enters_layer()
 {
   super::on_enters_layer();
 
+  util::show_ads();
+
   m_level_state = 
     game_variables::get_level_state(m_serial_number, m_level_number);
   m_font = get_level_globals().get_font("font/fontopo/fontopo.fnt",50);
@@ -1325,6 +1327,8 @@ void rp::level_selector::check_go_order()
       game_variables::set_back_order_status(false);
       if ( ! game_variables::get_in_loading() )
         {
+          util::hide_ads();
+
           load_level();
           if ( m_cursor != NULL )
             m_cursor->get_rendering_attributes().set_opacity(0);
@@ -1359,6 +1363,8 @@ void rp::level_selector::check_level_ending()
 
       if ( m_load )
         {
+          util::show_ads();
+
           set_vertical_middle
             ( get_level().get_camera_focus().bottom() + 
               get_level().get_camera_size().y / 2 );

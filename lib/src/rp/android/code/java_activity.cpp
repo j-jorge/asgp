@@ -45,16 +45,7 @@ void rp::java_activity::open_url( const std::string& url ) const
  */
 void rp::java_activity::show_home() const
 {
-  JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
-
-  jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
-  jclass clazz( env->GetObjectClass(activity) );
-
-  const jmethodID method_id( env->GetMethodID( clazz, "showHome", "()V" ) );
-
-  env->CallVoidMethod( activity, method_id );
-    
-  env->DeleteLocalRef(activity);
+  native_call( "showHome" );
 } // java_activity::show_home()
 
 /*----------------------------------------------------------------------------*/
@@ -81,5 +72,43 @@ std::string rp::java_activity::get_device_model_name() const
 
   return result;
 } // java_activity::get_device_model_name()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tells the system to show the ads.
+ */
+void rp::java_activity::show_ads() const
+{
+  native_call( "showAds" );
+} // java_activity::show_ads()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tells the system to hide the ads.
+ */
+void rp::java_activity::hide_ads() const
+{
+  native_call( "hideAds" );
+} // java_activity::hide_ads()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Calls a native void method with no arguments.
+ * \param method_name The name of the method to call.
+ */
+void rp::java_activity::native_call( std::string method_name ) const
+{
+  JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
+
+  jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
+  jclass clazz( env->GetObjectClass(activity) );
+
+  const jmethodID method_id
+    ( env->GetMethodID( clazz, method_name.c_str(), "()V" ) );
+
+  env->CallVoidMethod( activity, method_id );
+    
+  env->DeleteLocalRef(activity);
+} // java_activity::native_call()
 
 #endif // __ANDROID__

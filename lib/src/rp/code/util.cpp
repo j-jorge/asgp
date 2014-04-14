@@ -397,6 +397,30 @@ std::string rp::util::get_system_name()
 
 /*----------------------------------------------------------------------------*/
 /**
+ * \brief Shows the ads, if the platform supports it.
+ */
+void rp::util::show_ads()
+{
+#ifdef __ANDROID__
+  java_activity activity;
+  activity.show_ads();
+#endif
+} // util::show_ads()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Hides the ads, if the platform supports it.
+ */
+void rp::util::hide_ads()
+{
+#ifdef __ANDROID__
+  java_activity activity;
+  activity.hide_ads();
+#endif
+} // util::hide_ads()
+
+/*----------------------------------------------------------------------------*/
+/**
  * \brief Create some smoke.
  * \param ref The item on which the smoke is created.
  * \param min_intensity The minimum intensity of the clouds.
