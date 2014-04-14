@@ -184,7 +184,10 @@ cp --parents $( find . -name "*.png" \
 cd -
 
 rm --force --recursive $INSTALL_PREFIX/$DATA_DIR/share
-mv $INSTALL_PREFIX/share $INSTALL_PREFIX/$DATA_DIR/
+mkdir $INSTALL_PREFIX/$DATA_DIR/share
+mv $INSTALL_PREFIX/share/locale $INSTALL_PREFIX/$DATA_DIR/share/
+
+rm --force $(find $INSTALL_PREFIX/$DATA_DIR/ -name "AUTHORS")
 
 cd asgp/android/lib/src
 echo "Building library with custom script."
