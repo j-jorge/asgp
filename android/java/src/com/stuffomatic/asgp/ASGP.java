@@ -111,6 +111,9 @@ public class ASGP extends SDLActivity
         super.onDestroy();
     } // onDestroy()
 
+    /**
+     * Creates mAdView and inserts it in the layout.
+     */
     private void createAdView() {
 
         // Create the adView.
@@ -132,8 +135,11 @@ public class ASGP extends SDLActivity
         mLayout.addView( layout );
 
         requestAd();
-    }
+    } // createAdView()
 
+    /**
+     * Requests an ad to the ad server.
+     */
     private void requestAd() {
 
         // Initiate a generic request.
@@ -146,6 +152,10 @@ public class ASGP extends SDLActivity
         mAdView.loadAd(adRequest);
     } // createAdView()
 
+    /**
+     * Changes the visibility of the ads.
+     * @param visibility The new visibility, like View.VISIBLE, View.INVISIBLE.
+     */
     private void setAdsVisibility( final int visibility ) {
 
         final AdView view = mAdView;
