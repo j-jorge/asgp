@@ -162,11 +162,10 @@ void rp::balloon_component::on_balloon_changed(unsigned int number)
   else
     {
       const double ratio( (double)number / required );
-      const double range( 2.0 - min_intensity );
 
       m_balloon->set_intensity
-        ( std::min(1.0, min_intensity + range * ( 1 - ratio )),
-          1,
+        ( 1,
+          min_intensity + ratio * ( 1 - min_intensity ),
           min_intensity );
     }
 
