@@ -104,6 +104,7 @@ public class ASGP extends SDLActivity
     public void onResume() {
         super.onResume();
         mAdView.resume();
+        hideActionBars();
     } // onResume()
 
     @Override
@@ -111,6 +112,14 @@ public class ASGP extends SDLActivity
         mAdView.destroy();
         super.onDestroy();
     } // onDestroy()
+
+    @Override
+    public void onWindowFocusChanged( boolean hasFocus ) {
+        super.onWindowFocusChanged( hasFocus );
+        if ( hasFocus ) {
+            hideActionBars();
+        }
+    }
 
     /**
      * Hides the action bar such that the game uses the full screen.
