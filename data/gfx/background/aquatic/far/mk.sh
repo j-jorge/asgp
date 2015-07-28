@@ -81,5 +81,5 @@ gimp-console -b - <<EOF
 
 EOF
 
-image-cutter -X=512 -Y=512 -f=bk_ $OUTPUT_PNG
+image-cutter -X=1024 -Y=1024 -f=bk_ $OUTPUT_PNG
 rm $OUTPUT_PNG
