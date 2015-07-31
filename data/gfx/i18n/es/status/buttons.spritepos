@@ -2,14 +2,14 @@ quit: 0 0 140 98
 resume: 141 0 140 98
 back: 282 0 140 98
 go: 0 99 140 98
-continue: 141 99 140 98
-skip: 282 99 140 98
-settings: 0 198 140 98
-fullscreen: 141 198 140 98
-windowed: 282 198 140 98
-sound on: 0 297 140 98
-sound off: 141 297 140 98
-music on: 282 297 140 98
-music off: 0 396 140 98
-background on: 141 396 140 98
+continue: 0 198 140 98
+skip: 0 297 140 98
+settings: 0 396 140 98
+fullscreen: 141 99 140 98
+windowed: 282 99 140 98
+sound on: 141 198 140 98
+sound off: 282 198 140 98
+music on: 141 297 140 98
+music off: 141 396 140 98
+background on: 282 297 140 98
 background off: 282 396 140 98
