@@ -1,0 +1,144 @@
+sprite_sheet "ground-2" 1024 x 1024 margin 0
+
+sin "sin-slope.xcf.bz2"
+rail_img "rail.xcf.bz2"
+broken_rail_img "broken-rail.xcf.bz2"
+
+[ bleed ] "sin-slope-1" "1" * 0.5 with sin
+  "1"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "sin-slope-2" "2" * 0.5 with sin
+  "2"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "sin-slope-3" "3" * 0.5 with sin
+  "3"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "sin-slope-4" "4" * 0.5 with sin
+  "4"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "sin-slope-4-alt" "4" * 0.5 with sin
+  "4"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "middle support"
+  ;
+
+[ bleed ] "sin-slope-6" "6" * 0.5 with sin
+  "6"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "sin-slope-7" "7" * 0.5 with sin
+  "7"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "sin-slope-8" "8" * 0.5 with sin
+  "8"
+
+  "ends"
+  "top left end"
+  "middle rail"
+  "bottom right end"
+  "rail"
+  "shadow"
+  "support"
+  ;
+
+[ bleed ] "rail" image_size * 0.5 with rail_img
+  "rail"
+  "shadow"
+  ;
+
+[ bleed ] "rail with support" image_size * 0.5 with rail_img
+  "rail"
+  "support middle"
+  "shadow"
+  ;
+
+[ bleed ] "rail with 2 supports 1" image_size * 0.5 with rail_img
+  "rail"
+  "2 supports 1"
+  "shadow"
+  ;
+
+[ bleed ] "rail with 2 supports 2" image_size * 0.5 with rail_img
+  "rail"
+  "2 supports 2"
+  "shadow"
+  ;
+
+[ bleed ] "rail end 1" image_size * 0.5 with rail_img
+  "rail ends"
+  "2 supports 1"
+  "shadow"
+  ;
+
+[ bleed ] "rail end 2" image_size * 0.5 with rail_img
+  "rail ends"
+  "2 supports 2"
+  "shadow"
+  ;
+
+[ bleed ] "broken rail up" autosize * 0.5 with broken_rail_img
+  "up"
+  ;
+
+[ bleed ] "broken rail down" autosize * 0.5 with broken_rail_img
+  "down"
+  ;
