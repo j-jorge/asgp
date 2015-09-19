@@ -148,15 +148,24 @@ void rp::decorative_balloon::get_visual
 void rp::decorative_balloon::set_balloon( const balloon* b )
 {
   std::string color;
-
+  std::size_t shape;
+  
   if ( b == NULL )
-    color = balloon::get_random_color();
+    {
+      color = balloon::get_random_color();
+      shape = 1;
+    }
   else
-    color = b->get_color();
+    {
+      color = b->get_color();
+      shape = b->get_shape_code();
+    }
 
+  std::ostringstream oss;
+  oss << "animation/balloon/balloon-" << color << '-' << shape << ".canim";
+  
   const bear::visual::animation balloon_anim
-    ( get_level_globals().get_animation
-      ( "animation/balloon/balloon-" + color + ".canim" ) );
+    ( get_level_globals().get_animation( oss.str() ) );
 
   set_animation( bear::visual::animation( balloon_anim.get_sprite() ) );
 } // decorative_balloon::set_balloon()

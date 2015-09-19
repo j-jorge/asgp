@@ -1,4 +1,4 @@
-sprite_sheet "common" 1024 x 1024 margin 1 order "height"
+sprite_sheet "common" 1024 x 1024 margin 1
 
 light_star "effect/light-star.xcf.bz2"
 rounded_star "effect/rounded-star.xcf.bz2"
@@ -22,26 +22,6 @@ balloon_img "balloon/balloon.xcf.bz2"
   ;
 
 /*----------------------------------------------------------------------------*/
-"balloon 1" autosize * 0.5 with balloon_img
-  "string"
-  "balloon 1"
-  "logo 0"
-  "burst border"
-  [hollow] "explode color"
-  ;
-
-"balloon 2" autosize * 0.5 with balloon_img
-  "string"
-  "balloon 2 - 1"
-  "balloon 2 - 2"
-  "balloon 2 - 3"
-  "balloon 2 - 4"
-  "balloon 2 - 5"
-  "balloon 2 - 6"
-  "logo 0"
-  [hollow] "explode color"
-  ;
-
 "balloon piece 1" autosize * 0.5 with balloon_img
   "balloon 2 - 1"
   [hollow] "explode color"
@@ -72,742 +52,98 @@ balloon_img "balloon/balloon.xcf.bz2"
   [hollow] "explode color"
   ;
 
-
 /*----------------------------------------------------------------------------*/
-/* red ballon */
-"red balloon 0" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 0"
-  "color red"
+"balloon 1 yellow" "shape 1" * 0.22 with balloon_img
+  "color yellow"
+  "shape 1"
   ;
 
-"red balloon 0 - 1" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 10"
-  "color red"
+"balloon 2 yellow" "shape 2" * 0.22 with balloon_img
+  "color yellow"
+  "shape 2"
   ;
 
-"red balloon 0 - 2" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 20"
-  "color red"
-  ;
-
-"red balloon 0 - 3" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 30"
-  "color red"
-  ;
-
-"red balloon 0 - 4" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 40"
-  "logo -120"
-  "color red"
-  ;
-
-"red balloon 0 - 5" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 50"
-  "logo -110"
-  "color red"
-  ;
-
-"red balloon 0 - 6" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 60"
-  "logo -100"
-  "color red"
-  ;
-
-"red balloon 0 - 7" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 70"
-  "logo -90"
-  "color red"
-  ;
-
-"red balloon 0 - 8" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 80"
-  "logo -80"
-  "color red"
-  ;
-
-"red balloon 0 - 9" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 90"
-  "logo -70"
-  "color red"
-  ;
-
-"red balloon 0 - 10" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 100"
-  "logo -60"
-  "color red"
-  ;
-
-"red balloon 0 - 11" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 110"
-  "logo -50"
-  "color red"
-  ;
-
-"red balloon 0 - 12" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 120"
-  "logo -40"
-  "color red"
-  ;
-
-"red balloon 0 - 13" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -30"
-  "color red"
-  ;
-
-"red balloon 0 - 14" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -20"
-  "color red"
-  ;
-
-"red balloon 0 - 15" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -10"
-  "color red"
-  ;
-
-
-/*----------------------------------------------------------------------------*/
-/* blue ballon */
-"blue balloon 0" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 0"
-  "color blue"
-  ;
-
-"blue balloon 0 - 1" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 10"
-  "color blue"
-  ;
-
-"blue balloon 0 - 2" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 20"
-  "color blue"
-  ;
-
-"blue balloon 0 - 3" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 30"
-  "color blue"
-  ;
-
-"blue balloon 0 - 4" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 40"
-  "logo -120"
-  "color blue"
-  ;
-
-"blue balloon 0 - 5" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 50"
-  "logo -110"
-  "color blue"
-  ;
-
-"blue balloon 0 - 6" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 60"
-  "logo -100"
-  "color blue"
-  ;
-
-"blue balloon 0 - 7" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 70"
-  "logo -90"
-  "color blue"
-  ;
-
-"blue balloon 0 - 8" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 80"
-  "logo -80"
-  "color blue"
-  ;
-
-"blue balloon 0 - 9" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 90"
-  "logo -70"
-  "color blue"
-  ;
-
-"blue balloon 0 - 10" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 100"
-  "logo -60"
-  "color blue"
-  ;
-
-"blue balloon 0 - 11" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 110"
-  "logo -50"
-  "color blue"
-  ;
-
-"blue balloon 0 - 12" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 120"
-  "logo -40"
-  "color blue"
-  ;
-
-"blue balloon 0 - 13" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -30"
-  "color blue"
-  ;
-
-"blue balloon 0 - 14" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -20"
-  "color blue"
-  ;
-
-"blue balloon 0 - 15" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -10"
-  "color blue"
+"balloon 3 yellow" "shape 3" * 0.22 with balloon_img
+  "color yellow"
+  "shape 3"
   ;
 
 /*----------------------------------------------------------------------------*/
-/* purple ballon */
-"purple balloon 0" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 0"
-  "color purple"
+"balloon 1 orange" "shape 1" * 0.22 with balloon_img
+  "color orange"
+  "shape 1"
   ;
 
-"purple balloon 0 - 1" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 10"
-  "color purple"
+"balloon 2 orange" "shape 2" * 0.22 with balloon_img
+  "color orange"
+  "shape 2"
   ;
 
-"purple balloon 0 - 2" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 20"
-  "color purple"
-  ;
-
-"purple balloon 0 - 3" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 30"
-  "color purple"
-  ;
-
-"purple balloon 0 - 4" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 40"
-  "logo -120"
-  "color purple"
-  ;
-
-"purple balloon 0 - 5" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 50"
-  "logo -110"
-  "color purple"
-  ;
-
-"purple balloon 0 - 6" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 60"
-  "logo -100"
-  "color purple"
-  ;
-
-"purple balloon 0 - 7" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 70"
-  "logo -90"
-  "color purple"
-  ;
-
-"purple balloon 0 - 8" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 80"
-  "logo -80"
-  "color purple"
-  ;
-
-"purple balloon 0 - 9" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 90"
-  "logo -70"
-  "color purple"
-  ;
-
-"purple balloon 0 - 10" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 100"
-  "logo -60"
-  "color purple"
-  ;
-
-"purple balloon 0 - 11" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 110"
-  "logo -50"
-  "color purple"
-  ;
-
-"purple balloon 0 - 12" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 120"
-  "logo -40"
-  "color purple"
-  ;
-
-"purple balloon 0 - 13" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -30"
-  "color purple"
-  ;
-
-"purple balloon 0 - 14" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -20"
-  "color purple"
-  ;
-
-"purple balloon 0 - 15" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -10"
-  "color purple"
+"balloon 3 orange" "shape 3" * 0.22 with balloon_img
+  "color orange"
+  "shape 3"
   ;
 
 /*----------------------------------------------------------------------------*/
-/* yellow ballon */
-"yellow balloon 0" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 0"
-  "color yellow"
+"balloon 1 red" "shape 1" * 0.22 with balloon_img
+  "color red"
+  "shape 1"
   ;
 
-"yellow balloon 0 - 1" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 10"
-  "color yellow"
+"balloon 2 red" "shape 2" * 0.22 with balloon_img
+  "color red"
+  "shape 2"
   ;
 
-"yellow balloon 0 - 2" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 20"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 3" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 30"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 4" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 40"
-  "logo -120"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 5" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 50"
-  "logo -110"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 6" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 60"
-  "logo -100"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 7" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 70"
-  "logo -90"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 8" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 80"
-  "logo -80"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 9" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 90"
-  "logo -70"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 10" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 100"
-  "logo -60"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 11" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 110"
-  "logo -50"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 12" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 120"
-  "logo -40"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 13" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -30"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 14" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -20"
-  "color yellow"
-  ;
-
-"yellow balloon 0 - 15" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -10"
-  "color yellow"
+"balloon 3 red" "shape 3" * 0.22 with balloon_img
+  "color red"
+  "shape 3"
   ;
 
 /*----------------------------------------------------------------------------*/
-/* green ballon */
-"green balloon 0" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 0"
-  "color green"
+"balloon 1 blue" "shape 1" * 0.22 with balloon_img
+  "color blue"
+  "shape 1"
   ;
 
-"green balloon 0 - 1" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 10"
-  "color green"
+"balloon 2 blue" "shape 2" * 0.22 with balloon_img
+  "color blue"
+  "shape 2"
   ;
 
-"green balloon 0 - 2" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 20"
-  "color green"
-  ;
-
-"green balloon 0 - 3" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 30"
-  "color green"
-  ;
-
-"green balloon 0 - 4" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 40"
-  "logo -120"
-  "color green"
-  ;
-
-"green balloon 0 - 5" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 50"
-  "logo -110"
-  "color green"
-  ;
-
-"green balloon 0 - 6" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 60"
-  "logo -100"
-  "color green"
-  ;
-
-"green balloon 0 - 7" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 70"
-  "logo -90"
-  "color green"
-  ;
-
-"green balloon 0 - 8" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 80"
-  "logo -80"
-  "color green"
-  ;
-
-"green balloon 0 - 9" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 90"
-  "logo -70"
-  "color green"
-  ;
-
-"green balloon 0 - 10" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 100"
-  "logo -60"
-  "color green"
-  ;
-
-"green balloon 0 - 11" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 110"
-  "logo -50"
-  "color green"
-  ;
-
-"green balloon 0 - 12" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 120"
-  "logo -40"
-  "color green"
-  ;
-
-"green balloon 0 - 13" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -30"
-  "color green"
-  ;
-
-"green balloon 0 - 14" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -20"
-  "color green"
-  ;
-
-"green balloon 0 - 15" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -10"
-  "color green"
+"balloon 3 blue" "shape 3" * 0.22 with balloon_img
+  "color blue"
+  "shape 3"
   ;
 
 /*----------------------------------------------------------------------------*/
-/* orange ballon */
-"orange balloon 0" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 0"
-  "color orange"
+"balloon 1 purple" "shape 1" * 0.22 with balloon_img
+  "color purple"
+  "shape 1"
   ;
 
-"orange balloon 0 - 1" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 10"
-  "color orange"
+"balloon 2 purple" "shape 2" * 0.22 with balloon_img
+  "color purple"
+  "shape 2"
   ;
 
-"orange balloon 0 - 2" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 20"
-  "color orange"
+"balloon 3 purple" "shape 3" * 0.22 with balloon_img
+  "color purple"
+  "shape 3"
   ;
 
-"orange balloon 0 - 3" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 30"
-  "color orange"
+/*----------------------------------------------------------------------------*/
+"balloon 1 green" "shape 1" * 0.22 with balloon_img
+  "color green"
+  "shape 1"
   ;
 
-"orange balloon 0 - 4" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 40"
-  "logo -120"
-  "color orange"
+"balloon 2 green" "shape 2" * 0.22 with balloon_img
+  "color green"
+  "shape 2"
   ;
 
-"orange balloon 0 - 5" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 50"
-  "logo -110"
-  "color orange"
-  ;
-
-"orange balloon 0 - 6" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 60"
-  "logo -100"
-  "color orange"
-  ;
-
-"orange balloon 0 - 7" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 70"
-  "logo -90"
-  "color orange"
-  ;
-
-"orange balloon 0 - 8" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 80"
-  "logo -80"
-  "color orange"
-  ;
-
-"orange balloon 0 - 9" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 90"
-  "logo -70"
-  "color orange"
-  ;
-
-"orange balloon 0 - 10" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 100"
-  "logo -60"
-  "color orange"
-  ;
-
-"orange balloon 0 - 11" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 110"
-  "logo -50"
-  "color orange"
-  ;
-
-"orange balloon 0 - 12" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo 120"
-  "logo -40"
-  "color orange"
-  ;
-
-"orange balloon 0 - 13" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -30"
-  "color orange"
-  ;
-
-"orange balloon 0 - 14" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -20"
-  "color orange"
-  ;
-
-"orange balloon 0 - 15" autosize * 0.5 with balloon_img
-  "string"
-  glob "base *"
-  "logo -10"
-  "color orange"
+"balloon 3 green" "shape 3" * 0.22 with balloon_img
+  "color green"
+  "shape 3"
   ;

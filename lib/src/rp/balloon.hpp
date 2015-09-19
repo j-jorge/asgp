@@ -48,7 +48,8 @@ namespace rp
     static std::string get_random_color();
 
     std::string get_color() const;
-
+    std::size_t get_shape_code() const;
+    
     void pre_cache();
     void on_enters_layer();
     void progress( bear::universe::time_type elapsed_time );
@@ -89,6 +90,9 @@ namespace rp
     /** \brief The color of this balloon. */
     std::string m_color;
 
+    /** \brief The shape of this balloon. */
+    std::size_t m_shape;
+    
     /** \brief Indicates if the balloon has been hit. */
     bool m_hit;
 

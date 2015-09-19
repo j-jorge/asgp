@@ -34,7 +34,9 @@ BASE_ITEM_EXPORT( balloon, rp )
  * \brief Constructor.
  */
 rp::balloon::balloon()
-: m_color( get_random_color() ), m_hit(false), m_fly(false), m_cart(NULL)
+: m_color( get_random_color() ),
+  m_shape( rand() % 3 + 1 ),
+  m_hit(false), m_fly(false), m_cart(NULL)
 {
   set_phantom(true);
   set_can_move_items(false);
@@ -48,23 +50,20 @@ rp::balloon::balloon()
  */
 std::string rp::balloon::get_random_color()
 {
-  switch( rand() % 6 )
+  static std::array< std::string, 6 > colors =
+    {{ "blue", "green", "orange", "purple", "red", "yellow" }};
+  static std::size_t index( colors.size() );
+
+  if ( index == colors.size() )
     {
-    case 0:
-      return "blue";
-    case 1:
-      return "green";
-    case 2:
-      return "orange";
-    case 3:
-      return "purple";
-    case 4:
-      return "red";
-    case 5:
-      return "yellow";
+      std::random_shuffle( colors.begin(), colors.end() );
+      index = 0;
     }
 
-  return "red";
+  std::string result( colors[ index ] );
+  ++index;
+
+  return result;
 } // balloon::get_random_color()
 
 /*----------------------------------------------------------------------------*/
@@ -76,6 +75,11 @@ std::string rp::balloon::get_color() const
   return m_color;
 } // balloon::get_color()
 
+std::size_t rp::balloon::get_shape_code() const
+{
+  return m_shape;
+}
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Load the media required by this class.
@@ -85,15 +89,48 @@ void rp::balloon::pre_cache()
   super::pre_cache();
   
   get_level_globals().load_model("model/balloon.cm");
-  get_level_globals().load_animation( "animation/balloon/balloon-blue.canim" );
-  get_level_globals().load_animation( "animation/balloon/balloon-green.canim" );
+
   get_level_globals().load_animation
-    ( "animation/balloon/balloon-orange.canim" );
+    ( "animation/balloon/balloon-blue-1.canim" );
   get_level_globals().load_animation
-    ( "animation/balloon/balloon-purple.canim" );
-  get_level_globals().load_animation( "animation/balloon/balloon-red.canim" );
+    ( "animation/balloon/balloon-blue-2.canim" );
   get_level_globals().load_animation
-    ( "animation/balloon/balloon-yellow.canim" );
+    ( "animation/balloon/balloon-blue-3.canim" );
+  
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-green-1.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-green-2.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-green-3.canim" );
+
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-orange-1.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-orange-2.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-orange-3.canim" );
+
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-purple-1.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-purple-2.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-purple-3.canim" );
+
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-red-1.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-red-2.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-red-3.canim" );
+
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-yellow-1.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-yellow-2.canim" );
+  get_level_globals().load_animation
+    ( "animation/balloon/balloon-yellow-3.canim" );
 } // balloon::pre_cache()
 
 /*----------------------------------------------------------------------------*/
@@ -113,25 +150,14 @@ void rp::balloon::on_enters_layer()
       
   if ( get_mark_placement( "body", mark ) )
     {
+      std::ostringstream oss;
+      oss << "animation/balloon/balloon-" << m_color << '-' << m_shape
+          << ".canim";
+      
       const bear::visual::animation ref_anim
-        ( get_level_globals().get_animation
-          ( "animation/balloon/balloon-" + m_color + ".canim" ) );
+        ( get_level_globals().get_animation( oss.str() ) );
 
-      if ( get_passive() )
-        {
-          bear::visual::animation* anim
-            ( new bear::visual::animation( ref_anim.get_sprite() ) );
-
-          anim->set_time_factor( (double)rand() / RAND_MAX / 2.0 + 1.0 );
-          set_global_substitute( "body", anim);
-        }
-      else
-        {
-          bear::visual::animation* anim
-            ( new bear::visual::animation( ref_anim ) );
-          anim->set_time_factor( (double)rand() / RAND_MAX / 2.0 + 1.0 );
-          set_global_substitute( "body", anim );
-        }
+      set_global_substitute( "body", new bear::visual::animation( ref_anim ) );
     }
 } // balloon::on_enters_layer()
 
@@ -482,8 +508,11 @@ void rp::balloon::create_tar_balloon()
 {
   bear::decorative_item* item = new bear::decorative_item;
 
+  std::ostringstream oss;
+  oss << "balloon " << m_shape << " red";
+
   item->set_animation
-    ( get_level_globals().auto_sprite("gfx/common.png", "red balloon 0") );
+    ( get_level_globals().auto_sprite("gfx/common.png", oss.str()) );
   item->auto_size();
   item->get_rendering_attributes().set_intensity(0, 0, 0);
   item->set_z_position(get_z_position());
