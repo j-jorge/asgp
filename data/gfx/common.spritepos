@@ -1,27 +1,48 @@
-light star: 0 0 128 128
-light star dark: 0 129 128 128
-rounded star bright: 0 258 128 128
-balloon 1 yellow: 0 387 60 85
-balloon 1 orange: 0 473 60 85
-balloon 1 red: 0 559 60 85
-balloon 1 blue: 0 645 60 85
-balloon 1 purple: 0 731 60 85
-balloon 1 green: 0 817 60 85
-balloon 2 yellow: 0 903 60 75
-balloon piece 5: 0 979 39 39
-balloon piece 2: 40 979 22 37
-balloon 2 orange: 61 387 60 75
-balloon 2 red: 61 463 60 75
-balloon 2 blue: 61 539 60 75
-balloon 2 purple: 61 615 60 75
-balloon 2 green: 61 691 60 75
-balloon piece 3: 61 767 55 66
-balloon 3 yellow: 61 834 62 65
-balloon 3 orange: 117 767 62 65
-balloon 3 red: 61 900 62 65
-balloon piece 4: 63 966 22 55
-balloon piece 1: 86 966 51 46
-balloon 3 blue: 124 833 62 65
-balloon 3 purple: 124 899 62 65
-balloon piece 6: 138 965 45 36
-balloon 3 green: 122 387 62 65
+zeppelin: 0 0 183 96
+mirror: 184 0 183 96
+light star: 368 0 128 128
+light star dark: 0 97 128 128
+rounded star bright: 129 97 128 128
+fun 1: 258 97 73 15
+balloon piece 4: 332 97 22 55
+fun 2: 258 113 73 15
+fun 3: 258 129 73 15
+fun 4: 258 145 73 15
+fun 5: 497 0 73 15
+fun 6: 571 0 73 15
+fun 7: 645 0 73 15
+fun 8: 719 0 73 15
+fun 9: 793 0 73 15
+fun 10: 867 0 73 15
+fun 11: 941 0 73 15
+fun full: 497 16 73 15
+park 1: 571 16 73 15
+park 2: 645 16 73 15
+park 3: 719 16 73 15
+park 4: 793 16 73 15
+park 5: 867 16 73 15
+park full: 941 16 73 15
+screen: 497 32 73 15
+balloon 3 yellow: 571 32 62 65
+balloon 3 orange: 497 48 62 65
+balloon 3 red: 634 32 62 65
+balloon 3 blue: 697 32 62 65
+balloon 3 purple: 760 32 62 65
+balloon 3 green: 823 32 62 65
+balloon 1 yellow: 886 32 60 85
+balloon 1 orange: 947 32 60 85
+balloon 1 red: 560 98 60 85
+balloon 1 blue: 497 114 60 85
+balloon 1 purple: 355 129 60 85
+balloon piece 2: 332 153 22 37
+balloon 1 green: 258 161 60 85
+balloon 2 yellow: 416 129 60 75
+balloon 2 orange: 0 226 60 75
+balloon 2 red: 61 226 60 75
+balloon 2 blue: 122 226 60 75
+balloon 2 purple: 183 226 60 75
+balloon 2 green: 621 98 60 75
+balloon piece 3: 682 98 55 66
+balloon piece 1: 738 98 51 46
+balloon piece 6: 790 98 45 36
+balloon piece 5: 836 98 39 39

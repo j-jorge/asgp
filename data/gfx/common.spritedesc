@@ -3,6 +3,8 @@ sprite_sheet "common" 1024 x 1024 margin 1
 light_star "effect/light-star.xcf.bz2"
 rounded_star "effect/rounded-star.xcf.bz2"
 balloon_img "balloon/balloon.xcf.bz2"
+zeppelin_img "zeppelin/zeppelin.xcf.bz2"
+zeppelin_mirror "zeppelin/zeppelin-mirror.xcf.bz2"
 
 "light star" autosize * 0.125 with light_star
   "gradient"
@@ -146,4 +148,112 @@ balloon_img "balloon/balloon.xcf.bz2"
 "balloon 3 green" "shape 3" * 0.22 with balloon_img
   "color green"
   "shape 3"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"zeppelin" image_size * 0.125 with zeppelin_img
+  "rudder"
+  "shadow"
+  "main"
+  ;
+
+"mirror" image_size * 0.125 with zeppelin_mirror
+  "rudder"
+  "shadow"
+  "main"
+  ;
+
+"fun 1" "FUN" * 0.125 with zeppelin_img
+  "fun 1"
+  "shadow"
+  ;
+
+"fun 2" "FUN" * 0.125 with zeppelin_img
+  "fun 2"
+  "shadow"
+  ;
+
+"fun 3" "FUN" * 0.125 with zeppelin_img
+  "fun 3"
+  "shadow"
+  ;
+
+"fun 4" "FUN" * 0.125 with zeppelin_img
+  "fun 4"
+  "shadow"
+  ;
+
+"fun 5" "FUN" * 0.125 with zeppelin_img
+  "fun 5"
+  "shadow"
+  ;
+
+"fun 6" "FUN" * 0.125 with zeppelin_img
+  "fun 6"
+  "shadow"
+  ;
+
+"fun 7" "FUN" * 0.125 with zeppelin_img
+  "fun 7"
+  "shadow"
+  ;
+
+"fun 8" "FUN" * 0.125 with zeppelin_img
+  "fun 8"
+  "shadow"
+  ;
+
+"fun 9" "FUN" * 0.125 with zeppelin_img
+  "fun 9"
+  "shadow"
+  ;
+
+"fun 10" "FUN" * 0.125 with zeppelin_img
+  "fun 10"
+  "shadow"
+  ;
+
+"fun 11" "FUN" * 0.125 with zeppelin_img
+  "fun 11"
+  "shadow"
+  ;
+
+"fun full" "FUN" * 0.125 with zeppelin_img
+  "fun full"
+  "shadow"
+  ;
+
+"park 1" "PARK" * 0.125 with zeppelin_img
+  "park 1"
+  "shadow"
+  ;
+
+"park 2" "PARK" * 0.125 with zeppelin_img
+  "park 2"
+  "shadow"
+  ;
+
+"park 3" "PARK" * 0.125 with zeppelin_img
+  "park 3"
+  "shadow"
+  ;
+
+"park 4" "PARK" * 0.125 with zeppelin_img
+  "park 4"
+  "shadow"
+  ;
+
+"park 5" "PARK" * 0.125 with zeppelin_img
+  "park 5"
+  "shadow"
+  ;
+
+"park full" "PARK" * 0.125 with zeppelin_img
+  "park full"
+  "shadow"
+  ;
+
+"screen" "PARK" * 0.125 with zeppelin_img
+  "screen"
+  "shadow"
   ;
