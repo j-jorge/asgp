@@ -4,11 +4,31 @@ sprite_sheet "cart" 256 x 256
 /* the source images and their ratio in the result */
 img "andy.xcf.bz2"
 
-"fire effect" autosize * 0.25 with img
-  "fire effect"
+"fire 1" autosize * 0.25 with img
+  "fire 1"
   ;
 
-"cannonball" autosize * 0.33 with img
+"fire 2" autosize * 0.25 with img
+  "fire 2"
+  ;
+
+"fire 3" autosize * 0.25 with img
+  "fire 3"
+  ;
+
+"deco 1" "deco 1" * 0.25 with img
+  "decos"
+  ;
+
+"deco 2" "deco 2" * 0.25 with img
+  "decos"
+  ;
+
+"deco 3" "deco 3" * 0.25 with img
+  "decos"
+  ;
+
+"cannonball" autosize * 0.25 with img
   "cannonball"
   ;
 
@@ -17,31 +37,18 @@ img "andy.xcf.bz2"
   "weapon"
   ;
 
-"mega arm" "arm box" * 0.25 with img
-  "arm"
-  "MEGA weapon"
-  "leds"
-  ;
-
-"cannon base" autosize * 0.25 with img
-  "cannon base"
-  ;
-
-"cart" autosize * 0.25 with img
+"cart" "main" * 0.25 with img
   "cart"
-  "cart holes"
-  "cart effect"
-  "wheels"
   ;
 
 "plunger" autosize * 0.25 with img
   "plunger"
   ;
 
-"cannon" autosize * 0.25 with img
+"cannon" "cannon box" * 0.25 with img
   "cannon"
   ;
 
 "guy" autosize * 0.25 with img
-  "guy"
+  "andy"
   ;

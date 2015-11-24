@@ -1,9 +1,12 @@
-cart: 0 0 87 60
-arm: 88 0 148 27
-mega arm: 88 28 148 27
-cannon: 0 61 93 22
-guy: 0 84 41 42
-cannonball: 42 84 35 35
-plunger: 94 61 36 20
-cannon base: 78 84 26 26
-fire effect: 105 84 27 25
+cart: 0 0 135 61
+deco 1: 136 0 105 11
+cannon: 136 12 86 34
+deco 2: 223 12 21 16
+deco 3: 223 29 18 14
+cannonball: 136 47 52 30
+arm: 0 62 133 26
+guy: 189 47 41 44
+plunger: 134 78 36 20
+fire 3: 171 92 33 28
+fire 1: 205 92 33 27
+fire 2: 205 120 33 27
