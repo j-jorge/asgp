@@ -42,13 +42,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -94,7 +87,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="sine:in_out" y_easing="sine:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -115,7 +107,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="110" y="50" width="0" height="0" z="9" angle="0" visible="1" x_easing="sine:in_out" y_easing="sine:in_out" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -136,7 +127,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -192,13 +182,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -244,7 +227,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -300,13 +282,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -352,7 +327,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -408,13 +382,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -460,7 +427,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -536,13 +502,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -588,7 +547,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -619,7 +577,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="58" y="71" width="0" height="0" z="-6" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="72" y="23" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="71" y="23" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="9.66234" y="42.2208" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="3.94805" y="45.2442" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="2.90909" y="39.1039" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -685,13 +642,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -737,7 +687,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -793,13 +742,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -845,7 +787,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -921,13 +862,6 @@
 </mark>
 <mark label="balloon_anchor_5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="cannon base" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='0' y='0' clip_width='0' clip_height='0' spritepos='cannon base' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</mark>
 <mark label="cannon" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='86' height='34' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
@@ -973,7 +907,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -1004,7 +937,6 @@
 <mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="cannon base" function="" x="70" y="34" width="0" height="0" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_4" function="" x="5.54255" y="34.6383" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_3" function="" x="3.41489" y="33.7872" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>

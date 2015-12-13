@@ -2,16 +2,16 @@
 <model>
 <action name="idle" duration="1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
-<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
+<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='36' height='20' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/cart/cart.png' x='182' y='28' clip_width='36' clip_height='22' spritepos='plunger' auto_size='true' width='36' height='22' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/cart/cart.png' x='134' y='78' clip_width='36' clip_height='20' spritepos='plunger' auto_size='true' width='36' height='20' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tail" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="tail" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
-<mark label="plunger" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plunger" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 </marks>
 <snapshots>

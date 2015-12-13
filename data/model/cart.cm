@@ -1,7 +1,7 @@
 0
 10
 0
-9
+8
 content_animation
 1
 1
@@ -131,40 +131,6 @@ gfx/cart/cart.png
 0
 36
 20
-0
-0
-1
-1
-1
-1
-0
-content_animation
-1
-1
-gfx/cart/cart.png
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-1
-1
-1
-1
-0
-0
-0
-0
-0
-0
-0
 0
 0
 1
@@ -314,7 +280,7 @@ move
 move
 0
 0
-18
+17
 body
 0
 0
@@ -339,72 +305,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 3
 0
 start_move
@@ -416,7 +377,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -435,7 +396,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -454,7 +415,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -473,7 +434,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -492,7 +453,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -511,7 +472,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 12
 3
@@ -530,7 +491,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -544,25 +505,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -768,7 +710,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -787,7 +729,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -806,7 +748,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -825,7 +767,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -844,7 +786,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -863,7 +805,7 @@ align_bottom
 1
 1
 
-12
+11
 110
 12
 3
@@ -882,7 +824,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -896,25 +838,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -1120,7 +1043,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -1139,7 +1062,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -1158,7 +1081,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -1177,7 +1100,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -1196,7 +1119,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -1215,7 +1138,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 8
 1
@@ -1234,7 +1157,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -1248,25 +1171,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -1467,7 +1371,7 @@ idle
 
 0
 0
-18
+17
 body
 0
 0
@@ -1492,72 +1396,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 1
 0
 start_idle
@@ -1569,7 +1468,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -1588,7 +1487,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -1607,7 +1506,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -1626,7 +1525,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -1645,7 +1544,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -1664,7 +1563,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 8
 1
@@ -1683,7 +1582,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -1697,25 +1596,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -1916,7 +1796,7 @@ jump
 jump
 0
 0
-18
+17
 body
 0
 0
@@ -1941,72 +1821,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 1
 0
 start_jump
@@ -2018,7 +1893,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -2037,7 +1912,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -2056,7 +1931,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -2075,7 +1950,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -2094,7 +1969,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -2113,7 +1988,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 8
 1
@@ -2132,7 +2007,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -2146,25 +2021,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -2365,7 +2221,7 @@ fall
 
 0
 0
-18
+17
 body
 0
 0
@@ -2390,72 +2246,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 1
 0
 start_fall
@@ -2467,7 +2318,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -2486,7 +2337,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -2505,7 +2356,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -2524,7 +2375,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -2543,7 +2394,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -2562,7 +2413,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 8
 1
@@ -2581,7 +2432,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -2595,25 +2446,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -2814,57 +2646,57 @@ dead
 
 0
 0
-28
+27
 ending_balloon_anchor_1
 0
 0
 1
-9
+8
 ending_balloon_anchor_2
 0
 0
 1
-9
+8
 ending_balloon_anchor_3
 0
 0
 1
-9
+8
 ending_balloon_anchor_4
 0
 0
 1
-9
+8
 ending_balloon_anchor_5
 0
 0
 1
-9
+8
 ending_balloon_anchor_6
 0
 0
 1
-9
+8
 ending_balloon_anchor_7
 0
 0
 1
-9
+8
 ending_balloon_anchor_8
 0
 0
 1
-9
+8
 ending_balloon_anchor_9
 0
 0
 1
-9
+8
 ending_balloon_anchor_10
 0
 0
 1
-9
+8
 body
 0
 0
@@ -2889,72 +2721,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 2
 0
 start_dead
@@ -2966,7 +2793,7 @@ align_bottom
 0
 0
 0
-27
+26
 37
 8
 1
@@ -2985,7 +2812,7 @@ align_bottom
 1
 1
 
-26
+25
 -22
 8
 1
@@ -3004,7 +2831,7 @@ align_bottom
 1
 1
 
-25
+24
 24
 8
 1
@@ -3023,7 +2850,7 @@ align_bottom
 1
 1
 
-24
+23
 104
 8
 1
@@ -3042,7 +2869,7 @@ align_bottom
 1
 1
 
-23
+22
 27
 8
 1
@@ -3061,7 +2888,7 @@ align_bottom
 1
 1
 
-22
+21
 108
 8
 1
@@ -3080,7 +2907,7 @@ align_bottom
 1
 1
 
-21
+20
 70.7001
 8
 1
@@ -3094,25 +2921,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-20
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -3508,25 +3316,6 @@ align_bottom
 0
 0
 0
-27
-0
-8
-1
-0
-8
-1
-0
-8
-1
-0
-8
-1
-0
-0
-8
-1
-1
-
 26
 0
 8
@@ -3585,6 +3374,25 @@ align_bottom
 1
 
 23
+0
+8
+1
+0
+8
+1
+0
+8
+1
+0
+8
+1
+0
+0
+8
+1
+1
+
+22
 27
 8
 1
@@ -3603,7 +3411,7 @@ align_bottom
 1
 1
 
-22
+21
 58
 8
 1
@@ -3622,7 +3430,7 @@ align_bottom
 1
 1
 
-21
+20
 72
 8
 1
@@ -3636,25 +3444,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-20
-71
-8
-1
-23
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -4045,7 +3834,7 @@ crouch
 
 0
 0
-18
+17
 body
 0
 0
@@ -4070,72 +3859,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 1
 0
 start_idle
@@ -4147,7 +3931,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -4166,7 +3950,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -4185,7 +3969,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -4204,7 +3988,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -4223,7 +4007,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -4242,7 +4026,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 8
 1
@@ -4261,7 +4045,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -4275,25 +4059,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -4494,7 +4259,7 @@ with_tar
 move
 0
 0
-18
+17
 body
 0
 0
@@ -4519,72 +4284,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 1
 0
 start_with_tar
@@ -4596,7 +4356,7 @@ align_bottom
 0
 0
 0
-17
+16
 37
 8
 1
@@ -4615,7 +4375,7 @@ align_bottom
 1
 1
 
-16
+15
 -22
 8
 1
@@ -4634,7 +4394,7 @@ align_bottom
 1
 1
 
-15
+14
 24
 8
 1
@@ -4653,7 +4413,7 @@ align_bottom
 1
 1
 
-14
+13
 104
 8
 1
@@ -4672,7 +4432,7 @@ align_bottom
 1
 1
 
-13
+12
 27
 8
 1
@@ -4691,7 +4451,7 @@ align_bottom
 1
 1
 
-12
+11
 108
 8
 1
@@ -4710,7 +4470,7 @@ align_bottom
 1
 1
 
-11
+10
 70.7001
 8
 1
@@ -4724,25 +4484,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-10
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -4943,57 +4684,57 @@ takeoff
 
 0
 0
-28
+27
 ending_balloon_anchor_1
 0
 0
 1
-9
+8
 ending_balloon_anchor_2
 0
 0
 1
-9
+8
 ending_balloon_anchor_3
 0
 0
 1
-9
+8
 ending_balloon_anchor_4
 0
 0
 1
-9
+8
 ending_balloon_anchor_5
 0
 0
 1
-9
+8
 ending_balloon_anchor_6
 0
 0
 1
-9
+8
 ending_balloon_anchor_7
 0
 0
 1
-9
+8
 ending_balloon_anchor_8
 0
 0
 1
-9
+8
 ending_balloon_anchor_9
 0
 0
 1
-9
+8
 ending_balloon_anchor_10
 0
 0
 1
-9
+8
 body
 0
 0
@@ -5018,72 +4759,67 @@ balloon_anchor
 0
 0
 1
-9
+8
 balloon_anchor_1
 0
 0
 1
-9
+8
 balloon_anchor_2
 0
 0
 1
-9
+8
 balloon_anchor_3
 0
 0
 1
-9
+8
 balloon_anchor_4
 0
 0
 1
-9
+8
 balloon_anchor_5
 0
 0
 1
-9
-cannon base
-0
-0
-1
-4
+8
 cannon
 1
 0
 1
-5
+4
 gun
 1
 0
 1
-9
+8
 tar
 1
 0
 1
-9
+8
 fire
 1
 0
 0
-9
+8
 deco 3
 0
 0
 1
-6
+5
 deco 2
 0
 0
 1
-7
+6
 deco 1
 0
 0
 1
-8
+7
 2
 0
 start_takeoff
@@ -5095,7 +4831,7 @@ align_bottom
 0
 0
 0
-27
+26
 37
 8
 1
@@ -5114,7 +4850,7 @@ align_bottom
 1
 1
 
-26
+25
 -22
 8
 1
@@ -5133,7 +4869,7 @@ align_bottom
 1
 1
 
-25
+24
 24
 8
 1
@@ -5152,7 +4888,7 @@ align_bottom
 1
 1
 
-24
+23
 104
 8
 1
@@ -5171,7 +4907,7 @@ align_bottom
 1
 1
 
-23
+22
 27
 8
 1
@@ -5190,7 +4926,7 @@ align_bottom
 1
 1
 
-22
+21
 108
 8
 1
@@ -5209,7 +4945,7 @@ align_bottom
 1
 1
 
-21
+20
 70.7001
 8
 1
@@ -5223,25 +4959,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-20
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1
@@ -5637,7 +5354,7 @@ align_bottom
 0
 0
 0
-27
+26
 37
 8
 1
@@ -5656,7 +5373,7 @@ align_bottom
 1
 1
 
-26
+25
 -22
 8
 1
@@ -5675,7 +5392,7 @@ align_bottom
 1
 1
 
-25
+24
 24
 8
 1
@@ -5694,7 +5411,7 @@ align_bottom
 1
 1
 
-24
+23
 104
 8
 1
@@ -5713,7 +5430,7 @@ align_bottom
 1
 1
 
-23
+22
 27
 8
 1
@@ -5732,7 +5449,7 @@ align_bottom
 1
 1
 
-22
+21
 108
 8
 1
@@ -5751,7 +5468,7 @@ align_bottom
 1
 1
 
-21
+20
 70.7001
 8
 1
@@ -5765,25 +5482,6 @@ align_bottom
 8
 1
 -5
-0
-8
-1
-1
-
-20
-70
-8
-1
-34
-8
-1
-0
-8
-1
-0
-8
-1
--1
 0
 8
 1

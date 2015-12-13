@@ -231,7 +231,6 @@ namespace rp
     bear::universe::position_type compute_gun_position() const;
     bear::universe::position_type compute_fire_position() const;
 
-    std::string get_theme_image_name() const;
     bool collision_with_tar( bear::engine::base_item& that );
     bool collision_with_bonus( bear::engine::base_item& that );
     bool collision_with_explosion

@@ -180,7 +180,6 @@ void rp::cart::pre_cache()
   get_level_globals().load_image("gfx/status/score.png");
   get_level_globals().load_image("gfx/common.png");
   get_level_globals().load_image("gfx/common.png");
-  get_level_globals().load_image( get_theme_image_name() );
 
   get_level_globals().load_animation("animation/effect/wave.canim");
   get_level_globals().load_animation("animation/effect/double-wave.canim");
@@ -814,9 +813,9 @@ bool rp::cart::check_death()
  */
 void rp::cart::lose_elements()
 { 
-  break_element("back",bear::universe::force_type(300000, 900000));
-  break_element("middle",bear::universe::force_type(700000, 1200000));
-  break_element("front",bear::universe::force_type(1000000, 900000));
+  break_element("2",bear::universe::force_type(300000, 900000));
+  break_element("3",bear::universe::force_type(700000, 1200000));
+  break_element("1",bear::universe::force_type(1000000, 900000));
 
   get_level_globals().play_sound
     ( "sound/hit.ogg", bear::audio::sound_effect(get_center_of_mass()) );
@@ -929,9 +928,9 @@ void rp::cart::add_bad_plunger_zone
  */
 void rp::cart::remove_elements()
 {
-  set_global_substitute("theme back", new bear::visual::animation());
-  set_global_substitute("theme middle", new bear::visual::animation());
-  set_global_substitute("theme front", new bear::visual::animation());
+  set_global_substitute("deco 1", new bear::visual::animation());
+  set_global_substitute("deco 2", new bear::visual::animation());
+  set_global_substitute("deco 3", new bear::visual::animation());
 } // cart::remove_elements()
 
 /*---------------------------------------------------------------------------*/
@@ -946,14 +945,15 @@ void rp::cart::break_element
   m_elements[name] = false;
 
   bear::engine::model_mark_placement element;
+  const std::string asset( "deco " + name );
   
-  if ( get_mark_placement("theme " + name, element) )
+  if ( get_mark_placement(asset, element) )
     {
-      set_global_substitute("theme " + name, new bear::visual::animation());
+      set_global_substitute(asset, new bear::visual::animation());
       
       bear::decorative_item* item = new bear::decorative_item;
       item->set_animation
-        ( get_level_globals().auto_sprite( get_theme_image_name(), name ) );
+        ( get_level_globals().auto_sprite( "gfx/cart/cart.png", asset ) );
       item->set_size(item->get_sprite().get_size());
       item->set_z_position(element.get_depth_position());
       item->set_system_angle(get_system_angle());
@@ -1358,9 +1358,9 @@ void rp::cart::throw_plunger()
  */
 void rp::cart::init_elements()
 {
-  init_element("middle");
-  init_element("back");
-  init_element("front");
+  init_element("1");
+  init_element("2");
+  init_element("3");
 } // cart::init_elements()
 
 /*----------------------------------------------------------------------------*/
@@ -1371,14 +1371,6 @@ void rp::cart::init_elements()
 void rp::cart::init_element(const std::string& name)
 {
   m_elements[name] = true;
-
-  bear::engine::model_mark_placement element;
-  
-  if ( get_mark_placement( "theme " + name, element ) )
-    set_global_substitute
-      ( "theme " + name,
-        new bear::visual::animation
-        ( get_level_globals().auto_sprite( get_theme_image_name(), name ) ) );
 } // cart::init_element()
 
 /*----------------------------------------------------------------------------*/
@@ -2475,15 +2467,6 @@ bear::universe::position_type rp::cart::compute_fire_position() const
   else
     return bear::universe::position_type();
 } // cart::compute_fire_position()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Get the name of the image to use for the theme of the cart.
- */
-std::string rp::cart::get_theme_image_name() const
-{
-  return "gfx/cart-theme/" + game_variables::get_level_theme() + ".png";
-} // cart::get_theme_image_name()
 
 /*----------------------------------------------------------------------------*/
 /**
