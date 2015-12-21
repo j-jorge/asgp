@@ -3922,7 +3922,7 @@ deco 1
 7
 1
 0
-start_idle
+start_crouch
 78
 35
 align_left
@@ -4217,10 +4217,10 @@ align_bottom
 0
 
 1
-46.5
+50.5476
 8
 1
-22.6
+26.381
 8
 1
 19
