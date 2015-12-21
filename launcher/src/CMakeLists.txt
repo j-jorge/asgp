@@ -5,6 +5,10 @@ set( RP_LAUNCHER_TARGET_NAME andy-super-great-park )
 
 include_directories( . ${BEAR_ENGINE_INCLUDE_DIRECTORY} )
 
+link_directories(
+  ${BEAR_ENGINE_LINK_DIRECTORY}
+  )
+
 #-------------------------------------------------------------------------------
 set( RP_LAUNCHER_SOURCE_FILES
   code/launcher.cpp
@@ -44,7 +48,7 @@ make_library_system_name(
 if( NOT CMAKE_BUILD_TYPE STREQUAL "release" )
   set(
     RP_COMPILE_DEFINITIONS
-    "GENERIC_ITEMS_LIBRARY_DEBUG_PATH=${BEAR_ENGINE_LIBRARY_DIRECTORY}/${GENERIC_ITEM_LIBRARY_SYSTEM_NAME}"
+    "GENERIC_ITEMS_LIBRARY_DEBUG_PATH=${BEAR_ENGINE_LINK_DIRECTORY}/${GENERIC_ITEM_LIBRARY_SYSTEM_NAME}"
     "RP_LIBRARY_DEBUG_PATH=${RP_EXECUTABLE_OUTPUT_PATH}/${RP_LIBRARY_SYSTEM_NAME}"
     "RP_DATA_DEBUG_DIRECTORY=${CMAKE_CURRENT_SOURCE_DIR}/../../data"
     )
