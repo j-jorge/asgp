@@ -1128,7 +1128,7 @@
 <real value='3584'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4276,7 +4276,7 @@
 <real value='16896'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->

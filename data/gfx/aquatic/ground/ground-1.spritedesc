@@ -12,7 +12,6 @@ gentle "gentle-slope.xcf.bz2"
   "middle rail"
   "bottom right"
   "top left"
-  "shadow"
   ;
 
 [ bleed ] "bump-slope-2" "2" * 0.5 with bump
@@ -24,7 +23,6 @@ gentle "gentle-slope.xcf.bz2"
   "middle rail"
   "bottom right"
   "top left"
-  "shadow"
   ;
 
 [ bleed ] "bump-slope-3" "3" * 0.5 with bump
@@ -36,7 +34,6 @@ gentle "gentle-slope.xcf.bz2"
   "middle rail"
   "bottom right"
   "top left"
-  "shadow"
   ;
 
 [ bleed ] "bump-slope-4" "4" * 0.5 with bump
@@ -48,7 +45,6 @@ gentle "gentle-slope.xcf.bz2"
   "middle rail"
   "bottom right"
   "top left"
-  "shadow"
   ;
 
 [ bleed ] "bump-slope-5" "5" * 0.5 with bump
@@ -60,7 +56,6 @@ gentle "gentle-slope.xcf.bz2"
   "middle rail"
   "bottom right"
   "top left"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-1" "1" * 0.5 with gentle
@@ -70,7 +65,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-2" "2" * 0.5 with gentle
@@ -80,7 +74,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-3" "3" * 0.5 with gentle
@@ -90,7 +83,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-3-alt" "3" * 0.5 with gentle
@@ -99,7 +91,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-4" "4" * 0.5 with gentle
@@ -109,7 +100,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-5" "5" * 0.5 with gentle
@@ -119,7 +109,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-5-alt" "5" * 0.5 with gentle
@@ -130,7 +119,6 @@ gentle "gentle-slope.xcf.bz2"
   "bottom right end"
   "rail"
   "support"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-6" "6" * 0.5 with gentle
@@ -140,7 +128,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-7" "7" * 0.5 with gentle
@@ -150,7 +137,6 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "gentle-slope-8" "8" * 0.5 with gentle
@@ -160,5 +146,4 @@ gentle "gentle-slope.xcf.bz2"
   "top left end"
   "bottom right end"
   "rail"
-  "shadow"
   ;

@@ -12,7 +12,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-2" "2" * 0.5 with steep
@@ -24,7 +23,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-3" "3" * 0.5 with steep
@@ -36,7 +34,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-4" "4" * 0.5 with steep
@@ -48,7 +45,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-4-alt" "4" * 0.5 with steep
@@ -58,7 +54,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-fill-4-to-5" "4 to 5" * 0.5 with steep
@@ -70,7 +65,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-5" "5" * 0.5 with steep
@@ -82,7 +76,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-5-alt" "5" * 0.5 with steep
@@ -93,7 +86,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-7" "7" * 0.5 with steep
@@ -105,7 +97,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-8" "8" * 0.5 with steep
@@ -117,7 +108,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "steep-slope-9" "9" * 0.5 with steep
@@ -129,7 +119,6 @@ broken_wall_img "broken-wall.xcf.bz2"
   "top left end"
   "bottom right end"
   "middle rail"
-  "shadow"
   ;
 
 [ bleed ] "broken wall 1" autosize * 0.5 with broken_wall_img

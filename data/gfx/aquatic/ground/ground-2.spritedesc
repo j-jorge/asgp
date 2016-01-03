@@ -12,7 +12,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
@@ -24,7 +23,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
@@ -36,7 +34,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
@@ -48,7 +45,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
@@ -60,7 +56,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "middle support"
   ;
 
@@ -72,7 +67,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
@@ -84,7 +78,6 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
@@ -96,43 +89,36 @@ broken_rail_img "broken-rail.xcf.bz2"
   "middle rail"
   "bottom right end"
   "rail"
-  "shadow"
   "support"
   ;
 
 [ bleed ] "rail" image_size * 0.5 with rail_img
   "rail"
-  "shadow"
   ;
 
 [ bleed ] "rail with support" image_size * 0.5 with rail_img
   "rail"
   "support middle"
-  "shadow"
   ;
 
 [ bleed ] "rail with 2 supports 1" image_size * 0.5 with rail_img
   "rail"
   "2 supports 1"
-  "shadow"
   ;
 
 [ bleed ] "rail with 2 supports 2" image_size * 0.5 with rail_img
   "rail"
   "2 supports 2"
-  "shadow"
   ;
 
 [ bleed ] "rail end 1" image_size * 0.5 with rail_img
   "rail ends"
   "2 supports 1"
-  "shadow"
   ;
 
 [ bleed ] "rail end 2" image_size * 0.5 with rail_img
   "rail ends"
   "2 supports 2"
-  "shadow"
   ;
 
 [ bleed ] "broken rail up" autosize * 0.5 with broken_rail_img
