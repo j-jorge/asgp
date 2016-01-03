@@ -1,6 +1,7 @@
 sprite_sheet "ground-3" 1024 x 1024 margin 0
 
 steep "steep-slope.xcf.bz2"
+broken_wall_img "broken-wall.xcf.bz2"
 
 [ bleed ] "steep-slope-1" "1" * 0.5 with steep
   "1"
@@ -129,4 +130,34 @@ steep "steep-slope.xcf.bz2"
   "bottom right end"
   "middle rail"
   "shadow"
+  ;
+
+[ bleed ] "broken wall 1" autosize * 0.5 with broken_wall_img
+
+  "broken 2 back"
+  "broken 2 wave 2"
+  "broken 2 wave 5"
+  ;
+
+[ bleed ] "broken wall 2" autosize * 0.5 with broken_wall_img
+
+  "broken 1 back alt"
+  "broken 1 wave 1"
+  "broken 1 wave 2"
+  "broken 1 wave 5"
+  ;
+
+[ bleed ] "broken wall 3" autosize * 0.5 with broken_wall_img
+
+  "broken 1 back"
+  "broken 1 wave 2"
+  "broken 1 wave 5"
+  ;
+
+[ bleed ] "broken wall 4" autosize * 0.5 with broken_wall_img
+
+  "broken 2 back"
+  "broken 2 wave 1"
+  "broken 2 wave 2"
+  "broken 2 wave 5"
   ;
