@@ -6,7 +6,11 @@ rail: 1 962 256 51
 sin-slope-4-alt: 259 1 256 256
 sin-slope-6: 517 1 256 256
 broken rail down: 775 1 154 72
+edge right: 931 1 50 256
 broken rail up: 775 75 146 67
+edge right top: 775 144 50 256
+edge left: 827 144 49 256
+edge left top: 878 144 49 256
 sin-slope-8: 259 259 256 256
 sin-slope-7: 517 259 256 71
 rail with support: 517 332 256 51

@@ -3,6 +3,7 @@ sprite_sheet "ground-2" 1024 x 1024 margin 0
 sin "sin-slope.xcf.bz2"
 rail_img "rail.xcf.bz2"
 broken_rail_img "broken-rail.xcf.bz2"
+edge_img "edge.xcf.bz2"
 
 [ bleed ] "sin-slope-1" "1" * 0.5 with sin
   "1"
@@ -127,4 +128,40 @@ broken_rail_img "broken-rail.xcf.bz2"
 
 [ bleed ] "broken rail down" autosize * 0.5 with broken_rail_img
   "down"
+  ;
+
+[ bleed ] "edge left" "left area" * 0.5 with edge_img
+  "left"
+  "left 2"
+  "edges straight"
+  "wave 5"
+  "wave 2"
+  "back"
+  ;
+
+[ bleed ] "edge left top" "left area" * 0.5 with edge_img
+  "left"
+  "left 2"
+  "edges straight"
+  "wave 5"
+  "wave 2"
+  "top"
+  ;
+
+[ bleed ] "edge right" "right area" * 0.5 with edge_img
+  "right"
+  "right 2"
+  "edges straight"
+  "wave 5"
+  "wave 2"
+  "back"
+  ;
+
+[ bleed ] "edge right top" "right area" * 0.5 with edge_img
+  "right"
+  "right 2"
+  "edges straight"
+  "wave 5"
+  "wave 2"
+  "top"
   ;
