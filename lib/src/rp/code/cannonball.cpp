@@ -36,6 +36,7 @@ rp::cannonball::cannonball()
 {
   set_phantom(true);
   set_mass(1);
+  set_system_angle_as_visual_angle( true );
 } // rp::cannonball()
 
 /*----------------------------------------------------------------------------*/
@@ -84,6 +85,10 @@ void rp::cannonball::progress( bear::universe::time_type elapsed_time )
          m_sight_position->get_horizontal_middle() ) )
     clear_forced_movement();
 
+  const bear::universe::vector_type speed( get_speed() );
+  if ( ( speed.x != 0 ) && ( speed.y != 0 ) )
+    set_system_angle( std::atan2( speed.y, speed.x ) );
+  
   bear::universe::rectangle_type r = get_level().get_camera_focus();
   bear::universe::rectangle_type rect
     (r.left() - 50, r.bottom() - 50, r.right() + 50, r.top() + 50 );

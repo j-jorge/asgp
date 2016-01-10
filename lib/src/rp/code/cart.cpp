@@ -1307,6 +1307,7 @@ void rp::cart::throw_cannonball()
       item->set_cart(this);
       item->create_movement
         ( v, get_speed(), m_cursor->get_center_of_mass(), m_good_fire );
+      item->set_system_angle( angle );
       
       bear::audio::sound_effect e(get_center_of_mass());
       get_level_globals().play_sound("sound/cart/cannon.ogg", e);
