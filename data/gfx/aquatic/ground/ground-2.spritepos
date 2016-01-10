@@ -12,9 +12,10 @@ edge right top: 775 144 50 256
 edge left: 827 144 49 256
 edge left top: 878 144 49 256
 sin-slope-8: 259 259 256 256
-sin-slope-7: 517 259 256 71
-rail with support: 517 332 256 51
-rail with 2 supports 1: 517 385 256 51
-rail with 2 supports 2: 517 438 256 51
-rail end 1: 517 491 256 51
-rail end 2: 259 517 256 51
+hole: 517 259 256 256
+sin-slope-7: 259 517 256 71
+rail with support: 517 517 256 51
+rail with 2 supports 1: 517 570 256 51
+rail with 2 supports 2: 259 590 256 51
+rail end 1: 517 623 256 51
+rail end 2: 259 643 256 51

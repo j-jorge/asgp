@@ -4,6 +4,7 @@ sin "sin-slope.xcf.bz2"
 rail_img "rail.xcf.bz2"
 broken_rail_img "broken-rail.xcf.bz2"
 edge_img "edge.xcf.bz2"
+hole_img "hole.xcf.bz2"
 
 [ bleed ] "sin-slope-1" "1" * 0.5 with sin
   "1"
@@ -164,4 +165,9 @@ edge_img "edge.xcf.bz2"
   "wave 5"
   "wave 2"
   "top"
+  ;
+
+[ bleed ] "hole" "fill" * 0.5 with hole_img
+  "fill"
+  glob "light *"
   ;
