@@ -1,7 +1,0 @@
-# The format of the lines is
-# picture: x y width height
-
-vertical border: 0 0 10 20
-horizontal border: 11 0 20 10
-spike: 0 21 14 14
-corner: 32 0 10 10
