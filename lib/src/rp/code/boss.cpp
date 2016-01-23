@@ -111,8 +111,8 @@ void rp::boss::on_enters_layer()
   
   m_y_reference = m_cart->get_bottom();
 
-  init_teleportation_gap();
   m_teleportation_gap = bear::universe::position_type(0,0);
+  init_teleportation_gap();
   
   if ( game_variables::is_boss_transition() )
     create_transition_first_movement();
