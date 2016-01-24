@@ -5,6 +5,9 @@ rounded_star "effect/rounded-star.xcf.bz2"
 balloon_img "balloon/balloon.xcf.bz2"
 zeppelin_img "zeppelin/zeppelin.xcf.bz2"
 zeppelin_mirror "zeppelin/zeppelin-mirror.xcf.bz2"
+balloon_speech "speech/balloon.xcf.bz2"
+switching_img "switching/switching.xcf.bz2"
+switching_warning_img "switching/warning.xcf.bz2"
 
 "light star" autosize * 0.125 with light_star
   "gradient"
@@ -256,4 +259,106 @@ zeppelin_mirror "zeppelin/zeppelin-mirror.xcf.bz2"
 "screen" "PARK" * 0.125 with zeppelin_img
   "screen"
   "shadow"
+  ;
+
+/*----------------------------------------------------------------------------*/
+[ bleed ] "spike" autosize * 0.5 with balloon_speech
+  glob "spike*"
+  ;
+
+[ bleed ] "vertical border" autosize * 0.5 with balloon_speech
+  glob "vertical border*"
+  ;
+
+[ bleed ] "horizontal border" autosize * 0.5 with balloon_speech
+  glob "horizontal border*"
+  ;
+
+[ bleed ] "corner" autosize * 0.5 with balloon_speech
+  glob "corner*"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"end" autosize * 0.5 with switching_img
+  "end"
+  "screw"
+  ;
+
+"rail" autosize * 0.5 with switching_img
+  "end"
+  "screw"
+  "rail"
+  ;
+
+"light up" autosize * 0.5 with switching_img
+  "light up"
+  "panel"
+  ;
+
+"light down" autosize * 0.5 with switching_img
+  "light down"
+  "panel"
+  ;
+
+"lights red" autosize * 0.5 with switching_img
+  "lights red"
+  "panel"
+  ;
+
+"axis" autosize * 0.5 with switching_img
+  "axis"
+  ;
+
+"post" autosize * 0.5 with switching_img
+  "post"
+  ;
+
+"warning 1" "mask 1" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 1"
+  ;
+
+"warning 2" "mask 2" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 2"
+  ;
+
+"warning 3" "mask 3" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 3"
+  ;
+
+"warning 4" "mask 4" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 4"
+  ;
+
+"warning 5" "mask 5" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 5"
+  ;
+
+"warning 6" "mask 6" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 6"
+  ;
+
+"warning 7" "mask 7" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 7"
+  ;
+
+"warning 8" "mask 8" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 8"
+  ;
+
+"warning 9" "mask 9" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 9"
+  ;
+
+"warning 10" "mask 10" * 0.33 with switching_warning_img
+  glob "warning*"
+  mask "mask 10"
   ;

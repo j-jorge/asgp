@@ -5,7 +5,7 @@
 <mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='183' height='96' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='184' y='0' clip_width='183' clip_height='96' spritepos='mirror' auto_size='true' width='183' height='96' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='0' y='16' clip_width='183' clip_height='96' spritepos='mirror' auto_size='true' width='183' height='96' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
@@ -29,7 +29,7 @@
 <mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='183' height='96' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='184' y='0' clip_width='183' clip_height='96' spritepos='mirror' auto_size='true' width='183' height='96' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='0' y='16' clip_width='183' clip_height='96' spritepos='mirror' auto_size='true' width='183' height='96' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>

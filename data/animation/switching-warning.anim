@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation loops='1' first_index='0' last_index='9' loop_back='true' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='0' y='60' clip_width='27' clip_height='46' spritepos='warning 1' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='169' y='208' clip_width='27' clip_height='46' spritepos='warning 1' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='28' y='60' clip_width='27' clip_height='46' spritepos='warning 2' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='129' y='237' clip_width='27' clip_height='46' spritepos='warning 2' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='56' y='60' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='157' y='255' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='56' y='60' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='157' y='255' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='112' y='60' clip_width='27' clip_height='46' spritepos='warning 5' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='74' y='289' clip_width='27' clip_height='46' spritepos='warning 5' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='140' y='60' clip_width='27' clip_height='46' spritepos='warning 6' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='125' y='284' clip_width='27' clip_height='46' spritepos='warning 6' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='168' y='60' clip_width='27' clip_height='46' spritepos='warning 7' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='153' y='302' clip_width='27' clip_height='46' spritepos='warning 7' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='196' y='60' clip_width='27' clip_height='46' spritepos='warning 8' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='979' y='0' clip_width='27' clip_height='46' spritepos='warning 8' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/switching/switching.png' x='224' y='60' clip_width='27' clip_height='46' spritepos='warning 9' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='968' y='47' clip_width='27' clip_height='46' spritepos='warning 9' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.17'>
-    <sprite image='gfx/switching/switching.png' x='0' y='107' clip_width='27' clip_height='46' spritepos='warning 10' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='850' y='32' clip_width='27' clip_height='46' spritepos='warning 10' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>

@@ -36,8 +36,8 @@ void rp::item_that_speaks<Base>::pre_cache()
 {
   super::pre_cache();
 
-  this->get_level_globals().load_font("font/fontopo/fontopo-small.fnt");
-  this->get_level_globals().load_image("gfx/speech/balloon-1.png");
+  this->get_level_globals().load_font("font/comic.ttf");
+  this->get_level_globals().load_image("gfx/common.png");
 } // item_that_speaks::pre_cache()
 
 /*---------------------------------------------------------------------------*/
@@ -50,19 +50,17 @@ void rp::item_that_speaks<Base>::build()
   super::build();
 
   this->get_balloon().set_spike_sprite
-    ( this->get_level_globals().auto_sprite
-      ("gfx/speech/balloon-1.png", "spike") );
+    ( this->get_level_globals().auto_sprite("gfx/common.png", "spike") );
   this->get_balloon().set_corner_sprite
-    ( this->get_level_globals().auto_sprite
-      ("gfx/speech/balloon-1.png", "corner") );
+    ( this->get_level_globals().auto_sprite("gfx/common.png", "corner") );
 
   this->get_balloon().set_horizontal_border_sprite
     ( this->get_level_globals().auto_sprite
-      ( "gfx/speech/balloon-1.png", "horizontal border" ) );
+      ( "gfx/common.png", "horizontal border" ) );
   this->get_balloon().set_vertical_border_sprite
     ( this->get_level_globals().auto_sprite
-      ( "gfx/speech/balloon-1.png", "vertical border" ) );
+      ( "gfx/common.png", "vertical border" ) );
 
   this->get_balloon().set_font
-    ( this->get_level_globals().get_font("font/fontopo/fontopo-small.fnt",20) );
+    ( this->get_level_globals().get_font("font/comic.ttf", 36) );
 } // item_that_speaks::build()

@@ -1,48 +1,69 @@
-zeppelin: 0 0 183 96
-mirror: 184 0 183 96
-light star: 368 0 128 128
-light star dark: 0 97 128 128
-rounded star bright: 129 97 128 128
-fun 1: 258 97 73 15
-balloon piece 4: 332 97 22 55
-fun 2: 258 113 73 15
-fun 3: 258 129 73 15
-fun 4: 258 145 73 15
-fun 5: 497 0 73 15
-fun 6: 571 0 73 15
-fun 7: 645 0 73 15
-fun 8: 719 0 73 15
-fun 9: 793 0 73 15
-fun 10: 867 0 73 15
-fun 11: 941 0 73 15
-fun full: 497 16 73 15
-park 1: 571 16 73 15
-park 2: 645 16 73 15
-park 3: 719 16 73 15
-park 4: 793 16 73 15
-park 5: 867 16 73 15
-park full: 941 16 73 15
-screen: 497 32 73 15
-balloon 3 yellow: 571 32 62 65
-balloon 3 orange: 497 48 62 65
-balloon 3 red: 634 32 62 65
-balloon 3 blue: 697 32 62 65
-balloon 3 purple: 760 32 62 65
-balloon 3 green: 823 32 62 65
-balloon 1 yellow: 886 32 60 85
-balloon 1 orange: 947 32 60 85
-balloon 1 red: 560 98 60 85
-balloon 1 blue: 497 114 60 85
-balloon 1 purple: 355 129 60 85
-balloon piece 2: 332 153 22 37
-balloon 1 green: 258 161 60 85
-balloon 2 yellow: 416 129 60 75
-balloon 2 orange: 0 226 60 75
-balloon 2 red: 61 226 60 75
-balloon 2 blue: 122 226 60 75
-balloon 2 purple: 183 226 60 75
-balloon 2 green: 621 98 60 75
-balloon piece 3: 682 98 55 66
-balloon piece 1: 738 98 51 46
-balloon piece 6: 790 98 45 36
-balloon piece 5: 836 98 39 39
+rail: 0 0 221 15
+zeppelin: 222 0 183 96
+mirror: 0 16 183 96
+light up: 184 16 34 43
+light down: 184 60 34 43
+light star: 406 0 128 128
+light star dark: 219 97 128 128
+lights red: 184 104 34 43
+balloon piece 3: 348 97 55 66
+rounded star bright: 0 113 128 128
+balloon piece 1: 129 113 51 46
+axis: 181 148 34 43
+balloon piece 6: 129 160 45 36
+end: 175 192 42 15
+balloon piece 5: 129 197 39 39
+warning 1: 169 208 27 46
+spike: 198 209 14 14
+vertical border: 198 226 10 20
+post: 210 225 8 43
+corner: 198 249 10 10
+warning 2: 129 237 27 46
+warning 3: 157 255 27 46
+balloon piece 4: 185 261 22 55
+fun 1: 0 242 73 15
+warning 4: 74 242 27 46
+fun 2: 0 258 73 15
+fun 3: 0 274 73 15
+balloon piece 2: 102 242 22 37
+horizontal border: 103 281 20 10
+warning 5: 74 289 27 46
+fun 4: 0 290 73 15
+fun 5: 0 306 73 15
+fun 6: 0 322 73 15
+warning 6: 125 284 27 46
+warning 7: 153 302 27 46
+fun 7: 74 336 73 15
+fun 8: 0 338 73 15
+fun 9: 535 0 73 15
+fun 10: 609 0 73 15
+fun 11: 683 0 73 15
+fun full: 757 0 73 15
+park 1: 831 0 73 15
+park 2: 905 0 73 15
+warning 8: 979 0 27 46
+park 3: 535 16 73 15
+park 4: 609 16 73 15
+park 5: 683 16 73 15
+park full: 757 16 73 15
+screen: 831 16 73 15
+balloon 3 yellow: 905 16 62 65
+warning 9: 968 47 27 46
+balloon 3 orange: 535 32 62 65
+balloon 3 red: 598 32 62 65
+balloon 3 blue: 661 32 62 65
+balloon 3 purple: 724 32 62 65
+balloon 3 green: 787 32 62 65
+warning 10: 850 32 27 46
+balloon 1 yellow: 850 82 60 85
+balloon 1 orange: 911 94 60 85
+balloon 1 red: 535 98 60 85
+balloon 1 blue: 404 129 60 85
+balloon 1 purple: 465 129 60 85
+balloon 1 green: 596 98 60 85
+balloon 2 yellow: 657 98 60 75
+balloon 2 orange: 718 98 60 75
+balloon 2 red: 779 98 60 75
+balloon 2 blue: 840 168 60 75
+balloon 2 purple: 901 180 60 75
+balloon 2 green: 962 180 60 75
