@@ -2,14 +2,14 @@
 <model>
 <action name="idle" duration="0.6" auto_next="idle">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
-<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='46' height='54' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
+<animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='56' height='64' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.1'>
-    <sprite image='gfx/bomb/bomb.png' x='0' y='0' clip_width='46' clip_height='54' spritepos='bomb 1' auto_size='true' width='46' height='54' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='348' y='97' clip_width='56' clip_height='64' spritepos='bomb 1' auto_size='true' width='56' height='64' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="hook" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="hook" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 </marks>
 <snapshots>
@@ -22,7 +22,7 @@
 </action>
 <action name="explose" duration="1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 </marks>
 <snapshots>

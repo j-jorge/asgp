@@ -357,8 +357,7 @@ void rp::wall::hit( unsigned int * impacts, const std::string& name )
       oss << "broken " << name << " " << *impacts;
       set_global_substitute
         ( name, new bear::visual::animation
-          ( get_level_globals().auto_sprite
-            ( "gfx/wall-block/wall-block.png", oss.str() ) ) );
+          ( get_level_globals().auto_sprite( "gfx/common.png", oss.str() ) ) );
 
       create_decorations(name, 5, false);
     }
@@ -386,8 +385,7 @@ void rp::wall::create_decorations
       std::ostringstream stream;
       stream << "splinter " << 1 + (unsigned int)(4.0 * rand() / RAND_MAX);;
         p->set_sprite
-          ( get_level_globals().auto_sprite
-            ( "gfx/wall-block/wall-block.png", stream.str() ) );
+          ( get_level_globals().auto_sprite( "gfx/common.png", stream.str() ) );
         
         bear::universe::force_type force;
         if ( right_orientation )

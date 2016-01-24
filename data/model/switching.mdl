@@ -33,7 +33,7 @@
 <mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='210' y='225' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='157' y='247' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
@@ -75,7 +75,7 @@
 <mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='210' y='225' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='157' y='247' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
@@ -124,7 +124,7 @@
 <mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='210' y='225' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='157' y='247' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
@@ -186,7 +186,7 @@
 <mark label="post" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='210' y='225' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='157' y='247' clip_width='8' clip_height='43' spritepos='post' auto_size='true' width='8' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>

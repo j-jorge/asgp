@@ -8,6 +8,8 @@ zeppelin_mirror "zeppelin/zeppelin-mirror.xcf.bz2"
 balloon_speech "speech/balloon.xcf.bz2"
 switching_img "switching/switching.xcf.bz2"
 switching_warning_img "switching/warning.xcf.bz2"
+bomb_img "bomb/bomb.xcf.bz2"
+wall_block_img "wall-block/wall-block.xcf.bz2"
 
 "light star" autosize * 0.125 with light_star
   "gradient"
@@ -361,4 +363,75 @@ switching_warning_img "switching/warning.xcf.bz2"
 "warning 10" "mask 10" * 0.33 with switching_warning_img
   glob "warning*"
   mask "mask 10"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"bomb 1" image_size * 0.5 with bomb_img
+  glob "*"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"splinter 4" "splinter 4" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "splinter 4"
+  ;
+
+"splinter 3" "splinter 3" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "splinter 3"
+  ;
+
+"splinter 2" "splinter 2" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "splinter 2"
+  ;
+
+"splinter 1" "splinter 1" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "splinter 1"
+  ;
+
+"broken top 2" "broken top 2" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken top 2"
+  ;
+
+"broken top 1" "broken top 1" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken top 1"
+  ;
+
+"broken top 0" "broken top 0" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken top 0"
+  ;
+
+"broken middle 2" "broken middle 2" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken middle 2"
+  ;
+
+"broken middle 1" "broken middle 1" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken middle 1"
+  ;
+
+"broken middle 0" "broken middle 0" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken middle 0"
+  ;
+
+"broken bottom 2" "broken bottom 2" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken bottom 2"
+  ;
+
+"broken bottom 1" "broken bottom 1" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken bottom 1"
+  ;
+
+"broken bottom 0" "broken bottom 0" * 0.5 with wall_block_img
+  [ hollow ] "color"
+  "broken bottom 0"
   ;
