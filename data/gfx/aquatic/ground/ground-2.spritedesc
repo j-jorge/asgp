@@ -123,6 +123,14 @@ hole_img "hole.xcf.bz2"
   "2 supports 2"
   ;
 
+[ bleed ] "rail long patch" "long rail patch" * 0.5 with rail_img
+  "rail"
+  ;
+
+[ bleed ] "rail short patch" "short rail patch" * 0.5 with rail_img
+  "rail"
+  ;
+
 [ bleed ] "broken rail up" autosize * 0.5 with broken_rail_img
   "up"
   ;
@@ -156,6 +164,13 @@ hole_img "hole.xcf.bz2"
   "wave 5"
   "wave 2"
   "back"
+  ;
+
+[ bleed ] "edge right thick" "right area" * 0.5 with edge_img
+  "right"
+  "right 2"
+  "edges straight"
+  "fill thick"
   ;
 
 [ bleed ] "edge right top" "right area" * 0.5 with edge_img

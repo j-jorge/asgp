@@ -1614,7 +1614,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1628,7 +1628,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1642,7 +1642,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1656,7 +1656,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1670,7 +1670,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1684,7 +1684,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1698,7 +1698,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1712,7 +1712,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1726,7 +1726,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1740,7 +1740,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1754,7 +1754,7 @@
 <real value='4513'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3560,7 +3560,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3574,7 +3574,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3588,7 +3588,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3602,7 +3602,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3616,7 +3616,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3630,7 +3630,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3644,7 +3644,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3658,7 +3658,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3672,7 +3672,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3686,7 +3686,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3700,7 +3700,7 @@
 <real value='18849'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='827' y='144' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='250' clip_width='49' clip_height='256' spritepos='edge left' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4598,7 +4598,7 @@
 <real value='3695'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='sin-slope-8' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='517' clip_width='256' clip_height='256' spritepos='sin-slope-8' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -5202,7 +5202,7 @@
 <real value='6255'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='sin-slope-8' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='517' clip_width='256' clip_height='256' spritepos='sin-slope-8' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -8118,7 +8118,7 @@
 <real value='18031'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='sin-slope-8' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='517' clip_width='256' clip_height='256' spritepos='sin-slope-8' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -8267,7 +8267,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8638,7 +8638,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='570' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8761,7 +8761,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8790,7 +8790,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8848,7 +8848,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8924,7 +8924,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8950,7 +8950,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -8993,7 +8993,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -9019,7 +9019,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2898'/>
@@ -9143,7 +9143,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2827'/>
@@ -9210,7 +9210,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2827'/>
@@ -9236,7 +9236,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='517' clip_width='256' clip_height='71' spritepos='sin-slope-7' auto_size='true' width='256' height='71' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='259' clip_width='256' clip_height='71' spritepos='sin-slope-7' auto_size='true' width='256' height='71' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2437'/>
@@ -9274,7 +9274,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2827'/>
@@ -9323,7 +9323,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2386'/>
@@ -9349,7 +9349,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2386'/>
@@ -9432,7 +9432,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='570' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2386'/>
@@ -9458,7 +9458,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2386'/>
@@ -9547,7 +9547,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2386'/>
@@ -9695,7 +9695,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='517' clip_width='256' clip_height='71' spritepos='sin-slope-7' auto_size='true' width='256' height='71' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='259' clip_width='256' clip_height='71' spritepos='sin-slope-7' auto_size='true' width='256' height='71' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1925'/>
@@ -9733,7 +9733,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='570' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -9799,7 +9799,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -9845,7 +9845,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -9888,7 +9888,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -9931,7 +9931,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -9957,7 +9957,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -9983,7 +9983,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1874'/>
@@ -10234,7 +10234,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10303,7 +10303,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='570' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10329,7 +10329,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10375,7 +10375,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1701'/>
@@ -10407,7 +10407,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1701'/>
@@ -10433,7 +10433,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10476,7 +10476,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1701'/>
@@ -10508,7 +10508,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10585,7 +10585,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10617,7 +10617,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1832'/>
@@ -10704,7 +10704,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10768,7 +10768,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='570' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -10948,7 +10948,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1832'/>
@@ -11020,7 +11020,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1832'/>
@@ -11104,7 +11104,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='570' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11190,7 +11190,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11216,7 +11216,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11276,7 +11276,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11325,7 +11325,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11365,7 +11365,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11518,7 +11518,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1618'/>
@@ -11578,7 +11578,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1721'/>
@@ -11642,7 +11642,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1721'/>
@@ -11740,7 +11740,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11783,7 +11783,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11809,7 +11809,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -11910,7 +11910,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='590' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1362'/>
@@ -12086,7 +12086,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1291'/>
@@ -12170,7 +12170,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='517' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1291'/>
@@ -12196,7 +12196,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='517' clip_width='256' clip_height='71' spritepos='sin-slope-7' auto_size='true' width='256' height='71' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='259' clip_width='256' clip_height='71' spritepos='sin-slope-7' auto_size='true' width='256' height='71' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='901'/>
@@ -12234,7 +12234,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='100' clip_height='51' spritepos='' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='197' clip_width='100' clip_height='51' spritepos='rail short patch' auto_size='true' width='100' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1291'/>
@@ -12283,7 +12283,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='643' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='850'/>
@@ -12309,7 +12309,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='623' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='850'/>

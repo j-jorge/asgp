@@ -246,8 +246,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-878
-144
+826
+250
 49
 256
 0
@@ -278,8 +278,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-827
-144
+775
+250
 49
 256
 0
@@ -341,7 +341,7 @@ base_item.position.left
 6720
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -373,7 +373,7 @@ base_item.position.left
 6720
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -533,7 +533,7 @@ base_item.position.left
 6464
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -565,7 +565,7 @@ base_item.position.left
 6464
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -597,7 +597,7 @@ base_item.position.left
 6464
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -629,7 +629,7 @@ base_item.position.left
 6208
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -661,7 +661,7 @@ base_item.position.left
 6208
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -824,7 +824,7 @@ base_item.position.left
 5952
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -856,7 +856,7 @@ base_item.position.left
 5952
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1016,7 +1016,7 @@ base_item.position.left
 5696
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1048,7 +1048,7 @@ base_item.position.left
 5696
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1080,7 +1080,7 @@ base_item.position.left
 5696
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1147,7 +1147,7 @@ base_item.position.left
 5440
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1179,7 +1179,7 @@ base_item.position.left
 5440
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1211,7 +1211,7 @@ base_item.position.left
 5440
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1243,7 +1243,7 @@ base_item.position.left
 5440
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1342,7 +1342,7 @@ base_item.position.left
 5184
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1374,7 +1374,7 @@ base_item.position.left
 5184
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1537,7 +1537,7 @@ base_item.position.left
 4928
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1604,7 +1604,7 @@ base_item.position.left
 4672
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1668,7 +1668,7 @@ base_item.position.left
 4672
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1767,7 +1767,7 @@ base_item.position.left
 4416
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1799,7 +1799,7 @@ base_item.position.left
 4416
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1831,7 +1831,7 @@ base_item.position.left
 4416
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1868,7 +1868,7 @@ basic_renderable_item.color
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-259
+517
 256
 256
 0
@@ -1898,7 +1898,7 @@ base_item.position.left
 4160
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -1930,7 +1930,7 @@ base_item.position.left
 4160
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -1994,7 +1994,7 @@ base_item.position.left
 4160
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2090,7 +2090,7 @@ base_item.position.left
 3904
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -2154,7 +2154,7 @@ base_item.position.left
 3904
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -2221,7 +2221,7 @@ base_item.position.left
 3648
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -2381,7 +2381,7 @@ base_item.position.left
 3392
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2413,7 +2413,7 @@ base_item.position.left
 3392
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2477,7 +2477,7 @@ base_item.position.left
 3392
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2509,7 +2509,7 @@ base_item.position.left
 3392
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -2605,7 +2605,7 @@ base_item.position.left
 3136
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2701,7 +2701,7 @@ base_item.position.left
 3136
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2765,7 +2765,7 @@ base_item.position.left
 2880
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2797,7 +2797,7 @@ base_item.position.left
 2880
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2861,7 +2861,7 @@ base_item.position.left
 2880
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -2925,7 +2925,7 @@ base_item.position.left
 2624
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -2989,7 +2989,7 @@ base_item.position.left
 2624
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -3021,7 +3021,7 @@ base_item.position.left
 2624
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -3054,8 +3054,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-775
-144
+929
+259
 50
 256
 9
@@ -3117,7 +3117,7 @@ base_item.position.left
 2368
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3149,7 +3149,7 @@ base_item.position.left
 2368
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -3219,8 +3219,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-878
-144
+826
+250
 49
 256
 0
@@ -3251,8 +3251,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-827
-144
+775
+250
 49
 256
 0
@@ -3283,8 +3283,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-827
-144
+775
+250
 49
 256
 0
@@ -3346,7 +3346,7 @@ base_item.position.left
 16640
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3538,7 +3538,7 @@ base_item.position.left
 16128
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3570,7 +3570,7 @@ base_item.position.left
 16128
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -3634,7 +3634,7 @@ base_item.position.left
 15872
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3762,7 +3762,7 @@ base_item.position.left
 15616
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3849,7 +3849,7 @@ base_item.position.left
 15360
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -3878,7 +3878,7 @@ base_item.position.left
 15360
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3907,7 +3907,7 @@ base_item.position.left
 15360
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -3994,7 +3994,7 @@ base_item.position.left
 15104
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4023,7 +4023,7 @@ base_item.position.left
 15104
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4052,7 +4052,7 @@ base_item.position.left
 15104
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -4084,7 +4084,7 @@ base_item.position.left
 14848
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4116,7 +4116,7 @@ base_item.position.left
 14848
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4180,7 +4180,7 @@ base_item.position.left
 14848
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4305,7 +4305,7 @@ base_item.position.left
 14592
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -4398,7 +4398,7 @@ base_item.position.left
 14336
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4430,7 +4430,7 @@ base_item.position.left
 14336
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -4462,7 +4462,7 @@ base_item.position.left
 14336
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -4648,7 +4648,7 @@ base_item.position.left
 13824
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -4680,7 +4680,7 @@ base_item.position.left
 13824
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -4840,7 +4840,7 @@ base_item.position.left
 13312
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5000,7 +5000,7 @@ base_item.position.left
 12800
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5032,7 +5032,7 @@ base_item.position.left
 12800
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5192,7 +5192,7 @@ base_item.position.left
 12288
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5256,7 +5256,7 @@ base_item.position.left
 12288
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5317,7 +5317,7 @@ base_item.position.left
 12032
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5410,7 +5410,7 @@ base_item.position.left
 11776
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -5442,7 +5442,7 @@ base_item.position.left
 11776
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -5474,7 +5474,7 @@ base_item.position.left
 11776
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -5663,7 +5663,7 @@ base_item.position.left
 11264
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -5759,7 +5759,7 @@ base_item.position.left
 11264
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -5823,7 +5823,7 @@ base_item.position.left
 11008
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -5887,7 +5887,7 @@ base_item.position.left
 11008
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -5951,7 +5951,7 @@ base_item.position.left
 10752
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6047,7 +6047,7 @@ base_item.position.left
 10496
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6079,7 +6079,7 @@ base_item.position.left
 10496
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6111,7 +6111,7 @@ base_item.position.left
 10496
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -6143,7 +6143,7 @@ base_item.position.left
 10240
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6207,7 +6207,7 @@ base_item.position.left
 10240
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6335,7 +6335,7 @@ base_item.position.left
 9728
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6367,7 +6367,7 @@ base_item.position.left
 9728
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6431,7 +6431,7 @@ base_item.position.left
 9472
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6463,7 +6463,7 @@ base_item.position.left
 9472
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6527,7 +6527,7 @@ base_item.position.left
 9216
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6623,7 +6623,7 @@ base_item.position.left
 8960
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6655,7 +6655,7 @@ base_item.position.left
 8960
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -6719,7 +6719,7 @@ base_item.position.left
 8704
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -6783,7 +6783,7 @@ base_item.position.left
 8704
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6815,7 +6815,7 @@ base_item.position.left
 8448
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -6847,7 +6847,7 @@ base_item.position.left
 8448
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -6879,7 +6879,7 @@ base_item.position.left
 8448
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7007,7 +7007,7 @@ base_item.position.left
 7936
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7135,7 +7135,7 @@ base_item.position.left
 7680
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7167,7 +7167,7 @@ base_item.position.left
 7680
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7199,7 +7199,7 @@ base_item.position.left
 7424
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7231,7 +7231,7 @@ base_item.position.left
 7424
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7263,7 +7263,7 @@ base_item.position.left
 7424
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7295,7 +7295,7 @@ base_item.position.left
 7168
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7327,7 +7327,7 @@ base_item.position.left
 7168
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7359,7 +7359,7 @@ base_item.position.left
 7168
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7391,7 +7391,7 @@ base_item.position.left
 6912
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7423,7 +7423,7 @@ base_item.position.left
 6912
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7455,7 +7455,7 @@ base_item.position.left
 6912
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7484,7 +7484,7 @@ base_item.position.left
 6656
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7542,7 +7542,7 @@ base_item.position.left
 6656
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7658,7 +7658,7 @@ base_item.position.left
 6400
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7716,7 +7716,7 @@ base_item.position.left
 6400
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7745,7 +7745,7 @@ base_item.position.left
 6400
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7803,7 +7803,7 @@ base_item.position.left
 6144
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -7861,7 +7861,7 @@ base_item.position.left
 6144
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7890,7 +7890,7 @@ base_item.position.left
 5888
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -7979,7 +7979,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-259
+517
 256
 256
 0
@@ -8035,7 +8035,7 @@ base_item.position.left
 5632
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8163,7 +8163,7 @@ base_item.position.left
 5120
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8195,7 +8195,7 @@ base_item.position.left
 5120
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8227,7 +8227,7 @@ base_item.position.left
 5120
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8323,7 +8323,7 @@ base_item.position.left
 4864
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8387,7 +8387,7 @@ base_item.position.left
 4608
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8451,7 +8451,7 @@ base_item.position.left
 4352
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -8483,7 +8483,7 @@ base_item.position.left
 4352
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -8546,7 +8546,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-259
+517
 256
 256
 0
@@ -8631,7 +8631,7 @@ base_item.position.left
 3840
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -8689,7 +8689,7 @@ base_item.position.left
 3840
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -8863,7 +8863,7 @@ base_item.position.left
 3328
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -8892,7 +8892,7 @@ base_item.position.left
 3328
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9014,7 +9014,7 @@ base_item.position.left
 3072
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -9046,7 +9046,7 @@ base_item.position.left
 3072
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -9078,7 +9078,7 @@ base_item.position.left
 3072
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9110,7 +9110,7 @@ base_item.position.left
 2816
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9174,7 +9174,7 @@ base_item.position.left
 2816
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9206,7 +9206,7 @@ base_item.position.left
 2816
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9296,7 +9296,7 @@ base_item.position.left
 2560
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -9354,7 +9354,7 @@ base_item.position.left
 2560
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9383,7 +9383,7 @@ base_item.position.left
 2560
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -9441,7 +9441,7 @@ base_item.position.left
 2304
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -9470,7 +9470,7 @@ base_item.position.left
 2304
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9499,7 +9499,7 @@ base_item.position.left
 2304
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9528,7 +9528,7 @@ base_item.position.left
 2304
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9557,7 +9557,7 @@ base_item.position.left
 2304
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9650,7 +9650,7 @@ base_item.position.left
 2048
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9682,7 +9682,7 @@ base_item.position.left
 2048
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9775,7 +9775,7 @@ base_item.position.left
 1792
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9836,7 +9836,7 @@ base_item.position.left
 1536
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9868,7 +9868,7 @@ base_item.position.left
 1536
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -9932,7 +9932,7 @@ base_item.position.left
 1280
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -9964,7 +9964,7 @@ base_item.position.left
 1280
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10118,7 +10118,7 @@ base_item.position.left
 1024
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10208,7 +10208,7 @@ base_item.position.left
 768
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10240,7 +10240,7 @@ base_item.position.left
 768
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10272,7 +10272,7 @@ base_item.position.left
 768
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10304,7 +10304,7 @@ base_item.position.left
 768
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10455,7 +10455,7 @@ base_item.position.left
 512
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10487,7 +10487,7 @@ base_item.position.left
 512
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10551,7 +10551,7 @@ base_item.position.left
 512
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10612,7 +10612,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10641,7 +10641,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10670,7 +10670,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10702,7 +10702,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10734,7 +10734,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10766,7 +10766,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-1.png
+gfx/wall-fill/aquatic/wall-fill-2.png
 0
 0
 256
@@ -10798,7 +10798,7 @@ base_item.position.left
 256
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10908,7 +10908,7 @@ base_item.position.bottom
 3712
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -10934,7 +10934,7 @@ base_item.position.bottom
 3456
 45
 item_with_decoration.sprite
-gfx/wall-fill/aquatic/wall-fill-2.png
+gfx/wall-fill/aquatic/wall-fill-1.png
 0
 0
 256
@@ -11362,8 +11362,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-1
-962
+775
+197
 100
 51
 0
@@ -11436,7 +11436,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-643
+775
 256
 51
 0
@@ -11517,8 +11517,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
-590
+517
+438
 256
 51
 0
@@ -11559,7 +11559,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-643
+775
 256
 51
 0
@@ -11615,7 +11615,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-643
+775
 256
 51
 0
@@ -12129,7 +12129,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-517
+332
 256
 51
 0
@@ -12269,8 +12269,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
-590
+517
+438
 256
 51
 0
@@ -12352,7 +12352,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -12417,7 +12417,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-517
+332
 256
 51
 0
@@ -12469,8 +12469,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
-590
+517
+438
 256
 51
 0
@@ -12511,7 +12511,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -13056,7 +13056,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -13120,8 +13120,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
-590
+517
+438
 256
 51
 0
@@ -13162,7 +13162,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-517
+332
 256
 51
 0
@@ -13230,7 +13230,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-643
+775
 256
 51
 0
@@ -13271,7 +13271,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -13347,8 +13347,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
-590
+517
+438
 256
 51
 0
@@ -13459,7 +13459,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-570
+385
 256
 51
 0
@@ -13784,7 +13784,7 @@ basic_renderable_item.gap.y
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 775
-75
+128
 146
 67
 49
@@ -13833,8 +13833,8 @@ base_item.size.width
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-1
-962
+775
+197
 100
 51
 0
@@ -13937,7 +13937,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-517
+332
 256
 51
 0
@@ -14373,8 +14373,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
 517
+259
 256
 71
 0
@@ -14507,7 +14507,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-517
+332
 256
 51
 0
@@ -14604,7 +14604,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 259
-643
+775
 256
 51
 0
@@ -14713,7 +14713,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-570
+385
 256
 51
 0
@@ -14901,7 +14901,7 @@ base_item.position.left
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -14947,8 +14947,8 @@ basic_renderable_item.color
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
 517
+259
 256
 71
 0
@@ -15000,8 +15000,8 @@ base_item.position.left
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
 517
+259
 256
 71
 0
@@ -15419,8 +15419,8 @@ basic_renderable_item.color
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-259
-590
+517
+438
 256
 51
 0
@@ -15538,7 +15538,7 @@ basic_renderable_item.color
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -15629,7 +15629,7 @@ basic_renderable_item.color
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
 517
-623
+491
 256
 51
 0
@@ -15725,8 +15725,8 @@ basic_renderable_item.gap.x
 45
 item_with_decoration.sprite
 gfx/aquatic/ground/ground-2.png
-1
-962
+775
+197
 100
 51
 0

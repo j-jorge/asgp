@@ -7,15 +7,18 @@ sin-slope-4-alt: 259 1 256 256
 sin-slope-6: 517 1 256 256
 broken rail down: 775 1 154 72
 edge right: 931 1 50 256
-broken rail up: 775 75 146 67
-edge right top: 775 144 50 256
-edge left: 827 144 49 256
-edge left top: 878 144 49 256
-sin-slope-8: 259 259 256 256
-hole: 517 259 256 256
-sin-slope-7: 259 517 256 71
-rail with support: 517 517 256 51
-rail with 2 supports 1: 517 570 256 51
-rail with 2 supports 2: 259 590 256 51
-rail end 1: 517 623 256 51
-rail end 2: 259 643 256 51
+rail long patch: 775 75 150 51
+broken rail up: 775 128 146 67
+rail short patch: 775 197 100 51
+edge right thick: 877 197 50 256
+edge right top: 929 259 50 256
+edge left: 775 250 49 256
+edge left top: 826 250 49 256
+sin-slope-8: 259 517 256 256
+hole: 259 259 256 256
+sin-slope-7: 517 259 256 71
+rail with support: 517 332 256 51
+rail with 2 supports 1: 517 385 256 51
+rail with 2 supports 2: 517 438 256 51
+rail end 1: 517 491 256 51
+rail end 2: 259 775 256 51
