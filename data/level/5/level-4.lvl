@@ -3194,7 +3194,7 @@
 <real value='16570'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/obstacle/obstacle.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/common.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3398,7 +3398,7 @@
 <real value='16640'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/obstacle/obstacle.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/common.png' x='0' y='0' clip_width='51' clip_height='49' spritepos='crate' auto_size='true' width='51' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->

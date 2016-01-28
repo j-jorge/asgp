@@ -4437,7 +4437,7 @@ base_item.position.left
 16570
 45
 item_with_decoration.sprite
-gfx/obstacle/obstacle.png
+gfx/common.png
 0
 0
 51
@@ -4468,7 +4468,7 @@ base_item.position.left
 16640
 45
 item_with_decoration.sprite
-gfx/obstacle/obstacle.png
+gfx/common.png
 0
 0
 51

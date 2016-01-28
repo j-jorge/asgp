@@ -2,52 +2,52 @@
 <model>
 <action name="idle" duration="0.6" auto_next="idle">
 <marks>
-<mark label="tnt 1" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 1" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='20' y='73' clip_width='9' clip_height='49' spritepos='tnt 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='1012' y='60' clip_width='9' clip_height='49' spritepos='tnt 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 2" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 2" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='30' y='73' clip_width='9' clip_height='49' spritepos='tnt 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='891' y='100' clip_width='9' clip_height='49' spritepos='tnt 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 3" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 3" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='36' clip_width='51' clip_height='11' spritepos='tnt 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='266' clip_width='51' clip_height='11' spritepos='tnt 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 4" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 4" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='62' clip_width='51' clip_height='10' spritepos='tnt 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='290' clip_width='51' clip_height='10' spritepos='tnt 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 5" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 5" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='40' y='82' clip_width='51' clip_height='8' spritepos='tnt 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='348' y='171' clip_width='51' clip_height='8' spritepos='tnt 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 6" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 6" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='0' y='50' clip_width='51' clip_height='11' spritepos='tnt 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='127' y='272' clip_width='51' clip_height='11' spritepos='tnt 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 7" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 7" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='50' clip_width='51' clip_height='11' spritepos='tnt 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='278' clip_width='51' clip_height='11' spritepos='tnt 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
@@ -67,52 +67,52 @@
 </action>
 <action name="explose" duration="1" auto_next="">
 <marks>
-<mark label="tnt 1" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 1" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='20' y='73' clip_width='9' clip_height='49' spritepos='tnt 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='1012' y='60' clip_width='9' clip_height='49' spritepos='tnt 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 2" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 2" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='30' y='73' clip_width='9' clip_height='49' spritepos='tnt 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='891' y='100' clip_width='9' clip_height='49' spritepos='tnt 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 3" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 3" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='36' clip_width='51' clip_height='11' spritepos='tnt 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='266' clip_width='51' clip_height='11' spritepos='tnt 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 4" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 4" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='62' clip_width='51' clip_height='10' spritepos='tnt 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='290' clip_width='51' clip_height='10' spritepos='tnt 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 5" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 5" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='40' y='82' clip_width='51' clip_height='8' spritepos='tnt 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='348' y='171' clip_width='51' clip_height='8' spritepos='tnt 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 6" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 6" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='0' y='50' clip_width='51' clip_height='11' spritepos='tnt 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='127' y='272' clip_width='51' clip_height='11' spritepos='tnt 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="tnt 7" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="tnt 7" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='50' clip_width='51' clip_height='11' spritepos='tnt 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='278' clip_width='51' clip_height='11' spritepos='tnt 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>

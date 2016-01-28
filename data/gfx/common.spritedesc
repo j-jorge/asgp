@@ -10,6 +10,7 @@ switching_img "switching/switching.xcf.bz2"
 switching_warning_img "switching/warning.xcf.bz2"
 bomb_img "bomb/bomb.xcf.bz2"
 wall_block_img "wall-block/wall-block.xcf.bz2"
+obstacle_img "obstacle/obstacle.xcf.bz2"
 
 "light star" autosize * 0.125 with light_star
   "gradient"
@@ -434,4 +435,99 @@ wall_block_img "wall-block/wall-block.xcf.bz2"
 "broken bottom 0" "broken bottom 0" * 0.5 with wall_block_img
   [ hollow ] "color"
   "broken bottom 0"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"crate" autosize * 0.4 with obstacle_img
+  "light"
+  "planks"
+  ;
+
+"cable" autosize * 0.4 with obstacle_img
+  "light"
+  "cable"
+  ;
+
+"plank 1" "left plank" * 0.4 with obstacle_img
+  "light"
+  "left plank"
+  ;
+
+"plank 2" "right plank" * 0.4 with obstacle_img
+  "light"
+  "right plank"
+  ;
+
+"plank 3" "topmost plank" * 0.4 with obstacle_img
+  "light"
+  "topmost plank"
+  ;
+
+"plank 4" "top plank" * 0.4 with obstacle_img
+  "light"
+  "top plank"
+  ;
+
+"plank 5" "middle plank" * 0.4 with obstacle_img
+  "light"
+  "middle plank"
+  ;
+
+"plank 6" "bottom plank" * 0.4 with obstacle_img
+  "light"
+  "bottom plank"
+  ;
+
+"plank 7" "bottom-most plank" * 0.4 with obstacle_img
+  "light"
+  "bottom-most plank"
+  ;
+
+"tnt 1" "left plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "left plank"
+  ;
+
+"tnt 2" "right plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "right plank"
+  ;
+
+"tnt 3" "topmost plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "topmost plank"
+  ;
+
+"tnt 4" "top plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "top plank"
+  ;
+
+"tnt 5" "middle plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "middle plank"
+  ;
+
+"tnt 6" "bottom plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "bottom plank"
+  ;
+
+"tnt 7" "bottom-most plank" * 0.4 with obstacle_img
+  "TNT"
+  "TNT effect"
+  "light"
+  "bottom-most plank"
   ;

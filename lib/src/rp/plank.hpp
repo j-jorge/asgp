@@ -49,7 +49,6 @@ namespace rp
     plank();
     plank(const std::string& sprite_name);
 
-    void pre_cache();
     void on_enters_layer();
 
   private:

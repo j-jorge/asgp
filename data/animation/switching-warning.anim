@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation loops='1' first_index='0' last_index='9' loop_back='true' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='169' y='208' clip_width='27' clip_height='46' spritepos='warning 1' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='181' y='192' clip_width='27' clip_height='46' spritepos='warning 1' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='129' y='237' clip_width='27' clip_height='46' spritepos='warning 2' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-  <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='985' y='0' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='181' y='239' clip_width='27' clip_height='46' spritepos='warning 2' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
     <sprite image='gfx/common.png' x='985' y='0' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='980' y='94' clip_width='27' clip_height='46' spritepos='warning 5' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='985' y='0' clip_width='27' clip_height='46' spritepos='warning 3' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='720' y='95' clip_width='27' clip_height='46' spritepos='warning 6' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='979' y='94' clip_width='27' clip_height='46' spritepos='warning 5' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='720' y='142' clip_width='27' clip_height='46' spritepos='warning 7' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='985' y='310' clip_width='27' clip_height='46' spritepos='warning 6' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='338' y='229' clip_width='27' clip_height='46' spritepos='warning 8' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='985' y='357' clip_width='27' clip_height='46' spritepos='warning 7' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.015'>
-    <sprite image='gfx/common.png' x='366' y='229' clip_width='27' clip_height='46' spritepos='warning 9' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='985' y='404' clip_width='27' clip_height='46' spritepos='warning 8' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+  <frame duration='0.015'>
+    <sprite image='gfx/common.png' x='985' y='451' clip_width='27' clip_height='46' spritepos='warning 9' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.17'>
-    <sprite image='gfx/common.png' x='465' y='195' clip_width='27' clip_height='46' spritepos='warning 10' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='567' y='197' clip_width='27' clip_height='46' spritepos='warning 10' auto_size='true' width='27' height='46' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>

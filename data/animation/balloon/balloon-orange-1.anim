@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='60' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/common.png' x='150' y='294' clip_width='60' clip_height='85' spritepos='balloon 1 orange' auto_size='true' width='60' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='535' y='111' clip_width='60' clip_height='85' spritepos='balloon 1 orange' auto_size='true' width='60' height='85' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>

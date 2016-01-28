@@ -37,17 +37,6 @@ rp::plank::plank(const std::string& sprite_name)
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Load the media required by this class.
- */
-void rp::plank::pre_cache()
-{
-  super::pre_cache();
-
-  get_level_globals().load_image("gfx/obstacle/obstacle.png");
-} // rp::plank::pre_cache()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Do post creation actions.
  */
 void rp::plank::on_enters_layer()
@@ -60,8 +49,7 @@ void rp::plank::on_enters_layer()
   set_system_angle_as_visual_angle(true);
 
   set_animation
-    ( get_level_globals().auto_sprite
-      ( "gfx/obstacle/obstacle.png", m_sprite_name ) );
+    ( get_level_globals().auto_sprite( "gfx/common.png", m_sprite_name ) );
   auto_size();
   set_gap_x(10-get_width()/2);
   set_gap_y(10-get_height()/2);  

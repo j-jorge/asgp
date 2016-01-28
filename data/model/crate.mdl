@@ -2,59 +2,59 @@
 <model>
 <action name="idle" duration="1" auto_next="">
 <marks>
-<mark label="plank 1" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 1" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='0' y='73' clip_width='9' clip_height='49' spritepos='plank 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='209' y='192' clip_width='9' clip_height='49' spritepos='plank 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 2" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 2" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='10' y='73' clip_width='9' clip_height='49' spritepos='plank 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='1013' y='0' clip_width='9' clip_height='49' spritepos='plank 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 3" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 3" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='0' clip_width='51' clip_height='11' spritepos='plank 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='242' clip_width='51' clip_height='11' spritepos='plank 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 4" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 4" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='0' y='62' clip_width='51' clip_height='10' spritepos='plank 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='127' y='284' clip_width='51' clip_height='10' spritepos='plank 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 6" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 6" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='12' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='254' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 7" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 7" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='24' clip_width='51' clip_height='11' spritepos='plank 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='127' y='260' clip_width='51' clip_height='11' spritepos='plank 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 5" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="plank 5" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_true' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='40' y='73' clip_width='51' clip_height='8' spritepos='plank 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='348' y='162' clip_width='51' clip_height='8' spritepos='plank 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 8" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 8" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='12' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='254' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
@@ -75,59 +75,59 @@
 </action>
 <action name="explose" duration="1" auto_next="">
 <marks>
-<mark label="plank 1" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 1" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='0' y='73' clip_width='9' clip_height='49' spritepos='plank 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='209' y='192' clip_width='9' clip_height='49' spritepos='plank 1' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 2" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 2" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='10' y='73' clip_width='9' clip_height='49' spritepos='plank 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='1013' y='0' clip_width='9' clip_height='49' spritepos='plank 2' auto_size='true' width='9' height='49' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 3" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 3" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='0' clip_width='51' clip_height='11' spritepos='plank 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='242' clip_width='51' clip_height='11' spritepos='plank 3' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 4" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 4" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='0' y='62' clip_width='51' clip_height='10' spritepos='plank 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='127' y='284' clip_width='51' clip_height='10' spritepos='plank 4' auto_size='true' width='51' height='10' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 6" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 6" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='12' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='254' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 7" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 7" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='24' clip_width='51' clip_height='11' spritepos='plank 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='127' y='260' clip_width='51' clip_height='11' spritepos='plank 7' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 5" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 5" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_true' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='40' y='73' clip_width='51' clip_height='8' spritepos='plank 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='348' y='162' clip_width='51' clip_height='8' spritepos='plank 5' auto_size='true' width='51' height='8' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="plank 8" apply_angle_to_animation="1" pause_animation_when_hidden="0">
+<mark label="plank 8" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/obstacle/obstacle.png' x='52' y='12' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/common.png' x='75' y='254' clip_width='51' clip_height='11' spritepos='plank 6' auto_size='true' width='51' height='11' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
