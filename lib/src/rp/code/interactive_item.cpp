@@ -93,11 +93,6 @@ void rp::interactive_item::on_enters_layer()
     get_level_globals().auto_sprite( "gfx/common.png", "light star dark" );
   m_plunger_sprite.colorize( bear::visual::color( "#77d623" ) );
 
-  bear::visual::sprite spr
-    ( get_level_globals().auto_sprite( "gfx/common.png", "light star" ) );
-  spr.colorize( bear::visual::color( "#fffbda" ) );
-  set_sprite( spr );
-
   deactivate();
   
   if ( m_item != handle_type(NULL) )
