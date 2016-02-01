@@ -1,0 +1,156 @@
+sprite_sheet "ground-3" 1024 x 1024 margin 0
+
+steep "steep-slope.xcf.bz2"
+broken_wall_img "broken-wall.xcf.bz2"
+
+[ bleed ] "steep-slope-1" "1" * 0.5 with steep
+  "1"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-2" "2" * 0.5 with steep
+  "2"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-3" "3" * 0.5 with steep
+  "3"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-4" "4" * 0.5 with steep
+  "4"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-4-alt" "4" * 0.5 with steep
+  "4"
+
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-fill-4-to-5" "4 to 5" * 0.5 with steep
+  "4 to 5"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-5" "5" * 0.5 with steep
+  "5"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-5-alt" "5" * 0.5 with steep
+  "5"
+
+  "ends"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-7" "7" * 0.5 with steep
+  "7"
+
+  "ends"
+  "rail"
+  "support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-8" "8" * 0.5 with steep
+  "8"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "steep-slope-9" "9" * 0.5 with steep
+  "9"
+
+  "ends"
+  "support"
+  "rail"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  ;
+
+[ bleed ] "broken wall 1" autosize * 0.5 with broken_wall_img
+
+  "broken 2 back"
+  "broken 2 front"
+  "broken 2 balls"
+  "broken 2 cherry"
+  "broken 2 back"
+  ;
+
+[ bleed ] "broken wall 2" autosize * 0.5 with broken_wall_img
+
+  "broken 1 back alt"
+  "broken 1 front"
+  "broken 1 balls"
+  "broken 1 biscuit"
+  ;
+
+[ bleed ] "broken wall 3" autosize * 0.5 with broken_wall_img
+
+  "broken 1 back"
+  "broken 1 front"
+  "broken 1 balls"
+  "broken 1 biscuit"
+  ;
+
+[ bleed ] "broken wall 4" autosize * 0.5 with broken_wall_img
+
+  "broken 2 back"
+  "broken 2 front"
+  "broken 2 balls"
+  "broken 2 biscuit"
+  "broken 2 back"
+  ;
