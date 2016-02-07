@@ -1,0 +1,38 @@
+diff -Naur libs/filesystem/v2/src/v2_operations.cpp libs/filesystem/v2/src/v2_operations.cpp
+--- libs/filesystem/v2/src/v2_operations.cpp	2012-01-15 20:22:27.000000000 +0100
++++ libs/filesystem/v2/src/v2_operations.cpp	2016-02-07 15:19:35.843634577 +0100
+@@ -60,11 +60,14 @@
+ 
+ # else // BOOST_POSIX_API
+ #   include <sys/types.h>
+-#   if !defined(__APPLE__) && !defined(__OpenBSD__)
++#   if !defined(__APPLE__) && !defined(__OpenBSD__) && !defined( __ANDROID__ )
+ #     include <sys/statvfs.h>
+ #     define BOOST_STATVFS statvfs
+ #     define BOOST_STATVFS_F_FRSIZE vfs.f_frsize
+ #   else
++#     ifdef __ANDROID__
++#     include <sys/vfs.h>
++#     endif
+ #ifdef __OpenBSD__
+ #     include <sys/param.h>
+ #endif
+diff -Naur libs/filesystem/v3/src/operations.cpp libs/filesystem/v3/src/operations.cpp
+--- libs/filesystem/v3/src/operations.cpp	2012-01-28 15:40:16.000000000 +0100
++++ libs/filesystem/v3/src/operations.cpp	2016-02-07 15:18:16.966412851 +0100
+@@ -81,11 +81,14 @@
+     const fs::path dot_path(".");
+     const fs::path dot_dot_path("..");
+ #   include <sys/types.h>
+-#   if !defined(__APPLE__) && !defined(__OpenBSD__)
++#   if !defined(__APPLE__) && !defined(__OpenBSD__) && !defined( __ANDROID__ )
+ #     include <sys/statvfs.h>
+ #     define BOOST_STATVFS statvfs
+ #     define BOOST_STATVFS_F_FRSIZE vfs.f_frsize
+ #   else
++#     ifdef __ANDROID__
++#     include <sys/vfs.h>
++#     endif
+ #     ifdef __OpenBSD__
+ #     include <sys/param.h>
+ #     endif

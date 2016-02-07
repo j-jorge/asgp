@@ -18,6 +18,7 @@ bin
 *~
 log.txt
 prof.log
+build-scripts/android/.cache
 
 # Translations
 *.gmo

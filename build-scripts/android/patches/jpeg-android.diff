@@ -1,0 +1,17 @@
+diff -Naur Android.mk Android.mk
+--- Android.mk	2016-02-07 17:26:05.346982076 +0100
++++ Android.mk	2016-02-07 17:31:42.970467996 +0100
+@@ -68,6 +68,13 @@
+  
+ LOCAL_MODULE := libjpeg
+ 
++ifeq ($(notdir $(MAKECMDGOALS)),libjpeg.a)
++  LOCAL_SRC_FILES +=  $(libsimd_SOURCES_DIST)
++  include $(BUILD_STATIC_LIBRARY)
++  include $(CLEAR_VARS)
++  LOCAL_MODULE := dummy
++endif
++
+ include $(BUILD_SHARED_LIBRARY)
+ 
+ ######################################################

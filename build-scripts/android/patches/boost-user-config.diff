@@ -1,0 +1,106 @@
+diff -Naur tools/build/v2/user-config.jam tools/build/v2/user-config.jam
+--- tools/build/v2/user-config.jam	2011-01-25 19:06:12.000000000 +0100
++++ tools/build/v2/user-config.jam	2016-02-07 16:10:22.164427575 +0100
+@@ -33,60 +33,49 @@
+ #
+ #   http://boost.org/boost-build2/doc/html/bbv2/advanced.html#bbv2.advanced.jam_language
+ #
+-
+ # ------------------
+-# GCC configuration.
++# Android configurations.
+ # ------------------
+ 
+-# Configure gcc (default version).
+-# using gcc ;
+-
+-# Configure specific gcc version, giving alternative name to use.
+-# using gcc : 3.2 : g++-3.2 ;
+-
+-
+-# -------------------
+-# MSVC configuration.
+-# -------------------
+-
+-# Configure msvc (default version, searched for in standard locations and PATH).
+-# using msvc ;
+-
+-# Configure specific msvc version (searched for in standard locations and PATH).
+-# using msvc : 8.0 ;
+-
+-
+-# ----------------------
+-# Borland configuration.
+-# ----------------------
+-# using borland ;
+-
+-
+-# ----------------------
+-# STLPort configuration.
+-# ----------------------
+-
+-#   Configure specifying location of STLPort headers. Libraries must be either
+-# not needed or available to the compiler by default.
+-# using stlport : : /usr/include/stlport ;
+-
+-# Configure specifying location of both headers and libraries explicitly.
+-# using stlport : : /usr/include/stlport /usr/lib ;
+-
+-
+-# -----------------
+-# QT configuration.
+-# -----------------
+-
+-# Configure assuming QTDIR gives the installation prefix.
+-# using qt ;
+-
+-# Configure with an explicit installation prefix.
+-# using qt : /usr/opt/qt ;
+-
+-# ---------------------
+-# Python configuration.
+-# ---------------------
++import os ;
++local AndroidNDKRoot = [ os.environ NDK_ROOT ] ;
+ 
+-# Configure specific Python version.
+-# using python : 3.1 : /usr/bin/python3 : /usr/include/python3.1 : /usr/lib ;
++using gcc : androidR10e
++:
++arm-linux-androideabi-g++
++:
++<archiver>arm-linux-androideabi-ar
++<compileflags>-std=c++11
++<compileflags>-fexceptions
++<compileflags>-frtti
++<compileflags>-fpic
++<compileflags>-ffunction-sections
++<compileflags>-funwind-tables
++<compileflags>-march=armv7-a
++<compileflags>-mtune=xscale
++<compileflags>-msoft-float
++<compileflags>-mfpu=vfpv3-d16
++<linkflags>-march=armv7-a
++<linkflags>-Wl,--fix-cortex-a8
++<compileflags>-mthumb
++<compileflags>-Os
++<compileflags>-fomit-frame-pointer
++<compileflags>-fno-strict-aliasing
++<compileflags>-finline-limit=64
++<compileflags>-I$(AndroidNDKRoot)/platforms/android-9/arch-arm/usr/include
++<compileflags>-Wa,--noexecstack
++<compileflags>-DANDROID
++<compileflags>-D__ANDROID__
++<compileflags>-DNDEBUG
++<compileflags>-O3
++<compileflags>-I$(AndroidNDKRoot)/sources/cxx-stl/gnu-libstdc++/4.9/include
++<compileflags>-I$(AndroidNDKRoot)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include
++# @Moss - Above are the 'official' android flags
++<architecture>arm
++<compileflags>-fvisibility=hidden
++<compileflags>-fvisibility-inlines-hidden
++<compileflags>-fdata-sections
++<cxxflags>-D__arm__
++<cxxflags>-D_REENTRANT
++<cxxflags>-D_GLIBCXX__PTHREADS
++;

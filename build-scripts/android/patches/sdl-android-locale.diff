@@ -1,0 +1,77 @@
+diff -r 627f256b0e56 android-project/src/org/libsdl/app/SDLActivity.java
+--- android-project/src/org/libsdl/app/SDLActivity.java	Sat Oct 12 16:29:34 2013 -0300
++++ android-project/src/org/libsdl/app/SDLActivity.java	Sun Oct 13 21:57:30 2013 +0200
+@@ -264,6 +264,10 @@
+         return mSingleton;
+     }
+ 
++    public static String getLocale() {
++        return getContext().getResources().getConfiguration().locale.toString();
++    }
++
+     static class ShowTextInputTask implements Runnable {
+         /*
+          * This is used to regulate the pan&scan method to have some offset from
+diff -r 627f256b0e56 include/SDL_system.h
+--- include/SDL_system.h	Sat Oct 12 16:29:34 2013 -0300
++++ include/SDL_system.h	Sun Oct 13 21:57:30 2013 +0200
+@@ -108,6 +108,19 @@
+  */
+ extern DECLSPEC const char * SDLCALL SDL_AndroidGetExternalStoragePath();
+ 
++
++/* Get the user's locale, as defined in the Activity.
++
++   Since the user can change the locale at any moment, the result of
++   this function may not be constant during the time of the
++   program. You may want to call it again after an
++   SDL_APP_DIDENTEREFOREGROUND event.
++
++   The caller has the responsibility to release the returned string with
++   SDL_free().
++ */
++extern DECLSPEC char * SDLCALL SDL_AndroidGetLocale();
++
+ #endif /* __ANDROID__ */
+ 
+ /* Ends C function definitions when using C++ */
+diff -r 627f256b0e56 src/core/android/SDL_android.c
+--- src/core/android/SDL_android.c	Sat Oct 12 16:29:34 2013 -0300
++++ src/core/android/SDL_android.c	Sun Oct 13 21:57:30 2013 +0200
+@@ -1416,6 +1416,36 @@
+     return s_AndroidExternalFilesPath;
+ }
+ 
++char * SDL_AndroidGetLocale()
++{
++    char *androidLocale;
++
++    struct LocalReferenceHolder refs = LocalReferenceHolder_Setup(__FUNCTION__);
++    jmethodID mid;
++    jstring localeString;
++    const char *locale;
++
++    JNIEnv *env = Android_JNI_GetEnv();
++    if (!LocalReferenceHolder_Init(&refs, env)) {
++        LocalReferenceHolder_Cleanup(&refs);
++        return NULL;
++    }
++
++    /* localeString = SDLActivity.getLocale(); */
++    mid = (*env)->GetStaticMethodID(env, mActivityClass,
++            "getLocale","()Ljava/lang/String;");
++    localeString =
++        (jstring)(*env)->CallStaticObjectMethod(env, mActivityClass, mid);
++    locale = (*env)->GetStringUTFChars(env, localeString, NULL);
++    
++    androidLocale = SDL_strdup(locale);
++    (*env)->ReleaseStringUTFChars(env, localeString, locale);
++
++    LocalReferenceHolder_Cleanup(&refs);
++
++    return androidLocale;
++}
++
+ #endif /* __ANDROID__ */
+ 
+ /* vi: set ts=4 sw=4 expandtab: */
