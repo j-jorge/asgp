@@ -8,13 +8,14 @@ msgstr ""
 "Project-Id-Version: Andy's Super Great Park\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-24 11:50+0100\n"
-"PO-Revision-Date: 2013-11-24 12:11+0100\n"
+"PO-Revision-Date: 2016-02-08 22:08+0100\n"
 "Last-Translator: Julien Jorge <julien.jorge@stuff-o-matic.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.8.4\n"
+"Language: fr\n"
 
 #: ../../../lib/src/rp/transition_effect/code/level_ending_effect.cpp:1711
 msgid "%1% points in level \"%2%\" of Andy's Super Great Park!"
@@ -569,7 +570,7 @@ msgstr ""
 #: ../../../data/model/zeppelin/zeppelin-mirror.mdl
 #: ../../../data/model/zeppelin/zeppelin.mdl
 msgid "animation/zeppelin/screen/more-fun.canim"
-msgstr "animation/i18n/fr/zeppelin/screen/more-fun.canim"
+msgstr ""
 
 #: ../../../data/level/5/level-5.lvl ../../../data/level/3/level-6.lvl
 #: ../../../data/level/3/level-1.lvl ../../../data/level/2/level-4.lvl
