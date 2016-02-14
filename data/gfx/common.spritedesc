@@ -22,11 +22,13 @@ obstacle_img "obstacle/obstacle.xcf.bz2"
 "light star dark" autosize * 0.125 with light_star
   "dark"
   "inside"
+  "color"
   ;
 
 "rounded star bright" autosize * 0.125 with rounded_star
   "bright border"
   "inside"
+  "color"
   ;
 
 /*----------------------------------------------------------------------------*/

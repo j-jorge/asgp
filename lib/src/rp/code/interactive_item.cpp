@@ -87,11 +87,9 @@ void rp::interactive_item::on_enters_layer()
 
   m_cannonball_sprite =
     get_level_globals().auto_sprite( "gfx/common.png", "rounded star bright" );
-  m_cannonball_sprite.colorize( bear::visual::color( "#ffff27" ) );
 
   m_plunger_sprite =
     get_level_globals().auto_sprite( "gfx/common.png", "light star dark" );
-  m_plunger_sprite.colorize( bear::visual::color( "#77d623" ) );
 
   deactivate();
   
