@@ -36,7 +36,7 @@ void rp::item_that_speaks<Base>::pre_cache()
 {
   super::pre_cache();
 
-  this->get_level_globals().load_font("font/comic.ttf");
+  this->get_level_globals().load_font("font/Matias.otf");
   this->get_level_globals().load_image("gfx/common.png");
 } // item_that_speaks::pre_cache()
 
@@ -62,5 +62,5 @@ void rp::item_that_speaks<Base>::build()
       ( "gfx/common.png", "vertical border" ) );
 
   this->get_balloon().set_font
-    ( this->get_level_globals().get_font("font/comic.ttf", 36) );
+    ( this->get_level_globals().get_font("font/Matias.otf", 36) );
 } // item_that_speaks::build()
