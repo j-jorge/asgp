@@ -1,0 +1,149 @@
+sprite_sheet "ground-1" 1024 x 1024 margin 0
+
+bump "bump-slope.xcf.bz2"
+gentle "gentle-slope.xcf.bz2"
+
+[ bleed ] "bump-slope-1" "1" * 0.5 with bump
+  "1"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+[ bleed ] "bump-slope-2" "2" * 0.5 with bump
+  "2"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+[ bleed ] "bump-slope-3" "3" * 0.5 with bump
+  "3"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+[ bleed ] "bump-slope-4" "4" * 0.5 with bump
+  "4"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+[ bleed ] "bump-slope-5" "5" * 0.5 with bump
+  "5"
+
+  "middle support"
+  "top left end"
+  "bottom right end"
+  "middle rail"
+  "bottom right"
+  "top left"
+  ;
+
+[ bleed ] "gentle-slope-1" "1" * 0.5 with gentle
+  "1"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-2" "2" * 0.5 with gentle
+  "2"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-3" "3" * 0.5 with gentle
+  "3"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-3-alt" "3" * 0.5 with gentle
+  "3"
+
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-4" "4" * 0.5 with gentle
+  "4"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-5" "5" * 0.5 with gentle
+  "5"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-5-alt" "5" * 0.5 with gentle
+  "5"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  "support"
+  ;
+
+[ bleed ] "gentle-slope-6" "6" * 0.5 with gentle
+  "6"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-7" "7" * 0.5 with gentle
+  "7"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
+
+[ bleed ] "gentle-slope-8" "8" * 0.5 with gentle
+  "8"
+
+  "ends"
+  "top left end"
+  "bottom right end"
+  "rail"
+  ;
