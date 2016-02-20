@@ -141,12 +141,15 @@ void rp::cart::pre_cache()
 {
   super::pre_cache();
 
+  get_level_globals().load_model("model/cannonball.cm");
   get_level_globals().load_model("model/cart.cm");
+  get_level_globals().load_model("model/plunger.cm");
 
   get_level_globals().load_sound("sound/empty.ogg");
   get_level_globals().load_sound("sound/effect/tiny-bell.ogg");
   get_level_globals().load_sound("sound/cart/empty-cannon.ogg");
   get_level_globals().load_sound("sound/hit.ogg");
+  get_level_globals().load_sound("sound/hit-2.ogg");
   get_level_globals().load_sound("sound/metal-1.ogg");
   get_level_globals().load_sound("sound/metal-2.ogg");
   get_level_globals().load_sound("sound/metal-3.ogg");
@@ -178,7 +181,7 @@ void rp::cart::pre_cache()
   get_level_globals().load_image("gfx/status/cursor.png");
   get_level_globals().load_image("gfx/status/status.png");
   get_level_globals().load_image("gfx/status/score.png");
-  get_level_globals().load_image("gfx/common.png");
+  get_level_globals().load_image("gfx/status/medal/medal.png");
   get_level_globals().load_image("gfx/common.png");
 
   get_level_globals().load_animation("animation/effect/wave.canim");
