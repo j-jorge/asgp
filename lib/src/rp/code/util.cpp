@@ -9,7 +9,7 @@
 /**
  * \file
  * \brief Utility functions about roller painting.
- * \author Sébastien Angibaud
+ * \author SÃ©bastien Angibaud
  */
 #include "rp/util.hpp"
 
@@ -375,6 +375,25 @@ void rp::util::open_url( const std::string& url )
 #else
 
   bear::engine::system_api::open( url );
+
+#endif
+} // util::open_url()
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tag an event in the analytics service.
+ * \param tag the tag of the event.
+ */
+void rp::util::tag_event( const std::string& tag )
+{
+#ifdef __ANDROID__
+
+  java_activity activity;
+  activity.tag_event( tag );
+
+#else
+
+  claw::logger << claw::log_verbose << "Event: " << tag << '\n';
 
 #endif
 } // util::open_url()

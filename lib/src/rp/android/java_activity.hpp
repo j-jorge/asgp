@@ -25,6 +25,8 @@ namespace rp
   class java_activity
   {
   public:
+    void tag_event( const std::string& tag ) const;
+    
     void open_url( const std::string& url ) const;
     void show_home() const;
 

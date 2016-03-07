@@ -17,6 +17,34 @@
 #include <jni.h>
 #include <SDL2/SDL_system.h>
 
+#include <cassert>
+
+/*----------------------------------------------------------------------------*/
+/**
+ * \brief Tag an event in the analytics service.
+ * \param tag The event.
+ */
+void rp::java_activity::tag_event( const std::string& tag ) const
+{
+  JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
+
+  assert( !env->ExceptionCheck() );
+
+  jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
+  jclass clazz( env->GetObjectClass(activity) );
+
+  const jmethodID method_id
+    ( env->GetMethodID( clazz, "tagEvent", "(Ljava/lang/String;)V" ) );
+
+  jstring java_string_tag( (jstring)(env->NewStringUTF(tag.c_str()) ) );
+  env->CallVoidMethod( activity, method_id, java_string_tag );
+  env->DeleteLocalRef(java_string_tag);
+    
+  env->DeleteLocalRef(activity);
+
+  assert( !env->ExceptionCheck() );
+} // java_activity::tag_event()
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Tells the system to open a given URL.
@@ -25,6 +53,8 @@
 void rp::java_activity::open_url( const std::string& url ) const
 {
   JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
+
+  assert( !env->ExceptionCheck() );
 
   jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
   jclass clazz( env->GetObjectClass(activity) );
@@ -37,6 +67,8 @@ void rp::java_activity::open_url( const std::string& url ) const
   env->DeleteLocalRef(java_string_url);
     
   env->DeleteLocalRef(activity);
+
+  assert( !env->ExceptionCheck() );
 } // java_activity::open_url()
 
 /*----------------------------------------------------------------------------*/
@@ -56,6 +88,8 @@ std::string rp::java_activity::get_device_model_name() const
 {
   JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
 
+  assert( !env->ExceptionCheck() );
+
   jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
   jclass clazz( env->GetObjectClass(activity) );
 
@@ -69,6 +103,8 @@ std::string rp::java_activity::get_device_model_name() const
 
   env->ReleaseStringUTFChars(java_device_name, device_name);
   env->DeleteLocalRef(activity);
+
+  assert( !env->ExceptionCheck() );
 
   return result;
 } // java_activity::get_device_model_name()
@@ -100,6 +136,8 @@ void rp::java_activity::native_call( std::string method_name ) const
 {
   JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
 
+  assert( !env->ExceptionCheck() );
+
   jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
   jclass clazz( env->GetObjectClass(activity) );
 
@@ -109,6 +147,8 @@ void rp::java_activity::native_call( std::string method_name ) const
   env->CallVoidMethod( activity, method_id );
     
   env->DeleteLocalRef(activity);
+
+  assert( !env->ExceptionCheck() );
 } // java_activity::native_call()
 
 #endif // __ANDROID__

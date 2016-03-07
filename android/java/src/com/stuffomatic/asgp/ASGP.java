@@ -19,6 +19,8 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.RelativeLayout;
 
+import com.amplitude.api.Amplitude;
+
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
@@ -40,6 +42,10 @@ public class ASGP extends SDLActivity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        Amplitude.getInstance().initialize
+            ( this, "03de6dc65358e076d5ae691dc8748d74")
+            .enableForegroundTracking(getApplication() );
+
         createAdView();
         hideAds();
 
@@ -60,6 +66,10 @@ public class ASGP extends SDLActivity
         startActivity(browserIntent);
     } // openUrl()
 
+    public void tagEvent( String tag ) {
+        Amplitude.getInstance().logEvent( tag );
+    }
+        
     /**
      * Tells the system to show the home screen.
      */
