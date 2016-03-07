@@ -32,7 +32,9 @@ compile_object()
     else
         COMPILER="$ANDROID_CXX $CXXFLAGS"
     fi
-        
+
+    printf "Compiling %s\n" "$2"
+
     $COMPILER \
              -fPIC \
              -I"$SDL_SOURCE_DIR/src/main/android/" \
@@ -53,6 +55,8 @@ compile()
         compile_object $f $OBJECT_FILE
     done
         
+    printf "Compiling %s\n" "$TARGET_SO"
+    
     $ANDROID_CXX $CXXFLAGS $LDFLAGS \
              -fPIC -shared \
              -Wl,-soname,$ASGP_LIB_NAME \
