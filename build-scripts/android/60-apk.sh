@@ -6,10 +6,7 @@ set -e
 
 cd $ASGP_APK_ROOT/java
 
-mkdir --parents src/org/libsdl/app/
-sed 's|loadLibraries();||g' \
-    $SDL_SOURCE_DIR/android-project/src/org/libsdl/app/SDLActivity.java \
-    > src/org/libsdl/app/SDLActivity.java
+rm -fr bin
 
 BUILD_MODE=
 
