@@ -1,7 +1,0 @@
-# The format of the lines is
-# picture: x y width height
-
-scythe: 0 0 197 295
-board: 198 0 310 238
-coffin: 0 296 88 200
-broom: 89 296 139 88

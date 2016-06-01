@@ -1,6 +1,0 @@
-# The format of the lines is
-# picture: x y width height
-
-rocket: 0 0 73 430
-tower: 74 0 175 306
-satellite: 250 0 197 136

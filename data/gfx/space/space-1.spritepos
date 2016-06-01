@@ -1,9 +1,0 @@
-# The format of the lines is
-# picture: x y width height
-
-board: 0 0 310 247
-shuttle: 311 0 182 163
-gray: 0 248 170 170
-sun: 171 248 170 170
-astronaut: 342 248 91 133
-rod: 311 164 170 5
