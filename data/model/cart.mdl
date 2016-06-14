@@ -752,6 +752,7 @@
 <mark label="gun" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 <mark label="tar" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="1">
+<animation_file path='animation/cart/tar.canim' auto_size='true' width='138' height='88' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
 <mark label="fire" apply_angle_to_animation="1" pause_animation_when_hidden="0" reset_animation_with_action="0">
 </mark>
@@ -784,7 +785,7 @@
 <mark_placement label="deco 2" function="" x="-22" y="39" width="0" height="0" z="5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="deco 3" function="" x="24" y="35" width="0" height="0" z="5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="fire" function="" x="104" y="34" width="0" height="0" z="-6" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="tar" function="" x="27" y="56" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="tar" function="" x="40.027" y="58.973" width="0" height="0" z="15" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="gun" function="" x="108" y="54" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="cannon" function="" x="70.7001" y="34" width="0" height="0" z="-5" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_5" function="" x="14.9043" y="34.2128" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
@@ -793,8 +794,8 @@
 <mark_placement label="balloon_anchor_2" function="" x="-4.1039" y="31.9974" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor_1" function="" x="-2.75532" y="43.5745" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="balloon_anchor" function="" x="-10" y="31" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="plunger" function="" x="98" y="55" width="0" height="0" z="9" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
-<mark_placement label="arm" function="" x="41.9255" y="51.6596" width="0" height="0" z="10" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="plunger" function="" x="96" y="61" width="0" height="0" z="9" angle="0.13" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
+<mark_placement label="arm" function="" x="41.9255" y="51.6596" width="0" height="0" z="10" angle="0.13" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="painter" function="on_painter_collision" x="50" y="56" width="19" height="36" z="-1" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 <mark_placement label="body" function="" x="34" y="21" width="0" height="0" z="0" angle="0" visible="1" x_easing="none:in" y_easing="none:in" width_easing="none:in" height_easing="none:in" angle_easing="none:in"/>
 </mark_placements>
