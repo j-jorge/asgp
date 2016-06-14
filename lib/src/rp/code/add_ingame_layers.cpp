@@ -86,48 +86,46 @@ void rp::add_ingame_layers::pre_cache()
   get_level_globals().load_model("model/zeppelin/zeppelin.cm");
   get_level_globals().load_model("model/zeppelin/zeppelin-mirror.cm");
 
-  get_level_globals().load_image( "gfx/slope/bump/bump-slope-1.png" );
-  get_level_globals().load_image( "gfx/slope/bump/bump-slope-2.png" );
-  get_level_globals().load_image( "gfx/slope/bump/bump-slope-3.png" );
-  get_level_globals().load_image( "gfx/slope/bump/bump-slope-4.png" );
-  get_level_globals().load_image( "gfx/slope/bump/bump-slope-5.png" );
+  get_level_globals().load_image( "gfx/aquatic/ground/ground-1.png" );
+  get_level_globals().load_image( "gfx/aquatic/ground/ground-2.png" );
+  get_level_globals().load_image( "gfx/aquatic/ground/ground-3.png" );
+  get_level_globals().load_image( "gfx/wall-fill/aquatic/wall-fill-1.png" );
+  get_level_globals().load_image( "gfx/wall-fill/aquatic/wall-fill-2.png" );
 
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-1.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-2.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-3.png" );
-  get_level_globals().load_image
-    ( "gfx/slope/gentle-slope/gentle-slope-3-alt.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-4.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-5.png" );
-  get_level_globals().load_image
-    ( "gfx/slope/gentle-slope/gentle-slope-5-alt.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-6.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-7.png" );
-  get_level_globals().load_image( "gfx/slope/gentle-slope/gentle-slope-8.png" );
+  get_level_globals().load_image( "gfx/cake/ground/ground-1.png" );
+  get_level_globals().load_image( "gfx/cake/ground/ground-2.png" );
+  get_level_globals().load_image( "gfx/cake/ground/ground-3.png" );
+  get_level_globals().load_image( "gfx/wall-fill/cake/wall-fill-1.png" );
+  get_level_globals().load_image( "gfx/wall-fill/cake/wall-fill-2.png" );
+  get_level_globals().load_image( "gfx/wall-fill/cake/wall-fill-3.png" );
 
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-1.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-2.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-3.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-4.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-4-alt.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-6.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-7.png" );
-  get_level_globals().load_image( "gfx/slope/sin-slope/sin-slope-8.png" );
+  get_level_globals().load_image( "gfx/death/ground/ground-1.png" );
+  get_level_globals().load_image( "gfx/death/ground/ground-2.png" );
+  get_level_globals().load_image( "gfx/death/ground/ground-3.png" );
+  get_level_globals().load_image( "gfx/wall-fill/death/wall-fill-1.png" );
+  get_level_globals().load_image( "gfx/wall-fill/death/wall-fill-2.png" );
+  get_level_globals().load_image( "gfx/wall-fill/death/wall-fill-3.png" );
 
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-1.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-2.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-3.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-4.png" );
-  get_level_globals().load_image
-    ( "gfx/slope/steep-slope/steep-slope-4-alt.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-5.png" );
-  get_level_globals().load_image
-    ( "gfx/slope/steep-slope/steep-slope-5-alt.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-7.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-8.png" );
-  get_level_globals().load_image( "gfx/slope/steep-slope/steep-slope-9.png" );
-  get_level_globals().load_image
-    ( "gfx/slope/steep-slope/steep-slope-fill-4-to-5.png" );
+  get_level_globals().load_image( "gfx/garden/ground/ground-1.png" );
+  get_level_globals().load_image( "gfx/garden/ground/ground-2.png" );
+  get_level_globals().load_image( "gfx/garden/ground/ground-3.png" );
+  get_level_globals().load_image( "gfx/wall-fill/garden/wall-fill-1.png" );
+  get_level_globals().load_image( "gfx/wall-fill/garden/wall-fill-2.png" );
+  get_level_globals().load_image( "gfx/wall-fill/garden/wall-fill-3.png" );
+
+  get_level_globals().load_image( "gfx/space/ground/ground-1.png" );
+  get_level_globals().load_image( "gfx/space/ground/ground-2.png" );
+  get_level_globals().load_image( "gfx/space/ground/ground-3.png" );
+  get_level_globals().load_image( "gfx/wall-fill/space/wall-fill-1.png" );
+  get_level_globals().load_image( "gfx/wall-fill/space/wall-fill-2.png" );
+  get_level_globals().load_image( "gfx/wall-fill/space/wall-fill-3.png" );
+
+  get_level_globals().load_image( "gfx/western/ground/ground-1.png" );
+  get_level_globals().load_image( "gfx/western/ground/ground-2.png" );
+  get_level_globals().load_image( "gfx/western/ground/ground-3.png" );
+  get_level_globals().load_image( "gfx/wall-fill/western/wall-fill-1.png" );
+  get_level_globals().load_image( "gfx/wall-fill/western/wall-fill-2.png" );
+  get_level_globals().load_image( "gfx/wall-fill/western/wall-fill-3.png" );
 } // add_ingame_layers::pre_cache()
 
 /*----------------------------------------------------------------------------*/
