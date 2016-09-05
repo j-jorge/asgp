@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation loops='0' first_index='0' last_index='11' loop_back='false' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='126' y='287' clip_width='94' clip_height='48' spritepos='pipe 3 1' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='384' y='174' clip_width='94' clip_height='48' spritepos='pipe 3 1' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='221' y='287' clip_width='94' clip_height='48' spritepos='pipe 3 2' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='0' y='261' clip_width='94' clip_height='48' spritepos='pipe 3 2' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='316' y='287' clip_width='94' clip_height='48' spritepos='pipe 3 3' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='95' y='261' clip_width='94' clip_height='48' spritepos='pipe 3 3' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='411' y='287' clip_width='94' clip_height='48' spritepos='pipe 3 4' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='190' y='261' clip_width='94' clip_height='48' spritepos='pipe 3 4' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='0' y='339' clip_width='94' clip_height='48' spritepos='pipe 3 5' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='285' y='261' clip_width='94' clip_height='48' spritepos='pipe 3 5' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='95' y='339' clip_width='94' clip_height='48' spritepos='pipe 3 6' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='380' y='261' clip_width='94' clip_height='48' spritepos='pipe 3 6' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='190' y='339' clip_width='94' clip_height='48' spritepos='pipe 3 7' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='0' y='310' clip_width='94' clip_height='48' spritepos='pipe 3 7' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='285' y='339' clip_width='94' clip_height='48' spritepos='pipe 3 8' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='95' y='310' clip_width='94' clip_height='48' spritepos='pipe 3 8' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='380' y='339' clip_width='94' clip_height='48' spritepos='pipe 3 9' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='190' y='310' clip_width='94' clip_height='48' spritepos='pipe 3 9' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='0' y='388' clip_width='94' clip_height='48' spritepos='pipe 3 10' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='285' y='310' clip_width='94' clip_height='48' spritepos='pipe 3 10' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='95' y='388' clip_width='94' clip_height='48' spritepos='pipe 3 11' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='380' y='310' clip_width='94' clip_height='48' spritepos='pipe 3 11' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.1'>
-    <sprite image='gfx/boss/more-pipe.png' x='190' y='388' clip_width='94' clip_height='48' spritepos='pipe 3 12' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='0' y='359' clip_width='94' clip_height='48' spritepos='pipe 3 12' auto_size='true' width='94' height='48' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>

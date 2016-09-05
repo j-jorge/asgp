@@ -220,7 +220,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -556,7 +556,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3273'/>
@@ -625,7 +625,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3273'/>
@@ -671,7 +671,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3273'/>
@@ -951,7 +951,7 @@
 <real value='3012'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/garden/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -968,7 +968,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -997,7 +997,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 <field name='item_with_restricted_z_collision.max_z_for_collision'>
 <integer value='300'/>
@@ -1214,7 +1214,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -1319,7 +1319,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -1402,7 +1402,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -1462,7 +1462,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -1493,7 +1493,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3321'/>
@@ -1533,7 +1533,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -1585,7 +1585,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3342'/>
@@ -1657,7 +1657,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3197'/>
@@ -1683,7 +1683,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3342'/>

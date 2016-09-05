@@ -1,22 +1,19 @@
-# The format of the lines is
-# picture: x y width height
-
-afraid: 0 0 94 69
-fly 1: 0 70 75 84
-fly 2: 76 70 75 84
-fly 3: 152 70 75 84
-fly 4: 228 70 75 84
-fly 5: 304 70 75 84
-fly 6: 380 70 75 84
-fly 7: 0 155 75 84
-fly 8: 76 155 75 84
-idle 1: 95 0 66 57
-idle 2: 162 0 66 57
-idle 3: 229 0 66 57
-idle 4: 296 0 66 57
-idle 5: 363 0 66 57
-idle 6: 430 0 66 57
-idle 7: 152 155 66 57
-dead: 456 70 25 55
-feather, brown: 456 126 24 7
-feather, white: 481 126 24 7
+fly 1: 1 1 74 83
+fly 2: 1 85 74 83
+fly 3: 1 169 74 83
+fly 4: 76 1 74 83
+fly 6: 76 85 74 83
+fly 7: 76 169 74 83
+fly 8: 151 1 74 83
+fly 5: 151 85 73 83
+afraid: 151 169 94 69
+feather, brown: 151 239 24 7
+feather, white: 151 247 24 7
+idle 1: 225 85 66 57
+idle 2: 226 1 66 57
+idle 3: 246 143 66 57
+idle 4: 292 59 66 57
+idle 5: 293 1 66 57
+idle 6: 313 117 66 57
+idle 7: 359 59 66 57
+dead: 360 1 30 57

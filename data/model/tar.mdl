@@ -2,14 +2,14 @@
 <model>
 <action name="idle" duration="0.6" auto_next="idle">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='true' auto_size='true' width='45' height='76' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.1'>
     <sprite image='gfx/tar/tar.png' x='0' y='44' clip_width='45' clip_height='76' spritepos='pending' auto_size='true' width='45' height='76' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="hook" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="hook" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 </mark>
 </marks>
 <snapshots>
@@ -22,7 +22,7 @@
 </action>
 <action name="explose" duration="0.6" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation_file path='animation/tar/splash.canim' auto_size='true' width='84' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
 </marks>
@@ -39,7 +39,7 @@
 </action>
 <action name="fall" duration="0.4" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation_file path='animation/tar/falling.canim' auto_size='true' width='39' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
 </marks>
@@ -52,7 +52,7 @@
 </action>
 <action name="on_rail" duration="0.2" auto_next="on_rail_idle">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation_file path='animation/tar/on_rail.canim' auto_size='true' width='84' height='43' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
 </marks>
@@ -65,7 +65,7 @@
 </action>
 <action name="on_rail_idle" duration="1" auto_next="">
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='88' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/tar/tar.png' x='46' y='44' clip_width='88' clip_height='25' spritepos='puddle' auto_size='true' width='88' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
@@ -85,14 +85,14 @@
 <file path="sound/cart/tar-spatter.ogg"/>
 </sound>
 <marks>
-<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="body" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='88' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
     <sprite image='gfx/tar/tar.png' x='46' y='44' clip_width='88' clip_height='25' spritepos='puddle' auto_size='true' width='88' height='25' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </mark>
-<mark label="spatter" apply_angle_to_animation="0" pause_animation_when_hidden="0">
+<mark label="spatter" apply_angle_to_animation="0" pause_animation_when_hidden="0" reset_animation_with_action="1">
 <animation_file path='animation/cart/spatter.canim' auto_size='true' width='106' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </mark>
 </marks>

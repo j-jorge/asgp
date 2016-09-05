@@ -236,7 +236,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='1' clip_width='256' clip_height='256' spritepos='steep-slope-9' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -453,7 +453,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='steep-slope-3' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -950,7 +950,7 @@
 <color opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1110,7 +1110,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='steep-slope-3' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1230,7 +1230,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='1' clip_width='256' clip_height='256' spritepos='steep-slope-9' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1290,7 +1290,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1390,7 +1390,7 @@
 <real value='512'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1441,7 +1441,7 @@
 <real value='768'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -1679,7 +1679,7 @@
 <real value='1740'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2002,7 +2002,7 @@
 <real value='2456'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2101,7 +2101,7 @@
 <real value='2712'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='bump-slope-3' auto_size='true' width='256' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2132,7 +2132,7 @@
 <real value='2968'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='bump-slope-5' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2388,7 +2388,7 @@
 <color opacity='1' red_intensity='0.784314' green_intensity='0.784314' blue_intensity='0.784314'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2504,7 +2504,7 @@
 <real value='4181'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='bump-slope-5' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2569,7 +2569,7 @@
 <real value='4437'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='bump-slope-3' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2943,7 +2943,7 @@
 <real value='6229'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2977,7 +2977,7 @@
 <real value='6485'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3045,7 +3045,7 @@
 <real value='6997'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='1' clip_width='256' clip_height='256' spritepos='broken wall 1' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3079,7 +3079,7 @@
 <real value='7253'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3215,7 +3215,7 @@
 <real value='7509'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3249,7 +3249,7 @@
 <real value='7765'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3385,7 +3385,7 @@
 <real value='8021'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3521,7 +3521,7 @@
 <real value='8277'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3586,7 +3586,7 @@
 <real value='8789'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='bump-slope-5' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -3634,7 +3634,7 @@
 <real value='9045'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='bump-slope-3' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4005,7 +4005,7 @@
 <real value='9301'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='259' clip_width='256' clip_height='128' spritepos='bump-slope-3' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4495,7 +4495,7 @@
 <real value='10581'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='1' clip_width='256' clip_height='256' spritepos='steep-slope-9' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4645,7 +4645,7 @@
 <real value='11093'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='steep-slope-3' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4659,7 +4659,7 @@
 <real value='11221'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='517' y='517' clip_width='128' clip_height='256' spritepos='' auto_size='true' width='128' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='517' y='517' clip_width='128' clip_height='256' spritepos='steep-slope-fill-4-to-5' auto_size='true' width='128' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -4769,7 +4769,7 @@
 <real value='11349'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='259' clip_width='256' clip_height='256' spritepos='steep-slope-3' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -5661,7 +5661,7 @@
 <real value='13397'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -5712,7 +5712,7 @@
 <real value='13653'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -5763,7 +5763,7 @@
 <real value='13909'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -5814,7 +5814,7 @@
 <real value='14165'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -6402,7 +6402,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2381'/>
@@ -6572,7 +6572,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2381'/>
@@ -6744,7 +6744,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2360'/>
@@ -6874,7 +6874,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2360'/>
@@ -6949,7 +6949,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2381'/>
@@ -7015,7 +7015,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2381'/>
@@ -7233,7 +7233,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 <field name='item_with_restricted_z_collision.max_z_for_collision'>
 <integer value='300'/>
@@ -7285,7 +7285,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2284'/>
@@ -7328,7 +7328,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 <field name='item_with_restricted_z_collision.max_z_for_collision'>
 <integer value='300'/>
@@ -7547,7 +7547,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_restricted_z_collision.max_z_for_collision'>
 <integer value='300'/>
@@ -7581,7 +7581,7 @@
 <color opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2360'/>
@@ -7598,7 +7598,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2208'/>
@@ -7713,7 +7713,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='259' y='775' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='259' y='775' clip_width='256' clip_height='128' spritepos='bump-slope-1' auto_size='true' width='256' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2152'/>
@@ -7751,7 +7751,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='775' clip_width='256' clip_height='45' spritepos='' auto_size='true' width='256' height='45' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='775' clip_width='256' clip_height='45' spritepos='steep-slope-8' auto_size='true' width='256' height='45' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2585'/>
@@ -7817,7 +7817,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='389' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='389' clip_width='256' clip_height='128' spritepos='bump-slope-4' auto_size='true' width='256' height='128' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2024'/>
@@ -7855,7 +7855,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='517' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='517' clip_width='256' clip_height='256' spritepos='steep-slope-7' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2585'/>
@@ -7938,7 +7938,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1973'/>
@@ -7970,7 +7970,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='775' clip_width='256' clip_height='211' spritepos='' auto_size='true' width='256' height='211' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='775' clip_width='256' clip_height='211' spritepos='steep-slope-2' auto_size='true' width='256' height='211' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2841'/>
@@ -8051,7 +8051,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='steep-slope-1' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2841'/>
@@ -8149,7 +8149,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='item_with_restricted_z_collision.max_z_for_collision'>
 <integer value='300'/>
@@ -8172,7 +8172,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='1876'/>
@@ -8201,7 +8201,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3046'/>
@@ -8289,7 +8289,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='item_with_restricted_z_collision.max_z_for_collision'>
 <integer value='300'/>
@@ -8395,7 +8395,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='389' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='389' clip_width='256' clip_height='128' spritepos='bump-slope-4' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2100'/>
@@ -8433,7 +8433,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2970'/>
@@ -8508,7 +8508,7 @@
 <color opacity='1' red_intensity='0.6' green_intensity='0.6' blue_intensity='0.6'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3101'/>
@@ -8576,7 +8576,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='259' y='775' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='259' y='775' clip_width='256' clip_height='128' spritepos='bump-slope-1' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2228'/>
@@ -8611,7 +8611,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='steep-slope-1' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2765'/>
@@ -8666,7 +8666,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -8692,7 +8692,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='775' clip_width='256' clip_height='211' spritepos='' auto_size='true' width='256' height='211' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='775' clip_width='256' clip_height='211' spritepos='steep-slope-2' auto_size='true' width='256' height='211' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2765'/>
@@ -8755,7 +8755,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -8795,7 +8795,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='517' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='517' clip_width='256' clip_height='256' spritepos='steep-slope-7' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2509'/>
@@ -8847,7 +8847,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -8873,7 +8873,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='775' clip_width='256' clip_height='45' spritepos='' auto_size='true' width='256' height='45' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='775' clip_width='256' clip_height='45' spritepos='steep-slope-8' auto_size='true' width='256' height='45' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2509'/>
@@ -8925,7 +8925,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -8980,7 +8980,7 @@
 <color opacity='1' red_intensity='0.7' green_intensity='0.7' blue_intensity='0.7'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2437'/>
@@ -9034,7 +9034,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -9074,7 +9074,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -9169,7 +9169,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='128' clip_width='146' clip_height='67' spritepos='' auto_size='true' width='146' height='67' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='128' clip_width='146' clip_height='67' spritepos='broken rail up' auto_size='true' width='146' height='67' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2284'/>
@@ -9224,7 +9224,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2284'/>
@@ -9294,7 +9294,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -9371,7 +9371,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2284'/>
@@ -9539,7 +9539,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2284'/>
@@ -9600,7 +9600,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2305'/>
@@ -9674,7 +9674,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='517' y='389' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='517' y='389' clip_width='256' clip_height='128' spritepos='bump-slope-4' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2356'/>
@@ -9747,7 +9747,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='bump-slope-2' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2484'/>
@@ -9929,7 +9929,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-1.png' x='259' y='775' clip_width='256' clip_height='128' spritepos='' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-1.png' x='259' y='775' clip_width='256' clip_height='128' spritepos='bump-slope-1' auto_size='true' width='256' height='128' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2740'/>
@@ -10049,7 +10049,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2817'/>
@@ -10089,7 +10089,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2817'/>
@@ -10168,7 +10168,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2817'/>
@@ -10208,7 +10208,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2817'/>
@@ -10371,7 +10371,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='259' y='775' clip_width='256' clip_height='45' spritepos='' auto_size='true' width='256' height='45' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='259' y='775' clip_width='256' clip_height='45' spritepos='steep-slope-8' auto_size='true' width='256' height='45' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2868'/>
@@ -10448,7 +10448,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='517' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='517' clip_width='256' clip_height='256' spritepos='steep-slope-7' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='2868'/>
@@ -10558,7 +10558,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='777' y='517' clip_width='128' clip_height='256' spritepos='' auto_size='true' width='128' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='777' y='517' clip_width='128' clip_height='256' spritepos='steep-slope-5-alt' auto_size='true' width='128' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3124'/>
@@ -10595,7 +10595,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='775' y='259' clip_width='128' clip_height='256' spritepos='' auto_size='true' width='128' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='775' y='259' clip_width='128' clip_height='256' spritepos='steep-slope-4-alt' auto_size='true' width='128' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3380'/>
@@ -10632,7 +10632,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='775' clip_width='256' clip_height='211' spritepos='' auto_size='true' width='256' height='211' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='775' clip_width='256' clip_height='211' spritepos='steep-slope-2' auto_size='true' width='256' height='211' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3636'/>
@@ -10664,7 +10664,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-3.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-3.png' x='1' y='1' clip_width='256' clip_height='256' spritepos='steep-slope-1' auto_size='true' width='256' height='256' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3636'/>
@@ -10710,7 +10710,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -10747,7 +10747,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -10826,7 +10826,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -10880,7 +10880,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -10948,7 +10948,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='332' clip_width='256' clip_height='51' spritepos='rail with support' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11002,7 +11002,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11110,7 +11110,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3820'/>
@@ -11144,7 +11144,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3820'/>
@@ -11257,7 +11257,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='128' clip_width='146' clip_height='67' spritepos='' auto_size='true' width='146' height='67' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='128' clip_width='146' clip_height='67' spritepos='broken rail up' auto_size='true' width='146' height='67' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3820'/>
@@ -11340,7 +11340,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3820'/>
@@ -11410,7 +11410,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11436,7 +11436,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='385' clip_width='256' clip_height='51' spritepos='rail with 2 supports 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11462,7 +11462,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11488,7 +11488,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11514,7 +11514,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='491' clip_width='256' clip_height='51' spritepos='rail end 1' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11540,7 +11540,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11631,7 +11631,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11657,7 +11657,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='517' y='438' clip_width='256' clip_height='51' spritepos='rail with 2 supports 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11683,7 +11683,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11709,7 +11709,7 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='259' y='775' clip_width='256' clip_height='51' spritepos='rail end 2' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3841'/>
@@ -11726,7 +11726,7 @@
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/death/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
 <real value='3820'/>

@@ -1,99 +1,119 @@
-rail: 0 0 221 15
-zeppelin: 222 0 183 96
-mirror: 0 16 183 96
-light up: 184 16 34 43
-light down: 184 60 34 43
-light star: 406 0 128 128
-light star dark: 219 97 128 128
-lights red: 184 104 34 43
-bomb 1: 348 97 56 64
-rounded star bright: 0 113 128 128
-crate: 129 113 51 49
-axis: 181 148 34 43
-cable: 129 163 51 49
-warning 1: 181 192 27 46
-balloon piece 1: 129 213 51 46
-plank 1: 209 192 9 49
-warning 2: 181 239 27 46
-broken top 2: 0 242 74 46
-plank 3: 75 242 51 11
-plank 6: 75 254 51 11
-plank 7: 127 260 51 11
-tnt 3: 75 266 51 11
-tnt 6: 127 272 51 11
-tnt 7: 75 278 51 11
-broken top 1: 0 289 74 46
-plank 4: 127 284 51 10
-tnt 4: 75 290 51 10
-broken top 0: 535 0 74 46
-broken bottom 2: 610 0 74 46
-broken bottom 1: 685 0 74 46
-broken bottom 0: 760 0 74 46
-broken middle 2: 835 0 74 41
-broken middle 1: 910 0 74 41
-warning 3: 985 0 27 46
-plank 2: 1013 0 9 49
-broken middle 0: 835 42 74 41
-fun 1: 910 42 73 15
-warning 4: 984 47 27 46
-fun 2: 910 58 73 15
-fun 3: 910 74 73 15
-splinter 3: 1012 50 10 9
-tnt 1: 1012 60 9 49
-fun 4: 535 47 73 15
-fun 5: 609 47 73 15
-fun 6: 683 47 73 15
-fun 7: 757 47 73 15
-fun 8: 535 63 73 15
-fun 9: 609 63 73 15
-fun 10: 683 63 73 15
-fun 11: 757 63 73 15
-fun full: 535 79 73 15
-park 1: 609 79 73 15
-park 2: 683 79 73 15
-park 3: 757 79 73 15
-park 4: 831 84 73 15
-park 5: 905 90 73 15
-warning 5: 979 94 27 46
-vertical border: 1008 111 10 20
-corner: 1008 134 10 10
-park full: 535 95 73 15
-screen: 609 95 73 15
-balloon 3 yellow: 683 95 62 65
-balloon 3 orange: 746 95 62 65
-splinter 1: 809 95 18 18
-balloon 3 red: 828 100 62 65
-spike: 810 115 14 14
-tnt 2: 891 100 9 49
-post: 809 131 8 43
-splinter 2: 818 131 6 9
-splinter 4: 818 141 6 8
-balloon 3 blue: 901 106 62 65
-end: 964 141 42 15
-balloon piece 3: 964 157 55 66
-balloon 3 purple: 818 166 62 65
-balloon 3 green: 881 172 62 65
-balloon 1 yellow: 944 224 60 85
-balloon 1 orange: 535 111 60 85
-balloon 1 red: 596 111 60 85
-balloon piece 4: 657 111 22 55
-balloon 1 blue: 680 161 60 85
-balloon piece 2: 657 167 22 37
-balloon 1 purple: 741 161 60 85
-balloon 1 green: 802 232 60 85
-balloon 2 yellow: 863 238 60 75
-balloon 2 orange: 924 310 60 75
-balloon 2 red: 863 314 60 75
-warning 6: 985 310 27 46
-warning 7: 985 357 27 46
-balloon 2 blue: 924 386 60 75
-warning 8: 985 404 27 46
-warning 9: 985 451 27 46
-balloon 2 purple: 405 129 60 75
-plank 5: 348 162 51 8
-tnt 5: 348 171 51 8
-balloon 2 green: 466 129 60 75
-balloon piece 6: 348 180 45 36
-balloon piece 5: 527 197 39 39
-warning 10: 567 197 27 46
-horizontal border: 596 198 20 10
+light star: 1 1 128 128
+light star dark: 1 130 128 128
+rounded star bright: 1 259 128 128
+danger: 1 388 64 111
+plank 3: 1 500 51 11
+plank 6: 53 500 51 11
+zeppelin: 66 388 183 96
+horizontal border: 67 486 20 10
+corner: 90 486 10 10
+plank 7: 102 485 51 11
+tnt 3: 105 497 51 11
+tnt 6: 154 485 51 11
+tnt 7: 157 497 51 11
+plank 4: 206 485 51 10
+rail: 209 496 221 15
+mirror: 130 1 183 96
+balloon 1 yellow: 130 98 60 85
+balloon 1 orange: 130 184 60 85
+balloon 1 red: 130 270 60 85
+vertical border: 131 357 10 20
+plank 5: 130 379 51 8
+splinter 1: 143 356 18 18
+spike: 163 357 14 14
+fun 1: 179 356 73 15
+fun 2: 182 372 73 15
+balloon 1 blue: 250 388 60 85
+tnt 4: 250 474 51 10
+splinter 3: 258 485 10 9
+splinter 2: 269 485 6 9
+tnt 5: 276 485 51 8
+splinter 4: 302 474 6 8
+feather, brown: 309 474 24 7
+feather, white: 328 482 24 7
+balloon 1 purple: 191 98 60 85
+balloon 1 green: 191 184 60 85
+fly 1: 191 270 74 83
+fun 3: 253 354 73 15
+fun 4: 256 370 73 15
+fly 2: 311 386 74 83
+fun 5: 353 470 73 15
+fly 3: 252 98 74 83
+fly 4: 252 182 74 83
+fly 5: 266 266 74 83
+fun 6: 327 350 73 15
+fun 7: 330 366 73 15
+fly 6: 386 382 74 83
+light up: 431 466 34 43
+fly 7: 314 1 74 83
+fly 8: 327 85 74 83
+balloon 2 yellow: 389 1 60 75
+balloon 2 orange: 327 169 60 75
+fun 8: 327 245 73 15
+balloon 2 red: 388 169 60 75
+balloon 2 blue: 341 261 60 75
+fun 9: 401 245 73 15
+fun 10: 401 337 73 15
+balloon 2 purple: 402 261 60 75
+balloon 2 green: 463 261 60 75
+fun 11: 404 353 73 15
+fun full: 475 337 73 15
+afraid: 402 77 94 69
+park 1: 402 147 73 15
+balloon piece 3: 450 1 55 66
+balloon 3 yellow: 449 163 62 65
+park 2: 476 147 73 15
+park 3: 449 229 73 15
+balloon 3 orange: 512 163 62 65
+park 4: 475 245 73 15
+park 5: 523 229 73 15
+balloon 3 red: 524 261 62 65
+park full: 549 245 73 15
+balloon 3 blue: 497 68 62 65
+balloon 3 purple: 506 1 62 65
+screen: 550 134 73 15
+balloon 3 green: 560 67 62 65
+bomb 1: 569 1 56 64
+idle 1: 623 66 66 57
+idle 2: 626 1 66 57
+idle 3: 575 150 66 57
+balloon piece 6: 597 208 45 36
+end: 624 124 42 15
+idle 4: 642 140 66 57
+idle 5: 690 59 66 57
+idle 6: 693 1 66 57
+idle 7: 461 369 66 57
+balloon piece 2: 461 427 22 37
+broken top 2: 466 465 74 46
+dead: 528 353 30 57
+crate: 528 411 51 49
+cable: 541 461 51 49
+balloon piece 4: 559 327 22 55
+plank 1: 580 383 9 49
+plank 2: 582 327 9 49
+tnt 1: 587 261 9 49
+tnt 2: 590 377 9 49
+broken top 1: 592 311 74 46
+broken top 0: 597 261 74 46
+broken bottom 2: 643 198 74 46
+broken bottom 1: 709 117 74 46
+broken bottom 0: 757 59 74 46
+balloon piece 1: 760 1 51 46
+warning 1: 812 1 27 46
+warning 2: 593 427 27 46
+warning 3: 600 358 27 46
+warning 4: 621 405 27 46
+warning 5: 628 358 27 46
+warning 6: 621 452 27 46
+warning 7: 649 405 27 46
+warning 8: 656 358 27 46
+warning 9: 667 308 27 46
+warning 10: 649 452 27 46
+light down: 672 245 34 43
+lights red: 677 405 34 43
+axis: 684 355 34 43
+post: 677 449 8 43
+broken middle 2: 686 449 74 41
+broken middle 1: 712 399 74 41
+broken middle 0: 695 289 74 41
+balloon piece 5: 707 245 39 39

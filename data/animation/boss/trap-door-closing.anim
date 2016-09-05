@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animation loops='0' first_index='3' last_index='3' loop_back='false' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.06'>
-    <sprite image='gfx/boss/more-pipe.png' x='72' y='96' clip_width='71' clip_height='74' spritepos='trap door 4' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='312' y='174' clip_width='71' clip_height='74' spritepos='trap door 4' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.06'>
-    <sprite image='gfx/boss/more-pipe.png' x='0' y='96' clip_width='71' clip_height='74' spritepos='trap door 3' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='240' y='174' clip_width='71' clip_height='74' spritepos='trap door 3' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.06'>
-    <sprite image='gfx/boss/more-pipe.png' x='414' y='0' clip_width='71' clip_height='74' spritepos='trap door 2' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='168' y='174' clip_width='71' clip_height='74' spritepos='trap door 2' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.06'>
-    <sprite image='gfx/boss/more-pipe.png' x='342' y='0' clip_width='71' clip_height='74' spritepos='trap door 1' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/more-pipe.png' x='96' y='174' clip_width='71' clip_height='74' spritepos='trap door 1' auto_size='true' width='71' height='74' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>

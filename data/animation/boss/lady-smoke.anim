@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<animation loops='0' first_index='0' last_index='1' loop_back='false' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='1' loop_back='false' auto_size='true' width='65' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='0.15'>
-    <sprite image='gfx/boss/lady.png' x='328' y='76' clip_width='81' clip_height='75' spritepos='lady smoke up' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/lady.png' x='198' y='61' clip_width='65' clip_height='60' spritepos='lady smoke up' auto_size='true' width='65' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
   <frame duration='0.15'>
-    <sprite image='gfx/boss/lady.png' x='410' y='76' clip_width='81' clip_height='75' spritepos='lady smoke up straight' auto_size='true' width='81' height='75' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/boss/lady.png' x='264' y='61' clip_width='65' clip_height='60' spritepos='lady smoke up straight' auto_size='true' width='65' height='60' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>

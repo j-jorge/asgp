@@ -1,4 +1,10 @@
-sprite_sheet "common" 1024 x 1024 margin 1
+sprite_sheet "common" 1024 x 512 margin 1
+
+bird_idle "bird/bird-idle.xcf.bz2"
+bird_fly "bird/bird-fly.xcf.bz2"
+bird_afraid "bird/bird-afraid.xcf.bz2"
+bird_dead "bird/bird-dead.xcf.bz2"
+bird_feather "bird/feather.xcf.bz2"
 
 light_star "effect/light-star.xcf.bz2"
 rounded_star "effect/rounded-star.xcf.bz2"
@@ -11,6 +17,7 @@ switching_warning_img "switching/warning.xcf.bz2"
 bomb_img "bomb/bomb.xcf.bz2"
 wall_block_img "wall-block/wall-block.xcf.bz2"
 obstacle_img "obstacle/obstacle.xcf.bz2"
+danger_img "misc/danger.xcf.bz2"
 
 "light star" autosize * 0.125 with light_star
   "gradient"
@@ -532,4 +539,136 @@ obstacle_img "obstacle/obstacle.xcf.bz2"
   "TNT effect"
   "light"
   "bottom-most plank"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"danger" autosize * 0.5 with danger_img
+  glob "*"
+  ;
+
+/*----------------------------------------------------------------------------*/
+"idle 1" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 1"
+  "right leg 1"
+  "body 1"
+  "left wing 1"
+  "left leg"
+  ;
+
+"idle 2" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 2"
+  "right leg 1"
+  "body 1"
+  "left wing 1"
+  "left leg"
+  ;
+
+"idle 3" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 3"
+  "right leg 1"
+  "body 1"
+  "left wing 1"
+  "left leg"
+  ;
+
+"idle 4" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 4"
+  "right leg 1"
+  "body 1"
+  "left wing 1"
+  "left leg"
+  ;
+
+"idle 5" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 1"
+  "right leg 1"
+  "body 1"
+  "left wing 2"
+  "left leg"
+  ;
+
+"idle 6" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 1"
+  "right leg 1"
+  "body 1"
+  "left wing 3"
+  "left leg"
+  ;
+
+"idle 7" image_size * 0.33 with bird_idle
+  "beak"
+  "eyes"
+  "right wing 1"
+  "right leg 1"
+  "body 1"
+  "left wing 4"
+  "left leg"
+  ;
+
+"dead" autosize * 0.33 with bird_dead
+  glob "*"
+  ;
+
+"afraid" autosize * 0.33 with bird_afraid
+  glob "*"
+  ;
+
+"fly 1" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 1*"
+  ;
+
+"fly 2" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 2*"
+  ;
+
+"fly 3" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 3*"
+  ;
+
+"fly 4" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 4*"
+  ;
+
+"fly 5" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 5*"
+  ;
+
+"fly 6" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 6*"
+  ;
+
+"fly 7" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 7*"
+  ;
+
+"fly 8" autosize * 0.33 with bird_fly
+  "body"
+  glob "wing 8*"
+  ;
+
+"feather, brown" autosize * 0.125 with bird_feather
+  "a"
+  ;
+
+"feather, white" autosize * 0.125 with bird_feather
+  "b"
   ;
