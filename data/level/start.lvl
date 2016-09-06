@@ -32,7 +32,7 @@
 <real value='0'/>
 </field>
 <field name='delayed_level_loading.level'>
-<string value='level/intro.cl'/>
+<string value='level/level_selection.cl'/>
 </field>
 </fields>
     </item><!-- bear::delayed_level_loading -->
