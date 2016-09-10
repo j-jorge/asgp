@@ -46,7 +46,9 @@ bool rp::game_key::is_valid_key( std::string key )
  */
 void rp::game_key::check_if_demo_version()
 {
-#if defined( __ANDROID__ )
+#ifdef RP_DEMO
+  game_variables::set_demo_version( RP_DEMO != 0 );
+#elif defined( __ANDROID__ )
 
   game_variables::set_demo_version( false );
 
