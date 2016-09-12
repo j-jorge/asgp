@@ -69,7 +69,7 @@ build()
 {
     pushd "$BUILD_DIR"
     rm -fr "$ASGP_INSTALL_PREFIX/$ASGP_ASSETS_DIR_NAME"
-    make install
+    make -j$(nproc) install
     mv "$ASGP_INSTALL_PREFIX/lib/librp.a" "$INSTALL_PREFIX/lib/"
     popd
 }
