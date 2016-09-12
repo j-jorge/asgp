@@ -758,7 +758,7 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2992'/>
+<real value='3068'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='-1001'/>
@@ -767,24 +767,7 @@
 <real value='2808'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/wall-fill/switching/switching-fill.png' x='0' y='0' clip_width='204' clip_height='256' spritepos='wall-fill' auto_size='true' width='204' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::decorative_item' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='3172'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='-1000'/>
-</field>
-<field name='base_item.position.left'>
-<real value='2808'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/wall-fill/switching/switching-background.png' x='0' y='0' clip_width='204' clip_height='152' spritepos='down' auto_size='true' width='204' height='152' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/garden/ground/ground-2.png' x='826' y='250' clip_width='49' clip_height='256' spritepos='edge left top' auto_size='true' width='49' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -817,23 +800,6 @@
 </field>
 </fields>
     </item><!-- rp::switching -->
-
-    <item class_name='bear::decorative_item' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='3248'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='-1100'/>
-</field>
-<field name='base_item.position.left'>
-<real value='2808'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/wall-fill/switching/switching-background.png' x='205' y='0' clip_width='204' clip_height='152' spritepos='up' auto_size='true' width='204' height='152' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::camera_on_object' fixed='false' id='camera-1'>
 <fields>
@@ -921,6 +887,40 @@
 </field>
 </fields>
     </item><!-- rp::boss_controller -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2992'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1000'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2962'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/garden/ground/ground-2.png' x='929' y='259' clip_width='50' clip_height='256' spritepos='edge right top' auto_size='true' width='50' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='3144'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2962'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/garden/ground/ground-2.png' x='877' y='197' clip_width='50' clip_height='256' spritepos='edge right thick' auto_size='true' width='50' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.847059' green_intensity='0.847059' blue_intensity='0.847059'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
