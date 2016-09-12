@@ -4661,6 +4661,20 @@
 </fields>
     </item><!-- bear::straight_slope -->
 
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='3713'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3470'/>
+</field>
+<field name='item_with_decoration.animation'>
+<animation_file path='animation/help/jump.canim' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='basic_renderable_item.gap.x'>

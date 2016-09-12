@@ -1128,7 +1128,7 @@
 <real value='3584'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-3.png' x='517' y='259' clip_width='256' clip_height='256' spritepos='broken wall 4' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/wall-fill/aquatic/wall-fill*.png' x='0' y='0' clip_width='256' clip_height='256' spritepos='wall-fill' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -5422,23 +5422,6 @@
 </fields>
     </item><!-- bear::straight_slope -->
 
-    <item class_name='rp::hole' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='3539'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3535'/>
-</field>
-<field name='base_item.size.height'>
-<real value='69'/>
-</field>
-<field name='base_item.size.width'>
-<real value='334'/>
-</field>
-</fields>
-    </item><!-- rp::hole -->
-
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_friction.top_friction'>
@@ -5451,68 +5434,13 @@
 <integer value='100'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/aquatic/ground/ground-2.png' x='1' y='962' clip_width='256' clip_height='51' spritepos='rail' auto_size='true' width='256' height='51' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='3640'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='1'/>
+<real value='3661'/>
 </field>
 <field name='base_item.position.left'>
-<real value='3552'/>
-</field>
-<field name='base_item.size.height'>
-<real value='72'/>
-</field>
-<field name='base_item.size.width'>
-<real value='99'/>
-</field>
-<field name='straight_slope.top_side_is_active'>
-<bool value='1'/>
-</field>
-</fields>
-    </item><!-- bear::straight_slope -->
-
-    <item class_name='bear::decorative_item' fixed='true'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='3723'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3707'/>
-</field>
-<field name='item_with_decoration.animation'>
-<animation_file path='animation/help/jump.canim' auto_size='true' width='0' height='0' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
-    <item class_name='bear::straight_slope' fixed='true'>
-<fields>
-<field name='basic_renderable_item.gap.x'>
-<integer value='-50'/>
-</field>
-<field name='item_with_friction.top_friction'>
-<real value='0.95'/>
-</field>
-<field name='item_with_z_shift.force_z_position'>
-<bool value='1'/>
-</field>
-<field name='item_with_z_shift.z_shift'>
-<integer value='100'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/aquatic/ground/ground-2.png' x='775' y='1' clip_width='154' clip_height='72' spritepos='broken rail down' auto_size='true' width='154' height='72' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='3640'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='1'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3797'/>
+<real value='3584'/>
 </field>
 <field name='straight_slope.top_side_is_active'>
 <bool value='1'/>
