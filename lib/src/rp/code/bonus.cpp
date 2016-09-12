@@ -64,12 +64,7 @@ void rp::bonus::on_enters_layer()
 
   set_model_actor( get_level_globals().get_model("model/bonus.cm") );
   if ( m_type == cart_element )
-    {
-      start_model_action("cart_element");
-      init_mark("middle");
-      init_mark("back");
-      init_mark("front");
-    }
+    start_model_action("cart_element");
   else if ( m_type == plunger )
     start_model_action("plunger");
 } // bonus::on_enters_layer()
@@ -208,24 +203,6 @@ void rp::bonus::give_bonus( cart* c )
 
   get_level_globals().play_sound("sound/bwow.ogg");
 } // bonus::give_bonus()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Init mark in cart_element action.
- * \param name The name of the mark.
- */
-void rp::bonus::init_mark( const std::string& name )
-{
-  bear::engine::model_mark_placement element;
-    
-  if ( get_mark_placement( name, element ) )
-    set_global_substitute
-      ( name,
-        new bear::visual::animation
-        ( get_level_globals().auto_sprite
-          ( "gfx/cart-theme/"+ game_variables::get_level_theme()+".png", 
-            name ) ) );
-} // bonus::init_mark()
 
 /*----------------------------------------------------------------------------*/
 /**

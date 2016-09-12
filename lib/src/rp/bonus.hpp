@@ -67,7 +67,7 @@ namespace rp
     void collision
     ( bear::engine::base_item& that, bear::universe::collision_info& info );
     void give_bonus( cart* c );
-    void init_mark( const std::string& name );
+
     void on_y_position_change(const bear::universe::coordinate_type& value);
     void on_x_position_change(const bear::universe::coordinate_type& value);
 
