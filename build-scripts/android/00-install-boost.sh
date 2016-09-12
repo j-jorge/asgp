@@ -35,17 +35,34 @@ fi
 export PATH=$ANDROID_TOOLCHAIN_ROOT/bin/:$PATH
 export NO_BZIP2=1
 
-./bjam target-os=linux \
-       toolset=gcc-androidR10e \
-       link=static \
-       runtime-link=static \
-       cxxflags="$CXXFLAGS" \
-       linkflags="$LDFLAGS" \
-       --stagedir=android \
-       --without-python \
-       --without-serialization \
-       --prefix=$INSTALL_PREFIX \
-       release \
-       install
+ARGS=
+
+if [ ! -z "$LDFLAGS" ]
+then
+    ./bjam $ARGS target-os=linux \
+           toolset=gcc-androidR10e \
+           link=static \
+           runtime-link=static \
+           cxxflags="$CXXFLAGS" \
+           linkflags="$LDFLAGS" \
+           --stagedir=android \
+           --without-python \
+           --without-serialization \
+           --prefix=$INSTALL_PREFIX \
+           release \
+           install
+else
+    ./bjam $ARGS target-os=linux \
+           toolset=gcc-androidR10e \
+           link=static \
+           runtime-link=static \
+           cxxflags="$CXXFLAGS" \
+           --stagedir=android \
+           --without-python \
+           --without-serialization \
+           --prefix=$INSTALL_PREFIX \
+           release \
+           install
+fi
 
 set_shell_variable ANDROID_BOOST_INCLUDE_DIR "$INSTALL_PREFIX/include/"
