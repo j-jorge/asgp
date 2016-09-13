@@ -59,19 +59,6 @@ void rp::serial_switcher::progress( bear::universe::time_type elapsed_time )
 
   m_animation_on.next(elapsed_time);
   m_animation_off.next(elapsed_time);
-
-  if ( ( game_variables::is_demo_version() && m_next_serial <= 1 
-         && m_serial <= 1 ) ||
-       ( ! game_variables::is_demo_version() && 
-         game_variables::get_unlocked_serial() >= m_next_serial ) )
-    get_rendering_attributes().set_opacity(1);
-  else
-    get_rendering_attributes().set_opacity(0);
-
-  if ( (get_age() >= 5) && (m_serial == 0) && !has_forced_movement() )
-    mouse_released
-      ( bear::input::mouse::mc_left_button,
-        get_center_of_mass() - get_level().get_camera_focus().bottom_left() );
 } // serial_swticher::progress()
 
 /*----------------------------------------------------------------------------*/
@@ -265,7 +252,6 @@ bool rp::serial_switcher::is_visible() const
     }
   else
     return
-      ( game_variables::get_unlocked_serial() >= m_next_serial ) &&
       ( m_serial != 6 || 
         game_variables::get_last_serial() == m_next_serial ) &&
       ( m_serial != 0 || 
