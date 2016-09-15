@@ -6114,6 +6114,26 @@
 </fields>
     </item><!-- bear::straight_slope -->
 
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2420'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='8704'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.15'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='item_with_decoration.sprite'>
@@ -6217,6 +6237,26 @@
 </fields>
     </item><!-- rp::hole -->
 
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2420'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='9117'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.2'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
     <item class_name='bear::straight_slope' fixed='true'>
 <fields>
 <field name='basic_renderable_item.gap.y'>
@@ -6254,6 +6294,26 @@
 </field>
 </fields>
     </item><!-- bear::straight_slope -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2412'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='9152'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='-0.6'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
 
     <item class_name='rp::hole' fixed='true'>
 <fields>
@@ -6373,6 +6433,23 @@
 </field>
 </fields>
     </item><!-- bear::straight_slope -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2380'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-10'/>
+</field>
+<field name='base_item.position.left'>
+<real value='9489'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
 
     <item class_name='rp::balloon' fixed='false'>
 <fields>

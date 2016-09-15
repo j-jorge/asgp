@@ -555,6 +555,26 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
+<real value='2652'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2830'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.05'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
 <real value='2176'/>
 </field>
 <field name='base_item.position.depth'>
@@ -1227,6 +1247,26 @@
 </field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/wall-fill/space/wall-fill-1.png' x='0' y='0' clip_width='256' clip_height='256' spritepos='wall-fill' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='0.85' green_intensity='0.85' blue_intensity='0.85'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='3032'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5824'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.05'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2795,6 +2835,26 @@
 </field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/space/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='3185'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='12953'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='-1.38778e-17'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->

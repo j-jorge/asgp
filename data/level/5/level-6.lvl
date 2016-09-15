@@ -473,6 +473,46 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
+<real value='2382'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1968'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.15'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2400'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2021'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='-0.05'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
 <real value='1920'/>
 </field>
 <field name='base_item.position.depth'>
@@ -500,6 +540,26 @@
 </field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/space/ground/ground-3.png' x='259' y='259' clip_width='256' clip_height='256' spritepos='broken wall 2' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2427'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2079'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='-0.2'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -887,6 +947,26 @@
 </field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/wall-fill/space/wall-fill*.png' x='0' y='0' clip_width='256' clip_height='256' spritepos='wall-fill' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1909'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4441'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.05'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -2683,6 +2763,26 @@
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
+<real value='987'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='9963'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='0.05'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
 <real value='488'/>
 </field>
 <field name='base_item.position.left'>
@@ -3409,6 +3509,26 @@
 </field>
 <field name='item_with_decoration.sprite'>
 <sprite image='gfx/wall-fill/space/wall-fill*.png' x='0' y='0' clip_width='256' clip_height='256' spritepos='wall-fill' auto_size='true' width='256' height='256' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::decorative_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1872'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-1500'/>
+</field>
+<field name='base_item.position.left'>
+<real value='11567'/>
+</field>
+<field name='basic_renderable_item.angle'>
+<real value='-0.2'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/common.png' x='1' y='388' clip_width='64' clip_height='111' spritepos='danger' auto_size='true' width='64' height='111' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7736,7 +7856,7 @@
 <real value='69'/>
 </field>
 <field name='base_item.size.width'>
-<real value='334'/>
+<real value='813'/>
 </field>
 </fields>
     </item><!-- rp::hole -->
