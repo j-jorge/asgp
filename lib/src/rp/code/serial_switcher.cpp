@@ -117,13 +117,15 @@ void rp::serial_switcher::get_visual
   
   if ( is_visible() )
     {
-      bear::universe::position_type gap(0,0);
-
       if ( m_mouse_in )
         {
+          const bear::universe::position_type gap
+            ( ( get_size() - m_animation_on.get_max_size() ) / 2 );
+
           bear::visual::scene_sprite s
             ( get_left() + gap.x, get_bottom() + gap.y, 
               m_animation_on.get_sprite() );
+          
           s.get_rendering_attributes().set_opacity
             ( get_rendering_attributes().get_opacity() );
 
@@ -136,9 +138,12 @@ void rp::serial_switcher::get_visual
         }
       else
         {
+          const bear::universe::position_type gap
+            ( ( get_size() - m_animation_off.get_max_size() ) / 2 );
           bear::visual::scene_sprite s
             ( get_left() + gap.x , get_bottom() + gap.y, 
               m_animation_off.get_sprite() );
+          
           s.get_rendering_attributes().set_opacity
             ( get_rendering_attributes().get_opacity() );
 

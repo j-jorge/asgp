@@ -7193,7 +7193,7 @@
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
@@ -10032,10 +10032,10 @@
 <real value='3319'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -11428,10 +11428,10 @@
 <real value='4077'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -12269,10 +12269,10 @@
 <real value='4798'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -14451,10 +14451,10 @@
 <real value='5555.5'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -15459,10 +15459,10 @@
 <real value='6313'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -16784,10 +16784,10 @@
 <real value='6960'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -17507,10 +17507,10 @@
 <real value='7547'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -17556,10 +17556,10 @@
 <real value='7547'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -17608,10 +17608,10 @@
 <real value='7547'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -17660,10 +17660,10 @@
 <real value='7547'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -17712,10 +17712,10 @@
 <real value='7547'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -17987,10 +17987,10 @@
 <real value='7718'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -18373,10 +18373,10 @@
 <real value='8476'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -18448,10 +18448,10 @@
 <real value='9231'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -19066,10 +19066,10 @@
 <real value='9989'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -19418,10 +19418,10 @@
 <real value='10747'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -19493,10 +19493,10 @@
 <real value='12024'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
@@ -20085,10 +20085,10 @@
 <real value='12782'/>
 </field>
 <field name='base_item.size.height'>
-<real value='36'/>
+<real value='72'/>
 </field>
 <field name='base_item.size.width'>
-<real value='48'/>
+<real value='96'/>
 </field>
 <field name='mouse_detector.middle_button'>
 <bool value='1'/>
