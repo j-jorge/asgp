@@ -28,6 +28,7 @@ build-scripts/android/.cache
 *.6
 
 # Android
+android/java/release.keystore
 android/java/libs/
 android/java/assets/
 android/java/gen/

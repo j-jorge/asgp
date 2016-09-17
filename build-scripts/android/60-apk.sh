@@ -8,7 +8,8 @@ cd $ASGP_APK_ROOT/java
 
 rm -fr bin
 
-BUILD_MODE=
+APP_NAME="ASGP"
+BUILD_MODE=debug
 
 for ARG in $@
 do
@@ -18,21 +19,21 @@ do
     fi
 done
 
+TARGET_APK="$PWD/build/outputs/apk/$APP_NAME-$BUILD_MODE.apk"
+
 if [ "$BUILD_MODE" = "release" ]
 then
-    ant release
+    gradle assembleRelease
+    GENERATED_APK="$PWD/build/outputs/apk/java-release-unsigned.apk"
 
-    ORIGINAL_APK=bin/ASGP-release-unsigned.apk
-    TARGET_APK=bin/ASGP.apk
-
-    jarsigner -sigalg SHA1withRSA -digestalg SHA1 \
-        -keystore ~/.keytool/stuffomatic.keystore \
-        $ORIGINAL_APK gplays
-
-    zipalign 4 $ORIGINAL_APK $TARGET_APK
+    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 \
+              -keystore ~/.keytool/release.keystore \
+              "$GENERATED_APK" play-store
 else
-    ant debug
-    TARGET_APK=bin/ASGP-debug.apk
+    gradle assembleDebug
+
+    GENERATED_APK="$PWD/build/outputs/apk/java-debug.apk"
 fi
 
-set_shell_variable TARGET_APK "$PWD/$TARGET_APK"
+mv "$GENERATED_APK" "$TARGET_APK"
+set_shell_variable TARGET_APK "$TARGET_APK"
