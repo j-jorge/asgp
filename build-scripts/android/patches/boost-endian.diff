@@ -1,13 +1,12 @@
---- boost/detail/endian.hpp
-+++ boost/detail/endian.hpp
-@@ -64,8 +64,8 @@
-    || defined(_M_ALPHA) || defined(__amd64) \
-    || defined(__amd64__) || defined(_M_AMD64) \
-    || defined(__x86_64) || defined(__x86_64__) \
--   || defined(_M_X64) || defined(__bfin__)
--
-+   || defined(_M_X64) || defined(__bfin__) \
-+   || defined(__ANDROID__)
- # define BOOST_LITTLE_ENDIAN
- # define BOOST_BYTE_ORDER 1234
- #else
+diff -u -r boost_1_55_0/boost/predef/other/endian.h boost_1_55_0.patched/boost/predef/other/endian.h
+--- boost/predef/other/endian.h
++++ boost/predef/other/endian.h
+@@ -53,7 +53,7 @@
+  */
+ #if !BOOST_ENDIAN_BIG_BYTE && !BOOST_ENDIAN_BIG_WORD && \
+     !BOOST_ENDIAN_LITTLE_BYTE && !BOOST_ENDIAN_LITTLE_WORD
+-#   if BOOST_LIB_C_GNU
++#   if BOOST_LIB_C_GNU || defined(ANDROID) || defined(__ANDROID__)
+ #       include <endian.h>
+ #   else
+ #       if BOOST_OS_MACOS

@@ -5,11 +5,11 @@ set -e
 . $(dirname $0)/config.sh
 
 BOOST_VER1=1
-BOOST_VER2=49
+BOOST_VER2=55
 BOOST_VER3=0
 
 ARCHIVE_NAME="boost_${BOOST_VER1}_${BOOST_VER2}_${BOOST_VER3}.tar.bz2"
-ARCHIVE_MD5="0d202cb811f934282dea64856a175698"
+ARCHIVE_MD5="d6eef4b4cacb2183f2bf265a5a03a354"
 BOOST_SOURCE_DIR="boost_${BOOST_VER1}_${BOOST_VER2}_${BOOST_VER3}"
 
 DOWNLOAD_LINK="http://downloads.sourceforge.net/project/boost/boost/$BOOST_VER1.$BOOST_VER2.$BOOST_VER3/${ARCHIVE_NAME}?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fboost%2Ffiles%2Fboost%2F${BOOST_VER1}.${BOOST_VER2}.${BOOST_VER3}%2F&ts=1291326673&use_mirror=freefr"
@@ -27,7 +27,6 @@ else
     patch -p0 < "$PATCHES/boost-endian.diff"
     patch -p0 < "$PATCHES/boost-filesystem.diff"
     patch -p0 < "$PATCHES/boost-user-config.diff"
-    patch -p0 < "$PATCHES/boost-xtime.diff"
 fi
 
 [ -f ./bjam ] || ./bootstrap.sh
