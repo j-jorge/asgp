@@ -16,6 +16,8 @@
 #include "rp/game_variables.hpp"
 #include "rp/util.hpp"
 
+#include "rp/ad/show_interstitial.hpp"
+
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
 #include "engine/scene_visual.hpp"
@@ -63,6 +65,10 @@ rp::level_selector::level_selector()
   set_can_move_items( false );
 } // rp::level_selector::level_selector()
 
+rp::level_selector::level_selector( const level_selector& that )
+{
+  assert( false );
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -91,8 +97,6 @@ void rp::level_selector::pre_cache()
 void rp::level_selector::on_enters_layer()
 {
   super::on_enters_layer();
-
-  util::show_ads();
 
   m_level_state = 
     game_variables::get_level_state(m_serial_number, m_level_number);
@@ -174,6 +178,9 @@ void rp::level_selector::on_enters_layer()
  */
 void rp::level_selector::progress( bear::universe::time_type elapsed_time )
 {
+  if ( m_ad_connection.connected() )
+    return;
+  
   super::progress( elapsed_time );
 
   game_variables::set_boss_transition(false);
@@ -1327,8 +1334,6 @@ void rp::level_selector::check_go_order()
       game_variables::set_back_order_status(false);
       if ( ! game_variables::get_in_loading() )
         {
-          util::hide_ads();
-
           load_level();
           if ( m_cursor != NULL )
             m_cursor->get_rendering_attributes().set_opacity(0);
@@ -1362,23 +1367,27 @@ void rp::level_selector::check_level_ending()
       game_variables::set_go_order_status(false);
 
       if ( m_load )
-        {
-          util::show_ads();
-
-          set_vertical_middle
-            ( get_level().get_camera_focus().bottom() + 
-              get_level().get_camera_size().y / 2 );
-          m_load = false;
-
-          get_level().play_music();
-
-          if ( ! check_fall_medal() )
-            start_move_back();
-          else
-            update_state();
-        }
+        m_ad_connection =
+          show_interstitial( boost::bind( &level_selector::resume, this ) );
     }
-} // level_selector::check_level_ending()
+}
+
+void rp::level_selector::resume()
+{
+  m_ad_connection.disconnect();
+  
+  set_vertical_middle
+    ( get_level().get_camera_focus().bottom() + 
+      get_level().get_camera_size().y / 2 );
+  m_load = false;
+
+  get_level().play_music();
+
+  if ( ! check_fall_medal() )
+    start_move_back();
+  else
+    update_state();
+}
 
 /*----------------------------------------------------------------------------*/
 /**

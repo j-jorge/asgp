@@ -62,9 +62,6 @@ namespace rp
 
     static std::string get_system_name();
 
-    static void show_ads();
-    static void hide_ads();
-
   private:
     static void create_smoke
     ( const bear::engine::base_item& ref, double min_intensity,

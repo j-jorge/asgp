@@ -111,24 +111,6 @@ std::string rp::java_activity::get_device_model_name() const
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Tells the system to show the ads.
- */
-void rp::java_activity::show_ads() const
-{
-  native_call( "showAds" );
-} // java_activity::show_ads()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Tells the system to hide the ads.
- */
-void rp::java_activity::hide_ads() const
-{
-  native_call( "hideAds" );
-} // java_activity::hide_ads()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Calls a native void method with no arguments.
  * \param method_name The name of the method to call.
  */

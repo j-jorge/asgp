@@ -32,9 +32,6 @@ namespace rp
 
     std::string get_device_model_name() const;
 
-    void show_ads() const;
-    void hide_ads() const;
-
   private:
     void native_call( std::string method_name ) const;
 

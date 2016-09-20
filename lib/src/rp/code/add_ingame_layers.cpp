@@ -25,6 +25,8 @@
 #include "engine/level_globals.hpp"
 #include "engine/world.hpp"
 
+#include "rp/callback_queue.hpp"
+
 #include "rp/layer/help_layer.hpp"
 #include "rp/layer/key_layer.hpp"
 #include "rp/layer/status_layer.hpp"
@@ -134,6 +136,8 @@ void rp::add_ingame_layers::pre_cache()
  */
 void rp::add_ingame_layers::build()
 {
+  new_item( *( new callback_queue() ) );
+
   bear::engine::transition_layer* transition
     ( new bear::engine::transition_layer
       (RP_TRANSITION_EFFECT_DEFAULT_TARGET_NAME) );

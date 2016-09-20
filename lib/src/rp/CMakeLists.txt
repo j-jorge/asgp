@@ -26,6 +26,7 @@ set( RP_SOURCE_FILES
   code/boss_controller.cpp
   code/boss_teleport.cpp
   code/cable.cpp
+  code/callback_queue.cpp
   code/cannonball.cpp
   code/cart_controller.cpp
   code/cart.cpp
@@ -45,6 +46,7 @@ set( RP_SOURCE_FILES
   code/init.cpp
   code/interactive_item.cpp
   code/level_exit.cpp
+  code/level_scheduler.cpp
   code/level_selector.cpp
   code/level_settings.cpp
   code/level_variables.cpp
@@ -61,9 +63,8 @@ set( RP_SOURCE_FILES
   code/wall.cpp
   code/zeppelin.cpp
 
-  android/code/back_button_home_item.cpp
-  android/code/java_activity.cpp
-
+  ad/code/show_interstitial.cpp
+  
   layer/code/help_layer.cpp
   layer/code/key_layer.cpp
   layer/code/misc_layer.cpp
@@ -90,6 +91,18 @@ set( RP_SOURCE_FILES
   )
 
 if( BUILD_PLATFORM STREQUAL "android" )
+  set(
+    RP_SOURCE_FILES
+    ${RP_SOURCE_FILES}
+    
+    android/code/back_button_home_item.cpp
+    android/code/get_activity_method.cpp
+    android/code/java_activity.cpp
+    android/code/jni_call_bridge.cpp
+    android/code/method_info.cpp
+    android/code/native_call.cpp
+    )
+
   set( RP_LINK_TYPE STATIC )
 else()
   set( RP_LINK_TYPE SHARED )

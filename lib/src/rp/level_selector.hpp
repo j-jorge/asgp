@@ -29,6 +29,8 @@
 #include <claw/tween/tweener_group.hpp>
 #include <claw/tween/single_tweener.hpp>
 
+#include <boost/signals2/connection.hpp>
+
 namespace rp
 {
   class cart;
@@ -73,6 +75,8 @@ namespace rp
 
   public:
     level_selector();
+    level_selector( const level_selector& that );
+    
     void pre_cache();
     void on_enters_layer();
     void progress( bear::universe::time_type elapsed_time );
@@ -157,6 +161,7 @@ namespace rp
     void check_back_order();
     void check_go_order();
     void check_level_ending();
+    void resume();
     bool check_fall_medal();
     void stop_selection();
     bear::visual::position_type get_medal_ending_position() const;
@@ -197,7 +202,7 @@ namespace rp
     /** \brief The level selectors that preceeds the current level selector. */
     handle_list m_precedence;
 
-    /** \brief The font for text. */
+    /** \brief Thenn font for text. */
     bear::visual::font m_font;
     
     /** \brief The points text. */
@@ -290,6 +295,8 @@ namespace rp
     /** \brief A state of the level. */
     unsigned int m_level_state;
 
+    boost::signals2::scoped_connection m_ad_connection;
+    
     /** \brief Indicates if a level is selected. */
     static bool s_selection;
 
