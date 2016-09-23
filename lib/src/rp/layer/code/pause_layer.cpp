@@ -12,10 +12,12 @@
  * \author Julien Jorge
  */
 #include "rp/layer/pause_layer.hpp"
+
 #include "rp/defines.hpp"
 #include "rp/game_variables.hpp"
 #include "rp/rp_gettext.hpp"
 #include "rp/util.hpp"
+#include "rp/events/tag_level_event.hpp"
 #include "rp/message/help_layer_starting_message.hpp"
 
 #include "engine/game.hpp"
@@ -69,14 +71,15 @@ void rp::pause_layer::set_pause( bool pause_on )
 {
   if ( get_level().is_paused() == pause_on )
     return;
-
   if ( pause_on )
     {
+      tag_level_event( "pause" );
       set_root_component( &m_root_window );
       get_level().set_pause();
     }
   else
     {
+      tag_level_event( "resume" );
       set_root_component( NULL );
       get_level().unset_pause();
     }
@@ -284,16 +287,23 @@ bear::gui::visual_component* rp::pause_layer::create_sound_component()
       get_level_globals().auto_sprite
         ( rp_gettext("gfx/status/buttons.png"), "sound on" ) );
 
+  const auto sounds_off
+    ( []() -> void
+      {
+        tag_level_event( "pause-sounds-off" );
+        bear::engine::game::get_instance().set_sound_muted( true );
+      } );
+  const auto sounds_on
+    ( []() -> void
+      {
+        tag_level_event( "pause-sounds-on" );
+        bear::engine::game::get_instance().set_sound_muted( false );
+      } );
+  
   result->add_checked_callback
-    ( bear::gui::callback_function_maker
-      ( boost::bind
-        ( &bear::engine::game::set_sound_muted,
-          &bear::engine::game::get_instance(), false ) ) );
+    ( bear::gui::callback_function_maker( sounds_on ) );
   result->add_unchecked_callback
-    ( bear::gui::callback_function_maker
-      ( boost::bind
-        ( &bear::engine::game::set_sound_muted,
-          &bear::engine::game::get_instance(), true ) ) );
+    ( bear::gui::callback_function_maker( sounds_off ) );
 
   result->check( !bear::engine::game::get_instance().get_sound_muted() );
 
@@ -331,16 +341,23 @@ bear::gui::visual_component* rp::pause_layer::create_music_component()
       get_level_globals().auto_sprite
       ( rp_gettext("gfx/status/buttons.png"), "music on" ) );
 
+  const auto music_off
+    ( []() -> void
+      {
+        tag_level_event( "pause-music-off" );
+        bear::engine::game::get_instance().set_sound_muted( true );
+      } );
+  const auto music_on
+    ( []() -> void
+      {
+        tag_level_event( "pause-music-on" );
+        bear::engine::game::get_instance().set_sound_muted( false );
+      } );
+  
   result->add_checked_callback
-    ( bear::gui::callback_function_maker
-      ( boost::bind
-        ( &bear::engine::game::set_music_muted,
-          &bear::engine::game::get_instance(), false ) ) );
+    ( bear::gui::callback_function_maker( music_on ) );
   result->add_unchecked_callback
-    ( bear::gui::callback_function_maker
-      ( boost::bind
-        ( &bear::engine::game::set_music_muted,
-          &bear::engine::game::get_instance(), true ) ) );
+    ( bear::gui::callback_function_maker( music_off ) );
 
   result->check( !bear::engine::game::get_instance().get_music_muted() );
 
@@ -455,6 +472,8 @@ void rp::pause_layer::highlight_component( bear::gui::visual_component* c )
  */
 void rp::pause_layer::on_quit()
 {
+  tag_level_event( "abort-level" );
+  
   game_variables::set_level_ending(true);
 
   util::send_quit_level(get_level().get_filename());
@@ -468,6 +487,8 @@ void rp::pause_layer::on_quit()
  */
 void rp::pause_layer::on_help()
 {
+  tag_level_event( "pause-help" );
+  
   help_layer_starting_message msg_help;
       
   get_level_globals().send_message

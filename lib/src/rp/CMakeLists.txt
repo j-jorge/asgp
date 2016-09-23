@@ -38,6 +38,7 @@ set( RP_SOURCE_FILES
   code/end.cpp
   code/entity.cpp
   code/explosion.cpp
+  code/event_tagger.cpp
   code/game_key.cpp
   code/game_variables.cpp
   code/help_button.cpp
@@ -64,6 +65,11 @@ set( RP_SOURCE_FILES
   code/zeppelin.cpp
 
   ad/code/show_interstitial.cpp
+
+  android/code/back_button_home_item.cpp
+
+  events/code/tag_event.cpp
+  events/code/tag_level_event.cpp
   
   layer/code/help_layer.cpp
   layer/code/key_layer.cpp
@@ -95,7 +101,6 @@ if( BUILD_PLATFORM STREQUAL "android" )
     RP_SOURCE_FILES
     ${RP_SOURCE_FILES}
     
-    android/code/back_button_home_item.cpp
     android/code/get_activity_method.cpp
     android/code/java_activity.cpp
     android/code/jni_call_bridge.cpp

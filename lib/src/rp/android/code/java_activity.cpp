@@ -21,32 +21,6 @@
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Tag an event in the analytics service.
- * \param tag The event.
- */
-void rp::java_activity::tag_event( const std::string& tag ) const
-{
-  JNIEnv * env( static_cast<JNIEnv*>( SDL_AndroidGetJNIEnv() ) );
-
-  assert( !env->ExceptionCheck() );
-
-  jobject activity( static_cast<jobject>( SDL_AndroidGetActivity() ) );
-  jclass clazz( env->GetObjectClass(activity) );
-
-  const jmethodID method_id
-    ( env->GetMethodID( clazz, "tagEvent", "(Ljava/lang/String;)V" ) );
-
-  jstring java_string_tag( (jstring)(env->NewStringUTF(tag.c_str()) ) );
-  env->CallVoidMethod( activity, method_id, java_string_tag );
-  env->DeleteLocalRef(java_string_tag);
-    
-  env->DeleteLocalRef(activity);
-
-  assert( !env->ExceptionCheck() );
-} // java_activity::tag_event()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Tells the system to open a given URL.
  * \param url The URL to open.
  */

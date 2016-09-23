@@ -7184,40 +7184,6 @@
   <layer class_name='action_layer' name='' width='18000' height='5000' fit_level='1' tag=''>
 
 <items>
-    <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-5'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='1880'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='100'/>
-</field>
-<field name='base_item.position.left'>
-<real value='96'/>
-</field>
-<field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</field>
-<field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
-  <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-  </frame>
-</animation>
-</field>
-<field name='mouse_over_manager.items'>
-<item_reference value='help'/>
-</field>
-<field name='mouse_over_manager.sample'>
-<sample path='sound/tick.ogg' loops='1' volume='1'/>
-</field>
-</fields>
-    </item><!-- bear::mouse_over_manager -->
-
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-4'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -7245,6 +7211,40 @@
 </field>
 <field name='mouse_over_manager.items'>
 <item_reference value='configure'/>
+</field>
+<field name='mouse_over_manager.sample'>
+<sample path='sound/tick.ogg' loops='1' volume='1'/>
+</field>
+</fields>
+    </item><!-- bear::mouse_over_manager -->
+
+    <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1880'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='96'/>
+</field>
+<field name='mouse_over_manager.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='mouse_over_manager.items'>
+<item_reference value='help'/>
 </field>
 <field name='mouse_over_manager.sample'>
 <sample path='sound/tick.ogg' loops='1' volume='1'/>
@@ -9219,6 +9219,20 @@
 </fields>
     </item><!-- bear::camera_on_object -->
 
+    <item class_name='rp::event_tagger' fixed='false' id='tag-help'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='240'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2709'/>
+</field>
+<field name='event_tagger.type'>
+<string value='help'/>
+</field>
+</fields>
+    </item><!-- rp::event_tagger -->
+
     <item class_name='bear::decorative_item' fixed='false' id='configure'>
 <fields>
 <field name='base_item.global'>
@@ -9401,6 +9415,9 @@
 </field>
 <field name='mouse_detector.right_button'>
 <bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='tag-help'/>
 </field>
 </fields>
     </item><!-- rp::help_button -->
@@ -9631,6 +9648,20 @@
 </field>
 </fields>
     </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='rp::event_tagger' fixed='false' id='tag-settings-on'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='245'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3033'/>
+</field>
+<field name='event_tagger.type'>
+<string value='settings-on'/>
+</field>
+</fields>
+    </item><!-- rp::event_tagger -->
 
     <item class_name='rp::level_selector' fixed='false' id='1-5'>
 <fields>
@@ -9913,6 +9944,7 @@
 <field name='item_with_toggle.linked_toggles'>
 <item_reference value='apply_mvt_configure_off'/>
 <item_reference value='apply_mvt_help_on'/>
+<item_reference value='tag-settings-on'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='trigger_configure_off'/>
@@ -10138,6 +10170,7 @@
 <field name='item_with_toggle.linked_toggles'>
 <item_reference value='apply_mvt_configure_off-1'/>
 <item_reference value='apply_mvt_help_off'/>
+<item_reference value='tag-settings-off'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='trigger_configure_on'/>
@@ -10277,6 +10310,20 @@
 </field>
 </fields>
     </item><!-- bear::forced_goto_creator -->
+
+    <item class_name='rp::event_tagger' fixed='false' id='tag-settings-off'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='357'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3418'/>
+</field>
+<field name='event_tagger.type'>
+<string value='settings-off'/>
+</field>
+</fields>
+    </item><!-- rp::event_tagger -->
 
     <item class_name='bear::forced_movement_toggle' fixed='false' id='apply_mvt_configure_off-1'>
 <fields>
@@ -10482,6 +10529,7 @@
 </field>
 <field name='item_with_toggle.linked_toggles'>
 <item_reference value='config-save'/>
+<item_reference value='tag-sound'/>
 </field>
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
@@ -10627,6 +10675,20 @@
 </field>
 </fields>
     </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='rp::event_tagger' fixed='false' id='tag-sound'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='248'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3572'/>
+</field>
+<field name='event_tagger.type'>
+<string value='level-selection-sound'/>
+</field>
+</fields>
+    </item><!-- rp::event_tagger -->
 
     <item class_name='bear::applied_forced_movement' fixed='false'>
 <fields>
@@ -10822,6 +10884,7 @@
 </field>
 <field name='item_with_toggle.linked_toggles'>
 <item_reference value='config-save-1'/>
+<item_reference value='tag-music'/>
 </field>
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
@@ -11082,6 +11145,20 @@
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
+
+    <item class_name='rp::event_tagger' fixed='false' id='tag-music'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='256'/>
+</field>
+<field name='base_item.position.left'>
+<real value='3792'/>
+</field>
+<field name='event_tagger.type'>
+<string value='level-selection-music'/>
+</field>
+</fields>
+    </item><!-- rp::event_tagger -->
 
     <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-4'>
 <fields>

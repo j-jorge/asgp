@@ -19,6 +19,9 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.amplitude.api.Amplitude;
+import org.json.JSONObject;
+
+import java.util.Map;
 
 public class ASGP extends SDLActivity
 {
@@ -53,8 +56,8 @@ public class ASGP extends SDLActivity
         startActivity(browserIntent);
     }
 
-    public void tagEvent( String tag ) {
-        Amplitude.getInstance().logEvent( tag );
+    public void tagEvent( String tag, Map< String, String > properties ) {
+        Amplitude.getInstance().logEvent( tag, new JSONObject( properties ) );
     }
         
     public void showHome() {

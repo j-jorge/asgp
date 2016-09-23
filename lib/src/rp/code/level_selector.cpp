@@ -17,6 +17,8 @@
 #include "rp/util.hpp"
 
 #include "rp/ad/show_interstitial.hpp"
+#include "rp/events/tag_event.hpp"
+#include "rp/events/make_event_property.hpp"
 
 #include "engine/level.hpp"
 #include "engine/level_globals.hpp"
@@ -367,6 +369,15 @@ void rp::level_selector::activate()
           check_go_order();
         }
     }
+  else
+    tag_event
+      ( "level-selected",
+        {
+          make_event_property( "locked", "true" ),
+          make_event_property( "serial", m_serial_number ),
+          make_event_property( "level", m_level_number ),
+          make_event_property( "completed", false )
+        } );
 } // level_selector::activate()
 
 /*----------------------------------------------------------------------------*/
@@ -459,6 +470,13 @@ bool rp::level_selector::mouse_move
  */
 void rp::level_selector::load_level()
 {
+  tag_event
+    ( "load-level",
+      {
+        make_event_property( "serial", m_serial_number ),
+        make_event_property( "level", m_level_number  )
+      } );
+  
   m_load = true;
   const double fade_duration(1);
 
@@ -774,6 +792,9 @@ void rp::level_selector::render_balloons
 void rp::level_selector::render_medal
 ( std::list<bear::engine::scene_visual>& visuals ) const
 {
+  if ( !m_medal_sprite.is_valid() )
+    return;
+  
   double factor = m_level_factor * m_medal_factor;
   bear::visual::position_type pos = get_medal_position();
 
@@ -811,6 +832,13 @@ void rp::level_selector::end_update()
  */
 void rp::level_selector::unlock()
 {
+  tag_event
+    ( "level-unlocked",
+      {
+        make_event_property( "serial", m_serial_number ),
+        make_event_property( "level", m_level_number  )
+      } );
+
   start_update();
 
   if ( game_variables::get_unlocked_serial() < m_serial_number )
@@ -866,6 +894,13 @@ void rp::level_selector::unlock()
  */
 void rp::level_selector::show_star()
 {
+  tag_event
+    ( "level-validated",
+      {
+        make_event_property( "serial", m_serial_number ),
+        make_event_property( "level", m_level_number  )
+      } );
+  
   start_update();
   m_star.set_opacity(1);
 
@@ -1090,14 +1125,23 @@ void rp::level_selector::init_selected_level()
  */
 void rp::level_selector::select_level()
 {
-  if ( ! s_selection )
-    {
-      set_z_position(100);
-      s_selection = true;
-      game_variables::select_level( true );
-      init_selected_level();
-      move_on_center();
-    }
+  if ( s_selection )
+    return;
+
+  tag_event
+    ( "level-selected",
+      {
+        make_event_property( "locked", "false" ),
+        make_event_property( "serial", m_serial_number ),
+        make_event_property( "level", m_level_number  ),
+        make_event_property( "completed", m_level_state >= 2 )
+      } );
+
+  set_z_position(100);
+  s_selection = true;
+  game_variables::select_level( true );
+  init_selected_level();
+  move_on_center();
 } // level_selector::select_level()
 
 /*----------------------------------------------------------------------------*/
@@ -1138,6 +1182,13 @@ void rp::level_selector::move_on_center()
  */
 void rp::level_selector::come_back()
 {
+  tag_event
+    ( "load-cancelled",
+      {
+        make_event_property( "serial", m_serial_number ),
+        make_event_property( "level", m_level_number  )
+      } );
+  
   game_variables::set_back_order_status(false);
   game_variables::select_level( false );
   
@@ -1384,9 +1435,38 @@ void rp::level_selector::resume()
   get_level().play_music();
 
   if ( ! check_fall_medal() )
-    start_move_back();
-  else
-    update_state();
+    {
+      start_move_back();
+      return;
+    }
+  
+  std::string medal_name;
+  
+  switch(game_variables::get_last_medal() )
+    {
+    case 0:
+      medal_name = "none";
+      break;
+    case 1:
+      medal_name = "bronze";
+      break;
+    case 2:
+      medal_name = "silver";
+      break;
+    case 3:
+      medal_name = "gold";
+      break;
+    }
+  
+  tag_event
+    ( "level-completed",
+      {
+        make_event_property( "medal", medal_name ),
+        make_event_property( "serial", m_serial_number ),
+        make_event_property( "level", m_level_number  )
+      } );
+  
+  update_state();
 }
 
 /*----------------------------------------------------------------------------*/

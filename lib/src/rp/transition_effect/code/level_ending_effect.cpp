@@ -19,6 +19,7 @@
 #include "rp/cart.hpp"
 #include "rp/util.hpp"
 #include "rp/version.hpp"
+#include "rp/events/tag_level_event.hpp"
 
 #include "engine/game.hpp"
 #include "engine/level.hpp"
@@ -634,6 +635,8 @@ void rp::level_ending_effect::skip()
 {
   if ( ! m_finished )
     {
+      tag_level_event( "end-skip" );
+
       // We update the lines 100 seconds at once. 
       // This is an arbitrary value but
       // using too large values may produce overflows.
@@ -1680,6 +1683,7 @@ void rp::level_ending_effect::on_pass_scores()
     {
       if ( !m_in_fade_out )
         {
+          tag_level_event( "end-continue" );
           create_fade_out_tweener();
           m_in_fade_out = true;
         }
@@ -1694,6 +1698,8 @@ void rp::level_ending_effect::on_pass_scores()
  */
 void rp::level_ending_effect::on_facebook_click()
 {
+  tag_level_event( "end-facebook" );
+  
   m_facebook_request =
     http_request::request
     ( "/asgp/share.php?to_stdout=1&platform=facebook",
@@ -1706,6 +1712,8 @@ void rp::level_ending_effect::on_facebook_click()
  */
 void rp::level_ending_effect::on_twitter_click()
 {
+  tag_level_event( "end-twitter" );
+
   const boost::format tweet
     ( boost::format
       ( rp_gettext("%1% points in level \"%2%\" of Straining Coasters!") )

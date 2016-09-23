@@ -1256,6 +1256,9 @@
 
     <item class_name='bear::level_popper_toggle' fixed='true' id='popper'>
 <fields>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='tag-event'/>
+</field>
 <field name='base_item.position.bottom'>
 <real value='3300'/>
 </field>
@@ -1319,6 +1322,23 @@
 </field>
 </fields>
     </item><!-- bear::straight_slope -->
+
+    <item class_name='rp::event_tagger' fixed='false' id='tag-event'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='3489'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4687'/>
+</field>
+<field name='event_tagger.tag_level_info'>
+<bool value='1'/>
+</field>
+<field name='event_tagger.type'>
+<string value='skip'/>
+</field>
+</fields>
+    </item><!-- rp::event_tagger -->
 
 </items>
 

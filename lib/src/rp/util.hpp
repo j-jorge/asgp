@@ -58,7 +58,6 @@ namespace rp
     static void save_config();
     
     static void open_url( const std::string& url );
-    static void tag_event( const std::string& tag );
 
     static std::string get_system_name();
 

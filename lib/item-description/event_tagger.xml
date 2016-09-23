@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<item xmlns="http://www.gamned.org/bear/schema/0.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gamned.org/bear/schema/0.5 http://www.gamned.org/bear/schema/0.5/item-description.xsd" class="rp::event_tagger" category="rolling_painting" box_color="#22AA77" url="http://www.gamned.org/wiki/index.php/event_tagger" fixable="false">
+  <inherit>
+    <class>bear::base_item</class>
+    <class>bear::item_with_toggle</class>
+  </inherit>
+  <fields>
+    <field type="string" name="event_tagger.type" required="true">
+      <description>
+        The type of the event.
+      </description>
+    </field>
+    <field type="string" name="event_tagger.properties">
+      <description>
+        Extra properties to pass to the event. There must be an even number of
+        entries in this field.
+      </description>
+    </field>
+    <field type="boolean" name="event_tagger.tag_level_info">
+      <description>
+        Tell to tag the level number and the serial number too.
+      </description>
+      <default_value>false</default_value>
+    </field>
+  </fields>
+  <description>This toggles logs an event with its state.</description>
+</item>

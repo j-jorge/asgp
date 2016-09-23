@@ -381,25 +381,6 @@ void rp::util::open_url( const std::string& url )
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Tag an event in the analytics service.
- * \param tag the tag of the event.
- */
-void rp::util::tag_event( const std::string& tag )
-{
-#ifdef __ANDROID__
-
-  java_activity activity;
-  activity.tag_event( tag );
-
-#else
-
-  claw::logger << claw::log_verbose << "Event: " << tag << '\n';
-
-#endif
-} // util::open_url()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Gets the name of the system for which the game was compiled (either
  *        windows, android or unix).
  */

@@ -12,8 +12,10 @@
  * \author Sebastien Angibaud
  */
 #include "rp/serial_switcher.hpp"
+
 #include "rp/game_variables.hpp"
-#include "rp/util.hpp"
+#include "rp/events/tag_event.hpp"
+#include "rp/events/make_event_property.hpp"
 
 #include "engine/level_globals.hpp"
 
@@ -269,6 +271,13 @@ bool rp::serial_switcher::is_visible() const
  */
 void rp::serial_switcher::update_serials() const
 {
+  tag_event
+    ( "serial-switch",
+        {
+          make_event_property( "from", m_serial ),
+          make_event_property( "to", m_next_serial )
+        } );
+  
   if ( m_serial != 6 && m_serial != 0 )
     game_variables::set_last_serial( m_serial );
          
