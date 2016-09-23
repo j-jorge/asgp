@@ -102,7 +102,7 @@ void rp::game::init_game()
 {
   const char* default_args[] =
     {
-      "--game-name=Super Great Park",
+      "--game-name=Straining Coasters",
       "--screen-width=1280",
       "--screen-height=720",
       "--fullscreen",
@@ -110,7 +110,6 @@ void rp::game::init_game()
       "--set-game-var-bool=demo_version=0",
       "--tag=android",
       "--auto-load-symbols",
-      "--stats-destination=http://www.stuff-o-matic.com/asgp/stats/save.php",
       "--start-level=level/start.cl",
       NULL
     };

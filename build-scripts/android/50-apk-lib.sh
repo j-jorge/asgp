@@ -15,7 +15,7 @@ TARGET_DIR="$ASGP_APK_ROOT/java/libs/$ANDROID_ABI/"
 
 [ -d "$TARGET_DIR" ] || mkdir --parents "$TARGET_DIR"
 
-ASGP_LIB_NAME=libandy-super-great-park.so
+ASGP_LIB_NAME=libstraining-coasters.so
 TARGET_SO="$TARGET_DIR/$ASGP_LIB_NAME"
 SOURCES="$ASGP_APK_ROOT/lib/src/code/*.c*"
 

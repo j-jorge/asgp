@@ -129,7 +129,7 @@ void rp::launcher::create_game( int& argc, char** &argv )
 
   const char* default_args[] =
     {
-      "--game-name=Super Great Park",
+      "--game-name=Straining Coasters",
       "--screen-width=1280",
       "--screen-height=720",
       "--active-area=250",
@@ -151,7 +151,6 @@ void rp::launcher::create_game( int& argc, char** &argv )
       rp_argument.c_str(),
 #endif
 
-      "--stats-destination=http://www.stuff-o-matic.com/asgp/stats/save.php",
       "--start-level=level/start.cl",
       NULL
     };

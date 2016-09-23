@@ -6,11 +6,6 @@
   See the accompanying license file for details about usage, modification and
   distribution of this file.
 */
-/**
- * \file
- * \brief Version of Andy's Super great Park.
- * \author Sebastien Angibaud
- */
 #ifndef __RP_VERSION_HPP__
 #define __RP_VERSION_HPP__
 
@@ -19,8 +14,8 @@
 
 #define RP_MAJOR_VERSION 1
 #define RP_MINOR_VERSION 0
-#define RP_PATCH_NUMBER 13
-#define RP_VERSION_STRING "Andy's Super Great Park " \
+#define RP_PATCH_NUMBER 14
+#define RP_VERSION_STRING "Straining Coasters " \
   RP_TO_STR(RP_MAJOR_VERSION) "." \
   RP_TO_STR(RP_MINOR_VERSION) "." RP_TO_STR(RP_PATCH_NUMBER)
 

@@ -8,7 +8,7 @@ cd $ASGP_APK_ROOT/java
 
 rm -fr bin
 
-APP_NAME="ASGP"
+APP_NAME="straining-coasters"
 BUILD_MODE=debug
 
 for ARG in $@

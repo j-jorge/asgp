@@ -24,7 +24,7 @@ public class ASGP extends SDLActivity
 {
     static {
         System.loadLibrary( "gnustl_shared" );
-        System.loadLibrary( "andy-super-great-park" );
+        System.loadLibrary( "straining-coasters" );
     }
 
     private InterstitialService mInterstitialService;

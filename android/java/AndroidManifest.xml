@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.stuffomatic.asgp"
+          package="com.stuffomatic.coasters"
           android:versionCode="5"
           android:versionName="1.0.13">
   <application android:label="@string/app_name"
                android:icon="@drawable/ic_launcher"
                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
                >
-    <activity android:name="ASGP"
+    <activity android:name="com.stuffomatic.asgp.ASGP"
               android:label="@string/app_name"
               android:screenOrientation="landscape"
               android:launchMode="singleInstance"
