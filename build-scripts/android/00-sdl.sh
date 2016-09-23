@@ -20,13 +20,14 @@ else
     tar xf "$ARCHIVE"
     cd "$SDL_SOURCE_DIR"
     patch -p0 < "$PATCHES/sdl-android-locale.diff"
+    patch -p0 < "$PATCHES/sdl-events-after-resume.diff"
 fi
 
 ndk_build libSDL2.a
 
 [ -d $INSTALL_PREFIX/include/SDL2/ ] || mkdir $INSTALL_PREFIX/include/SDL2/
-cp include/* $INSTALL_PREFIX/include/SDL2/
-cp obj/local/$ANDROID_ABI/libSDL2.a $INSTALL_PREFIX/lib/
+cp --update include/* $INSTALL_PREFIX/include/SDL2/
+cp --update obj/local/$ANDROID_ABI/libSDL2.a $INSTALL_PREFIX/lib/
 
 set_shell_variable \
     SDL_SOURCE_DIR $CACHE/$SDL_SOURCE_DIR

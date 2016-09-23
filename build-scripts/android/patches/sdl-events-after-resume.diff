@@ -1,0 +1,23 @@
+diff -r SDL2-2.0.4.orig/src/core/android/SDL_android.c SDL2-2.0.4/src/core/android/SDL_android.c
+--- src/core/android/SDL_android.c	2016-09-23 17:36:40.165075609 +0200
++++ src/core/android/SDL_android.c	2016-09-23 17:32:36.194931072 +0200
+@@ -362,15 +362,16 @@
+     __android_log_print(ANDROID_LOG_VERBOSE, "SDL", "nativeResume()");
+ 
+     if (Android_Window) {
+-        SDL_SendAppEvent(SDL_APP_WILLENTERFOREGROUND);
+-        SDL_SendAppEvent(SDL_APP_DIDENTERFOREGROUND);
+-        SDL_SendWindowEvent(Android_Window, SDL_WINDOWEVENT_FOCUS_GAINED, 0, 0);
+-        SDL_SendWindowEvent(Android_Window, SDL_WINDOWEVENT_RESTORED, 0, 0);
+         /* Signal the resume semaphore so the event loop knows to resume and restore the GL Context
+          * We can't restore the GL Context here because it needs to be done on the SDL main thread
+          * and this function will be called from the Java thread instead.
+          */
+         if (!SDL_SemValue(Android_ResumeSem)) SDL_SemPost(Android_ResumeSem);
++
++        SDL_SendAppEvent(SDL_APP_WILLENTERFOREGROUND);
++        SDL_SendAppEvent(SDL_APP_DIDENTERFOREGROUND);
++        SDL_SendWindowEvent(Android_Window, SDL_WINDOWEVENT_FOCUS_GAINED, 0, 0);
++        SDL_SendWindowEvent(Android_Window, SDL_WINDOWEVENT_RESTORED, 0, 0);
+     }
+ }
