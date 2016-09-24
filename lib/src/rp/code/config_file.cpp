@@ -27,7 +27,13 @@ rp::config_file::config_file()
   : m_fullscreen(false),
     m_dumb_rendering(true),
     m_sound_on(true),
-    m_sound_volume(1), m_music_on(true), m_music_volume(0.7),
+    m_sound_volume(1),
+#ifdef __ANDROID__
+    m_music_on(false),
+#else
+    m_music_on(true),
+#endif
+    m_music_volume(0.7),
     m_config_name("config")
 {
   const bear::engine::game& g( bear::engine::game::get_instance() );
