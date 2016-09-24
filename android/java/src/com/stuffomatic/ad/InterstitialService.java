@@ -19,7 +19,7 @@ public class InterstitialService
     public InterstitialService( Context context ) {
 
         mInterstitialAd = new InterstitialAd( context );
-        mInterstitialAd.setAdUnitId("ca-app-pub-8517534578027121/5449175693");
+        mInterstitialAd.setAdUnitId("ca-app-pub-8517534578027121/2526678896");
 
         mInterstitialAd.setAdListener( new AdListener() {
             @Override

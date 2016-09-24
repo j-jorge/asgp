@@ -380,6 +380,8 @@ namespace rp
     /** \brief The sample of combo. */
     bear::audio::sample* m_combo_sample;
 
+    boost::signals2::scoped_connection m_ad_connection;
+    
     /** \brief The score. */
     static unsigned int s_score;
 

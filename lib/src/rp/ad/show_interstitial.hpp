@@ -13,8 +13,14 @@
 
 namespace rp
 {
+  enum class ad_location
+  {
+    level_completed,
+    restart_level
+  };
+  
   boost::signals2::connection show_interstitial
-  ( const boost::function< void() >& callback );
+  ( ad_location location, const boost::function< void() >& callback );
 }
 
 #endif

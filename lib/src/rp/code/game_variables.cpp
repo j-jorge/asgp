@@ -1387,6 +1387,18 @@ void rp::game_variables::set_balloon_blue_intensity( double blue )
       ( "balloon_blue_intensity", blue ) );
 } // game_variables::set_balloon_blue_intensity()
 
+void rp::game_variables::schedule_interstitial( bool b )
+{
+  bear::engine::game::get_instance().set_game_variable
+    ( bear::engine::variable<bool>
+      ( "interstitial_scheduled", b ) );
+}
+
+bool rp::game_variables::interstitial_scheduled()
+{
+  return rp_game_variables_get_value( "interstitial_scheduled", false );
+}
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Get a variable name prefixed with persistent option prefix.

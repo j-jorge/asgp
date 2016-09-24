@@ -33,6 +33,8 @@
 #include "rp/util.hpp"
 #include "rp/transition_effect/level_ending_effect.hpp"
 #include "rp/zeppelin.hpp"
+#include "rp/ad/show_interstitial.hpp"
+#include "rp/events/tag_level_event.hpp"
 
 #include "engine/level.hpp"
 #include "engine/game.hpp"
@@ -127,6 +129,8 @@ rp::cart::cart( const cart& that )
  */
 rp::cart::~cart()
 {
+  m_ad_connection.disconnect();
+  
   for ( ; !m_signals.empty(); m_signals.pop_front() )
     m_signals.front().disconnect();
 
@@ -231,6 +235,13 @@ void rp::cart::on_enters_layer()
   save_position();
   init_elements(); 
   create_cursor();
+
+  if ( game_variables::interstitial_scheduled() )
+    {
+      game_variables::schedule_interstitial( false );
+      m_ad_connection =
+        show_interstitial( ad_location::restart_level, []() -> void {} );
+    }
 } // cart::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
@@ -399,7 +410,13 @@ void rp::cart::create_cannon_fire()
  * \brief Regenerate the cart.
  */
 void rp::cart::regenerate()
-{ 
+{
+  tag_level_event( "regenerate" );
+
+  game_variables::schedule_interstitial( true );
+  
+  m_ad_connection.disconnect();
+  
   bear::delayed_level_loading* item = new bear::delayed_level_loading
         ( get_level().get_filename(), 2, false, 2, 
           RP_TRANSITION_EFFECT_DEFAULT_TARGET_NAME);

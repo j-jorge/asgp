@@ -7,7 +7,8 @@
 #include <cassert>
 
 boost::signals2::connection
-rp::show_interstitial( const boost::function< void() >& callback )
+rp::show_interstitial
+( ad_location location, const boost::function< void() >& callback )
 {
 #ifdef __ANDROID__
   android::method_info m

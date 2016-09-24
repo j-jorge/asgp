@@ -1419,7 +1419,9 @@ void rp::level_selector::check_level_ending()
 
       if ( m_load )
         m_ad_connection =
-          show_interstitial( boost::bind( &level_selector::resume, this ) );
+          show_interstitial
+          ( ad_location::level_completed,
+            boost::bind( &level_selector::resume, this ) );
     }
 }
 

@@ -222,6 +222,9 @@ namespace rp
     static void set_balloon_green_intensity( double green );
     static double get_balloon_blue_intensity();
     static void set_balloon_blue_intensity( double blue );
+
+    static void schedule_interstitial( bool b );
+    static bool interstitial_scheduled();
     
     // persistent utilities
     static std::string make_persistent_variable_name( const std::string& n );
