@@ -96,7 +96,7 @@ void rp::http_request::parse_result( std::istream& server_connection ) const
     if ( claw::text::getline( server_connection, line ) )
       {
 #ifdef _DEBUG
-        claw::logger << claw::log_verbose <<  "Stats server response: " << code
+        claw::logger << claw::log_verbose <<  "Server response: " << code
                      << ' ' << line << std::endl;
 #endif
         if ( code == 200 /* OK */ )
@@ -112,6 +112,9 @@ void rp::http_request::parse_result( std::istream& server_connection ) const
 
             m_on_result( result );
           }
+        else
+          claw::logger << claw::log_warning <<  "HTTP request failed: " << code
+                       << ", " << m_page << std::endl;
       }
 } // http_request::parse_result()
 

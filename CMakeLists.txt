@@ -112,6 +112,9 @@ link_directories(
   )
 
 #-------------------------------------------------------------------------------
+find_package( RapidJSON )
+
+#-------------------------------------------------------------------------------
 # Link directories for the game
 link_directories(
   ${LIBRARY_OUTPUT_PATH}

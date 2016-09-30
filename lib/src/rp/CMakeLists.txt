@@ -30,6 +30,7 @@ set( RP_SOURCE_FILES
   code/cannonball.cpp
   code/cart_controller.cpp
   code/cart.cpp
+  code/client_config.cpp
   code/config_file.cpp
   code/config_save.cpp
   code/crate.cpp

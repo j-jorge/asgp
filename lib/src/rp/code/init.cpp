@@ -13,6 +13,7 @@
  */
 #include "rp/init.hpp"
 
+#include "rp/client_config.hpp"
 #include "rp/config_file.hpp"
 #include "rp/game_key.hpp"
 #include "rp/util.hpp"
@@ -38,6 +39,8 @@ void init_super_great_park()
   config.apply();
   config.save();
 
+  rp::get_client_config();
+  
   const std::string translation_domain_name( "super-great-park" );
 
 #ifdef __ANDROID__
