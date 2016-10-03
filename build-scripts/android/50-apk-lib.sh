@@ -6,10 +6,12 @@ set -e
 
 if [ $(build_mode) = "release" ]
 then
-    CXX_FLAGS="-O3 -DNDEBUG"
+    LOCAL_CFLAGS="-O3 -DNDEBUG"
 else
-    CXX_FLAGS="-O0 -g -D_DEBUG"
+    LOCAL_CFLAGS="-O0 -g -D_DEBUG"
 fi
+
+LOCAL_CXXFLAGS="$CXXFLAGS $LOCAL_CFLAGS --std=c++11"
 
 TARGET_DIR="$ASGP_APK_ROOT/java/libs/$ANDROID_ABI/"
 
@@ -28,9 +30,9 @@ compile_object()
     
     if [[ $1 = *.c ]]
     then
-        COMPILER="$ANDROID_CC $CFLAGS"
+        COMPILER="$ANDROID_CC $CFLAGS $LOCAL_CFLAGS"
     else
-        COMPILER="$ANDROID_CXX $CXXFLAGS"
+        COMPILER="$ANDROID_CXX $CXXFLAGS $LOCAL_CXXFLAGS"
     fi
 
     printf "Compiling %s\n" "$2"
@@ -40,6 +42,8 @@ compile_object()
              -I"$SDL_SOURCE_DIR/src/main/android/" \
              -I"$SOURCE_ROOT/android/lib/src/" \
              -I"$BEAR_ROOT_DIR/bear-engine/core/src" \
+             -I"$ANDROID_BREAKPAD_INCLUDE_DIR" \
+             -I"$ANDROID_BREAKPAD_INCLUDE_DIR/src/common/android/include" \
              -I$INSTALL_PREFIX/include \
              -I$INSTALL_PREFIX/include/SDL2 \
              -c "$1" \
@@ -99,6 +103,7 @@ compile()
              -lintl \
              -lSDL2_mixer \
              -lSDL2 \
+             -lbreakpad_client \
              -lsupc++ \
              -lstdioext \
              -Wl,-Bdynamic \
@@ -116,5 +121,16 @@ compile
 cp $ANDROID_TOOLCHAIN_ROOT/arm-linux-androideabi/lib/libgnustl_shared.so \
     "$TARGET_DIR"
 
+BUILD_DIR="$ASGP_APK_ROOT/java/build/"
+
+[ ! -d "$BUILD_DIR" ] && mkdir -p "$BUILD_DIR"
+
+SYMBOLS=$BUILD_DIR/libs.zip
+
+rm -f "$SYMBOLS"
+zip --junk-paths -9 "$SYMBOLS" "$TARGET_SO"
+
 $ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-strip --strip-all \
     "$TARGET_DIR"/*.so \
+
+set_shell_variable ASGP_SYMBOLS $SYMBOLS

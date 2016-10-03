@@ -19,9 +19,15 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.amplitude.api.Amplitude;
+import net.hockeyapp.android.Constants;
+import net.hockeyapp.android.CrashManager;
+import net.hockeyapp.android.NativeCrashManager;
+
 import org.json.JSONObject;
 
 import java.util.Map;
+
+import com.stuffomatic.coasters.R;
 
 public class ASGP extends SDLActivity
 {
@@ -36,6 +42,8 @@ public class ASGP extends SDLActivity
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        initializeHockeyApp();
+        
         Amplitude.getInstance().initialize
             ( this, "03de6dc65358e076d5ae691dc8748d74")
             .enableForegroundTracking(getApplication() );
@@ -80,6 +88,7 @@ public class ASGP extends SDLActivity
     @Override
     public void onResume() {
         super.onResume();
+        CrashManager.register(this);
         hideActionBars();
     }
 
@@ -91,6 +100,23 @@ public class ASGP extends SDLActivity
         }
     }
 
+    private void initializeHockeyApp() {
+        CrashManager.register( this );
+
+        Constants.loadFromContext( this );
+        setUpBreakpad( Constants.FILES_PATH );
+
+        checkForCrashes();
+    }
+
+    private native void setUpBreakpad( String filepath );
+    
+    private void checkForCrashes() {
+        NativeCrashManager.handleDumpFiles
+            ( this, getApplicationContext().getString
+              ( R.string.hockeyapp_app_id ) );
+    }
+    
     private void hideActionBars() {
 
         getWindow().getDecorView().setSystemUiVisibility

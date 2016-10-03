@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Straining Coasters</string>
+  <string name="app_name">Straining Coasters</string>
+  <string name="hockeyapp_app_id">ac86839138c04266970d9012b0a21898</string>
 </resources>
