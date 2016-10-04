@@ -34,6 +34,7 @@
 #include "rp/transition_effect/level_ending_effect.hpp"
 #include "rp/zeppelin.hpp"
 #include "rp/ad/show_interstitial.hpp"
+#include "rp/events/make_event_property.hpp"
 #include "rp/events/tag_level_event.hpp"
 
 #include "engine/level.hpp"
@@ -514,6 +515,13 @@ void rp::cart::die_by_wall()
  */
 void rp::cart::die( bool right, bool left )
 {
+  tag_level_event
+    ( "dead",
+      {
+        make_event_property( "x", int( get_center_of_mass().x ) ),
+        make_event_property( "y", int( get_center_of_mass().y ) )
+      } );
+
   while( ! m_plungers.empty() )
     {
       plunger * p = * (m_plungers.begin());
