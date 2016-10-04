@@ -22,6 +22,7 @@ import com.amplitude.api.Amplitude;
 import net.hockeyapp.android.Constants;
 import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.NativeCrashManager;
+import net.hockeyapp.android.metrics.MetricsManager;
 
 import org.json.JSONObject;
 
@@ -66,6 +67,7 @@ public class ASGP extends SDLActivity
 
     public void tagEvent( String tag, Map< String, String > properties ) {
         Amplitude.getInstance().logEvent( tag, new JSONObject( properties ) );
+        MetricsManager.trackEvent( tag, properties );
     }
         
     public void showHome() {
@@ -101,7 +103,9 @@ public class ASGP extends SDLActivity
     }
 
     private void initializeHockeyApp() {
+
         CrashManager.register( this );
+        MetricsManager.register( this, getApplication() );
 
         Constants.loadFromContext( this );
         setUpBreakpad( Constants.FILES_PATH );
