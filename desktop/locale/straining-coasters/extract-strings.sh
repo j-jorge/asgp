@@ -1,6 +1,6 @@
 #!/bin/sh
 
-OUTPUT_FILE=super-great-park.pot
+OUTPUT_FILE=straining-coasters.pot
 
 if ! which xpath >/dev/null
 then

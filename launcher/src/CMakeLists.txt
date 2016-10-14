@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 project(rp-launcher)
 
-set( RP_LAUNCHER_TARGET_NAME andy-super-great-park )
+set( RP_LAUNCHER_TARGET_NAME straining-coasters )
 
 include_directories( . ${BEAR_ENGINE_INCLUDE_DIRECTORY} )
 

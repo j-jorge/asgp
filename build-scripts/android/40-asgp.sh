@@ -35,7 +35,7 @@ configure()
 
 convert_localization()
 {
-    pushd "$SOURCE_ROOT/desktop/locale/super-great-park"
+    pushd "$SOURCE_ROOT/desktop/locale/straining-coasters"
 
     TMP_FILE=$(mktemp)
 
@@ -60,8 +60,8 @@ convert_localization()
 
 restore_localization()
 {
-    pushd "$SOURCE_ROOT/desktop/locale/super-great-park"
-    git checkout HEAD "$SOURCE_ROOT/desktop/locale/super-great-park"
+    pushd "$SOURCE_ROOT/desktop/locale/straining-coasters"
+    git checkout HEAD "$SOURCE_ROOT/desktop/locale/straining-coasters"
     popd
 }
 

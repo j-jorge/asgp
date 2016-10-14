@@ -84,7 +84,7 @@ int rp::launcher::run()
     claw::logger << claw::log_verbose << "Using default text domain directory."
                  << std::endl;
   else if ( bindtextdomain
-            ( "super-great-park", text_domain_dir.c_str() ) != NULL )
+            ( "straining-coasters", text_domain_dir.c_str() ) != NULL )
     claw::logger << claw::log_verbose << "Text domain directory is '"
                  << text_domain_dir << "'." << std::endl;
   else
@@ -92,7 +92,7 @@ int rp::launcher::run()
                  << "Could not set the text domain directory to '"
                  << text_domain_dir << "'." << std::endl;
 
-  bind_textdomain_codeset( "super-great-park", "ISO-8859-15" );
+  bind_textdomain_codeset( "straining-coasters", "ISO-8859-15" );
 
   try
     {
@@ -226,7 +226,7 @@ std::string rp::launcher::get_data_path_argument() const
 #ifdef _WIN32
   return a + get_application_path() + STRINGIZE( RP_DATA_DIRECTORY );
 #elif defined RP_STATIC
-  return a + get_application_path() + "share/super-great-park";
+  return a + get_application_path() + "share/straining-coasters";
 #elif !defined(NDEBUG)
   return a + STRINGIZE( RP_DATA_DEBUG_DIRECTORY );
 #else

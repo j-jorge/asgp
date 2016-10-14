@@ -1,6 +1,6 @@
 include( FindGettext OPTIONAL )
 
 if( GETTEXT_FOUND )
-  subdirs( super-great-park )
+  subdirs( straining-coasters )
 endif( GETTEXT_FOUND )
 
