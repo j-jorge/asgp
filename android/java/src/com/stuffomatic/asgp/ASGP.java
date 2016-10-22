@@ -19,6 +19,10 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.amplitude.api.Amplitude;
+
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+
 import net.hockeyapp.android.Constants;
 import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.NativeCrashManager;
@@ -49,6 +53,8 @@ public class ASGP extends SDLActivity
             ( this, "03de6dc65358e076d5ae691dc8748d74")
             .enableForegroundTracking(getApplication() );
 
+        FacebookSdk.sdkInitialize( this );
+        AppEventsLogger.activateApp( this );
         
         mInterstitialService = new InterstitialService( this );
 
