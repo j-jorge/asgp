@@ -29,7 +29,7 @@ build-scripts/android/.cache
 
 # Android
 android/java/release.keystore
-android/java/libs/
+android/java/libs/armeabi*
 android/java/assets/
 android/java/gen/
 android/java/share/
