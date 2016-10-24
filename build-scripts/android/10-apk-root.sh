@@ -17,4 +17,16 @@ sed 's|loadLibraries();||g' \
 cp $SDL_SOURCE_DIR/src/main/android/SDL_android_main.c \
    $ASGP_APK_ROOT/lib/src/code/
 
+if [ $(build_mode $@) = debug ]
+then
+    sed 's|package=.*|package="com.stuffomatic.beta.coasters"|' \
+        -i $ASGP_APK_ROOT/java/AndroidManifest.xml
+
+    sed 's|com\.stuffomatic\.coasters\.R|com.stuffomatic.beta.coasters.R|' \
+        -i $ASGP_APK_ROOT/java/src/com/stuffomatic/asgp/ASGP.java
+
+    sed 's|Straining Coasters|Beta Coasters|' \
+        -i $ASGP_APK_ROOT/java/res/values/strings.xml
+fi
+
 set_shell_variable ASGP_APK_ROOT "$ASGP_APK_ROOT"
