@@ -17,6 +17,18 @@ sed 's|loadLibraries();||g' \
 cp $SDL_SOURCE_DIR/src/main/android/SDL_android_main.c \
    $ASGP_APK_ROOT/lib/src/code/
 
+BUILD_NUMBER_FILE="$CACHE/build-number"
+
+if [ -f "$BUILD_NUMBER_FILE" ]
+then
+    BUILD_NUMBER=$(cat "$BUILD_NUMBER_FILE")
+else
+    BUILD_NUMBER=0
+fi
+
+sed 's|versionCode=".*"|versionCode="'$BUILD_NUMBER'"|' \
+    -i $ASGP_APK_ROOT/java/AndroidManifest.xml
+    
 if [ $(build_mode $@) = debug ]
 then
     sed 's|package=.*|package="com.stuffomatic.beta.coasters"|' \
@@ -27,6 +39,8 @@ then
 
     sed 's|Straining Coasters|Beta Coasters|' \
         -i $ASGP_APK_ROOT/java/res/values/strings.xml
+else
+    echo $(( $BUILD_NUMBER + 1 )) > $BUILD_NUMBER_FILE
 fi
 
 set_shell_variable ASGP_APK_ROOT "$ASGP_APK_ROOT"
