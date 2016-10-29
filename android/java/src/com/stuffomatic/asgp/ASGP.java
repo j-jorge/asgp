@@ -19,7 +19,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.amplitude.api.Amplitude;
-
+import com.chartboost.sdk.Chartboost;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
 
@@ -94,10 +94,35 @@ public class ASGP extends SDLActivity
     }
 
     @Override
+    public void onStart() {
+        super.onStart();
+        Chartboost.onStart( this );
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
         CrashManager.register(this);
+        Chartboost.onResume( this );
         hideActionBars();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Chartboost.onPause( this );
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Chartboost.onStop( this );
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Chartboost.onDestroy( this );
     }
 
     @Override
