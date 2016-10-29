@@ -91,7 +91,11 @@ void rp::game::init_logger()
     ( new claw::log_stream_uniq( new claw::android_logger( "ASGP" ) ) );
   
   claw::logger.set( logger );
+#ifndef NDEBUG
   claw::logger.set_level( claw::log_verbose );
+#else
+  claw::logger.set_level( claw::log_error );
+#endif
 } // game::init_logger()
 
 /*----------------------------------------------------------------------------*/
