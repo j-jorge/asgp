@@ -82,6 +82,10 @@ copy_android_assets()
                          -o -name "*.canim" \
                          -o -name "*.spritepos" ) \
        "$ASGP_INSTALL_PREFIX/$ASGP_ASSETS_DIR_NAME/"
+
+    convert "$ASGP_INSTALL_PREFIX/$ASGP_ASSETS_DIR_NAME/gfx/status/cursor.png" \
+            -alpha set -channel a -evaluate set 0% +channel \
+            "$ASGP_INSTALL_PREFIX/$ASGP_ASSETS_DIR_NAME/gfx/status/cursor.png"
     
     popd
 }
