@@ -106,7 +106,7 @@ void rp::misc_layer::build()
 {
   m_fps_text =
     new bear::gui::static_text
-    ( get_level_globals().get_font("font/fixed-10x20.fnt",12) );
+    ( get_level_globals().get_font("font/FrancoisOne.ttf",25) );
 
   m_fps_text->set_auto_size(true);
   m_fps_text->set_text("0");

@@ -337,10 +337,10 @@ void rp::level_ending_effect::build()
   std::ostringstream oss;
   oss << rp_gettext("Total score ") << game_variables::get_score();
   m_points_text.create
-    (get_level_globals().get_font("font/fontopo/fontopo.fnt", 50), oss.str());
+    (get_level_globals().get_font("font/LuckiestGuy.ttf", 50), oss.str());
 
   const bear::visual::font level_name_font
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt", 50) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 70) );
 
   m_level_name.create
     ( level_name_font, util::get_level_name(),
@@ -445,7 +445,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
   std::ostringstream oss;
   oss << rp_gettext("Total score ") << game_variables::get_score();
   m_points_text.create
-    (get_level_globals().get_font("font/fontopo/fontopo.fnt", 50), oss.str());
+    (get_level_globals().get_font("font/LuckiestGuy.ttf", 50), oss.str());
 
   if ( ! game_variables::is_boss_level() )
     update_medal();
@@ -657,7 +657,7 @@ void rp::level_ending_effect::fill_points()
     return;
 
   const bear::visual::font f
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt", 50) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 50) );
 
   give_level_points(f);
 
@@ -1111,7 +1111,7 @@ void rp::level_ending_effect::create_persistent_line
     points += it->get_total_points();
 
   score_line result
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt", 50),
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 50),
       label, points,
       get_level_globals().auto_sprite( "gfx/status/bonus.png", icon_name ) );
 
@@ -1640,7 +1640,7 @@ void rp::level_ending_effect::get_best_score()
 void rp::level_ending_effect::set_best_score( std::string score )
 {
   m_world_record.create
-    ( get_level_globals().get_font("font/fontopo/fontopo-small.fnt", 20),
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 20),
       rp_gettext("World record: ") + score );
 } // level_ending_effect::set_best_score()
 
@@ -1716,7 +1716,7 @@ void rp::level_ending_effect::on_twitter_click()
 
   const boost::format tweet
     ( boost::format
-      ( rp_gettext("%1% points in level \"%2%\" of Straining Coasters!") )
+      ( rp_gettext("%1% points in level \"%2%\" of Straining LuckiestGuy.ttfs!") )
       % game_variables::get_score() % util::get_level_name() );
 
   m_twitter_request =

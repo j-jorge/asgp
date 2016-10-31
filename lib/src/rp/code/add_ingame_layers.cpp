@@ -60,10 +60,6 @@ rp::add_ingame_layers::add_ingame_layers()
  */
 void rp::add_ingame_layers::pre_cache()
 {
-  get_level_globals().load_font("font/beroga.ttf");
-  get_level_globals().load_font("font/lobster.otf");
-  get_level_globals().load_font("font/fixed-10x20.fnt");
-
   get_level_globals().load_image( rp_gettext("gfx/status/buttons.png") );
   get_level_globals().load_image( rp_gettext("gfx/status/buttons-2.png") );
   get_level_globals().load_image( rp_gettext("gfx/status/bonus.png") );
@@ -75,8 +71,9 @@ void rp::add_ingame_layers::pre_cache()
   get_level_globals().load_sound( "sound/medal/silver.ogg" );
   get_level_globals().load_sound( "sound/medal/gold.ogg" );
 
-  get_level_globals().load_font( "font/fontopo/fontopo-small.fnt" );
-
+  get_level_globals().load_font( "font/FrancoisOne.ttf" );
+  get_level_globals().load_font( "font/LuckiestGuy.ttf" );
+  
   // These may be optional for each level. We still load them everytime in order
   // for the user to endure the loading time at the beginning of the game.
   get_level_globals().load_model("model/balloon.cm");
@@ -169,7 +166,7 @@ void rp::add_ingame_layers::build()
   get_level().push_layer( new bear::recent_path_layer );
   get_level().push_layer
     ( new bear::runtime_settings_layer
-      ( get_level_globals().get_font("font/fixed-10x20.fnt",12) ) );
+      ( get_level_globals().get_font("font/FrancoisOne.ttf",25) ) );
 #endif
 
   if (m_add_starting_effect)

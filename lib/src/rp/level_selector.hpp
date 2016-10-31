@@ -103,7 +103,6 @@ namespace rp
     void update_visibility();
     void update_state();
     void update_score();
-    void update_balloon();
     bool check_precedence() const;
     unsigned int get_state() const;
     unsigned int get_new_state() const;
@@ -119,8 +118,6 @@ namespace rp
     void render_star
     ( std::list<bear::engine::scene_visual>& visuals ) const;
     void render_points
-    ( std::list<bear::engine::scene_visual>& visuals ) const;
-    void render_balloons
     ( std::list<bear::engine::scene_visual>& visuals ) const;
     void render_medal
     ( std::list<bear::engine::scene_visual>& visuals ) const;
@@ -207,9 +204,6 @@ namespace rp
     
     /** \brief The points text. */
     bear::visual::writing m_points;
-
-    /** \brief The text for balloon. */
-    bear::visual::writing m_balloons;
 
     /** \brief The star. */
     bear::visual::animation m_star;

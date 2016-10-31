@@ -67,7 +67,7 @@ rp::floating_score_component::floating_score_component
   
   std::ostringstream os;
   os << m_points_value;
-  m_points.create( glob.get_font("font/beroga.ttf", 14), os.str() );
+  m_points.create( glob.get_font("font/LuckiestGuy.ttf", 25), os.str() );
   
   os.str( std::string() );
   os.clear();
@@ -75,7 +75,7 @@ rp::floating_score_component::floating_score_component
   if ( m_combo_value > 1 )
     os << m_combo_value;
 
-  m_combo.create( glob.get_font("font/beroga.ttf", 30), os.str() );
+  m_combo.create( glob.get_font("font/LuckiestGuy.ttf", 40), os.str() );
 } //floating_score_component::floating_score_component()
 
 /*----------------------------------------------------------------------------*/
@@ -104,7 +104,7 @@ void rp::floating_score_component::render
   
   bear::visual::scene_writing s1
     ( get_position().x - m_points.get_width() + 10, 
-      get_position().y - 5, m_points );
+      get_position().y - 10, m_points );
 
   s1.get_rendering_attributes().set_intensity(0.0, 0.0, 0.0);
   e.push_back( s1 );

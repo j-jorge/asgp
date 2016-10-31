@@ -32,7 +32,7 @@ base_item.size.width
 364
 49
 item_with_text.font
-font/lobster.otf
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align

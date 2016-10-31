@@ -93,7 +93,6 @@ void rp::level_selector::pre_cache()
 {
   super::pre_cache();
 
-  get_level_globals().load_font("font/fixed-10x20.fnt");
   get_level_globals().load_image("gfx/status/level/frame-1.png");
   get_level_globals().load_image("gfx/status/level/frame-2.png");
   get_level_globals().load_image("gfx/status/level/frame-3.png");
@@ -115,7 +114,7 @@ void rp::level_selector::on_enters_layer()
 
   m_level_state = 
     game_variables::get_level_state(m_serial_number, m_level_number);
-  m_font = get_level_globals().get_font("font/fontopo/fontopo.fnt",50);
+  m_font = get_level_globals().get_font("font/LuckiestGuy.ttf", 70);
 
   choose_level_sprite();
 
@@ -357,7 +356,6 @@ void rp::level_selector::get_visual
         {
           render_medal(visuals);
           render_points(visuals);
-          //render_balloons(visuals);
         }
     }
   else
@@ -571,7 +569,6 @@ void rp::level_selector::update_state()
     show_medal(new_state);
     
   update_score();
-  update_balloon();
   update_visibility();
 } // level_selector::update_state()
 
@@ -590,22 +587,6 @@ void rp::level_selector::update_score()
   
   m_points.create(m_font, oss.str() );
 } // level_selector::update_score()
-
-/*----------------------------------------------------------------------------*/
-  /**
-   * \brief Update balloon number of the level.
-   */
-void rp::level_selector::update_balloon()
-{
-  std::ostringstream oss;
-  unsigned int nb = 
-    game_variables::get_persistent_balloon(m_serial_number,m_level_number);
-  
-  if ( nb > 0 ) 
-    oss << nb;
-  
-  m_balloons.create(m_font, oss.str() );
-} // level_selector::update_balloons()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -778,9 +759,9 @@ void rp::level_selector::render_points
 {
   bear::visual::position_type pos
     ( get_right() + m_level_factor * m_score_factor *
-      ( 20 - (double)m_points.get_width() ), 
+      ( 50 - (double)m_points.get_width() ), 
       get_bottom() + m_level_factor * m_score_factor * 
-      ( -85 - (double)m_points.get_height() ));
+      ( -60 - (double)m_points.get_height() ));
   
   bear::visual::scene_writing s( pos.x, pos.y, m_points );
   s.set_scale_factor
@@ -789,20 +770,6 @@ void rp::level_selector::render_points
   visuals.push_back( s );
 } // level_selector::render_points
   
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Render the balloons.
- * \param visuals (out) The sprites of the item, and their positions.
- */
-void rp::level_selector::render_balloons
-( std::list<bear::engine::scene_visual>& visuals ) const
-{
-  bear::visual::scene_writing s
-    ( get_left(), get_top() + 2, m_balloons ); 
-
-  visuals.push_back( s );
-} // level_selector::render_balloons()
-
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Get the medal sprite.
@@ -1303,7 +1270,8 @@ void rp::level_selector::create_level_name()
 {
   m_decorative_level_name = new bear::decorative_item;
 
-  m_decorative_level_name->set_font( m_font );
+  m_decorative_level_name->set_font
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 70) );
   m_decorative_level_name->set_text( util::get_level_name() );
   m_decorative_level_name->fit_to_text();
   m_decorative_level_name->set_z_position( get_z_position() - 4 );

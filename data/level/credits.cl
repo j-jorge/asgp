@@ -309,7 +309,7 @@ base_item.size.width
 256
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -375,7 +375,7 @@ basic_renderable_item.angle
 -0.1
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -441,7 +441,7 @@ basic_renderable_item.angle
 0.1
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -504,7 +504,7 @@ base_item.size.width
 265
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -535,7 +535,7 @@ base_item.size.width
 269
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -601,7 +601,7 @@ basic_renderable_item.angle
 -0.3
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -664,7 +664,7 @@ base_item.size.width
 267
 49
 item_with_text.font
-font/fontopo/fontopo.fnt
+font/LuckiestGuy.ttf
 50
 44
 item_with_text.horizontal_align
@@ -730,7 +730,7 @@ basic_renderable_item.angle
 0.1
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -758,7 +758,7 @@ base_item.size.width
 186
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -786,7 +786,7 @@ base_item.size.width
 222
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -817,7 +817,7 @@ base_item.size.width
 207
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -4882,7 +4882,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -4947,7 +4947,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5012,7 +5012,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5077,7 +5077,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5142,7 +5142,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5207,7 +5207,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5272,7 +5272,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5337,7 +5337,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5402,7 +5402,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5467,7 +5467,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5532,7 +5532,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5597,7 +5597,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5662,7 +5662,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5727,7 +5727,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5792,7 +5792,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5857,7 +5857,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5922,7 +5922,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -5987,7 +5987,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6052,7 +6052,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6117,7 +6117,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6182,7 +6182,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6247,7 +6247,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6318,7 +6318,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6383,7 +6383,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6448,7 +6448,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6513,7 +6513,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6578,7 +6578,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -6643,7 +6643,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -7936,7 +7936,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -8001,7 +8001,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -8092,7 +8092,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -9886,7 +9886,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10441,7 +10441,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10506,7 +10506,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10574,7 +10574,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10639,7 +10639,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10704,7 +10704,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10769,7 +10769,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10834,7 +10834,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10899,7 +10899,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -10964,7 +10964,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11029,7 +11029,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11094,7 +11094,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11159,7 +11159,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11224,7 +11224,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11289,7 +11289,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11920,7 +11920,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -11985,7 +11985,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -12050,7 +12050,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -12115,7 +12115,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -12180,7 +12180,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -13028,7 +13028,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align
@@ -29265,7 +29265,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align

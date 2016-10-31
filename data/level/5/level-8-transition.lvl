@@ -875,7 +875,7 @@
 <sprite image='gfx/credits/credits-1.png' x='311' y='0' clip_width='155' clip_height='44' spritepos='small board' auto_size='true' width='155' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 <field name='item_with_text.font'>
-<font path='font/fontopo/fontopo-small.fnt' size='20'/>
+<font path='font/FrancoisOne.ttf' size='20'/>
 </field>
 <field name='item_with_text.horizontal_align'>
 <string value='align_center'/>

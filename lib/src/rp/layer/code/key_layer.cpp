@@ -124,7 +124,7 @@ void rp::key_layer::create_components()
 void rp::key_layer::create_key_text()
 {
   const bear::visual::font f
-    ( get_level_globals().get_font( "font/fontopo/fontopo-small.fnt", 20 ) );
+    ( get_level_globals().get_font( "font/LuckiestGuy.ttf", 20 ) );
 
   m_key_text =
     new bear::gui::text_input
@@ -151,7 +151,7 @@ void rp::key_layer::create_key_text()
 void rp::key_layer::create_label()
 {
   const bear::visual::font f
-    ( get_level_globals().get_font( "font/fontopo/fontopo-small.fnt", 20 ) );
+    ( get_level_globals().get_font( "font/LuckiestGuy.ttf", 20 ) );
 
   bear::gui::static_text* const text( new bear::gui::static_text( f ) );
   text->set_text( rp_gettext( "Enter your game key" ) );

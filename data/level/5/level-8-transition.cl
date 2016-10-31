@@ -677,7 +677,7 @@ gfx/credits/credits-1.png
 0
 49
 item_with_text.font
-font/fontopo/fontopo-small.fnt
+font/FrancoisOne.ttf
 20
 44
 item_with_text.horizontal_align

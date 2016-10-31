@@ -139,7 +139,7 @@ void rp::pause_layer::add_level_name_component()
   // shadow
   bear::gui::static_text* level_name =
     new bear::gui::static_text
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt",50) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf",50) );
   level_name->set_auto_size(true);
   level_name->set_text( util::get_level_name() );
   level_name->get_rendering_attributes().set_intensity(0,0,0);
@@ -155,7 +155,7 @@ void rp::pause_layer::add_level_name_component()
   // level name
   level_name =
     new bear::gui::static_text
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt",50) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf",50) );
   level_name->set_auto_size(true);
   level_name->set_text( util::get_level_name() );
   level_name->set_left

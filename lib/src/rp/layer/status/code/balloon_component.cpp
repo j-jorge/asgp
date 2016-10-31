@@ -46,7 +46,7 @@ rp::balloon_component::balloon_component
   const bear::universe::size_box_type& layer_size,
   const bear::universe::coordinate_type& hide_height, bool flip )
   : super(glob,active_position,side, x_p, y_p, layer_size, hide_height, flip),
-    m_font(glob.get_font("font/lobster.otf", 68))
+    m_font(glob.get_font("font/LuckiestGuy.ttf", 68))
 {
 
 } // balloon_component::balloon_component()

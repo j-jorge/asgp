@@ -279,7 +279,7 @@ void rp::level_starting_effect::render_balloon_text
 void rp::level_starting_effect::create_controls()
 {
   const bear::visual::font level_name_font
-    ( get_level_globals().get_font("font/fontopo/fontopo.fnt",50) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf",70) );
 
   m_level_name.create
     ( level_name_font, util::get_level_name(),
@@ -288,7 +288,7 @@ void rp::level_starting_effect::create_controls()
   if ( ! game_variables::is_boss_level() )
     {
       const bear::visual::font main_font
-        ( get_level_globals().get_font("font/lobster.otf", 102) );
+        ( get_level_globals().get_font("font/LuckiestGuy.ttf", 102) );
 
       m_text.create
         ( main_font, rp_gettext("Balloons to go!"),
@@ -296,7 +296,7 @@ void rp::level_starting_effect::create_controls()
       m_text->colorize( bear::visual::color("#fafafa") );
 
       m_balloons.create
-        ( get_level_globals().get_font( "font/lobster.otf", 80 ), "0" );
+        ( get_level_globals().get_font( "font/LuckiestGuy.ttf", 80 ), "0" );
 
       m_background =
         bear::visual::sprite
@@ -326,7 +326,7 @@ void rp::level_starting_effect::update_balloons_number()
       oss << m_nb_balloons;
 
       m_balloons.create
-        ( get_level_globals().get_font("font/lobster.otf", 80),
+        ( get_level_globals().get_font("font/LuckiestGuy.ttf", 80),
           oss.str() );
       m_factor_intensity =
         (double)m_nb_balloons /

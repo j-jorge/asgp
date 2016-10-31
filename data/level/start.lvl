@@ -52,7 +52,7 @@
 <real value='364'/>
 </field>
 <field name='item_with_text.font'>
-<font path='font/lobster.otf' size='50'/>
+<font path='font/LuckiestGuy.ttf' size='50'/>
 </field>
 <field name='item_with_text.horizontal_align'>
 <string value='align_center'/>
