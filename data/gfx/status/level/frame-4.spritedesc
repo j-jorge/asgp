@@ -1,0 +1,13 @@
+sprite_sheet "frame-4" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+
+"bright frame" "frame no medal" * 0.43 with frame
+  "frame no medal lights"
+  "frame no medal on more light"
+  "frame no medal on light"
+  "global frame no medal light"
+  "frame no medal base light"
+  "frame no medal"
+  ;

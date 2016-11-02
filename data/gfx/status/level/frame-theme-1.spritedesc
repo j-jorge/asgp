@@ -1,0 +1,24 @@
+sprite_sheet "frame-theme-1" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+
+"western" "western background" * 0.43 with frame
+  glob "western*"
+  "background inner edges"
+  ;
+
+"aquatic" "aquatic background" * 0.43 with frame
+  glob "aquatic*"
+  "background inner edges"
+  ;
+
+"cake" "cake background" * 0.43 with frame
+  glob "cake*"
+  "background inner edges"
+  ;
+
+"space" "space background" * 0.43 with frame
+  glob "space*"
+  "background inner edges"
+  ;

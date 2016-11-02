@@ -1,0 +1,13 @@
+sprite_sheet "frame-3" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+
+"bright frame" "frame" * 0.43 with frame
+  "frame lights"
+  "frame on more light"
+  "frame on light"
+  "global frame light"
+  "frame base light"
+  "frame"
+  ;

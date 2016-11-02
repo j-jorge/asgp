@@ -1,0 +1,19 @@
+sprite_sheet "frame-theme-3" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+
+"bronze" "bronze background" * 0.43 with frame
+  glob "bronze*"
+  "background inner edges"
+  ;
+
+"silver" "silver background" * 0.43 with frame
+  glob "silver*"
+  "background inner edges"
+  ;
+
+"gold" "gold background" * 0.43 with frame
+  glob "gold*"
+  "background inner edges"
+  ;

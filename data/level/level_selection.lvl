@@ -7635,16 +7635,16 @@
 <real value='442'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='90' height='90' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='123' height='123' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='172' clip_width='59' clip_height='59' spritepos='arrow off' auto_size='true' width='59' height='59' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='340' y='1' clip_width='123' clip_height='123' spritepos='arrow off' auto_size='true' width='123' height='123' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='90' height='90' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='123' height='123' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='339' y='277' clip_width='59' clip_height='59' spritepos='arrow on' auto_size='true' width='59' height='59' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='340' y='125' clip_width='123' clip_height='123' spritepos='arrow on' auto_size='true' width='123' height='123' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -10080,16 +10080,16 @@
 <item_reference value='go_camera-1-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -11521,16 +11521,16 @@
 <item_reference value='go_camera-1-2'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -12364,14 +12364,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -14547,14 +14547,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -15555,14 +15555,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -16878,16 +16878,16 @@
 <item_reference value='go_camera-3-2'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17612,16 +17612,16 @@
 <item_reference value='go_camera-6-1'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17661,16 +17661,16 @@
 <item_reference value='go_camera-6-2'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17713,16 +17713,16 @@
 <item_reference value='go_camera-6-3'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17765,16 +17765,16 @@
 <item_reference value='go_camera-6-4'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17817,16 +17817,16 @@
 <item_reference value='go_camera-6-5'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -18097,16 +18097,16 @@
 <item_reference value='go_camera-3-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -18483,16 +18483,16 @@
 <item_reference value='go_camera-3-4'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -18558,16 +18558,16 @@
 <item_reference value='go_camera-4-3'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -19177,16 +19177,16 @@
 <item_reference value='go_camera-4-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -19529,16 +19529,16 @@
 <item_reference value='go_camera-4-5'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -19604,16 +19604,16 @@
 <item_reference value='go_camera-5-4'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -20197,16 +20197,16 @@
 <item_reference value='go_camera-5-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='448' y='232' clip_width='48' clip_height='36' spritepos='arrow' auto_size='true' width='48' height='36' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>

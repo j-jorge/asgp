@@ -1,0 +1,14 @@
+sprite_sheet "frame-1" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+
+"main" autosize * 0.43 with frame
+  "frame off light"
+  "global frame light"
+  "frame base light"
+  "frame"
+  "frame border shadows"
+  "background inner edges"
+  "background empty"
+  ;

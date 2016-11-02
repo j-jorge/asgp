@@ -1,0 +1,14 @@
+sprite_sheet "frame-theme-2" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+
+"death" "death background" * 0.43 with frame
+  glob "death*"
+  "background inner edges"
+  ;
+
+"boss" "boss background" * 0.43 with frame
+  glob "boss*"
+  "background inner edges"
+  ;

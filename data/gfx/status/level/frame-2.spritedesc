@@ -1,0 +1,41 @@
+sprite_sheet "frame-2" 512 x 512 margin 1
+
+/* */
+frame "frame.xcf.bz2"
+empty_frame "empty-frame.xcf.bz2"
+arrows "arrows.xcf.bz2"
+
+"main" "frame no medal" * 0.43 with frame
+  "frame no medal off light"
+  "global frame no medal light"
+  "frame no medal base light"
+  "frame no medal"
+  "frame border shadows"
+  "background inner edges"
+  "background empty no medal"
+  ;
+
+"empty" image_size * 0.15 with empty_frame
+  glob "*"
+  ;
+
+"star" autosize * 0.43 with frame
+  glob "star*"
+;
+
+"free star" autosize * 0.43 with frame
+  "star colour"
+;
+
+"arrow off" autosize * 0.15 with arrows
+  "background"
+  ;
+
+"arrow on" autosize * 0.15 with arrows
+  "background on"
+  "background"
+  ;
+
+"arrow" autosize * 0.2 with arrows
+  "arrow"
+  ;
