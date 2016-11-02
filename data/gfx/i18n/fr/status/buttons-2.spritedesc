@@ -2,7 +2,12 @@ sprite_sheet "buttons-2" 512 x 512 margin 1
 
 /* */
 buttons_img "buttons.xcf.bz2"
-default_buttons_img "../../../status/buttons.xcf.bz2"
+original_buttons_img "../../../status/buttons.xcf.bz2"
+
+"sound off" image_size * 0.5 with buttons_img
+  glob "no sound*"
+  "red box"
+  ;
 
 "controllers" image_size * 0.5 with buttons_img
   glob "controllers*"
@@ -14,10 +19,10 @@ default_buttons_img "../../../status/buttons.xcf.bz2"
   "green box"
   ;
 
-"check" autosize * 0.5 with default_buttons_img
+"check" autosize * 0.5 with original_buttons_img
   "check"
   ;
 
-"cross" autosize * 0.5 with default_buttons_img
+"cross" autosize * 0.5 with original_buttons_img
   "cross"
   ;

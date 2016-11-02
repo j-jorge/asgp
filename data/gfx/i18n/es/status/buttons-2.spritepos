@@ -1,4 +1,5 @@
-controllers: 0 0 140 98
-buy: 141 0 140 98
-check: 282 0 21 21
-cross: 304 0 21 21
+sound off: 1 1 140 98
+controllers: 142 1 140 98
+buy: 283 1 140 98
+check: 424 1 21 21
+cross: 446 1 21 21

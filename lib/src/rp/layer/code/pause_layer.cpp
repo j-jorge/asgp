@@ -283,7 +283,7 @@ bear::gui::visual_component* rp::pause_layer::create_sound_component()
   bear::gui::checkbox* result = 
     new bear::gui::checkbox
     ( get_level_globals().auto_sprite
-      ( rp_gettext("gfx/status/buttons.png"), "sound off" ),
+      ( rp_gettext("gfx/status/buttons-2.png"), "sound off" ),
       get_level_globals().auto_sprite
         ( rp_gettext("gfx/status/buttons.png"), "sound on" ) );
 
@@ -404,7 +404,9 @@ void rp::pause_layer::create_focus_background_component
   bear::gui::picture* result =
     new bear::gui::picture( get_focus_off_background() );
 
-  result->set_bottom_left( c->left(), c->bottom() );
+  result->set_bottom_left
+    ( c->left() + ( c->width() - result->width() ) / 2,
+      c->bottom() + ( c->height() - result->height() ) / 2 );
 
   m_focus_background[ c ] = result;
   m_root_window.insert( result );

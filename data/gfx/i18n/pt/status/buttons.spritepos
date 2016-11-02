@@ -1,15 +1,14 @@
-quit: 0 0 140 98
-resume: 141 0 140 98
-back: 282 0 140 98
-go: 0 99 140 98
-continue: 0 198 140 98
-skip: 0 297 140 98
-settings: 0 396 140 98
-fullscreen: 141 99 140 98
-windowed: 282 99 140 98
-sound on: 141 198 140 98
-sound off: 282 198 140 98
-music on: 141 297 140 98
-music off: 141 396 140 98
-background on: 282 297 140 98
-background off: 282 396 140 98
+background on: 1 1 160 118
+background off: 1 120 160 118
+quit: 162 1 140 98
+resume: 1 239 140 98
+back: 162 100 140 98
+go: 303 1 140 98
+continue: 1 338 140 98
+skip: 303 100 140 98
+settings: 162 199 140 98
+fullscreen: 303 199 140 98
+windowed: 142 298 140 98
+sound on: 283 298 140 98
+music on: 142 397 140 98
+music off: 283 397 140 98

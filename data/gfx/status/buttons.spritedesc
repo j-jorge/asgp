@@ -1,7 +1,7 @@
 sprite_sheet "buttons" 512 x 512 margin 1
 
-/* */
 buttons_img "buttons.xcf.bz2"
+background_img "button-background.xcf.bz2"
 
 "quit" image_size * 0.5 with buttons_img
   glob "quit*"
@@ -16,7 +16,6 @@ buttons_img "buttons.xcf.bz2"
 "back" image_size * 0.5 with buttons_img
   glob "back*"
   "green box"
-  exclude glob "background*"
   ;
 
 "go" image_size * 0.5 with buttons_img
@@ -54,11 +53,6 @@ buttons_img "buttons.xcf.bz2"
   "green box"
   ;
 
-"sound off" image_size * 0.5 with buttons_img
-  glob "no sound*"
-  "red box"
-  ;
-
 "music on" image_size * 0.5 with buttons_img
   glob "music*"
   "green box"
@@ -70,11 +64,11 @@ buttons_img "buttons.xcf.bz2"
   "red box"
   ;
 
-"background on" image_size * 0.5 with buttons_img
-  glob "background on*"
-  glob "background common*"
+"background on" image_size * 0.5 with background_img
+  "background on"
+  "button"
   ;
 
-"background off" image_size * 0.5 with buttons_img
-  glob "background common*"
+"background off" image_size * 0.5 with background_img
+  "button"
   ;

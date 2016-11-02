@@ -10535,7 +10535,7 @@
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='198' clip_width='140' clip_height='98' spritepos='sound off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons-2.png' x='282' y='198' clip_width='140' clip_height='98' spritepos='sound off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
