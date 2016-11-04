@@ -115,31 +115,37 @@ void rp::level_ending_effect::score_line::render
   else
     result.get_rendering_attributes().set_intensity( 1, 1, 1 );
 
+  static constexpr bear::visual::coordinate_type y_margin( 3 );
+  const bear::visual::coordinate_type y( m_y + y_margin );
+  
   // text
   bear::visual::scene_writing label
-    ( left + m_bonus_sprite.get_size().x + s_bonus_picture_margin, m_y,
+    ( left + m_bonus_sprite.get_size().x + s_bonus_picture_margin, y,
       m_label );
 
   label.set_scale_factor( s_scale_factor, s_scale_factor );
   result.push_back( label );
 
   // computation text
+  const bear::visual::coordinate_type computation_left
+    ( left + 3 * ( right - left ) / 4 );
   bear::visual::scene_writing computation_coeff_label
-    ( left - m_computation_coefficient_label.get_width() * s_scale_factor + 800,
-      m_y, m_computation_coefficient_label );
+    ( computation_left
+      - m_computation_coefficient_label.get_width() * s_scale_factor,
+      y, m_computation_coefficient_label );
   
   computation_coeff_label.set_scale_factor( s_scale_factor, s_scale_factor );
   result.push_back( computation_coeff_label );
 
   bear::visual::scene_writing computation_label
-    ( left + 800, m_y, m_computation_label );
+    ( computation_left, y, m_computation_label );
   
   computation_label.set_scale_factor( s_scale_factor, s_scale_factor );
   result.push_back( computation_label );
 
   // points shadow
   bear::visual::scene_writing points
-    ( right - m_points_text.get_width() * s_scale_factor, m_y, m_points_text);
+    ( right - m_points_text.get_width() * s_scale_factor, y, m_points_text);
 
   points.set_scale_factor( s_scale_factor, s_scale_factor );
 
@@ -1312,8 +1318,8 @@ void rp::level_ending_effect::render_score( scene_element_list& e) const
 void rp::level_ending_effect::render_score_lines
 ( scene_element_list& e, const std::list<score_line>& lines ) const
 {
-  bear::visual::coordinate_type left( s_screen_margin );
-  bear::visual::coordinate_type right( get_layer().get_size().x -  left );
+  bear::visual::coordinate_type left( 2 * s_screen_margin );
+  bear::visual::coordinate_type right( get_layer().get_size().x - left );
 
   std::list<score_line>::const_iterator it;
 
