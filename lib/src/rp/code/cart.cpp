@@ -193,14 +193,6 @@ void rp::cart::pre_cache()
   get_level_globals().load_animation("animation/effect/double-wave.canim");
   get_level_globals().load_animation("animation/effect/steam.canim");
   get_level_globals().load_animation("animation/fire.canim");
-
-  // fireworks
-  get_level_globals().load_sound( "sound/fireworks/explosion-1.ogg");
-  get_level_globals().load_sound( "sound/fireworks/explosion-2.ogg");
-  get_level_globals().load_sound( "sound/fireworks/explosion-3.ogg");
-  get_level_globals().load_sound( "sound/fireworks/explosion-4.ogg");
-  get_level_globals().load_sound( "sound/fireworks/whistling-1.ogg");
-  get_level_globals().load_sound( "sound/fireworks/whistling-2.ogg");
 } // cart::pre_cache()
 
 /*----------------------------------------------------------------------------*/
@@ -1767,15 +1759,9 @@ void rp::cart::progress_takeoff( bear::universe::time_type elapsed_time )
     {
       add_internal_force( m_ground_force / 6 );
 
-      if ( game_variables::get_balloons_number() >=
-           game_variables::get_required_balloons_number() )
-        {
-          if ( (m_takeoff_duration >= 1)
-               && ( (int)(m_takeoff_duration + elapsed_time)
-                    != (int)m_takeoff_duration) )
-            create_rocket();
-        }
-      else if ( m_takeoff_duration > 3.5 )
+      if ( ( game_variables::get_balloons_number() <
+             game_variables::get_required_balloons_number() )
+           && ( m_takeoff_duration > 3.5 ) )
         {
           set_density( 0.005 );
           lose_balloons( 5 );
@@ -2652,104 +2638,6 @@ void rp::cart::check_takeoff()
         }
     }
 } // cart::check_takeoff()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates a rocket for the end of the level.
- */
-void rp::cart::create_rocket() const
-{
-  bear::rocket* main_rocket = new bear::rocket();
-
-  main_rocket->set_size( 10, 10 );
-#if defined( __ANDROID__ )
-  main_rocket->set_explosion_rocket_count( 5, 10 );
-#else
-  main_rocket->set_explosion_rocket_count( 10, 20 );
-#endif
-  main_rocket->set_trace( 0.25, get_random_rocket_color(), 1 );
-  main_rocket->set_explosion_date( 0.5, 0.75 );
-  main_rocket->set_kill_when_leaving( true );
-
-  double max_force_factor;
-
-  if ( game_variables::is_boss_level() )
-    max_force_factor = 3.5;
-  else
-    max_force_factor = 2.5;
-
-  main_rocket->set_force_factor( 1.75, max_force_factor );
-  main_rocket->set_angle( -0.3, 0.3 );
-
-  const bear::universe::rectangle_type camera( get_level().get_camera_focus() );
-
-  main_rocket->set_center_of_mass
-    ( camera.left() + camera.width() / 4
-      + (camera.width() / 2) * (double)rand() / RAND_MAX,
-      camera.bottom() );
-
-  main_rocket->set_z_position( get_z_position() * 2 );
-
-  main_rocket->set_explosion_sound_name( get_rocket_explosion_sound_name() );
-  main_rocket->add_rocket( *create_small_rocket() );
-
-  new_item( *main_rocket );
-} // cart::create_rocket()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates a small rocket, to be passed to a big rocket.
- */
-bear::rocket* rp::cart::create_small_rocket() const
-{
-  bear::rocket* r = new bear::rocket();
-
-  r->set_size( 5, 5 );
-  r->set_trace( 0.2, get_random_rocket_color(), 1 );
-
-#if defined( __ANDROID__ )
-  r->set_explosion_date( 0.9, 1 );
-#else
-  r->set_explosion_date( 0.9, 1.5 );
-#endif
-
-  return r;
-} // cart::create_small_rocket()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Finds a color for a rocket.
- */
-bear::visual::color rp::cart::get_random_rocket_color() const
-{
-  const std::size_t color_count(6);
-
-  bear::visual::color colors[ color_count ] =
-    {
-      bear::visual::color("#f0c000"), // orange
-      bear::visual::color("#f0f080"), // yellow
-      bear::visual::color("#c0f0c0"), // bright green
-      bear::visual::color("#80f0f0"), // bright blue
-      bear::visual::color("#8080f0"), // medium blue
-      bear::visual::color("#f080f0")  // pink
-    };
-
-  return colors[ rand() % color_count ];
-} // cart::get_random_rocket_color()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Finds a sound for the explosion of a rocket.
- */
-std::string rp::cart::get_rocket_explosion_sound_name() const
-{
-  const std::size_t i( rand() % 4 + 1);
-
-  std::ostringstream oss;
-  oss << "sound/fireworks/explosion-" << i << ".ogg";
-
-  return oss.str();
-} // cart::get_rocket_explosion_sound_name()
 
 /*----------------------------------------------------------------------------*/
 /**

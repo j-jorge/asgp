@@ -28,7 +28,6 @@
 
 #include "generic_items/decorative_item.hpp"
 #include "generic_items/link/continuous_link_visual.hpp"
-#include "generic_items/rocket.hpp"
 #include "generic_items/timer.hpp"
 
 #include <claw/tween/single_tweener.hpp>
@@ -242,10 +241,6 @@ namespace rp
     void init_injured_state();
     void check_takeoff();
 
-    void create_rocket() const;
-    bear::rocket* create_small_rocket() const;
-    bear::visual::color get_random_rocket_color() const;
-    std::string get_rocket_explosion_sound_name() const;
     void init_signals();
     void on_combo_changed(unsigned int combo);
     std::string get_combo_sample_name( unsigned int combo ) const;
