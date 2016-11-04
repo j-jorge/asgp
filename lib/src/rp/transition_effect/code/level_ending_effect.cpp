@@ -474,6 +474,8 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
       render_score_background(e);
       render_score(e);
       render_flash_line(e);
+
+      m_root_window.render( e );
     }
 
   if ( m_rectangle_opacity > 0 )
@@ -483,8 +485,6 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
     {
       render_level_name(e);
       render_medal(e);
-
-      m_root_window.render( e );
     }
 } // level_ending_effect::render()
 
