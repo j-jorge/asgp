@@ -220,9 +220,6 @@ namespace rp
     void add_twitter_button();
     void create_twitter_tweener();
 
-    void get_best_score();
-    void set_best_score( std::string score );
-
     void set_url( std::string url );
     void open_url();
 
@@ -353,10 +350,6 @@ namespace rp
 
     /** \brief The delay to wait before merging the lines. */
     bear::universe::time_type m_merge_delay;
-
-    /** \brief The connection to the request of the best score of the current
-        level to our stats server. */
-    http_request::result_connection m_score_request;
 
     /** \brief How many points are given per second. */
     static const unsigned int s_points_per_second;

@@ -299,7 +299,6 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
  */
 rp::level_ending_effect::~level_ending_effect()
 {
-  m_score_request.disconnect();
   m_facebook_request.disconnect();
   m_twitter_request.disconnect();
 
@@ -337,7 +336,7 @@ void rp::level_ending_effect::build()
   std::ostringstream oss;
   oss << rp_gettext("Total score ") << game_variables::get_score();
   m_points_text.create
-    (get_level_globals().get_font("font/LuckiestGuy.ttf", 50), oss.str());
+    (get_level_globals().get_font("font/LuckiestGuy.ttf", 64), oss.str());
 
   const bear::visual::font level_name_font
     ( get_level_globals().get_font("font/LuckiestGuy.ttf", 70) );
@@ -382,8 +381,6 @@ void rp::level_ending_effect::build()
 
   m_play_tick = true;
   m_update_function = &level_ending_effect::update_positive_lines;
-
-  get_best_score();
 } // level_ending_effect::build()
 
 /*----------------------------------------------------------------------------*/
@@ -445,7 +442,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
   std::ostringstream oss;
   oss << rp_gettext("Total score ") << game_variables::get_score();
   m_points_text.create
-    (get_level_globals().get_font("font/LuckiestGuy.ttf", 50), oss.str());
+    (get_level_globals().get_font("font/LuckiestGuy.ttf", 64), oss.str());
 
   if ( ! game_variables::is_boss_level() )
     update_medal();
@@ -455,7 +452,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 
   // Opening the URL immediately will crash on Android. The cause seems to be
   // that the app goes in background (due to the display of Chrome) while the
-  // main thread is not active. Indeed, the activte thread is the one receiving
+  // main thread is not active. Indeed, the active thread is the one receiving
   // the URL from our server and calling the signal. The opening of the URL is
   // thus postponed there, to be sure it is done in the main thread.
   open_url();
@@ -657,7 +654,7 @@ void rp::level_ending_effect::fill_points()
     return;
 
   const bear::visual::font f
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 50) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 64) );
 
   give_level_points(f);
 
@@ -1111,7 +1108,7 @@ void rp::level_ending_effect::create_persistent_line
     points += it->get_total_points();
 
   score_line result
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 50),
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 64),
       label, points,
       get_level_globals().auto_sprite( "gfx/status/bonus.png", icon_name ) );
 
@@ -1633,29 +1630,6 @@ void rp::level_ending_effect::create_twitter_tweener()
 
 /*----------------------------------------------------------------------------*/
 /**
- * \brief Retrieve the best score of the level from our stats server.
- */
-void rp::level_ending_effect::get_best_score()
-{
-  m_score_request = http_request::request
-    ( "/asgp/stats/best_score.php?level=" + get_level().get_filename(),
-      boost::bind( &level_ending_effect::set_best_score, this, _1 ) );
-} // level_ending_effect::get_best_score()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Sets the best score of the current level.
- * \param score The best score.
- */
-void rp::level_ending_effect::set_best_score( std::string score )
-{
-  m_world_record.create
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 20),
-      rp_gettext("World record: ") + score );
-} // level_ending_effect::set_best_score()
-
-/*----------------------------------------------------------------------------*/
-/**
  * \brief Sets the url to open as soon as we can.
  * \param url The url to open. If there is already a stored url, it will be
  *        overwritten.
@@ -1726,7 +1700,7 @@ void rp::level_ending_effect::on_twitter_click()
 
   const boost::format tweet
     ( boost::format
-      ( rp_gettext("%1% points in level \"%2%\" of Straining LuckiestGuy.ttfs!") )
+      ( rp_gettext("%1% points in level \"%2%\" of Straining Coasters.ttfs!") )
       % game_variables::get_score() % util::get_level_name() );
 
   m_twitter_request =
