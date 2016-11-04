@@ -51,7 +51,6 @@ namespace rp
     bool mouse_move( const claw::math::coordinate_2d<unsigned int>& pos );
 
   private:
-    void add_level_name_component();
     void add_title_component();
     void add_quit_resume_components();
     void add_system_buttons();

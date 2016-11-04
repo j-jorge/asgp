@@ -1,9 +1,0 @@
-/*----------------------------------------------------------------------------*/
-sprite_sheet "pause" 512 x 512 margin 1
-
-/* */
-pause_img "pause/pause.xcf.bz2"
-
-"pause" autosize * 0.5 with pause_img
-  glob "*"
-  ;

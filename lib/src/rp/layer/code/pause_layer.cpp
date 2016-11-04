@@ -52,9 +52,8 @@ rp::pause_layer::pause_layer( const std::string& name )
 void rp::pause_layer::build()
 {
   m_root_window.set_size( get_size() );
-  m_root_window.set_background_color( bear::visual::color("#c545485f") );
+  m_root_window.set_background_color( bear::visual::color("#a5152880") );
 
-  add_level_name_component();
   add_title_component();
   add_quit_resume_components();
   add_system_buttons();
@@ -130,58 +129,36 @@ bool rp::pause_layer::mouse_move
   return stop;
 } // pause_layer::mouse_move()
 
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the component that display the level name.
- */
-void rp::pause_layer::add_level_name_component()
-{
-  // shadow
-  bear::gui::static_text* level_name =
-    new bear::gui::static_text
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf",50) );
-  level_name->set_auto_size(true);
-  level_name->set_text( util::get_level_name() );
-  level_name->get_rendering_attributes().set_intensity(0,0,0);
-
-  bear::universe::position_type pos
-    ( util::get_level_name_position( m_root_window.get_rectangle() ) );
-  level_name->set_left
-    ( pos.x - level_name->width() / 2 + RP_LEVEL_NAME_SHADOW );
-  level_name->set_top
-    ( pos.y + level_name->height() / 2 - RP_LEVEL_NAME_SHADOW );
-  m_root_window.insert( level_name );
-
-  // level name
-  level_name =
-    new bear::gui::static_text
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf",50) );
-  level_name->set_auto_size(true);
-  level_name->set_text( util::get_level_name() );
-  level_name->set_left
-    ( pos.x - level_name->width() / 2 );
-  level_name->set_top
-    ( pos.y + level_name->height() / 2 );
-
-  m_root_window.insert( level_name );
-} // pause_layer::add_level_name_component()
-  
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the component that display the "Pause" title.
- */
 void rp::pause_layer::add_title_component()
 {
-  bear::gui::picture* title =
-    new bear::gui::picture
-    ( get_level_globals().auto_sprite( "gfx/status/pause.png", "pause" ) );
+  bear::gui::static_text* const shadow =
+    new bear::gui::static_text
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 70) );
+  shadow->set_auto_size(true);
+  shadow->set_text( gettext( "Pause" ) );
+  shadow->get_rendering_attributes().set_intensity(0,0,0);
 
-  title->set_left( ( m_root_window.width() - title->width() ) / 2 );
-  title->set_bottom( m_root_window.height() / 2 + m_margin / 2 );
+  const bear::universe::position_type pos
+    ( m_root_window.width() / 2, 4 * m_root_window.height() / 5 );
+  
+  shadow->set_left
+    ( pos.x - shadow->width() / 2 + RP_LEVEL_NAME_SHADOW );
+  shadow->set_top
+    ( pos.y + shadow->height() / 2 - RP_LEVEL_NAME_SHADOW );
 
-  m_root_window.insert( title );
-} // pause_layer::add_title_component()
+  m_root_window.insert( shadow );
 
+  bear::gui::static_text* const text =
+    new bear::gui::static_text
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 70) );
+  text->set_auto_size(true);
+  text->set_text( gettext( "Pause" ) );
+  text->set_left( pos.x - text->width() / 2 );
+  text->set_top( pos.y + text->height() / 2 );
+
+  m_root_window.insert( text );
+}
+  
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Creates the components to quit or resume the game.
@@ -202,7 +179,7 @@ void rp::pause_layer::add_quit_resume_components()
     ( m_root_window.width() - 3 * quit->width() ) / 2;
 
   const bear::gui::coordinate_type top
-    ( m_root_window.height() / 2 - quit->height() / 2 );
+    ( m_root_window.height() / 5 + quit->height() / 2 );
 
   quit->set_left( horizontal_margin );
   quit->set_top( top );
@@ -254,22 +231,24 @@ void rp::pause_layer::add_system_buttons()
   const bear::gui::size_type horizontal_margin =
     ( m_root_window.width() - help->width() - sound->width() - music->width()
       - fullscreen_width ) / 6;
-
+  const bear::gui::size_type top
+    ( 2 * m_root_window.height() / 5 + help->height() / 2 + m_margin / 2);
+    
   help->set_left( horizontal_margin );
-  help->set_bottom( m_margin );
+  help->set_top( top );
   add_component( help );
 
   sound->set_left( help->right() + 2 * horizontal_margin );
-  sound->set_bottom( m_margin );
+  sound->set_top( top );
   add_component( sound );
 
   music->set_left( sound->right() + horizontal_margin );
-  music->set_bottom( m_margin );
+  music->set_top( top );
   add_component( music );
 
 #if !defined( __ANDROID__ )
   fullscreen->set_left( music->right() + horizontal_margin );
-  fullscreen->set_bottom( m_margin );
+  fullscreen->set_top( top );
   add_component( fullscreen );
 #endif
 } // add_system_buttons()
