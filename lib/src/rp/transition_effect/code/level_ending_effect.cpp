@@ -1456,15 +1456,25 @@ void rp::level_ending_effect::render_background( scene_element_list& e ) const
       if ( m_active_component )
         {
           bear::visual::scene_sprite s
-            ( m_root_window.right() - 100 - m_background_on_sprite.width(), 
-              80, m_background_on_sprite);
+            ( m_skip_button->left()
+              - ( m_background_on_sprite.width() - m_skip_button->width() )
+              / 2,
+              m_skip_button->bottom()
+              - ( + m_background_on_sprite.height() - m_skip_button->height() )
+              / 2,
+              m_background_on_sprite );
           e.push_back( s );
         }
       else
         {
           bear::visual::scene_sprite s
-            ( m_root_window.right() - 100 - m_background_on_sprite.width(),
-              80, m_background_off_sprite);
+            ( m_skip_button->left()
+              - ( m_background_off_sprite.width() - m_skip_button->width() )
+              / 2,
+              m_skip_button->bottom()
+              - ( + m_background_off_sprite.height() - m_skip_button->height() )
+              / 2,
+              m_background_off_sprite );
           e.push_back( s );
         }
     }
