@@ -202,9 +202,12 @@ void rp::zeppelin::explose()
   bear::universe::position_type pos = get_center_of_mass();
   pos.x -= get_width()/4;
 
+  const unsigned int count( 4 );
+  const double duration( 0.6 );
+  
   for ( unsigned int i = 0; i != 3; ++i )
     {
-      explosion* item = new explosion(15,20,0.6);
+      explosion* const item( new explosion( count, 20, duration ) );
       item->set_z_position(get_z_position() + 1000);
       item->set_combo_value(get_combo_value());
       item->set_center_of_mass(pos);
