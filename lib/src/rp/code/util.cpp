@@ -65,12 +65,12 @@ bear::universe::position_type rp::util::get_medal_position
     // at right
     bear::universe::position_type
     ( camera_rect.left() + 0.85 * camera_rect.size().x,
-      camera_rect.bottom() + 0.19 * camera_rect.size().y );
+      camera_rect.bottom() + 0.21 * camera_rect.size().y );
 #else
   // at left
   bear::universe::position_type
-    ( camera_rect.left() + 0.15 * camera_rect.size().x,
-      camera_rect.bottom() + 0.19 * camera_rect.size().y );
+    ( camera_rect.left() + 0.12 * camera_rect.size().x,
+      camera_rect.bottom() + 0.21 * camera_rect.size().y );
 #endif
 
 } // get_medal_position()

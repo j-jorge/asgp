@@ -32,6 +32,7 @@
 #include "visual/scene_writing.hpp"
 
 #include "universe/forced_movement/forced_goto.hpp"
+#include "universe/forced_movement/forced_tracking.hpp"
 
 #include "gui/callback_function.hpp"
 
@@ -45,10 +46,10 @@
 
 /*----------------------------------------------------------------------------*/
 const bear::visual::coordinate_type
-rp::level_ending_effect::score_line::s_shadow_delta(2);
-const double rp::level_ending_effect::score_line::s_scale_factor(0.5);
-const bear::visual::coordinate_type
-rp::level_ending_effect::score_line::s_bonus_picture_margin(10);
+rp::level_ending_effect::score_line::s_shadow_delta(4);
+
+static constexpr float s_ui_depth( 1000000 );
+static constexpr bear::universe::time_type s_intro_duration( 1 );
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -56,13 +57,10 @@ rp::level_ending_effect::score_line::s_bonus_picture_margin(10);
  * \param f The font to use for the texts.
  * \param text A short description of the reason we're giving the points for.
  * \param points The total score.
- * \param picture The bonus picture.
  */
 rp::level_ending_effect::score_line::score_line
-( const bear::visual::font& f, const std::string& text, int points,
-  const bear::visual::sprite& picture )
+( const bear::visual::font& f, const std::string& text, int points )
   : m_font(f), m_label(m_font, text), 
-    m_bonus_sprite( picture ),
     m_total_points( points ),
     m_current_points(0), m_y(0), m_negative( points < 0 )
 {
@@ -78,12 +76,10 @@ rp::level_ending_effect::score_line::score_line
  * \param coef A short description of the points coefficient.
  * \param count A short description of the points count.
  * \param points The total score.
- * \param picture The bonus picture.
  */
 rp::level_ending_effect::score_line::score_line
 ( const bear::visual::font& f, const std::string& text, 
-  const std::string& coeff, const std::string& count, int points,
-  const bear::visual::sprite& picture )
+  const std::string& coeff, const std::string& count, int points )
   : m_font(f), m_label(m_font, text), 
     m_computation_label(m_font, count),
     m_computation_coefficient_label(m_font, coeff),
@@ -92,8 +88,6 @@ rp::level_ending_effect::score_line::score_line
 {
   // force creating the writing
   update_score(0);
-
-  m_bonus_sprite = picture;
 } // level_ending_effect::score_line::score_line()
 
 /*----------------------------------------------------------------------------*/
@@ -110,20 +104,12 @@ void rp::level_ending_effect::score_line::render
   bear::visual::scene_element_sequence result;
   result.set_shadow( s_shadow_delta, -s_shadow_delta );
 
-  if ( m_negative )
-    result.get_rendering_attributes().set_intensity( 0.9, 0.2, 0.2 );
-  else
-    result.get_rendering_attributes().set_intensity( 1, 1, 1 );
-
   static constexpr bear::visual::coordinate_type y_margin( 3 );
   const bear::visual::coordinate_type y( m_y + y_margin );
   
   // text
-  bear::visual::scene_writing label
-    ( left + m_bonus_sprite.get_size().x + s_bonus_picture_margin, y,
-      m_label );
+  bear::visual::scene_writing label( left, y, m_label );
 
-  label.set_scale_factor( s_scale_factor, s_scale_factor );
   result.push_back( label );
 
   // computation text
@@ -131,48 +117,27 @@ void rp::level_ending_effect::score_line::render
     ( left + 3 * ( right - left ) / 4 );
   bear::visual::scene_writing computation_coeff_label
     ( computation_left
-      - m_computation_coefficient_label.get_width() * s_scale_factor,
+      - m_computation_coefficient_label.get_width(),
       y, m_computation_coefficient_label );
   
-  computation_coeff_label.set_scale_factor( s_scale_factor, s_scale_factor );
   result.push_back( computation_coeff_label );
 
   bear::visual::scene_writing computation_label
     ( computation_left, y, m_computation_label );
   
-  computation_label.set_scale_factor( s_scale_factor, s_scale_factor );
   result.push_back( computation_label );
 
-  // points shadow
   bear::visual::scene_writing points
-    ( right - m_points_text.get_width() * s_scale_factor, y, m_points_text);
+    ( right - m_points_text.get_width(), y, m_points_text);
 
-  points.set_scale_factor( s_scale_factor, s_scale_factor );
-
+  if ( m_total_points < 0 )
+    points.get_rendering_attributes().set_intensity( 0.82, 0.14, 0.14 );
+  else if ( m_total_points > 0 )
+    points.get_rendering_attributes().set_intensity( 0.04, 0.82, 0 );
+  
   result.push_back( points );
 
   e.push_back( result );
-
-  // The following elements are outside the scene element sequence since we do
-  // not change their intensity.
-
-  // underline
-  std::vector<bear::visual::position_type> p(2);
-  p[0].set( left + m_bonus_sprite.get_size().x, m_y );
-  p[1].set( right, p[0].y );
-
-  bear::visual::scene_line underline( 0, 0, RP_ORANGE_PIXEL, p, 1 );
-
-  underline.set_shadow( s_shadow_delta, -s_shadow_delta );
-  e.push_back( underline );
-
-  // bonus picture
-  bear::visual::scene_sprite sp
-    ( left, m_y + ( m_bonus_sprite.get_size().y - get_height() ) / 2,
-      m_bonus_sprite );
-
-  sp.set_shadow( s_shadow_delta, -s_shadow_delta );
-  e.push_back( sp );
 } // level_ending_effect::score_line::render()
 
 /*----------------------------------------------------------------------------*/
@@ -214,9 +179,7 @@ int rp::level_ending_effect::score_line::get_total_points() const
 bear::visual::coordinate_type
 rp::level_ending_effect::score_line::get_height() const
 {
-  return std::max
-    ( m_label.get_height() * s_scale_factor + s_shadow_delta,
-      m_bonus_sprite.get_size().y );
+  return m_label.get_height() + s_shadow_delta;
 } // level_ending_effect::score_line::get_height()
 
 /*----------------------------------------------------------------------------*/
@@ -266,7 +229,7 @@ bool rp::level_ending_effect::score_line::is_negative() const
 const unsigned int rp::level_ending_effect::s_points_per_second(10000);
 const bear::visual::coordinate_type
 rp::level_ending_effect::s_screen_margin(100);
-const bear::visual::coordinate_type rp::level_ending_effect::s_margin(10);
+const bear::visual::coordinate_type rp::level_ending_effect::s_margin(20);
 const double rp::level_ending_effect::s_score_line_speed(150);
 
 /*----------------------------------------------------------------------------*/
@@ -275,9 +238,10 @@ const double rp::level_ending_effect::s_score_line_speed(150);
  */
 rp::level_ending_effect::level_ending_effect()
   : m_speed_factor(1), m_next_tick(0.1), m_world(NULL), m_cart(NULL), 
-    m_skip_button(NULL), m_facebook_button(NULL),
+    m_skip_button(NULL),
     m_applause_sample(NULL), m_update_function(NULL), m_flash_opacity(0),
-    m_play_tick(false)
+    m_play_tick(false),
+    m_age( 0 )
 {
 
 } // level_ending_effect::level_ending_effect()
@@ -292,9 +256,10 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
     m_next_tick(that.m_next_tick), m_world(that.m_world), m_cart(that.m_cart),
     m_finished(false), m_medal(0), m_rectangle_opacity(0), 
     m_decorative_medal(NULL), m_pop_level(false), m_active_component(false),
-    m_skip_button(NULL), m_facebook_button(NULL),
+    m_skip_button(NULL),
     m_in_fade_out(false), m_applause_sample(NULL), m_update_function(NULL),
-    m_flash_opacity(0), m_play_tick(false)
+    m_flash_opacity(0), m_play_tick(false),
+    m_age( 0 )
 {
 
 } // level_ending_effect::level_ending_effect()
@@ -305,9 +270,6 @@ rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
  */
 rp::level_ending_effect::~level_ending_effect()
 {
-  m_facebook_request.disconnect();
-  m_twitter_request.disconnect();
-
   delete m_applause_sample;
 } // level_ending_effect::~level_ending_effect()
  
@@ -374,6 +336,25 @@ void rp::level_ending_effect::build()
       &claw::tween::easing_linear::ease_in_out );
 
   m_root_window.set_size( get_level().get_camera_focus().size() );
+
+  game_variables::set_ending_effect(true);
+
+  m_play_tick = true;
+  m_update_function = &level_ending_effect::update_positive_lines;
+
+  if ( game_variables::is_boss_level() )
+    return;
+  
+  create_background();
+  create_top_strip();
+  create_bottom_strip();
+  create_left_balloon();
+  create_right_balloons();
+  create_gauge_background();
+  create_medal_ticks();
+  create_gauge_fill();
+  create_gauge_foreground();
+  
   add_button_component();
 
   m_background_on_sprite =
@@ -382,11 +363,6 @@ void rp::level_ending_effect::build()
   m_background_off_sprite =
     get_level_globals().auto_sprite
     ( rp_gettext("gfx/status/buttons.png"), "background off" );
-
-  game_variables::set_ending_effect(true);
-
-  m_play_tick = true;
-  m_update_function = &level_ending_effect::update_positive_lines;
 } // level_ending_effect::build()
 
 /*----------------------------------------------------------------------------*/
@@ -400,6 +376,12 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
   if ( get_level().is_paused() )
     return elapsed_time;
 
+  m_intro_tweener.update(elapsed_time);
+  m_age += elapsed_time;
+  
+  if ( m_age < s_intro_duration )
+    return 0;
+  
   bool do_start_level =
     game_variables::is_boss_level()
     || update_lines( elapsed_time * m_speed_factor );
@@ -439,8 +421,6 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
 
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
-
-      add_social_buttons();
     }
 
   m_speed_factor = 1;
@@ -454,15 +434,9 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
     update_medal();
 
   m_tweener_fade_out.update(elapsed_time);
-  m_social_tweener.update(elapsed_time);
 
-  // Opening the URL immediately will crash on Android. The cause seems to be
-  // that the app goes in background (due to the display of Chrome) while the
-  // main thread is not active. Indeed, the active thread is the one receiving
-  // the URL from our server and calling the signal. The opening of the URL is
-  // thus postponed there, to be sure it is done in the main thread.
-  open_url();
-
+  update_gauge_fill();
+  
   return 0;
 } // level_ending_effect::progress()
 
@@ -473,21 +447,23 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
  */
 void rp::level_ending_effect::render( scene_element_list& e ) const
 {
-  render_background(e);
+  if ( m_age < s_intro_duration )
+    return;
+  
+  const bool display_score( !game_variables::is_boss_level() );
 
-  if ( ! game_variables::is_boss_level() )
+  if ( display_score )
     {
-      render_score_background(e);
       render_score(e);
       render_flash_line(e);
-
+      render_button_background(e);
       m_root_window.render( e );
     }
 
   if ( m_rectangle_opacity > 0 )
     render_opaque_rectangle(e);
 
-  if ( ! game_variables::is_boss_level() )
+  if ( display_score )
     {
       render_level_name(e);
       render_medal(e);
@@ -503,6 +479,246 @@ void rp::level_ending_effect::set_cart(const cart* c)
 {
   m_cart = c;
 } // level_ending_effect::set_cart()
+
+void rp::level_ending_effect::create_background()
+{
+  m_background = new bear::decorative_rectangle();
+
+  m_background->set_fill_color( bear::visual::color( 0, 10, 68, 255 ) );
+  m_background->set_size( get_layer().get_size() );
+  m_background->set_z_position( s_ui_depth );
+  m_background->set_center_of_mass( get_level().get_camera_center() );
+
+  m_cart->new_item( *m_background );
+  
+  const auto fade_in
+    ( [ this ]( float f ) -> void
+      {
+        m_background->get_rendering_attributes().set_opacity( f );
+      } );
+
+  claw::tween::single_tweener t
+    ( 0, 1, 2 * s_intro_duration, fade_in,
+      &claw::tween::easing_linear::ease_out );
+
+  m_intro_tweener.insert( t );
+}
+
+void rp::level_ending_effect::create_top_strip()
+{ 
+  m_top_strip = new bear::decorative_item();
+
+  bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite
+      ( "gfx/status/status.png", "end game top" ) );
+  sprite.set_width( get_layer().get_size().x );
+
+  m_top_strip->set_sprite( sprite );
+  m_top_strip->set_size( sprite.get_size() );
+  m_top_strip->set_z_position( s_ui_depth + 100 );
+
+  const auto camera( get_level().get_camera_focus() );
+  m_top_strip->set_bottom( camera.top() );
+  m_top_strip->set_left( camera.left() );
+
+  m_cart->new_item( *m_top_strip );
+  
+  bear::universe::forced_goto mvt; 
+  mvt.set_length( bear::universe::vector_type( 0, -sprite.height() ) );
+  mvt.set_total_time( s_intro_duration );
+  m_top_strip->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::create_bottom_strip()
+{ 
+  m_bottom_strip = new bear::decorative_item();
+
+  bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite
+      ( "gfx/status/status.png", "end game bottom" ) );
+  sprite.set_width( get_layer().get_size().x );
+
+  m_bottom_strip->set_sprite( sprite );
+  m_bottom_strip->set_size( sprite.get_size() );
+  m_bottom_strip->set_z_position( s_ui_depth + 100 );
+
+  const auto camera( get_level().get_camera_focus() );
+  m_bottom_strip->set_top( camera.bottom() );
+  m_bottom_strip->set_left( camera.left() );
+
+  m_cart->new_item( *m_bottom_strip );
+  
+  bear::universe::forced_goto mvt; 
+  mvt.set_length( bear::universe::vector_type( 0, sprite.height() ) );
+  mvt.set_total_time( s_intro_duration );
+  m_bottom_strip->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::create_left_balloon()
+{ 
+  bear::decorative_item* const item( new bear::decorative_item() );
+
+  const bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite( "gfx/status/status.png", "balloon" ) );
+
+  item->get_rendering_attributes().set_opacity( 0.25 );
+  item->set_sprite( sprite );
+  item->set_size( sprite.get_size() );
+  item->set_z_position( s_ui_depth + 150 );
+
+  m_cart->new_item( *item );
+  
+  bear::universe::forced_tracking mvt( bear::universe::vector_type( 0, 0 ) );
+  mvt.set_ratio_reference_point
+    ( *m_bottom_strip, bear::universe::position_type( 0.1, 0.33 ),
+      bear::universe::position_type( 0, 0 ) );
+
+  item->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::create_right_balloons()
+{ 
+  bear::decorative_item* const item( new bear::decorative_item() );
+
+  const bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite( "gfx/status/status.png", "balloons" ) );
+
+  item->get_rendering_attributes().set_opacity( 0.25 );
+  item->set_sprite( sprite );
+  item->set_size( sprite.get_size() );
+  item->set_z_position( s_ui_depth + 150 );
+
+  m_cart->new_item( *item );
+  
+  bear::universe::forced_tracking mvt( bear::universe::vector_type( 0, 0 ) );
+  mvt.set_ratio_reference_point
+    ( *m_bottom_strip, bear::universe::position_type( 1, 0 ),
+      bear::universe::position_type( 0, 0 ) );
+  mvt.set_moving_item_ratio( bear::universe::position_type( 1, 0 ) );
+
+  item->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::create_gauge_background()
+{ 
+  m_gauge_background = new bear::decorative_item();
+
+  const bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite
+      ( "gfx/status/status.png", "end game gauge back" ) );
+
+  m_gauge_background->set_sprite( sprite );
+  m_gauge_background->set_size( sprite.get_size() );
+  m_gauge_background->set_z_position( s_ui_depth + 200 );
+
+  m_cart->new_item( *m_gauge_background );
+  
+  bear::universe::forced_tracking mvt
+    ( bear::universe::vector_type
+      ( m_bottom_strip->get_width() / 2,
+        m_bottom_strip->get_height() / 2 ) );
+  mvt.set_ratio_reference_point
+    ( *m_bottom_strip, bear::universe::position_type( 0, 0 ),
+      bear::universe::position_type( 0, 0 ) );
+
+  m_gauge_background->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::create_medal_ticks()
+{
+  const float gold( game_variables::get_gold_threshold() );
+  const float silver( game_variables::get_silver_threshold() / gold );
+  const float bronze( game_variables::get_bronze_threshold() / gold );
+  
+  create_gauge_tick( bronze, "end game bronze tick" );
+  create_gauge_tick( silver, "end game silver tick" );
+}
+
+void rp::level_ending_effect::create_gauge_tick
+( float ratio, const std::string& name )
+{
+  bear::decorative_item* const tick( new bear::decorative_item() );
+
+  const bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite( "gfx/status/status.png", name ) );
+
+  tick->set_sprite( sprite );
+  tick->set_size( sprite.get_size() );
+  tick->set_z_position( s_ui_depth + 300 );
+
+  m_cart->new_item( *tick );
+  
+  bear::universe::forced_tracking mvt
+    ( bear::universe::vector_type
+      ( ratio * m_gauge_background->get_width(),
+        m_gauge_background->get_height() / 2 ) );
+  mvt.set_ratio_reference_point
+    ( *m_gauge_background, bear::universe::position_type( 0, 0 ),
+      bear::universe::position_type( 0, 0 ) );
+
+  tick->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::create_gauge_fill()
+{ 
+  m_gauge_fill = new bear::decorative_item();
+
+  m_gauge_fill_sprite =
+    get_level_globals().auto_sprite
+    ( "gfx/status/status.png", "end game fill" );
+
+  m_gauge_fill->set_sprite( m_gauge_fill_sprite );
+  m_gauge_fill->set_size( m_gauge_fill_sprite.get_size() );
+  m_gauge_fill->set_z_position( s_ui_depth + 400 );
+
+  m_cart->new_item( *m_gauge_fill );
+  
+  bear::universe::forced_tracking mvt
+    ( bear::universe::vector_type( 0, m_gauge_background->get_height() / 2 ) );
+  mvt.set_ratio_reference_point
+    ( *m_gauge_background, bear::universe::position_type( 0, 0 ),
+      bear::universe::position_type( 0, 0 ) );
+  mvt.set_moving_item_ratio( bear::universe::position_type( 0, 0.5 ) );
+  
+  m_gauge_fill->set_forced_movement( mvt );
+}
+
+void rp::level_ending_effect::update_gauge_fill()
+{
+  const float ratio
+    ( std::min< float >
+      ( 1.0,
+        float( game_variables::get_score() )
+        / game_variables::get_gold_threshold() ) );
+
+  m_gauge_fill_sprite.set_width( ratio * m_gauge_background->get_width() );
+  m_gauge_fill->set_sprite( m_gauge_fill_sprite );
+}
+
+void rp::level_ending_effect::create_gauge_foreground()
+{ 
+  m_gauge_foreground = new bear::decorative_item();
+
+  const bear::visual::sprite sprite
+    ( get_level_globals().auto_sprite
+      ( "gfx/status/status.png", "end game gauge front" ) );
+
+  m_gauge_foreground->set_sprite( sprite );
+  m_gauge_foreground->set_size( sprite.get_size() );
+  m_gauge_foreground->set_z_position( s_ui_depth + 500 );
+
+  m_cart->new_item( *m_gauge_foreground );
+  
+  bear::universe::forced_tracking mvt
+    ( bear::universe::vector_type
+      ( m_gauge_background->get_width() / 2,
+        m_gauge_background->get_height() / 2 ) );
+  mvt.set_ratio_reference_point
+    ( *m_gauge_background, bear::universe::position_type( 0, 0 ),
+      bear::universe::position_type( 0, 0 ) );
+
+  m_gauge_foreground->set_forced_movement( mvt );
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -660,7 +876,7 @@ void rp::level_ending_effect::fill_points()
     return;
 
   const bear::visual::font f
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 64) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 32) );
 
   give_level_points(f);
 
@@ -688,9 +904,7 @@ void rp::level_ending_effect::give_level_points( const bear::visual::font& f )
 
   m_positive_points.push_back
     ( score_line
-      ( f, rp_gettext("Level score"), empty_string, empty_string, points,
-        get_level_globals().auto_sprite
-        ( "gfx/status/bonus.png", "level" ) ) );
+      ( f, rp_gettext("Level score"), empty_string, empty_string, points ) );
 } // level_ending_effect::give_level_points()
 
 /*----------------------------------------------------------------------------*/
@@ -707,9 +921,7 @@ void rp::level_ending_effect::give_balloon_points(const bear::visual::font& f)
 
   m_positive_points.push_back
     ( score_line
-      ( f, rp_gettext("Balloons"), "500 x ", stream.str(), points,
-        get_level_globals().auto_sprite
-        ( "gfx/status/bonus.png", "balloons" ) ) );
+      ( f, rp_gettext("Balloons"), "500 x ", stream.str(), points ) );
 } // level_ending_effect::give_balloon_points()
 
 /*----------------------------------------------------------------------------*/
@@ -727,9 +939,7 @@ void rp::level_ending_effect::give_bad_balloon_points
   
   m_negative_points.push_back
     ( score_line
-      ( f, rp_gettext("Burst balloons"), "-500 x " ,  stream.str(), points,
-        get_level_globals().auto_sprite
-        ( "gfx/status/bonus.png", "explosed balloons" ) ) );
+      ( f, rp_gettext("Burst balloons"), "-500 x " ,  stream.str(), points ) );
 
   m_negative_points.back().set_negative();
 } // level_ending_effect::give_bad_balloon_points()
@@ -749,9 +959,7 @@ void rp::level_ending_effect::give_bad_plunger_points
 
   m_negative_points.push_back
     ( score_line
-      ( f, rp_gettext("Missed plungers"), "-250 x ", stream.str(), points,
-        get_level_globals().auto_sprite
-        ( "gfx/status/bonus.png", "missed plungers" ) ) );
+      ( f, rp_gettext("Missed plungers"), "-250 x ", stream.str(), points ) );
 
   m_negative_points.back().set_negative();
 } // level_ending_effect::give_bad_plunger_points()
@@ -771,9 +979,8 @@ void rp::level_ending_effect::give_bad_cannonball_points
 
   m_negative_points.push_back
     ( score_line
-      ( f, rp_gettext("Missed cannonballs"), "-250 x ", stream.str(), points,
-        get_level_globals().auto_sprite
-        ( "gfx/status/bonus.png", "missed cannonballs" ) ) );
+      ( f, rp_gettext("Missed cannonballs"), "-250 x ", stream.str(),
+        points ) );
 
   m_negative_points.back().set_negative();
 } // level_ending_effect::give_bad_cannonball_points()
@@ -794,9 +1001,7 @@ void rp::level_ending_effect::give_cart_elements_points
     points = 4000;
 
   m_positive_points.push_back
-    ( score_line
-      ( f, rp_gettext("Health bonus"), points,
-        get_level_globals().auto_sprite( "gfx/status/bonus.png", "health" ) ) );
+    ( score_line( f, rp_gettext("Health bonus"), points ) );
 } // level_ending_effect::give_cart_elements_points()
 
 /*----------------------------------------------------------------------------*/
@@ -820,9 +1025,7 @@ void rp::level_ending_effect::give_time_points
       
       m_positive_points.push_back
         ( score_line
-          ( f, rp_gettext("Time bonus"), "500 x ", stream.str(), points,
-            get_level_globals().auto_sprite
-            ( "gfx/status/bonus.png", "time" ) ) );
+          ( f, rp_gettext("Time bonus"), "500 x ", stream.str(), points ) );
     }
 } // level_ending_effect::give_cart_elements_points()
 
@@ -854,7 +1057,7 @@ bear::visual::coordinate_type rp::level_ending_effect::get_score_top() const
   const bear::universe::position_type level_name_position
     ( util::get_level_name_position( rect ) );
 
-  return level_name_position.y - m_level_name.get_height() / 2 - 50;
+  return level_name_position.y - m_level_name.get_height() / 2 - 75;
 } // level_ending_effect::get_score_top()
 
 /*----------------------------------------------------------------------------*/
@@ -970,8 +1173,7 @@ void rp::level_ending_effect::merge_positive_lines
     {
       m_flash_opacity = 1;
 
-      create_persistent_line
-        ( rp_gettext("Bonus"), m_positive_points, "bonus" );
+      create_persistent_line( rp_gettext("Bonus"), m_positive_points );
 
       initialize_line_position( m_negative_points );
 
@@ -991,8 +1193,7 @@ void rp::level_ending_effect::merge_negative_lines
     {
       m_flash_opacity = 1;
 
-      create_persistent_line
-        ( rp_gettext("Penalties"), m_negative_points, "penalty" );
+      create_persistent_line( rp_gettext("Penalties"), m_negative_points );
       m_update_function = &level_ending_effect::flash_negative_persistent;
     }
 } // level_ending_effect::merge_negative_lines()
@@ -1099,10 +1300,9 @@ bool rp::level_ending_effect::merge_lines
  * \brief Creates a line of score that will not disappear.
  * \param label The label to display on the line.
  * \param lines The lines from which the score is computed.
- * \param icon_name The name of the icon in gfx/status/bonus.png.
  */
 void rp::level_ending_effect::create_persistent_line
-( std::string label, std::list<score_line>& lines, std::string icon_name )
+( const std::string& label, std::list<score_line>& lines )
 {
   if ( lines.empty() )
     return;
@@ -1114,9 +1314,7 @@ void rp::level_ending_effect::create_persistent_line
     points += it->get_total_points();
 
   score_line result
-    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 64),
-      label, points,
-      get_level_globals().auto_sprite( "gfx/status/bonus.png", icon_name ) );
+    ( get_level_globals().get_font("font/LuckiestGuy.ttf", 32), label, points );
 
   result.set_y_position( lines.front().get_y_position() );
   
@@ -1218,13 +1416,15 @@ void rp::level_ending_effect::create_decorative_medal()
   if ( m_decorative_medal != NULL )
     m_decorative_medal->clear_forced_movement();
 
-  m_decorative_medal = new bear::decorative_item;
+  m_decorative_medal = new bear::decorative_item();
 
   m_decorative_medal->set_sprite( m_medal_sprite );
   m_decorative_medal->set_size( m_medal_sprite.get_size() );
   m_decorative_medal->set_global(true);
-  m_decorative_medal->set_z_position( 1000000 );
-
+  m_decorative_medal->set_z_position( s_ui_depth + 200 );
+  m_decorative_medal->set_shadow_x( 5 );
+  m_decorative_medal->set_shadow_y( -5 );
+  
   bear::universe::position_type pos =
     util::get_medal_position( get_level().get_camera_focus() );
   bear::universe::coordinate_type dist = 
@@ -1275,7 +1475,8 @@ void rp::level_ending_effect::render_score( scene_element_list& e) const
   
   const bear::universe::rectangle_type rect
     ( bear::universe::position_type(0, 0), get_layer().get_size() );
-  const bear::universe::position_type pos = util::get_medal_position( rect );
+  const bear::universe::coordinate_type pos_y
+    ( 3 * m_bottom_strip->get_height() / 4 );
 
   double factor = 1;
   if ( m_points_text.get_width() > get_layer().get_size().x / 2 )
@@ -1283,7 +1484,7 @@ void rp::level_ending_effect::render_score( scene_element_list& e) const
 
   bear::visual::scene_writing points
     ( ( get_layer().get_size().x - factor * m_points_text.get_width() ) / 2, 
-      pos.y - factor * m_points_text.get_height() / 2, m_points_text );
+      pos_y - factor * m_points_text.get_height() / 2, m_points_text );
   
   points.set_shadow( 5, -5 );
   points.set_scale_factor(factor, factor);
@@ -1326,34 +1527,6 @@ void rp::level_ending_effect::render_score_lines
   for ( it=lines.begin(); it!=lines.end(); ++it )
     it->render( e, left, right );
 } // level_ending_effect::render_score_lines()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Render the background of the scores.
- * \param e (out) The scene elements.
- */
-void
-rp::level_ending_effect::render_score_background( scene_element_list& e) const
-{
-  const bear::universe::rectangle_type rect
-    ( bear::universe::position_type(0, 0), get_layer().get_size() );
-  const bear::universe::position_type pos( util::get_medal_position( rect ) );
-
-  const bear::universe::coordinate_type margin( 30 );
-
-  const bear::universe::coordinate_type bottom
-    ( pos.y + m_gold_medal_sprite.height() / 2 + margin );
-
-  const bear::universe::coordinate_type top( get_score_top() + margin );
-
-  const bear::visual::rectangle_type background_fill
-    ( 0, bottom, get_layer().get_size().x, top );
-
-  e.push_back
-    ( bear::visual::scene_rectangle
-      ( 0, 0, bear::visual::color_type("#3B000000"), background_fill, true,
-        0 ) );
-} // level_ending_effect::render_score_background()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1431,7 +1604,7 @@ void rp::level_ending_effect::render_opaque_rectangle
  * \brief Render the medal.
  * \param e (out) The scene elements.
  */
-void rp::level_ending_effect::render_medal( scene_element_list& e) const
+void rp::level_ending_effect::render_medal( scene_element_list& e ) const
 {
   if ( m_finished && m_medal > 0 )
     {
@@ -1443,6 +1616,7 @@ void rp::level_ending_effect::render_medal( scene_element_list& e) const
         ( pos.x - m_medal_sprite.width() / 2, 
           pos.y - m_medal_sprite.height() / 2, 
           m_medal_sprite );
+      sp.set_shadow( 5, -5 );
       e.push_back( sp );
     }  
 } // level_ending_effect::render_medal()
@@ -1452,7 +1626,8 @@ void rp::level_ending_effect::render_medal( scene_element_list& e) const
  * \brief Add background sprites.
  * \param visuals (out) The sprites of the item, and their positions.
  */
-void rp::level_ending_effect::render_background( scene_element_list& e ) const
+void
+rp::level_ending_effect::render_button_background( scene_element_list& e ) const
 {
   if ( m_skip_button->get_visible() )
     {
@@ -1481,7 +1656,7 @@ void rp::level_ending_effect::render_background( scene_element_list& e ) const
           e.push_back( s );
         }
     }
-} // level_ending_effect::render_background()
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1534,8 +1709,9 @@ void rp::level_ending_effect::add_button_component()
     ( get_level_globals().auto_sprite
       ( rp_gettext("gfx/status/buttons.png"), "skip" ) );
 
-  m_skip_button->set_right( m_root_window.right() - 100 );
-  m_skip_button->set_bottom( 80 );
+  m_skip_button->set_right( get_layer().get_size().x - 80 );
+  m_skip_button->set_bottom
+    ( ( m_bottom_strip->get_height() - m_skip_button->height() ) / 2 );
 
   m_skip_button->add_callback
     ( bear::gui::callback_function_maker
@@ -1546,121 +1722,6 @@ void rp::level_ending_effect::add_button_component()
   if ( game_variables::is_boss_level() )
     m_skip_button->set_visible(false);
 } // level_ending_effect::add_button_component()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the social buttons.
- */
-void rp::level_ending_effect::add_social_buttons()
-{
-  if ( game_variables::is_boss_level() )
-    return;
-
-  add_facebook_button();
-  add_twitter_button();
-} // level_ending_effect::add_social_buttons()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the Facebook button.
- */
-void rp::level_ending_effect::add_facebook_button()
-{
-  m_facebook_button =
-    new bear::gui::button
-    ( get_level_globals().auto_sprite
-      ( rp_gettext("gfx/status/status.png"), "facebook" ) );
-
-  m_facebook_button->set_right( m_root_window.width() / 2 - s_margin );
-  m_facebook_button->set_top( m_root_window.height() );
-
-  m_facebook_button->add_callback
-    ( bear::gui::callback_function_maker
-      ( boost::bind( &level_ending_effect::on_facebook_click, this ) ) );
-
-  m_root_window.insert( m_facebook_button );
-
-  create_facebook_tweener();
-} // level_ending_effect::add_facebook_button()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the tweener for the facebook button.
- */
-void rp::level_ending_effect::create_facebook_tweener()
-{
-  claw::tween::single_tweener going_down
-    ( m_root_window.height(), m_root_window.height() / 4, 1,
-      boost::bind( &bear::gui::button::set_bottom, m_facebook_button, _1 ),
-      &claw::tween::easing_elastic::ease_out );
-
-  m_social_tweener.insert( going_down );
-} // level_ending_effect::create_facebook_tweener()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the Twitter button.
- */
-void rp::level_ending_effect::add_twitter_button()
-{
-  m_twitter_button =
-    new bear::gui::button
-    ( get_level_globals().auto_sprite
-      ( rp_gettext("gfx/status/status.png"), "twitter" ) );
-
-  m_twitter_button->set_left( m_root_window.width() / 2 + s_margin );
-  m_twitter_button->set_top( m_root_window.height() );
-
-  m_twitter_button->add_callback
-    ( bear::gui::callback_function_maker
-      ( boost::bind( &level_ending_effect::on_twitter_click, this ) ) );
-
-  m_root_window.insert( m_twitter_button );
-
-  create_twitter_tweener();
-} // level_ending_effect::add_twitter_button()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Creates the tweener for the twitter button.
- */
-void rp::level_ending_effect::create_twitter_tweener()
-{
-  claw::tween::single_tweener going_down
-    ( m_root_window.height(), m_root_window.height() / 4, 1.2,
-      boost::bind( &bear::gui::button::set_bottom, m_twitter_button, _1 ),
-      &claw::tween::easing_elastic::ease_out );
-
-  m_social_tweener.insert( going_down );
-} // level_ending_effect::create_twitter_tweener()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Sets the url to open as soon as we can.
- * \param url The url to open. If there is already a stored url, it will be
- *        overwritten.
- */
-void rp::level_ending_effect::set_url( std::string url )
-{
-  boost::mutex::scoped_lock lock( m_url_mutex );
-
-  m_url = url;
-} // level_ending_effect::set_url()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Opens the last url given to set_url.
- */
-void rp::level_ending_effect::open_url()
-{
-  boost::mutex::scoped_lock lock( m_url_mutex );
-
-  if ( !m_url.empty() )
-    {
-      util::open_url( m_url );
-      m_url.clear();
-    }
-} // level_ending_effect::open_url()
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1681,36 +1742,3 @@ void rp::level_ending_effect::on_pass_scores()
   else
     skip();
 } // level_ending_effect::on_pass_scores()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Sends the score to the user's Facebook page.
- */
-void rp::level_ending_effect::on_facebook_click()
-{
-  tag_level_event( "end-facebook" );
-  
-  m_facebook_request =
-    http_request::request
-    ( "/asgp/share.php?to_stdout=1&platform=facebook",
-      boost::bind( &level_ending_effect::set_url, this, _1 ) );
-} // level_ending_effect::on_facebook_click()
-
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Sends the score to the user's Twitter page.
- */
-void rp::level_ending_effect::on_twitter_click()
-{
-  tag_level_event( "end-twitter" );
-
-  const boost::format tweet
-    ( boost::format
-      ( rp_gettext("%1% points in level \"%2%\" of Straining Coasters.ttfs!") )
-      % game_variables::get_score() % util::get_level_name() );
-
-  m_twitter_request =
-    http_request::request
-    ( "/asgp/share.php?to_stdout=1&platform=twitter&message=" + tweet.str(),
-      boost::bind( &level_ending_effect::set_url, this, _1 ) );
-} // level_ending_effect::on_twitter_click()

@@ -1,10 +1,26 @@
 /* The size of the resulting image. */
-sprite_sheet "status" 256 x 512
+sprite_sheet "status" 1024 x 512
 
 /* the source images and their ratio in the result */
 status_img "status.xcf.bz2"
 social_img "social/social-logos.xcf.bz2"
 score_img "score.xcf.bz2"
+intro_img "intro.xcf.bz2"
+
+end_game_bottom_img "end-game/bottom.png"
+end_game_top_img "end-game/top.png"
+end_game_bronze_tick_img "end-game/bronze-tick.png"
+end_game_silver_tick_img "end-game/silver-tick.png"
+end_game_fill_img "end-game/fill.png"
+end_game_gauge_back_img "end-game/gauge-back.png"
+end_game_gauge_front_img "end-game/gauge-front.png"
+balloons_img "end-game/balloons.png"
+balloon_img "end-game/balloon.png"
+
+"panel" autosize * 0.5 with intro_img
+  "lens"
+  "frame"
+  ;
 
 "score" "score mask" * 0.5 with score_img
   "score color"
@@ -29,4 +45,101 @@ score_img "score.xcf.bz2"
 
 "score background" autosize * 0.5 with status_img
   "merged"
+  ;
+
+[ bleed ] "end game bottom" autosize * 1 with end_game_bottom_img
+  glob "*"
+  ;
+
+[ bleed ] "end game top" autosize * 1 with end_game_top_img
+  glob "*"
+  ;
+
+[ bleed ] "end game fill" autosize * 1 with end_game_fill_img
+  glob "*"
+  ;
+
+"end game silver tick" autosize * 1 with end_game_silver_tick_img
+  glob "*"
+  ;
+
+"end game bronze tick" autosize * 1 with end_game_bronze_tick_img
+  glob "*"
+  ;
+
+"end game gauge front" autosize * 1 with end_game_gauge_front_img
+  glob "*"
+  ;
+
+"end game gauge back" autosize * 1 with end_game_gauge_back_img
+  glob "*"
+  ;
+
+"balloons" autosize * 1 with balloons_img
+  glob "*"
+  ;
+
+"balloon" autosize * 1 with balloon_img
+  glob "*"
+  ;
+
+"combo 1" autosize * 0.25 with score_img
+  "score color"
+  "light"
+  "light edge"
+  "score shadow"
+  ;
+
+"combo 2" autosize * 0.25 with score_img
+  "x"
+  "score color"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 3" autosize * 0.25 with score_img
+  "x"
+  "score color"
+  "green"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 4" autosize * 0.25 with score_img
+  "x"
+  "score color"
+  "yellow"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 5" autosize * 0.25 with score_img
+  "x"
+  "score color"
+  "pink"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
+  ;
+
+"combo 6" autosize * 0.25 with score_img
+  "x"
+  "score color"
+  "purple"
+  "combo color"
+  "light"
+  "light edge"
+  "score shadow"
+  "combo shadow"
   ;

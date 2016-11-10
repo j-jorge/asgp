@@ -300,7 +300,7 @@ void rp::level_starting_effect::create_controls()
 
       m_background =
         bear::visual::sprite
-        ( get_level_globals().auto_sprite( "gfx/status/intro.png", "panel" ) );
+        ( get_level_globals().auto_sprite( "gfx/status/status.png", "panel" ) );
     }
 
   create_fade_in_tweener();

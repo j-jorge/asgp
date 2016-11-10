@@ -21,6 +21,7 @@
 #include "engine/transition_effect/transition_effect.hpp"
 #include "engine/world.hpp"
 #include "generic_items/decorative_item.hpp"
+#include "generic_items/decorative_rectangle.hpp"
 
 #include "gui/visual_component.hpp"
 #include "gui/button.hpp"
@@ -51,14 +52,12 @@ namespace rp
     {
     public:
       score_line
-      ( const bear::visual::font& f, const std::string& text, int points,
-        const bear::visual::sprite& picture );
+      ( const bear::visual::font& f, const std::string& text, int points );
 
       score_line
       ( const bear::visual::font& f,
         const std::string& text, const std::string& coeff, 
-        const std::string& count, int points,
-        const bear::visual::sprite& picture );
+        const std::string& count, int points );
 
       void render
       ( scene_element_list& e, bear::visual::coordinate_type left,
@@ -91,9 +90,6 @@ namespace rp
       /** \brief The remaining points, as a text. */
       bear::visual::writing m_points_text;
 
-      /** \brief The sprite of the bonus picture. */
-      bear::visual::sprite m_bonus_sprite;
-
       /** \brief The total number of points. */
       const int m_total_points;
 
@@ -108,9 +104,6 @@ namespace rp
 
       /** \brief A delta applied to the text to create shadows. */
       static const bear::visual::coordinate_type s_shadow_delta;
-
-      /** \brief Margin on the right of bonus picture. */
-      static const bear::visual::coordinate_type s_bonus_picture_margin;
 
       /** \brief The scale factor applied to the text. */
       static const double s_scale_factor;
@@ -136,8 +129,19 @@ namespace rp
     void set_cart(const cart* c);
 
   private:
-    void create_controls();
-    void fill_controls();
+    void create_background();
+    void create_top_strip();
+    void create_bottom_strip();
+    void create_left_balloon();
+    void create_right_balloons();
+    void create_gauge_background();
+    void create_medal_ticks();
+    void create_gauge_tick( float ratio, const std::string& name );
+
+    void create_gauge_fill();
+    void update_gauge_fill();
+    
+    void create_gauge_foreground();
 
     bool key_pressed( const bear::input::key_info& key );
     bool key_maintained( const bear::input::key_info& key );
@@ -192,7 +196,7 @@ namespace rp
       std::list<score_line>& lines ) const;
 
     void create_persistent_line
-    ( std::string label, std::list<score_line>& lines, std::string icon_name );
+    ( const std::string& label, std::list<score_line>& lines );
 
     void update_tick( bear::universe::time_type elapsed_time );
     void update_medal();
@@ -202,30 +206,16 @@ namespace rp
     void render_score( scene_element_list& e ) const;
     void render_score_lines
     ( scene_element_list& e, const std::list<score_line>& lines ) const;
-    void render_score_background( scene_element_list& e ) const;
     void render_flash_line( scene_element_list& e) const;
     void render_level_name( scene_element_list& e) const;
     void render_opaque_rectangle( scene_element_list& e) const;
     void render_medal( scene_element_list& e) const;
-    void render_background( scene_element_list& e ) const;
+    void render_button_background( scene_element_list& e ) const;
     void create_fade_out_tweener();
     void pop_level();
     void add_button_component();
 
-    void add_social_buttons();
-
-    void add_facebook_button();
-    void create_facebook_tweener();
-
-    void add_twitter_button();
-    void create_twitter_tweener();
-
-    void set_url( std::string url );
-    void open_url();
-
     void on_pass_scores();
-    void on_facebook_click();
-    void on_twitter_click();
 
     // not implemented
     level_ending_effect& operator=( const level_ending_effect& that );
@@ -284,9 +274,6 @@ namespace rp
 
     /** \brief The tweener for fade_out opacity. */
     claw::tween::single_tweener m_tweener_fade_out;
-
-    /** \brief The tweener for the social buttons. */
-    claw::tween::tweener_group m_social_tweener;
 
     /** \brief The current decorative medal. */
     bear::decorative_item* m_decorative_medal;
@@ -351,6 +338,17 @@ namespace rp
     /** \brief The delay to wait before merging the lines. */
     bear::universe::time_type m_merge_delay;
 
+    bear::universe::time_type m_age;
+    bear::decorative_rectangle* m_background;
+    bear::decorative_item* m_top_strip;
+    bear::decorative_item* m_bottom_strip;
+    bear::decorative_item* m_gauge_background;
+    bear::decorative_item* m_gauge_fill;
+    bear::visual::sprite m_gauge_fill_sprite;
+    bear::decorative_item* m_gauge_foreground;
+    
+    claw::tween::tweener_group m_intro_tweener;
+    
     /** \brief How many points are given per second. */
     static const unsigned int s_points_per_second;
 

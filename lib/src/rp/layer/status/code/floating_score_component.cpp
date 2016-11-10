@@ -63,7 +63,7 @@ rp::floating_score_component::floating_score_component
     oss << "combo 6";
   
   m_sprite = 
-    glob.auto_sprite( "gfx/status/score.png", oss.str() );
+    glob.auto_sprite( "gfx/status/status.png", oss.str() );
   
   std::ostringstream os;
   os << m_points_value;

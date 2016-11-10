@@ -185,7 +185,6 @@ void rp::cart::pre_cache()
   get_level_globals().load_image("gfx/cart/cart.png");
   get_level_globals().load_image("gfx/status/cursor.png");
   get_level_globals().load_image("gfx/status/status.png");
-  get_level_globals().load_image("gfx/status/score.png");
   get_level_globals().load_image("gfx/status/medal/medal.png");
   get_level_globals().load_image("gfx/common.png");
 
