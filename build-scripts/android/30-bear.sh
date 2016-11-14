@@ -9,6 +9,7 @@ cd $CACHE
 if [ -d bear ]
 then
     cd bear
+    git pull
 else
     git clone git@github.com:j-jorge/bear.git
     cd bear
