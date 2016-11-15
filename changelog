@@ -1,0 +1,18 @@
+Version 1.0.16
+
+	* Beating the boss is not required to access the next serial but it is
+	to access the bonus levels.
+
+	* Optimize the PNGs in the build.
+
+	* Replace all fonts with more fancy ones.
+
+	* Hide the mouse cursor on Android build.
+
+	* Buttons have been redrawn for a more uniform style in the application.
+
+	* Cleaner pause screen with no illustration.
+
+	* The level endings use a cleaner presentation and displays the score
+	threshold for each medal.
+
