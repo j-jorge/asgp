@@ -65,6 +65,18 @@ restore_localization()
     popd
 }
 
+set_version()
+{
+    sed 's:\(define RP_PATCH_NUMBER \).*:\1'$ASGP_VERSION_PATCH':' -i \
+        "$SOURCE_ROOT/lib/src/rp/version.hpp"
+}
+
+restore_version()
+{
+    cd "$SOURCE_ROOT"
+    git checkout HEAD "lib/src/rp/version.hpp"
+}
+
 build()
 {
     pushd "$BUILD_DIR"
@@ -102,8 +114,10 @@ install_locale()
 }
 
 convert_localization
+set_version
 configure
 build
+restore_version
 restore_localization
 
 copy_android_assets

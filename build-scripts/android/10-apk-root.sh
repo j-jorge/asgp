@@ -28,6 +28,8 @@ fi
 
 sed 's|versionCode=".*"|versionCode="'$BUILD_NUMBER'"|' \
     -i $ASGP_APK_ROOT/java/AndroidManifest.xml
+sed 's|versionName=".*"|versionName="'$ASGP_VERSION_FULL'"|' \
+    -i $ASGP_APK_ROOT/java/AndroidManifest.xml
     
 if [ $(build_mode $@) = debug ]
 then
