@@ -6,12 +6,14 @@ set -e
 
 cd $CACHE
 
-if [ ! -d libclaw ]
+if [ -d libclaw ]
 then
+    cd libclaw
+    git pull
+else
     git clone git@github.com:j-jorge/libclaw.git
+    cd libclaw
 fi
-
-cd libclaw
 
 CC="$ANDROID_CC $CFLAGS" CXX="$ANDROID_CXX $CXXFLAGS" AR=$ANDROID_AR cmake . \
    -DCMAKE_BUILD_TYPE=release \
