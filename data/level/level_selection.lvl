@@ -7187,25 +7187,25 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-4'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1774'/>
+<real value='549'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='49'/>
+<real value='96'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -7221,25 +7221,25 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-5'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1880'/>
+<real value='655'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='96'/>
+<real value='143'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -7252,16 +7252,30 @@
 </fields>
     </item><!-- bear::mouse_over_manager -->
 
+    <item class_name='rp::tar' fixed='false' id='tar'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='118'/>
+</field>
+<field name='base_item.position.left'>
+<real value='145'/>
+</field>
+<field name='entity.passive'>
+<bool value='1'/>
+</field>
+</fields>
+    </item><!-- rp::tar -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='outside-track-back-mvt'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2700'/>
+<real value='1475'/>
 </field>
 <field name='base_item.position.left'>
-<real value='137'/>
+<real value='184'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -7281,19 +7295,22 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
-    <item class_name='rp::tar' fixed='false' id='tar'>
+    <item class_name='rp::bomb' fixed='false' id='bomb'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='118'/>
+<real value='131'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='10'/>
 </field>
 <field name='base_item.position.left'>
-<real value='145'/>
+<real value='231'/>
 </field>
 <field name='entity.passive'>
 <bool value='1'/>
 </field>
 </fields>
-    </item><!-- rp::tar -->
+    </item><!-- rp::bomb -->
 
     <item class_name='bear::forced_movement_toggle' fixed='false' id='back_outside'>
 <fields>
@@ -7301,10 +7318,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2581'/>
+<real value='1356'/>
 </field>
 <field name='base_item.position.left'>
-<real value='188'/>
+<real value='235'/>
 </field>
 <field name='item_with_toggle.initial_state'>
 <bool value='1'/>
@@ -7327,10 +7344,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2636'/>
+<real value='1411'/>
 </field>
 <field name='base_item.position.left'>
-<real value='188'/>
+<real value='235'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='outside-join-back-mvt'/>
@@ -7342,25 +7359,25 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-3'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1774'/>
+<real value='549'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='196'/>
+<real value='243'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -7373,36 +7390,19 @@
 </fields>
     </item><!-- bear::mouse_over_manager -->
 
-    <item class_name='rp::bomb' fixed='false' id='bomb'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='131'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='10'/>
-</field>
-<field name='base_item.position.left'>
-<real value='231'/>
-</field>
-<field name='entity.passive'>
-<bool value='1'/>
-</field>
-</fields>
-    </item><!-- rp::bomb -->
-
-    <item class_name='bear::decorative_item' fixed='false' id='back_deco'>
+    <item class_name='bear::decorative_item' fixed='false' id='configure'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2232'/>
+<real value='1636'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='118'/>
 </field>
 <field name='base_item.position.left'>
-<real value='249'/>
+<real value='246'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -7411,7 +7411,74 @@
 <real value='140'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons.png' x='282' y='0' clip_width='140' clip_height='98' spritepos='back' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/status/buttons.png' x='162' y='199' clip_width='140' clip_height='98' spritepos='settings' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
+    <item class_name='bear::camera_on_object' fixed='false' id='camera-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='1793'/>
+</field>
+<field name='base_item.position.left'>
+<real value='257'/>
+</field>
+<field name='base_item.size.height'>
+<real value='720'/>
+</field>
+<field name='base_item.size.width'>
+<real value='1280'/>
+</field>
+<field name='camera.max_zoom_length'>
+<real value='500'/>
+</field>
+<field name='camera.size.min_height'>
+<real value='720'/>
+</field>
+<field name='camera.size.min_width'>
+<real value='1280'/>
+</field>
+<field name='camera.valid_max.x'>
+<real value='24900'/>
+</field>
+<field name='camera.valid_max.y'>
+<real value='4900'/>
+</field>
+<field name='camera.valid_min.x'>
+<real value='100'/>
+</field>
+<field name='camera.valid_min.y'>
+<real value='100'/>
+</field>
+<field name='camera_on_object.items'>
+<item_reference value='camera-0'/>
+</field>
+</fields>
+    </item><!-- bear::camera_on_object -->
+
+    <item class_name='bear::decorative_item' fixed='false' id='back_deco'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1007'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='110'/>
+</field>
+<field name='base_item.position.left'>
+<real value='296'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/buttons.png' x='162' y='100' clip_width='140' clip_height='98' spritepos='back' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -7431,10 +7498,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2110'/>
+<real value='885'/>
 </field>
 <field name='base_item.position.left'>
-<real value='269'/>
+<real value='316'/>
 </field>
 </fields>
     </item><!-- rp::back_button_home_item -->
@@ -7445,10 +7512,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2705'/>
+<real value='1480'/>
 </field>
 <field name='base_item.position.left'>
-<real value='271'/>
+<real value='318'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -7471,10 +7538,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2171'/>
+<real value='946'/>
 </field>
 <field name='base_item.position.left'>
-<real value='290'/>
+<real value='337'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='back_deco'/>
@@ -7491,10 +7558,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2016'/>
+<real value='791'/>
 </field>
 <field name='base_item.position.left'>
-<real value='313'/>
+<real value='360'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='hot_spot'/>
@@ -7514,10 +7581,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1963'/>
+<real value='738'/>
 </field>
 <field name='base_item.position.left'>
-<real value='318'/>
+<real value='365'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='button_background'/>
@@ -7537,25 +7604,25 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-2'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1776'/>
+<real value='551'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='342'/>
+<real value='389'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -7574,10 +7641,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2153'/>
+<real value='928'/>
 </field>
 <field name='base_item.position.left'>
-<real value='352'/>
+<real value='399'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='back'/>
@@ -7597,13 +7664,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2321'/>
+<real value='1096'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='406'/>
+<real value='453'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -7626,13 +7693,13 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-1'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1890'/>
+<real value='665'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='50'/>
+<integer value='-150'/>
 </field>
 <field name='base_item.position.left'>
-<real value='442'/>
+<real value='489'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='123' height='123' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
@@ -7649,14 +7716,17 @@
 </animation>
 </field>
 <field name='mouse_over_manager.items'>
+<item_reference value='right-button-0'/>
 <item_reference value='right-button-1'/>
 <item_reference value='right-button-2'/>
 <item_reference value='right-button-3'/>
 <item_reference value='right-button-4'/>
+<item_reference value='left-button-1'/>
 <item_reference value='left-button-2'/>
 <item_reference value='left-button-3'/>
 <item_reference value='left-button-4'/>
 <item_reference value='left-button-5'/>
+<item_reference value='top-button-0'/>
 <item_reference value='top-button-1'/>
 <item_reference value='top-button-2'/>
 <item_reference value='top-button-3'/>
@@ -7676,10 +7746,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2797'/>
+<real value='1572'/>
 </field>
 <field name='base_item.position.left'>
-<real value='459'/>
+<real value='506'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -7702,10 +7772,10 @@
     <item class_name='bear::check_system_name_creator' fixed='false' id='system-android'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2179'/>
+<real value='954'/>
 </field>
 <field name='base_item.position.left'>
-<real value='482'/>
+<real value='529'/>
 </field>
 <field name='check_system_name_creator.system_name'>
 <string value='android'/>
@@ -7716,25 +7786,25 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1775'/>
+<real value='550'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='487'/>
+<real value='534'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -7754,10 +7824,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2621'/>
+<real value='1396'/>
 </field>
 <field name='base_item.position.left'>
-<real value='494'/>
+<real value='541'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='back'/>
@@ -7777,10 +7847,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2676'/>
+<real value='1451'/>
 </field>
 <field name='base_item.position.left'>
-<real value='494'/>
+<real value='541'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='outside-track-back-mvt-1'/>
@@ -7793,10 +7863,10 @@
     <item class_name='bear::killer' fixed='false' id='kill-android-toggle'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2099'/>
+<real value='874'/>
 </field>
 <field name='base_item.position.left'>
-<real value='524'/>
+<real value='571'/>
 </field>
 <field name='killer.items'>
 <item_reference value='button_background'/>
@@ -7816,10 +7886,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2761'/>
+<real value='1536'/>
 </field>
 <field name='base_item.position.left'>
-<real value='545'/>
+<real value='592'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -7839,10 +7909,10 @@
     <item class_name='bear::applied_boolean_expression' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2179'/>
+<real value='954'/>
 </field>
 <field name='base_item.position.left'>
-<real value='547'/>
+<real value='594'/>
 </field>
 <field name='applied_expression.expression'>
 <item_reference value='system-android'/>
@@ -7856,25 +7926,25 @@
     <item class_name='bear::mouse_over_manager' fixed='false' id='button_background-6'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1907'/>
+<real value='682'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='554'/>
+<real value='601'/>
 </field>
 <field name='mouse_over_manager.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='true' width='160' height='118' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -7896,10 +7966,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2599'/>
+<real value='1374'/>
 </field>
 <field name='base_item.position.left'>
-<real value='568'/>
+<real value='615'/>
 </field>
 <field name='browser_launcher_toggle.url'>
 <string value='http://www.stuff-o-matic.com/asgp/buy.php'/>
@@ -7913,10 +7983,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2119'/>
+<real value='894'/>
 </field>
 <field name='base_item.position.left'>
-<real value='603'/>
+<real value='650'/>
 </field>
 <field name='trigger.toggle'>
 <item_reference value='kill-android-toggle'/>
@@ -7927,10 +7997,10 @@
     <item class_name='bear::logical_not_creator' fixed='false' id='not_is_demo_version'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2480'/>
+<real value='1255'/>
 </field>
 <field name='base_item.position.left'>
-<real value='615'/>
+<real value='662'/>
 </field>
 <field name='logical_not_creator.operand'>
 <item_reference value='is_demo_version'/>
@@ -7941,10 +8011,10 @@
     <item class_name='bear::bool_game_variable_getter_creator' fixed='false' id='is_demo_version'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2526'/>
+<real value='1301'/>
 </field>
 <field name='base_item.position.left'>
-<real value='615'/>
+<real value='662'/>
 </field>
 <field name='bool_game_variable_getter_creator.name'>
 <string value='demo_version'/>
@@ -7958,10 +8028,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2388'/>
+<real value='1163'/>
 </field>
 <field name='base_item.position.left'>
-<real value='617'/>
+<real value='664'/>
 </field>
 <field name='trigger.toggle'>
 <item_reference value='kill-loader'/>
@@ -7972,10 +8042,10 @@
     <item class_name='bear::applied_boolean_expression' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2432'/>
+<real value='1207'/>
 </field>
 <field name='base_item.position.left'>
-<real value='618'/>
+<real value='665'/>
 </field>
 <field name='applied_expression.expression'>
 <item_reference value='not_is_demo_version'/>
@@ -7989,10 +8059,10 @@
     <item class_name='bear::killer' fixed='true' id='kill-loader'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2344'/>
+<real value='1119'/>
 </field>
 <field name='base_item.position.left'>
-<real value='619'/>
+<real value='666'/>
 </field>
 <field name='killer.items'>
 <item_reference value='buy'/>
@@ -8004,10 +8074,10 @@
     <item class_name='rp::show_key_layer' fixed='true' id='show_key_layer'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2626'/>
+<real value='1401'/>
 </field>
 <field name='base_item.position.left'>
-<real value='619'/>
+<real value='666'/>
 </field>
 </fields>
     </item><!-- rp::show_key_layer -->
@@ -8018,10 +8088,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2710'/>
+<real value='1485'/>
 </field>
 <field name='base_item.position.left'>
-<real value='635'/>
+<real value='682'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -8047,10 +8117,10 @@
     <item class_name='bear::toggle_group' fixed='true' id='buy-toggles'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2560'/>
+<real value='1335'/>
 </field>
 <field name='base_item.position.left'>
-<real value='653'/>
+<real value='700'/>
 </field>
 <field name='toggle_group.toggles'>
 <item_reference value='navigator_launcher'/>
@@ -8062,10 +8132,10 @@
     <item class_name='bear::camera_on_object' fixed='false' id='camera-7'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1745'/>
+<real value='520'/>
 </field>
 <field name='base_item.position.left'>
-<real value='678'/>
+<real value='725'/>
 </field>
 <field name='base_item.size.height'>
 <real value='720'/>
@@ -8103,10 +8173,10 @@
     <item class_name='bear::camera_on_object' fixed='false' id='camera'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1745'/>
+<real value='520'/>
 </field>
 <field name='base_item.position.left'>
-<real value='678'/>
+<real value='725'/>
 </field>
 <field name='base_item.size.height'>
 <real value='720'/>
@@ -8150,13 +8220,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1745'/>
+<real value='520'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='1000000'/>
 </field>
 <field name='base_item.position.left'>
-<real value='678'/>
+<real value='725'/>
 </field>
 <field name='base_item.size.height'>
 <real value='720'/>
@@ -8176,13 +8246,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2354'/>
+<real value='1129'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
 </field>
 <field name='base_item.position.left'>
-<real value='691'/>
+<real value='738'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8191,7 +8261,7 @@
 <real value='140'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons-2.png' x='141' y='0' clip_width='140' clip_height='98' spritepos='buy' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/status/buttons-2.png' x='283' y='1' clip_width='140' clip_height='98' spritepos='buy' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -8202,13 +8272,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2354'/>
+<real value='1129'/>
 </field>
 <field name='base_item.position.depth'>
 <integer value='110'/>
 </field>
 <field name='base_item.position.left'>
-<real value='691'/>
+<real value='738'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8231,10 +8301,10 @@
     <item class_name='bear::applied_forced_movement' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2536'/>
+<real value='1311'/>
 </field>
 <field name='base_item.position.left'>
-<real value='713'/>
+<real value='760'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='buy'/>
@@ -8246,13 +8316,30 @@
 </fields>
     </item><!-- bear::applied_forced_movement -->
 
+    <item class_name='bear::reference_item' fixed='true'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2127'/>
+</field>
+<field name='base_item.position.left'>
+<real value='783'/>
+</field>
+<field name='base_item.size.height'>
+<real value='140'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track-buy-camera'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2531'/>
+<real value='1306'/>
 </field>
 <field name='base_item.position.left'>
-<real value='768'/>
+<real value='815'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -8278,19 +8365,174 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='rp::level_selector' fixed='false' id='0-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2105'/>
+</field>
+<field name='base_item.position.left'>
+<real value='833'/>
+</field>
+<field name='base_item.size.height'>
+<real value='128'/>
+</field>
+<field name='base_item.size.width'>
+<real value='128'/>
+</field>
+<field name='level_selector.cursor'>
+<item_reference value='cursor'/>
+</field>
+<field name='level_selector.level_name'>
+<string value='Tutorial'/>
+</field>
+<field name='level_selector.level_number'>
+<u_integer value='1'/>
+</field>
+<field name='level_selector.required_balloons'>
+<u_integer value='1'/>
+</field>
+<field name='level_selector.serial_number'>
+<u_integer value='0'/>
+</field>
+<field name='level_selector.threshold.bronze'>
+<u_integer value='20000'/>
+</field>
+<field name='level_selector.threshold.gold'>
+<u_integer value='42000'/>
+</field>
+<field name='level_selector.threshold.silver'>
+<u_integer value='30000'/>
+</field>
+</fields>
+    </item><!-- rp::level_selector -->
+
+    <item class_name='rp::serial_switcher' fixed='false' id='top-button-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2392'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='849'/>
+</field>
+<field name='base_item.size.height'>
+<real value='72'/>
+</field>
+<field name='base_item.size.width'>
+<real value='96'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='go_camera-1-1'/>
+</field>
+<field name='serial_switcher.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0.5' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.next_serial'>
+<u_integer value='6'/>
+</field>
+<field name='serial_switcher.serial'>
+<u_integer value='0'/>
+</field>
+</fields>
+    </item><!-- rp::serial_switcher -->
+
+    <item class_name='bear::reference_item' fixed='true' id='center-camera-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2150'/>
+</field>
+<field name='base_item.position.left'>
+<real value='897'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::reference_item' fixed='false' id='hot_spot'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2150'/>
+</field>
+<field name='base_item.position.left'>
+<real value='897'/>
+</field>
+</fields>
+    </item><!-- bear::reference_item -->
+
+    <item class_name='bear::forced_goto_creator' fixed='false' id='join-camera-1-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2644'/>
+</field>
+<field name='base_item.position.left'>
+<real value='936'/>
+</field>
+<field name='forced_goto_creator.acceleration_time'>
+<real value='0.5'/>
+</field>
+<field name='forced_goto_creator.duration'>
+<real value='2'/>
+</field>
+<field name='forced_goto_creator.length.x'>
+<real value='6674'/>
+</field>
+<field name='forced_goto_creator.length.y'>
+<real value='1685'/>
+</field>
+</fields>
+    </item><!-- bear::forced_goto_creator -->
+
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2373'/>
+</field>
+<field name='base_item.position.left'>
+<real value='984'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
     <item class_name='rp::serial_switcher' fixed='false' id='place-1'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1581'/>
+<real value='356'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='940'/>
+<real value='987'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8310,14 +8552,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -8327,13 +8569,151 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='go_camera-1-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2595'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1006'/>
+</field>
+<field name='item_with_toggle.delay'>
+<real value='2'/>
+</field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='mouvement-2s'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='hot_spot'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join-camera-1-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2455'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1014'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-0'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2312'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1021'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-0'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2372'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1022'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr-0'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-0'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2364'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1075'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='1'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2446'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1105'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-1'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2363'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1113'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-1'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2311'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1116'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-1'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
     <item class_name='bear::forced_goto_creator' fixed='false' id='go_goto'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1707'/>
+<real value='482'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1085'/>
+<real value='1132'/>
 </field>
 <field name='forced_goto_creator.acceleration_time'>
 <real value='0.1'/>
@@ -8353,13 +8733,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1790'/>
+<real value='565'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1093'/>
+<real value='1140'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8379,14 +8759,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -8402,10 +8782,10 @@
     <item class_name='bear::forced_rotation_creator' fixed='false' id='go_rotate'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1654'/>
+<real value='429'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1111'/>
+<real value='1158'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='place-1'/>
@@ -8434,13 +8814,27 @@
 </fields>
     </item><!-- bear::forced_rotation_creator -->
 
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2381'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1167'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='2'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
     <item class_name='bear::forced_sequence_creator' fixed='false' id='go_sequence'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1702'/>
+<real value='477'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1145'/>
+<real value='1192'/>
 </field>
 <field name='forced_sequence_creator.loops'>
 <u_integer value='1'/>
@@ -8452,19 +8846,145 @@
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-1'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2463'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1197'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-2'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2320'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1204'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-2'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2380'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1205'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr-1'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-2'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2381'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1255'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='3'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
+    <item class_name='bear::u_int_game_variable_getter_creator' fixed='false' id='last-serial'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2604'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1280'/>
+</field>
+<field name='u_int_game_variable_getter_creator.name'>
+<string value='persistent/scenario/selected_serial'/>
+</field>
+</fields>
+    </item><!-- bear::u_int_game_variable_getter_creator -->
+
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-2'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2463'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1285'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-3'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2320'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1292'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-3'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2380'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1293'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr-2'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-3'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
     <item class_name='rp::serial_switcher' fixed='false' id='place-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1792'/>
+<real value='567'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1248'/>
+<real value='1295'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8484,14 +9004,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -8504,24 +9024,64 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2380'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1338'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='4'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
     <item class_name='bear::reference_item' fixed='true' id='center-camera-7'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2105'/>
+<real value='880'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1318'/>
+<real value='1365'/>
 </field>
 </fields>
     </item><!-- bear::reference_item -->
 
+    <item class_name='bear::decorative_item' fixed='false' id='quit'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1636'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='110'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1366'/>
+</field>
+<field name='base_item.size.height'>
+<real value='98'/>
+</field>
+<field name='base_item.size.width'>
+<real value='140'/>
+</field>
+<field name='item_with_decoration.sprite'>
+<sprite image='gfx/status/buttons.png' x='162' y='1' clip_width='140' clip_height='98' spritepos='quit' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+</field>
+</fields>
+    </item><!-- bear::decorative_item -->
+
     <item class_name='bear::applied_forced_movement' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1565'/>
+<real value='340'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1320'/>
+<real value='1367'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='place-1'/>
@@ -8539,19 +9099,151 @@
 </fields>
     </item><!-- bear::applied_forced_movement -->
 
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-3'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2462'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1368'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-4'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='rp::serial_switcher' fixed='false' id='right-button-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2117'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1373'/>
+</field>
+<field name='base_item.size.height'>
+<real value='72'/>
+</field>
+<field name='base_item.size.width'>
+<real value='96'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='go_camera-0-1'/>
+</field>
+<field name='serial_switcher.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.serial'>
+<u_integer value='0'/>
+</field>
+</fields>
+    </item><!-- rp::serial_switcher -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2319'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1375'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-4'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2379'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1376'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr-3'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-4'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::killer' fixed='true' id='start-killer'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2204'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1402'/>
+</field>
+<field name='killer.items'>
+<item_reference value='start-0'/>
+<item_reference value='start-1'/>
+<item_reference value='start-2'/>
+<item_reference value='start-3'/>
+<item_reference value='start-4'/>
+<item_reference value='start-5'/>
+<item_reference value='start-6'/>
+</field>
+</fields>
+    </item><!-- bear::killer -->
+
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2380'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1420'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='5'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
     <item class_name='rp::serial_switcher' fixed='false' id='place-4'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1792'/>
+<real value='567'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1396'/>
+<real value='1443'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8571,14 +9263,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -8591,13 +9283,125 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-4'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2462'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1450'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-5'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2319'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1457'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-5'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2379'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1458'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr-4'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-5'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
+    <item class_name='bear::linear_constant_creator' fixed='false' id='value-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2380'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1497'/>
+</field>
+<field name='linear_constant_creator.value'>
+<real value='6'/>
+</field>
+</fields>
+    </item><!-- bear::linear_constant_creator -->
+
+    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-5'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2462'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1527'/>
+</field>
+<field name='binary_expression_creator.left_operand'>
+<item_reference value='value-6'/>
+</field>
+<field name='binary_expression_creator.right_operand'>
+<item_reference value='last-serial'/>
+</field>
+</fields>
+    </item><!-- bear::linear_equality_creator -->
+
+    <item class_name='bear::trigger' fixed='false' id='start-6'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2319'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1534'/>
+</field>
+<field name='trigger.toggle'>
+<item_reference value='move_on_camera-6'/>
+<item_reference value='start-killer'/>
+</field>
+</fields>
+    </item><!-- bear::trigger -->
+
+    <item class_name='bear::applied_boolean_expression' fixed='false'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2379'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1535'/>
+</field>
+<field name='applied_expression.expression'>
+<item_reference value='start-1-expr-5'/>
+</field>
+<field name='applied_expression.receiver'>
+<item_reference value='start-6'/>
+</field>
+</fields>
+    </item><!-- bear::applied_boolean_expression -->
+
     <item class_name='bear::applied_forced_movement' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2534'/>
+<real value='1309'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1541'/>
+<real value='1588'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='black-rectangle'/>
@@ -8614,13 +9418,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1791'/>
+<real value='566'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1550'/>
+<real value='1597'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8640,14 +9444,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -8660,13 +9464,39 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='go_camera-0-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2021'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1617'/>
+</field>
+<field name='item_with_toggle.delay'>
+<real value='2'/>
+</field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='mouvement-2s'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='hot_spot'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join-camera-0-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_camera'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2527'/>
+<real value='1302'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1628'/>
+<real value='1675'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -8680,16 +9510,42 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='bear::forced_goto_creator' fixed='false' id='join-camera-0-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2001'/>
+</field>
+<field name='base_item.position.left'>
+<real value='1704'/>
+</field>
+<field name='forced_goto_creator.acceleration_time'>
+<real value='0.5'/>
+</field>
+<field name='forced_goto_creator.duration'>
+<real value='2'/>
+</field>
+<field name='forced_goto_creator.length.x'>
+<real value='2446'/>
+</field>
+<field name='forced_goto_creator.length.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_goto_creator -->
+
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_quit'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1548'/>
+<real value='323'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1661'/>
+<real value='1708'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='quit'/>
@@ -8709,13 +9565,13 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1805'/>
+<real value='580'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='110'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1699'/>
+<real value='1746'/>
 </field>
 <field name='base_item.size.height'>
 <real value='98'/>
@@ -8735,14 +9591,14 @@
 <field name='serial_switcher.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -8761,10 +9617,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1520'/>
+<real value='295'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1736'/>
+<real value='1783'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='trigger_quit'/>
@@ -8778,10 +9634,10 @@
     <item class_name='bear::forced_join_creator' fixed='false' id='mvt_remove_go'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1681'/>
+<real value='456'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1954'/>
+<real value='2001'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera'/>
@@ -8804,10 +9660,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2083'/>
+<real value='858'/>
 </field>
 <field name='base_item.position.left'>
-<real value='1994'/>
+<real value='2041'/>
 </field>
 <field name='item_with_toggle.linked_toggles'>
 <item_reference value='quit_inside'/>
@@ -8831,13 +9687,37 @@
     <item class_name='bear::game_quit' fixed='true' id='game_quit'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1612'/>
+<real value='387'/>
 </field>
 <field name='base_item.position.left'>
-<real value='2059'/>
+<real value='2106'/>
 </field>
 </fields>
     </item><!-- bear::game_quit -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='move_on_camera-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1164'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2203'/>
+</field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='mouvement-1s'/>
+<item_reference value='remove_go'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='hot_spot'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='place_on_camera-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
 
     <item class_name='bear::forced_movement_toggle' fixed='false' id='move_on_camera-1'>
 <fields>
@@ -9005,6 +9885,72 @@
 </field>
 <field name='forced_join_creator.duration'>
 <real value='1.5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_goto_creator' fixed='false' id='join-camera-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2168'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2471'/>
+</field>
+<field name='forced_goto_creator.acceleration_time'>
+<real value='0.5'/>
+</field>
+<field name='forced_goto_creator.duration'>
+<real value='2'/>
+</field>
+<field name='forced_goto_creator.length.x'>
+<real value='-2446'/>
+</field>
+<field name='forced_goto_creator.length.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_goto_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='go_camera-1-0'>
+<fields>
+<field name='base_item.position.bottom'>
+<real value='2085'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2484'/>
+</field>
+<field name='item_with_toggle.delay'>
+<real value='2'/>
+</field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='mouvement-2s'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='hot_spot'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join-camera-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='place_on_camera-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1164'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2491'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='center-camera-0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='1'/>
 </field>
 </fields>
     </item><!-- bear::forced_join_creator -->
@@ -9233,32 +10179,6 @@
 </fields>
     </item><!-- rp::event_tagger -->
 
-    <item class_name='bear::decorative_item' fixed='false' id='configure'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1637'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='118'/>
-</field>
-<field name='base_item.position.left'>
-<real value='2713'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons.png' x='0' y='396' clip_width='140' clip_height='98' spritepos='settings' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
-
     <item class_name='bear::forced_movement_toggle' fixed='false' id='apply_mvt_help_on'>
 <fields>
 <field name='base_item.global'>
@@ -9305,6 +10225,55 @@
 </field>
 </fields>
     </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='rp::serial_switcher' fixed='false' id='left-button-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2117'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='2759'/>
+</field>
+<field name='base_item.size.height'>
+<real value='72'/>
+</field>
+<field name='base_item.size.width'>
+<real value='96'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='go_camera-1-0'/>
+</field>
+<field name='serial_switcher.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.next_serial'>
+<u_integer value='0'/>
+</field>
+</fields>
+    </item><!-- rp::serial_switcher -->
 
     <item class_name='bear::cursor' fixed='false' id='cursor'>
 <fields>
@@ -9579,7 +10548,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2206'/>
+<real value='2226'/>
 </field>
 <field name='base_item.position.left'>
 <real value='2975'/>
@@ -9592,6 +10561,9 @@
 </field>
 <field name='level_selector.level_number'>
 <u_integer value='1'/>
+</field>
+<field name='level_selector.precedence'>
+<item_reference value='0-4'/>
 </field>
 <field name='level_selector.required_balloons'>
 <u_integer value='15'/>
@@ -9746,7 +10718,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2206'/>
+<real value='2226'/>
 </field>
 <field name='base_item.position.left'>
 <real value='3115.33'/>
@@ -9986,7 +10958,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2206'/>
+<real value='2226'/>
 </field>
 <field name='base_item.position.left'>
 <real value='3255.67'/>
@@ -10059,7 +11031,7 @@
 <real value='2635'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='3319'/>
@@ -10080,16 +11052,16 @@
 <item_reference value='go_camera-1-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -10205,17 +11177,6 @@
 </fields>
     </item><!-- bear::reference_item -->
 
-    <item class_name='bear::reference_item' fixed='false' id='hot_spot'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2153'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3343'/>
-</field>
-</fields>
-    </item><!-- bear::reference_item -->
-
     <item class_name='bear::forced_movement_toggle' fixed='false' id='go_camera-1-6'>
 <fields>
 <field name='base_item.global'>
@@ -10248,7 +11209,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2206'/>
+<real value='2226'/>
 </field>
 <field name='base_item.position.left'>
 <real value='3395'/>
@@ -10357,69 +11318,6 @@
 </field>
 </fields>
     </item><!-- bear::forced_movement_toggle -->
-
-    <item class_name='bear::linear_constant_creator' fixed='false' id='value-1'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2382'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3434'/>
-</field>
-<field name='linear_constant_creator.value'>
-<real value='1'/>
-</field>
-</fields>
-    </item><!-- bear::linear_constant_creator -->
-
-    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2464'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3464'/>
-</field>
-<field name='binary_expression_creator.left_operand'>
-<item_reference value='value-1'/>
-</field>
-<field name='binary_expression_creator.right_operand'>
-<item_reference value='last-serial'/>
-</field>
-</fields>
-    </item><!-- bear::linear_equality_creator -->
-
-    <item class_name='bear::trigger' fixed='false' id='start-1'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2321'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3471'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='move_on_camera-1'/>
-<item_reference value='start-killer'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2381'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3472'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='start-1-expr'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='start-1'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
 
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_sound'>
 <fields>
@@ -10535,33 +11433,19 @@
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons-2.png' x='282' y='198' clip_width='140' clip_height='98' spritepos='sound off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons-2.png' x='1' y='1' clip_width='140' clip_height='98' spritepos='sound off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='decorated_item_with_toggle.visual_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='141' y='198' clip_width='140' clip_height='98' spritepos='sound on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='283' y='298' clip_width='140' clip_height='98' spritepos='sound on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 </fields>
     </item><!-- bear::system_sound_toggle -->
-
-    <item class_name='bear::linear_constant_creator' fixed='false' id='value-2'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2399'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3526'/>
-</field>
-<field name='linear_constant_creator.value'>
-<real value='2'/>
-</field>
-</fields>
-    </item><!-- bear::linear_constant_creator -->
 
     <item class_name='bear::forced_sequence_creator' fixed='false' id='mvt_configure_off'>
 <fields>
@@ -10587,7 +11471,7 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='2141'/>
+<real value='2151'/>
 </field>
 <field name='base_item.position.left'>
 <real value='3555'/>
@@ -10628,55 +11512,6 @@
 </fields>
     </item><!-- rp::level_selector -->
 
-    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-1'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2481'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3556'/>
-</field>
-<field name='binary_expression_creator.left_operand'>
-<item_reference value='value-2'/>
-</field>
-<field name='binary_expression_creator.right_operand'>
-<item_reference value='last-serial'/>
-</field>
-</fields>
-    </item><!-- bear::linear_equality_creator -->
-
-    <item class_name='bear::trigger' fixed='false' id='start-2'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2338'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3563'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='move_on_camera-2'/>
-<item_reference value='start-killer'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2398'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3564'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='start-1-expr-1'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='start-2'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
-
     <item class_name='rp::event_tagger' fixed='false' id='tag-sound'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -10714,20 +11549,6 @@
 </fields>
     </item><!-- bear::applied_forced_movement -->
 
-    <item class_name='bear::linear_constant_creator' fixed='false' id='value-3'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2399'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3614'/>
-</field>
-<field name='linear_constant_creator.value'>
-<real value='3'/>
-</field>
-</fields>
-    </item><!-- bear::linear_constant_creator -->
-
     <item class_name='bear::forced_join_creator' fixed='false' id='join_configure_off'>
 <fields>
 <field name='base_item.global'>
@@ -10757,23 +11578,6 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
-    <item class_name='bear::u_int_game_variable_getter_creator' fixed='false' id='last-serial'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2622'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3639'/>
-</field>
-<field name='u_int_game_variable_getter_creator.default_value'>
-<u_integer value='1'/>
-</field>
-<field name='u_int_game_variable_getter_creator.name'>
-<string value='persistent/scenario/selected_serial'/>
-</field>
-</fields>
-    </item><!-- bear::u_int_game_variable_getter_creator -->
-
     <item class_name='rp::config_save' fixed='false' id='config-save'>
 <fields>
 <field name='base_item.global'>
@@ -10787,55 +11591,6 @@
 </field>
 </fields>
     </item><!-- rp::config_save -->
-
-    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-2'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2481'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3644'/>
-</field>
-<field name='binary_expression_creator.left_operand'>
-<item_reference value='value-3'/>
-</field>
-<field name='binary_expression_creator.right_operand'>
-<item_reference value='last-serial'/>
-</field>
-</fields>
-    </item><!-- bear::linear_equality_creator -->
-
-    <item class_name='bear::trigger' fixed='false' id='start-3'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2338'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3651'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='move_on_camera-3'/>
-<item_reference value='start-killer'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2398'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3652'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='start-1-expr-2'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='start-3'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
 
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_silence'>
 <fields>
@@ -10890,50 +11645,19 @@
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='141' y='396' clip_width='140' clip_height='98' spritepos='music off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='283' y='397' clip_width='140' clip_height='98' spritepos='music off' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='decorated_item_with_toggle.visual_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='141' y='297' clip_width='140' clip_height='98' spritepos='music on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='142' y='397' clip_width='140' clip_height='98' spritepos='music on' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 </fields>
     </item><!-- bear::system_music_toggle -->
-
-    <item class_name='bear::linear_constant_creator' fixed='false' id='value-4'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2398'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3697'/>
-</field>
-<field name='linear_constant_creator.value'>
-<real value='4'/>
-</field>
-</fields>
-    </item><!-- bear::linear_constant_creator -->
-
-    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-3'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2480'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3727'/>
-</field>
-<field name='binary_expression_creator.left_operand'>
-<item_reference value='value-4'/>
-</field>
-<field name='binary_expression_creator.right_operand'>
-<item_reference value='last-serial'/>
-</field>
-</fields>
-    </item><!-- bear::linear_equality_creator -->
 
     <item class_name='rp::config_save' fixed='false' id='config-save-1'>
 <fields>
@@ -10948,38 +11672,6 @@
 </field>
 </fields>
     </item><!-- rp::config_save -->
-
-    <item class_name='bear::trigger' fixed='false' id='start-4'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2337'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3734'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='move_on_camera-4'/>
-<item_reference value='start-killer'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2397'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3735'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='start-1-expr-3'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='start-4'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
 
     <item class_name='rp::bird_support' fixed='true'>
 <fields>
@@ -11116,20 +11808,6 @@
 </fields>
     </item><!-- bear::decorative_item -->
 
-    <item class_name='bear::linear_constant_creator' fixed='false' id='value-5'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2398'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3779'/>
-</field>
-<field name='linear_constant_creator.value'>
-<real value='5'/>
-</field>
-</fields>
-    </item><!-- bear::linear_constant_creator -->
-
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -11161,74 +11839,6 @@
 </fields>
     </item><!-- rp::event_tagger -->
 
-    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-4'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2480'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3809'/>
-</field>
-<field name='binary_expression_creator.left_operand'>
-<item_reference value='value-5'/>
-</field>
-<field name='binary_expression_creator.right_operand'>
-<item_reference value='last-serial'/>
-</field>
-</fields>
-    </item><!-- bear::linear_equality_creator -->
-
-    <item class_name='bear::trigger' fixed='false' id='start-5'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2337'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3816'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='move_on_camera-5'/>
-<item_reference value='start-killer'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2397'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3817'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='start-1-expr-4'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='start-5'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
-
-    <item class_name='bear::killer' fixed='true' id='start-killer'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2221'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3824'/>
-</field>
-<field name='killer.items'>
-<item_reference value='start-1'/>
-<item_reference value='start-2'/>
-<item_reference value='start-3'/>
-<item_reference value='start-4'/>
-<item_reference value='start-5'/>
-<item_reference value='start-6'/>
-</field>
-</fields>
-    </item><!-- bear::killer -->
-
     <item class_name='bear::system_fullscreen_toggle' fixed='false' id='windowed'>
 <fields>
 <field name='base_item.global'>
@@ -11252,45 +11862,19 @@
 <field name='decorated_item_with_toggle.visual_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='99' clip_width='140' clip_height='98' spritepos='windowed' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='142' y='298' clip_width='140' clip_height='98' spritepos='windowed' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='decorated_item_with_toggle.visual_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='141' y='99' clip_width='140' clip_height='98' spritepos='fullscreen' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='303' y='199' clip_width='140' clip_height='98' spritepos='fullscreen' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 </fields>
     </item><!-- bear::system_fullscreen_toggle -->
-
-    <item class_name='bear::decorative_item' fixed='false' id='quit'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1637'/>
-</field>
-<field name='base_item.position.depth'>
-<integer value='110'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3833'/>
-</field>
-<field name='base_item.size.height'>
-<real value='98'/>
-</field>
-<field name='base_item.size.width'>
-<real value='140'/>
-</field>
-<field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons.png' x='0' y='0' clip_width='140' clip_height='98' spritepos='quit' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
-</field>
-</fields>
-    </item><!-- bear::decorative_item -->
 
     <item class_name='bear::mouse_detector' fixed='false' id='trigger_quit'>
 <fields>
@@ -11324,20 +11908,6 @@
 </fields>
     </item><!-- bear::mouse_detector -->
 
-    <item class_name='bear::linear_constant_creator' fixed='false' id='value-6'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2398'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3856'/>
-</field>
-<field name='linear_constant_creator.value'>
-<real value='6'/>
-</field>
-</fields>
-    </item><!-- bear::linear_constant_creator -->
-
     <item class_name='bear::forced_tracking_creator' fixed='false' id='track_windowed'>
 <fields>
 <field name='base_item.global'>
@@ -11363,55 +11933,6 @@
 </field>
 </fields>
     </item><!-- bear::forced_tracking_creator -->
-
-    <item class_name='bear::linear_equality_creator' fixed='false' id='start-1-expr-5'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2480'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3886'/>
-</field>
-<field name='binary_expression_creator.left_operand'>
-<item_reference value='value-6'/>
-</field>
-<field name='binary_expression_creator.right_operand'>
-<item_reference value='last-serial'/>
-</field>
-</fields>
-    </item><!-- bear::linear_equality_creator -->
-
-    <item class_name='bear::trigger' fixed='false' id='start-6'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2337'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3893'/>
-</field>
-<field name='trigger.toggle'>
-<item_reference value='move_on_camera-6'/>
-<item_reference value='start-killer'/>
-</field>
-</fields>
-    </item><!-- bear::trigger -->
-
-    <item class_name='bear::applied_boolean_expression' fixed='false'>
-<fields>
-<field name='base_item.position.bottom'>
-<real value='2397'/>
-</field>
-<field name='base_item.position.left'>
-<real value='3894'/>
-</field>
-<field name='applied_expression.expression'>
-<item_reference value='start-1-expr-5'/>
-</field>
-<field name='applied_expression.receiver'>
-<item_reference value='start-6'/>
-</field>
-</fields>
-    </item><!-- bear::applied_boolean_expression -->
 
     <item class_name='bear::applied_forced_movement' fixed='false'>
 <fields>
@@ -11486,7 +12007,7 @@
 <real value='140'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons.png' x='0' y='99' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/status/buttons.png' x='303' y='1' clip_width='140' clip_height='98' spritepos='go' auto_size='true' width='140' height='98' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
@@ -11500,7 +12021,7 @@
 <real value='2135'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='4077'/>
@@ -11521,16 +12042,16 @@
 <item_reference value='go_camera-1-2'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -12341,7 +12862,7 @@
 <real value='1109.5'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='4798'/>
@@ -12362,16 +12883,16 @@
 <item_reference value='go_camera-2-1'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -12641,6 +13162,7 @@
 <real value='4967'/>
 </field>
 <field name='forced_movement_applicator.actor'>
+<item_reference value='bottom-button-0'/>
 <item_reference value='bottom-button-1'/>
 <item_reference value='bottom-button-2'/>
 <item_reference value='bottom-button-3'/>
@@ -13618,7 +14140,7 @@
     <item class_name='rp::level_selector' fixed='false' id='2-1'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1181'/>
+<real value='1201'/>
 </field>
 <field name='base_item.position.left'>
 <real value='5228'/>
@@ -14012,7 +14534,7 @@
     <item class_name='rp::level_selector' fixed='false' id='2-2'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1181'/>
+<real value='1201'/>
 </field>
 <field name='base_item.position.left'>
 <real value='5368'/>
@@ -14477,7 +14999,7 @@
     <item class_name='rp::level_selector' fixed='false' id='2-3'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1181'/>
+<real value='1201'/>
 </field>
 <field name='base_item.position.left'>
 <real value='5508'/>
@@ -14524,7 +15046,7 @@
 <real value='1609'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='5555.5'/>
@@ -14545,16 +15067,16 @@
 <item_reference value='go_camera-2-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -14923,7 +15445,7 @@
     <item class_name='rp::level_selector' fixed='false' id='2-4'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1181'/>
+<real value='1201'/>
 </field>
 <field name='base_item.position.left'>
 <real value='5648'/>
@@ -15010,7 +15532,7 @@
     <item class_name='rp::level_selector' fixed='false' id='2-8'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1116'/>
+<real value='1126'/>
 </field>
 <field name='base_item.position.left'>
 <real value='5808'/>
@@ -15532,7 +16054,7 @@
 <real value='1109.5'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='6313'/>
@@ -15553,16 +16075,16 @@
 <item_reference value='go_camera-2-3'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='false' width='49' height='37' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -16769,11 +17291,12 @@
 <real value='6827'/>
 </field>
 <field name='forced_movement_applicator.actor'>
+<item_reference value='bottom-button-5'/>
 <item_reference value='bottom-button-1'/>
 <item_reference value='bottom-button-2'/>
 <item_reference value='bottom-button-3'/>
 <item_reference value='bottom-button-4'/>
-<item_reference value='bottom-button-5'/>
+<item_reference value='bottom-button-0'/>
 </field>
 <field name='forced_movement_applicator.actor.ratio.y'>
 <real value='0'/>
@@ -16857,7 +17380,7 @@
 <real value='1676'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='6960'/>
@@ -16878,16 +17401,16 @@
 <item_reference value='go_camera-3-2'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -16922,6 +17445,58 @@
 </field>
 </fields>
     </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='go_camera-6-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='3277'/>
+</field>
+<field name='base_item.position.left'>
+<real value='7067'/>
+</field>
+<field name='item_with_toggle.delay'>
+<real value='2'/>
+</field>
+<field name='item_with_toggle.linked_toggles'>
+<item_reference value='mouvement-2s'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='hot_spot'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='join-camera-6-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_goto_creator' fixed='false' id='join-camera-6-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='3189'/>
+</field>
+<field name='base_item.position.left'>
+<real value='7069'/>
+</field>
+<field name='forced_goto_creator.acceleration_time'>
+<real value='0.5'/>
+</field>
+<field name='forced_goto_creator.duration'>
+<real value='2'/>
+</field>
+<field name='forced_goto_creator.length.x'>
+<real value='-6674'/>
+</field>
+<field name='forced_goto_creator.length.y'>
+<real value='-1685'/>
+</field>
+</fields>
+    </item><!-- bear::forced_goto_creator -->
 
     <item class_name='bear::camera_on_object' fixed='false' id='camera-3'>
 <fields>
@@ -17237,7 +17812,7 @@
     <item class_name='rp::level_selector' fixed='false' id='3-1'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1747'/>
+<real value='1767'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7374'/>
@@ -17399,7 +17974,7 @@
     <item class_name='rp::level_selector' fixed='false' id='3-2'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1747'/>
+<real value='1767'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7514'/>
@@ -17591,7 +18166,7 @@
 <real value='3320'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7547'/>
@@ -17612,16 +18187,16 @@
 <item_reference value='go_camera-6-1'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17640,7 +18215,7 @@
 <real value='3320'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7547'/>
@@ -17661,16 +18236,16 @@
 <item_reference value='go_camera-6-2'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17692,7 +18267,7 @@
 <real value='3320'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7547'/>
@@ -17713,16 +18288,16 @@
 <item_reference value='go_camera-6-3'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17744,7 +18319,7 @@
 <real value='3320'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7547'/>
@@ -17765,16 +18340,16 @@
 <item_reference value='go_camera-6-4'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-1' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -17796,7 +18371,7 @@
 <real value='3320'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7547'/>
@@ -17817,21 +18392,73 @@
 <item_reference value='go_camera-6-5'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-0.6' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.next_serial'>
 <u_integer value='5'/>
+</field>
+<field name='serial_switcher.serial'>
+<u_integer value='6'/>
+</field>
+</fields>
+    </item><!-- rp::serial_switcher -->
+
+    <item class_name='rp::serial_switcher' fixed='false' id='bottom-button-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='3320'/>
+</field>
+<field name='base_item.position.depth'>
+<integer value='-100'/>
+</field>
+<field name='base_item.position.left'>
+<real value='7547'/>
+</field>
+<field name='base_item.size.height'>
+<real value='72'/>
+</field>
+<field name='base_item.size.width'>
+<real value='96'/>
+</field>
+<field name='mouse_detector.middle_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.right_button'>
+<bool value='1'/>
+</field>
+<field name='mouse_detector.toggle'>
+<item_reference value='go_camera-6-0'/>
+</field>
+<field name='serial_switcher.animation_off'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-2.7' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.animation_on'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='-2.7' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+  <frame duration='1'>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+  </frame>
+</animation>
+</field>
+<field name='serial_switcher.next_serial'>
+<u_integer value='0'/>
 </field>
 <field name='serial_switcher.serial'>
 <u_integer value='6'/>
@@ -17927,7 +18554,7 @@
     <item class_name='rp::level_selector' fixed='false' id='3-3'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1747'/>
+<real value='1767'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7654'/>
@@ -18076,7 +18703,7 @@
 <real value='2176'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7718'/>
@@ -18097,16 +18724,16 @@
 <item_reference value='go_camera-3-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='1.57' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -18182,7 +18809,7 @@
     <item class_name='rp::level_selector' fixed='false' id='3-4'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1747'/>
+<real value='1767'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7794'/>
@@ -18275,7 +18902,7 @@
     <item class_name='rp::level_selector' fixed='false' id='3-8'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1682'/>
+<real value='1692'/>
 </field>
 <field name='base_item.position.left'>
 <real value='7954'/>
@@ -18462,7 +19089,7 @@
 <real value='1676'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='8476'/>
@@ -18483,16 +19110,16 @@
 <item_reference value='go_camera-3-4'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -18537,7 +19164,7 @@
 <real value='1191'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='9231'/>
@@ -18558,16 +19185,16 @@
 <item_reference value='go_camera-4-3'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -18816,7 +19443,7 @@
     <item class_name='rp::level_selector' fixed='false' id='4-1'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1262'/>
+<real value='1282'/>
 </field>
 <field name='base_item.position.left'>
 <real value='9645'/>
@@ -18905,7 +19532,7 @@
     <item class_name='rp::level_selector' fixed='false' id='4-2'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1262'/>
+<real value='1282'/>
 </field>
 <field name='base_item.position.left'>
 <real value='9785'/>
@@ -19092,7 +19719,7 @@
     <item class_name='rp::level_selector' fixed='false' id='4-3'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1262'/>
+<real value='1282'/>
 </field>
 <field name='base_item.position.left'>
 <real value='9925'/>
@@ -19156,7 +19783,7 @@
 <real value='1691'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='9989'/>
@@ -19177,16 +19804,16 @@
 <item_reference value='go_camera-4-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='2.14' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -19279,7 +19906,7 @@
     <item class_name='rp::level_selector' fixed='false' id='4-4'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1262'/>
+<real value='1282'/>
 </field>
 <field name='base_item.position.left'>
 <real value='10065'/>
@@ -19392,7 +20019,7 @@
     <item class_name='rp::level_selector' fixed='false' id='4-8'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='1195'/>
+<real value='1205'/>
 </field>
 <field name='base_item.position.left'>
 <real value='10225'/>
@@ -19508,7 +20135,7 @@
 <real value='1191'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='10747'/>
@@ -19529,16 +20156,16 @@
 <item_reference value='go_camera-4-5'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -19583,7 +20210,7 @@
 <real value='2665'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='12024'/>
@@ -19604,16 +20231,16 @@
 <item_reference value='go_camera-5-4'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_true' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -19873,7 +20500,7 @@
     <item class_name='rp::level_selector' fixed='false' id='5-1'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2736'/>
+<real value='2756'/>
 </field>
 <field name='base_item.position.left'>
 <real value='12438'/>
@@ -19988,7 +20615,7 @@
     <item class_name='rp::level_selector' fixed='false' id='5-2'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2736'/>
+<real value='2756'/>
 </field>
 <field name='base_item.position.left'>
 <real value='12578'/>
@@ -20129,7 +20756,7 @@
     <item class_name='rp::level_selector' fixed='false' id='5-3'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2736'/>
+<real value='2756'/>
 </field>
 <field name='base_item.position.left'>
 <real value='12718'/>
@@ -20176,7 +20803,7 @@
 <real value='3165'/>
 </field>
 <field name='base_item.position.depth'>
-<integer value='99'/>
+<integer value='-100'/>
 </field>
 <field name='base_item.position.left'>
 <real value='12782'/>
@@ -20197,16 +20824,16 @@
 <item_reference value='go_camera-5-6'/>
 </field>
 <field name='serial_switcher.animation_off'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='serial_switcher.animation_on'>
-<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
+<animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='2.54' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/level/frame-2.png' x='254' y='339' clip_width='73' clip_height='55' spritepos='arrow' auto_size='true' width='73' height='55' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/level/frame-2.png' x='449' y='249' clip_width='59' clip_height='44' spritepos='arrow' auto_size='true' width='59' height='44' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -20282,7 +20909,7 @@
     <item class_name='rp::level_selector' fixed='false' id='5-4'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2736'/>
+<real value='2756'/>
 </field>
 <field name='base_item.position.left'>
 <real value='12858'/>
@@ -20369,7 +20996,7 @@
     <item class_name='rp::level_selector' fixed='false' id='5-8'>
 <fields>
 <field name='base_item.position.bottom'>
-<real value='2671'/>
+<real value='2681'/>
 </field>
 <field name='base_item.position.left'>
 <real value='13018'/>
