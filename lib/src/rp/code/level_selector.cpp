@@ -698,11 +698,18 @@ void rp::level_selector::render_border
       get_bottom() + m_background_gap.y * m_level_factor);
 
   bear::visual::scene_sprite s( pos.x, pos.y, m_border_sprite);
-  
-  if ( ( s_selection && ! is_selected_level() ) || 
-       ( ! s_selection && ! m_mouse_in ) || 
-       ( ! s_selection && 
-         std::abs(m_level_factor - m_init_level_factor) > 0.1 ) ) 
+
+#ifdef __ANDROID__
+  const bool mouse_check( true );
+#else
+  const bool mouse_check( m_mouse_in );
+#endif
+
+  if ( ( s_selection && !is_selected_level() )
+       || ( !s_selection && !mouse_check )
+       || ( m_level_state == detail::state_locked )
+       || ( !s_selection
+            && std::abs(m_level_factor - m_init_level_factor) > 0.1 ) )
     s.get_rendering_attributes().set_opacity(0);
   
   s.set_scale_factor(m_level_factor, m_level_factor);
