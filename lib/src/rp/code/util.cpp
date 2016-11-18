@@ -86,23 +86,29 @@ std::string rp::util::get_level_name()
   else
     {
       std::ostringstream stream;
-      stream << game_variables::get_serial_number() << "-";
+      const unsigned int serial( game_variables::get_serial_number() );
+
+      if ( serial != 0 )
+        {
+          stream << serial << "-";
       
-      unsigned int number = game_variables::get_level_number();
-      unsigned int serial = game_variables::get_serial_number();
+          const unsigned int number = game_variables::get_level_number();
       
-      if ( number == 5 || ( serial == 6 && number == 1 ) )
-        stream << "A";
-      else if ( number == 6  || ( serial == 6 && number == 2 ))
-        stream << "B";
-      else if ( number == 7  || ( serial == 6 && number == 3 ))
-        stream << "C";
-      else if ( number == 8 )
-        stream << "5";
-      else
-        stream << number;
+          if ( number == 5 || ( serial == 6 && number == 1 ) )
+            stream << "A";
+          else if ( number == 6  || ( serial == 6 && number == 2 ))
+            stream << "B";
+          else if ( number == 7  || ( serial == 6 && number == 3 ))
+            stream << "C";
+          else if ( number == 8 )
+            stream << "5";
+          else
+            stream << number;
       
-      stream << " - " << game_variables::get_level_name();
+          stream << " - ";
+        }
+
+      stream << game_variables::get_level_name();
       
       return stream.str();
     }
