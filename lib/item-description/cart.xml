@@ -24,6 +24,11 @@
       <default_value>true</default_value>
     </field>
 
+    <field type="boolean" name="cart.cannon_enabled">
+      <description>Tells if the cannon works.</description>
+      <default_value>true</default_value>
+    </field>
+
     <field type="item_reference" name="cart.cursor">
       <description>The cart's cursor to aim at things.</description>
       <set>

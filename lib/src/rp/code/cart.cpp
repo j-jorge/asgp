@@ -103,7 +103,8 @@ rp::cart::cart()
     m_is_injured(false), m_level_timer(NULL),
     m_injured_duration(0), m_fire_duration(s_fire_duration),
     m_next_smoke(0), m_passive(false), m_id(1),
-    m_bad_plunger_zone_rendering(true), m_combo_sample(NULL)
+    m_bad_plunger_zone_rendering(true), m_combo_sample(NULL),
+    m_cannon_enabled(true)
 {
   set_system_angle_as_visual_angle(true);
   set_phantom(false);
@@ -322,6 +323,8 @@ bool rp::cart::set_bool_field( const std::string& name, bool value )
 
   if ( name == "cart.bad_plunger_zone_rendering" )
     m_bad_plunger_zone_rendering = value;
+  else if ( name == "cart.cannon_enabled" )
+    m_cannon_enabled = value;
   else
     result = super::set_bool_field(name, value);
 
@@ -1246,12 +1249,20 @@ void rp::cart::create_link_on_balloon
       0, 60 + 20 * ( index % s_decorative_balloons_number + 1) );
 } // cart::create_link_on_balloon()
 
+void rp::cart::enable_cannon()
+{
+  m_cannon_enabled = true;
+}
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Check if we can throw a cannonball.
  */
 bool rp::cart::can_throw_cannonball()
 {
+  if ( !m_cannon_enabled )
+    return false;
+  
   bool result = false;
   bear::engine::model_mark_placement m;
 
@@ -2742,6 +2753,8 @@ void rp::cart::init_exported_methods()
   TEXT_INTERFACE_CONNECT_METHOD_0( cart, throw_plunger, void );
   TEXT_INTERFACE_CONNECT_METHOD_0( cart, throw_cannonball, void );
   TEXT_INTERFACE_CONNECT_METHOD_0( cart, remove_elements, void );
+
+  TEXT_INTERFACE_CONNECT_METHOD_0( cart, enable_cannon, void );
 } // cart::init_exported_methods()
 
 /*----------------------------------------------------------------------------*/

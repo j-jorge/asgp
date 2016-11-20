@@ -150,6 +150,7 @@ namespace rp
     (decorative_balloon* balloon, const std::string& anchor_name,
      unsigned int index);
     void create_disappear_effect(decorative_balloon* balloon);
+    void enable_cannon();
     bool can_throw_cannonball();
     bool can_throw_plunger();
     void throw_cannonball();
@@ -376,6 +377,7 @@ namespace rp
     bear::audio::sample* m_combo_sample;
 
     boost::signals2::scoped_connection m_ad_connection;
+    bool m_cannon_enabled;
     
     /** \brief The score. */
     static unsigned int s_score;
