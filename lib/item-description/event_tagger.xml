@@ -10,7 +10,7 @@
         The type of the event.
       </description>
     </field>
-    <field type="string" name="event_tagger.properties">
+    <field type="string" name="event_tagger.properties" list="true">
       <description>
         Extra properties to pass to the event. There must be an even number of
         entries in this field.
