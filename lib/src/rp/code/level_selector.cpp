@@ -1579,7 +1579,11 @@ bear::visual::position_type rp::level_selector::get_medal_position() const
  */
 void rp::level_selector::choose_level_sprite()
 {
-  if ( (m_level_number == 5)
+  if ( m_serial_number == 0 )
+    m_level_sprite =
+      get_level_globals().auto_sprite
+      ( "gfx/status/level/frame-theme-3.png", "scholar" );
+  else if ( (m_level_number == 5)
        || ( (m_level_number == 1) && (m_serial_number == 6) ) )
     m_level_sprite =
       get_level_globals().auto_sprite

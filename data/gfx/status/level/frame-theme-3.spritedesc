@@ -17,3 +17,8 @@ frame "frame.xcf.bz2"
   glob "gold*"
   "background inner edges"
   ;
+
+"scholar" "scholar background" * 0.43 with frame
+  "scholar"
+  "background inner edges"
+  ;
