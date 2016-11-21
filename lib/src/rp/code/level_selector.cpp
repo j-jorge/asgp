@@ -146,6 +146,9 @@ void rp::level_selector::on_enters_layer()
         ( "gfx/status/level/frame-3.png", "bright frame" );
       m_background_gap = bear::visual::position_type(-108,-167);
       m_medal_gap = bear::visual::position_type(-133,-162);
+
+      if ( m_serial_number == 0 )
+        m_init_level_factor *= 2;
     }
 
   m_star_gap = bear::visual::position_type(131,133);
