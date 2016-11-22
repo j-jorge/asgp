@@ -130,12 +130,8 @@ void rp::serial_switcher::get_visual
           
           s.get_rendering_attributes().set_opacity
             ( get_rendering_attributes().get_opacity() );
-
-          if ( m_serial != 0 )
-            s.get_rendering_attributes().set_angle( m_angle );
-          else
-            s.get_rendering_attributes().set_angle( get_system_angle() );
-
+          s.get_rendering_attributes().set_angle( m_angle );
+            
           visuals.push_back( s );
         }
       else
@@ -148,9 +144,6 @@ void rp::serial_switcher::get_visual
           
           s.get_rendering_attributes().set_opacity
             ( get_rendering_attributes().get_opacity() );
-
-          if ( m_serial == 0 )
-            s.get_rendering_attributes().set_angle( get_system_angle() );
 
           visuals.push_back( s );
         }
@@ -257,12 +250,11 @@ bool rp::serial_switcher::is_visible() const
       game_variables::set_selected_serial(1);
       return ( m_next_serial <= 1 && m_serial <= 1 );
     }
-  else
-    return
-      ( m_serial != 6 || 
-        game_variables::get_last_serial() == m_next_serial ) &&
-      ( m_serial != 0 || 
-        game_variables::get_selected_serial() == m_next_serial );
+
+  if ( m_serial == 6 )
+    return  game_variables::get_last_serial() == m_next_serial;
+
+  return true;
 } // serial_switcher::is_visible()
 
 /*----------------------------------------------------------------------------*/
@@ -278,7 +270,7 @@ void rp::serial_switcher::update_serials() const
           make_event_property( "to", m_next_serial )
         } );
   
-  if ( m_serial != 6 && m_serial != 0 )
+  if ( m_serial != 6 )
     game_variables::set_last_serial( m_serial );
          
   game_variables::set_selected_serial( m_next_serial );
