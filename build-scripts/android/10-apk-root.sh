@@ -37,7 +37,7 @@ then
         -i $ASGP_APK_ROOT/java/AndroidManifest.xml
 
     sed 's|com\.stuffomatic\.coasters\.R|com.stuffomatic.beta.coasters.R|' \
-        -i $ASGP_APK_ROOT/java/src/com/stuffomatic/asgp/ASGP.java
+        -i $ASGP_APK_ROOT/java/src/com/stuffomatic/asgp/*.java
 
     sed 's|Straining Coasters|Beta Coasters|' \
         -i $ASGP_APK_ROOT/java/res/values/strings.xml
