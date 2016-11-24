@@ -18,7 +18,6 @@
 #include "rp/rp_gettext.hpp"
 #include "rp/cart.hpp"
 #include "rp/util.hpp"
-#include "rp/version.hpp"
 #include "rp/events/tag_level_event.hpp"
 
 #include "engine/game.hpp"
