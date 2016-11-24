@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string name="app_name">Straining Coasters</string>
-  <string name="facebook_app_id">1798051777146464</string>
-  <string name="hockeyapp_app_id">ac86839138c04266970d9012b0a21898</string>
+  <string name="app_name" translatable="false">Straining Coasters</string>
+  <string name="facebook_app_id" translatable="false">1798051777146464</string>
+  <string name="hockeyapp_app_id" translatable="false">ac86839138c04266970d9012b0a21898</string>
+  <string name="amplitude_app_id" translatable="false">03de6dc65358e076d5ae691dc8748d74</string>
+
+  <string name="notification_title_1">Time for a ride!</string>
+  <string name="notification_message_1">Ready for a ride? Come grab these balloons!</string>
+
+  <string name="notification_title_2">Time for a ride!</string>
+  <string name="notification_message_2">Come on! Get some thrills ;)</string>
+
+  <string name="notification_title_3">Time for a ride!</string>
+  <string name="notification_message_3">You are almost there! Come shoot these birds!</string>
+
+  <string name="notification_title_4">Time for a ride!</string>
+  <string name="notification_message_4">Come ride some roller coasters!</string>
+  
+  <string name="notification_extra_plunger_title">Happy Hour!</string>
+  <string name="notification_extra_plungers_message">Your plunger gun has some extra munitions. Time to get this gold medal!</string>
+
 </resources>

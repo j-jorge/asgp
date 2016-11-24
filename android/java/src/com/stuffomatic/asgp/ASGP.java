@@ -11,14 +11,16 @@ package com.stuffomatic.asgp;
 import com.stuffomatic.ad.InterstitialService;
 
 import org.libsdl.app.SDLActivity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.WindowManager;
 
-import com.amplitude.api.Amplitude;
 import com.chartboost.sdk.Chartboost;
 import com.facebook.FacebookSdk;
 import com.facebook.appevents.AppEventsLogger;
@@ -26,13 +28,11 @@ import com.facebook.appevents.AppEventsLogger;
 import net.hockeyapp.android.Constants;
 import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.NativeCrashManager;
-import net.hockeyapp.android.metrics.MetricsManager;
-
-import org.json.JSONObject;
 
 import java.util.Map;
 
 import com.stuffomatic.coasters.R;
+import com.stuffomatic.event.EventManager;
 
 public class ASGP extends SDLActivity
 {
@@ -42,6 +42,7 @@ public class ASGP extends SDLActivity
     }
 
     private InterstitialService mInterstitialService;
+    private Notifications mNotifications;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,10 +50,6 @@ public class ASGP extends SDLActivity
 
         initializeHockeyApp();
         
-        Amplitude.getInstance().initialize
-            ( this, "03de6dc65358e076d5ae691dc8748d74")
-            .enableForegroundTracking(getApplication() );
-
         FacebookSdk.sdkInitialize( this );
         AppEventsLogger.activateApp( this );
         
@@ -62,6 +59,8 @@ public class ASGP extends SDLActivity
 
         hideActionBars();
         addVisibilityChangeListener();
+
+        mNotifications = new Notifications( this );
     }
 
     public void openUrl( String url ) {
@@ -72,8 +71,7 @@ public class ASGP extends SDLActivity
     }
 
     public void tagEvent( String tag, Map< String, String > properties ) {
-        Amplitude.getInstance().logEvent( tag, new JSONObject( properties ) );
-        MetricsManager.trackEvent( tag, properties );
+        EventManager.tagEvent( tag, properties );
     }
         
     public void showHome() {
@@ -93,10 +91,28 @@ public class ASGP extends SDLActivity
         mInterstitialService.show( callback );
     }
 
+    public boolean hasExtraPlungers() {
+
+        final long now = SystemClock.elapsedRealtime();
+        final SharedPreferences preferences =
+            getSharedPreferences( "power-up", Context.MODE_PRIVATE );
+
+        android.util.Log.d
+            ( "PLUNG", "begin: " + preferences.getLong( "extra-plungers-begin", 0 ) );
+        android.util.Log.d
+            ( "PLUNG", "end: " + preferences.getLong( "extra-plungers-end", 0 ) );
+        android.util.Log.d( "PLUNG", "now: " + now );
+        return
+            ( preferences.getLong( "extra-plungers-begin", 0 ) <= now )
+            && ( now <= preferences.getLong( "extra-plungers-end", 0 ) );
+    }
+    
     @Override
     public void onStart() {
         super.onStart();
         Chartboost.onStart( this );
+
+        mNotifications.scheduleNotifications();
     }
 
     @Override
@@ -105,6 +121,8 @@ public class ASGP extends SDLActivity
         CrashManager.register(this);
         Chartboost.onResume( this );
         hideActionBars();
+
+        mNotifications.scheduleNotifications();
     }
 
     @Override
@@ -136,7 +154,6 @@ public class ASGP extends SDLActivity
     private void initializeHockeyApp() {
 
         CrashManager.register( this );
-        MetricsManager.register( this, getApplication() );
 
         Constants.loadFromContext( this );
         setUpBreakpad( Constants.FILES_PATH );

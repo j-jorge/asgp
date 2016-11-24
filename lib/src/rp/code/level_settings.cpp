@@ -15,6 +15,7 @@
 #include "rp/add_ingame_layers.hpp"
 #include "rp/cart.hpp"
 #include "rp/game_variables.hpp"
+#include "rp/power_up/has_extra_plungers.hpp"
 
 #include "engine/level.hpp"
 #include "generic_items/timer.hpp"
@@ -49,8 +50,6 @@ void rp::level_settings::build()
   game_variables::set_level_info(m_level_info);
   game_variables::set_level_theme(m_level_theme);
   game_variables::set_level_starting(m_add_ingame_layers == NULL);
-  game_variables::set_plunger_total_number(3);
-  game_variables::set_plunger_number(3);
   game_variables::set_cannonball_activation(true);
   game_variables::set_cannonball_validity(true);  
   game_variables::set_plunger_activation(true);
@@ -63,6 +62,10 @@ void rp::level_settings::build()
   game_variables::set_ending_effect(false);
   game_variables::set_new_score(false);
   game_variables::set_last_combo( 0 );
+
+  const int plunger_count( 3 + 3 * has_extra_plungers() );
+  game_variables::set_plunger_total_number( plunger_count );
+  game_variables::set_plunger_number( plunger_count );
 
   if ( ! m_boss_transition )
     {

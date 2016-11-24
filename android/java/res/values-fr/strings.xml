@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="notification_title_1">En route !</string>
+  <string name="notification_message_1">Il reste des ballons à attraper !</string>
+
+  <string name="notification_title_2">En route !</string>
+  <string name="notification_message_2">C\'est parti ! Prends une dose de sensations fortes ;)</string>
+
+  <string name="notification_title_3">En route !</string>
+  <string name="notification_message_3">Tu y es presque ! Viens dégommer les oiseaux !</string>
+
+  <string name="notification_title_4">En route !</string>
+  <string name="notification_message_4">Viens parcourir les montagnes russes !</string>
+  
+  <string name="notification_extra_plunger_title">Happy Hour !</string>
+  <string name="notification_extra_plungers_message">Ton pistolet à ventouses a des munitions supplémentaires ! Il est temps d\'obtenir cette médaille d\'or !</string>
+
+</resources>

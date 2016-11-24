@@ -93,6 +93,8 @@ set( RP_SOURCE_FILES
   message/code/key_layer_starting_message.cpp
   message/code/pause_message.cpp
 
+  power_up/code/has_extra_plungers.cpp
+  
   transition_effect/code/level_ending_effect.cpp
   transition_effect/code/level_starting_effect.cpp
   )
