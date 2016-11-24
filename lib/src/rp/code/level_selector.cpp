@@ -12,8 +12,10 @@
  * \author Sebastien Angibaud
  */
 #include "rp/level_selector.hpp"
+
 #include "rp/defines.hpp"
 #include "rp/game_variables.hpp"
+#include "rp/level_state.hpp"
 #include "rp/util.hpp"
 
 #include "rp/ad/show_interstitial.hpp"
@@ -46,19 +48,6 @@
 #include "sstream"
 
 BASE_ITEM_EXPORT( level_selector, rp )
-
-namespace rp
-{
-  namespace detail
-  {
-    static constexpr unsigned int state_locked = 0;
-    static constexpr unsigned int state_unlocked = 1;
-    static constexpr unsigned int state_completed = 2;
-    static constexpr unsigned int state_bronze = 3;
-    static constexpr unsigned int state_silver = 4;
-    static constexpr unsigned int state_gold = 5;
-  }
-}
 
 bool rp::level_selector::s_selection = false;
 
@@ -232,7 +221,7 @@ void rp::level_selector::progress( bear::universe::time_type elapsed_time )
     check_orders();
   
   set_passive
-    ( ( m_level_state == detail::state_locked )
+    ( ( m_level_state == level_state::locked )
       || ( s_selection && ! is_selected_level() ) );
 } // level_selector::progress()
 
@@ -371,7 +360,7 @@ void rp::level_selector::get_visual
  */
 void rp::level_selector::activate()
 {
-  if ( m_level_state > detail::state_locked )
+  if ( m_level_state > level_state::locked )
     {
       if ( ! s_selection && 
            std::abs(m_level_factor - m_init_level_factor) <= 0.1 &&
@@ -466,7 +455,7 @@ bool rp::level_selector::mouse_move
 {
   bool in = false;
 
-  if ( ! s_selection && m_visible && m_level_state > detail::state_locked )
+  if ( ! s_selection && m_visible && m_level_state > level_state::locked )
     in = get_bounding_box().includes( get_level().screen_to_level(pos) );
 
   if ( in && ! m_mouse_in )
@@ -551,24 +540,24 @@ void rp::level_selector::update_state()
   unsigned int state = m_level_state;
   unsigned int new_state = get_new_state();
   
-  if ( state == detail::state_locked )
+  if ( state == level_state::locked )
     m_level_sprite.set_opacity(0);
     
-  if ( state <= detail::state_unlocked ) 
+  if ( state <= level_state::unlocked ) 
     m_star.set_opacity(0);
 
-  if ( state <= detail::state_completed )
+  if ( state <= level_state::completed )
     m_medal_sprite.set_intensity(0,0,0);
   
-  if ( ( state == detail::state_locked )
-       && ( new_state >= detail::state_unlocked ) )
+  if ( ( state == level_state::locked )
+       && ( new_state >= level_state::unlocked ) )
     unlock();
   
-  if ( ( state <= detail::state_unlocked )
-       && ( new_state >= detail::state_completed ) )
+  if ( ( state <= level_state::unlocked )
+       && ( new_state >= level_state::completed ) )
     show_star();
   
-  if ( ( new_state >= detail::state_bronze ) && ( state < new_state ) )
+  if ( ( new_state >= level_state::bronze ) && ( state < new_state ) )
     show_medal(new_state);
     
   update_score();
@@ -605,7 +594,7 @@ bool rp::level_selector::check_precedence() const
     result =
       ( (*it)->get_state() >= m_required_medal )
       || ( ( (*it)->m_level_number == 8 )
-           && ( (*it)->m_level_state >= detail::state_completed ) );
+           && ( (*it)->m_level_state >= level_state::completed ) );
 
   return result;
 } // level_selector::check_precedence();
@@ -632,9 +621,9 @@ unsigned int rp::level_selector::get_new_state() const
   if ( ! bear::engine::game::get_instance().game_variable_exists(v) )
     {
       if ( check_precedence() )
-        return detail::state_unlocked;
+        return level_state::unlocked;
       else
-        return detail::state_locked;
+        return level_state::locked;
     }
   else
     {
@@ -642,13 +631,13 @@ unsigned int rp::level_selector::get_new_state() const
         game_variables::get_persistent_score(m_serial_number,m_level_number);
       
       if ( score >= m_gold_threshold )
-        return detail::state_gold;
+        return level_state::gold;
       else if ( score >= m_silver_threshold )
-        return detail::state_silver;
+        return level_state::silver;
       else if ( score >= m_bronze_threshold )
-        return detail::state_bronze;
+        return level_state::bronze;
       else
-        return detail::state_completed;
+        return level_state::completed;
     }
 } // level_selector::get_new_state();
 
@@ -710,7 +699,7 @@ void rp::level_selector::render_border
 
   if ( ( s_selection && !is_selected_level() )
        || ( !s_selection && !mouse_check )
-       || ( m_level_state == detail::state_locked )
+       || ( m_level_state == level_state::locked )
        || ( !s_selection
             && std::abs(m_level_factor - m_init_level_factor) > 0.1 ) )
     s.get_rendering_attributes().set_opacity(0);
@@ -1131,7 +1120,7 @@ void rp::level_selector::select_level()
         make_event_property( "serial", m_serial_number ),
         make_event_property( "level", m_level_number  ),
         make_event_property
-          ( "completed", m_level_state >= detail::state_completed )
+          ( "completed", m_level_state >= level_state::completed )
       } );
 
   set_z_position(100);
@@ -1486,9 +1475,9 @@ bool rp::level_selector::check_fall_medal()
 
       const unsigned int medal( std::min( m_level_state, new_state ) );
         
-      if ( medal == detail::state_bronze )
+      if ( medal == level_state::bronze )
         medal_name = "bronze";
-      else if ( medal == detail::state_silver )
+      else if ( medal == level_state::silver )
         medal_name = "silver";
         
       bear::visual::sprite medal_sprite
@@ -1507,7 +1496,7 @@ bool rp::level_selector::check_fall_medal()
             ( util::get_medal_position( get_level().get_camera_focus() ) ); 
           new_item( *decorative_medal );
         }    
-      else if ( medal >= detail::state_bronze )
+      else if ( medal >= level_state::bronze )
         {
           result = true;
           decorative_medal->set_center_of_mass(get_medal_ending_position());

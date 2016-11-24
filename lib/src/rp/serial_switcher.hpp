@@ -44,6 +44,7 @@ namespace rp
     serial_switcher();
     
     void pre_cache();
+    void on_enters_layer();
     void progress( bear::universe::time_type elapsed_time );
     bool set_u_integer_field
     ( const std::string& name, unsigned int value );
@@ -64,6 +65,9 @@ namespace rp
     bool is_visible() const;    
 
   private:
+    void render_star
+    ( std::list<bear::engine::scene_visual>& visuals ) const;
+
     void update_serials() const;
     void check_mouse_inside
     ( const claw::math::coordinate_2d<unsigned int>& pos );
@@ -90,6 +94,8 @@ namespace rp
     /** \brief The tweener for angle. */
     claw::tween::tweener_sequence m_angle_tweener;
 
+    bear::visual::sprite m_star;
+    
   }; // class serial_switcher
 } // namespace rp
 

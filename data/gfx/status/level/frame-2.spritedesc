@@ -27,6 +27,10 @@ arrows "arrows.xcf.bz2"
   "star colour"
 ;
 
+"green star" autosize * 0.25 with frame
+  "green star"
+;
+
 "arrow off" autosize * 0.15 with arrows
   "background"
   ;

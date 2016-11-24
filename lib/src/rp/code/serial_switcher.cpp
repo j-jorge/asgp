@@ -14,6 +14,7 @@
 #include "rp/serial_switcher.hpp"
 
 #include "rp/game_variables.hpp"
+#include "rp/level_state.hpp"
 #include "rp/events/tag_event.hpp"
 #include "rp/events/make_event_property.hpp"
 
@@ -47,6 +48,13 @@ void rp::serial_switcher::pre_cache()
 
   get_level_globals().load_image("gfx/status/level/frame-2.png");
 } // rp::serial_switcher::pre_cache()
+
+void rp::serial_switcher::on_enters_layer()
+{
+  m_star =
+    get_level_globals().auto_sprite
+    ( "gfx/status/level/frame-2.png", "green star" );
+}
 
 /*---------------------------------------------------------------------------*/
 /**
@@ -117,37 +125,39 @@ void rp::serial_switcher::get_visual
 {
   super::get_visual(visuals);
   
-  if ( is_visible() )
+  if ( !is_visible() )
+    return;
+  
+  if ( m_mouse_in )
     {
-      if ( m_mouse_in )
-        {
-          const bear::universe::position_type gap
-            ( ( get_size() - m_animation_on.get_max_size() ) / 2 );
+      const bear::universe::position_type gap
+        ( ( get_size() - m_animation_on.get_max_size() ) / 2 );
 
-          bear::visual::scene_sprite s
-            ( get_left() + gap.x, get_bottom() + gap.y, 
-              m_animation_on.get_sprite() );
+      bear::visual::scene_sprite s
+        ( get_left() + gap.x, get_bottom() + gap.y, 
+          m_animation_on.get_sprite() );
           
-          s.get_rendering_attributes().set_opacity
-            ( get_rendering_attributes().get_opacity() );
-          s.get_rendering_attributes().set_angle( m_angle );
+      s.get_rendering_attributes().set_opacity
+        ( get_rendering_attributes().get_opacity() );
+      s.get_rendering_attributes().set_angle( m_angle );
             
-          visuals.push_back( s );
-        }
-      else
-        {
-          const bear::universe::position_type gap
-            ( ( get_size() - m_animation_off.get_max_size() ) / 2 );
-          bear::visual::scene_sprite s
-            ( get_left() + gap.x , get_bottom() + gap.y, 
-              m_animation_off.get_sprite() );
-          
-          s.get_rendering_attributes().set_opacity
-            ( get_rendering_attributes().get_opacity() );
-
-          visuals.push_back( s );
-        }
+      visuals.push_back( s );
     }
+  else
+    {
+      const bear::universe::position_type gap
+        ( ( get_size() - m_animation_off.get_max_size() ) / 2 );
+      bear::visual::scene_sprite s
+        ( get_left() + gap.x , get_bottom() + gap.y, 
+          m_animation_off.get_sprite() );
+          
+      s.get_rendering_attributes().set_opacity
+        ( get_rendering_attributes().get_opacity() );
+
+      visuals.push_back( s );
+    }
+
+  render_star( visuals );
 } // serial_switcher::get_visuals()
 
 /*----------------------------------------------------------------------------*/
@@ -256,6 +266,67 @@ bool rp::serial_switcher::is_visible() const
 
   return true;
 } // serial_switcher::is_visible()
+
+void rp::serial_switcher::render_star
+( std::list<bear::engine::scene_visual>& visuals ) const
+{
+  bool show( false );
+  
+  if ( m_next_serial == 6 )
+    show =
+      ( game_variables::get_level_state( 6, 1 ) == level_state::unlocked )
+      || ( game_variables::get_level_state( 6, 2 ) == level_state::unlocked )
+      || ( game_variables::get_level_state( 6, 3 ) == level_state::unlocked );
+  else
+    {
+      unsigned int from;
+      unsigned int to;
+      
+      if ( m_serial == 6 )
+        {
+          from = 0;
+          to = 5;
+        }
+      else if ( m_next_serial > m_serial )
+        {
+          from = m_next_serial;
+          to = 5;
+        }
+      else
+        {
+          assert( m_next_serial < m_serial );
+          from = 0;
+          to = m_next_serial;
+        }
+
+      assert( from <= to );
+
+      if ( from == 0 )
+        {
+          show =
+            game_variables::get_level_state( 0, 1 ) == level_state::unlocked;
+          ++from;
+        }
+  
+      for ( unsigned int i( from ); !show && ( i <= to ); ++i )
+        for ( unsigned int j( 1 ); !show && ( j <= 8 ); ++j )
+          show =
+            game_variables::get_level_state( i, j ) == level_state::unlocked;
+    }
+
+  if ( !show )
+    return;
+
+  const bear::universe::position_type gap( -28, -28 );
+  bear::visual::scene_sprite s
+    ( get_right() + gap.x , get_top() + gap.y, m_star );
+
+  s.get_rendering_attributes().set_opacity
+    ( get_rendering_attributes().get_opacity() );
+  s.set_scale_factor( 0.66, 0.66 );
+
+  visuals.push_back( s );
+}
 
 /*----------------------------------------------------------------------------*/
 /**
