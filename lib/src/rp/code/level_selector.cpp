@@ -58,7 +58,7 @@ bool rp::level_selector::s_selection = false;
 rp::level_selector::level_selector()
 : m_updated(false), m_required_medal(2), m_bronze_threshold(0),  
   m_silver_threshold(0), m_gold_threshold(0), m_required_balloons(0),
-  m_init_level_factor(0.25), m_visible(true), 
+  m_init_level_factor(0.3), m_visible(true), 
   m_theme("western"), m_level_name_gap_y(0.0),
   m_mouse_in(false), m_rectangle(NULL),
   m_decorative_level_name(NULL), m_load(false), m_rectangle_opacity(0),
