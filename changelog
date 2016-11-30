@@ -1,3 +1,13 @@
+Version 1.0.17
+
+	* Add a tutorial level to explain the basics of the game.
+
+	* Display a star on the navigation buttons to tell that there is an
+	  available level.
+
+	* Display a notification when the game has not been launched since a
+	  long time.
+
 Version 1.0.16
 
 	* Beating the boss is not required to access the next serial but it is
