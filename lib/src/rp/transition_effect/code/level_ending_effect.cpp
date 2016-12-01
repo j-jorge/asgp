@@ -414,12 +414,12 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
       game_variables::set_last_medal( m_medal );
       util::save_game_variables(); 
 
-      m_skip_button->set_icon
-        ( get_level_globals().auto_sprite
-          ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
-
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
+      else
+        m_skip_button->set_icon
+          ( get_level_globals().auto_sprite
+            ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
     }
 
   m_speed_factor = 1;
@@ -430,11 +430,12 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
     (get_level_globals().get_font("font/LuckiestGuy.ttf", 64), oss.str());
 
   if ( ! game_variables::is_boss_level() )
-    update_medal();
+    {
+      update_gauge_fill();
+      update_medal();
+    }
 
   m_tweener_fade_out.update(elapsed_time);
-
-  update_gauge_fill();
   
   return 0;
 } // level_ending_effect::progress()
@@ -782,6 +783,9 @@ bool rp::level_ending_effect::button_maintained
 bool rp::level_ending_effect::mouse_move
 ( const claw::math::coordinate_2d<unsigned int>& pos )
 {
+  if ( m_skip_button == nullptr )
+    return false;
+  
   if ( m_skip_button->get_rectangle().includes(pos) )
     {
       if ( ! m_active_component )
@@ -1628,6 +1632,9 @@ void rp::level_ending_effect::render_medal( scene_element_list& e ) const
 void
 rp::level_ending_effect::render_button_background( scene_element_list& e ) const
 {
+  if ( m_skip_button == nullptr )
+    return;
+  
   if ( m_skip_button->get_visible() )
     {
       if ( m_active_component )
@@ -1717,9 +1724,6 @@ void rp::level_ending_effect::add_button_component()
       ( boost::bind( &level_ending_effect::on_pass_scores, this ) ) );
 
   m_root_window.insert( m_skip_button );
-
-  if ( game_variables::is_boss_level() )
-    m_skip_button->set_visible(false);
 } // level_ending_effect::add_button_component()
 
 /*----------------------------------------------------------------------------*/
