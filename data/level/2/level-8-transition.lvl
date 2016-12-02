@@ -950,14 +950,14 @@
 <field name='mouse_over_manager.animation_off'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='396' clip_width='140' clip_height='98' spritepos='background off' auto_size='false' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='120' clip_width='160' clip_height='118' spritepos='background off' auto_size='false' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
 <field name='mouse_over_manager.animation_on'>
 <animation loops='0' first_index='0' last_index='0' loop_back='false' auto_size='true' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'>
   <frame duration='1'>
-    <sprite image='gfx/status/buttons.png' x='282' y='297' clip_width='140' clip_height='98' spritepos='background on' auto_size='false' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+    <sprite image='gfx/status/buttons.png' x='1' y='1' clip_width='160' clip_height='118' spritepos='background on' auto_size='false' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
   </frame>
 </animation>
 </field>
@@ -1249,7 +1249,7 @@
 <real value='4396'/>
 </field>
 <field name='item_with_decoration.sprite'>
-<sprite image='gfx/status/buttons.png' x='0' y='297' clip_width='140' clip_height='98' spritepos='skip' auto_size='false' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
+<sprite image='gfx/status/buttons.png' x='303' y='100' clip_width='140' clip_height='98' spritepos='skip' auto_size='false' width='210' height='147' mirror='boolean_false' flip='boolean_false' angle='0' opacity='1' red_intensity='1' green_intensity='1' blue_intensity='1'/>
 </field>
 </fields>
     </item><!-- bear::decorative_item -->
