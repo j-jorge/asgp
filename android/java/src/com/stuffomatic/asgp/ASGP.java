@@ -97,11 +97,6 @@ public class ASGP extends SDLActivity
         final SharedPreferences preferences =
             getSharedPreferences( "power-up", Context.MODE_PRIVATE );
 
-        android.util.Log.d
-            ( "PLUNG", "begin: " + preferences.getLong( "extra-plungers-begin", 0 ) );
-        android.util.Log.d
-            ( "PLUNG", "end: " + preferences.getLong( "extra-plungers-end", 0 ) );
-        android.util.Log.d( "PLUNG", "now: " + now );
         return
             ( preferences.getLong( "extra-plungers-begin", 0 ) <= now )
             && ( now <= preferences.getLong( "extra-plungers-end", 0 ) );
