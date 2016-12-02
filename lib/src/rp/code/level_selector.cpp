@@ -140,7 +140,7 @@ void rp::level_selector::on_enters_layer()
         m_init_level_factor *= 2;
     }
 
-  m_star_gap = bear::visual::position_type(131,133);
+  m_star_gap = bear::visual::position_type(132,133);
   m_level_factor = m_init_level_factor;
   m_medal_factor = 0.93478;
   m_score_factor = 1; //0.8;
