@@ -12488,6 +12488,107 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-inside-bottom'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1560'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4816'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-6'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='42'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-bottom'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1603'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4816'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-6'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='42'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-bottom'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1650'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4816'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-bottom'/>
+<item_reference value='switching-track-inside-bottom'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-bottom'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1699'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4816'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='bottom-button-0'/>
+<item_reference value='bottom-button-1'/>
+<item_reference value='bottom-button-2'/>
+<item_reference value='bottom-button-3'/>
+<item_reference value='bottom-button-4'/>
+<item_reference value='bottom-button-5'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.y'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-inside-bottom'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
     <item class_name='bear::forced_movement_toggle' fixed='false' id='configure_outside'>
 <fields>
 <field name='base_item.global'>
@@ -12663,25 +12764,25 @@
 </fields>
     </item><!-- bear::applied_boolean_expression -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-inside-bottom'>
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-inside-right-0'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1556'/>
+<real value='1891'/>
 </field>
 <field name='base_item.position.left'>
-<real value='4967'/>
+<real value='4960'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-6'/>
+<item_reference value='camera-0'/>
 </field>
-<field name='forced_movement_creator_with_reference.target.gap.y'>
-<real value='42'/>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-58'/>
 </field>
-<field name='forced_movement_creator_with_reference.target.ratio.y'>
-<real value='0'/>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='1'/>
 </field>
 <field name='forced_tracking_creator.distance.x'>
 <real value='0'/>
@@ -12692,25 +12793,43 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-bottom'>
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-right-0'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1599'/>
+<real value='1819'/>
 </field>
 <field name='base_item.position.left'>
-<real value='4967'/>
+<real value='4962'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-right-0'/>
+<item_reference value='switching-track-inside-right-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-right-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1855'/>
+</field>
+<field name='base_item.position.left'>
+<real value='4962'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-6'/>
+<item_reference value='camera-0'/>
 </field>
-<field name='forced_movement_creator_with_reference.target.gap.y'>
-<real value='42'/>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-58'/>
 </field>
-<field name='forced_movement_creator_with_reference.target.ratio.y'>
-<real value='0'/>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='1'/>
 </field>
 <field name='forced_join_creator.duration'>
 <real value='0.4'/>
@@ -12718,48 +12837,25 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-bottom'>
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-right-0'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1646'/>
+<real value='1771'/>
 </field>
 <field name='base_item.position.left'>
-<real value='4967'/>
-</field>
-<field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-inside-bottom'/>
-<item_reference value='switching-track-inside-bottom'/>
-</field>
-</fields>
-    </item><!-- bear::forced_sequence_creator -->
-
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-bottom'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1695'/>
-</field>
-<field name='base_item.position.left'>
-<real value='4967'/>
+<real value='4963'/>
 </field>
 <field name='forced_movement_applicator.actor'>
-<item_reference value='bottom-button-0'/>
-<item_reference value='bottom-button-1'/>
-<item_reference value='bottom-button-2'/>
-<item_reference value='bottom-button-3'/>
-<item_reference value='bottom-button-4'/>
-<item_reference value='bottom-button-5'/>
+<item_reference value='right-button-0'/>
 </field>
-<field name='forced_movement_applicator.actor.ratio.y'>
-<real value='0'/>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='1'/>
 </field>
 <field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-inside-bottom'/>
+<item_reference value='switching-seq-inside-right-0'/>
 </field>
 </fields>
     </item><!-- bear::forced_movement_toggle -->
@@ -12829,6 +12925,102 @@
 </field>
 </fields>
     </item><!-- rp::zeppelin -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-inside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1536'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5036'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-0'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='-42'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1579'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5036'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-0'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='-42'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1626'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5036'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-top-0'/>
+<item_reference value='switching-track-inside-top-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1675'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5036'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='top-button-0'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-inside-top-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
 
     <item class_name='bear::forced_sequence_creator' fixed='false' id='inside-quit-mvt'>
 <fields>
@@ -14311,102 +14503,6 @@
 </fields>
     </item><!-- bear::forced_movement_toggle -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-2'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1931'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5418'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-2'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='58'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.y'>
-<real value='0'/>
-</field>
-</fields>
-    </item><!-- bear::forced_tracking_creator -->
-
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-2'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1859'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5420'/>
-</field>
-<field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-inside-left-2'/>
-<item_reference value='switching-track-left-right-2'/>
-</field>
-</fields>
-    </item><!-- bear::forced_sequence_creator -->
-
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-2'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1895'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5420'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-2'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='58'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_join_creator.duration'>
-<real value='0.4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_join_creator -->
-
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-2'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1811'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5421'/>
-</field>
-<field name='forced_movement_applicator.actor'>
-<item_reference value='left-button-2'/>
-</field>
-<field name='forced_movement_applicator.actor.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-inside-left-2'/>
-</field>
-</fields>
-    </item><!-- bear::forced_movement_toggle -->
-
     <item class_name='rp::level_selector' fixed='false' id='2-6'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -14467,14 +14563,17 @@
 <real value='5456'/>
 </field>
 <field name='toggle_group.toggles'>
+<item_reference value='switching-inside-right-0'/>
 <item_reference value='switching-inside-right-1'/>
 <item_reference value='switching-inside-right-2'/>
 <item_reference value='switching-inside-right-3'/>
 <item_reference value='switching-inside-right-4'/>
+<item_reference value='switching-inside-left-1'/>
 <item_reference value='switching-inside-left-2'/>
 <item_reference value='switching-inside-left-3'/>
 <item_reference value='switching-inside-left-4'/>
 <item_reference value='switching-inside-left-5'/>
+<item_reference value='switching-inside-top-0'/>
 <item_reference value='switching-inside-top-1'/>
 <item_reference value='switching-inside-top-2'/>
 <item_reference value='switching-inside-top-3'/>
@@ -14485,19 +14584,19 @@
 </fields>
     </item><!-- bear::toggle_group -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-3'>
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-1'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1922'/>
+<real value='1946'/>
 </field>
 <field name='base_item.position.left'>
-<real value='5490'/>
+<real value='5482'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-3'/>
+<item_reference value='camera-1'/>
 </field>
 <field name='forced_movement_creator_with_reference.target.gap.x'>
 <real value='58'/>
@@ -14514,37 +14613,37 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-3'>
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-1'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1850'/>
+<real value='1874'/>
 </field>
 <field name='base_item.position.left'>
-<real value='5492'/>
+<real value='5484'/>
 </field>
 <field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-inside-left-3'/>
-<item_reference value='switching-track-left-right-3'/>
+<item_reference value='switching-join-inside-left-1'/>
+<item_reference value='switching-track-left-right-1'/>
 </field>
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-3'>
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-1'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1886'/>
+<real value='1910'/>
 </field>
 <field name='base_item.position.left'>
-<real value='5492'/>
+<real value='5484'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-3'/>
+<item_reference value='camera-1'/>
 </field>
 <field name='forced_movement_creator_with_reference.target.gap.x'>
 <real value='58'/>
@@ -14558,25 +14657,25 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-3'>
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-1'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1802'/>
+<real value='1826'/>
 </field>
 <field name='base_item.position.left'>
-<real value='5493'/>
+<real value='5485'/>
 </field>
 <field name='forced_movement_applicator.actor'>
-<item_reference value='left-button-3'/>
+<item_reference value='left-button-1'/>
 </field>
 <field name='forced_movement_applicator.actor.ratio.x'>
 <real value='0'/>
 </field>
 <field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-inside-left-3'/>
+<item_reference value='switching-seq-inside-left-1'/>
 </field>
 </fields>
     </item><!-- bear::forced_movement_toggle -->
@@ -14674,102 +14773,6 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-4'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1933'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5563'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-4'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='58'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.y'>
-<real value='0'/>
-</field>
-</fields>
-    </item><!-- bear::forced_tracking_creator -->
-
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-4'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1861'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5565'/>
-</field>
-<field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-inside-left-4'/>
-<item_reference value='switching-track-left-right-4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_sequence_creator -->
-
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-4'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1897'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5565'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-4'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='58'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_join_creator.duration'>
-<real value='0.4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_join_creator -->
-
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-4'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1813'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5566'/>
-</field>
-<field name='forced_movement_applicator.actor'>
-<item_reference value='left-button-4'/>
-</field>
-<field name='forced_movement_applicator.actor.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-inside-left-4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_movement_toggle -->
-
     <item class_name='bear::toggle' fixed='true' id='mouvement-1.5s'>
 <fields>
 <field name='item_with_toggle.delay'>
@@ -14835,6 +14838,102 @@
 </field>
 </fields>
     </item><!-- rp::level_selector -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1947'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5576'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-2'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1875'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5578'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-left-2'/>
+<item_reference value='switching-track-left-right-2'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1911'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5578'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-2'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1827'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5579'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='left-button-2'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-inside-left-2'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
 
     <item class_name='bear::reference_item' fixed='true' id='center-camera-2'>
 <fields>
@@ -14931,102 +15030,6 @@
 </fields>
     </item><!-- bear::forced_movement_toggle -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-5'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1946'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5641'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-5'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='58'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.y'>
-<real value='0'/>
-</field>
-</fields>
-    </item><!-- bear::forced_tracking_creator -->
-
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-5'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1874'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5643'/>
-</field>
-<field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-inside-left-5'/>
-<item_reference value='switching-track-left-right-5'/>
-</field>
-</fields>
-    </item><!-- bear::forced_sequence_creator -->
-
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-5'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1910'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5643'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-5'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='58'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_join_creator.duration'>
-<real value='0.4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_join_creator -->
-
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-5'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1826'/>
-</field>
-<field name='base_item.position.left'>
-<real value='5644'/>
-</field>
-<field name='forced_movement_applicator.actor'>
-<item_reference value='left-button-5'/>
-</field>
-<field name='forced_movement_applicator.actor.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-inside-left-5'/>
-</field>
-</fields>
-    </item><!-- bear::forced_movement_toggle -->
-
     <item class_name='rp::level_selector' fixed='false' id='2-4'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -15068,6 +15071,102 @@
 </fields>
     </item><!-- rp::level_selector -->
 
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-3'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1938'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5648'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-3'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-3'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1866'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5650'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-left-3'/>
+<item_reference value='switching-track-left-right-3'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-3'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1902'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5650'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-3'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-3'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1818'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5651'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='left-button-3'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-inside-left-3'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
     <item class_name='bear::forced_goto_creator' fixed='false' id='join-camera-2-6'>
 <fields>
 <field name='base_item.global'>
@@ -15094,6 +15193,102 @@
 </fields>
     </item><!-- bear::forced_goto_creator -->
 
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-4'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1949'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5721'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-4'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-4'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1877'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5723'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-left-4'/>
+<item_reference value='switching-track-left-right-4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-4'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1913'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5723'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-4'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-4'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1829'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5724'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='left-button-4'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-inside-left-4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
     <item class_name='rp::zeppelin' fixed='false'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -15113,6 +15308,102 @@
 </field>
 </fields>
     </item><!-- rp::zeppelin -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-left-right-5'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1962'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5799'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-5'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-inside-left-5'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1890'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5801'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-inside-left-5'/>
+<item_reference value='switching-track-left-right-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-inside-left-5'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1926'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5801'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-5'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='58'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-inside-left-5'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1842'/>
+</field>
+<field name='base_item.position.left'>
+<real value='5802'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='left-button-5'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-inside-left-5'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
 
     <item class_name='rp::level_selector' fixed='false' id='2-8'>
 <fields>
@@ -15380,6 +15671,102 @@
 </field>
 </fields>
     </item><!-- bear::mouse_over_manager -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-right-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1792'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6102'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-outside-right-0'/>
+<item_reference value='switching-track-outside-right-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-right-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1741'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6104'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='right-button-0'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-outside-right-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-right-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1874'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6104'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-0'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='142'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='1'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-right-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1840'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6105'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-0'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='142'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='1'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
 
     <item class_name='bear::decorative_item' fixed='true'>
 <fields>
@@ -15682,102 +16069,6 @@
 </fields>
     </item><!-- rp::serial_switcher -->
 
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-1'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1539'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6314'/>
-</field>
-<field name='forced_movement_applicator.actor'>
-<item_reference value='top-button-1'/>
-</field>
-<field name='forced_movement_applicator.actor.ratio.y'>
-<real value='1'/>
-</field>
-<field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-outside-top-2'/>
-</field>
-</fields>
-    </item><!-- bear::forced_movement_toggle -->
-
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-top-2'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1490'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6316'/>
-</field>
-<field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-outside-top-4'/>
-<item_reference value='switching-track-outside-top-3'/>
-</field>
-</fields>
-    </item><!-- bear::forced_sequence_creator -->
-
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-top-3'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1445'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6317'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-1'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.y'>
-<real value='158'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.y'>
-<real value='1'/>
-</field>
-<field name='forced_tracking_creator.distance.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.y'>
-<real value='0'/>
-</field>
-</fields>
-    </item><!-- bear::forced_tracking_creator -->
-
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-top-4'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1395'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6319'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-1'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.y'>
-<real value='158'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.y'>
-<real value='1'/>
-</field>
-<field name='forced_join_creator.duration'>
-<real value='0.4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_join_creator -->
-
     <item class_name='bear::forced_goto_creator' fixed='false' id='join-camera-2-3'>
 <fields>
 <field name='base_item.position.bottom'>
@@ -15800,6 +16091,102 @@
 </field>
 </fields>
     </item><!-- bear::forced_goto_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1558'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6346'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='top-button-0'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-outside-top-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1509'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6348'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-outside-top-0'/>
+<item_reference value='switching-track-outside-top-0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1464'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6349'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-0'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='158'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-top-0'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1414'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6351'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-0'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='158'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
 
     <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-right-3'>
 <fields>
@@ -15897,60 +16284,60 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-2'>
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-1'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1556'/>
+<real value='1536'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6390'/>
+<real value='6414'/>
 </field>
 <field name='forced_movement_applicator.actor'>
-<item_reference value='top-button-2'/>
+<item_reference value='top-button-1'/>
 </field>
 <field name='forced_movement_applicator.actor.ratio.y'>
 <real value='1'/>
 </field>
 <field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-outside-top-1'/>
+<item_reference value='switching-seq-outside-top-2'/>
 </field>
 </fields>
     </item><!-- bear::forced_movement_toggle -->
 
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-top-1'>
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-top-2'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1507'/>
+<real value='1487'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6392'/>
+<real value='6416'/>
 </field>
 <field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-outside-top-1'/>
-<item_reference value='switching-track-outside-top-1'/>
+<item_reference value='switching-join-outside-top-4'/>
+<item_reference value='switching-track-outside-top-3'/>
 </field>
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-top-1'>
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-top-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1462'/>
+<real value='1442'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6393'/>
+<real value='6417'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-2'/>
+<item_reference value='camera-1'/>
 </field>
 <field name='forced_movement_creator_with_reference.target.gap.y'>
 <real value='158'/>
@@ -15967,19 +16354,19 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-top-1'>
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-top-4'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1412'/>
+<real value='1392'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6395'/>
+<real value='6419'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-2'/>
+<item_reference value='camera-1'/>
 </field>
 <field name='forced_movement_creator_with_reference.target.gap.y'>
 <real value='158'/>
@@ -16005,14 +16392,17 @@
 <real value='6442'/>
 </field>
 <field name='toggle_group.toggles'>
+<item_reference value='switching-outside-right-0'/>
 <item_reference value='switching-outside-right-1'/>
 <item_reference value='switching-outside-right-2'/>
 <item_reference value='switching-outside-right-3'/>
 <item_reference value='switching-outside-right-4'/>
+<item_reference value='switching-outside-left-1'/>
 <item_reference value='switching-outside-left-2'/>
 <item_reference value='switching-outside-left-3'/>
 <item_reference value='switching-outside-left-4'/>
 <item_reference value='switching-outside-left-5'/>
+<item_reference value='switching-outside-top-0'/>
 <item_reference value='switching-outside-top-1'/>
 <item_reference value='switching-outside-top-2'/>
 <item_reference value='switching-outside-top-3'/>
@@ -16119,16 +16509,112 @@
 </fields>
     </item><!-- bear::forced_tracking_creator -->
 
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1553'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6490'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='top-button-2'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-outside-top-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-top-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1504'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6492'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-outside-top-1'/>
+<item_reference value='switching-track-outside-top-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-top-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1459'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6493'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-2'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='158'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-top-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1409'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6495'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-2'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.y'>
+<real value='158'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.y'>
+<real value='1'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
     <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1528'/>
+<real value='1525'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6486'/>
+<real value='6586'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='top-button-3'/>
@@ -16148,10 +16634,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1479'/>
+<real value='1476'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6488'/>
+<real value='6588'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='switching-join-outside-top-2'/>
@@ -16166,10 +16652,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1434'/>
+<real value='1431'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6489'/>
+<real value='6589'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-3'/>
@@ -16195,10 +16681,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1384'/>
+<real value='1381'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6491'/>
+<real value='6591'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-3'/>
@@ -16215,16 +16701,208 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-left-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1911'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6597'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-outside-left-1'/>
+<item_reference value='switching-track-outside-left-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-left-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1860'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6599'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='left-button-1'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-outside-left-1'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-left-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1993'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6599'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-1'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-142'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-left-1'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1959'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6600'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-1'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-142'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1921'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6656'/>
+</field>
+<field name='forced_sequence_creator.movements'>
+<item_reference value='switching-join-outside-left-2'/>
+<item_reference value='switching-track-outside-left-2'/>
+</field>
+</fields>
+    </item><!-- bear::forced_sequence_creator -->
+
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1870'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6658'/>
+</field>
+<field name='forced_movement_applicator.actor'>
+<item_reference value='left-button-2'/>
+</field>
+<field name='forced_movement_applicator.actor.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_movement_applicator.movement'>
+<item_reference value='switching-seq-outside-left-2'/>
+</field>
+</fields>
+    </item><!-- bear::forced_movement_toggle -->
+
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='2003'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6658'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-2'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-142'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_join_creator.duration'>
+<real value='0.4'/>
+</field>
+</fields>
+    </item><!-- bear::forced_join_creator -->
+
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-left-2'>
+<fields>
+<field name='base_item.global'>
+<bool value='1'/>
+</field>
+<field name='base_item.position.bottom'>
+<real value='1969'/>
+</field>
+<field name='base_item.position.left'>
+<real value='6659'/>
+</field>
+<field name='forced_movement_creator_with_reference.target'>
+<item_reference value='camera-2'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.gap.x'>
+<real value='-142'/>
+</field>
+<field name='forced_movement_creator_with_reference.target.ratio.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.x'>
+<real value='0'/>
+</field>
+<field name='forced_tracking_creator.distance.y'>
+<real value='0'/>
+</field>
+</fields>
+    </item><!-- bear::forced_tracking_creator -->
+
     <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-top-4'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1539'/>
+<real value='1536'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6567'/>
+<real value='6667'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='top-button-4'/>
@@ -16244,10 +16922,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1490'/>
+<real value='1487'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6569'/>
+<real value='6669'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='switching-join-outside-top-3'/>
@@ -16262,10 +16940,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1445'/>
+<real value='1442'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6570'/>
+<real value='6670'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-4'/>
@@ -16291,10 +16969,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1395'/>
+<real value='1392'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6572'/>
+<real value='6672'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-4'/>
@@ -16311,60 +16989,60 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-left-2'>
+    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-left-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1797'/>
+<real value='1890'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6586'/>
+<real value='6737'/>
 </field>
 <field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-outside-left-2'/>
-<item_reference value='switching-track-outside-left-2'/>
+<item_reference value='switching-join-outside-left-3'/>
+<item_reference value='switching-track-outside-left-3'/>
 </field>
 </fields>
     </item><!-- bear::forced_sequence_creator -->
 
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-left-2'>
+    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-left-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1746'/>
+<real value='1839'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6588'/>
+<real value='6739'/>
 </field>
 <field name='forced_movement_applicator.actor'>
-<item_reference value='left-button-2'/>
+<item_reference value='left-button-3'/>
 </field>
 <field name='forced_movement_applicator.actor.ratio.x'>
 <real value='0'/>
 </field>
 <field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-outside-left-2'/>
+<item_reference value='switching-seq-outside-left-3'/>
 </field>
 </fields>
     </item><!-- bear::forced_movement_toggle -->
 
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-left-2'>
+    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-left-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1879'/>
+<real value='1972'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6588'/>
+<real value='6739'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-2'/>
+<item_reference value='camera-3'/>
 </field>
 <field name='forced_movement_creator_with_reference.target.gap.x'>
 <real value='-142'/>
@@ -16378,19 +17056,19 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-left-2'>
+    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-left-3'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1845'/>
+<real value='1938'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6589'/>
+<real value='6740'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-2'/>
+<item_reference value='camera-3'/>
 </field>
 <field name='forced_movement_creator_with_reference.target.gap.x'>
 <real value='-142'/>
@@ -16413,10 +17091,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1556'/>
+<real value='1553'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6657'/>
+<real value='6757'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='top-button-5'/>
@@ -16436,10 +17114,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1507'/>
+<real value='1504'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6659'/>
+<real value='6759'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='switching-join-outside-top-5'/>
@@ -16454,10 +17132,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1462'/>
+<real value='1459'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6660'/>
+<real value='6760'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-5'/>
@@ -16483,10 +17161,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1412'/>
+<real value='1409'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6662'/>
+<real value='6762'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-5'/>
@@ -16503,112 +17181,16 @@
 </fields>
     </item><!-- bear::forced_join_creator -->
 
-    <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-left-3'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1766'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6667'/>
-</field>
-<field name='forced_sequence_creator.movements'>
-<item_reference value='switching-join-outside-left-3'/>
-<item_reference value='switching-track-outside-left-3'/>
-</field>
-</fields>
-    </item><!-- bear::forced_sequence_creator -->
-
-    <item class_name='bear::forced_movement_toggle' fixed='false' id='switching-outside-left-3'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1715'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6669'/>
-</field>
-<field name='forced_movement_applicator.actor'>
-<item_reference value='left-button-3'/>
-</field>
-<field name='forced_movement_applicator.actor.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_movement_applicator.movement'>
-<item_reference value='switching-seq-outside-left-3'/>
-</field>
-</fields>
-    </item><!-- bear::forced_movement_toggle -->
-
-    <item class_name='bear::forced_join_creator' fixed='false' id='switching-join-outside-left-3'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1848'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6669'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-3'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='-142'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_join_creator.duration'>
-<real value='0.4'/>
-</field>
-</fields>
-    </item><!-- bear::forced_join_creator -->
-
-    <item class_name='bear::forced_tracking_creator' fixed='false' id='switching-track-outside-left-3'>
-<fields>
-<field name='base_item.global'>
-<bool value='1'/>
-</field>
-<field name='base_item.position.bottom'>
-<real value='1814'/>
-</field>
-<field name='base_item.position.left'>
-<real value='6670'/>
-</field>
-<field name='forced_movement_creator_with_reference.target'>
-<item_reference value='camera-3'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.gap.x'>
-<real value='-142'/>
-</field>
-<field name='forced_movement_creator_with_reference.target.ratio.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.x'>
-<real value='0'/>
-</field>
-<field name='forced_tracking_creator.distance.y'>
-<real value='0'/>
-</field>
-</fields>
-    </item><!-- bear::forced_tracking_creator -->
-
     <item class_name='bear::forced_sequence_creator' fixed='false' id='switching-seq-outside-left-4'>
 <fields>
 <field name='base_item.global'>
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1790'/>
+<real value='1914'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6730'/>
+<real value='6800'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='switching-join-outside-left-4'/>
@@ -16623,10 +17205,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1739'/>
+<real value='1863'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6732'/>
+<real value='6802'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='left-button-4'/>
@@ -16646,10 +17228,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1872'/>
+<real value='1996'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6732'/>
+<real value='6802'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-4'/>
@@ -16672,10 +17254,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1838'/>
+<real value='1962'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6733'/>
+<real value='6803'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-4'/>
@@ -16701,10 +17283,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1777'/>
+<real value='1901'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6804'/>
+<real value='6874'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='switching-join-outside-left-5'/>
@@ -16719,10 +17301,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1726'/>
+<real value='1850'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6806'/>
+<real value='6876'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='left-button-5'/>
@@ -16742,10 +17324,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1859'/>
+<real value='1983'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6806'/>
+<real value='6876'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-5'/>
@@ -16768,10 +17350,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1825'/>
+<real value='1949'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6807'/>
+<real value='6877'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-5'/>
@@ -16797,10 +17379,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1472'/>
+<real value='1469'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6827'/>
+<real value='6927'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-6'/>
@@ -16826,10 +17408,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1515'/>
+<real value='1512'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6827'/>
+<real value='6927'/>
 </field>
 <field name='forced_movement_creator_with_reference.target'>
 <item_reference value='camera-6'/>
@@ -16852,10 +17434,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1562'/>
+<real value='1559'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6827'/>
+<real value='6927'/>
 </field>
 <field name='forced_sequence_creator.movements'>
 <item_reference value='switching-join-outside-bottom'/>
@@ -16870,10 +17452,10 @@
 <bool value='1'/>
 </field>
 <field name='base_item.position.bottom'>
-<real value='1611'/>
+<real value='1608'/>
 </field>
 <field name='base_item.position.left'>
-<real value='6827'/>
+<real value='6927'/>
 </field>
 <field name='forced_movement_applicator.actor'>
 <item_reference value='bottom-button-5'/>
