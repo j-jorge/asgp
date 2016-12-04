@@ -55,9 +55,7 @@ namespace rp
    * \author Sebastien Angibaud
    */
   class level_selector :
-    public bear::engine::item_with_input_listener
-  < bear::engine::base_item >,
-    public entity
+    public bear::engine::item_with_input_listener< bear::engine::base_item >
   {
     DECLARE_BASE_ITEM(level_selector);
     

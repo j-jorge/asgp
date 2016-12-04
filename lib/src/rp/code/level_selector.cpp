@@ -173,8 +173,6 @@ void rp::level_selector::on_enters_layer()
       boost::bind
       ( &rp::level_selector::on_star_angle_change,
         this, _1 ), &claw::tween::easing_linear::ease_out );
-
-  create_interactive_item(*this, 1, 0);
 } // level_selector::on_enters_layer()
 
 /*---------------------------------------------------------------------------*/
@@ -219,10 +217,6 @@ void rp::level_selector::progress( bear::universe::time_type elapsed_time )
 
   if ( is_selected_level() )
     check_orders();
-  
-  set_passive
-    ( ( m_level_state == level_state::locked )
-      || ( s_selection && ! is_selected_level() ) );
 } // level_selector::progress()
 
 /*----------------------------------------------------------------------------*/
