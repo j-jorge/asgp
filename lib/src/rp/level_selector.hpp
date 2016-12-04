@@ -123,6 +123,7 @@ namespace rp
     void start_update();
     void end_update();
     void unlock();
+    void animate_unlock();
     void show_star();
     void show_medal(unsigned int medal);
 
@@ -288,6 +289,7 @@ namespace rp
     unsigned int m_level_state;
 
     boost::signals2::scoped_connection m_ad_connection;
+    bool m_animate_unlock;
     
     /** \brief Indicates if a level is selected. */
     static bool s_selection;

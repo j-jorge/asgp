@@ -62,11 +62,13 @@ rp::level_selector::level_selector()
   m_theme("western"), m_level_name_gap_y(0.0),
   m_mouse_in(false), m_rectangle(NULL),
   m_decorative_level_name(NULL), m_load(false), m_rectangle_opacity(0),
-  m_medal_movement(1), m_cursor(NULL)
+  m_medal_movement(1), m_cursor(NULL),
+  m_animate_unlock( false )
 {
   set_artificial( true );
   set_phantom( true );
   set_can_move_items( false );
+  set_global( true );
 } // rp::level_selector::level_selector()
 
 rp::level_selector::level_selector( const level_selector& that )
@@ -187,6 +189,12 @@ void rp::level_selector::progress( bear::universe::time_type elapsed_time )
   
   super::progress( elapsed_time );
 
+  if ( game_variables::get_selected_serial() != m_serial_number )
+    {
+      update_state();
+      return;
+    }
+  
   game_variables::set_boss_transition(false);
   progress_input_reader(elapsed_time);
 
@@ -207,7 +215,12 @@ void rp::level_selector::progress( bear::universe::time_type elapsed_time )
     }
 
   if ( ! m_updated && ( ! s_selection || is_selected_level() ) )
-    update_state();
+    {
+      update_state();
+
+      if ( m_animate_unlock )
+        animate_unlock();
+    }
 
   if ( game_variables::get_serial_number() == m_serial_number && 
        game_variables::get_level_number() == m_level_number )
@@ -805,10 +818,6 @@ void rp::level_selector::end_update()
   set_z_position(get_z_position() - 10);  
 } // level_selector::end_update()
 
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Unlock the level.
- */
 void rp::level_selector::unlock()
 {
   tag_event
@@ -818,39 +827,28 @@ void rp::level_selector::unlock()
         make_event_property( "level", m_level_number  )
       } );
 
-  start_update();
-
   if ( game_variables::get_unlocked_serial() < m_serial_number )
     game_variables::set_unlocked_serial(m_serial_number);
-      
-  // rotation
-  claw::tween::tweener_sequence tween1;
-  tween1.insert
-    ( claw::tween::single_tweener
-      (0.0, 0.52, 0.25,
-       boost::bind
-       ( &rp::level_selector::on_unlock_angle_change,
-         this, _1 ), &claw::tween::easing_linear::ease_out ) );
-  tween1.insert
-    ( claw::tween::single_tweener
-      (0.52, -0.52, 0.5,
-       boost::bind
-       ( &rp::level_selector::on_unlock_angle_change,
-         this, _1 ), &claw::tween::easing_linear::ease_out ) );
-  tween1.insert
-    ( claw::tween::single_tweener
-      (-0.52, 0.0, 0.25,
-       boost::bind
-       ( &rp::level_selector::on_unlock_angle_change,
-         this, _1 ), &claw::tween::easing_linear::ease_out ) );
 
-  tween1.on_finished
-    ( boost::bind( &rp::level_selector::on_unlock_change, this ));
-  
-  m_tweeners.insert(tween1);
+  m_level_state = get_new_state();
+  game_variables::set_level_state
+    ( m_serial_number, m_level_number, m_level_state );
 
-  // zoom
+  update_visibility();
+  m_level_sprite.set_opacity(1);
+  m_animate_unlock = true;
+}
+
+void rp::level_selector::animate_unlock()
+{
+  m_animate_unlock = false;
+  start_update();
+
   claw::tween::tweener_sequence tween2;
+  tween2.insert
+    ( claw::tween::single_tweener
+      ( 0, 0, 1.2, []( float ) -> void {},
+        &claw::tween::easing_linear::ease_out ) );
   tween2.insert
     ( claw::tween::single_tweener
       (m_level_factor, m_init_level_factor*2, 0.5,
@@ -864,8 +862,11 @@ void rp::level_selector::unlock()
        ( &rp::level_selector::on_unlock_factor_change,
          this, _1 ), &claw::tween::easing_linear::ease_out ) );
   
+  tween2.on_finished
+    ( boost::bind( &rp::level_selector::on_unlock_change, this ));
+
   m_tweeners.insert(tween2);
-} // level_selector::unlock()
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -934,13 +935,6 @@ void rp::level_selector::show_medal( unsigned int medal )
  */
 void rp::level_selector::on_unlock_change()
 {
-  game_variables::set_level_state
-    (m_serial_number, m_level_number, get_new_state());
-  m_level_state = 
-    game_variables::get_level_state( m_serial_number, m_level_number );
-  update_visibility();
-  m_level_sprite.set_opacity(1);
-
   end_update();
 } // level_selector::on_unlock_change()
 
