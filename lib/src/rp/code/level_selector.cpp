@@ -699,7 +699,7 @@ void rp::level_selector::render_border
   bear::visual::scene_sprite s( pos.x, pos.y, m_border_sprite);
 
 #ifdef __ANDROID__
-  const bool mouse_check( true );
+  const bool mouse_check( m_level_state == level_state::unlocked );
 #else
   const bool mouse_check( m_mouse_in );
 #endif
@@ -1385,19 +1385,25 @@ void rp::level_selector::check_back_order()
  */
 void rp::level_selector::check_level_ending()
 {
-  if ( game_variables::is_level_ending() )
-    {
-      if ( m_cursor != NULL )
-        m_cursor->get_rendering_attributes().set_opacity(1);
-      game_variables::set_back_order_status(false);
-      game_variables::set_go_order_status(false);
+  if ( !game_variables::is_level_ending() )
+    return;
+  
+  if ( m_cursor != NULL )
+    m_cursor->get_rendering_attributes().set_opacity(1);
+      
+  game_variables::set_back_order_status(false);
+  game_variables::set_go_order_status(false);
 
-      if ( m_load )
-        m_ad_connection =
-          show_interstitial
-          ( ad_location::level_completed,
-            boost::bind( &level_selector::resume, this ) );
-    }
+  if ( !m_load )
+    return;
+  
+  if ( m_serial_number == 0 )
+    resume();
+  else
+    m_ad_connection =
+      show_interstitial
+      ( ad_location::level_completed,
+        boost::bind( &level_selector::resume, this ) );
 }
 
 void rp::level_selector::resume()
