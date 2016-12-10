@@ -794,7 +794,7 @@ void rp::game_variables::add_score
   set_points(points);
 
   if ( floating_score )
-    set_new_score(true);
+    set_new_score();
   else
     {
       int c = combo * points;
@@ -819,10 +819,13 @@ std::string rp::game_variables::get_new_score_variable_name()
  * \brief Set new score state.
  * \param value The new value.
  */
-void rp::game_variables::set_new_score(bool value)
+void rp::game_variables::set_new_score()
 {
+  static const std::string name( get_new_score_variable_name() );
+  const bool value( rp_game_variables_get_value( name, false ) );
+  
   bear::engine::game::get_instance().set_game_variable
-    ( bear::engine::variable<bool>( get_new_score_variable_name(), value) );
+    ( bear::engine::variable<bool>( name, !value ) );
 } // game_variables::set_new_score()
 
 /*----------------------------------------------------------------------------*/

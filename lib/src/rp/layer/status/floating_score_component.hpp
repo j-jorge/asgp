@@ -30,11 +30,8 @@ namespace rp
   class floating_score_component
   {
   public:
-    /** \brief The type of the parent class. */
-    typedef status_component super;
- 
-  public:
-    floating_score_component(bear::engine::level_globals& glob);
+    explicit floating_score_component(bear::engine::level_globals& glob);
+    
     void progress(bear::universe::time_type elapsed_time);
     void render( status_component::scene_element_list& e ) const;
     bool is_finished() const;

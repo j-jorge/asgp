@@ -123,20 +123,22 @@ std::string rp::util::get_level_name()
 void rp::util::create_floating_score
 ( bear::engine::base_item& item, unsigned int points)
 {
-  game_variables::set_score_rate_x
-    ( ( item.get_horizontal_middle() - item.get_level().get_camera_center().x) /
-      item.get_level().get_camera()->get_width() );
-  game_variables::set_score_rate_y
-    ( ( item.get_vertical_middle() - item.get_level().get_camera_center().y) /
-      item.get_level().get_camera()->get_height() );
+  const bear::universe::physical_item& camera( *item.get_level().get_camera() );
 
-  entity* e = dynamic_cast<entity*>(&item);
+  game_variables::set_score_rate_x
+    ( ( item.get_horizontal_middle() - camera.get_horizontal_middle() )
+      / camera.get_width() );
+  game_variables::set_score_rate_y
+    ( ( item.get_vertical_middle() - camera.get_vertical_middle() )
+      / camera.get_height() );
+
+  entity* e( dynamic_cast< entity* >( &item ) );
   
   if ( e != NULL ) 
     {
-      unsigned int combo = e->get_combo_value();
+      const unsigned int combo( e->get_combo_value() );
 
-      if (  combo > 0 )
+      if ( combo > 0 )
         {
           game_variables::add_score( combo, points, true );
         

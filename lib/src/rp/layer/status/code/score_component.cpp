@@ -206,24 +206,19 @@ void rp::score_component::create_tweener()
  */
 void rp::score_component::on_new_score(bool value)
 {
-  if ( value )
-    {
-      bear::visual::position_type pos(get_layer_size()/2);
-      pos.x +=
-        ( game_variables::get_score_rate_x() * get_layer_size().x);
-      pos.y +=
-        ( game_variables::get_score_rate_y() * get_layer_size().y);
+  bear::visual::position_type pos(get_layer_size()/2);
+  pos.x +=
+    ( game_variables::get_score_rate_x() * get_layer_size().x);
+  pos.y +=
+    ( game_variables::get_score_rate_y() * get_layer_size().y);
 
-      bear::visual::position_type end_pos(pos);
-      end_pos.y = get_layer_size().y;
+  bear::visual::position_type end_pos(pos);
+  end_pos.y = get_layer_size().y;
 
-      floating_score_component f(get_level_globals());
+  floating_score_component f(get_level_globals());
 
-      m_floating_score.push_back(f);
-      m_floating_score.back().set_position
-        (pos, get_render_position() +
-         bear::universe::position_type( width() / 2, 0 ) );
-
-      game_variables::set_new_score(false);
-    }
+  m_floating_score.push_back(f);
+  m_floating_score.back().set_position
+    (pos, get_render_position() +
+     bear::universe::position_type( width() / 2, 0 ) );
 } // score_component::on_new_score()

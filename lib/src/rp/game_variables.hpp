@@ -169,7 +169,7 @@ namespace rp
 
     // floating_score
     static std::string get_new_score_variable_name();
-    static void set_new_score(bool value);
+    static void set_new_score();
     static std::string get_combo_variable_name();
     static unsigned int get_combo();
     static void set_combo(unsigned int c );

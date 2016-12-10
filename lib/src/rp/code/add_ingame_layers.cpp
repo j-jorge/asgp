@@ -60,71 +60,91 @@ rp::add_ingame_layers::add_ingame_layers()
  */
 void rp::add_ingame_layers::pre_cache()
 {
-  get_level_globals().load_image( rp_gettext("gfx/status/buttons.png") );
-  get_level_globals().load_image( rp_gettext("gfx/status/buttons-2.png") );
-  get_level_globals().load_image( rp_gettext("gfx/status/bonus.png") );
+  bear::engine::level_globals& globals( get_level_globals() );
+  
+  globals.load_image( rp_gettext("gfx/status/buttons.png") );
+  globals.load_image( rp_gettext("gfx/status/buttons-2.png") );
+  globals.load_image( rp_gettext("gfx/status/bonus.png") );
 
-  get_level_globals().load_sound( "sound/medal/applause.ogg" );
-  get_level_globals().load_sound( "sound/tick.ogg" );
-  get_level_globals().load_sound( "sound/cart/andy/sad.ogg" );
-  get_level_globals().load_sound( "sound/medal/bronze.ogg" );
-  get_level_globals().load_sound( "sound/medal/silver.ogg" );
-  get_level_globals().load_sound( "sound/medal/gold.ogg" );
+  globals.load_sound( "sound/medal/applause.ogg" );
+  globals.load_sound( "sound/tick.ogg" );
+  globals.load_sound( "sound/cart/andy/sad.ogg" );
+  globals.load_sound( "sound/medal/bronze.ogg" );
+  globals.load_sound( "sound/medal/silver.ogg" );
+  globals.load_sound( "sound/medal/gold.ogg" );
 
-  get_level_globals().load_font( "font/FrancoisOne.ttf" );
-  get_level_globals().load_font( "font/LuckiestGuy.ttf" );
+  globals.load_font( "font/FrancoisOne.ttf" );
+  globals.load_font( "font/LuckiestGuy.ttf" );
   
   // These may be optional for each level. We still load them everytime in order
   // for the user to endure the loading time at the beginning of the game.
-  get_level_globals().load_model("model/balloon.cm");
-  get_level_globals().load_model("model/bomb.cm");
-  get_level_globals().load_model("model/tar.cm");
-  get_level_globals().load_model("model/switching.cm");
-  get_level_globals().load_model("model/wall.cm");
-  get_level_globals().load_model("model/tnt.cm");
-  get_level_globals().load_model("model/zeppelin/zeppelin.cm");
-  get_level_globals().load_model("model/zeppelin/zeppelin-mirror.cm");
+  globals.load_model("model/balloon.cm");
+  globals.load_model("model/bomb.cm");
+  globals.load_model("model/tar.cm");
+  globals.load_model("model/switching.cm");
+  globals.load_model("model/wall.cm");
+  globals.load_model("model/tnt.cm");
+  globals.load_model("model/zeppelin/zeppelin.cm");
+  globals.load_model("model/zeppelin/zeppelin-mirror.cm");
 
-  get_level_globals().load_image( "gfx/aquatic/ground/ground-1.png" );
-  get_level_globals().load_image( "gfx/aquatic/ground/ground-2.png" );
-  get_level_globals().load_image( "gfx/aquatic/ground/ground-3.png" );
-  get_level_globals().load_image( "gfx/wall-fill/aquatic/wall-fill-1.png" );
-  get_level_globals().load_image( "gfx/wall-fill/aquatic/wall-fill-2.png" );
+  globals.load_image( "gfx/aquatic/ground/ground-1.png" );
+  globals.load_image( "gfx/aquatic/ground/ground-2.png" );
+  globals.load_image( "gfx/aquatic/ground/ground-3.png" );
+  globals.load_image( "gfx/wall-fill/aquatic/wall-fill-1.png" );
+  globals.load_image( "gfx/wall-fill/aquatic/wall-fill-2.png" );
 
-  get_level_globals().load_image( "gfx/cake/ground/ground-1.png" );
-  get_level_globals().load_image( "gfx/cake/ground/ground-2.png" );
-  get_level_globals().load_image( "gfx/cake/ground/ground-3.png" );
-  get_level_globals().load_image( "gfx/wall-fill/cake/wall-fill-1.png" );
-  get_level_globals().load_image( "gfx/wall-fill/cake/wall-fill-2.png" );
-  get_level_globals().load_image( "gfx/wall-fill/cake/wall-fill-3.png" );
+  globals.load_image( "gfx/cake/ground/ground-1.png" );
+  globals.load_image( "gfx/cake/ground/ground-2.png" );
+  globals.load_image( "gfx/cake/ground/ground-3.png" );
+  globals.load_image( "gfx/wall-fill/cake/wall-fill-1.png" );
+  globals.load_image( "gfx/wall-fill/cake/wall-fill-2.png" );
+  globals.load_image( "gfx/wall-fill/cake/wall-fill-3.png" );
 
-  get_level_globals().load_image( "gfx/death/ground/ground-1.png" );
-  get_level_globals().load_image( "gfx/death/ground/ground-2.png" );
-  get_level_globals().load_image( "gfx/death/ground/ground-3.png" );
-  get_level_globals().load_image( "gfx/wall-fill/death/wall-fill-1.png" );
-  get_level_globals().load_image( "gfx/wall-fill/death/wall-fill-2.png" );
-  get_level_globals().load_image( "gfx/wall-fill/death/wall-fill-3.png" );
+  globals.load_image( "gfx/death/ground/ground-1.png" );
+  globals.load_image( "gfx/death/ground/ground-2.png" );
+  globals.load_image( "gfx/death/ground/ground-3.png" );
+  globals.load_image( "gfx/wall-fill/death/wall-fill-1.png" );
+  globals.load_image( "gfx/wall-fill/death/wall-fill-2.png" );
+  globals.load_image( "gfx/wall-fill/death/wall-fill-3.png" );
 
-  get_level_globals().load_image( "gfx/garden/ground/ground-1.png" );
-  get_level_globals().load_image( "gfx/garden/ground/ground-2.png" );
-  get_level_globals().load_image( "gfx/garden/ground/ground-3.png" );
-  get_level_globals().load_image( "gfx/wall-fill/garden/wall-fill-1.png" );
-  get_level_globals().load_image( "gfx/wall-fill/garden/wall-fill-2.png" );
-  get_level_globals().load_image( "gfx/wall-fill/garden/wall-fill-3.png" );
+  globals.load_image( "gfx/garden/ground/ground-1.png" );
+  globals.load_image( "gfx/garden/ground/ground-2.png" );
+  globals.load_image( "gfx/garden/ground/ground-3.png" );
+  globals.load_image( "gfx/wall-fill/garden/wall-fill-1.png" );
+  globals.load_image( "gfx/wall-fill/garden/wall-fill-2.png" );
+  globals.load_image( "gfx/wall-fill/garden/wall-fill-3.png" );
 
-  get_level_globals().load_image( "gfx/space/ground/ground-1.png" );
-  get_level_globals().load_image( "gfx/space/ground/ground-2.png" );
-  get_level_globals().load_image( "gfx/space/ground/ground-3.png" );
-  get_level_globals().load_image( "gfx/wall-fill/space/wall-fill-1.png" );
-  get_level_globals().load_image( "gfx/wall-fill/space/wall-fill-2.png" );
-  get_level_globals().load_image( "gfx/wall-fill/space/wall-fill-3.png" );
+  globals.load_image( "gfx/space/ground/ground-1.png" );
+  globals.load_image( "gfx/space/ground/ground-2.png" );
+  globals.load_image( "gfx/space/ground/ground-3.png" );
+  globals.load_image( "gfx/wall-fill/space/wall-fill-1.png" );
+  globals.load_image( "gfx/wall-fill/space/wall-fill-2.png" );
+  globals.load_image( "gfx/wall-fill/space/wall-fill-3.png" );
 
-  get_level_globals().load_image( "gfx/western/ground/ground-1.png" );
-  get_level_globals().load_image( "gfx/western/ground/ground-2.png" );
-  get_level_globals().load_image( "gfx/western/ground/ground-3.png" );
-  get_level_globals().load_image( "gfx/wall-fill/western/wall-fill-1.png" );
-  get_level_globals().load_image( "gfx/wall-fill/western/wall-fill-2.png" );
-  get_level_globals().load_image( "gfx/wall-fill/western/wall-fill-3.png" );
+  globals.load_image( "gfx/western/ground/ground-1.png" );
+  globals.load_image( "gfx/western/ground/ground-2.png" );
+  globals.load_image( "gfx/western/ground/ground-3.png" );
+  globals.load_image( "gfx/wall-fill/western/wall-fill-1.png" );
+  globals.load_image( "gfx/wall-fill/western/wall-fill-2.png" );
+  globals.load_image( "gfx/wall-fill/western/wall-fill-3.png" );
+
+  static const std::array< unsigned int, 4 > digit_font_sizes
+      {{ 25, 32, 40, 64 }};
+  
+  for ( unsigned int size : digit_font_sizes )
+    {
+      const bear::visual::font font
+        ( globals.get_font( "font/LuckiestGuy.ttf", size ) );
+
+      for ( char c : "0123456789" )
+        font.get_sprite( c );
+    }
+
+  const bear::visual::font font
+    ( globals.get_font( "font/LuckiestGuy.ttf", 32 ) );
+
+  for ( char c : "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ" )
+    font.get_sprite( c );
 } // add_ingame_layers::pre_cache()
 
 /*----------------------------------------------------------------------------*/

@@ -60,7 +60,6 @@ void rp::level_settings::build()
   game_variables::set_boss_level(m_boss_level);
   game_variables::set_boss_transition(m_boss_transition);
   game_variables::set_ending_effect(false);
-  game_variables::set_new_score(false);
   game_variables::set_last_combo( 0 );
 
   const int plunger_count( 3 + 3 * has_extra_plungers() );
