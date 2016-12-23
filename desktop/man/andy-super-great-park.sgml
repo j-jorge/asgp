@@ -26,7 +26,7 @@ manpage.1: manpage.sgml
   <!ENTITY dhsection   "<manvolnum>6</manvolnum>">
   <!ENTITY dhemail     "<email>julien.jorge@stuff-o-matic.com</email>">
   <!ENTITY dhusername  "Julien Jorge">
-  <!ENTITY dhucpackage "<refentrytitle>ANDY-SUPER-GREAT-PARK</refentrytitle>">
+  <!ENTITY dhucpackage "<refentrytitle>andy-super-great-park</refentrytitle>">
   <!ENTITY dhpackage   "andy-super-great-park">
 
   <!ENTITY debian      "<productname>Debian</productname>">
