@@ -13,6 +13,7 @@
  */
 #include "rp/explosion.hpp"
 
+#include "rp/game_variables.hpp"
 #include "rp/util.hpp" 
 #include "rp/zeppelin.hpp" 
 
@@ -68,6 +69,8 @@ void rp::explosion::on_enters_layer()
 {
   super::on_enters_layer();
 
+  game_variables::set_action_snapshot();
+  
   set_phantom(true);
   set_can_move_items(false);
   set_weak_collisions(true);

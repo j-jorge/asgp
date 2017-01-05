@@ -13,6 +13,7 @@
  */
 #include "rp/attractable_item.hpp"
 #include "rp/cart.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/plunger.hpp" 
 #include "rp/util.hpp"
 
@@ -47,6 +48,8 @@ void rp::attractable_item::attract(plunger* p)
       
       set_forced_movement( mvt );
       set_combo_value(1);
+      
+      game_variables::set_action_snapshot();
     }
 } // attractable_item::attract()
 

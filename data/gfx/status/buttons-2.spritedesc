@@ -18,6 +18,11 @@ buttons_img "buttons.xcf.bz2"
   "green box"
   ;
 
+"share" image_size * 0.5 with buttons_img
+  glob "share*"
+  "green box"
+  ;
+
 "check" autosize * 0.5 with buttons_img
   "check"
   ;

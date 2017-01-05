@@ -1,5 +1,5 @@
 /* The size of the resulting image. */
-sprite_sheet "status" 1024 x 512
+sprite_sheet "status" 1024 x 1024
 
 /* the source images and their ratio in the result */
 status_img "status.xcf.bz2"
@@ -16,6 +16,7 @@ end_game_gauge_back_img "end-game/gauge-back.png"
 end_game_gauge_front_img "end-game/gauge-front.png"
 balloons_img "end-game/balloons.png"
 balloon_img "end-game/balloon.png"
+capture_img "end-game/capture.xcf"
 
 "panel" autosize * 0.5 with intro_img
   "lens"
@@ -142,4 +143,8 @@ balloon_img "end-game/balloon.png"
   "light edge"
   "score shadow"
   "combo shadow"
+  ;
+
+"capture-placeholder" autosize * 0.5 with capture_img
+  glob "*"
   ;

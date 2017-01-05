@@ -18,6 +18,7 @@
 #include "rp/cannonball.hpp"
 #include "rp/crate.hpp"
 #include "rp/explosion.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/cable.hpp"
 #include "rp/plank.hpp"
 #include "rp/tar.hpp"
@@ -111,6 +112,7 @@ void rp::bird::afraid(bool give_points)
       
       set_speed(bear::universe::speed_type(0,0));
       
+      game_variables::set_action_snapshot();
       start_model_action("afraid");
     }
 } // bird::afraid()
@@ -134,6 +136,23 @@ void rp::bird::plunger_collision()
       create_feathers();
     }
 } // bird::plunger_collision()
+
+bool rp::bird::is_afraid() const
+{
+  const std::string& action( get_current_action_name() );
+  
+  return ( action == "afraid" ) || ( action == "hit" );
+}
+
+bool rp::bird::is_dying() const
+{
+  return get_current_action_name() == "dead";
+}
+
+bool rp::bird::is_flying() const
+{
+  return get_current_action_name() == "fly";
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -165,6 +184,7 @@ bool rp::bird::collision_with_cannonball( bear::engine::base_item& that )
         {
           set_combo_value( c->get_combo_value() );
           start_model_action("hit");
+          game_variables::set_action_snapshot();
         }
 
       c->kill();
@@ -197,6 +217,7 @@ bool rp::bird::collision_with_explosion
           if ( e->get_combo_value() != 0 )
             set_combo_value(e->get_combo_value()+1);
           start_model_action("hit");
+          game_variables::set_action_snapshot();
         }
       
       result = true;
@@ -224,6 +245,7 @@ bool rp::bird::collision_with_cart( bear::engine::base_item& that )
           set_combo_value(0);
           start_model_action("hit");
           c->is_hit();
+          game_variables::set_action_snapshot();
         }
          
       result = true;
@@ -251,6 +273,7 @@ bool rp::bird::collision_with_cable( bear::engine::base_item& that )
           if ( c->is_ejected() && ( c->get_combo_value() != 0 ) )
             set_combo_value(c->get_combo_value()+1);
           start_model_action("hit");
+          game_variables::set_action_snapshot();
         }
       
       result = true;
@@ -315,6 +338,7 @@ bool rp::bird::collision_with_plank( bear::engine::base_item& that )
           if ( p->get_combo_value() != 0 )
             set_combo_value(p->get_combo_value()+1);
           start_model_action("hit");
+          game_variables::set_action_snapshot();
         }
       
       result = true;
@@ -373,6 +397,7 @@ bool rp::bird::collision_with_tar( bear::engine::base_item& that )
             set_combo_value(t->get_combo_value()+1);
           
           start_model_action("hit");
+          game_variables::set_action_snapshot();
         }
       make_dirty();
       t->kill();
@@ -471,6 +496,8 @@ bool rp::bird::collision_with_zeppelin
               z->explose();
               if ( z->get_combo_value() > 0 )
                 set_combo_value(z->get_combo_value()+1);
+
+              game_variables::set_action_snapshot();
               start_model_action("hit");
             }
           else if ( info.get_collision_side() != 

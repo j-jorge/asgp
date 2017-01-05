@@ -18,6 +18,7 @@ set( RP_SOURCE_FILES
   code/add_ingame_layers.cpp
   code/attractable_item.cpp
   code/balloon.cpp
+  code/best_action_observer.cpp
   code/bird.cpp
   code/bird_support.cpp
   code/bomb.cpp
@@ -90,11 +91,15 @@ set( RP_SOURCE_FILES
   layer/status/code/time_component.cpp
   
   message/code/help_layer_starting_message.cpp
+  message/code/level_capture_ready_message.cpp
   message/code/key_layer_starting_message.cpp
   message/code/pause_message.cpp
 
   power_up/code/has_extra_plungers.cpp
   
+  sharing/code/share.cpp
+  
+  transition_effect/code/level_ending_effect_default_name.cpp
   transition_effect/code/level_ending_effect.cpp
   transition_effect/code/level_starting_effect.cpp
   )

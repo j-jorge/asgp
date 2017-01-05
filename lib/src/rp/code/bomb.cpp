@@ -17,6 +17,7 @@
 #include "rp/plank.hpp"
 #include "rp/cart.hpp"
 #include "rp/explosion.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/obstacle.hpp"
 #include "rp/tar.hpp"
 #include "rp/util.hpp"
@@ -148,6 +149,7 @@ void rp::bomb::collision
  */
 void rp::bomb::explose()
 { 
+  game_variables::set_action_snapshot();
   set_transportability(false);
   kill_interactive_item();
   m_explosed = true;
@@ -394,6 +396,7 @@ bool rp::bomb::collision_with_tar
           set_mass(s_initial_mass * 3);
           make_dirty();
           t->explose();
+          game_variables::set_action_snapshot();
         }
       default_collision(info);
 

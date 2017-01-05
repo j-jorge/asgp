@@ -92,6 +92,7 @@ namespace rp
     static void set_level_ending(bool value);
 
     // ending effect
+    static std::string get_ending_effect_variable_name();
     static bool get_ending_effect();
     static void set_ending_effect(bool value);
 
@@ -230,6 +231,9 @@ namespace rp
     static std::string make_persistent_variable_name( const std::string& n );
     static void load_variables(const std::string& lvl);
     static void save_variables(const std::string& lvl);
+
+    static std::string get_action_snapshot_variable_name();
+    static void set_action_snapshot();
   }; // class game_variables
 } // namespace rp
 

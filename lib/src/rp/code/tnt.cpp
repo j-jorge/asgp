@@ -16,6 +16,7 @@
 #include "rp/bomb.hpp"
 #include "rp/cannonball.hpp"
 #include "rp/cart.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/plank.hpp" 
 #include "rp/explosion.hpp"
 #include "rp/util.hpp"
@@ -88,6 +89,7 @@ void rp::tnt::explose(bool give_score)
 { 
   if ( ! m_explosed  )
     {
+      game_variables::set_action_snapshot();
       set_transportability(false);
       kill_interactive_item();
 

@@ -55,7 +55,11 @@ namespace rp
     ( bear::engine::base_item& that, bear::universe::collision_info& info );
     void afraid(bool give_points = true);
     void plunger_collision();
- 
+
+    bool is_afraid() const;
+    bool is_dying() const;
+    bool is_flying() const;
+    
   protected:
     void populate_loader_map( bear::engine::item_loader_map& m );
     

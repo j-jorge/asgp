@@ -18,7 +18,10 @@
 #include "rp/rp_gettext.hpp"
 #include "rp/cart.hpp"
 #include "rp/util.hpp"
+#include "rp/events/make_event_property.hpp"
 #include "rp/events/tag_level_event.hpp"
+#include "rp/transition_effect/level_ending_effect_default_name.hpp"
+#include "rp/sharing/share.hpp"
 
 #include "engine/game.hpp"
 #include "engine/level.hpp"
@@ -236,9 +239,10 @@ const double rp::level_ending_effect::s_score_line_speed(150);
  * \brief Constructor.
  */
 rp::level_ending_effect::level_ending_effect()
-  : m_speed_factor(1), m_next_tick(0.1), m_world(NULL), m_cart(NULL), 
-    m_skip_button(NULL),
-    m_applause_sample(NULL), m_update_function(NULL), m_flash_opacity(0),
+  : bear::communication::messageable( get_level_ending_effect_default_name() ),
+    m_speed_factor(1), m_next_tick(0.1), m_world(nullptr), m_cart(nullptr), 
+    m_skip_button(nullptr), m_share_button(nullptr),
+    m_applause_sample(nullptr), m_update_function(nullptr), m_flash_opacity(0),
     m_play_tick(false),
     m_age( 0 )
 {
@@ -251,13 +255,20 @@ rp::level_ending_effect::level_ending_effect()
  * \param that The instance to copy from.
  */
 rp::level_ending_effect::level_ending_effect( const level_ending_effect& that )
-  : bear::engine::transition_effect(that), m_speed_factor(that.m_speed_factor),
+  : bear::engine::transition_effect(that),
+    bear::communication::messageable(get_level_ending_effect_default_name()),
+    m_speed_factor(that.m_speed_factor),
     m_next_tick(that.m_next_tick), m_world(that.m_world), m_cart(that.m_cart),
     m_finished(false), m_medal(0), m_rectangle_opacity(0), 
-    m_decorative_medal(NULL), m_pop_level(false), m_active_component(false),
-    m_skip_button(NULL),
-    m_in_fade_out(false), m_applause_sample(NULL), m_update_function(NULL),
-    m_flash_opacity(0), m_play_tick(false),
+    m_decorative_medal(nullptr), m_pop_level(false),
+    m_active_component(nullptr),
+    m_skip_button(nullptr),
+    m_share_button(nullptr),
+    m_in_fade_out(false),
+    m_applause_sample(nullptr),
+    m_update_function(nullptr),
+    m_flash_opacity(0),
+    m_play_tick(false),
     m_age( 0 )
 {
 
@@ -282,6 +293,19 @@ void rp::level_ending_effect::set_world( const bear::engine::world* w )
   m_world = w;
 } // level_ending_effect::set_world()
 
+void rp::level_ending_effect::set_level_capture
+( const std::string& path, const bear::visual::sprite& sprite )
+{
+  m_level_capture_path = path;
+  m_level_capture = sprite;
+
+  const bear::visual::size_type width( 300 );
+  m_level_capture.set_width( width );
+  m_level_capture.set_height( sprite.height() * width / sprite.width() );
+
+  m_share_button->set_visible( true );
+}
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Tell if the effect is finished.
@@ -297,6 +321,8 @@ bool rp::level_ending_effect::is_finished() const
  */
 void rp::level_ending_effect::build()
 {
+  get_level_globals().register_item(*this);
+  
   m_applause_sample = 
     get_level_globals().new_sample( "sound/medal/applause.ogg" );
 
@@ -353,8 +379,10 @@ void rp::level_ending_effect::build()
   create_medal_ticks();
   create_gauge_fill();
   create_gauge_foreground();
+  create_capture();
   
-  add_button_component();
+  add_skip_button();
+  add_share_button();
 
   m_background_on_sprite =
     get_level_globals().auto_sprite
@@ -391,7 +419,7 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
             < game_variables::get_score() )
     m_new_record_sprite.set_opacity(1);
 
-  if ( m_cart != NULL && game_variables::is_boss_level() )
+  if ( m_cart != nullptr && game_variables::is_boss_level() )
     do_start_level = do_start_level && m_cart->can_finish();
       
   if ( do_start_level && ! m_finished )
@@ -417,9 +445,9 @@ rp::level_ending_effect::progress( bear::universe::time_type elapsed_time )
       if ( game_variables::is_boss_level() )
         create_fade_out_tweener();
       else
-        m_skip_button->set_icon
-          ( get_level_globals().auto_sprite
-            ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
+          m_skip_button->set_icon
+            ( get_level_globals().auto_sprite
+              ( rp_gettext("gfx/status/buttons.png"), "continue" ) );
     }
 
   m_speed_factor = 1;
@@ -456,6 +484,7 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
     {
       render_score(e);
       render_flash_line(e);
+      render_level_capture(e);
       render_button_background(e);
       m_root_window.render( e );
     }
@@ -788,12 +817,23 @@ bool rp::level_ending_effect::mouse_move
   
   if ( m_skip_button->get_rectangle().includes(pos) )
     {
-      if ( ! m_active_component )
-        get_level_globals().play_sound( "sound/tick.ogg" );
-      m_active_component = true;
+      if ( m_active_component != m_skip_button )
+        {
+          get_level_globals().play_sound( "sound/tick.ogg" );
+          m_active_component = m_skip_button;
+        }
+    }
+  else if ( m_share_button->get_visible()
+            && m_share_button->get_rectangle().includes(pos) )
+    {
+      if ( m_active_component != m_share_button )
+        {
+          get_level_globals().play_sound( "sound/tick.ogg" );
+          m_active_component = m_share_button;
+        }
     }
   else
-    m_active_component = false;
+    m_active_component = nullptr;
   
   return false;
 } // level_ending_effect::mouse_move()
@@ -875,7 +915,7 @@ void rp::level_ending_effect::skip()
  */
 void rp::level_ending_effect::fill_points()
 {
-  if ( m_world == NULL )
+  if ( m_world == nullptr )
     return;
 
   const bear::visual::font f
@@ -1017,7 +1057,7 @@ void rp::level_ending_effect::give_time_points
 {
   const bear::timer* timer = m_cart->get_level_timer();
   
-  if ( timer != NULL )
+  if ( timer != nullptr )
     {
       unsigned int t = (unsigned int)( timer->get_time() );
       
@@ -1090,10 +1130,10 @@ void rp::level_ending_effect::initialize_line_position
 bool rp::level_ending_effect::update_lines
 ( bear::universe::time_type elapsed_time )
 {
-  if ( m_update_function != NULL )
+  if ( m_update_function != nullptr )
     (this->*m_update_function)( elapsed_time );
 
-  return m_update_function == NULL;
+  return m_update_function == nullptr;
 } // level_ending_effect::update_lines()
 
 /*----------------------------------------------------------------------------*/
@@ -1223,7 +1263,7 @@ void rp::level_ending_effect::flash_positive_persistent
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Applies the change of the opacity on the flash rectangle. When the
- *        flash is over the update function is set to NULL.
+ *        flash is over the update function is set to nullptr.
  * \param elapsed_time Elapsed time since the last call.
  */
 void rp::level_ending_effect::flash_negative_persistent
@@ -1233,7 +1273,7 @@ void rp::level_ending_effect::flash_negative_persistent
     std::max( 0.0, m_flash_opacity - 1 * elapsed_time );
 
   if ( m_flash_opacity == 0 )
-    m_update_function = NULL;
+    m_update_function = nullptr;
 } // level_ending_effect::flash_negative_persistent()
 
 /*----------------------------------------------------------------------------*/
@@ -1416,7 +1456,7 @@ void rp::level_ending_effect::update_unlocked_serial() const
  */
 void rp::level_ending_effect::create_decorative_medal()
 { 
-  if ( m_decorative_medal != NULL )
+  if ( m_decorative_medal != nullptr )
     m_decorative_medal->clear_forced_movement();
 
   m_decorative_medal = new bear::decorative_item();
@@ -1522,8 +1562,9 @@ void rp::level_ending_effect::render_score( scene_element_list& e) const
 void rp::level_ending_effect::render_score_lines
 ( scene_element_list& e, const std::list<score_line>& lines ) const
 {
-  bear::visual::coordinate_type left( 2 * s_screen_margin );
-  bear::visual::coordinate_type right( get_layer().get_size().x - left );
+  const bear::visual::coordinate_type left( s_screen_margin );
+  const bear::visual::coordinate_type right
+    ( get_layer().get_size().x * 0.78 - 150 - s_screen_margin );
 
   std::list<score_line>::const_iterator it;
 
@@ -1548,7 +1589,7 @@ void rp::level_ending_effect::render_flash_line( scene_element_list& e ) const
     ( m_persistent_points.back().get_height() + 2 * margin );
   
   const bear::visual::rectangle_type flash_rectangle
-    ( 0, bottom, get_layer().get_size().x, bottom + height );
+    ( 0, bottom, get_layer().get_size().x * 0.75, bottom + height );
 
   bear::visual::color_type c("#ffffff");
   c.set_opacity( m_flash_opacity );
@@ -1632,19 +1673,26 @@ void rp::level_ending_effect::render_medal( scene_element_list& e ) const
 void
 rp::level_ending_effect::render_button_background( scene_element_list& e ) const
 {
-  if ( m_skip_button == nullptr )
+  render_button_background( e, m_skip_button );
+  render_button_background( e, m_share_button );
+}
+
+void rp::level_ending_effect::render_button_background
+( scene_element_list& e, bear::gui::button* button ) const
+{
+  if ( ( button == nullptr ) || !button->get_visible() )
     return;
   
-  if ( m_skip_button->get_visible() )
+  if ( button->get_visible() )
     {
-      if ( m_active_component )
+      if ( m_active_component == button )
         {
           bear::visual::scene_sprite s
-            ( m_skip_button->left()
-              - ( m_background_on_sprite.width() - m_skip_button->width() )
+            ( button->left()
+              - ( m_background_on_sprite.width() - button->width() )
               / 2,
-              m_skip_button->bottom()
-              - ( + m_background_on_sprite.height() - m_skip_button->height() )
+              button->bottom()
+              - ( + m_background_on_sprite.height() - button->height() )
               / 2,
               m_background_on_sprite );
           e.push_back( s );
@@ -1652,16 +1700,39 @@ rp::level_ending_effect::render_button_background( scene_element_list& e ) const
       else
         {
           bear::visual::scene_sprite s
-            ( m_skip_button->left()
-              - ( m_background_off_sprite.width() - m_skip_button->width() )
+            ( button->left()
+              - ( m_background_off_sprite.width() - button->width() )
               / 2,
-              m_skip_button->bottom()
-              - ( + m_background_off_sprite.height() - m_skip_button->height() )
+              button->bottom()
+              - ( + m_background_off_sprite.height() - button->height() )
               / 2,
               m_background_off_sprite );
           e.push_back( s );
         }
     }
+}
+
+void
+rp::level_ending_effect::render_level_capture( scene_element_list& e ) const
+{
+  const bear::universe::size_box_type size( get_layer().get_size() );
+  const bear::visual::size_type half_width( m_level_capture.width() / 2 );
+  const bear::visual::size_type half_height( m_level_capture.height() / 2 );
+  const bear::visual::position_type center( size.x * 0.78, size.y * 0.66 );
+  
+  bear::visual::scene_rectangle rect
+    ( center.x - half_width - 5, center.y - half_height - 5,
+      bear::visual::color( "#ffffff" ),
+      bear::visual::rectangle_type
+      ( 0, 0, m_level_capture.width() + 10, m_level_capture.height() + 10 ),
+      true );
+  rect.set_shadow( 5, -5 );
+  e.push_back( rect );
+
+  bear::visual::scene_sprite sp
+    ( center.x - half_width, center.y - half_height, m_level_capture );
+  e.push_back( sp );
+
 }
 
 /*----------------------------------------------------------------------------*/
@@ -1708,7 +1779,7 @@ void rp::level_ending_effect::pop_level()
 /**
  * \brief Creates the button component.
  */
-void rp::level_ending_effect::add_button_component()
+void rp::level_ending_effect::add_skip_button()
 {
   m_skip_button =
     new bear::gui::button
@@ -1737,7 +1808,11 @@ void rp::level_ending_effect::on_pass_scores()
     {
       if ( !m_in_fade_out )
         {
-          tag_level_event( "end-continue" );
+          tag_level_event
+            ( "end-continue",
+              { make_event_property
+                  ( "capture-ready", !m_level_capture_path.empty() ) } );
+          
           create_fade_out_tweener();
           m_in_fade_out = true;
         }
@@ -1745,3 +1820,41 @@ void rp::level_ending_effect::on_pass_scores()
   else
     skip();
 } // level_ending_effect::on_pass_scores()
+
+void rp::level_ending_effect::create_capture()
+{
+  m_level_capture =
+    get_level_globals().auto_sprite
+    ( rp_gettext("gfx/status/status.png"), "capture-placeholder" );
+}
+
+void rp::level_ending_effect::add_share_button()
+{
+  m_share_button =
+    new bear::gui::button
+    ( get_level_globals().auto_sprite
+      ( rp_gettext("gfx/status/buttons-2.png"), "share" ) );
+
+  m_share_button->set_right( get_layer().get_size().x - 80 );
+  m_share_button->set_bottom( m_bottom_strip->get_height() + 30 );
+
+  m_share_button->add_callback
+    ( bear::gui::callback_function_maker
+      ( boost::bind( &level_ending_effect::on_share, this ) ) );
+  m_share_button->set_visible( false );
+  
+  m_root_window.insert( m_share_button );
+}
+
+void rp::level_ending_effect::on_share()
+{
+  tag_level_event( "end-share" );
+  
+  boost::format format
+    ( rp_gettext( "Look what I do in Straining Coasters!\n%1%" ) );
+  format =
+    format
+    % "https://play.google.com/store/apps/details?id=com.stuffomatic.coasters";
+  
+  share( m_level_capture_path, format.str() );
+}

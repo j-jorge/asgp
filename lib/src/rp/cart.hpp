@@ -115,8 +115,13 @@ namespace rp
     void give_plunger_bonus();
     void set_level_timer(const bear::timer* level_timer);
     const bear::timer* get_level_timer() const;
-    void create_level_ending_effect();
 
+    bool is_jumping() const;
+    bool is_dying() const;
+    bool is_speeding() const;
+    bool is_covered_with_tar() const;
+    unsigned int attached_balloon_count() const;
+    
   private:
     void get_dependent_items
     ( bear::universe::physical_item::item_list& d ) const;
@@ -378,6 +383,7 @@ namespace rp
 
     boost::signals2::scoped_connection m_ad_connection;
     bool m_cannon_enabled;
+    bool m_action_snapshot_done;
     
     /** \brief The score. */
     static unsigned int s_score;

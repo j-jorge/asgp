@@ -12,6 +12,8 @@
  * \author Julien Jorge
  */
 #include "rp/add_ingame_layers.hpp"
+
+#include "rp/best_action_observer.hpp"
 #include "rp/cart.hpp"
 #include "rp/defines.hpp"
 #include "rp/game_variables.hpp"
@@ -190,7 +192,10 @@ void rp::add_ingame_layers::build()
 #endif
 
   if (m_add_starting_effect)
-    transition->push_effect( new level_starting_effect, 1000 );
+    {
+      transition->push_effect( new level_starting_effect, 1000 );
+      new_item( *( new best_action_observer() ) );
+    }
   else
     game_variables::set_level_starting(true);
 

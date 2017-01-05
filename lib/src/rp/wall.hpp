@@ -54,6 +54,8 @@ namespace rp
     void hit
     ( const bear::universe::coordinate_type & bottom_y,
       const bear::universe::coordinate_type & top_y );
+
+    unsigned int impact_count() const;
     
   protected:
     void to_string( std::string& str ) const;

@@ -256,13 +256,19 @@ void rp::game_variables::set_level_ending(bool value)
     ( bear::engine::variable<bool>( "level_ending", value) );
 } // game_variables::set_level_ending()
 
+std::string rp::game_variables::get_ending_effect_variable_name()
+{
+  return "ending_effect";
+}
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Get the status of ending effect.
  */
 bool rp::game_variables::get_ending_effect()
 {
-  return rp_game_variables_get_value( "ending_effect", false );
+  return
+    rp_game_variables_get_value( get_ending_effect_variable_name(), false );
 } // game_variables::get_ending_effect()
 
 /*----------------------------------------------------------------------------*/
@@ -273,7 +279,7 @@ bool rp::game_variables::get_ending_effect()
 void rp::game_variables::set_ending_effect(bool value)
 {
   bear::engine::game::get_instance().set_game_variable
-    ( bear::engine::variable<bool>( "ending_effect", value) );
+    ( bear::engine::variable<bool>( get_ending_effect_variable_name(), value) );
 } // game_variables::set_ending_effect()
 
 /*----------------------------------------------------------------------------*/
@@ -1430,4 +1436,18 @@ void rp::game_variables::load_variables(const std::string& lvl)
 void rp::game_variables::save_variables(const std::string& lvl)
 {
 } // game_variables::save_variables()
+
+std::string rp::game_variables::get_action_snapshot_variable_name()
+{
+  return "action_snapshot";
+}
+
+void rp::game_variables::set_action_snapshot()
+{
+  static const std::string name( get_action_snapshot_variable_name() );
+  const bool value( rp_game_variables_get_value( name, false ) );
+  
+  bear::engine::game::get_instance().set_game_variable
+    ( bear::engine::variable<bool>( name, !value ) );
+}
 

@@ -2,7 +2,6 @@ sprite_sheet "buttons-2" 512 x 512 margin 1
 
 /* */
 buttons_img "buttons.xcf.bz2"
-original_buttons_img "../../../status/buttons.xcf.bz2"
 
 "sound off" image_size * 0.5 with buttons_img
   glob "no sound*"
@@ -19,10 +18,15 @@ original_buttons_img "../../../status/buttons.xcf.bz2"
   "green box"
   ;
 
-"check" autosize * 0.5 with original_buttons_img
+"share" image_size * 0.5 with buttons_img
+  glob "share*"
+  "green box"
+  ;
+
+"check" autosize * 0.5 with buttons_img
   "check"
   ;
 
-"cross" autosize * 0.5 with original_buttons_img
+"cross" autosize * 0.5 with buttons_img
   "cross"
   ;

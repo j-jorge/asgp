@@ -18,6 +18,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.v4.content.FileProvider;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -29,6 +30,8 @@ import net.hockeyapp.android.Constants;
 import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.NativeCrashManager;
 
+import java.io.File;
+import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 import com.stuffomatic.coasters.R;
@@ -74,6 +77,31 @@ public class ASGP extends SDLActivity
         EventManager.tagEvent( tag, properties );
     }
         
+    public void share( String filePath, byte[] message ) {
+
+        final Intent shareIntent = new Intent();
+
+        try {
+            shareIntent.putExtra
+                ( Intent.EXTRA_TEXT, new String( message, "UTF-8" ) );
+        } catch( UnsupportedEncodingException e ) {
+            e.printStackTrace();
+            return;
+        }
+
+        shareIntent.setAction( Intent.ACTION_SEND );
+        shareIntent.setType( "image/png" );
+        shareIntent.addFlags( Intent.FLAG_GRANT_READ_URI_PERMISSION );
+
+        final File file = new File( filePath );
+        final Uri uri =
+            FileProvider.getUriForFile
+            ( this, getPackageName() + ".fileProvider", file );
+
+        shareIntent.putExtra( Intent.EXTRA_STREAM, uri );
+        startActivity( Intent.createChooser( shareIntent, null ) );
+    }
+    
     public void showHome() {
 
         final Intent homeIntent = new Intent( Intent.ACTION_MAIN );

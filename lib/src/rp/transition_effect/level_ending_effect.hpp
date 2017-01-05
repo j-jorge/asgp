@@ -14,17 +14,17 @@
 #ifndef __RP_LEVEL_ENDING_EFFECT_HPP__
 #define __RP_LEVEL_ENDING_EFFECT_HPP__
 
-#include "rp/http_request.hpp"
-
 #include "audio/sound_manager.hpp"
+
+#include "communication/messageable.hpp"
 
 #include "engine/transition_effect/transition_effect.hpp"
 #include "engine/world.hpp"
 #include "generic_items/decorative_item.hpp"
 #include "generic_items/decorative_rectangle.hpp"
 
-#include "gui/visual_component.hpp"
 #include "gui/button.hpp"
+#include "gui/visual_component.hpp"
 
 #include "visual/writing.hpp"
 
@@ -40,7 +40,8 @@ namespace rp
    * \author Julien Jorge
    */
   class level_ending_effect:
-    public bear::engine::transition_effect
+    public bear::engine::transition_effect,
+    public bear::communication::messageable
   {
   public:
     /** \brief The type of a list of scene elements retrieved from the layer.*/
@@ -120,7 +121,9 @@ namespace rp
     ~level_ending_effect();
 
     void set_world( const bear::engine::world* w );
-
+    void set_level_capture
+    ( const std::string& path, const bear::visual::sprite& sprite );
+    
     bool is_finished() const;
     void build();
     bear::universe::time_type
@@ -211,14 +214,20 @@ namespace rp
     void render_opaque_rectangle( scene_element_list& e) const;
     void render_medal( scene_element_list& e) const;
     void render_button_background( scene_element_list& e ) const;
+    void render_button_background
+    ( scene_element_list& e, bear::gui::button* button ) const;
+    void render_level_capture( scene_element_list& e ) const;
     void create_fade_out_tweener();
     void pop_level();
-    void add_button_component();
 
+    void add_skip_button();
     void on_pass_scores();
 
-    // not implemented
-    level_ending_effect& operator=( const level_ending_effect& that );
+    void create_capture();
+    void add_share_button();
+    void on_share();
+    
+    level_ending_effect& operator=( const level_ending_effect& that ) = delete;
 
   private:
     /** \brief The lines that do not disappear. */
@@ -285,25 +294,15 @@ namespace rp
     bear::gui::visual_component m_root_window;
 
     /** \brief Indicates that component is highlighted. */
-    bool m_active_component;
+    bear::gui::button* m_active_component;
 
     /** \brief The button. */ 
     bear::gui::button* m_skip_button;
 
-    /** \brief The Facebook button. */
-    bear::gui::button* m_facebook_button;
-
-    /** \brief The connection to the request of the Facebook url to our
-        server. */
-    http_request::result_connection m_facebook_request;
-
-    /** \brief The Twitter button. */
-    bear::gui::button* m_twitter_button;
-
-    /** \brief The connection to the request of the Twitter url to our
-        server. */
-    http_request::result_connection m_twitter_request;
-
+    std::string m_level_capture_path;
+    bear::visual::sprite m_level_capture;
+    bear::gui::button* m_share_button;
+    
     /** \brief The sprite of background when the mouse is on the button. */
     bear::visual::sprite m_background_on_sprite;  
 

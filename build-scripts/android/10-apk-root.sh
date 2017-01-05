@@ -33,7 +33,7 @@ sed 's|versionName=".*"|versionName="'$ASGP_VERSION_FULL'"|' \
     
 if [ $(build_mode $@) = debug ]
 then
-    sed 's|package=.*|package="com.stuffomatic.beta.coasters"|' \
+    sed 's|com\.stuffomatic\.coasters|com.stuffomatic.beta.coasters|' \
         -i $ASGP_APK_ROOT/java/AndroidManifest.xml
 
     sed 's|com\.stuffomatic\.coasters\.R|com.stuffomatic.beta.coasters.R|' \

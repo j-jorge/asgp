@@ -14,6 +14,7 @@
 #include "rp/tar.hpp"
 
 #include "rp/cart.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/plank.hpp"
 
 #include <boost/algorithm/string/predicate.hpp>
@@ -157,6 +158,7 @@ bool rp::tar::collision_with_plank
     {
       if ( get_current_action_name() == "idle"  )
         {
+          game_variables::set_action_snapshot();
           if ( p->get_combo_value() != 0 )
             set_combo_value(p->get_combo_value()+1);          
           fall();
@@ -181,6 +183,8 @@ bool rp::tar::collision_with_cart( bear::engine::base_item& that )
   
   if ( c != NULL ) 
     {
+      game_variables::set_action_snapshot();
+
       const std::string action_name( get_current_action_name() );
 
       if ( boost::starts_with( get_current_action_name(), "on_rail") ) 

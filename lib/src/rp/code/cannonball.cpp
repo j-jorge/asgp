@@ -207,6 +207,7 @@ bool rp::cannonball::collision_with_cable
   
   if ( c != NULL ) 
     {
+      game_variables::set_action_snapshot();
       c->clear_forced_movement();
       bear::universe::speed_type speed = get_speed();
       bear::universe::force_type f(speed);
@@ -245,6 +246,7 @@ bool rp::cannonball::collision_with_tar( bear::engine::base_item& that )
     {
       if ( t->get_current_action_name() == "idle" ) 
         {
+          game_variables::set_action_snapshot();
           t->set_combo_value(1);
           util::create_floating_score(*t,100);
           t->kill();

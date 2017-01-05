@@ -193,6 +193,7 @@ void rp::zeppelin::collision
  */
 void rp::zeppelin::explose()
 { 
+  game_variables::set_action_snapshot();
   set_transportability(false);
   kill_interactive_item();
   drop();
@@ -241,6 +242,7 @@ void rp::zeppelin::drop()
 {
   if ( m_drop_item != handle_type(NULL) )
     {
+      game_variables::set_action_snapshot();
       entity* e = dynamic_cast<entity*>(m_drop_item.get());
   
       if ( e != NULL ) 
@@ -345,6 +347,8 @@ bool rp::zeppelin::collision_with_tar
            ( t->get_current_action_name() != "explose" ) && 
            ( t->get_current_action_name() != "on_rail" ) )
         {
+          game_variables::set_action_snapshot();
+          
           if ( t->get_combo_value() != 0 )
             set_combo_value(t->get_combo_value()+1);      
           t->explose();

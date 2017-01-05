@@ -14,6 +14,7 @@
 #include "rp/cable.hpp"
 #include "rp/cart.hpp"
 #include "rp/explosion.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/util.hpp"
 
 #include "universe/collision_info.hpp"
@@ -128,6 +129,7 @@ bool rp::cable::collision_with_cart
             }
         }
 
+      game_variables::set_action_snapshot();
       result = true;
     }
   
@@ -157,6 +159,7 @@ bool rp::cable::collision_with_cable
         }
       super::collision(that, info);
       result = true;
+      game_variables::set_action_snapshot();
     }
   
   return result;
@@ -184,6 +187,7 @@ bool rp::cable::collision_with_explosion
           eject( e->get_horizontal_middle() < get_horizontal_middle() );
         }
   
+      game_variables::set_action_snapshot();
       result = true;
     }
   

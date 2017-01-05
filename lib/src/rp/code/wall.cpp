@@ -12,8 +12,10 @@
  * \author Sebastien Angibaud
  */
 #include "rp/wall.hpp"
+
 #include "rp/cannonball.hpp"
 #include "rp/cart.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/plank.hpp" 
 #include "rp/explosion.hpp"
 #include "rp/tar.hpp"
@@ -96,14 +98,13 @@ void rp::wall::collision
       if ( info.get_collision_side() == bear::universe::zone::top_zone )
         {
           if ( default_collision(info) )
-            collision_as_base_train(that,info);
+              collision_as_base_train(that,info);
         }
-      else if ( ! collision_with_cart(that,info) )
-        if ( ! collision_with_cannonball(that) )
-          if ( ! collision_with_explosion(that,info) )
-            if ( ! collision_with_tnt(that) )
-                if ( ! collision_with_tar(that) )
-                  super::collision(that,info);
+      else if ( ! collision_with_cannonball(that) )
+        if ( ! collision_with_explosion(that,info) )
+          if ( ! collision_with_tnt(that) )
+            if ( ! collision_with_tar(that) )
+              super::collision(that,info);
     }
 } // wall::collision()
 
@@ -124,6 +125,8 @@ void rp::wall::hit
     ( "sound/wall/break.ogg",
       bear::audio::sound_effect( get_center_of_mass() ) );
 
+  game_variables::set_action_snapshot();
+  
   if ( get_mark_placement("step_1", step1) )
     if ( get_mark_placement("step_2", step2) )
       {
@@ -142,6 +145,11 @@ void rp::wall::hit
           hit(& m_middle_impacts,"middle");
       }
 } // wall::hit()
+
+unsigned int rp::wall::impact_count() const
+{
+  return m_bottom_impacts + m_middle_impacts + m_top_impacts;
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -206,6 +214,8 @@ bool rp::wall::collision_with_cart
   
   if ( c != NULL ) 
     {
+      game_variables::set_action_snapshot();
+      
       if ( ( info.get_collision_side() == bear::universe::zone::top_zone ) &&
            c->get_current_action_name() != "jump" )
         c->jump();
@@ -237,6 +247,8 @@ bool rp::wall::collision_with_cannonball
   
   if ( c != NULL ) 
     {
+      game_variables::set_action_snapshot();
+
       set_combo_value( c->get_combo_value() );      
       hit(c->get_vertical_middle(),c->get_vertical_middle());
       c->kill();
@@ -290,6 +302,8 @@ bool rp::wall::collision_with_tnt
   
   if ( t != NULL ) 
     {
+      game_variables::set_action_snapshot();
+
       if ( t->get_combo_value() != 0 )
         set_combo_value(t->get_combo_value()+1);      
       t->explose();

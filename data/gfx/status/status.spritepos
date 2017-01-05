@@ -1,21 +1,22 @@
-panel: 1 1 503 255
-balloons: 505 1 399 278
-facebook: 905 1 103 103
-end game bottom: 1010 2 1 314
-end game top: 1014 2 1 124
-end game silver tick: 1017 1 4 54
-end game bronze tick: 1017 56 4 54
-end game fill: 1018 112 1 54
-twitter: 905 105 103 103
-hearth: 905 209 31 27
-balloon: 1 257 190 199
-end game gauge front: 1 457 676 54
-score background: 192 257 178 140
-end game gauge back: 192 398 676 54
-score: 678 453 193 44
-combo 2: 869 318 137 62
-combo 3: 869 381 137 62
-combo 4: 872 444 137 62
-combo 5: 371 280 137 62
-combo 6: 509 280 137 62
-combo 1: 647 280 134 59
+end game gauge front: 1 1 676 54
+capture-placeholder: 678 1 300 169
+end game gauge back: 1 56 676 54
+hearth: 979 1 31 27
+end game silver tick: 1011 1 4 54
+end game bronze tick: 1016 1 4 54
+end game bottom: 980 30 1 314
+end game top: 984 30 1 124
+end game fill: 988 30 1 54
+panel: 1 111 503 255
+combo 2: 505 111 137 62
+balloons: 505 174 399 278
+facebook: 905 346 103 103
+twitter: 905 450 103 103
+balloon: 1 554 190 199
+combo 3: 1 453 137 62
+combo 4: 1 367 137 62
+combo 5: 139 453 137 62
+combo 6: 139 367 137 62
+score: 277 367 193 44
+score background: 277 412 178 140
+combo 1: 1 754 134 59

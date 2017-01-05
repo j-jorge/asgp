@@ -12,6 +12,7 @@
  * \author Julien Jorge
  */
 #include "rp/switching.hpp"
+#include "rp/game_variables.hpp"
 #include "rp/hole.hpp"
 #include "rp/plunger.hpp"
 
@@ -301,6 +302,7 @@ void rp::switching::on_switch
   if ( p != NULL )
     if ( ! p->come_back() ) 
       {
+        game_variables::set_action_snapshot();
         p->stop(true);
         start_model_action(action);
       }

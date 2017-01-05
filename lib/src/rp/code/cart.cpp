@@ -104,7 +104,8 @@ rp::cart::cart()
     m_injured_duration(0), m_fire_duration(s_fire_duration),
     m_next_smoke(0), m_passive(false), m_id(1),
     m_bad_plunger_zone_rendering(true), m_combo_sample(NULL),
-    m_cannon_enabled(true)
+    m_cannon_enabled(true),
+    m_action_snapshot_done(false)
 {
   set_system_angle_as_visual_angle(true);
   set_phantom(false);
@@ -293,6 +294,13 @@ void rp::cart::progress( bear::universe::time_type elapsed_time )
 
   if ( !can_finish() )
     create_smoke( elapsed_time );
+
+  if ( !m_action_snapshot_done
+       && ( get_center_of_mass().x >= get_level().get_size().x / 2 ) )
+    {
+      m_action_snapshot_done = true;
+      game_variables::set_action_snapshot();
+    }
 } // cart::progress()
 
 /*----------------------------------------------------------------------------*/
@@ -455,6 +463,7 @@ void rp::cart::is_hit()
 {
   if ( ! m_is_injured && ! game_variables::is_level_ending() )
     {
+      game_variables::set_action_snapshot();
       m_is_injured = true;
       m_injured_duration = 0;
 
@@ -747,6 +756,31 @@ const bear::timer* rp::cart::get_level_timer() const
 {
   return m_level_timer;
 } // cart::get_level_timer()
+
+bool rp::cart::is_jumping() const
+{
+  return get_current_action_name() == "jump";
+}
+
+bool rp::cart::is_dying() const
+{
+  return get_current_action_name() == "dead";
+}
+  
+bool rp::cart::is_speeding() const
+{
+  return get_current_action_name() == "crouch";
+}
+
+bool rp::cart::is_covered_with_tar() const
+{
+  return get_current_action_name() == "with_tar";
+}
+
+unsigned int rp::cart::attached_balloon_count() const
+{
+  return m_balloons.size();
+}
 
 /*----------------------------------------------------------------------------*/
 /**
@@ -1344,6 +1378,8 @@ void rp::cart::throw_cannonball()
 
       create_cannon_fire();
       create_wave(false);
+
+      game_variables::set_action_snapshot();
     }
 } // cart::throw_cannonball()
 
@@ -1907,6 +1943,8 @@ void rp::cart::start_with_tar()
  */
 void rp::cart::apply_impulse_jump()
 {
+  game_variables::set_action_snapshot();
+  
   start_model_action("jump");
   give_impulse_force();
   
@@ -2512,6 +2550,7 @@ bool rp::cart::collision_with_tar( bear::engine::base_item& that )
            ( ( t->get_current_action_name() == "idle" ) || 
              ( t->get_current_action_name() == "fall" ) ) )
         {
+          game_variables::set_action_snapshot();
           start_model_action("with_tar");
           get_level_globals().play_sound
             ( "sound/tar/splash.ogg",
