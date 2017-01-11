@@ -2001,7 +2001,9 @@ bool rp::cart::key_released( const bear::input::key_info& key )
 {
   bool result = true;
 
-  if ( ( key.is_control() || key.is_down() ) && 
+  if ( key.get_code() == bear::input::keyboard::kc_space )
+    input_handle_cannonball();
+  else if ( ( key.is_control() || key.is_down() ) && 
        game_variables::level_has_started() )
     apply_stop_crouch();
   else 
