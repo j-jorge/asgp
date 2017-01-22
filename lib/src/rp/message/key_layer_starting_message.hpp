@@ -14,6 +14,8 @@
 #ifndef __RP_KEY_LAYER_STARTING_MESSAGE_HPP__
 #define __RP_KEY_LAYER_STARTING_MESSAGE_HPP__
 
+#include "rp/layer/key_layer.hpp"
+
 #include "communication/typed_message.hpp"
 
 namespace rp

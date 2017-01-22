@@ -14,6 +14,8 @@
 #ifndef __RP_PAUSE_MESSAGE_HPP__
 #define __RP_PAUSE_MESSAGE_HPP__
 
+#include "rp/layer/pause_layer.hpp"
+
 #include "communication/typed_message.hpp"
 
 namespace rp
