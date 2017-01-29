@@ -115,6 +115,7 @@ void rp::game::init_game()
       "--tag=android",
       "--auto-load-symbols",
       "--start-level=level/start.cl",
+      "--sync-render",
       NULL
     };
 
