@@ -9,17 +9,17 @@ install( DIRECTORY "icons" "pixmaps"
   WORLD_READ WORLD_EXECUTE )
 
 configure_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/applications/andy-super-great-park.desktop.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/applications/andy-super-great-park.desktop"
+  "${CMAKE_CURRENT_SOURCE_DIR}/applications/straining-coasters.desktop.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/applications/straining-coasters.desktop"
   IMMEDIATE @ONLY)
 
 configure_file(
-  "${CMAKE_CURRENT_SOURCE_DIR}/menu/andy-super-great-park.in"
-  "${CMAKE_CURRENT_BINARY_DIR}/menu/andy-super-great-park"
+  "${CMAKE_CURRENT_SOURCE_DIR}/menu/straining-coasters.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/menu/straining-coasters"
   IMMEDIATE @ONLY)
 
 install(
-  FILES "${CMAKE_CURRENT_BINARY_DIR}/applications/andy-super-great-park.desktop"
+  FILES "${CMAKE_CURRENT_BINARY_DIR}/applications/straining-coasters.desktop"
   DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications/"
   PERMISSIONS
   OWNER_READ OWNER_WRITE

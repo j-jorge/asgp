@@ -27,13 +27,9 @@
 #include <cstdlib>
 #include <ctime>
 
-BEAR_ENGINE_GAME_INIT_FUNCTION( init_super_great_park )
+BEAR_ENGINE_GAME_INIT_FUNCTION( init_straining_coasters )
 
-/*----------------------------------------------------------------------------*/
-/**
- * \brief Initialization of the game.
- */
-void init_super_great_park()
+void init_straining_coasters()
 {
   rp::config_file config;
   config.apply();
@@ -41,7 +37,7 @@ void init_super_great_park()
 
   rp::get_client_config();
   
-  const std::string translation_domain_name( "super-great-park" );
+  const std::string translation_domain_name( "straining-coasters" );
 
 #ifdef __ANDROID__
   bear::engine::game::get_instance().set_translator
@@ -60,4 +56,4 @@ void init_super_great_park()
   claw::logger << claw::log_verbose << "Dumb rendering is "
                << bear::engine::game::get_instance().get_dumb_rendering()
                << std::endl;
-} // init_super_great_park()
+}

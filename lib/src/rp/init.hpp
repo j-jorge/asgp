@@ -6,17 +6,13 @@
   See the accompanying license file for details about usage, modification and
   distribution of this file.
 */
-/**
- * \brief Functions called at the begining of the game.
- * \author Julien Jorge
- */
 #ifndef __RP_INIT_HPP__
 #define __RP_INIT_HPP__
 
 #include "engine/export.hpp"
 
 extern "C"
-DLL_EXPORT void init_super_great_park();
+DLL_EXPORT void init_straining_coasters();
 
-#endif // __RP_INIT_HPP__
+#endif
 

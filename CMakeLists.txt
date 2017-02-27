@@ -23,7 +23,7 @@ include( docbook-to-man )
 #-------------------------------------------------------------------------------
 # where the game resources are installed
 if( NOT RP_INSTALL_DATA_DIR )
-  set( RP_INSTALL_DATA_DIR share/super-great-park )
+  set( RP_INSTALL_DATA_DIR share/straining-coasters )
 endif( NOT RP_INSTALL_DATA_DIR )
 
 # where the game executables are installed
@@ -156,14 +156,14 @@ endif()
 
 option(
   RP_BEAR_FACTORY_ENABLED
-  "Tells to install the files of Andy's Super Great Park for the Bear Factory"
+  "Tells to install the files of Straining Coasters for the Bear Factory"
   FALSE
   )
 
 if ( RP_BEAR_FACTORY_ENABLED )
   install(
     DIRECTORY "lib/item-description"
-    DESTINATION "share/bear-factory/super-great-park"
+    DESTINATION "share/bear-factory/straining-coasters"
     FILE_PERMISSIONS OWNER_READ OWNER_WRITE
     GROUP_READ
     WORLD_READ
