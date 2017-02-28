@@ -141,7 +141,7 @@ unsigned int rp::game_variables::get_selected_serial()
   return 
     rp_game_variables_get_value
     ( make_persistent_variable_name("scenario/selected_serial"), 
-      (unsigned int)1 );
+      (unsigned int)0 );
 } // game_variables::get_selected_serial()
 
 /*----------------------------------------------------------------------------*/

@@ -103,8 +103,12 @@ void rp::level_selector::on_enters_layer()
 {
   super::on_enters_layer();
 
-  m_level_state = 
+  m_level_state =
     game_variables::get_level_state(m_serial_number, m_level_number);
+
+  if ( ( m_serial_number == 0 ) && ( m_level_state == level_state::locked ) )
+    m_level_state = level_state::unlocked;
+  
   m_font = get_level_globals().get_font("font/LuckiestGuy.ttf", 70);
 
   choose_level_sprite();
@@ -546,7 +550,7 @@ void rp::level_selector::update_state()
 {
   unsigned int state = m_level_state;
   unsigned int new_state = get_new_state();
-  
+
   if ( state == level_state::locked )
     m_level_sprite.set_opacity(0);
     
