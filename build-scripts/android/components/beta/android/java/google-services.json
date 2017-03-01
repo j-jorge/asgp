@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "745842917846",
+    "firebase_url": "https://straining-coasters-beta.firebaseio.com",
+    "project_id": "straining-coasters-beta",
+    "storage_bucket": "straining-coasters-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745842917846:android:ee6e65c8208d7fc6",
+        "android_client_info": {
+          "package_name": "com.stuffomatic.beta.coasters"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745842917846-e22cd7481dcbrt9gspbb6tau2msta6l3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5UgzuUZ6XbMO7qXOt5iuTCpXG2v8RvHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

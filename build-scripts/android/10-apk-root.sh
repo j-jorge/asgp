@@ -33,8 +33,12 @@ sed 's|versionName=".*"|versionName="'$ASGP_VERSION_FULL'"|' \
     
 if [ $(build_mode $@) = debug ]
 then
+    cp -r "$SOURCE_ROOT/build-scripts/android/components/beta/android/"* \
+       "$ASGP_APK_ROOT"
+    
     sed 's|com\.stuffomatic\.coasters|com.stuffomatic.beta.coasters|' \
-        -i $ASGP_APK_ROOT/java/AndroidManifest.xml
+        -i $ASGP_APK_ROOT/java/AndroidManifest.xml \
+        $ASGP_APK_ROOT/java/build.gradle
 
     sed 's|com\.stuffomatic\.coasters\.R|com.stuffomatic.beta.coasters.R|' \
         -i $ASGP_APK_ROOT/java/src/com/stuffomatic/asgp/*.java
@@ -42,6 +46,9 @@ then
     sed 's|Straining Coasters|Beta Coasters|' \
         -i $ASGP_APK_ROOT/java/res/values/strings.xml
 else
+    cp -r "$SOURCE_ROOT/build-scripts/android/components/prod/android/"* \
+       "$ASGP_APK_ROOT"
+
     echo $(( $BUILD_NUMBER + 1 )) > $BUILD_NUMBER_FILE
 fi
 
