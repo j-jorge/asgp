@@ -15,4 +15,10 @@
   <string name="notification_extra_plunger_title">Happy Hour !</string>
   <string name="notification_extra_plungers_message">Ton pistolet à ventouses a des munitions supplémentaires ! Il est temps d\'obtenir cette médaille d\'or !</string>
 
+  <string name="rate_app_title">Notez notre app</string>
+  <string name="rate_app_message">Si vous aimez ce jeu, prenez le temps de le noter sur le Play Store.</string>
+  <string name="rate_app_yes">Noter</string>
+  <string name="rate_app_cancel">Plus tard</string>
+  <string name="rate_app_contact">Contact</string>
+
 </resources>

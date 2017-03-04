@@ -30,7 +30,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.StringRes;
-import android.support.v7.app.AlertDialog;
+import android.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -117,7 +117,9 @@ public class RateThisApp {
      */
     public static boolean showRateDialogIfNeeded(final Context context) {
         if (shouldShowRateDialog()) {
-            showRateDialog(context);
+            showRateDialog
+                ( context,
+                  android.R.style.Theme_DeviceDefault_Light_Dialog_Alert );
             return true;
         } else {
             return false;
@@ -149,8 +151,8 @@ public class RateThisApp {
         if (mOptOut) {
             return false;
         } else {
-            if (mLaunchTimes >= sConfig.mCriteriaLaunchTimes) {
-                return true;
+            if (mLaunchTimes < sConfig.mCriteriaLaunchTimes) {
+                return false;
             }
             long threshold = sConfig.mCriteriaInstallDays * 24 * 60 * 60 * 1000L;	// msec
             if (new Date().getTime() - mInstallDate.getTime() >= threshold &&
@@ -203,11 +205,11 @@ public class RateThisApp {
             return;
         }
 
-        int titleId = sConfig.mTitleId != 0 ? sConfig.mTitleId : R.string.rta_dialog_title;
-        int messageId = sConfig.mMessageId != 0 ? sConfig.mMessageId : R.string.rta_dialog_message;
-        int cancelButtonID = sConfig.mCancelButton != 0 ? sConfig.mCancelButton : R.string.rta_dialog_cancel;
-        int thanksButtonID = sConfig.mNoButtonId != 0 ? sConfig.mNoButtonId : R.string.rta_dialog_no;
-        int rateButtonID = sConfig.mYesButtonId != 0 ? sConfig.mYesButtonId : R.string.rta_dialog_ok;
+        int titleId = sConfig.mTitleId;
+        int messageId = sConfig.mMessageId;
+        int cancelButtonID = sConfig.mCancelButton;
+        int thanksButtonID = sConfig.mNoButtonId;
+        int rateButtonID = sConfig.mYesButtonId;
         builder.setTitle(titleId);
         builder.setMessage(messageId);
         builder.setCancelable(sConfig.mCancelable);
@@ -243,7 +245,6 @@ public class RateThisApp {
                 if (sCallback != null) {
                     sCallback.onNoClicked();
                 }
-                setOptOut(context, true);
             }
         });
         builder.setOnCancelListener(new OnCancelListener() {
@@ -262,6 +263,11 @@ public class RateThisApp {
                 sDialogRef.clear();
             }
         });
+
+        if (sCallback != null) {
+            sCallback.onShow();
+        }
+        
         sDialogRef = new WeakReference<>(builder.show());
     }
 
@@ -448,5 +454,7 @@ public class RateThisApp {
          * "Later" event
          */
         void onCancelClicked();
+
+        void onShow();
     }
 }

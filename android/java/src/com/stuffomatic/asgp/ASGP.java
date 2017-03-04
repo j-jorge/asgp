@@ -9,6 +9,8 @@
 package com.stuffomatic.asgp;
 
 import com.stuffomatic.ad.InterstitialService;
+import com.stuffomatic.asgp.rating.RatingDialogListener;
+import com.stuffomatic.rating.RatingService;
 
 import org.libsdl.app.SDLActivity;
 import android.content.Context;
@@ -28,6 +30,7 @@ import com.facebook.appevents.AppEventsLogger;
 
 import net.hockeyapp.android.Constants;
 import net.hockeyapp.android.CrashManager;
+import net.hockeyapp.android.FeedbackManager;
 import net.hockeyapp.android.NativeCrashManager;
 
 import java.io.File;
@@ -130,12 +133,28 @@ public class ASGP extends SDLActivity
             && ( now <= preferences.getLong( "extra-plungers-end", 0 ) );
     }
     
+    public boolean showRateAppDialog() {
+        
+        return RatingService.show();
+    }
+
     @Override
     public void onStart() {
         super.onStart();
         Chartboost.onStart( this );
 
         mNotifications.scheduleNotifications();
+
+        RatingService.init
+            ( this,
+              "https://play.google.com/store/apps/details?id=com.stuffomatic.coasters",
+              R.string.rate_app_title,
+              R.string.rate_app_message,
+              R.string.rate_app_yes,
+              R.string.rate_app_contact,
+              R.string.rate_app_cancel );
+
+        RatingService.setListener( new RatingDialogListener( this ) );
     }
 
     @Override
@@ -182,6 +201,8 @@ public class ASGP extends SDLActivity
         setUpBreakpad( Constants.FILES_PATH );
 
         checkForCrashes();
+
+        FeedbackManager.register( this );
     }
 
     private native void setUpBreakpad( String filepath );

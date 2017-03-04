@@ -16,6 +16,7 @@
 #include "rp/defines.hpp"
 #include "rp/game_variables.hpp"
 #include "rp/level_state.hpp"
+#include "rp/show_rate_dialog.hpp"
 #include "rp/util.hpp"
 
 #include "rp/ad/show_interstitial.hpp"
@@ -1402,6 +1403,13 @@ void rp::level_selector::check_level_ending()
     return;
   
   if ( m_serial_number == 0 )
+    {
+      resume();
+      return;
+    }
+
+  if ( ( ( m_serial_number > 1 ) || ( m_level_number >= 4 ) )
+       && ( get_new_state() > m_level_state ) && show_rate_dialog() )
     resume();
   else
     m_ad_connection =

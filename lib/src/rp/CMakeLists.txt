@@ -59,6 +59,7 @@ set( RP_SOURCE_FILES
   code/plunger.cpp
   code/serial_switcher.cpp
   code/show_key_layer.cpp
+  code/show_rate_dialog.cpp
   code/switching.cpp
   code/tar.cpp
   code/tnt.cpp
