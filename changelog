@@ -1,3 +1,16 @@
+Version 1.0.19
+
+	* Precache some glyphs to avoid freezing the game when a text is
+	displayed.
+
+	* Allow to share a screenshot of the best action done in the level at
+	the end of the levels.
+
+	* Synchronous render/update loop on Android to prevent jumps in the
+	animation.
+
+	* Ask the player to rate the app.
+
 Version 1.0.18
 
 	* Hide the navigation buttons when a level is selected.
