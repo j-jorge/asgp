@@ -125,12 +125,12 @@ BUILD_DIR="$ASGP_APK_ROOT/java/build/"
 
 [ ! -d "$BUILD_DIR" ] && mkdir -p "$BUILD_DIR"
 
+$ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-strip --strip-all \
+    "$TARGET_DIR"/*.so \
+
 SYMBOLS=$BUILD_DIR/libs.zip
 
 rm -f "$SYMBOLS"
 zip --junk-paths -9 "$SYMBOLS" "$TARGET_SO"
-
-$ANDROID_TOOLCHAIN_ROOT/bin/arm-linux-androideabi-strip --strip-all \
-    "$TARGET_DIR"/*.so \
 
 set_shell_variable ASGP_SYMBOLS $SYMBOLS
