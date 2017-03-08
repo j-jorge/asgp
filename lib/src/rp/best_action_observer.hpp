@@ -35,6 +35,7 @@ namespace rp
     ( const std::string& save_path, const claw::graphic::image& image );
     void add_image_resource
     ( const std::string& save_path, const bear::visual::sprite& sprite );
+    void dispatch_progress( double p );
     
   private:
     double m_best_score;

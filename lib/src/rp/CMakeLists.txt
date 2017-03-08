@@ -92,6 +92,7 @@ set( RP_SOURCE_FILES
   layer/status/code/time_component.cpp
   
   message/code/help_layer_starting_message.cpp
+  message/code/level_capture_progress_message.cpp
   message/code/level_capture_ready_message.cpp
   message/code/key_layer_starting_message.cpp
   message/code/pause_message.cpp

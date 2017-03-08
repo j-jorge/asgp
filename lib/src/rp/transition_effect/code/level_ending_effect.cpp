@@ -306,6 +306,18 @@ void rp::level_ending_effect::set_level_capture
   m_share_button->set_visible( true );
 }
 
+void rp::level_ending_effect::set_level_capture_progress( double p )
+{
+  if ( p == 1 )
+    m_level_capture_progress = "-";
+  else
+    {
+      std::ostringstream oss;
+      oss << int( p * 100 + 0.5 ) << '%';
+      m_level_capture_progress = oss.str();
+    }
+}
+
 /*----------------------------------------------------------------------------*/
 /**
  * \brief Tell if the effect is finished.
@@ -340,6 +352,9 @@ void rp::level_ending_effect::build()
 
   fill_points();
 
+  m_level_capture_progress_font =
+    get_level_globals().get_font("font/LuckiestGuy.ttf", 50 );
+  
   initialize_line_position( m_positive_points );
 
   if ( ! game_variables::is_boss_level() )
@@ -485,6 +500,7 @@ void rp::level_ending_effect::render( scene_element_list& e ) const
       render_score(e);
       render_flash_line(e);
       render_level_capture(e);
+      render_level_capture_progress(e);
       render_button_background(e);
       m_root_window.render( e );
     }
@@ -1732,8 +1748,35 @@ rp::level_ending_effect::render_level_capture( scene_element_list& e ) const
   bear::visual::scene_sprite sp
     ( center.x - half_width, center.y - half_height, m_level_capture );
   e.push_back( sp );
-
 }
+
+void rp::level_ending_effect::render_level_capture_progress
+( scene_element_list& e ) const
+{
+  if ( !m_level_capture_path.empty() )
+    return;
+  
+  bear::visual::writing text
+    ( m_level_capture_progress_font, m_level_capture_progress );
+  
+  const bear::universe::size_box_type size( get_layer().get_size() );
+  const bear::visual::size_type half_width( text.get_width() / 2 );
+  const bear::visual::size_type half_height( text.get_height() / 2 );
+  const bear::visual::position_type center( size.x * 0.78, size.y * 0.66 );
+
+  const bear::visual::position_type pos
+    ( center.x - half_width - 5, center.y - half_height - 45 );
+  
+  bear::visual::scene_writing shadow( pos.x + 3, pos.y - 3, text );
+  shadow.get_rendering_attributes().set_intensity( 0.565, 0.608, 0.635 );
+  
+  e.push_back( shadow );
+
+  bear::visual::scene_writing label( pos.x, pos.y, text );
+  label.get_rendering_attributes().set_intensity( 0.839, 0.855, 0.863 );
+  
+  e.push_back( label );
+} // level_ending_effect::render_score()
 
 /*----------------------------------------------------------------------------*/
 /**

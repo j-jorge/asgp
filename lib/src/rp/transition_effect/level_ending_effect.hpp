@@ -123,6 +123,7 @@ namespace rp
     void set_world( const bear::engine::world* w );
     void set_level_capture
     ( const std::string& path, const bear::visual::sprite& sprite );
+    void set_level_capture_progress( double p );
     
     bool is_finished() const;
     void build();
@@ -217,6 +218,7 @@ namespace rp
     void render_button_background
     ( scene_element_list& e, bear::gui::button* button ) const;
     void render_level_capture( scene_element_list& e ) const;
+    void render_level_capture_progress( scene_element_list& e ) const;
     void create_fade_out_tweener();
     void pop_level();
 
@@ -299,6 +301,8 @@ namespace rp
     /** \brief The button. */ 
     bear::gui::button* m_skip_button;
 
+    std::string m_level_capture_progress;
+    bear::visual::font m_level_capture_progress_font;
     std::string m_level_capture_path;
     bear::visual::sprite m_level_capture;
     bear::gui::button* m_share_button;

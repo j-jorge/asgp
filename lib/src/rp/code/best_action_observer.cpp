@@ -15,6 +15,7 @@
 #include "rp/tnt.hpp"
 #include "rp/wall.hpp"
 #include "rp/zeppelin.hpp"
+#include "rp/message/level_capture_progress_message.hpp"
 #include "rp/message/level_capture_ready_message.hpp"
 #include "rp/transition_effect/level_ending_effect_default_name.hpp"
 
@@ -185,7 +186,8 @@ void rp::best_action_observer::render_capture()
   assert( !m_screenshot_connection.connected() );
   m_screenshot_connection =
     m_best_scene.render
-    ( boost::bind( &best_action_observer::store_capture, this, _1 ) );
+    ( boost::bind( &best_action_observer::store_capture, this, _1 ),
+      boost::bind( &best_action_observer::dispatch_progress, this, _1 ) );
 }
 
 void
@@ -241,6 +243,13 @@ void rp::best_action_observer::add_image_resource
   get_level_globals().add_image( save_path, sprite.get_image() );
 
   level_capture_ready_message msg( save_path, sprite );
+  get_level_globals().send_message
+    ( get_level_ending_effect_default_name(), msg );
+}
+
+void rp::best_action_observer::dispatch_progress( double p )
+{
+  level_capture_progress_message msg( p );
   get_level_globals().send_message
     ( get_level_ending_effect_default_name(), msg );
 }
