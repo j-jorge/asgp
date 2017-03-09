@@ -1,3 +1,8 @@
+Version 1.0.20
+
+	* Display a progress indicator while loading the capture at the end of
+	  the levels.
+
 Version 1.0.19
 
 	* Precache some glyphs to avoid freezing the game when a text is
