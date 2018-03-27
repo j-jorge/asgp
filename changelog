@@ -1,3 +1,7 @@
+Version 1.0.21
+
+	* Faster generation of the capture at the end of the levels.
+
 Version 1.0.20
 
 	* Display a progress indicator while loading the capture at the end of
