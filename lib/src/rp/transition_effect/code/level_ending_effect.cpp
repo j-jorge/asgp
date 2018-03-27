@@ -309,7 +309,7 @@ void rp::level_ending_effect::set_level_capture
 void rp::level_ending_effect::set_level_capture_progress( double p )
 {
   if ( p == 1 )
-    m_level_capture_progress = "-";
+    m_level_capture_progress = rp_gettext( "Finalizing..." );
   else
     {
       std::ostringstream oss;
@@ -353,7 +353,7 @@ void rp::level_ending_effect::build()
   fill_points();
 
   m_level_capture_progress_font =
-    get_level_globals().get_font("font/LuckiestGuy.ttf", 50 );
+    get_level_globals().get_font("font/LuckiestGuy.ttf", 32 );
   
   initialize_line_position( m_positive_points );
 
