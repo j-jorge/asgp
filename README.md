@@ -1,7 +1,7 @@
 What is this?
 ====
 
-Andy's Super Great Park is a shooter on rails developped by
+Straining Coasters is a shooter on rails developped by
 Stuffomatic. The player plays Andy, a kid armed with a plunger gun,
 who rides his roller coaster in a cart on which a cannon has been
 strapped. Using these weapons, he has to reach the end of the track by
@@ -13,6 +13,15 @@ levels, 18 hidden rides and some amazing boss fights.
 
 How to build the project?
 ====
+
+For Linux users, check that you have the `patchelf` command available
+as well as the dependencies listed below, then run
+`./build-scripts/linux-build.sh`. It will build the project and
+install it in `./build/linux/release/install`. Launch
+`./build/linux/release/install/bin/straining-coasters-launcher` to
+launch the game. The install tree is relocatable.
+
+For other systems, see below.
 
 The game relies upon the Bear engine. I would suggest that you prepare
 a workspace as follows:
